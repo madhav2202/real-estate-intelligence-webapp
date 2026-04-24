@@ -1,0 +1,681 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hidden Cost Calculator</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #080909;
+        --panel: #101313;
+        --panel-2: #151817;
+        --line: #2a302e;
+        --text: #edf2ee;
+        --muted: #8d9993;
+        --green: #30d07d;
+        --red: #ff5b5b;
+        --yellow: #f3c950;
+        --cyan: #58d2ff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: var(--bg);
+        color: var(--text);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+      }
+
+      button,
+      input,
+      select {
+        font: inherit;
+      }
+
+      .page {
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: minmax(280px, 0.72fr) minmax(340px, 1.28fr);
+      }
+
+      .intro {
+        min-height: 100vh;
+        display: grid;
+        align-content: end;
+        gap: 24px;
+        padding: 32px;
+        border-right: 1px solid var(--line);
+        background:
+          linear-gradient(90deg, rgba(8, 9, 9, 0.92), rgba(8, 9, 9, 0.3)),
+          url("https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80")
+            center / cover;
+      }
+
+      .eyebrow,
+      .result-card span,
+      .input-panel label,
+      .charge-title span,
+      .amount-note,
+      .summary span {
+        display: block;
+        color: var(--muted);
+        font-size: 11px;
+        font-weight: 750;
+        letter-spacing: 0;
+        text-transform: uppercase;
+      }
+
+      .eyebrow {
+        margin: 0 0 8px;
+        color: var(--cyan);
+      }
+
+      h1,
+      h2,
+      p {
+        margin-top: 0;
+      }
+
+      h1 {
+        max-width: 620px;
+        margin-bottom: 0;
+        font-size: clamp(38px, 7vw, 76px);
+        line-height: 0.94;
+      }
+
+      .intro-copy {
+        max-width: 540px;
+        margin: 0;
+        color: var(--muted);
+        font-size: clamp(16px, 2.3vw, 20px);
+        line-height: 1.45;
+      }
+
+      .reel-hook {
+        display: grid;
+        gap: 8px;
+        max-width: 520px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .reel-hook li {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(237, 242, 238, 0.18);
+        color: var(--muted);
+      }
+
+      .reel-hook strong {
+        color: var(--text);
+      }
+
+      .calculator {
+        min-height: 100vh;
+        display: grid;
+        align-content: start;
+        gap: 12px;
+        padding: 20px;
+        background: #0b0d0d;
+      }
+
+      .results {
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr) minmax(0, 0.75fr);
+        gap: 10px;
+        padding-bottom: 8px;
+        background: #0b0d0d;
+      }
+
+      .result-card,
+      .input-panel,
+      .module,
+      .summary div {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--panel);
+      }
+
+      .result-card {
+        min-height: 112px;
+        display: grid;
+        align-content: space-between;
+        gap: 16px;
+        padding: 16px;
+      }
+
+      .result-card strong {
+        display: block;
+        font-size: clamp(26px, 4vw, 46px);
+        line-height: 1;
+        font-variant-numeric: tabular-nums;
+      }
+
+      .result-card.actual {
+        border-color: rgba(48, 208, 125, 0.55);
+        background: #0f1914;
+      }
+
+      .result-card.actual strong {
+        color: var(--green);
+      }
+
+      .result-card.surprise strong {
+        color: var(--red);
+      }
+
+      .input-panel {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 12px;
+        padding: 14px;
+      }
+
+      .input-panel label {
+        display: grid;
+        gap: 8px;
+      }
+
+      .input-panel input,
+      .input-panel select,
+      .charge-row input {
+        width: 100%;
+        min-height: 42px;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        padding: 0 12px;
+        background: #080909;
+        color: var(--text);
+        outline: none;
+      }
+
+      .input-panel input:focus,
+      .input-panel select:focus,
+      .charge-row input:focus {
+        border-color: var(--cyan);
+      }
+
+      .module {
+        padding: 14px;
+      }
+
+      .module-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 12px;
+      }
+
+      .module-head h2 {
+        margin: 0;
+        font-size: 16px;
+      }
+
+      .module-head strong {
+        color: var(--yellow);
+        font-size: 13px;
+        font-variant-numeric: tabular-nums;
+        text-align: right;
+      }
+
+      .charge-table {
+        display: grid;
+        gap: 8px;
+      }
+
+      .charge-row {
+        display: grid;
+        grid-template-columns: 34px minmax(160px, 1fr) 126px 104px;
+        align-items: center;
+        gap: 10px;
+        min-height: 58px;
+        padding: 10px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: #0b0d0d;
+      }
+
+      .charge-row.is-off {
+        opacity: 0.52;
+      }
+
+      .charge-toggle {
+        width: 22px;
+        height: 22px;
+        accent-color: var(--green);
+      }
+
+      .charge-title strong {
+        display: block;
+        margin-bottom: 4px;
+        font-size: 14px;
+      }
+
+      .charge-row input {
+        min-height: 38px;
+        padding: 0 8px;
+        font-variant-numeric: tabular-nums;
+        text-align: right;
+      }
+
+      .amount-note {
+        color: var(--text);
+        font-variant-numeric: tabular-nums;
+        text-align: right;
+      }
+
+      .summary {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+      }
+
+      .summary div {
+        min-height: 84px;
+        padding: 14px;
+        background: var(--panel-2);
+      }
+
+      .summary strong {
+        display: block;
+        margin-top: 10px;
+        font-size: clamp(21px, 3vw, 32px);
+        line-height: 1;
+        font-variant-numeric: tabular-nums;
+      }
+
+      .helper {
+        margin: 0;
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.5;
+      }
+
+      @media (max-width: 1040px) {
+        .page {
+          grid-template-columns: 1fr;
+        }
+
+        .intro {
+          min-height: auto;
+          border-right: 0;
+          border-bottom: 1px solid var(--line);
+        }
+      }
+
+      @media (max-width: 760px) {
+        .intro,
+        .calculator {
+          padding: 16px;
+        }
+
+        .results {
+          position: static;
+          grid-template-columns: 1fr;
+        }
+
+        .input-panel,
+        .summary {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .charge-row {
+          grid-template-columns: 30px minmax(0, 1fr);
+        }
+
+        .charge-row input,
+        .amount-note {
+          grid-column: 2;
+          text-align: left;
+        }
+      }
+
+      @media (max-width: 520px) {
+        .input-panel,
+        .summary {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <section class="intro">
+        <div>
+          <p class="eyebrow">Hidden Cost Calculator</p>
+          <h1>The brochure price is only the opening number.</h1>
+        </div>
+        <p class="intro-copy">
+          Enter the advertised price, pick the buyer type, and see what the home actually lands at
+          after taxes, duties, deposits, advance charges, brokerage, and furnishing.
+        </p>
+        <ul class="reel-hook" aria-label="Default example">
+          <li><span>Brochure number</span><strong>Rs 3.00 Cr</strong></li>
+          <li><span>Usually missed</span><strong>Stamp duty + PLC</strong></li>
+          <li><span>Real question</span><strong>What is the landing?</strong></li>
+        </ul>
+      </section>
+
+      <section class="calculator" aria-label="Hidden cost calculator">
+        <section class="results" aria-live="polite">
+          <div class="result-card">
+            <span>Advertised price</span>
+            <strong id="baseTotal">Rs 3.00 Cr</strong>
+          </div>
+          <div class="result-card actual">
+            <span>Actual landed cost</span>
+            <strong id="landedTotal">Rs 3.00 Cr</strong>
+          </div>
+          <div class="result-card surprise">
+            <span>Buyer surprise</span>
+            <strong id="surprisePercent">0.0%</strong>
+          </div>
+        </section>
+
+        <div class="input-panel">
+          <label>
+            Base price in Cr
+            <input id="basePrice" type="number" min="0" step="0.01" value="3" />
+          </label>
+          <label>
+            Built-up area in sqft
+            <input id="area" type="number" min="0" step="50" value="2000" />
+          </label>
+          <label>
+            Property status
+            <select id="status">
+              <option value="under-construction">Under construction</option>
+              <option value="ready">Ready / resale</option>
+            </select>
+          </label>
+          <label>
+            Stamp duty buyer type
+            <select id="buyerType">
+              <option value="female">Female buyer - 6%</option>
+              <option value="joint">Male + female - 7%</option>
+              <option value="male">Male / company - 8%</option>
+            </select>
+          </label>
+        </div>
+
+        <section class="module">
+          <div class="module-head">
+            <h2>Add-On Stack</h2>
+            <strong id="addonSignal">+Rs 0.00 Cr add-ons</strong>
+          </div>
+          <div class="charge-table" id="chargeTable"></div>
+        </section>
+
+        <section class="summary" aria-live="polite">
+          <div>
+            <span>Hidden charges</span>
+            <strong id="addonTotal">Rs 0.00 Cr</strong>
+          </div>
+          <div>
+            <span>Per sqft base</span>
+            <strong id="basePsf">Rs 0</strong>
+          </div>
+          <div>
+            <span>Landed per sqft</span>
+            <strong id="landedPsf">Rs 0</strong>
+          </div>
+        </section>
+
+        <p class="helper">
+          Turn off charges that are included by the builder. PLC uses a percentage of the base
+          per-square-foot price, so a 3% PLC on a Rs 15,000/sqft home adds Rs 450/sqft.
+        </p>
+      </section>
+    </main>
+
+    <script>
+      const chargeConfig = [
+        {
+          key: "gst",
+          label: "GST",
+          helper: "Auto: 5% for under-construction, 0 for ready/resale",
+          unit: "%",
+          defaultInput: ({ status }) => (status === "ready" ? 0 : 5),
+          amount: ({ baseLakh, input }) => baseLakh * (input / 100),
+        },
+        {
+          key: "stampDuty",
+          label: "Stamp duty",
+          helper: "Female 6%, joint 7%, male/company 8%",
+          unit: "%",
+          defaultInput: ({ stampDutyRate }) => stampDutyRate,
+          amount: ({ baseLakh, input }) => baseLakh * (input / 100),
+        },
+        {
+          key: "registration",
+          label: "Registration",
+          helper: "Usually calculated as a percentage of agreement value",
+          unit: "%",
+          defaultInput: () => 1,
+          amount: ({ baseLakh, input }) => baseLakh * (input / 100),
+        },
+        {
+          key: "clubAdvance",
+          label: "Club advance charges",
+          helper: "Editable fixed amount in lakh",
+          unit: "lakh",
+          defaultInput: ({ baseCr }) => (baseCr > 4 ? 8 : 6),
+          amount: ({ input }) => input,
+        },
+        {
+          key: "plc",
+          label: "PLC",
+          helper: "Percentage of base per-square-foot cost",
+          unit: "%",
+          defaultInput: () => 2,
+          amount: ({ baseLakh, input }) => baseLakh * (input / 100),
+        },
+        {
+          key: "ifms",
+          label: "IFMS / security deposit",
+          helper: "Default assumes Rs 100/sqft",
+          unit: "lakh",
+          defaultInput: ({ area }) => (area * 100) / 100000,
+          amount: ({ input }) => input,
+        },
+        {
+          key: "maintenanceAdvance",
+          label: "Maintenance advance",
+          helper: "Default assumes Rs 7/sqft/month for 12 months",
+          unit: "lakh",
+          defaultInput: ({ area }) => (area * 7 * 12) / 100000,
+          amount: ({ input }) => input,
+        },
+        {
+          key: "brokerage",
+          label: "Brokerage",
+          helper: "Editable percentage of base price",
+          unit: "%",
+          defaultInput: ({ status }) => (status === "ready" ? 1 : 0.5),
+          amount: ({ baseLakh, input }) => baseLakh * (input / 100),
+        },
+        {
+          key: "furnishing",
+          label: "Furnishing estimate",
+          helper: "Default assumes Rs 2,600/sqft",
+          unit: "lakh",
+          defaultInput: ({ area }) => (area * 2600) / 100000,
+          amount: ({ input }) => input,
+        },
+      ];
+
+      const elements = {
+        basePrice: document.querySelector("#basePrice"),
+        area: document.querySelector("#area"),
+        status: document.querySelector("#status"),
+        buyerType: document.querySelector("#buyerType"),
+        chargeTable: document.querySelector("#chargeTable"),
+        baseTotal: document.querySelector("#baseTotal"),
+        landedTotal: document.querySelector("#landedTotal"),
+        surprisePercent: document.querySelector("#surprisePercent"),
+        addonSignal: document.querySelector("#addonSignal"),
+        addonTotal: document.querySelector("#addonTotal"),
+        basePsf: document.querySelector("#basePsf"),
+        landedPsf: document.querySelector("#landedPsf"),
+      };
+
+      const state = {
+        values: {},
+        included: {},
+      };
+
+      function formatCr(value) {
+        return `Rs ${value.toFixed(2)} Cr`;
+      }
+
+      function formatRs(value) {
+        return `Rs ${new Intl.NumberFormat("en-IN", { maximumFractionDigits: 0 }).format(value)}`;
+      }
+
+      function roundInput(value) {
+        return Math.round(value * 100) / 100;
+      }
+
+      function getInputs() {
+        const baseCr = Number(elements.basePrice.value) || 0;
+        const area = Number(elements.area.value) || 0;
+        const stampDutyRateByType = {
+          female: 6,
+          joint: 7,
+          male: 8,
+        };
+
+        return {
+          baseCr,
+          area,
+          status: elements.status.value,
+          stampDutyRate: stampDutyRateByType[elements.buyerType.value] || 7,
+          baseLakh: baseCr * 100,
+          basePsf: area > 0 ? (baseCr * 10000000) / area : 0,
+        };
+      }
+
+      function getDefaultValue(config) {
+        return roundInput(config.defaultInput(getInputs()));
+      }
+
+      function getChargeInput(config) {
+        return state.values[config.key] ?? getDefaultValue(config);
+      }
+
+      function isIncluded(config) {
+        return state.included[config.key] ?? true;
+      }
+
+      function getChargeAmount(config) {
+        if (!isIncluded(config)) return 0;
+        return config.amount({
+          ...getInputs(),
+          input: Number(getChargeInput(config)) || 0,
+        });
+      }
+
+      function getTotals() {
+        const { baseCr, baseLakh, area, basePsf } = getInputs();
+        const addOnsLakh = chargeConfig.reduce((total, config) => total + getChargeAmount(config), 0);
+        const landedCr = (baseLakh + addOnsLakh) / 100;
+        const landedPsf = area > 0 ? (landedCr * 10000000) / area : 0;
+        const surprise = baseLakh > 0 ? (addOnsLakh / baseLakh) * 100 : 0;
+
+        return {
+          baseCr,
+          addOnsLakh,
+          landedCr,
+          basePsf,
+          landedPsf,
+          surprise,
+        };
+      }
+
+      function calculate() {
+        const totals = getTotals();
+
+        elements.baseTotal.textContent = formatCr(totals.baseCr);
+        elements.landedTotal.textContent = formatCr(totals.landedCr);
+        elements.surprisePercent.textContent = `${totals.surprise.toFixed(1)}%`;
+        elements.addonSignal.textContent = `+${formatCr(totals.addOnsLakh / 100)} add-ons`;
+        elements.addonTotal.textContent = formatCr(totals.addOnsLakh / 100);
+        elements.basePsf.textContent = formatRs(totals.basePsf);
+        elements.landedPsf.textContent = formatRs(totals.landedPsf);
+
+        chargeConfig.forEach((config) => {
+          const amount = document.querySelector(`[data-charge-amount="${config.key}"]`);
+          const row = document.querySelector(`[data-charge-row="${config.key}"]`);
+          if (amount) amount.textContent = formatCr(getChargeAmount(config) / 100);
+          if (row) row.classList.toggle("is-off", !isIncluded(config));
+        });
+      }
+
+      function renderCharges() {
+        elements.chargeTable.innerHTML = chargeConfig
+          .map((config) => {
+            const inputValue = getChargeInput(config);
+            const checked = isIncluded(config) ? "checked" : "";
+            const step = config.unit === "%" ? "0.1" : "0.01";
+
+            return `
+              <div class="charge-row" data-charge-row="${config.key}">
+                <input class="charge-toggle" data-charge-toggle="${config.key}" type="checkbox" ${checked} aria-label="Include ${config.label}" />
+                <span class="charge-title">
+                  <strong>${config.label}</strong>
+                  <span>${config.helper}</span>
+                </span>
+                <input data-charge-input="${config.key}" type="number" min="0" step="${step}" value="${inputValue}" aria-label="${config.label} value" />
+                <strong class="amount-note">
+                  <span>${config.unit}</span>
+                  <b data-charge-amount="${config.key}">Rs 0.00 Cr</b>
+                </strong>
+              </div>
+            `;
+          })
+          .join("");
+
+        calculate();
+      }
+
+      function resetDerivedValues() {
+        state.values = {};
+        renderCharges();
+      }
+
+      elements.chargeTable.addEventListener("input", (event) => {
+        const field = event.target.closest("[data-charge-input]");
+        if (!field) return;
+        state.values[field.dataset.chargeInput] = Number(field.value) || 0;
+        calculate();
+      });
+
+      elements.chargeTable.addEventListener("change", (event) => {
+        const toggle = event.target.closest("[data-charge-toggle]");
+        if (!toggle) return;
+        state.included[toggle.dataset.chargeToggle] = toggle.checked;
+        calculate();
+      });
+
+      elements.basePrice.addEventListener("input", resetDerivedValues);
+      elements.area.addEventListener("input", resetDerivedValues);
+      elements.status.addEventListener("change", resetDerivedValues);
+      elements.buyerType.addEventListener("change", resetDerivedValues);
+
+      renderCharges();
+    </script>
+  </body>
+</html>

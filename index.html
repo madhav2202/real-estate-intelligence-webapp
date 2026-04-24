@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Launch Terminal</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="terminal-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Launch Terminal</p>
+          <h1>High-Rise Launch Intelligence</h1>
+        </div>
+        <div class="market-clock">
+          <span id="clock">--:--</span>
+          <strong>LAUNCH LIVE</strong>
+        </div>
+      </header>
+
+      <section class="ticker" aria-label="Market ticker">
+        <div class="ticker-track" id="tickerTrack"></div>
+      </section>
+
+      <section class="workspace">
+        <aside class="screener" aria-label="Project screener">
+          <div class="panel-head">
+            <h2>Launch Screener</h2>
+            <span id="resultCount">0 projects</span>
+          </div>
+
+          <label class="search-box">
+            <span>Search</span>
+            <input id="searchInput" type="search" placeholder="Project, developer, micro-market" />
+          </label>
+
+          <div class="filters">
+            <label>
+              Budget
+              <select id="budgetFilter">
+                <option value="all">All budgets</option>
+                <option value="under2">Under 2 Cr</option>
+                <option value="2to4">2-4 Cr</option>
+                <option value="above4">Above 4 Cr</option>
+              </select>
+            </label>
+            <label>
+              Stage
+              <select id="statusFilter">
+                <option value="all">All launch stages</option>
+                <option value="Upcoming">Upcoming</option>
+                <option value="New Launch">New Launch</option>
+                <option value="Under Construction">Under Construction</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="project-list" id="projectList"></div>
+        </aside>
+
+        <section class="detail" aria-live="polite">
+          <div class="asset-hero">
+            <img id="projectImage" alt="" />
+            <div class="asset-title">
+              <p id="assetCode">--</p>
+              <h2 id="projectName">Select a project</h2>
+              <span id="projectLocation">--</span>
+            </div>
+            <div class="hero-actions">
+              <button class="watch-btn" id="watchButton" type="button">Add Watch</button>
+              <button class="expert-btn" id="expertButton" type="button">Connect Expert</button>
+            </div>
+          </div>
+
+          <div class="metric-grid" id="metricGrid"></div>
+
+          <section class="decision-strip" aria-label="Decision intelligence">
+            <div class="decision-card">
+              <span>Builder Current Sale Price</span>
+              <strong id="builderSalePrice">--</strong>
+              <p id="builderPriceSignal">--</p>
+            </div>
+            <div class="decision-card">
+              <span>Fair Entry Price</span>
+              <strong id="fairValueRange">--</strong>
+              <p id="fairValueSignal">--</p>
+            </div>
+            <div class="decision-card">
+              <span>PropSpot Score</span>
+              <strong id="dealScore">--</strong>
+              <p id="dealSummary">--</p>
+            </div>
+          </section>
+
+          <section class="module compare-module">
+            <div class="panel-head">
+              <h3>Project Comparison</h3>
+              <span id="compareCount">0 selected</span>
+            </div>
+            <div class="compare-controls" id="compareControls"></div>
+            <div class="table-scroll">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Project</th>
+                    <th>Ticket</th>
+                    <th>Rs/sqft</th>
+                    <th>PropSpot</th>
+                    <th>Entry Signal</th>
+                    <th>Absorption</th>
+                    <th>Location</th>
+                    <th>Builder Risk</th>
+                  </tr>
+                </thead>
+                <tbody id="compareTable"></tbody>
+              </table>
+            </div>
+          </section>
+
+          <div class="terminal-grid">
+            <section class="module price-module">
+              <div class="panel-head">
+                <h3>Entry Price Stack</h3>
+                <span id="priceSignal">--</span>
+              </div>
+              <div class="price-line">
+                <strong id="headlinePrice">--</strong>
+                <span id="pricePerSqft">--</span>
+              </div>
+              <div class="bar-chart" id="barChart"></div>
+            </section>
+
+            <section class="module location-module">
+              <div class="panel-head">
+                <h3>Location Maturity</h3>
+                <span id="locationScore">--</span>
+              </div>
+              <div class="location-summary">
+                <div>
+                  <span>Commute</span>
+                  <strong id="commuteIndex">--</strong>
+                </div>
+                <div>
+                  <span>Maturity</span>
+                  <strong id="livabilityIndex">--</strong>
+                </div>
+              </div>
+              <div class="location-grid">
+                <div>
+                  <h4>Connectivity</h4>
+                  <ul id="connectivityList"></ul>
+                </div>
+                <div>
+                  <h4>Social Infra</h4>
+                  <ul id="socialInfraList"></ul>
+                </div>
+                <div>
+                  <h4>Infra Upside</h4>
+                  <ul id="infraList"></ul>
+                </div>
+                <div>
+                  <h4>Local Risks</h4>
+                  <ul id="locationRiskList"></ul>
+                </div>
+              </div>
+            </section>
+
+            <section class="module">
+              <div class="panel-head">
+                <h3>Builder Risk</h3>
+                <span id="developerRiskScore">--/10</span>
+              </div>
+              <ul class="signal-list" id="developerRiskList"></ul>
+            </section>
+
+            <section class="module score-module">
+              <div class="panel-head">
+                <h3>Why This Score?</h3>
+                <span>breakdown</span>
+              </div>
+              <div class="score-bars" id="scoreBreakdown"></div>
+            </section>
+
+            <section class="module">
+              <div class="panel-head">
+                <h3>Approvals / Delivery</h3>
+                <span id="riskScore">--</span>
+              </div>
+              <ul class="signal-list" id="signalList"></ul>
+            </section>
+
+            <section class="module">
+              <div class="panel-head">
+                <h3>Construction / Launch Tracker</h3>
+                <span id="trackerSignal">--</span>
+              </div>
+              <ul class="signal-list" id="trackerList"></ul>
+            </section>
+
+            <section class="module">
+              <div class="panel-head">
+                <h3>Payment / Inventory</h3>
+                <span id="inventoryPressure">--</span>
+              </div>
+              <ul class="signal-list" id="paymentInventoryList"></ul>
+            </section>
+
+            <section class="module expert-module">
+              <div class="panel-head">
+                <h3>PropSpot Expert</h3>
+                <span id="leadStatus">ready</span>
+              </div>
+              <p class="expert-copy" id="expertCopy">Talk to a PropSpot advisor about the fair entry range, builder current sale price, available inventory, and payment plan.</p>
+              <button class="report-btn" id="expertModuleButton" type="button">Request Expert Call</button>
+            </section>
+
+            <section class="module analyst-module">
+              <div class="panel-head">
+                <h3>Project Analyst</h3>
+                <span>launch grounded</span>
+              </div>
+              <div class="analyst-chat" id="analystAnswer"></div>
+              <form class="analyst-form" id="analystForm">
+                <input id="analystQuestion" type="text" placeholder="Ask if you should enter, wait, check price, or compare" />
+                <button type="submit">Ask</button>
+              </form>
+              <div class="prompt-chips">
+                <button type="button" data-question="Should I enter now?">Enter now?</button>
+                <button type="button" data-question="What approvals are missing?">Approvals</button>
+                <button type="button" data-question="How does builder price compare to fair entry?">Price check</button>
+                <button type="button" data-question="Compare with similar launches">Compare</button>
+              </div>
+            </section>
+
+            <section class="module report-module">
+              <div class="panel-head">
+                <h3>Project Brief</h3>
+                <span>shareable brief</span>
+              </div>
+              <div class="report-output" id="buyerReport"></div>
+              <button class="report-btn" id="copyReportButton" type="button">Copy Brief</button>
+            </section>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
