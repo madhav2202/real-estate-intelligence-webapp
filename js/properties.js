@@ -5,6 +5,7 @@ import {
   formatSqft,
   getPropSpotScore,
   getFairEntry,
+  projectPageUrl,
 } from "./shared.js";
 
 const elements = {
@@ -41,7 +42,7 @@ function render() {
           ? "Avoid at ask"
           : "Fair entry";
       return `
-        <a class="property-row" href="/projects/${project.slug}">
+        <a class="property-row" href="${projectPageUrl(project.slug)}">
           <div class="property-main">
             <strong>${project.name}</strong>
             <span>${project.location}</span>

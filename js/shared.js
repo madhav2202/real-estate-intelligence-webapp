@@ -22,8 +22,40 @@ const BUILDER_GRADES = {
   "suncity": "C",
 };
 
+export const IS_GITHUB_PAGES =
+  typeof window !== "undefined" && window.location.hostname.endsWith("github.io");
+export const REPO_BASE = IS_GITHUB_PAGES ? "/real-estate-intelligence-webapp" : "";
+
+export function withBase(path = "/") {
+  const normalized = path.startsWith("/") ? path : `/${path}`;
+  return `${REPO_BASE}${normalized}`;
+}
+
+export function appViewUrl(view = "map", projectSlug = "") {
+  const params = new URLSearchParams();
+  if (view && view !== "map") params.set("view", view);
+  if (projectSlug) params.set("project", projectSlug);
+  const query = params.toString();
+  return withBase(`/index.html${query ? `?${query}` : ""}`);
+}
+
+export function projectPageUrl(slug = "") {
+  const params = new URLSearchParams();
+  if (slug) params.set("slug", slug);
+  const query = params.toString();
+  return withBase(`/project.html${query ? `?${query}` : ""}`);
+}
+
+export function propertiesPageUrl() {
+  return withBase("/properties.html");
+}
+
+export function getLeadEndpoint() {
+  return IS_GITHUB_PAGES ? "https://formsubmit.co/ajax/madhav.prakash@propertyspotters.in" : "/api/leads";
+}
+
 export async function loadProjects() {
-  const response = await fetch("/data/projects-data.json");
+  const response = await fetch(withBase("/data/projects-data.json"));
   if (!response.ok) throw new Error("Unable to load project data");
   const projects = await response.json();
   return projects.filter((project) => project && project.published !== false);

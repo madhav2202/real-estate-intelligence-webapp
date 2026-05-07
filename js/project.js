@@ -10,6 +10,7 @@ import {
   getLocationScore,
   getWhatsappUrl,
   calculateEmi,
+  getLeadEndpoint,
 } from "./shared.js";
 
 const formatter = new Intl.NumberFormat("en-IN");
@@ -74,9 +75,11 @@ const state = {
 };
 
 function getSlugFromPath() {
+  const querySlug = new URLSearchParams(window.location.search).get("slug");
+  if (querySlug) return querySlug;
   const parts = window.location.pathname.split("/").filter(Boolean);
   if (parts[0] === "projects" && parts[1]) return parts[1];
-  return new URLSearchParams(window.location.search).get("slug");
+  return null;
 }
 
 function getLocationCommute(project) {
@@ -387,11 +390,34 @@ async function handleLeadSubmit(event) {
 
   elements.leadStatus.textContent = "Sending your request...";
   try {
-    const response = await fetch("/api/leads", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload),
-    });
+    const endpoint = getLeadEndpoint();
+    const isExternal = endpoint.startsWith("http");
+    const response = await (isExternal
+      ? fetch(endpoint, {
+          method: "POST",
+          headers: { Accept: "application/json" },
+          body: (() => {
+            const form = new FormData();
+            form.append("name", payload.name || "");
+            form.append("phone", payload.phone || "");
+            form.append("email", payload.email || "");
+            form.append("budget", payload.budget || "");
+            form.append("timeline", payload.timeline || "");
+            form.append("preferredLocation", payload.preferredLocation || "");
+            form.append("notes", payload.notes || "");
+            form.append("projectCode", payload.projectCode || "");
+            form.append("projectName", payload.projectName || "");
+            form.append("_subject", `New PropSpot Plinth lead for ${payload.projectName}`);
+            form.append("_captcha", "false");
+            form.append("_template", "table");
+            return form;
+          })(),
+        })
+      : fetch(endpoint, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        }));
     if (!response.ok) throw new Error("Lead request failed");
     elements.leadForm.reset();
     elements.leadStatus.textContent = "Thanks. PropSpot has your request and will reach out shortly.";

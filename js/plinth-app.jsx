@@ -41,6 +41,8 @@ const { useState, useEffect, useRef, useCallback, useMemo } = React;
 const SIGNAL_COLORS = { neutral: '#4ade80', danger: '#f87171', warning: '#f5a623' };
 const scoreColor = s => s >= 80 ? '#4ade80' : s >= 65 ? '#f5a623' : '#f87171';
 const currency = new Intl.NumberFormat('en-IN');
+const IS_GITHUB_PAGES = window.location.hostname.endsWith('github.io');
+const REPO_BASE = IS_GITHUB_PAGES ? '/real-estate-intelligence-webapp' : '';
 const BUILDER_GRADES = {
   dlf: 'A+',
   oberoi: 'A+',
@@ -68,6 +70,30 @@ const BUILDER_GRADES = {
 function formatTicket(value) {
   if (!value) return 'Price on request';
   return `₹${Number(value).toFixed(2)} Cr`;
+}
+
+function withBase(path = '/') {
+  const normalized = path.startsWith('/') ? path : `/${path}`;
+  return `${REPO_BASE}${normalized}`;
+}
+
+function appViewUrl(view = 'map', slug = '') {
+  const params = new URLSearchParams();
+  if (view && view !== 'map') params.set('view', view);
+  if (slug) params.set('project', slug);
+  const query = params.toString();
+  return withBase(`/index.html${query ? `?${query}` : ''}`);
+}
+
+function projectPageUrl(slug = '') {
+  const params = new URLSearchParams();
+  if (slug) params.set('slug', slug);
+  const query = params.toString();
+  return withBase(`/project.html${query ? `?${query}` : ''}`);
+}
+
+function propertiesPageUrl() {
+  return withBase('/properties.html');
 }
 
 function getBuilderGrade(developer = '') {
@@ -174,7 +200,7 @@ function adaptProject(project) {
 }
 
 async function loadProjects() {
-  const response = await fetch('/data/projects-data.json');
+  const response = await fetch(withBase('/data/projects-data.json'));
   if (!response.ok) throw new Error('Unable to load project data');
   const rawProjects = await response.json();
   const baseProjects = rawProjects
@@ -195,15 +221,15 @@ async function loadProjects() {
 }
 
 function getRouteView(pathname) {
-  if (pathname === '/screener') return 'screener';
-  if (pathname === '/terminal') return 'dashboard';
-  if (pathname === '/' || pathname === '/map') return 'map';
-  return 'dashboard';
+  const queryView = new URLSearchParams(window.location.search).get('view');
+  if (queryView === 'screener') return 'screener';
+  if (queryView === 'terminal' || queryView === 'dashboard') return 'dashboard';
+  if (pathname.endsWith('/index.html') || pathname === '/' || pathname === withBase('/')) return 'map';
+  return 'map';
 }
 
 function pushView(view) {
-  const target = view === 'map' ? '/map' : view === 'screener' ? '/screener' : '/terminal';
-  window.history.pushState({ view }, '', target);
+  window.history.pushState({ view }, '', appViewUrl(view));
 }
 
 function getSelectedSlug() {
@@ -211,9 +237,7 @@ function getSelectedSlug() {
 }
 
 function pushSelection(view, slug) {
-  const base = view === 'map' ? '/map' : view === 'screener' ? '/screener' : '/terminal';
-  const target = slug ? `${base}?project=${encodeURIComponent(slug)}` : base;
-  window.history.pushState({ view, slug }, '', target);
+  window.history.pushState({ view, slug }, '', appViewUrl(view, slug));
 }
 
 /* ─── SCORE RING ──────────────────────────────────────────────────── */
@@ -476,7 +500,7 @@ function ProjectDetail({ project, onClose, animKey }) {
         </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, paddingBottom: 12 }}>
-          <a href={`/projects/${project.slug}`} style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '12px 0', background: 'var(--accent)', border: 'none', borderRadius: 8, color: '#fff', fontSize: 13, fontWeight: 600, cursor: 'pointer', boxShadow: '0 0 20px rgba(124,106,245,0.4)', textDecoration: 'none' }}>Open Full Intelligence</a>
+          <a href={projectPageUrl(project.slug)} style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '12px 0', background: 'var(--accent)', border: 'none', borderRadius: 8, color: '#fff', fontSize: 13, fontWeight: 600, cursor: 'pointer', boxShadow: '0 0 20px rgba(124,106,245,0.4)', textDecoration: 'none' }}>Open Full Intelligence</a>
           <a href={whatsapp} target="_blank" rel="noreferrer" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '12px 0', background: 'transparent', border: '1px solid var(--border-bright)', borderRadius: 8, color: 'var(--text)', fontSize: 13, cursor: 'pointer', textDecoration: 'none' }}>WhatsApp PropSpot</a>
         </div>
       </div>
@@ -767,7 +791,7 @@ function App() {
             color: view === id ? 'var(--accent)' : 'var(--text-dim)',
           }}>{label}</button>
         ))}
-        <a href="/properties" style={{ padding: '5px 12px', borderRadius: 6, fontSize: 12, fontWeight: 500, border: '1px solid transparent', color: 'var(--text-dim)', textDecoration: 'none' }}>Properties</a>
+        <a href={propertiesPageUrl()} style={{ padding: '5px 12px', borderRadius: 6, fontSize: 12, fontWeight: 500, border: '1px solid transparent', color: 'var(--text-dim)', textDecoration: 'none' }}>Properties</a>
         <div style={{ flex: 1 }} />
         <div style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 11, color: 'var(--text-muted)', fontFamily: 'var(--font-mono)', whiteSpace: 'nowrap' }}>
           <div style={{ width: 6, height: 6, borderRadius: '50%', background: '#4ade80', animation: 'blink 2s ease infinite', boxShadow: '0 0 6px #4ade80' }} />LIVE DATA

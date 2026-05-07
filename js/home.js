@@ -4,8 +4,8 @@ import {
   uniqueCorridors,
   getFairEntry,
   getPropSpotScore,
-  formatSqft,
   getWhatsappUrl,
+  projectPageUrl,
 } from "./shared.js";
 
 const elements = {
@@ -94,7 +94,7 @@ function renderPreview() {
     )
     .join("");
   elements.previewCopy.textContent = `${score.label}. Open the full page to review location intelligence, builder risk, approvals, tracker, comparison, and EMI.`;
-  elements.openProjectButton.href = `/projects/${project.slug}`;
+  elements.openProjectButton.href = projectPageUrl(project.slug);
   elements.previewWhatsappButton.href = getWhatsappUrl(project);
 }
 
