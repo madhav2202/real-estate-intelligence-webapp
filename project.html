@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project | PropSpot Plinth</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/plinth-shell.css" />
+    <link rel="stylesheet" href="/project-shell.css" />
+  </head>
+  <body>
+    <main class="project-shell">
+      <header class="project-topbar">
+        <a class="project-brand" href="/map">
+          <span>PropSpot</span>
+          <strong>Plinth</strong>
+        </a>
+        <nav class="project-nav">
+          <a href="/map">Map</a>
+          <a href="/terminal">Terminal</a>
+          <a href="/properties">Properties</a>
+        </nav>
+      </header>
+
+      <section class="project-hero" id="projectHero">
+        <img id="projectImage" alt="" />
+        <div class="project-hero-copy">
+          <p class="plinth-eyebrow" id="projectCode">--</p>
+          <h1 id="projectName">Loading project</h1>
+          <span class="project-meta" id="projectMeta">--</span>
+          <div class="hero-inline-actions">
+            <a class="secondary-btn" id="projectWhatsapp" href="#" target="_blank" rel="noreferrer">WhatsApp</a>
+            <a class="secondary-btn" href="https://calendly.com/prop_spot/30min" target="_blank" rel="noreferrer">Book Call</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="decision-row">
+        <article class="decision-card">
+          <span>Builder Current Sale Price <button class="info-dot" type="button" title="The current builder asking price per square foot based on the latest underlying pricing data available in PropSpot Plinth.">i</button></span>
+          <strong id="builderPrice">--</strong>
+          <p id="builderPriceSubtext">--</p>
+        </article>
+        <article class="decision-card">
+          <span>Fair Entry Range <button class="info-dot" type="button" title="An algorithmic PropSpot entry range based on the underlying builder price and current working pricing logic. For now it runs from 98% of the builder price up to the builder price.">i</button></span>
+          <strong id="fairEntry">--</strong>
+          <p>Current MVP range</p>
+        </article>
+        <article class="decision-card">
+          <span>PropSpot Score <button class="info-dot" type="button" title="An algorithmic internal PropSpot score using the current underlying inputs available for location quality, builder credibility, and price position versus the micro-market.">i</button></span>
+          <strong id="propspotScore">--</strong>
+          <p id="propspotLabel">--</p>
+        </article>
+      </section>
+
+      <section class="project-layout">
+        <div class="project-main">
+          <section class="surface-card snapshot-card">
+            <div class="section-head">
+              <h2>Project Snapshot</h2>
+              <span id="projectStage">--</span>
+            </div>
+            <div class="snapshot-grid" id="snapshotGrid"></div>
+          </section>
+
+          <div class="intelligence-grid intelligence-grid-priority">
+            <section class="surface-card feature-card">
+              <div class="section-head">
+                <h2>Entry Price Stack <button class="info-dot" type="button" title="An algorithmic price view built from the underlying builder price and current fair-entry model. It shows where the current ask sits relative to PropSpot's working entry band.">i</button></h2>
+                <span id="priceStackSignal">--</span>
+              </div>
+              <div class="price-stack-head">
+                <strong id="priceStackHeadline">--</strong>
+                <span id="priceStackSubline">--</span>
+              </div>
+              <div class="bar-stack" id="priceBars"></div>
+            </section>
+
+            <section class="surface-card feature-card location-card">
+              <div class="section-head">
+                <h2>Location Maturity <button class="info-dot" type="button" title="An algorithmic location view based on the underlying commute, social infrastructure, future upside, and local risk signals available in the project data.">i</button></h2>
+                <span id="locationScore">--</span>
+              </div>
+              <p class="section-note">A practical read on how livable, connected, and future-ready the location already feels for an end buyer.</p>
+              <div class="dual-metric-grid">
+                <div class="mini-metric-block">
+                  <span>Commute</span>
+                  <strong id="commuteValue">--</strong>
+                </div>
+                <div class="mini-metric-block">
+                  <span>Maturity</span>
+                  <strong id="maturityValue">--</strong>
+                </div>
+              </div>
+              <div class="quad-list-grid">
+                <div>
+                  <h3>Connectivity</h3>
+                  <ul class="detail-list location-list" id="connectivityList"></ul>
+                </div>
+                <div>
+                  <h3>Social Infra</h3>
+                  <ul class="detail-list location-list" id="socialList"></ul>
+                </div>
+                <div>
+                  <h3>Infra Upside</h3>
+                  <ul class="detail-list location-list" id="infraList"></ul>
+                </div>
+                <div>
+                  <h3>Local Risks</h3>
+                  <ul class="detail-list location-list" id="riskList"></ul>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <section class="surface-card">
+            <div class="section-head">
+              <h2>EMI Calculator</h2>
+              <span>Live</span>
+            </div>
+            <div class="emi-grid">
+              <label class="field">
+                <span>Down Payment (Cr)</span>
+                <input id="downPaymentInput" type="number" min="0" step="0.1" value="1" />
+              </label>
+              <label class="field">
+                <span>Interest Rate (%)</span>
+                <input id="interestRateInput" type="number" min="1" step="0.1" value="8.5" />
+              </label>
+              <label class="field">
+                <span>Tenure (Years)</span>
+                <input id="tenureInput" type="number" min="1" step="1" value="20" />
+              </label>
+            </div>
+            <div class="emi-output">
+              <span>Estimated EMI</span>
+              <strong id="emiValue">--</strong>
+              <p id="emiNote">Calculated using builder current sale price minus down payment.</p>
+            </div>
+          </section>
+
+          <section class="surface-card">
+            <div class="section-head">
+              <h2>Project Comparison</h2>
+              <span id="compareCount">3 selected</span>
+            </div>
+            <div class="compare-select-grid">
+              <label class="field">
+                <span>Project 1</span>
+                <select id="compareSelect1"></select>
+              </label>
+              <label class="field">
+                <span>Project 2</span>
+                <select id="compareSelect2"></select>
+              </label>
+              <label class="field">
+                <span>Project 3</span>
+                <select id="compareSelect3"></select>
+              </label>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Project</th>
+                    <th>Ticket</th>
+                    <th>Rs/sqft</th>
+                    <th>PropSpot</th>
+                    <th>Entry Signal</th>
+                    <th>Absorption</th>
+                    <th>Location</th>
+                    <th>Builder Risk</th>
+                  </tr>
+                </thead>
+                <tbody id="compareTable"></tbody>
+              </table>
+            </div>
+          </section>
+
+          <div class="intelligence-grid">
+            <section class="surface-card feature-card">
+              <div class="section-head">
+                <h2>Builder Risk <button class="info-dot" type="button" title="An algorithmic builder confidence proxy using the current PropSpot builder bucket plus any builder diligence rows already available in the underlying data.">i</button></h2>
+                <span id="builderRiskScore">--/10</span>
+              </div>
+              <ul class="detail-list" id="builderRiskList"></ul>
+            </section>
+
+            <section class="surface-card feature-card">
+              <div class="section-head">
+                <h2>Why This Score? <button class="info-dot" type="button" title="A factor-level view of the algorithmic PropSpot Score, using the underlying location, price, builder, approval-readiness, and launch data currently available.">i</button></h2>
+                <span>Breakdown</span>
+              </div>
+              <div class="score-breakdown" id="scoreBreakdown"></div>
+            </section>
+
+            <section class="surface-card feature-card">
+              <div class="section-head">
+                <h2>Construction / Launch Tracker</h2>
+                <span id="trackerSignal">--</span>
+              </div>
+              <ul class="detail-list" id="trackerList"></ul>
+            </section>
+
+            <section class="surface-card feature-card">
+              <div class="section-head">
+                <h2>Payment / Inventory <button class="info-dot" type="button" title="A live operating view built from the current launch data available for payment visibility, released inventory, absorption, and supply pressure.">i</button></h2>
+                <span id="inventoryPressure">--</span>
+              </div>
+              <ul class="detail-list" id="paymentInventoryList"></ul>
+            </section>
+
+            <section class="surface-card feature-card">
+              <div class="section-head">
+                <h2>AI Project Analyst</h2>
+                <span>Launch grounded</span>
+              </div>
+              <div class="analyst-box" id="analystAnswer"></div>
+              <form class="analyst-form" id="analystForm">
+                <input id="analystQuestion" type="text" placeholder="Ask if you should enter, wait, compare, or check price" />
+                <button class="secondary-btn" type="submit">Ask</button>
+              </form>
+              <div class="prompt-row">
+                <button class="ghost-btn small-btn" type="button" data-question="Should I enter now?">Enter now?</button>
+                <button class="ghost-btn small-btn" type="button" data-question="How does builder price compare to fair entry?">Price check</button>
+                <button class="ghost-btn small-btn" type="button" data-question="How is the builder risk looking here?">Builder risk</button>
+                <button class="ghost-btn small-btn" type="button" data-question="Compare this with similar launches">Compare</button>
+              </div>
+            </section>
+
+            <section class="surface-card feature-card">
+              <div class="section-head">
+                <h2>Project Brief</h2>
+                <span>Shareable brief</span>
+              </div>
+              <div class="brief-output" id="projectBrief"></div>
+              <button class="secondary-btn" id="copyBriefButton" type="button">Copy Brief</button>
+            </section>
+          </div>
+        </div>
+
+        <aside class="project-sidebar">
+          <section class="surface-card">
+            <div class="section-head">
+              <h2>Connect with PropSpot</h2>
+              <span>Lead form</span>
+            </div>
+            <form id="leadForm" class="lead-form">
+              <label class="field">
+                <span>Name *</span>
+                <input name="name" required />
+              </label>
+              <label class="field">
+                <span>Phone *</span>
+                <input name="phone" required />
+              </label>
+              <label class="field">
+                <span>Email *</span>
+                <input type="email" name="email" required />
+              </label>
+              <label class="field">
+                <span>Budget</span>
+                <input name="budget" />
+              </label>
+              <label class="field">
+                <span>Buying Timeline</span>
+                <input name="timeline" />
+              </label>
+              <label class="field">
+                <span>Preferred Location</span>
+                <input name="preferredLocation" />
+              </label>
+              <label class="field">
+                <span>Notes</span>
+                <textarea name="notes" rows="4"></textarea>
+              </label>
+              <button class="primary-btn" type="submit">Request Expert Help</button>
+            </form>
+            <p class="status-copy" id="leadStatus">We’ll route this to PropSpot and email it through.</p>
+            <div class="stack-actions">
+              <a class="secondary-btn" href="https://calendly.com/prop_spot/30min" target="_blank" rel="noreferrer">Book on Calendly</a>
+              <a class="secondary-btn" id="sidebarWhatsapp" href="#" target="_blank" rel="noreferrer">WhatsApp PropSpot</a>
+            </div>
+          </section>
+
+          <section class="surface-card">
+            <div class="section-head">
+              <h2>Builder Credibility</h2>
+              <span id="builderGrade">--</span>
+            </div>
+            <p class="status-copy" id="builderGradeCopy">This grade is based on the current PropSpot builder bucket and will evolve as more diligence data is added.</p>
+          </section>
+        </aside>
+      </section>
+    </main>
+
+    <script type="module" src="/js/project.js"></script>
+  </body>
+</html>

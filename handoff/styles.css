@@ -1,0 +1,99 @@
+/* ─────────────────────────────────────────────────────────────────────
+   PLINTH · Decision Intelligence — Design System
+   Drop into your existing app's stylesheet. Variables can be overridden
+   from any consuming theme.
+   ───────────────────────────────────────────────────────────────────── */
+
+:root {
+  /* Layered surfaces (dark luxury) */
+  --bg:  #08080d;
+  --bg2: #0f0f18;
+  --bg3: #14141f;
+  --bg4: #1a1a28;
+
+  /* Borders / dividers */
+  --border: rgba(255, 255, 255, 0.07);
+  --border-bright: rgba(255, 255, 255, 0.14);
+
+  /* Text */
+  --text: #e8e6f0;
+  --text-dim: rgba(232, 230, 240, 0.5);
+  --text-muted: rgba(232, 230, 240, 0.28);
+
+  /* Brand — violet accent */
+  --accent: #7c6af5;
+  --accent-glow: rgba(124, 106, 245, 0.30);
+  --accent-dim:  rgba(124, 106, 245, 0.15);
+
+  /* Signal palette */
+  --amber: #f5a623;
+  --amber-dim: rgba(245, 166, 35, 0.15);
+  --green: #4ade80;
+  --green-dim: rgba(74, 222, 128, 0.12);
+  --red:   #f87171;
+  --red-dim:   rgba(248, 113, 113, 0.12);
+
+  /* Type stack */
+  --font-display: 'DM Serif Display', Georgia, serif;
+  --font-body:    'DM Sans', system-ui, -apple-system, sans-serif;
+  --font-mono:    'DM Mono', ui-monospace, Menlo, monospace;
+
+  /* Radii / shadow */
+  --r-sm: 4px;
+  --r-md: 8px;
+  --r-lg: 12px;
+  --shadow-glow-accent: 0 0 20px var(--accent-glow);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  width: 100%; height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root { width: 100%; height: 100%; }
+
+/* Fine-grain custom scrollbar */
+::-webkit-scrollbar              { width: 4px; height: 4px; }
+::-webkit-scrollbar-track        { background: transparent; }
+::-webkit-scrollbar-thumb        { background: var(--border-bright); border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover  { background: var(--text-muted); }
+
+/* ───── Animations ───── */
+@keyframes fadeUp     { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeIn     { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slideRight { from { opacity: 0; transform: translateX(-20px); } to { opacity: 1; transform: translateX(0); } }
+@keyframes slideLeft  { from { opacity: 0; transform: translateX(20px); }  to { opacity: 1; transform: translateX(0); } }
+@keyframes ticker     { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@keyframes pulse-glow { 0%,100% { box-shadow: 0 0 0 0 var(--accent-glow); } 50% { box-shadow: 0 0 20px 4px var(--accent-glow); } }
+@keyframes shimmer    { 0% { background-position: -200% center; } 100% { background-position: 200% center; } }
+@keyframes blink      { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+
+/* ───── Utility primitives ───── */
+.plinth-card {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+}
+.plinth-mono { font-family: var(--font-mono); }
+.plinth-display { font-family: var(--font-display); }
+.plinth-eyebrow {
+  font-size: 9px;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.plinth-glow-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  display: inline-block;
+}
+.plinth-glow-dot--live {
+  background: var(--green);
+  box-shadow: 0 0 6px var(--green);
+  animation: blink 2s ease infinite;
+}

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Properties | PropSpot Plinth</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/plinth-shell.css" />
+    <link rel="stylesheet" href="/properties-shell.css" />
+  </head>
+  <body>
+    <main class="properties-shell">
+      <header class="properties-topbar">
+        <a class="properties-brand" href="/map">
+          <span>PropSpot</span>
+          <strong>Plinth</strong>
+        </a>
+        <nav class="properties-nav">
+          <a href="/map">Map</a>
+          <a href="/terminal">Terminal</a>
+          <a href="/properties" class="active">Properties</a>
+        </nav>
+      </header>
+
+      <section class="properties-hero">
+        <div>
+          <p class="plinth-eyebrow">Published Launches</p>
+          <h1>Browse every launch in one calm, searchable list.</h1>
+          <p>Scan the current inventory by corridor, stage, and price, then jump into the full intelligence page when something looks worth deeper work.</p>
+        </div>
+        <div class="properties-hero-stats">
+          <div class="properties-stat-box">
+            <span>View</span>
+            <strong>Property List</strong>
+          </div>
+          <div class="properties-stat-box">
+            <span>Focus</span>
+            <strong>Fast scanning</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="properties-toolbar">
+        <label class="properties-field">
+          <span>Search</span>
+          <input id="searchInput" type="search" placeholder="Project, developer, corridor" />
+        </label>
+        <label class="properties-field">
+          <span>Budget</span>
+          <select id="budgetFilter">
+            <option value="all">All budgets</option>
+            <option value="under2">Under 2 Cr</option>
+            <option value="2to4">2-4 Cr</option>
+            <option value="above4">Above 4 Cr</option>
+          </select>
+        </label>
+        <label class="properties-field">
+          <span>Stage</span>
+          <select id="stageFilter">
+            <option value="all">All launch stages</option>
+            <option value="Upcoming">Upcoming</option>
+            <option value="New Launch">New Launch</option>
+            <option value="Under Construction">Under Construction</option>
+          </select>
+        </label>
+        <label class="properties-field">
+          <span>Corridor</span>
+          <select id="corridorFilter">
+            <option value="all">All corridors</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="properties-board">
+        <div class="properties-board-head">
+          <h2>All Projects</h2>
+          <span id="resultCount">0 projects</span>
+        </div>
+        <div class="properties-list" id="projectList"></div>
+      </section>
+    </main>
+
+    <script type="module" src="/js/properties.js"></script>
+  </body>
+</html>
