@@ -20,13 +20,26 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Watch closely",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "B grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "AIPL (Advance India Projects Limited) does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -147,7 +160,40 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "GGM/1019/751/2025/122",
     "reraPossession": "Jun 2033",
-    "builderRiskScoreLabel": null,
+    "builderRiskScoreLabel": "7.4/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-AIPL",
+      "builderName": "AIPL (Advance India Projects Limited)",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "AIPL (Advance India Projects Limited) does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "B",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.4,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "B grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
     "reraDetails": {
       "reraProjectName": "RIVIERA AT AIPL LAKE CITY",
       "reraRegistrationNo": "RERA-GRG-2085-2025",
@@ -191,13 +237,34 @@ window.__PROJECTS__ = [
     "bestFor": "End Use",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Needs caution",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "B grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "3,770 Crore (up 41.6% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "2.74 / 3.56"
+        ],
+        [
+          "Finance signal",
+          "Mixed"
         ]
-      ]
+      ],
+      "summary": "Ashiana Housing Ltd is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at 2.74 and ROCE at 3.56."
     },
     "approvals": [
       [
@@ -326,9 +393,70 @@ window.__PROJECTS__ = [
     "latitude": 28.3905,
     "longitude": 76.9495,
     "published": true,
-    "reraNumber": "",
-    "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "reraNumber": "RERA-GRG-2134-2025",
+    "reraPossession": "2033-10-31",
+    "builderRiskScoreLabel": "6.1/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-ASH",
+      "builderName": "Ashiana Housing Ltd",
+      "listed": true,
+      "financeProvider": "Screener",
+      "financeUrl": "https://www.screener.in/company/ASHIANA/",
+      "summary": "Ashiana Housing Ltd is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at 2.74 and ROCE at 3.56.",
+      "gradeBucket": "B",
+      "financialStress": "Elevated stress",
+      "financialStressScore": 6.1,
+      "publicRiskSignal": "Needs caution",
+      "metrics": {
+        "marketCap": "3,770 Crore (up 41.6% in 1 year)",
+        "revenue": "962 Cr",
+        "profit": "122 Cr",
+        "promoterHolding": "61.1%",
+        "currentPrice": "\u20b9 375",
+        "highLow": "\u20b9 389",
+        "stockPE": "31.0",
+        "bookValue": "\u20b9 79.1",
+        "dividendYield": "0.67",
+        "roce": "3.56",
+        "roe": "2.74"
+      },
+      "pros": [
+        "Company is expected to give good quarter",
+        "Company has delivered good profit growth of 28.2% CAGR over last 5 years",
+        "Company has been maintaining a healthy dividend payout of 39.8%"
+      ],
+      "cons": [
+        "Stock is trading at 4.74 times its book value",
+        "Company has a low return on equity of 5.43% over last 3 years.",
+        "Earnings include an other income of Rs.46.5 Cr."
+      ],
+      "rows": [
+        [
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "B grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "3,770 Crore (up 41.6% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "2.74 / 3.56"
+        ],
+        [
+          "Finance signal",
+          "Mixed"
+        ]
+      ]
+    },
     "reraDetails": {
       "reraProjectName": "ASHIANA AAROHAM PHASE II",
       "reraRegistrationNo": "RERA-GRG-2134-2025",
@@ -372,13 +500,34 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Watch closely",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "6,670 Crore (up 5.82% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "2.39 / 3.22"
+        ],
+        [
+          "Finance signal",
+          "Balance sheet reads lighter"
         ]
-      ]
+      ],
+      "summary": "Max Estates Limited is a listed developer tracked via Screener. Current financial read is moderate stress with ROE at 2.39 and ROCE at 3.22."
     },
     "approvals": [
       [
@@ -509,7 +658,71 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "87 of 2024",
     "reraPossession": "2029",
-    "builderRiskScoreLabel": null,
+    "builderRiskScoreLabel": "6.8/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-MAX",
+      "builderName": "Max Estates Limited",
+      "listed": true,
+      "financeProvider": "Screener",
+      "financeUrl": "https://www.screener.in/company/MAXESTATES/",
+      "summary": "Max Estates Limited is a listed developer tracked via Screener. Current financial read is moderate stress with ROE at 2.39 and ROCE at 3.22.",
+      "gradeBucket": "A",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 6.8,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {
+        "marketCap": "6,670 Crore (up 5.82% in 1 year)",
+        "revenue": "52.1 Cr",
+        "profit": "70.8 Cr",
+        "promoterHolding": "45.3%",
+        "currentPrice": "\u20b9 408",
+        "highLow": "\u20b9 564",
+        "stockPE": "94.2",
+        "bookValue": "\u20b9 148",
+        "dividendYield": "0.00",
+        "roce": "3.22",
+        "roe": "2.39"
+      },
+      "pros": [
+        "Company has reduced debt.",
+        "Company is almost debt free.",
+        "Company is expected to give good quarter",
+        "Company has delivered good profit growth of 40.3% CAGR over last 5 years"
+      ],
+      "cons": [
+        "Stock is trading at 2.75 times its book value",
+        "Though the company is reporting repeated profits, it is not paying out dividend",
+        "Company has a low return on equity of 2.25% over last 3 years.",
+        "Earnings include an other income of Rs.129 Cr.",
+        "Company has high debtors of 187 days."
+      ],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "6,670 Crore (up 5.82% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "2.39 / 3.22"
+        ],
+        [
+          "Finance signal",
+          "Balance sheet reads lighter"
+        ]
+      ]
+    },
     "reraDetails": {
       "reraProjectName": "Max Estate 361 (Antara 361)",
       "reraRegistrationNo": "RERA-GRG-2093-2025",
@@ -553,13 +766,34 @@ window.__PROJECTS__ = [
     "bestFor": "Rental Yield",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Watch closely",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "6,670 Crore (up 5.82% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "2.39 / 3.22"
+        ],
+        [
+          "Finance signal",
+          "Balance sheet reads lighter"
         ]
-      ]
+      ],
+      "summary": "Max Estates Limited is a listed developer tracked via Screener. Current financial read is moderate stress with ROE at 2.39 and ROCE at 3.22."
     },
     "approvals": [
       [
@@ -690,7 +924,71 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "",
     "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "builderRiskScoreLabel": "6.8/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-MAX",
+      "builderName": "Max Estates Limited",
+      "listed": true,
+      "financeProvider": "Screener",
+      "financeUrl": "https://www.screener.in/company/MAXESTATES/",
+      "summary": "Max Estates Limited is a listed developer tracked via Screener. Current financial read is moderate stress with ROE at 2.39 and ROCE at 3.22.",
+      "gradeBucket": "A",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 6.8,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {
+        "marketCap": "6,670 Crore (up 5.82% in 1 year)",
+        "revenue": "52.1 Cr",
+        "profit": "70.8 Cr",
+        "promoterHolding": "45.3%",
+        "currentPrice": "\u20b9 408",
+        "highLow": "\u20b9 564",
+        "stockPE": "94.2",
+        "bookValue": "\u20b9 148",
+        "dividendYield": "0.00",
+        "roce": "3.22",
+        "roe": "2.39"
+      },
+      "pros": [
+        "Company has reduced debt.",
+        "Company is almost debt free.",
+        "Company is expected to give good quarter",
+        "Company has delivered good profit growth of 40.3% CAGR over last 5 years"
+      ],
+      "cons": [
+        "Stock is trading at 2.75 times its book value",
+        "Though the company is reporting repeated profits, it is not paying out dividend",
+        "Company has a low return on equity of 2.25% over last 3 years.",
+        "Earnings include an other income of Rs.129 Cr.",
+        "Company has high debtors of 187 days."
+      ],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "6,670 Crore (up 5.82% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "2.39 / 3.22"
+        ],
+        [
+          "Finance signal",
+          "Balance sheet reads lighter"
+        ]
+      ]
+    },
     "reraDetails": {}
   },
   {
@@ -714,13 +1012,34 @@ window.__PROJECTS__ = [
     "bestFor": "End Use",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Watch closely",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "6,670 Crore (up 5.82% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "2.39 / 3.22"
+        ],
+        [
+          "Finance signal",
+          "Balance sheet reads lighter"
         ]
-      ]
+      ],
+      "summary": "Max Estates Limited is a listed developer tracked via Screener. Current financial read is moderate stress with ROE at 2.39 and ROCE at 3.22."
     },
     "approvals": [
       [
@@ -851,7 +1170,71 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "",
     "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "builderRiskScoreLabel": "6.8/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-MAX",
+      "builderName": "Max Estates Limited",
+      "listed": true,
+      "financeProvider": "Screener",
+      "financeUrl": "https://www.screener.in/company/MAXESTATES/",
+      "summary": "Max Estates Limited is a listed developer tracked via Screener. Current financial read is moderate stress with ROE at 2.39 and ROCE at 3.22.",
+      "gradeBucket": "A",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 6.8,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {
+        "marketCap": "6,670 Crore (up 5.82% in 1 year)",
+        "revenue": "52.1 Cr",
+        "profit": "70.8 Cr",
+        "promoterHolding": "45.3%",
+        "currentPrice": "\u20b9 408",
+        "highLow": "\u20b9 564",
+        "stockPE": "94.2",
+        "bookValue": "\u20b9 148",
+        "dividendYield": "0.00",
+        "roce": "3.22",
+        "roe": "2.39"
+      },
+      "pros": [
+        "Company has reduced debt.",
+        "Company is almost debt free.",
+        "Company is expected to give good quarter",
+        "Company has delivered good profit growth of 40.3% CAGR over last 5 years"
+      ],
+      "cons": [
+        "Stock is trading at 2.75 times its book value",
+        "Though the company is reporting repeated profits, it is not paying out dividend",
+        "Company has a low return on equity of 2.25% over last 3 years.",
+        "Earnings include an other income of Rs.129 Cr.",
+        "Company has high debtors of 187 days."
+      ],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "6,670 Crore (up 5.82% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "2.39 / 3.22"
+        ],
+        [
+          "Finance signal",
+          "Balance sheet reads lighter"
+        ]
+      ]
+    },
     "reraDetails": {}
   },
   {
@@ -875,13 +1258,26 @@ window.__PROJECTS__ = [
     "bestFor": "End Use",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Watch closely",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "B grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "Conscient Infrastructure does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -1012,7 +1408,40 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "",
     "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "builderRiskScoreLabel": "7.4/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-CON",
+      "builderName": "Conscient Infrastructure",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Conscient Infrastructure does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "B",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.4,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "B grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
     "reraDetails": {}
   },
   {
@@ -1036,13 +1465,34 @@ window.__PROJECTS__ = [
     "bestFor": "End Use",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Watch closely",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "B grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "845 Crore (up 11.1% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "7.89 / 10.4"
+        ],
+        [
+          "Finance signal",
+          "Mixed"
         ]
-      ]
+      ],
+      "summary": "Eldeco Infrastructure and Properties is a listed developer tracked via Screener. Current financial read is moderate stress with ROE at 7.89 and ROCE at 10.4."
     },
     "approvals": [
       [
@@ -1173,13 +1623,71 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "",
     "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "builderRiskScoreLabel": "7.4/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-ELD",
+      "builderName": "Eldeco Infrastructure and Properties",
+      "listed": true,
+      "financeProvider": "Screener",
+      "financeUrl": "https://www.screener.in/company/ELDEHSG/",
+      "summary": "Eldeco Infrastructure and Properties is a listed developer tracked via Screener. Current financial read is moderate stress with ROE at 7.89 and ROCE at 10.4.",
+      "gradeBucket": "B",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.4,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {
+        "marketCap": "845 Crore (up 11.1% in 1 year)",
+        "revenue": "136 Cr",
+        "profit": "28.3 Cr",
+        "promoterHolding": "54.8%",
+        "currentPrice": "\u20b9 860",
+        "highLow": "\u20b9 1,061",
+        "stockPE": "29.9",
+        "bookValue": "\u20b9 349",
+        "dividendYield": "1.05",
+        "roce": "10.4",
+        "roe": "7.89"
+      },
+      "pros": [
+        "Company has been maintaining a healthy dividend payout of 27.6%"
+      ],
+      "cons": [
+        "The company has delivered a poor sales growth of 5.76% over past five years.",
+        "Company has a low return on equity of 10.0% over last 3 years."
+      ],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "B grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "845 Crore (up 11.1% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "7.89 / 10.4"
+        ],
+        [
+          "Finance signal",
+          "Mixed"
+        ]
+      ]
+    },
     "reraDetails": {}
   },
   {
     "code": "GGM-53-753",
-    "name": "Godrej 7.5 53",
-    "slug": "godrej-7-5-53",
+    "name": "Godrej Samaris",
+    "slug": "godrej-samaris",
     "developer": "Godrej Properties Limited",
     "builderCode": "DEV-GODREJ",
     "location": "Sector 53, Golf Course Road, Gurugram",
@@ -1197,13 +1705,34 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Needs caution",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "56,434 Crore (down -6.34% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "2.04 / 3.36"
+        ],
+        [
+          "Finance signal",
+          "Low interest coverage flagged"
         ]
-      ]
+      ],
+      "summary": "Godrej Properties Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at 2.04 and ROCE at 3.36."
     },
     "approvals": [
       [
@@ -1334,7 +1863,69 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "",
     "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "builderRiskScoreLabel": "5.8/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-GODREJ",
+      "builderName": "Godrej Properties Limited",
+      "listed": true,
+      "financeProvider": "Screener",
+      "financeUrl": "https://www.screener.in/company/GODREJPROP/",
+      "summary": "Godrej Properties Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at 2.04 and ROCE at 3.36.",
+      "gradeBucket": "A",
+      "financialStress": "Elevated stress",
+      "financialStressScore": 5.8,
+      "publicRiskSignal": "Needs caution",
+      "metrics": {
+        "marketCap": "56,434 Crore (down -6.34% in 1 year)",
+        "revenue": "1,395 Cr",
+        "profit": "349 Cr",
+        "promoterHolding": "51.7%",
+        "currentPrice": "\u20b9 1,874",
+        "highLow": "\u20b9 2,506",
+        "stockPE": "157",
+        "bookValue": "\u20b9 591",
+        "dividendYield": "0.00",
+        "roce": "3.36",
+        "roe": "2.04"
+      },
+      "pros": [
+        "Debtor days have improved from 41.0 to 25.9 days.",
+        "Promoter holding has increased by 4.49% over last quarter."
+      ],
+      "cons": [
+        "Stock is trading at 3.17 times its book value",
+        "Company has low interest coverage ratio.",
+        "Company has a low return on equity of 4.05% over last 3 years.",
+        "Company might be capitalizing the interest cost",
+        "Earnings include an other income of Rs.1,973 Cr."
+      ],
+      "rows": [
+        [
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "56,434 Crore (down -6.34% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "2.04 / 3.36"
+        ],
+        [
+          "Finance signal",
+          "Low interest coverage flagged"
+        ]
+      ]
+    },
     "reraDetails": {}
   },
   {
@@ -1358,13 +1949,26 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Watch closely",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "B grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "Experion Developers Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -1495,7 +2099,40 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "",
     "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "builderRiskScoreLabel": "7.4/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-EXP",
+      "builderName": "Experion Developers Pvt Ltd",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Experion Developers Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "B",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.4,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "B grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
     "reraDetails": {}
   },
   {
@@ -1519,13 +2156,26 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Seems ok",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Low stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "Adani Realty does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -1654,9 +2304,42 @@ window.__PROJECTS__ = [
     "latitude": 28.5095,
     "longitude": 76.9665,
     "published": true,
-    "reraNumber": "",
-    "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "reraNumber": "RERA-GRG-2140-2025",
+    "reraPossession": "2031-12-31",
+    "builderRiskScoreLabel": "8.2/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-ADA",
+      "builderName": "Adani Realty",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Adani Realty does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "A",
+      "financialStress": "Low stress",
+      "financialStressScore": 8.2,
+      "publicRiskSignal": "Seems ok",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Low stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
     "reraDetails": {
       "reraProjectName": "Adani The MarQ",
       "reraRegistrationNo": "RERA-GRG-2140-2025",
@@ -1700,13 +2383,26 @@ window.__PROJECTS__ = [
     "bestFor": "End Use",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Seems ok",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Low stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "Birla Estates Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -1836,8 +2532,41 @@ window.__PROJECTS__ = [
     "longitude": 77.06,
     "published": true,
     "reraNumber": "GGM/914/646/2025/17",
-    "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "reraPossession": "2033-07-09",
+    "builderRiskScoreLabel": "8.2/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-BIR",
+      "builderName": "Birla Estates Pvt Ltd",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Birla Estates Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "A",
+      "financialStress": "Low stress",
+      "financialStressScore": 8.2,
+      "publicRiskSignal": "Seems ok",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Low stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
     "reraDetails": {
       "reraProjectName": "BIRLA ARIKA PHASE 2",
       "reraRegistrationNo": "RERA-GRG-2142-2025",
@@ -1862,8 +2591,8 @@ window.__PROJECTS__ = [
   },
   {
     "code": "GGM-63A-SOB",
-    "name": "Sobha 63A",
-    "slug": "sobha-63a",
+    "name": "Sobha Crescent",
+    "slug": "sobha-crescent",
     "developer": "Sobha Limited",
     "builderCode": "DEV-SOB",
     "location": "Sector 63A, Golf Course Extension, Gurugram",
@@ -1873,7 +2602,7 @@ window.__PROJECTS__ = [
     "priceCr": 5.5,
     "sqft": 1484,
     "priceSqft": 24000,
-    "units": 0,
+    "units": 336,
     "launched": 0,
     "sold": 0,
     "absorption": "Data pending",
@@ -1881,13 +2610,34 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Seems ok",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Low stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "15,242 Crore (up 16.4% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "6.61 / 9.55"
+        ],
+        [
+          "Finance signal",
+          "Mixed"
         ]
-      ]
+      ],
+      "summary": "Sobha Limited is a listed developer tracked via Screener. Current financial read is low stress with ROE at 6.61 and ROCE at 9.55."
     },
     "approvals": [
       [
@@ -2016,10 +2766,91 @@ window.__PROJECTS__ = [
     "latitude": 28.42,
     "longitude": 77.0985,
     "published": true,
-    "reraNumber": "",
-    "reraPossession": "",
-    "builderRiskScoreLabel": null,
-    "reraDetails": {}
+    "reraNumber": "RERA-GRG-2185-2026",
+    "reraPossession": "2033-03-31",
+    "builderRiskScoreLabel": "8.3/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-SOB",
+      "builderName": "Sobha Limited",
+      "listed": true,
+      "financeProvider": "Screener",
+      "financeUrl": "https://www.screener.in/company/SOBHA/",
+      "summary": "Sobha Limited is a listed developer tracked via Screener. Current financial read is low stress with ROE at 6.61 and ROCE at 9.55.",
+      "gradeBucket": "A",
+      "financialStress": "Low stress",
+      "financialStressScore": 8.3,
+      "publicRiskSignal": "Seems ok",
+      "metrics": {
+        "marketCap": "15,242 Crore (up 16.4% in 1 year)",
+        "revenue": "5,368 Cr",
+        "profit": "301 Cr",
+        "promoterHolding": "52.9%",
+        "currentPrice": "\u20b9 1,425",
+        "highLow": "\u20b9 1,732",
+        "stockPE": "50.6",
+        "bookValue": "\u20b9 439",
+        "dividendYield": "0.21",
+        "roce": "9.55",
+        "roe": "6.61"
+      },
+      "pros": [
+        "Company is expected to give good quarter",
+        "Company has delivered good profit growth of 35.7% CAGR over last 5 years",
+        "Company has been maintaining a healthy dividend payout of 37.0%"
+      ],
+      "cons": [
+        "Stock is trading at 3.25 times its book value",
+        "Company has a low return on equity of 4.47% over last 3 years.",
+        "Earnings include an other income of Rs.219 Cr."
+      ],
+      "rows": [
+        [
+          "Current view",
+          "Low stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "15,242 Crore (up 16.4% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "6.61 / 9.55"
+        ],
+        [
+          "Finance signal",
+          "Mixed"
+        ]
+      ]
+    },
+    "reraDetails": {
+      "reraProjectName": "SOBHA CRESCENT PHASE - 1",
+      "reraRegistrationNo": "RERA-GRG-2185-2026",
+      "projectAddress": "SECTOR 63A, VILLAGE BEHRAMPUR, GURUGRAM MANESAR URBAN COMPLEX",
+      "landArea": "4.960 Acre",
+      "totalLicensedLand": "11.9968 Acre",
+      "totalTowers": 2,
+      "totalUnits": 336,
+      "unitsSold": null,
+      "unitsAvailable": null,
+      "totalFloors": 40,
+      "launchPrice": 24000,
+      "currentPrice": 24000,
+      "configurations": "4 BHK3 BHK2 BHK",
+      "sizes": "1940 - 2966 sq.ft.",
+      "projectType": "NEW",
+      "projectSizeText": "2 Buildings - 336 units",
+      "startDate": "19-02-2026",
+      "completionDate": "2033-03-31",
+      "sourceUrl": "https://reratracker.com/sobha-crescent-phase-1-in-gurugram-by-sobha-limited-rtid5568"
+    }
   },
   {
     "code": "GGM-78-MON",
@@ -2042,13 +2873,26 @@ window.__PROJECTS__ = [
     "bestFor": "End Use",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Needs caution",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "C grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "Suncity Projects Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -2177,9 +3021,42 @@ window.__PROJECTS__ = [
     "latitude": 28.382,
     "longitude": 76.955,
     "published": true,
-    "reraNumber": "",
-    "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "reraNumber": "RERA-GRG-2100-2025",
+    "reraPossession": "2031-03-31",
+    "builderRiskScoreLabel": "6.2/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-SUN",
+      "builderName": "Suncity Projects Pvt Ltd",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Suncity Projects Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "C",
+      "financialStress": "Elevated stress",
+      "financialStressScore": 6.2,
+      "publicRiskSignal": "Needs caution",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "C grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
     "reraDetails": {
       "reraProjectName": "Suncity Monarch Residences",
       "reraRegistrationNo": "RERA-GRG-2100-2025",
@@ -2223,13 +3100,26 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Watch closely",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "BPTP Limited does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -2358,9 +3248,42 @@ window.__PROJECTS__ = [
     "latitude": 28.4185,
     "longitude": 77.076,
     "published": true,
-    "reraNumber": "",
-    "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "reraNumber": "RERA-GRG-2009-2025",
+    "reraPossession": "2032-10-31",
+    "builderRiskScoreLabel": "7.0/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-BPTP",
+      "builderName": "BPTP Limited",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "BPTP Limited does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "Unassigned",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.0,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
     "reraDetails": {
       "reraProjectName": "BPTP DOWNTOWN-66",
       "reraRegistrationNo": "RERA-GRG-2009-2025",
@@ -2404,13 +3327,34 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Seems ok",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Low stress"
+        ],
+        [
+          "Builder bucket",
+          "A+ grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "61,921 Crore (up 11.0% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "13.0 / 15.5"
+        ],
+        [
+          "Finance signal",
+          "Core return profile is healthier"
         ]
-      ]
+      ],
+      "summary": "Oberoi Realty Limited is a listed developer tracked via Screener. Current financial read is low stress with ROE at 13.0 and ROCE at 15.5."
     },
     "approvals": [
       [
@@ -2541,7 +3485,65 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "",
     "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "builderRiskScoreLabel": "9.2/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-OBE",
+      "builderName": "Oberoi Realty Limited",
+      "listed": true,
+      "financeProvider": "Screener",
+      "financeUrl": "https://www.screener.in/company/OBEROIRLTY/",
+      "summary": "Oberoi Realty Limited is a listed developer tracked via Screener. Current financial read is low stress with ROE at 13.0 and ROCE at 15.5.",
+      "gradeBucket": "A+",
+      "financialStress": "Low stress",
+      "financialStressScore": 9.2,
+      "publicRiskSignal": "Seems ok",
+      "metrics": {
+        "marketCap": "61,921 Crore (up 11.0% in 1 year)",
+        "revenue": "4,916 Cr",
+        "profit": "1,968 Cr",
+        "promoterHolding": "67.7%",
+        "currentPrice": "\u20b9 1,703",
+        "highLow": "\u20b9 2,006",
+        "stockPE": "31.2",
+        "bookValue": "\u20b9 443",
+        "dividendYield": "0.47",
+        "roce": "15.5",
+        "roe": "13.0"
+      },
+      "pros": [
+        "Company is expected to give good quarter"
+      ],
+      "cons": [
+        "Stock is trading at 3.85 times its book value",
+        "Company has a low return on equity of 12.2% over last 3 years."
+      ],
+      "rows": [
+        [
+          "Current view",
+          "Low stress"
+        ],
+        [
+          "Builder bucket",
+          "A+ grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "61,921 Crore (up 11.0% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "13.0 / 15.5"
+        ],
+        [
+          "Finance signal",
+          "Core return profile is healthier"
+        ]
+      ]
+    },
     "reraDetails": {}
   },
   {
@@ -2565,13 +3567,34 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Needs caution",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "56,434 Crore (down -6.34% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "2.04 / 3.36"
+        ],
+        [
+          "Finance signal",
+          "Low interest coverage flagged"
         ]
-      ]
+      ],
+      "summary": "Godrej Properties Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at 2.04 and ROCE at 3.36."
     },
     "approvals": [
       [
@@ -2700,9 +3723,71 @@ window.__PROJECTS__ = [
     "latitude": 28.44,
     "longitude": 77.1005,
     "published": true,
-    "reraNumber": "",
-    "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "reraNumber": "RERA-GRG-1967-2025",
+    "reraPossession": "2032-09-30",
+    "builderRiskScoreLabel": "5.8/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-GODREJ",
+      "builderName": "Godrej Properties Limited",
+      "listed": true,
+      "financeProvider": "Screener",
+      "financeUrl": "https://www.screener.in/company/GODREJPROP/",
+      "summary": "Godrej Properties Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at 2.04 and ROCE at 3.36.",
+      "gradeBucket": "A",
+      "financialStress": "Elevated stress",
+      "financialStressScore": 5.8,
+      "publicRiskSignal": "Needs caution",
+      "metrics": {
+        "marketCap": "56,434 Crore (down -6.34% in 1 year)",
+        "revenue": "1,395 Cr",
+        "profit": "349 Cr",
+        "promoterHolding": "51.7%",
+        "currentPrice": "\u20b9 1,874",
+        "highLow": "\u20b9 2,506",
+        "stockPE": "157",
+        "bookValue": "\u20b9 591",
+        "dividendYield": "0.00",
+        "roce": "3.36",
+        "roe": "2.04"
+      },
+      "pros": [
+        "Debtor days have improved from 41.0 to 25.9 days.",
+        "Promoter holding has increased by 4.49% over last quarter."
+      ],
+      "cons": [
+        "Stock is trading at 3.17 times its book value",
+        "Company has low interest coverage ratio.",
+        "Company has a low return on equity of 4.05% over last 3 years.",
+        "Company might be capitalizing the interest cost",
+        "Earnings include an other income of Rs.1,973 Cr."
+      ],
+      "rows": [
+        [
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "56,434 Crore (down -6.34% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "2.04 / 3.36"
+        ],
+        [
+          "Finance signal",
+          "Low interest coverage flagged"
+        ]
+      ]
+    },
     "reraDetails": {
       "reraProjectName": "GODREJ SORA",
       "reraRegistrationNo": "RERA-GRG-1967-2025",
@@ -2746,13 +3831,34 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Needs caution",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "56,434 Crore (down -6.34% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "2.04 / 3.36"
+        ],
+        [
+          "Finance signal",
+          "Low interest coverage flagged"
         ]
-      ]
+      ],
+      "summary": "Godrej Properties Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at 2.04 and ROCE at 3.36."
     },
     "approvals": [
       [
@@ -2883,7 +3989,69 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "GGM/870/602/2024/97",
     "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "builderRiskScoreLabel": "5.8/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-GODREJ",
+      "builderName": "Godrej Properties Limited",
+      "listed": true,
+      "financeProvider": "Screener",
+      "financeUrl": "https://www.screener.in/company/GODREJPROP/",
+      "summary": "Godrej Properties Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at 2.04 and ROCE at 3.36.",
+      "gradeBucket": "A",
+      "financialStress": "Elevated stress",
+      "financialStressScore": 5.8,
+      "publicRiskSignal": "Needs caution",
+      "metrics": {
+        "marketCap": "56,434 Crore (down -6.34% in 1 year)",
+        "revenue": "1,395 Cr",
+        "profit": "349 Cr",
+        "promoterHolding": "51.7%",
+        "currentPrice": "\u20b9 1,874",
+        "highLow": "\u20b9 2,506",
+        "stockPE": "157",
+        "bookValue": "\u20b9 591",
+        "dividendYield": "0.00",
+        "roce": "3.36",
+        "roe": "2.04"
+      },
+      "pros": [
+        "Debtor days have improved from 41.0 to 25.9 days.",
+        "Promoter holding has increased by 4.49% over last quarter."
+      ],
+      "cons": [
+        "Stock is trading at 3.17 times its book value",
+        "Company has low interest coverage ratio.",
+        "Company has a low return on equity of 4.05% over last 3 years.",
+        "Company might be capitalizing the interest cost",
+        "Earnings include an other income of Rs.1,973 Cr."
+      ],
+      "rows": [
+        [
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "56,434 Crore (down -6.34% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "2.04 / 3.36"
+        ],
+        [
+          "Finance signal",
+          "Low interest coverage flagged"
+        ]
+      ]
+    },
     "reraDetails": {}
   },
   {
@@ -2907,13 +4075,26 @@ window.__PROJECTS__ = [
     "bestFor": "End Use",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Watch closely",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "B grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "Experion Developers Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -3042,9 +4223,42 @@ window.__PROJECTS__ = [
     "latitude": 28.4175,
     "longitude": 77.047,
     "published": true,
-    "reraNumber": "",
-    "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "reraNumber": "RERA-GRG-1773-2024",
+    "reraPossession": "2032-12-31",
+    "builderRiskScoreLabel": "7.4/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-EXP",
+      "builderName": "Experion Developers Pvt Ltd",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Experion Developers Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "B",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.4,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "B grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
     "reraDetails": {
       "reraProjectName": "Experion The Trillion",
       "reraRegistrationNo": "RERA-GRG-1773-2024",
@@ -3088,13 +4302,26 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Watch closely",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "B grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "Shapoorji Pallonji Real Estate does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -3225,7 +4452,40 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "",
     "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "builderRiskScoreLabel": "7.4/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-SP",
+      "builderName": "Shapoorji Pallonji Real Estate",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Shapoorji Pallonji Real Estate does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "B",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.4,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "B grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
     "reraDetails": {}
   },
   {
@@ -3249,13 +4509,26 @@ window.__PROJECTS__ = [
     "bestFor": "End Use",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Watch closely",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "B grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "Krisumi Corporation does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -3384,9 +4657,42 @@ window.__PROJECTS__ = [
     "latitude": 28.4412,
     "longitude": 76.9392,
     "published": true,
-    "reraNumber": "",
-    "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "reraNumber": "RERA-GRG-1573-2024",
+    "reraPossession": "2029-12-31",
+    "builderRiskScoreLabel": "7.4/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-KRIS",
+      "builderName": "Krisumi Corporation",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Krisumi Corporation does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "B",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.4,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "B grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
     "reraDetails": {
       "reraProjectName": "Krisumi Waterfall Suites 2",
       "reraRegistrationNo": "RERA-GRG-1573-2024",
@@ -3430,13 +4736,26 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Watch closely",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "B grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "Krisumi Corporation does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -3567,8 +4886,61 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "GGM/812/544/2024/39",
     "reraPossession": "Dec 2029",
-    "builderRiskScoreLabel": null,
-    "reraDetails": {}
+    "builderRiskScoreLabel": "7.4/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-KRIS",
+      "builderName": "Krisumi Corporation",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Krisumi Corporation does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "B",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.4,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "B grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
+    "reraDetails": {
+      "reraProjectName": "KRISUMI WATERSIDE RESIDENCES",
+      "reraRegistrationNo": "RERA-GRG-1562-2024",
+      "projectAddress": "SECTOR- 36A, GURUGRAM, HARYANA",
+      "landArea": "5.0951 Acre",
+      "totalLicensedLand": "30.3813 Acre",
+      "totalTowers": 3,
+      "totalUnits": 612,
+      "unitsSold": null,
+      "unitsAvailable": null,
+      "totalFloors": 43,
+      "launchPrice": 21000,
+      "currentPrice": 23000,
+      "configurations": "2 BHK3 BHKPenthouse Duplex",
+      "sizes": "1740 - 7130 sq.ft.",
+      "projectType": "NEW",
+      "projectSizeText": "3 Buildings - 612 units",
+      "startDate": "21-02-2024",
+      "completionDate": "2029-10-14",
+      "sourceUrl": "https://reratracker.com/krisumi-waterside-residences-in-gurugram-by-krisumi-corporation-pvt-ltd-rtid3827"
+    }
   },
   {
     "code": "GGM-36A-KFR",
@@ -3591,13 +4963,26 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Watch closely",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "B grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "Krisumi Corporation does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -3728,8 +5113,61 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "GGM/945/677/2025/48",
     "reraPossession": "Jun 2031",
-    "builderRiskScoreLabel": null,
-    "reraDetails": {}
+    "builderRiskScoreLabel": "7.4/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-KRIS",
+      "builderName": "Krisumi Corporation",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Krisumi Corporation does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "B",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.4,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "B grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
+    "reraDetails": {
+      "reraProjectName": "Krisumi Waterside Residences The Forest Reserve Phase 1",
+      "reraRegistrationNo": "RERA-GRG-1886-2025",
+      "projectAddress": "B-5 Chirag Enclave Delhi-110048 India",
+      "landArea": "5.1743 Acre",
+      "totalLicensedLand": "33.3813 Acre",
+      "totalTowers": null,
+      "totalUnits": 542,
+      "unitsSold": null,
+      "unitsAvailable": null,
+      "totalFloors": 42,
+      "launchPrice": null,
+      "currentPrice": null,
+      "configurations": "",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "projectSizeText": "",
+      "startDate": "2026-04-21",
+      "completionDate": "",
+      "sourceUrl": "https://reratracker.com/krisumi-waterside-residences-the-forest-reserve-phase-1-in-gurugram-by-krisumi-corporation-pvt-ltd-rtid4305"
+    }
   },
   {
     "code": "GGM-104-PAL",
@@ -3744,7 +5182,7 @@ window.__PROJECTS__ = [
     "priceCr": 4.68,
     "sqft": 1730,
     "priceSqft": 16500,
-    "units": 0,
+    "units": 688,
     "launched": 0,
     "sold": 0,
     "absorption": "Data pending",
@@ -3752,13 +5190,26 @@ window.__PROJECTS__ = [
     "bestFor": "End Use",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Watch closely",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "Hero Realty (Hero Group) does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -3887,10 +5338,63 @@ window.__PROJECTS__ = [
     "latitude": 28.4975,
     "longitude": 76.977,
     "published": true,
-    "reraNumber": "",
+    "reraNumber": "RERA-GRG-1793-2024",
     "reraPossession": "",
-    "builderRiskScoreLabel": null,
-    "reraDetails": {}
+    "builderRiskScoreLabel": "7.0/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-HERO",
+      "builderName": "Hero Realty (Hero Group)",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Hero Realty (Hero Group) does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "Unassigned",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.0,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
+    "reraDetails": {
+      "reraProjectName": "Hero The Palatial Phase 1",
+      "reraRegistrationNo": "RERA-GRG-1793-2024",
+      "projectAddress": "29 A Friends Colony West East of Kailash Phase-1 South Delhi New Delhi 110065",
+      "landArea": "1.3980 Acre",
+      "totalLicensedLand": "11.0901 Acre",
+      "totalTowers": null,
+      "totalUnits": 688,
+      "unitsSold": null,
+      "unitsAvailable": null,
+      "totalFloors": 41,
+      "launchPrice": null,
+      "currentPrice": null,
+      "configurations": "",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "projectSizeText": "",
+      "startDate": "",
+      "completionDate": "",
+      "sourceUrl": "https://reratracker.com/hero-the-palatial-phase-1-in-gurugram-by-hero-realty-private-limited-rtid5135"
+    }
   },
   {
     "code": "GGM-86-SER",
@@ -3913,13 +5417,26 @@ window.__PROJECTS__ = [
     "bestFor": "End Use",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Seems ok",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Low stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "Emaar India Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -4048,10 +5565,63 @@ window.__PROJECTS__ = [
     "latitude": 28.375,
     "longitude": 76.94,
     "published": true,
-    "reraNumber": "",
-    "reraPossession": "",
-    "builderRiskScoreLabel": null,
-    "reraDetails": {}
+    "reraNumber": "RERA-GRG-2053-2025",
+    "reraPossession": "2032-09-30",
+    "builderRiskScoreLabel": "8.2/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-EMA",
+      "builderName": "Emaar India Ltd",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Emaar India Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "A",
+      "financialStress": "Low stress",
+      "financialStressScore": 8.2,
+      "publicRiskSignal": "Seems ok",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Low stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
+    "reraDetails": {
+      "reraProjectName": "Emaar Serenity Hills (Phase 2)",
+      "reraRegistrationNo": "RERA-GRG-2053-2025",
+      "projectAddress": "SECTOR 86, GURUGRAM, HARYANA",
+      "landArea": "7.213 Acre",
+      "totalLicensedLand": "25.90 Acre",
+      "totalTowers": null,
+      "totalUnits": null,
+      "unitsSold": null,
+      "unitsAvailable": null,
+      "totalFloors": null,
+      "launchPrice": null,
+      "currentPrice": null,
+      "configurations": "",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "projectSizeText": "",
+      "startDate": "25-09-2025",
+      "completionDate": "2032-09-30",
+      "sourceUrl": "https://reratracker.com/emaar-serenity-hills-phase-2-in-gurugram-by-emaar-india-limited-rtid5279"
+    }
   },
   {
     "code": "GGM-69-TRU",
@@ -4074,13 +5644,26 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Watch closely",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "Tribeca Creators LLP does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -4211,7 +5794,40 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "GGM/925/657/2025/28",
     "reraPossession": "Dec 2028",
-    "builderRiskScoreLabel": null,
+    "builderRiskScoreLabel": "7.0/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-TRI",
+      "builderName": "Tribeca Creators LLP",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Tribeca Creators LLP does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "Unassigned",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.0,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
     "reraDetails": {}
   },
   {
@@ -4235,13 +5851,26 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Watch closely",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "B grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "Elan Group does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -4370,9 +5999,42 @@ window.__PROJECTS__ = [
     "latitude": 28.426,
     "longitude": 77.092,
     "published": true,
-    "reraNumber": "",
-    "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "reraNumber": "RERA-GRG-2069-2025",
+    "reraPossession": "2033-09-30",
+    "builderRiskScoreLabel": "7.4/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-ELAN",
+      "builderName": "Elan Group",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Elan Group does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "B",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.4,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "B grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
     "reraDetails": {
       "reraProjectName": "ELAN THE STATEMENT",
       "reraRegistrationNo": "RERA-GRG-2069-2025",
@@ -4416,13 +6078,34 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Needs caution",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "56,434 Crore (down -6.34% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "2.04 / 3.36"
+        ],
+        [
+          "Finance signal",
+          "Low interest coverage flagged"
         ]
-      ]
+      ],
+      "summary": "Godrej Properties Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at 2.04 and ROCE at 3.36."
     },
     "approvals": [
       [
@@ -4553,7 +6236,69 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "GGM/846/578/2024/73",
     "reraPossession": "Jun 2031",
-    "builderRiskScoreLabel": null,
+    "builderRiskScoreLabel": "5.8/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-GODREJ",
+      "builderName": "Godrej Properties Limited",
+      "listed": true,
+      "financeProvider": "Screener",
+      "financeUrl": "https://www.screener.in/company/GODREJPROP/",
+      "summary": "Godrej Properties Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at 2.04 and ROCE at 3.36.",
+      "gradeBucket": "A",
+      "financialStress": "Elevated stress",
+      "financialStressScore": 5.8,
+      "publicRiskSignal": "Needs caution",
+      "metrics": {
+        "marketCap": "56,434 Crore (down -6.34% in 1 year)",
+        "revenue": "1,395 Cr",
+        "profit": "349 Cr",
+        "promoterHolding": "51.7%",
+        "currentPrice": "\u20b9 1,874",
+        "highLow": "\u20b9 2,506",
+        "stockPE": "157",
+        "bookValue": "\u20b9 591",
+        "dividendYield": "0.00",
+        "roce": "3.36",
+        "roe": "2.04"
+      },
+      "pros": [
+        "Debtor days have improved from 41.0 to 25.9 days.",
+        "Promoter holding has increased by 4.49% over last quarter."
+      ],
+      "cons": [
+        "Stock is trading at 3.17 times its book value",
+        "Company has low interest coverage ratio.",
+        "Company has a low return on equity of 4.05% over last 3 years.",
+        "Company might be capitalizing the interest cost",
+        "Earnings include an other income of Rs.1,973 Cr."
+      ],
+      "rows": [
+        [
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "56,434 Crore (down -6.34% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "2.04 / 3.36"
+        ],
+        [
+          "Finance signal",
+          "Low interest coverage flagged"
+        ]
+      ]
+    },
     "reraDetails": {}
   },
   {
@@ -4577,13 +6322,34 @@ window.__PROJECTS__ = [
     "bestFor": "End Use",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Needs caution",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "56,434 Crore (down -6.34% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "2.04 / 3.36"
+        ],
+        [
+          "Finance signal",
+          "Low interest coverage flagged"
         ]
-      ]
+      ],
+      "summary": "Godrej Properties Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at 2.04 and ROCE at 3.36."
     },
     "approvals": [
       [
@@ -4714,7 +6480,69 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "GGM/959/691/2025/62",
     "reraPossession": "Apr 2032",
-    "builderRiskScoreLabel": null,
+    "builderRiskScoreLabel": "5.8/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-GODREJ",
+      "builderName": "Godrej Properties Limited",
+      "listed": true,
+      "financeProvider": "Screener",
+      "financeUrl": "https://www.screener.in/company/GODREJPROP/",
+      "summary": "Godrej Properties Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at 2.04 and ROCE at 3.36.",
+      "gradeBucket": "A",
+      "financialStress": "Elevated stress",
+      "financialStressScore": 5.8,
+      "publicRiskSignal": "Needs caution",
+      "metrics": {
+        "marketCap": "56,434 Crore (down -6.34% in 1 year)",
+        "revenue": "1,395 Cr",
+        "profit": "349 Cr",
+        "promoterHolding": "51.7%",
+        "currentPrice": "\u20b9 1,874",
+        "highLow": "\u20b9 2,506",
+        "stockPE": "157",
+        "bookValue": "\u20b9 591",
+        "dividendYield": "0.00",
+        "roce": "3.36",
+        "roe": "2.04"
+      },
+      "pros": [
+        "Debtor days have improved from 41.0 to 25.9 days.",
+        "Promoter holding has increased by 4.49% over last quarter."
+      ],
+      "cons": [
+        "Stock is trading at 3.17 times its book value",
+        "Company has low interest coverage ratio.",
+        "Company has a low return on equity of 4.05% over last 3 years.",
+        "Company might be capitalizing the interest cost",
+        "Earnings include an other income of Rs.1,973 Cr."
+      ],
+      "rows": [
+        [
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "56,434 Crore (down -6.34% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "2.04 / 3.36"
+        ],
+        [
+          "Finance signal",
+          "Low interest coverage flagged"
+        ]
+      ]
+    },
     "reraDetails": {
       "reraProjectName": "GODREJ ALIRA",
       "reraRegistrationNo": "RERA-GRG-1943-2025",
@@ -4750,7 +6578,7 @@ window.__PROJECTS__ = [
     "priceCr": 0,
     "sqft": 688,
     "priceSqft": 30000,
-    "units": 892,
+    "units": 0,
     "launched": 0,
     "sold": 0,
     "absorption": "Data pending",
@@ -4758,13 +6586,26 @@ window.__PROJECTS__ = [
     "bestFor": "Rental Yield",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Watch closely",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "Central Park does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -4893,29 +6734,62 @@ window.__PROJECTS__ = [
     "latitude": 28.4965,
     "longitude": 76.9755,
     "published": true,
-    "reraNumber": "",
+    "reraNumber": "RERA-GRG-1945-2025",
     "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "builderRiskScoreLabel": "7.0/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-CP",
+      "builderName": "Central Park",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Central Park does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "Unassigned",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.0,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
     "reraDetails": {
-      "reraProjectName": "DELPHINE CENTRAL PARK ESTATES PHASE III",
-      "reraRegistrationNo": "RERA-GRG-2065-2025",
-      "projectAddress": "SECTOR-104, GURUGRAM",
-      "landArea": "2.606 Acre",
-      "totalLicensedLand": "7.8507 Acre",
-      "totalTowers": 6,
-      "totalUnits": 892,
+      "reraProjectName": "DESTINO CENTRAL PARK",
+      "reraRegistrationNo": "RERA-GRG-1945-2025",
+      "projectAddress": "4 KAUTILYA MARG NEW DELHI",
+      "landArea": "4.11 Acre",
+      "totalLicensedLand": "197.161 Acre",
+      "totalTowers": null,
+      "totalUnits": null,
       "unitsSold": null,
       "unitsAvailable": null,
-      "totalFloors": 39,
-      "launchPrice": 28000,
-      "currentPrice": 28000,
-      "configurations": "4 BHKStudios1 BHK3 BHK",
-      "sizes": "1027 - 5559 sq.ft.",
+      "totalFloors": null,
+      "launchPrice": null,
+      "currentPrice": null,
+      "configurations": "",
+      "sizes": "48x48",
       "projectType": "NEW",
-      "projectSizeText": "6 Buildings - 892 units",
-      "startDate": "16-09-2025",
-      "completionDate": "2032-11-30",
-      "sourceUrl": "https://reratracker.com/delphine-central-park-estates-phase-iii-in-gurugram-by-st-nicholas-estate-development-pvt-ltd-rtid5235"
+      "projectSizeText": "",
+      "startDate": "",
+      "completionDate": "",
+      "sourceUrl": "https://reratracker.com/destino-central-park-in-gurugram-by-st-patricks-realty-pvt-ltd-rtid5250"
     }
   },
   {
@@ -4939,13 +6813,26 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Needs caution",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "C grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "M3M India Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -5076,7 +6963,40 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "GGM/992/724/2025/95",
     "reraPossession": "Sep 2032",
-    "builderRiskScoreLabel": null,
+    "builderRiskScoreLabel": "6.2/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-M3M",
+      "builderName": "M3M India Pvt Ltd",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "M3M India Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "C",
+      "financialStress": "Elevated stress",
+      "financialStressScore": 6.2,
+      "publicRiskSignal": "Needs caution",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "C grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
     "reraDetails": {
       "reraProjectName": "M3M ELIE SAAB AT SCDA",
       "reraRegistrationNo": "RERA-GRG-2048-2025",
@@ -5120,13 +7040,26 @@ window.__PROJECTS__ = [
     "bestFor": "End Use",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Needs caution",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "C grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "Smartworld Developers does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -5257,7 +7190,40 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "",
     "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "builderRiskScoreLabel": "6.2/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-SMW",
+      "builderName": "Smartworld Developers",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Smartworld Developers does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "C",
+      "financialStress": "Elevated stress",
+      "financialStressScore": 6.2,
+      "publicRiskSignal": "Needs caution",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "C grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
     "reraDetails": {}
   },
   {
@@ -5281,13 +7247,34 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Needs caution",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "56,434 Crore (down -6.34% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "2.04 / 3.36"
+        ],
+        [
+          "Finance signal",
+          "Low interest coverage flagged"
         ]
-      ]
+      ],
+      "summary": "Godrej Properties Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at 2.04 and ROCE at 3.36."
     },
     "approvals": [
       [
@@ -5418,7 +7405,69 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "GGM/767/499/2023/111",
     "reraPossession": "Dec 2030",
-    "builderRiskScoreLabel": null,
+    "builderRiskScoreLabel": "5.8/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-GODREJ",
+      "builderName": "Godrej Properties Limited",
+      "listed": true,
+      "financeProvider": "Screener",
+      "financeUrl": "https://www.screener.in/company/GODREJPROP/",
+      "summary": "Godrej Properties Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at 2.04 and ROCE at 3.36.",
+      "gradeBucket": "A",
+      "financialStress": "Elevated stress",
+      "financialStressScore": 5.8,
+      "publicRiskSignal": "Needs caution",
+      "metrics": {
+        "marketCap": "56,434 Crore (down -6.34% in 1 year)",
+        "revenue": "1,395 Cr",
+        "profit": "349 Cr",
+        "promoterHolding": "51.7%",
+        "currentPrice": "\u20b9 1,874",
+        "highLow": "\u20b9 2,506",
+        "stockPE": "157",
+        "bookValue": "\u20b9 591",
+        "dividendYield": "0.00",
+        "roce": "3.36",
+        "roe": "2.04"
+      },
+      "pros": [
+        "Debtor days have improved from 41.0 to 25.9 days.",
+        "Promoter holding has increased by 4.49% over last quarter."
+      ],
+      "cons": [
+        "Stock is trading at 3.17 times its book value",
+        "Company has low interest coverage ratio.",
+        "Company has a low return on equity of 4.05% over last 3 years.",
+        "Company might be capitalizing the interest cost",
+        "Earnings include an other income of Rs.1,973 Cr."
+      ],
+      "rows": [
+        [
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "56,434 Crore (down -6.34% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "2.04 / 3.36"
+        ],
+        [
+          "Finance signal",
+          "Low interest coverage flagged"
+        ]
+      ]
+    },
     "reraDetails": {
       "reraProjectName": "GODREJ ARISTOCRAT",
       "reraRegistrationNo": "RERA-GRG-1480-2023",
@@ -5462,13 +7511,34 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Needs caution",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "56,434 Crore (down -6.34% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "2.04 / 3.36"
+        ],
+        [
+          "Finance signal",
+          "Low interest coverage flagged"
         ]
-      ]
+      ],
+      "summary": "Godrej Properties Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at 2.04 and ROCE at 3.36."
     },
     "approvals": [
       [
@@ -5599,7 +7669,69 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "GGM/799/531/2024/26",
     "reraPossession": "Dec 2028",
-    "builderRiskScoreLabel": null,
+    "builderRiskScoreLabel": "5.8/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-GODREJ",
+      "builderName": "Godrej Properties Limited",
+      "listed": true,
+      "financeProvider": "Screener",
+      "financeUrl": "https://www.screener.in/company/GODREJPROP/",
+      "summary": "Godrej Properties Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at 2.04 and ROCE at 3.36.",
+      "gradeBucket": "A",
+      "financialStress": "Elevated stress",
+      "financialStressScore": 5.8,
+      "publicRiskSignal": "Needs caution",
+      "metrics": {
+        "marketCap": "56,434 Crore (down -6.34% in 1 year)",
+        "revenue": "1,395 Cr",
+        "profit": "349 Cr",
+        "promoterHolding": "51.7%",
+        "currentPrice": "\u20b9 1,874",
+        "highLow": "\u20b9 2,506",
+        "stockPE": "157",
+        "bookValue": "\u20b9 591",
+        "dividendYield": "0.00",
+        "roce": "3.36",
+        "roe": "2.04"
+      },
+      "pros": [
+        "Debtor days have improved from 41.0 to 25.9 days.",
+        "Promoter holding has increased by 4.49% over last quarter."
+      ],
+      "cons": [
+        "Stock is trading at 3.17 times its book value",
+        "Company has low interest coverage ratio.",
+        "Company has a low return on equity of 4.05% over last 3 years.",
+        "Company might be capitalizing the interest cost",
+        "Earnings include an other income of Rs.1,973 Cr."
+      ],
+      "rows": [
+        [
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "56,434 Crore (down -6.34% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "2.04 / 3.36"
+        ],
+        [
+          "Finance signal",
+          "Low interest coverage flagged"
+        ]
+      ]
+    },
     "reraDetails": {
       "reraProjectName": "GODREJ ZENITH",
       "reraRegistrationNo": "RERA-GRG-1536-2024",
@@ -5643,13 +7775,34 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Needs caution",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "56,434 Crore (down -6.34% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "2.04 / 3.36"
+        ],
+        [
+          "Finance signal",
+          "Low interest coverage flagged"
         ]
-      ]
+      ],
+      "summary": "Godrej Properties Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at 2.04 and ROCE at 3.36."
     },
     "approvals": [
       [
@@ -5779,8 +7932,70 @@ window.__PROJECTS__ = [
     "longitude": 77.1045,
     "published": true,
     "reraNumber": "GGM/883/615/2024/110",
-    "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "reraPossession": "2031-10-16",
+    "builderRiskScoreLabel": "5.8/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-GODREJ",
+      "builderName": "Godrej Properties Limited",
+      "listed": true,
+      "financeProvider": "Screener",
+      "financeUrl": "https://www.screener.in/company/GODREJPROP/",
+      "summary": "Godrej Properties Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at 2.04 and ROCE at 3.36.",
+      "gradeBucket": "A",
+      "financialStress": "Elevated stress",
+      "financialStressScore": 5.8,
+      "publicRiskSignal": "Needs caution",
+      "metrics": {
+        "marketCap": "56,434 Crore (down -6.34% in 1 year)",
+        "revenue": "1,395 Cr",
+        "profit": "349 Cr",
+        "promoterHolding": "51.7%",
+        "currentPrice": "\u20b9 1,874",
+        "highLow": "\u20b9 2,506",
+        "stockPE": "157",
+        "bookValue": "\u20b9 591",
+        "dividendYield": "0.00",
+        "roce": "3.36",
+        "roe": "2.04"
+      },
+      "pros": [
+        "Debtor days have improved from 41.0 to 25.9 days.",
+        "Promoter holding has increased by 4.49% over last quarter."
+      ],
+      "cons": [
+        "Stock is trading at 3.17 times its book value",
+        "Company has low interest coverage ratio.",
+        "Company has a low return on equity of 4.05% over last 3 years.",
+        "Company might be capitalizing the interest cost",
+        "Earnings include an other income of Rs.1,973 Cr."
+      ],
+      "rows": [
+        [
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "56,434 Crore (down -6.34% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "2.04 / 3.36"
+        ],
+        [
+          "Finance signal",
+          "Low interest coverage flagged"
+        ]
+      ]
+    },
     "reraDetails": {
       "reraProjectName": "GODREJ ASTRA",
       "reraRegistrationNo": "RERA-GRG-1725-2024",
@@ -5824,13 +8039,34 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Seems ok",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Low stress"
+        ],
+        [
+          "Builder bucket",
+          "A+ grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "1,50,561 Crore (down -3.71% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "6.30 / 8.34"
+        ],
+        [
+          "Finance signal",
+          "Balance sheet reads lighter"
         ]
-      ]
+      ],
+      "summary": "DLF Homes (DLF Ltd) is a listed developer tracked via Screener. Current financial read is low stress with ROE at 6.30 and ROCE at 8.34."
     },
     "approvals": [
       [
@@ -5959,9 +8195,70 @@ window.__PROJECTS__ = [
     "latitude": 28.4215,
     "longitude": 77.0895,
     "published": true,
-    "reraNumber": "",
-    "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "reraNumber": "RERA-GRG-1138-2022",
+    "reraPossession": "2030-03-31",
+    "builderRiskScoreLabel": "9.1/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-DLF",
+      "builderName": "DLF Homes (DLF Ltd)",
+      "listed": true,
+      "financeProvider": "Screener",
+      "financeUrl": "https://www.screener.in/company/DLF/",
+      "summary": "DLF Homes (DLF Ltd) is a listed developer tracked via Screener. Current financial read is low stress with ROE at 6.30 and ROCE at 8.34.",
+      "gradeBucket": "A+",
+      "financialStress": "Low stress",
+      "financialStressScore": 9.1,
+      "publicRiskSignal": "Seems ok",
+      "metrics": {
+        "marketCap": "1,50,561 Crore (down -3.71% in 1 year)",
+        "revenue": "3,913 Cr",
+        "profit": "2,900 Cr",
+        "promoterHolding": "74.1%",
+        "currentPrice": "\u20b9 608",
+        "highLow": "\u20b9 888",
+        "stockPE": "55.1",
+        "bookValue": "\u20b9 117",
+        "dividendYield": "0.99",
+        "roce": "8.34",
+        "roe": "6.30"
+      },
+      "pros": [
+        "Company has reduced debt.",
+        "Company is almost debt free.",
+        "Company has been maintaining a healthy dividend payout of 78.6%"
+      ],
+      "cons": [
+        "Stock is trading at 5.20 times its book value",
+        "Company has a low return on equity of 6.21% over last 3 years.",
+        "Earnings include an other income of Rs.2,424 Cr."
+      ],
+      "rows": [
+        [
+          "Current view",
+          "Low stress"
+        ],
+        [
+          "Builder bucket",
+          "A+ grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "1,50,561 Crore (down -3.71% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "6.30 / 8.34"
+        ],
+        [
+          "Finance signal",
+          "Balance sheet reads lighter"
+        ]
+      ]
+    },
     "reraDetails": {
       "reraProjectName": "DLF THE ARBOUR",
       "reraRegistrationNo": "RERA-GRG-1138-2022",
@@ -6005,13 +8302,34 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Seems ok",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Low stress"
+        ],
+        [
+          "Builder bucket",
+          "A+ grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "1,50,561 Crore (down -3.71% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "6.30 / 8.34"
+        ],
+        [
+          "Finance signal",
+          "Balance sheet reads lighter"
         ]
-      ]
+      ],
+      "summary": "DLF Homes (DLF Ltd) is a listed developer tracked via Screener. Current financial read is low stress with ROE at 6.30 and ROCE at 8.34."
     },
     "approvals": [
       [
@@ -6142,7 +8460,68 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "GGM/772/504/2023/116",
     "reraPossession": "Jul 2029",
-    "builderRiskScoreLabel": null,
+    "builderRiskScoreLabel": "9.1/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-DLF",
+      "builderName": "DLF Homes (DLF Ltd)",
+      "listed": true,
+      "financeProvider": "Screener",
+      "financeUrl": "https://www.screener.in/company/DLF/",
+      "summary": "DLF Homes (DLF Ltd) is a listed developer tracked via Screener. Current financial read is low stress with ROE at 6.30 and ROCE at 8.34.",
+      "gradeBucket": "A+",
+      "financialStress": "Low stress",
+      "financialStressScore": 9.1,
+      "publicRiskSignal": "Seems ok",
+      "metrics": {
+        "marketCap": "1,50,561 Crore (down -3.71% in 1 year)",
+        "revenue": "3,913 Cr",
+        "profit": "2,900 Cr",
+        "promoterHolding": "74.1%",
+        "currentPrice": "\u20b9 608",
+        "highLow": "\u20b9 888",
+        "stockPE": "55.1",
+        "bookValue": "\u20b9 117",
+        "dividendYield": "0.99",
+        "roce": "8.34",
+        "roe": "6.30"
+      },
+      "pros": [
+        "Company has reduced debt.",
+        "Company is almost debt free.",
+        "Company has been maintaining a healthy dividend payout of 78.6%"
+      ],
+      "cons": [
+        "Stock is trading at 5.20 times its book value",
+        "Company has a low return on equity of 6.21% over last 3 years.",
+        "Earnings include an other income of Rs.2,424 Cr."
+      ],
+      "rows": [
+        [
+          "Current view",
+          "Low stress"
+        ],
+        [
+          "Builder bucket",
+          "A+ grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "1,50,561 Crore (down -3.71% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "6.30 / 8.34"
+        ],
+        [
+          "Finance signal",
+          "Balance sheet reads lighter"
+        ]
+      ]
+    },
     "reraDetails": {
       "reraProjectName": "DLF PRIVANA SOUTH",
       "reraRegistrationNo": "RERA-GRG-1406-2023",
@@ -6186,13 +8565,34 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Seems ok",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Low stress"
+        ],
+        [
+          "Builder bucket",
+          "A+ grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "1,50,561 Crore (down -3.71% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "6.30 / 8.34"
+        ],
+        [
+          "Finance signal",
+          "Balance sheet reads lighter"
         ]
-      ]
+      ],
+      "summary": "DLF Homes (DLF Ltd) is a listed developer tracked via Screener. Current financial read is low stress with ROE at 6.30 and ROCE at 8.34."
     },
     "approvals": [
       [
@@ -6322,8 +8722,69 @@ window.__PROJECTS__ = [
     "longitude": 76.9705,
     "published": true,
     "reraNumber": "GGM/954/686/2025/57",
-    "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "reraPossession": "2034-09-30",
+    "builderRiskScoreLabel": "9.1/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-DLF",
+      "builderName": "DLF Homes (DLF Ltd)",
+      "listed": true,
+      "financeProvider": "Screener",
+      "financeUrl": "https://www.screener.in/company/DLF/",
+      "summary": "DLF Homes (DLF Ltd) is a listed developer tracked via Screener. Current financial read is low stress with ROE at 6.30 and ROCE at 8.34.",
+      "gradeBucket": "A+",
+      "financialStress": "Low stress",
+      "financialStressScore": 9.1,
+      "publicRiskSignal": "Seems ok",
+      "metrics": {
+        "marketCap": "1,50,561 Crore (down -3.71% in 1 year)",
+        "revenue": "3,913 Cr",
+        "profit": "2,900 Cr",
+        "promoterHolding": "74.1%",
+        "currentPrice": "\u20b9 608",
+        "highLow": "\u20b9 888",
+        "stockPE": "55.1",
+        "bookValue": "\u20b9 117",
+        "dividendYield": "0.99",
+        "roce": "8.34",
+        "roe": "6.30"
+      },
+      "pros": [
+        "Company has reduced debt.",
+        "Company is almost debt free.",
+        "Company has been maintaining a healthy dividend payout of 78.6%"
+      ],
+      "cons": [
+        "Stock is trading at 5.20 times its book value",
+        "Company has a low return on equity of 6.21% over last 3 years.",
+        "Earnings include an other income of Rs.2,424 Cr."
+      ],
+      "rows": [
+        [
+          "Current view",
+          "Low stress"
+        ],
+        [
+          "Builder bucket",
+          "A+ grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "1,50,561 Crore (down -3.71% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "6.30 / 8.34"
+        ],
+        [
+          "Finance signal",
+          "Balance sheet reads lighter"
+        ]
+      ]
+    },
     "reraDetails": {
       "reraProjectName": "DLF PRIVANA NORTH",
       "reraRegistrationNo": "RERA-GRG-1781-2024",
@@ -6367,13 +8828,34 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Seems ok",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Low stress"
+        ],
+        [
+          "Builder bucket",
+          "A+ grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "1,50,561 Crore (down -3.71% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "6.30 / 8.34"
+        ],
+        [
+          "Finance signal",
+          "Balance sheet reads lighter"
         ]
-      ]
+      ],
+      "summary": "DLF Homes (DLF Ltd) is a listed developer tracked via Screener. Current financial read is low stress with ROE at 6.30 and ROCE at 8.34."
     },
     "approvals": [
       [
@@ -6504,7 +8986,68 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "GGM/819/551/2024/46",
     "reraPossession": "Dec 2028",
-    "builderRiskScoreLabel": null,
+    "builderRiskScoreLabel": "9.1/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-DLF",
+      "builderName": "DLF Homes (DLF Ltd)",
+      "listed": true,
+      "financeProvider": "Screener",
+      "financeUrl": "https://www.screener.in/company/DLF/",
+      "summary": "DLF Homes (DLF Ltd) is a listed developer tracked via Screener. Current financial read is low stress with ROE at 6.30 and ROCE at 8.34.",
+      "gradeBucket": "A+",
+      "financialStress": "Low stress",
+      "financialStressScore": 9.1,
+      "publicRiskSignal": "Seems ok",
+      "metrics": {
+        "marketCap": "1,50,561 Crore (down -3.71% in 1 year)",
+        "revenue": "3,913 Cr",
+        "profit": "2,900 Cr",
+        "promoterHolding": "74.1%",
+        "currentPrice": "\u20b9 608",
+        "highLow": "\u20b9 888",
+        "stockPE": "55.1",
+        "bookValue": "\u20b9 117",
+        "dividendYield": "0.99",
+        "roce": "8.34",
+        "roe": "6.30"
+      },
+      "pros": [
+        "Company has reduced debt.",
+        "Company is almost debt free.",
+        "Company has been maintaining a healthy dividend payout of 78.6%"
+      ],
+      "cons": [
+        "Stock is trading at 5.20 times its book value",
+        "Company has a low return on equity of 6.21% over last 3 years.",
+        "Earnings include an other income of Rs.2,424 Cr."
+      ],
+      "rows": [
+        [
+          "Current view",
+          "Low stress"
+        ],
+        [
+          "Builder bucket",
+          "A+ grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "1,50,561 Crore (down -3.71% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "6.30 / 8.34"
+        ],
+        [
+          "Finance signal",
+          "Balance sheet reads lighter"
+        ]
+      ]
+    },
     "reraDetails": {
       "reraProjectName": "DLF PRIVANA WEST",
       "reraRegistrationNo": "RERA-GRG-1540-2024",
@@ -6548,13 +9091,26 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Needs caution",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "C grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "M3M India Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -6685,27 +9241,60 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "GGM/802/534/2024/29",
     "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "builderRiskScoreLabel": "6.2/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-M3M",
+      "builderName": "M3M India Pvt Ltd",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "M3M India Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "C",
+      "financialStress": "Elevated stress",
+      "financialStressScore": 6.2,
+      "publicRiskSignal": "Needs caution",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "C grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
     "reraDetails": {
-      "reraProjectName": "M3M MANSION PH-2",
-      "reraRegistrationNo": "RERA-GRG-1848-2025",
-      "projectAddress": "SECTOR 113, VILL CHAUMA,GURUGRAM",
-      "landArea": "1.515 Acre",
+      "reraProjectName": "M3M MANSION",
+      "reraRegistrationNo": "RERA-GRG-1547-2024",
+      "projectAddress": "B 6504 M3M Woodshire Dharampur Road Sector 107 Daultabad 53 Gurgaon Haryana - 122006",
+      "landArea": "8.710 Acre",
       "totalLicensedLand": "10.225 Acre",
-      "totalTowers": 8,
-      "totalUnits": 244,
+      "totalTowers": null,
+      "totalUnits": 968,
       "unitsSold": null,
       "unitsAvailable": null,
       "totalFloors": 32,
-      "launchPrice": 19000,
-      "currentPrice": 19000,
-      "configurations": "3 BHK4 BHK",
-      "sizes": "2080 - 3415 sq.ft.",
+      "launchPrice": null,
+      "currentPrice": null,
+      "configurations": "",
+      "sizes": "48x48",
       "projectType": "NEW",
-      "projectSizeText": "8 Buildings - 244 units",
-      "startDate": "24-01-2025",
-      "completionDate": "2031-02-28",
-      "sourceUrl": "https://reratracker.com/m3m-mansion-ph-2-in-gurugram-by-union-buildmart-private-limited-rtid3873"
+      "projectSizeText": "",
+      "startDate": "",
+      "completionDate": "",
+      "sourceUrl": "https://reratracker.com/m3m-mansion-in-gurugram-by-union-buildmart-private-limited-rtid3872"
     }
   },
   {
@@ -6729,13 +9318,26 @@ window.__PROJECTS__ = [
     "bestFor": "End Use",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Needs caution",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "C grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "M3M India Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -6864,9 +9466,42 @@ window.__PROJECTS__ = [
     "latitude": 28.5005,
     "longitude": 76.9625,
     "published": true,
-    "reraNumber": "",
-    "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "reraNumber": "RERA-GRG-1262-2023",
+    "reraPossession": "2028-01-31",
+    "builderRiskScoreLabel": "6.2/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-M3M",
+      "builderName": "M3M India Pvt Ltd",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "M3M India Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "C",
+      "financialStress": "Elevated stress",
+      "financialStressScore": 6.2,
+      "publicRiskSignal": "Needs caution",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "C grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
     "reraDetails": {
       "reraProjectName": "M3M CROWN PHASE 1",
       "reraRegistrationNo": "RERA-GRG-1262-2023",
@@ -6902,7 +9537,7 @@ window.__PROJECTS__ = [
     "priceCr": 6,
     "sqft": 1702,
     "priceSqft": 23000,
-    "units": 0,
+    "units": 342,
     "launched": 0,
     "sold": 0,
     "absorption": "Data pending",
@@ -6910,13 +9545,26 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Needs caution",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "C grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "M3M India Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -7046,9 +9694,62 @@ window.__PROJECTS__ = [
     "longitude": 77.083,
     "published": true,
     "reraNumber": "GGM/821/553/2024/48",
-    "reraPossession": "",
-    "builderRiskScoreLabel": null,
-    "reraDetails": {}
+    "reraPossession": "2031-07-31",
+    "builderRiskScoreLabel": "6.2/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-M3M",
+      "builderName": "M3M India Pvt Ltd",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "M3M India Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "C",
+      "financialStress": "Elevated stress",
+      "financialStressScore": 6.2,
+      "publicRiskSignal": "Needs caution",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "C grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
+    "reraDetails": {
+      "reraProjectName": "M3M ALTITUDE",
+      "reraRegistrationNo": "RERA-GRG-1607-2024",
+      "projectAddress": "SECTOR 65, GURUGRAM",
+      "landArea": "2.79 Acre",
+      "totalLicensedLand": "60.025 Acre",
+      "totalTowers": 3,
+      "totalUnits": 342,
+      "unitsSold": null,
+      "unitsAvailable": null,
+      "totalFloors": 31,
+      "launchPrice": 19000,
+      "currentPrice": 24000,
+      "configurations": "4 BHK",
+      "sizes": "3712 - 4270 sq.ft.",
+      "projectType": "NEW",
+      "projectSizeText": "3 Buildings - 342 units",
+      "startDate": "19-04-2024",
+      "completionDate": "2031-07-31",
+      "sourceUrl": "https://reratracker.com/m3m-altitude-in-gurugram-by-manglam-multiplex-private-limited-rtid3852"
+    }
   },
   {
     "code": "GGM-79-ANT",
@@ -7071,13 +9772,26 @@ window.__PROJECTS__ = [
     "bestFor": "Rental Yield",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Needs caution",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "C grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "M3M India Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -7208,27 +9922,60 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "GGM/650/382/2022/125",
     "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "builderRiskScoreLabel": "6.2/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-M3M",
+      "builderName": "M3M India Pvt Ltd",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "M3M India Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "C",
+      "financialStress": "Elevated stress",
+      "financialStressScore": 6.2,
+      "publicRiskSignal": "Needs caution",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "C grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
     "reraDetails": {
-      "reraProjectName": "M3M GOLF HILLS PHASE 2",
-      "reraRegistrationNo": "RERA-GRG-1578-2024",
-      "projectAddress": "SECTOR-79 & 79B, GURUGRAM, HARYANA",
-      "landArea": "14.64375 Acre",
-      "totalLicensedLand": "75.3458 Acre",
-      "totalTowers": 26,
-      "totalUnits": 1309,
+      "reraProjectName": "M3M ANTALYA HILLS PHASE II",
+      "reraRegistrationNo": "RERA-GRG-1521-2023",
+      "projectAddress": "B6504 M3M Woodshire Dharampur Road Sector 107 Daultabad Gurugram Haryana",
+      "landArea": "10.074 Acre",
+      "totalLicensedLand": "24.74375 Acre",
+      "totalTowers": null,
+      "totalUnits": null,
       "unitsSold": null,
       "unitsAvailable": null,
-      "totalFloors": 30,
+      "totalFloors": null,
       "launchPrice": null,
       "currentPrice": null,
-      "configurations": "2 BHK3 BHK4 BHK",
-      "sizes": "1420 - 8200 sq.ft.",
-      "projectType": "NEW",
-      "projectSizeText": "26 Buildings - 1309 units",
-      "startDate": "29-02-2024",
-      "completionDate": "2030-05-31",
-      "sourceUrl": "https://reratracker.com/m3m-golf-hills-phase-2-in-gurugram-by-loon-land-development-limited-rtid3867"
+      "configurations": "",
+      "sizes": "48x48",
+      "projectType": "ONGOING",
+      "projectSizeText": "",
+      "startDate": "",
+      "completionDate": "",
+      "sourceUrl": "https://reratracker.com/m3m-antalya-hills-phase-ii-in-gurugram-by-loon-land-development-limited-rtid3855"
     }
   },
   {
@@ -7252,13 +9999,26 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Needs caution",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "C grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "M3M India Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -7388,8 +10148,41 @@ window.__PROJECTS__ = [
     "longitude": 76.958,
     "published": true,
     "reraNumber": "GGM/704/436/2023/48",
-    "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "reraPossession": "2030-05-31",
+    "builderRiskScoreLabel": "6.2/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-M3M",
+      "builderName": "M3M India Pvt Ltd",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "M3M India Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "C",
+      "financialStress": "Elevated stress",
+      "financialStressScore": 6.2,
+      "publicRiskSignal": "Needs caution",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "C grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
     "reraDetails": {
       "reraProjectName": "M3M GOLF HILLS PHASE 2",
       "reraRegistrationNo": "RERA-GRG-1578-2024",
@@ -7425,7 +10218,7 @@ window.__PROJECTS__ = [
     "priceCr": 2.8,
     "sqft": 1051,
     "priceSqft": 15500,
-    "units": 1675,
+    "units": 0,
     "launched": 0,
     "sold": 0,
     "absorption": "Data pending",
@@ -7433,13 +10226,26 @@ window.__PROJECTS__ = [
     "bestFor": "End Use",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Needs caution",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "C grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "M3M India Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -7570,28 +10376,41 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "",
     "reraPossession": "",
-    "builderRiskScoreLabel": null,
-    "reraDetails": {
-      "reraProjectName": "M3M CAPITAL PHASE-3",
-      "reraRegistrationNo": "RERA-GRG-1591-2024",
-      "projectAddress": "SECTOR-113, VILLAGE CHAUMA, GURUGRAM, HARYANA",
-      "landArea": "0.91875 Acre",
-      "totalLicensedLand": "15.0625 Acre",
-      "totalTowers": 13,
-      "totalUnits": 1675,
-      "unitsSold": null,
-      "unitsAvailable": null,
-      "totalFloors": null,
-      "launchPrice": null,
-      "currentPrice": null,
-      "configurations": "",
-      "sizes": "",
-      "projectType": "NEW",
-      "projectSizeText": "13 Buildings - 1675 units",
-      "startDate": "22-03-2024",
-      "completionDate": "2028-02-29",
-      "sourceUrl": "https://reratracker.com/m3m-capital-phase-3-in-gurugram-by-union-buildmart-private-limited-rtid3862"
-    }
+    "builderRiskScoreLabel": "6.2/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-M3M",
+      "builderName": "M3M India Pvt Ltd",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "M3M India Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "C",
+      "financialStress": "Elevated stress",
+      "financialStressScore": 6.2,
+      "publicRiskSignal": "Needs caution",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "C grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
+    "reraDetails": {}
   },
   {
     "code": "GGM-113-STA",
@@ -7614,13 +10433,26 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Needs caution",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "C grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "M3M India Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -7751,7 +10583,40 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "",
     "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "builderRiskScoreLabel": "6.2/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-M3M",
+      "builderName": "M3M India Pvt Ltd",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "M3M India Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "C",
+      "financialStress": "Elevated stress",
+      "financialStressScore": 6.2,
+      "publicRiskSignal": "Needs caution",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "C grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
     "reraDetails": {}
   },
   {
@@ -7775,13 +10640,26 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Needs caution",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "C grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "M3M India Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -7910,9 +10788,42 @@ window.__PROJECTS__ = [
     "latitude": 28.411,
     "longitude": 77.084,
     "published": true,
-    "reraNumber": "",
-    "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "reraNumber": "RERA-GRG-1734-2024",
+    "reraPossession": "2029-11-01",
+    "builderRiskScoreLabel": "6.2/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-M3M",
+      "builderName": "M3M India Pvt Ltd",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "M3M India Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "C",
+      "financialStress": "Elevated stress",
+      "financialStressScore": 6.2,
+      "publicRiskSignal": "Needs caution",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "C grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
     "reraDetails": {
       "reraProjectName": "M3M OPUS AT M3M MERLIN",
       "reraRegistrationNo": "RERA-GRG-1734-2024",
@@ -7956,13 +10867,34 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Needs caution",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "C grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "12,720 Crore (down -21.3% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "6.69 / 9.40"
+        ],
+        [
+          "Finance signal",
+          "Low interest coverage flagged"
         ]
-      ]
+      ],
+      "summary": "Signature Global India Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at 6.69 and ROCE at 9.40."
     },
     "approvals": [
       [
@@ -8093,7 +11025,68 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "GGM/866/598/2024/93",
     "reraPossession": "May 2030",
-    "builderRiskScoreLabel": null,
+    "builderRiskScoreLabel": "5.6/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-SIGG",
+      "builderName": "Signature Global India Limited",
+      "listed": true,
+      "financeProvider": "Screener",
+      "financeUrl": "https://www.screener.in/company/SIGNATURE/",
+      "summary": "Signature Global India Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at 6.69 and ROCE at 9.40.",
+      "gradeBucket": "C",
+      "financialStress": "Elevated stress",
+      "financialStressScore": 5.6,
+      "publicRiskSignal": "Needs caution",
+      "metrics": {
+        "marketCap": "12,720 Crore (down -21.3% in 1 year)",
+        "revenue": "1,415 Cr",
+        "profit": "25.2 Cr",
+        "promoterHolding": "69.6%",
+        "currentPrice": "\u20b9 905",
+        "highLow": "\u20b9 1,310",
+        "stockPE": "505",
+        "bookValue": "\u20b9 66.1",
+        "dividendYield": "0.00",
+        "roce": "9.40",
+        "roe": "6.69"
+      },
+      "pros": [
+        "Company has delivered good profit growth of 101% CAGR over last 5 years"
+      ],
+      "cons": [
+        "Stock is trading at 13.7 times its book value",
+        "Though the company is reporting repeated profits, it is not paying out dividend",
+        "Company has low interest coverage ratio.",
+        "Tax rate seems low",
+        "Company has a low return on equity of -2.16% over last 3 years."
+      ],
+      "rows": [
+        [
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "C grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "12,720 Crore (down -21.3% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "6.69 / 9.40"
+        ],
+        [
+          "Finance signal",
+          "Low interest coverage flagged"
+        ]
+      ]
+    },
     "reraDetails": {
       "reraProjectName": "SIGNATURE GLOBAL TWIN TOWER DXP",
       "reraRegistrationNo": "RERA-GRG-1701-2024",
@@ -8137,13 +11130,34 @@ window.__PROJECTS__ = [
     "bestFor": "End Use",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Needs caution",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "C grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "12,720 Crore (down -21.3% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "6.69 / 9.40"
+        ],
+        [
+          "Finance signal",
+          "Low interest coverage flagged"
         ]
-      ]
+      ],
+      "summary": "Signature Global India Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at 6.69 and ROCE at 9.40."
     },
     "approvals": [
       [
@@ -8273,8 +11287,69 @@ window.__PROJECTS__ = [
     "longitude": 77.0275,
     "published": true,
     "reraNumber": "GGM/831/563/2024/58",
-    "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "reraPossession": "2031-02-28",
+    "builderRiskScoreLabel": "5.6/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-SIGG",
+      "builderName": "Signature Global India Limited",
+      "listed": true,
+      "financeProvider": "Screener",
+      "financeUrl": "https://www.screener.in/company/SIGNATURE/",
+      "summary": "Signature Global India Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at 6.69 and ROCE at 9.40.",
+      "gradeBucket": "C",
+      "financialStress": "Elevated stress",
+      "financialStressScore": 5.6,
+      "publicRiskSignal": "Needs caution",
+      "metrics": {
+        "marketCap": "12,720 Crore (down -21.3% in 1 year)",
+        "revenue": "1,415 Cr",
+        "profit": "25.2 Cr",
+        "promoterHolding": "69.6%",
+        "currentPrice": "\u20b9 905",
+        "highLow": "\u20b9 1,310",
+        "stockPE": "505",
+        "bookValue": "\u20b9 66.1",
+        "dividendYield": "0.00",
+        "roce": "9.40",
+        "roe": "6.69"
+      },
+      "pros": [
+        "Company has delivered good profit growth of 101% CAGR over last 5 years"
+      ],
+      "cons": [
+        "Stock is trading at 13.7 times its book value",
+        "Though the company is reporting repeated profits, it is not paying out dividend",
+        "Company has low interest coverage ratio.",
+        "Tax rate seems low",
+        "Company has a low return on equity of -2.16% over last 3 years."
+      ],
+      "rows": [
+        [
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "C grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "12,720 Crore (down -21.3% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "6.69 / 9.40"
+        ],
+        [
+          "Finance signal",
+          "Low interest coverage flagged"
+        ]
+      ]
+    },
     "reraDetails": {
       "reraProjectName": "Signature Global Titanium SPR",
       "reraRegistrationNo": "RERA-GRG-1641-2024",
@@ -8318,13 +11393,34 @@ window.__PROJECTS__ = [
     "bestFor": "End Use",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Needs caution",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "C grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "12,720 Crore (down -21.3% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "6.69 / 9.40"
+        ],
+        [
+          "Finance signal",
+          "Low interest coverage flagged"
         ]
-      ]
+      ],
+      "summary": "Signature Global India Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at 6.69 and ROCE at 9.40."
     },
     "approvals": [
       [
@@ -8455,7 +11551,68 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "GGM/868/600/2024/95",
     "reraPossession": "Apr 2028",
-    "builderRiskScoreLabel": null,
+    "builderRiskScoreLabel": "5.6/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-SIGG",
+      "builderName": "Signature Global India Limited",
+      "listed": true,
+      "financeProvider": "Screener",
+      "financeUrl": "https://www.screener.in/company/SIGNATURE/",
+      "summary": "Signature Global India Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at 6.69 and ROCE at 9.40.",
+      "gradeBucket": "C",
+      "financialStress": "Elevated stress",
+      "financialStressScore": 5.6,
+      "publicRiskSignal": "Needs caution",
+      "metrics": {
+        "marketCap": "12,720 Crore (down -21.3% in 1 year)",
+        "revenue": "1,415 Cr",
+        "profit": "25.2 Cr",
+        "promoterHolding": "69.6%",
+        "currentPrice": "\u20b9 905",
+        "highLow": "\u20b9 1,310",
+        "stockPE": "505",
+        "bookValue": "\u20b9 66.1",
+        "dividendYield": "0.00",
+        "roce": "9.40",
+        "roe": "6.69"
+      },
+      "pros": [
+        "Company has delivered good profit growth of 101% CAGR over last 5 years"
+      ],
+      "cons": [
+        "Stock is trading at 13.7 times its book value",
+        "Though the company is reporting repeated profits, it is not paying out dividend",
+        "Company has low interest coverage ratio.",
+        "Tax rate seems low",
+        "Company has a low return on equity of -2.16% over last 3 years."
+      ],
+      "rows": [
+        [
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "C grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "12,720 Crore (down -21.3% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "6.69 / 9.40"
+        ],
+        [
+          "Finance signal",
+          "Low interest coverage flagged"
+        ]
+      ]
+    },
     "reraDetails": {}
   },
   {
@@ -8479,13 +11636,34 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Needs caution",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "C grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "12,720 Crore (down -21.3% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "6.69 / 9.40"
+        ],
+        [
+          "Finance signal",
+          "Low interest coverage flagged"
         ]
-      ]
+      ],
+      "summary": "Signature Global India Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at 6.69 and ROCE at 9.40."
     },
     "approvals": [
       [
@@ -8616,7 +11794,68 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "GGM/955/687/2025/58",
     "reraPossession": "May 2030",
-    "builderRiskScoreLabel": null,
+    "builderRiskScoreLabel": "5.6/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-SIGG",
+      "builderName": "Signature Global India Limited",
+      "listed": true,
+      "financeProvider": "Screener",
+      "financeUrl": "https://www.screener.in/company/SIGNATURE/",
+      "summary": "Signature Global India Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at 6.69 and ROCE at 9.40.",
+      "gradeBucket": "C",
+      "financialStress": "Elevated stress",
+      "financialStressScore": 5.6,
+      "publicRiskSignal": "Needs caution",
+      "metrics": {
+        "marketCap": "12,720 Crore (down -21.3% in 1 year)",
+        "revenue": "1,415 Cr",
+        "profit": "25.2 Cr",
+        "promoterHolding": "69.6%",
+        "currentPrice": "\u20b9 905",
+        "highLow": "\u20b9 1,310",
+        "stockPE": "505",
+        "bookValue": "\u20b9 66.1",
+        "dividendYield": "0.00",
+        "roce": "9.40",
+        "roe": "6.69"
+      },
+      "pros": [
+        "Company has delivered good profit growth of 101% CAGR over last 5 years"
+      ],
+      "cons": [
+        "Stock is trading at 13.7 times its book value",
+        "Though the company is reporting repeated profits, it is not paying out dividend",
+        "Company has low interest coverage ratio.",
+        "Tax rate seems low",
+        "Company has a low return on equity of -2.16% over last 3 years."
+      ],
+      "rows": [
+        [
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "C grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "12,720 Crore (down -21.3% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "6.69 / 9.40"
+        ],
+        [
+          "Finance signal",
+          "Low interest coverage flagged"
+        ]
+      ]
+    },
     "reraDetails": {
       "reraProjectName": "Signature Global Cloverdale SPR",
       "reraRegistrationNo": "RERA-GRG-1961-2025",
@@ -8660,13 +11899,26 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Watch closely",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "Whiteland Corporation does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -8797,7 +12049,40 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "GGM/65-67/2024 + 52-53/2025",
     "reraPossession": "Dec 2030",
-    "builderRiskScoreLabel": null,
+    "builderRiskScoreLabel": "7.0/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-WHI",
+      "builderName": "Whiteland Corporation",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Whiteland Corporation does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "Unassigned",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.0,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
     "reraDetails": {
       "reraProjectName": "THE WESTIN RESIDENCES BY WHITELAND PHASE-3",
       "reraRegistrationNo": "RERA-GRG-1658-2024",
@@ -8841,13 +12126,26 @@ window.__PROJECTS__ = [
     "bestFor": "End Use",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Watch closely",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "Whiteland Corporation does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -8976,9 +12274,42 @@ window.__PROJECTS__ = [
     "latitude": 28.3925,
     "longitude": 76.9695,
     "published": true,
-    "reraNumber": "",
-    "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "reraNumber": "RERA-GRG-1201-2022",
+    "reraPossession": "2027-06-30",
+    "builderRiskScoreLabel": "7.0/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-WHI",
+      "builderName": "Whiteland Corporation",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Whiteland Corporation does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "Unassigned",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.0,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
     "reraDetails": {
       "reraProjectName": "WHITELAND BLISSVILLE",
       "reraRegistrationNo": "RERA-GRG-1201-2022",
@@ -8993,7 +12324,7 @@ window.__PROJECTS__ = [
       "launchPrice": null,
       "currentPrice": null,
       "configurations": "",
-      "sizes": "",
+      "sizes": "48x48",
       "projectType": "NEW",
       "projectSizeText": "",
       "startDate": "09-11-2022",
@@ -9022,13 +12353,26 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Watch closely",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "Whiteland Corporation does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -9157,10 +12501,63 @@ window.__PROJECTS__ = [
     "latitude": 28.5052,
     "longitude": 76.9862,
     "published": true,
-    "reraNumber": "",
+    "reraNumber": "RERA-GRG-900-2021",
     "reraPossession": "",
-    "builderRiskScoreLabel": null,
-    "reraDetails": {}
+    "builderRiskScoreLabel": "7.0/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-WHI",
+      "builderName": "Whiteland Corporation",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Whiteland Corporation does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "Unassigned",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.0,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
+    "reraDetails": {
+      "reraProjectName": "Whiteland Urban Cubes",
+      "reraRegistrationNo": "RERA-GRG-900-2021",
+      "projectAddress": "SO KASHI RAM BHURTANA  39 BHIWANI HARYANA - 127035",
+      "landArea": "2.65 Acre",
+      "totalLicensedLand": "2.65 Acre",
+      "totalTowers": null,
+      "totalUnits": null,
+      "unitsSold": null,
+      "unitsAvailable": null,
+      "totalFloors": null,
+      "launchPrice": null,
+      "currentPrice": null,
+      "configurations": "",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "projectSizeText": "",
+      "startDate": "",
+      "completionDate": "",
+      "sourceUrl": "https://reratracker.com/whiteland-urban-cubes-in-gurugram-by-whiteland-corporation-private-limited-rtid4271"
+    }
   },
   {
     "code": "GGM-48-DEL",
@@ -9183,13 +12580,26 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Watch closely",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "Central Park does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -9318,10 +12728,63 @@ window.__PROJECTS__ = [
     "latitude": 28.418,
     "longitude": 77.048,
     "published": true,
-    "reraNumber": "",
+    "reraNumber": "RERA-GRG-1945-2025",
     "reraPossession": "",
-    "builderRiskScoreLabel": null,
-    "reraDetails": {}
+    "builderRiskScoreLabel": "7.0/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-CP",
+      "builderName": "Central Park",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Central Park does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "Unassigned",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.0,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
+    "reraDetails": {
+      "reraProjectName": "DESTINO CENTRAL PARK",
+      "reraRegistrationNo": "RERA-GRG-1945-2025",
+      "projectAddress": "4 KAUTILYA MARG NEW DELHI",
+      "landArea": "4.11 Acre",
+      "totalLicensedLand": "197.161 Acre",
+      "totalTowers": null,
+      "totalUnits": null,
+      "unitsSold": null,
+      "unitsAvailable": null,
+      "totalFloors": null,
+      "launchPrice": null,
+      "currentPrice": null,
+      "configurations": "",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "projectSizeText": "",
+      "startDate": "",
+      "completionDate": "",
+      "sourceUrl": "https://reratracker.com/destino-central-park-in-gurugram-by-st-patricks-realty-pvt-ltd-rtid5250"
+    }
   },
   {
     "code": "GGM-33-FLA",
@@ -9344,13 +12807,26 @@ window.__PROJECTS__ = [
     "bestFor": "End Use",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Watch closely",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "Central Park does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -9479,10 +12955,63 @@ window.__PROJECTS__ = [
     "latitude": 28.2475,
     "longitude": 77.0665,
     "published": true,
-    "reraNumber": "",
+    "reraNumber": "RERA-GRG-1945-2025",
     "reraPossession": "",
-    "builderRiskScoreLabel": null,
-    "reraDetails": {}
+    "builderRiskScoreLabel": "7.0/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-CP",
+      "builderName": "Central Park",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Central Park does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "Unassigned",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.0,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
+    "reraDetails": {
+      "reraProjectName": "DESTINO CENTRAL PARK",
+      "reraRegistrationNo": "RERA-GRG-1945-2025",
+      "projectAddress": "4 KAUTILYA MARG NEW DELHI",
+      "landArea": "4.11 Acre",
+      "totalLicensedLand": "197.161 Acre",
+      "totalTowers": null,
+      "totalUnits": null,
+      "unitsSold": null,
+      "unitsAvailable": null,
+      "totalFloors": null,
+      "launchPrice": null,
+      "currentPrice": null,
+      "configurations": "",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "projectSizeText": "",
+      "startDate": "",
+      "completionDate": "",
+      "sourceUrl": "https://reratracker.com/destino-central-park-in-gurugram-by-st-patricks-realty-pvt-ltd-rtid5250"
+    }
   },
   {
     "code": "GGM-80-ARA",
@@ -9505,13 +13034,34 @@ window.__PROJECTS__ = [
     "bestFor": "End Use",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Seems ok",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Low stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "15,242 Crore (up 16.4% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "6.61 / 9.55"
+        ],
+        [
+          "Finance signal",
+          "Mixed"
         ]
-      ]
+      ],
+      "summary": "Sobha Limited is a listed developer tracked via Screener. Current financial read is low stress with ROE at 6.61 and ROCE at 9.55."
     },
     "approvals": [
       [
@@ -9640,9 +13190,70 @@ window.__PROJECTS__ = [
     "latitude": 28.389,
     "longitude": 76.948,
     "published": true,
-    "reraNumber": "",
-    "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "reraNumber": "RERA-GRG-1565-2024",
+    "reraPossession": "2030-10-31",
+    "builderRiskScoreLabel": "8.3/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-SOB",
+      "builderName": "Sobha Limited",
+      "listed": true,
+      "financeProvider": "Screener",
+      "financeUrl": "https://www.screener.in/company/SOBHA/",
+      "summary": "Sobha Limited is a listed developer tracked via Screener. Current financial read is low stress with ROE at 6.61 and ROCE at 9.55.",
+      "gradeBucket": "A",
+      "financialStress": "Low stress",
+      "financialStressScore": 8.3,
+      "publicRiskSignal": "Seems ok",
+      "metrics": {
+        "marketCap": "15,242 Crore (up 16.4% in 1 year)",
+        "revenue": "5,368 Cr",
+        "profit": "301 Cr",
+        "promoterHolding": "52.9%",
+        "currentPrice": "\u20b9 1,425",
+        "highLow": "\u20b9 1,732",
+        "stockPE": "50.6",
+        "bookValue": "\u20b9 439",
+        "dividendYield": "0.21",
+        "roce": "9.55",
+        "roe": "6.61"
+      },
+      "pros": [
+        "Company is expected to give good quarter",
+        "Company has delivered good profit growth of 35.7% CAGR over last 5 years",
+        "Company has been maintaining a healthy dividend payout of 37.0%"
+      ],
+      "cons": [
+        "Stock is trading at 3.25 times its book value",
+        "Company has a low return on equity of 4.47% over last 3 years.",
+        "Earnings include an other income of Rs.219 Cr."
+      ],
+      "rows": [
+        [
+          "Current view",
+          "Low stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "15,242 Crore (up 16.4% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "6.61 / 9.55"
+        ],
+        [
+          "Finance signal",
+          "Mixed"
+        ]
+      ]
+    },
     "reraDetails": {
       "reraProjectName": "SOBHA ARANYA PHASE-1",
       "reraRegistrationNo": "RERA-GRG-1565-2024",
@@ -9686,13 +13297,34 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Seems ok",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Low stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "15,242 Crore (up 16.4% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "6.61 / 9.55"
+        ],
+        [
+          "Finance signal",
+          "Mixed"
         ]
-      ]
+      ],
+      "summary": "Sobha Limited is a listed developer tracked via Screener. Current financial read is low stress with ROE at 6.61 and ROCE at 9.55."
     },
     "approvals": [
       [
@@ -9821,9 +13453,70 @@ window.__PROJECTS__ = [
     "latitude": 28.503,
     "longitude": 76.972,
     "published": true,
-    "reraNumber": "",
-    "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "reraNumber": "RERA-GRG-1564-2024",
+    "reraPossession": "2031-12-31",
+    "builderRiskScoreLabel": "8.3/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-SOB",
+      "builderName": "Sobha Limited",
+      "listed": true,
+      "financeProvider": "Screener",
+      "financeUrl": "https://www.screener.in/company/SOBHA/",
+      "summary": "Sobha Limited is a listed developer tracked via Screener. Current financial read is low stress with ROE at 6.61 and ROCE at 9.55.",
+      "gradeBucket": "A",
+      "financialStress": "Low stress",
+      "financialStressScore": 8.3,
+      "publicRiskSignal": "Seems ok",
+      "metrics": {
+        "marketCap": "15,242 Crore (up 16.4% in 1 year)",
+        "revenue": "5,368 Cr",
+        "profit": "301 Cr",
+        "promoterHolding": "52.9%",
+        "currentPrice": "\u20b9 1,425",
+        "highLow": "\u20b9 1,732",
+        "stockPE": "50.6",
+        "bookValue": "\u20b9 439",
+        "dividendYield": "0.21",
+        "roce": "9.55",
+        "roe": "6.61"
+      },
+      "pros": [
+        "Company is expected to give good quarter",
+        "Company has delivered good profit growth of 35.7% CAGR over last 5 years",
+        "Company has been maintaining a healthy dividend payout of 37.0%"
+      ],
+      "cons": [
+        "Stock is trading at 3.25 times its book value",
+        "Company has a low return on equity of 4.47% over last 3 years.",
+        "Earnings include an other income of Rs.219 Cr."
+      ],
+      "rows": [
+        [
+          "Current view",
+          "Low stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "15,242 Crore (up 16.4% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "6.61 / 9.55"
+        ],
+        [
+          "Finance signal",
+          "Mixed"
+        ]
+      ]
+    },
     "reraDetails": {
       "reraProjectName": "SOBHA ALTUS",
       "reraRegistrationNo": "RERA-GRG-1564-2024",
@@ -9838,7 +13531,7 @@ window.__PROJECTS__ = [
       "launchPrice": null,
       "currentPrice": null,
       "configurations": "",
-      "sizes": "",
+      "sizes": "48x48",
       "projectType": "NEW",
       "projectSizeText": "3 Buildings - 293 units",
       "startDate": "05-04-2024",
@@ -9867,13 +13560,26 @@ window.__PROJECTS__ = [
     "bestFor": "End Use",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Watch closely",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "Tata Housing Development Co does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -10002,10 +13708,63 @@ window.__PROJECTS__ = [
     "latitude": 28.505,
     "longitude": 76.955,
     "published": true,
-    "reraNumber": "",
+    "reraNumber": "RERA-GRG-326-2019",
     "reraPossession": "",
-    "builderRiskScoreLabel": null,
-    "reraDetails": {}
+    "builderRiskScoreLabel": "7.0/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-TATA",
+      "builderName": "Tata Housing Development Co",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Tata Housing Development Co does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "Unassigned",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.0,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
+    "reraDetails": {
+      "reraProjectName": "LA VIDA",
+      "reraRegistrationNo": "RERA-GRG-326-2019",
+      "projectAddress": "SWAMI VIVEKANAND GYMNASIUM PATELWADI BEHARUM BAUG  JOGESHWARI -WEST MUMBAI-400102",
+      "landArea": "5.989 Acre",
+      "totalLicensedLand": "10.175 Acre",
+      "totalTowers": null,
+      "totalUnits": null,
+      "unitsSold": null,
+      "unitsAvailable": null,
+      "totalFloors": null,
+      "launchPrice": null,
+      "currentPrice": null,
+      "configurations": "",
+      "sizes": "48x48",
+      "projectType": "ONGOING",
+      "projectSizeText": "",
+      "startDate": "",
+      "completionDate": "",
+      "sourceUrl": "https://reratracker.com/la-vida-in-gurugram-by-sector-113-gatevida-developers-pvt-ltd-rtid3834"
+    }
   },
   {
     "code": "GGM-106-EMP",
@@ -10028,13 +13787,26 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Watch closely",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "B grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "Elan Group does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -10163,9 +13935,42 @@ window.__PROJECTS__ = [
     "latitude": 28.5035,
     "longitude": 76.9715,
     "published": true,
-    "reraNumber": "",
-    "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "reraNumber": "RERA-GRG-1774-2024",
+    "reraPossession": "2032-09-30",
+    "builderRiskScoreLabel": "7.4/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-ELAN",
+      "builderName": "Elan Group",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Elan Group does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "B",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.4,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "B grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
     "reraDetails": {
       "reraProjectName": "ELAN THE EMPEROR",
       "reraRegistrationNo": "RERA-GRG-1774-2024",
@@ -10209,13 +14014,34 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Needs caution",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "4,034 Crore (down -3.44% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "-8.02 / 0.03"
+        ],
+        [
+          "Finance signal",
+          "Low interest coverage flagged"
         ]
-      ]
+      ],
+      "summary": "TARC Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at -8.02 and ROCE at 0.03."
     },
     "approvals": [
       [
@@ -10344,9 +14170,70 @@ window.__PROJECTS__ = [
     "latitude": 28.4195,
     "longitude": 77.098,
     "published": true,
-    "reraNumber": "",
-    "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "reraNumber": "RERA-GRG-1704-2024",
+    "reraPossession": "2031-12-31",
+    "builderRiskScoreLabel": "5.0/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-TARC",
+      "builderName": "TARC Limited",
+      "listed": true,
+      "financeProvider": "Screener",
+      "financeUrl": "https://www.screener.in/company/TARC/",
+      "summary": "TARC Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at -8.02 and ROCE at 0.03.",
+      "gradeBucket": "Unassigned",
+      "financialStress": "Elevated stress",
+      "financialStressScore": 5.0,
+      "publicRiskSignal": "Needs caution",
+      "metrics": {
+        "marketCap": "4,034 Crore (down -3.44% in 1 year)",
+        "revenue": "37.5 Cr",
+        "profit": "-245 Cr",
+        "promoterHolding": "65.1%",
+        "currentPrice": "\u20b9 137",
+        "highLow": "\u20b9 206",
+        "stockPE": null,
+        "bookValue": "\u20b9 37.2",
+        "dividendYield": "0.00",
+        "roce": "0.03",
+        "roe": "-8.02"
+      },
+      "pros": [
+        "Company has reduced debt."
+      ],
+      "cons": [
+        "Stock is trading at 3.68 times its book value",
+        "Company has low interest coverage ratio.",
+        "The company has delivered a poor sales growth of -33.8% over past five years.",
+        "Company has a low return on equity of -1.93% over last 3 years.",
+        "Contingent liabilities of Rs.2,794 Cr."
+      ],
+      "rows": [
+        [
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "4,034 Crore (down -3.44% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "-8.02 / 0.03"
+        ],
+        [
+          "Finance signal",
+          "Low interest coverage flagged"
+        ]
+      ]
+    },
     "reraDetails": {
       "reraProjectName": "TARC ISHVA",
       "reraRegistrationNo": "RERA-GRG-1704-2024",
@@ -10390,13 +14277,34 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Needs caution",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "4,034 Crore (down -3.44% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "-8.02 / 0.03"
+        ],
+        [
+          "Finance signal",
+          "Low interest coverage flagged"
         ]
-      ]
+      ],
+      "summary": "TARC Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at -8.02 and ROCE at 0.03."
     },
     "approvals": [
       [
@@ -10527,7 +14435,68 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "",
     "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "builderRiskScoreLabel": "5.0/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-TARC",
+      "builderName": "TARC Limited",
+      "listed": true,
+      "financeProvider": "Screener",
+      "financeUrl": "https://www.screener.in/company/TARC/",
+      "summary": "TARC Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at -8.02 and ROCE at 0.03.",
+      "gradeBucket": "Unassigned",
+      "financialStress": "Elevated stress",
+      "financialStressScore": 5.0,
+      "publicRiskSignal": "Needs caution",
+      "metrics": {
+        "marketCap": "4,034 Crore (down -3.44% in 1 year)",
+        "revenue": "37.5 Cr",
+        "profit": "-245 Cr",
+        "promoterHolding": "65.1%",
+        "currentPrice": "\u20b9 137",
+        "highLow": "\u20b9 206",
+        "stockPE": null,
+        "bookValue": "\u20b9 37.2",
+        "dividendYield": "0.00",
+        "roce": "0.03",
+        "roe": "-8.02"
+      },
+      "pros": [
+        "Company has reduced debt."
+      ],
+      "cons": [
+        "Stock is trading at 3.68 times its book value",
+        "Company has low interest coverage ratio.",
+        "The company has delivered a poor sales growth of -33.8% over past five years.",
+        "Company has a low return on equity of -1.93% over last 3 years.",
+        "Contingent liabilities of Rs.2,794 Cr."
+      ],
+      "rows": [
+        [
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "4,034 Crore (down -3.44% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "-8.02 / 0.03"
+        ],
+        [
+          "Finance signal",
+          "Low interest coverage flagged"
+        ]
+      ]
+    },
     "reraDetails": {}
   },
   {
@@ -10551,13 +14520,34 @@ window.__PROJECTS__ = [
     "bestFor": "End Use",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Watch closely",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "B grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "845 Crore (up 11.1% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "7.89 / 10.4"
+        ],
+        [
+          "Finance signal",
+          "Mixed"
         ]
-      ]
+      ],
+      "summary": "Eldeco Infrastructure and Properties is a listed developer tracked via Screener. Current financial read is moderate stress with ROE at 7.89 and ROCE at 10.4."
     },
     "approvals": [
       [
@@ -10686,9 +14676,67 @@ window.__PROJECTS__ = [
     "latitude": 28.39,
     "longitude": 76.949,
     "published": true,
-    "reraNumber": "",
-    "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "reraNumber": "RERA-GRG-1680-2024",
+    "reraPossession": "2029-12-30",
+    "builderRiskScoreLabel": "7.4/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-ELD",
+      "builderName": "Eldeco Infrastructure and Properties",
+      "listed": true,
+      "financeProvider": "Screener",
+      "financeUrl": "https://www.screener.in/company/ELDEHSG/",
+      "summary": "Eldeco Infrastructure and Properties is a listed developer tracked via Screener. Current financial read is moderate stress with ROE at 7.89 and ROCE at 10.4.",
+      "gradeBucket": "B",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.4,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {
+        "marketCap": "845 Crore (up 11.1% in 1 year)",
+        "revenue": "136 Cr",
+        "profit": "28.3 Cr",
+        "promoterHolding": "54.8%",
+        "currentPrice": "\u20b9 860",
+        "highLow": "\u20b9 1,061",
+        "stockPE": "29.9",
+        "bookValue": "\u20b9 349",
+        "dividendYield": "1.05",
+        "roce": "10.4",
+        "roe": "7.89"
+      },
+      "pros": [
+        "Company has been maintaining a healthy dividend payout of 27.6%"
+      ],
+      "cons": [
+        "The company has delivered a poor sales growth of 5.76% over past five years.",
+        "Company has a low return on equity of 10.0% over last 3 years."
+      ],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "B grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "845 Crore (up 11.1% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "7.89 / 10.4"
+        ],
+        [
+          "Finance signal",
+          "Mixed"
+        ]
+      ]
+    },
     "reraDetails": {
       "reraProjectName": "ELDECO FAIRWAY RESERVE",
       "reraRegistrationNo": "RERA-GRG-1680-2024",
@@ -10732,13 +14780,26 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Watch closely",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "Ganga Realty Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -10867,10 +14928,63 @@ window.__PROJECTS__ = [
     "latitude": 28.381,
     "longitude": 76.9485,
     "published": true,
-    "reraNumber": "",
+    "reraNumber": "RERA-GRG-1615-2024",
     "reraPossession": "",
-    "builderRiskScoreLabel": null,
-    "reraDetails": {}
+    "builderRiskScoreLabel": "7.0/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-GAN",
+      "builderName": "Ganga Realty Pvt Ltd",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Ganga Realty Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "Unassigned",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.0,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
+    "reraDetails": {
+      "reraProjectName": "Ganga Anantam",
+      "reraRegistrationNo": "RERA-GRG-1615-2024",
+      "projectAddress": "125 DEEPALI ENCLAVE PITAMPURA NEW DELHI-110034",
+      "landArea": "5.29375 Acre",
+      "totalLicensedLand": "5.29375 Acre",
+      "totalTowers": null,
+      "totalUnits": null,
+      "unitsSold": null,
+      "unitsAvailable": null,
+      "totalFloors": null,
+      "launchPrice": null,
+      "currentPrice": null,
+      "configurations": "",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "projectSizeText": "",
+      "startDate": "",
+      "completionDate": "",
+      "sourceUrl": "https://reratracker.com/ganga-anantam-in-gurugram-by-jai-ganga-realtech-llp-rtid3455"
+    }
   },
   {
     "code": "GGM-84-NAN",
@@ -10885,7 +14999,7 @@ window.__PROJECTS__ = [
     "priceCr": 2.8,
     "sqft": 1402,
     "priceSqft": 13000,
-    "units": 0,
+    "units": 302,
     "launched": 0,
     "sold": 0,
     "absorption": "Data pending",
@@ -10893,13 +15007,26 @@ window.__PROJECTS__ = [
     "bestFor": "End Use",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Watch closely",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "Ganga Realty Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -11028,10 +15155,63 @@ window.__PROJECTS__ = [
     "latitude": 28.3795,
     "longitude": 76.941,
     "published": true,
-    "reraNumber": "",
+    "reraNumber": "RERA-GRG-1452-2023",
     "reraPossession": "",
-    "builderRiskScoreLabel": null,
-    "reraDetails": {}
+    "builderRiskScoreLabel": "7.0/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-GAN",
+      "builderName": "Ganga Realty Pvt Ltd",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Ganga Realty Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "Unassigned",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.0,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
+    "reraDetails": {
+      "reraProjectName": "Ganga Nandaka",
+      "reraRegistrationNo": "RERA-GRG-1452-2023",
+      "projectAddress": "125 DEEPALI ENCLAVE PITAMPURA NEW DELHI-110034",
+      "landArea": "5.8406 Acre",
+      "totalLicensedLand": "8.3438 Acre",
+      "totalTowers": null,
+      "totalUnits": 302,
+      "unitsSold": null,
+      "unitsAvailable": null,
+      "totalFloors": 45,
+      "launchPrice": null,
+      "currentPrice": null,
+      "configurations": "",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "projectSizeText": "",
+      "startDate": "",
+      "completionDate": "",
+      "sourceUrl": "https://reratracker.com/ganga-nandaka-in-gurugram-by-ganga-global-homes-private-limited-rtid3925"
+    }
   },
   {
     "code": "GGM-63-IVA",
@@ -11054,13 +15234,26 @@ window.__PROJECTS__ = [
     "bestFor": "End Use",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Seems ok",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Low stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "Adani Realty does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -11189,9 +15382,42 @@ window.__PROJECTS__ = [
     "latitude": 28.422,
     "longitude": 77.089,
     "published": true,
-    "reraNumber": "",
-    "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "reraNumber": "RERA-GRG-1787-2024",
+    "reraPossession": "2029-06-30",
+    "builderRiskScoreLabel": "8.2/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-ADA",
+      "builderName": "Adani Realty",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Adani Realty does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "A",
+      "financialStress": "Low stress",
+      "financialStressScore": 8.2,
+      "publicRiskSignal": "Seems ok",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Low stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
     "reraDetails": {
       "reraProjectName": "Adani Samsara Ivana",
       "reraRegistrationNo": "RERA-GRG-1787-2024",
@@ -11235,13 +15461,26 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Seems ok",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Low stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "Birla Estates Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -11370,9 +15609,42 @@ window.__PROJECTS__ = [
     "latitude": 28.403,
     "longitude": 77.028,
     "published": true,
-    "reraNumber": "",
-    "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "reraNumber": "RERA-GRG-2071-2025",
+    "reraPossession": "2032-03-31",
+    "builderRiskScoreLabel": "8.2/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-BIR",
+      "builderName": "Birla Estates Pvt Ltd",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Birla Estates Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "A",
+      "financialStress": "Low stress",
+      "financialStressScore": 8.2,
+      "publicRiskSignal": "Seems ok",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Low stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
     "reraDetails": {
       "reraProjectName": "BIRLA PRAVAAH",
       "reraRegistrationNo": "RERA-GRG-2071-2025",
@@ -11416,13 +15688,34 @@ window.__PROJECTS__ = [
     "bestFor": "Rental Yield",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Seems ok",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Low stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "15,242 Crore (up 16.4% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "6.61 / 9.55"
+        ],
+        [
+          "Finance signal",
+          "Mixed"
         ]
-      ]
+      ],
+      "summary": "Sobha Limited is a listed developer tracked via Screener. Current financial read is low stress with ROE at 6.61 and ROCE at 9.55."
     },
     "approvals": [
       [
@@ -11551,9 +15844,70 @@ window.__PROJECTS__ = [
     "latitude": 28.5028,
     "longitude": 76.9725,
     "published": true,
-    "reraNumber": "",
-    "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "reraNumber": "RERA-GRG-2061-2025",
+    "reraPossession": "2032-12-31",
+    "builderRiskScoreLabel": "8.3/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-SOB",
+      "builderName": "Sobha Limited",
+      "listed": true,
+      "financeProvider": "Screener",
+      "financeUrl": "https://www.screener.in/company/SOBHA/",
+      "summary": "Sobha Limited is a listed developer tracked via Screener. Current financial read is low stress with ROE at 6.61 and ROCE at 9.55.",
+      "gradeBucket": "A",
+      "financialStress": "Low stress",
+      "financialStressScore": 8.3,
+      "publicRiskSignal": "Seems ok",
+      "metrics": {
+        "marketCap": "15,242 Crore (up 16.4% in 1 year)",
+        "revenue": "5,368 Cr",
+        "profit": "301 Cr",
+        "promoterHolding": "52.9%",
+        "currentPrice": "\u20b9 1,425",
+        "highLow": "\u20b9 1,732",
+        "stockPE": "50.6",
+        "bookValue": "\u20b9 439",
+        "dividendYield": "0.21",
+        "roce": "9.55",
+        "roe": "6.61"
+      },
+      "pros": [
+        "Company is expected to give good quarter",
+        "Company has delivered good profit growth of 35.7% CAGR over last 5 years",
+        "Company has been maintaining a healthy dividend payout of 37.0%"
+      ],
+      "cons": [
+        "Stock is trading at 3.25 times its book value",
+        "Company has a low return on equity of 4.47% over last 3 years.",
+        "Earnings include an other income of Rs.219 Cr."
+      ],
+      "rows": [
+        [
+          "Current view",
+          "Low stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "15,242 Crore (up 16.4% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "6.61 / 9.55"
+        ],
+        [
+          "Finance signal",
+          "Mixed"
+        ]
+      ]
+    },
     "reraDetails": {
       "reraProjectName": "SOBHA STRADA",
       "reraRegistrationNo": "RERA-GRG-2061-2025",
@@ -11597,13 +15951,26 @@ window.__PROJECTS__ = [
     "bestFor": "End Use",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Watch closely",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "Satya Group does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -11734,7 +16101,40 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "",
     "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "builderRiskScoreLabel": "7.0/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-SAT",
+      "builderName": "Satya Group",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Satya Group does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "Unassigned",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.0,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
     "reraDetails": {}
   },
   {
@@ -11758,13 +16158,26 @@ window.__PROJECTS__ = [
     "bestFor": "End Use",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Watch closely",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "Tulip Infratech Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -11893,9 +16306,42 @@ window.__PROJECTS__ = [
     "latitude": 28.4045,
     "longitude": 77.032,
     "published": true,
-    "reraNumber": "",
-    "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "reraNumber": "RERA-GRG-2082-2025",
+    "reraPossession": "2033-12-31",
+    "builderRiskScoreLabel": "7.0/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-TUL",
+      "builderName": "Tulip Infratech Pvt Ltd",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Tulip Infratech Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "Unassigned",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.0,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
     "reraDetails": {
       "reraProjectName": "TULIP MELROSE",
       "reraRegistrationNo": "RERA-GRG-2082-2025",
@@ -11939,13 +16385,26 @@ window.__PROJECTS__ = [
     "bestFor": "End Use",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Watch closely",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "Tulip Infratech Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -12074,9 +16533,42 @@ window.__PROJECTS__ = [
     "latitude": 28.4048,
     "longitude": 77.0325,
     "published": true,
-    "reraNumber": "",
-    "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "reraNumber": "RERA-GRG-1647-2024",
+    "reraPossession": "2032-03-31",
+    "builderRiskScoreLabel": "7.0/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-TUL",
+      "builderName": "Tulip Infratech Pvt Ltd",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Tulip Infratech Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "Unassigned",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.0,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
     "reraDetails": {
       "reraProjectName": "TULIP CRIMSON",
       "reraRegistrationNo": "RERA-GRG-1647-2024",
@@ -12120,13 +16612,26 @@ window.__PROJECTS__ = [
     "bestFor": "End Use",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Needs caution",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "C grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "M3M India Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -12257,7 +16762,40 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "",
     "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "builderRiskScoreLabel": "6.2/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-M3M",
+      "builderName": "M3M India Pvt Ltd",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "M3M India Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "C",
+      "financialStress": "Elevated stress",
+      "financialStressScore": 6.2,
+      "publicRiskSignal": "Needs caution",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "C grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
     "reraDetails": {}
   },
   {
@@ -12281,13 +16819,26 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Watch closely",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "Central Park does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -12416,10 +16967,63 @@ window.__PROJECTS__ = [
     "latitude": 28.4175,
     "longitude": 77.0475,
     "published": true,
-    "reraNumber": "",
+    "reraNumber": "RERA-GRG-1945-2025",
     "reraPossession": "",
-    "builderRiskScoreLabel": null,
-    "reraDetails": {}
+    "builderRiskScoreLabel": "7.0/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-CP",
+      "builderName": "Central Park",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Central Park does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "Unassigned",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.0,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
+    "reraDetails": {
+      "reraProjectName": "DESTINO CENTRAL PARK",
+      "reraRegistrationNo": "RERA-GRG-1945-2025",
+      "projectAddress": "4 KAUTILYA MARG NEW DELHI",
+      "landArea": "4.11 Acre",
+      "totalLicensedLand": "197.161 Acre",
+      "totalTowers": null,
+      "totalUnits": null,
+      "unitsSold": null,
+      "unitsAvailable": null,
+      "totalFloors": null,
+      "launchPrice": null,
+      "currentPrice": null,
+      "configurations": "",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "projectSizeText": "",
+      "startDate": "",
+      "completionDate": "",
+      "sourceUrl": "https://reratracker.com/destino-central-park-in-gurugram-by-st-patricks-realty-pvt-ltd-rtid5250"
+    }
   },
   {
     "code": "GGM-113-ONE",
@@ -12442,13 +17046,26 @@ window.__PROJECTS__ = [
     "bestFor": "End Use",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Needs caution",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "C grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "Smartworld Developers does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -12579,7 +17196,40 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "",
     "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "builderRiskScoreLabel": "6.2/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-SMW",
+      "builderName": "Smartworld Developers",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Smartworld Developers does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "C",
+      "financialStress": "Elevated stress",
+      "financialStressScore": 6.2,
+      "publicRiskSignal": "Needs caution",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "C grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
     "reraDetails": {}
   },
   {
@@ -12603,13 +17253,26 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Needs caution",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "C grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "Smartworld Developers does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -12738,9 +17401,42 @@ window.__PROJECTS__ = [
     "latitude": 28.4188,
     "longitude": 77.0765,
     "published": true,
-    "reraNumber": "",
-    "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "reraNumber": "RERA-GRG-1395-2023",
+    "reraPossession": "2031-02-01",
+    "builderRiskScoreLabel": "6.2/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-SMW",
+      "builderName": "Smartworld Developers",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Smartworld Developers does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "C",
+      "financialStress": "Elevated stress",
+      "financialStressScore": 6.2,
+      "publicRiskSignal": "Needs caution",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "C grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
     "reraDetails": {
       "reraProjectName": "SMARTWORLD THE EDITION",
       "reraRegistrationNo": "RERA-GRG-1395-2023",
@@ -12784,13 +17480,26 @@ window.__PROJECTS__ = [
     "bestFor": "Investment",
     "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
     "developerRisk": {
-      "score": "Data pending",
+      "score": "Watch closely",
       "rows": [
         [
-          "Status",
-          "Data pending"
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "B grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
         ]
-      ]
+      ],
+      "summary": "Experion Developers Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures."
     },
     "approvals": [
       [
@@ -12919,9 +17628,42 @@ window.__PROJECTS__ = [
     "latitude": 28.4475,
     "longitude": 77.0945,
     "published": true,
-    "reraNumber": "",
-    "reraPossession": "",
-    "builderRiskScoreLabel": null,
+    "reraNumber": "UPRERAPRJ953234/04/2024",
+    "reraPossession": "04-01-2029",
+    "builderRiskScoreLabel": "7.4/10",
+    "builderIntelligence": {
+      "builderCode": "DEV-EXP",
+      "builderName": "Experion Developers Pvt Ltd",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Experion Developers Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "B",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.4,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "B grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
     "reraDetails": {
       "reraProjectName": "Experion Elements Phase-2",
       "reraRegistrationNo": "UPRERAPRJ953234/04/2024",

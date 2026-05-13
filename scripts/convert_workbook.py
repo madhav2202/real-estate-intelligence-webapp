@@ -15,8 +15,11 @@ REL_NS = "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}i
 
 SOURCE = Path("/Users/madhavprakash/Downloads/Gurgaon_RE_Intelligence_v2.xlsx")
 SUPPLEMENTARY_CSV = Path("/Users/madhavprakash/Documents/Data for Plinth/Scraped data for projects.csv")
+LOCAL_SUPPLEMENTARY_CSV = Path("/Users/madhavprakash/Documents/New project/data/reratracker_refresh.csv")
 OUTPUT_JS = Path("/Users/madhavprakash/Documents/New project/data/projects-data.js")
 OUTPUT_JSON = Path("/Users/madhavprakash/Documents/New project/data/projects-data.json")
+ALIASES_JSON = Path("/Users/madhavprakash/Documents/New project/data/project_aliases.json")
+BUILDER_INTELLIGENCE_JSON = Path("/Users/madhavprakash/Documents/New project/data/builder_intelligence.json")
 
 
 def parse_xlsx(path: Path):
@@ -97,7 +100,13 @@ def split_pipe(text):
     return [text, "Data pending"]
 
 
-def build_builder_risk(builder):
+def build_builder_risk(builder, intelligence=None):
+    if intelligence:
+        return {
+            "score": intelligence.get("publicRiskSignal") or "Data pending",
+            "rows": intelligence.get("rows") or [["Status", "Data pending"]],
+            "summary": intelligence.get("summary") or "",
+        }
     keys = [
         ("delivery_record", "Delivery record"),
         ("financial_leverage", "Financial leverage"),
@@ -166,6 +175,39 @@ def read_csv_rows(path: Path):
         return []
     with path.open("r", encoding="utf-8-sig", newline="") as handle:
         return list(csv.DictReader(handle))
+
+
+def read_aliases(path: Path):
+    if not path.exists():
+        return {}
+    return json.loads(path.read_text())
+
+
+def is_present(value):
+    if value in (None, "", "Data pending"):
+        return False
+    return True
+
+
+def merge_rera_sources(*row_lists):
+    merged = {}
+    for rows in row_lists:
+        for row in rows:
+            key = (
+                row.get("source_url")
+                or row.get("rera_registration_no")
+                or row.get("project_name")
+                or str(len(merged))
+            )
+            existing = merged.get(key, {})
+            combined = dict(existing)
+            for field, value in row.items():
+                if is_present(value) and not is_present(combined.get(field)):
+                    combined[field] = value
+                elif field not in combined:
+                    combined[field] = value
+            merged[key] = combined
+    return list(merged.values())
 
 
 def normalize_tokens(text, generic=False):
@@ -272,14 +314,14 @@ def parse_price_text(text):
     return parse_number(match.group(1))
 
 
-def score_rera_match(project_row, builder, rera_row):
-    project_tokens = set(normalize_tokens(project_row.get("name"), generic=True))
+def score_rera_match(project_names, project_sector_value, builder, rera_row):
     rera_tokens = set(normalize_tokens(rera_row.get("project_name"), generic=True))
-    specific_overlap = len(project_tokens & rera_tokens)
+    token_sets = [set(normalize_tokens(name, generic=True)) for name in project_names if name]
+    specific_overlap = max((len(tokens & rera_tokens) for tokens in token_sets), default=0)
     if not specific_overlap:
         return None
 
-    project_sector = normalize_sector(project_row.get("sector"))
+    project_sector = normalize_sector(project_sector_value)
     rera_sector = normalize_sector(rera_row.get("project_address") or rera_row.get("sector") or "")
     sector_match = bool(project_sector and rera_sector and project_sector == rera_sector)
 
@@ -288,7 +330,7 @@ def score_rera_match(project_row, builder, rera_row):
         & normalize_developer(rera_row.get("developer_name"))
     )
 
-    sim = similarity(project_row.get("name"), rera_row.get("project_name"))
+    sim = max((similarity(name, rera_row.get("project_name")) for name in project_names if name), default=0)
     score = specific_overlap * 4 + developer_overlap * 3 + (4 if sector_match else 0) + sim * 5
 
     # Conservative acceptance: exact-ish project signal plus either developer or sector support.
@@ -297,13 +339,15 @@ def score_rera_match(project_row, builder, rera_row):
     return None
 
 
-def build_rera_lookup(project_rows, builders, rera_rows):
+def build_rera_lookup(project_rows, builders, rera_rows, aliases):
     lookup = {}
     for project_row in project_rows:
         builder = builders.get(project_row.get("builder_code"), {})
+        alias_config = aliases.get(project_row.get("code"), {})
+        project_names = [project_row.get("name"), alias_config.get("canonicalName"), *(alias_config.get("aliases") or [])]
         candidates = []
         for rera_row in rera_rows:
-            score = score_rera_match(project_row, builder, rera_row)
+            score = score_rera_match(project_names, project_row.get("sector"), builder, rera_row)
             if score is not None:
                 candidates.append((score, rera_row))
         candidates.sort(key=lambda item: item[0], reverse=True)
@@ -349,8 +393,15 @@ def main():
     sheets = parse_xlsx(SOURCE)
     builders = {row["builder_code"]: row for row in rows_to_dicts(sheets["builders"])}
     project_rows = rows_to_dicts(sheets["projects"])
-    rera_rows = read_csv_rows(SUPPLEMENTARY_CSV)
-    rera_lookup = build_rera_lookup(project_rows, builders, rera_rows)
+    rera_rows = merge_rera_sources(read_csv_rows(SUPPLEMENTARY_CSV), read_csv_rows(LOCAL_SUPPLEMENTARY_CSV))
+    aliases = read_aliases(ALIASES_JSON)
+    builder_intelligence_payload = (
+        json.loads(BUILDER_INTELLIGENCE_JSON.read_text()) if BUILDER_INTELLIGENCE_JSON.exists() else {"builders": []}
+    )
+    builder_intelligence_map = {
+        row["builderCode"]: row for row in builder_intelligence_payload.get("builders", [])
+    }
+    rera_lookup = build_rera_lookup(project_rows, builders, rera_rows, aliases)
 
     approvals_map = {}
     for row in rows_to_dicts(sheets["approvals"]):
@@ -392,6 +443,8 @@ def main():
     projects = []
     for row in project_rows:
         builder = builders.get(row["builder_code"], {})
+        builder_intelligence = builder_intelligence_map.get(row.get("builder_code"))
+        alias_config = aliases.get(row.get("code"), {})
         price_sqft = parse_number(row.get("priceSqft"))
         price_cr = parse_number(row.get("priceCr"))
         sqft = parse_size_range(row.get("size_range"))
@@ -401,8 +454,8 @@ def main():
             price_sqft = rera_details["currentPrice"]
         project = {
             "code": row.get("code"),
-            "name": row.get("name"),
-            "slug": slugify(row.get("name") or row.get("code")),
+            "name": alias_config.get("canonicalName") or row.get("name"),
+            "slug": slugify(alias_config.get("canonicalName") or row.get("name") or row.get("code")),
             "developer": builder.get("builder_name") or row.get("builder_code"),
             "builderCode": row.get("builder_code") or "",
             "location": ", ".join(filter(None, [row.get("sector"), row.get("corridor"), "Gurugram"])),
@@ -419,7 +472,7 @@ def main():
             "inventory": row.get("inventory") or "Data pending",
             "bestFor": row.get("bestFor") or "Data pending",
             "image": row.get("image") or "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=80",
-            "developerRisk": build_builder_risk(builder),
+            "developerRisk": build_builder_risk(builder, builder_intelligence),
             "approvals": approvals_map.get(row.get("code"), [["Status", "Data pending"]]),
             "tracker": tracker_map.get(row.get("code"), {"signal": "Data pending", "rows": [["Current stage", "Data pending"]]}),
             "comps": comps_map.get(row.get("code"), []),
@@ -440,9 +493,14 @@ def main():
             "latitude": parse_number(row.get("latitude")),
             "longitude": parse_number(row.get("longitude")),
             "published": str(row.get("published") or "TRUE").strip().upper() != "FALSE",
-            "reraNumber": row.get("rera_number") or "",
-            "reraPossession": row.get("rera_possession") or "",
-            "builderRiskScoreLabel": derive_score_label(build_builder_risk(builder)["score"]),
+            "reraNumber": row.get("rera_number") or rera_details.get("reraRegistrationNo") or "",
+            "reraPossession": row.get("rera_possession") or rera_details.get("completionDate") or "",
+            "builderRiskScoreLabel": (
+                f"{builder_intelligence['financialStressScore']:.1f}/10"
+                if builder_intelligence and builder_intelligence.get("financialStressScore") is not None
+                else derive_score_label(build_builder_risk(builder)["score"])
+            ),
+            "builderIntelligence": builder_intelligence or {},
             "reraDetails": rera_details,
         }
         projects.append(project)

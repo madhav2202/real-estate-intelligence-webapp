@@ -25,6 +25,7 @@
           <a href="./index.html?view=terminal">Terminal</a>
           <a href="./properties.html">Properties</a>
         </nav>
+        <div class="source-badge" id="dataSourceBadge">Checking source…</div>
       </header>
 
       <section class="project-hero" id="projectHero">
@@ -66,6 +67,14 @@
               <span id="projectStage">--</span>
             </div>
             <div class="snapshot-grid" id="snapshotGrid"></div>
+            <div class="registry-band">
+              <div class="registry-copy">
+                <h3>Registry & Pricing Facts</h3>
+                <p>Quietly layered in from RERA-linked and matched project sources where the underlying data is available.</p>
+              </div>
+              <div class="registry-grid" id="registryGrid"></div>
+              <div class="source-link-row" id="sourceLinkRow"></div>
+            </div>
           </section>
 
           <div class="intelligence-grid intelligence-grid-priority">
@@ -188,7 +197,11 @@
                 <h2>Builder Risk <button class="info-dot" type="button" title="An algorithmic builder confidence proxy using the current PropSpot builder bucket plus any builder diligence rows already available in the underlying data.">i</button></h2>
                 <span id="builderRiskScore">--/10</span>
               </div>
+              <p class="section-note" id="builderRiskSummary">--</p>
+              <div class="chip-row" id="builderRiskChips"></div>
+              <div class="finance-mini-grid" id="builderFinanceGrid"></div>
               <ul class="detail-list" id="builderRiskList"></ul>
+              <div class="source-link-row" id="builderSourceRow"></div>
             </section>
 
             <section class="surface-card feature-card">
@@ -204,6 +217,8 @@
                 <h2>Construction / Launch Tracker</h2>
                 <span id="trackerSignal">--</span>
               </div>
+              <p class="section-note" id="trackerSummary">--</p>
+              <div class="chip-row" id="trackerChips"></div>
               <ul class="detail-list" id="trackerList"></ul>
             </section>
 
@@ -212,6 +227,8 @@
                 <h2>Payment / Inventory <button class="info-dot" type="button" title="A live operating view built from the current launch data available for payment visibility, released inventory, absorption, and supply pressure.">i</button></h2>
                 <span id="inventoryPressure">--</span>
               </div>
+              <p class="section-note" id="paymentSummary">--</p>
+              <div class="chip-row" id="paymentChips"></div>
               <ul class="detail-list" id="paymentInventoryList"></ul>
             </section>
 

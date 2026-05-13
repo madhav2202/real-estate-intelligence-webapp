@@ -1,0 +1,1245 @@
+{
+  "generatedAt": "2026-05-09T11:26:13.211001+00:00",
+  "builders": [
+    {
+      "builderCode": "DEV-ADA",
+      "builderName": "Adani Realty",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Adani Realty does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "A",
+      "financialStress": "Low stress",
+      "financialStressScore": 8.2,
+      "publicRiskSignal": "Seems ok",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Low stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
+    {
+      "builderCode": "DEV-AIPL",
+      "builderName": "AIPL (Advance India Projects Limited)",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "AIPL (Advance India Projects Limited) does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "B",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.4,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "B grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
+    {
+      "builderCode": "DEV-ASH",
+      "builderName": "Ashiana Housing Ltd",
+      "listed": true,
+      "financeProvider": "Screener",
+      "financeUrl": "https://www.screener.in/company/ASHIANA/",
+      "summary": "Ashiana Housing Ltd is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at 2.74 and ROCE at 3.56.",
+      "gradeBucket": "B",
+      "financialStress": "Elevated stress",
+      "financialStressScore": 6.1,
+      "publicRiskSignal": "Needs caution",
+      "metrics": {
+        "marketCap": "3,770 Crore (up 41.6% in 1 year)",
+        "revenue": "962 Cr",
+        "profit": "122 Cr",
+        "promoterHolding": "61.1%",
+        "currentPrice": "\u20b9 375",
+        "highLow": "\u20b9 389",
+        "stockPE": "31.0",
+        "bookValue": "\u20b9 79.1",
+        "dividendYield": "0.67",
+        "roce": "3.56",
+        "roe": "2.74"
+      },
+      "pros": [
+        "Company is expected to give good quarter",
+        "Company has delivered good profit growth of 28.2% CAGR over last 5 years",
+        "Company has been maintaining a healthy dividend payout of 39.8%"
+      ],
+      "cons": [
+        "Stock is trading at 4.74 times its book value",
+        "Company has a low return on equity of 5.43% over last 3 years.",
+        "Earnings include an other income of Rs.46.5 Cr."
+      ],
+      "rows": [
+        [
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "B grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "3,770 Crore (up 41.6% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "2.74 / 3.56"
+        ],
+        [
+          "Finance signal",
+          "Mixed"
+        ]
+      ]
+    },
+    {
+      "builderCode": "DEV-BIR",
+      "builderName": "Birla Estates Pvt Ltd",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Birla Estates Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "A",
+      "financialStress": "Low stress",
+      "financialStressScore": 8.2,
+      "publicRiskSignal": "Seems ok",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Low stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
+    {
+      "builderCode": "DEV-BPTP",
+      "builderName": "BPTP Limited",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "BPTP Limited does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "Unassigned",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.0,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
+    {
+      "builderCode": "DEV-CON",
+      "builderName": "Conscient Infrastructure",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Conscient Infrastructure does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "B",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.4,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "B grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
+    {
+      "builderCode": "DEV-CP",
+      "builderName": "Central Park",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Central Park does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "Unassigned",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.0,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
+    {
+      "builderCode": "DEV-DLF",
+      "builderName": "DLF Homes (DLF Ltd)",
+      "listed": true,
+      "financeProvider": "Screener",
+      "financeUrl": "https://www.screener.in/company/DLF/",
+      "summary": "DLF Homes (DLF Ltd) is a listed developer tracked via Screener. Current financial read is low stress with ROE at 6.30 and ROCE at 8.34.",
+      "gradeBucket": "A+",
+      "financialStress": "Low stress",
+      "financialStressScore": 9.1,
+      "publicRiskSignal": "Seems ok",
+      "metrics": {
+        "marketCap": "1,50,561 Crore (down -3.71% in 1 year)",
+        "revenue": "3,913 Cr",
+        "profit": "2,900 Cr",
+        "promoterHolding": "74.1%",
+        "currentPrice": "\u20b9 608",
+        "highLow": "\u20b9 888",
+        "stockPE": "55.1",
+        "bookValue": "\u20b9 117",
+        "dividendYield": "0.99",
+        "roce": "8.34",
+        "roe": "6.30"
+      },
+      "pros": [
+        "Company has reduced debt.",
+        "Company is almost debt free.",
+        "Company has been maintaining a healthy dividend payout of 78.6%"
+      ],
+      "cons": [
+        "Stock is trading at 5.20 times its book value",
+        "Company has a low return on equity of 6.21% over last 3 years.",
+        "Earnings include an other income of Rs.2,424 Cr."
+      ],
+      "rows": [
+        [
+          "Current view",
+          "Low stress"
+        ],
+        [
+          "Builder bucket",
+          "A+ grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "1,50,561 Crore (down -3.71% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "6.30 / 8.34"
+        ],
+        [
+          "Finance signal",
+          "Balance sheet reads lighter"
+        ]
+      ]
+    },
+    {
+      "builderCode": "DEV-ELAN",
+      "builderName": "Elan Group",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Elan Group does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "B",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.4,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "B grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
+    {
+      "builderCode": "DEV-ELD",
+      "builderName": "Eldeco Infrastructure and Properties",
+      "listed": true,
+      "financeProvider": "Screener",
+      "financeUrl": "https://www.screener.in/company/ELDEHSG/",
+      "summary": "Eldeco Infrastructure and Properties is a listed developer tracked via Screener. Current financial read is moderate stress with ROE at 7.89 and ROCE at 10.4.",
+      "gradeBucket": "B",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.4,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {
+        "marketCap": "845 Crore (up 11.1% in 1 year)",
+        "revenue": "136 Cr",
+        "profit": "28.3 Cr",
+        "promoterHolding": "54.8%",
+        "currentPrice": "\u20b9 860",
+        "highLow": "\u20b9 1,061",
+        "stockPE": "29.9",
+        "bookValue": "\u20b9 349",
+        "dividendYield": "1.05",
+        "roce": "10.4",
+        "roe": "7.89"
+      },
+      "pros": [
+        "Company has been maintaining a healthy dividend payout of 27.6%"
+      ],
+      "cons": [
+        "The company has delivered a poor sales growth of 5.76% over past five years.",
+        "Company has a low return on equity of 10.0% over last 3 years."
+      ],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "B grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "845 Crore (up 11.1% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "7.89 / 10.4"
+        ],
+        [
+          "Finance signal",
+          "Mixed"
+        ]
+      ]
+    },
+    {
+      "builderCode": "DEV-EMA",
+      "builderName": "Emaar India Ltd",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Emaar India Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "A",
+      "financialStress": "Low stress",
+      "financialStressScore": 8.2,
+      "publicRiskSignal": "Seems ok",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Low stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
+    {
+      "builderCode": "DEV-EXP",
+      "builderName": "Experion Developers Pvt Ltd",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Experion Developers Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "B",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.4,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "B grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
+    {
+      "builderCode": "DEV-GAN",
+      "builderName": "Ganga Realty Pvt Ltd",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Ganga Realty Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "Unassigned",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.0,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
+    {
+      "builderCode": "DEV-GODREJ",
+      "builderName": "Godrej Properties Limited",
+      "listed": true,
+      "financeProvider": "Screener",
+      "financeUrl": "https://www.screener.in/company/GODREJPROP/",
+      "summary": "Godrej Properties Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at 2.04 and ROCE at 3.36.",
+      "gradeBucket": "A",
+      "financialStress": "Elevated stress",
+      "financialStressScore": 5.8,
+      "publicRiskSignal": "Needs caution",
+      "metrics": {
+        "marketCap": "56,434 Crore (down -6.34% in 1 year)",
+        "revenue": "1,395 Cr",
+        "profit": "349 Cr",
+        "promoterHolding": "51.7%",
+        "currentPrice": "\u20b9 1,874",
+        "highLow": "\u20b9 2,506",
+        "stockPE": "157",
+        "bookValue": "\u20b9 591",
+        "dividendYield": "0.00",
+        "roce": "3.36",
+        "roe": "2.04"
+      },
+      "pros": [
+        "Debtor days have improved from 41.0 to 25.9 days.",
+        "Promoter holding has increased by 4.49% over last quarter."
+      ],
+      "cons": [
+        "Stock is trading at 3.17 times its book value",
+        "Company has low interest coverage ratio.",
+        "Company has a low return on equity of 4.05% over last 3 years.",
+        "Company might be capitalizing the interest cost",
+        "Earnings include an other income of Rs.1,973 Cr."
+      ],
+      "rows": [
+        [
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "56,434 Crore (down -6.34% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "2.04 / 3.36"
+        ],
+        [
+          "Finance signal",
+          "Low interest coverage flagged"
+        ]
+      ]
+    },
+    {
+      "builderCode": "DEV-HERO",
+      "builderName": "Hero Realty (Hero Group)",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Hero Realty (Hero Group) does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "Unassigned",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.0,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
+    {
+      "builderCode": "DEV-KRIS",
+      "builderName": "Krisumi Corporation",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Krisumi Corporation does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "B",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.4,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "B grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
+    {
+      "builderCode": "DEV-M3M",
+      "builderName": "M3M India Pvt Ltd",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "M3M India Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "C",
+      "financialStress": "Elevated stress",
+      "financialStressScore": 6.2,
+      "publicRiskSignal": "Needs caution",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "C grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
+    {
+      "builderCode": "DEV-MAX",
+      "builderName": "Max Estates Limited",
+      "listed": true,
+      "financeProvider": "Screener",
+      "financeUrl": "https://www.screener.in/company/MAXESTATES/",
+      "summary": "Max Estates Limited is a listed developer tracked via Screener. Current financial read is moderate stress with ROE at 2.39 and ROCE at 3.22.",
+      "gradeBucket": "A",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 6.8,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {
+        "marketCap": "6,670 Crore (up 5.82% in 1 year)",
+        "revenue": "52.1 Cr",
+        "profit": "70.8 Cr",
+        "promoterHolding": "45.3%",
+        "currentPrice": "\u20b9 408",
+        "highLow": "\u20b9 564",
+        "stockPE": "94.2",
+        "bookValue": "\u20b9 148",
+        "dividendYield": "0.00",
+        "roce": "3.22",
+        "roe": "2.39"
+      },
+      "pros": [
+        "Company has reduced debt.",
+        "Company is almost debt free.",
+        "Company is expected to give good quarter",
+        "Company has delivered good profit growth of 40.3% CAGR over last 5 years"
+      ],
+      "cons": [
+        "Stock is trading at 2.75 times its book value",
+        "Though the company is reporting repeated profits, it is not paying out dividend",
+        "Company has a low return on equity of 2.25% over last 3 years.",
+        "Earnings include an other income of Rs.129 Cr.",
+        "Company has high debtors of 187 days."
+      ],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "6,670 Crore (up 5.82% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "2.39 / 3.22"
+        ],
+        [
+          "Finance signal",
+          "Balance sheet reads lighter"
+        ]
+      ]
+    },
+    {
+      "builderCode": "DEV-OBE",
+      "builderName": "Oberoi Realty Limited",
+      "listed": true,
+      "financeProvider": "Screener",
+      "financeUrl": "https://www.screener.in/company/OBEROIRLTY/",
+      "summary": "Oberoi Realty Limited is a listed developer tracked via Screener. Current financial read is low stress with ROE at 13.0 and ROCE at 15.5.",
+      "gradeBucket": "A+",
+      "financialStress": "Low stress",
+      "financialStressScore": 9.2,
+      "publicRiskSignal": "Seems ok",
+      "metrics": {
+        "marketCap": "61,921 Crore (up 11.0% in 1 year)",
+        "revenue": "4,916 Cr",
+        "profit": "1,968 Cr",
+        "promoterHolding": "67.7%",
+        "currentPrice": "\u20b9 1,703",
+        "highLow": "\u20b9 2,006",
+        "stockPE": "31.2",
+        "bookValue": "\u20b9 443",
+        "dividendYield": "0.47",
+        "roce": "15.5",
+        "roe": "13.0"
+      },
+      "pros": [
+        "Company is expected to give good quarter"
+      ],
+      "cons": [
+        "Stock is trading at 3.85 times its book value",
+        "Company has a low return on equity of 12.2% over last 3 years."
+      ],
+      "rows": [
+        [
+          "Current view",
+          "Low stress"
+        ],
+        [
+          "Builder bucket",
+          "A+ grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "61,921 Crore (up 11.0% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "13.0 / 15.5"
+        ],
+        [
+          "Finance signal",
+          "Core return profile is healthier"
+        ]
+      ]
+    },
+    {
+      "builderCode": "DEV-SAT",
+      "builderName": "Satya Group",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Satya Group does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "Unassigned",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.0,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
+    {
+      "builderCode": "DEV-SIGG",
+      "builderName": "Signature Global India Limited",
+      "listed": true,
+      "financeProvider": "Screener",
+      "financeUrl": "https://www.screener.in/company/SIGNATURE/",
+      "summary": "Signature Global India Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at 6.69 and ROCE at 9.40.",
+      "gradeBucket": "C",
+      "financialStress": "Elevated stress",
+      "financialStressScore": 5.6,
+      "publicRiskSignal": "Needs caution",
+      "metrics": {
+        "marketCap": "12,720 Crore (down -21.3% in 1 year)",
+        "revenue": "1,415 Cr",
+        "profit": "25.2 Cr",
+        "promoterHolding": "69.6%",
+        "currentPrice": "\u20b9 905",
+        "highLow": "\u20b9 1,310",
+        "stockPE": "505",
+        "bookValue": "\u20b9 66.1",
+        "dividendYield": "0.00",
+        "roce": "9.40",
+        "roe": "6.69"
+      },
+      "pros": [
+        "Company has delivered good profit growth of 101% CAGR over last 5 years"
+      ],
+      "cons": [
+        "Stock is trading at 13.7 times its book value",
+        "Though the company is reporting repeated profits, it is not paying out dividend",
+        "Company has low interest coverage ratio.",
+        "Tax rate seems low",
+        "Company has a low return on equity of -2.16% over last 3 years."
+      ],
+      "rows": [
+        [
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "C grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "12,720 Crore (down -21.3% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "6.69 / 9.40"
+        ],
+        [
+          "Finance signal",
+          "Low interest coverage flagged"
+        ]
+      ]
+    },
+    {
+      "builderCode": "DEV-SMW",
+      "builderName": "Smartworld Developers",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Smartworld Developers does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "C",
+      "financialStress": "Elevated stress",
+      "financialStressScore": 6.2,
+      "publicRiskSignal": "Needs caution",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "C grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
+    {
+      "builderCode": "DEV-SOB",
+      "builderName": "Sobha Limited",
+      "listed": true,
+      "financeProvider": "Screener",
+      "financeUrl": "https://www.screener.in/company/SOBHA/",
+      "summary": "Sobha Limited is a listed developer tracked via Screener. Current financial read is low stress with ROE at 6.61 and ROCE at 9.55.",
+      "gradeBucket": "A",
+      "financialStress": "Low stress",
+      "financialStressScore": 8.3,
+      "publicRiskSignal": "Seems ok",
+      "metrics": {
+        "marketCap": "15,242 Crore (up 16.4% in 1 year)",
+        "revenue": "5,368 Cr",
+        "profit": "301 Cr",
+        "promoterHolding": "52.9%",
+        "currentPrice": "\u20b9 1,425",
+        "highLow": "\u20b9 1,732",
+        "stockPE": "50.6",
+        "bookValue": "\u20b9 439",
+        "dividendYield": "0.21",
+        "roce": "9.55",
+        "roe": "6.61"
+      },
+      "pros": [
+        "Company is expected to give good quarter",
+        "Company has delivered good profit growth of 35.7% CAGR over last 5 years",
+        "Company has been maintaining a healthy dividend payout of 37.0%"
+      ],
+      "cons": [
+        "Stock is trading at 3.25 times its book value",
+        "Company has a low return on equity of 4.47% over last 3 years.",
+        "Earnings include an other income of Rs.219 Cr."
+      ],
+      "rows": [
+        [
+          "Current view",
+          "Low stress"
+        ],
+        [
+          "Builder bucket",
+          "A grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "15,242 Crore (up 16.4% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "6.61 / 9.55"
+        ],
+        [
+          "Finance signal",
+          "Mixed"
+        ]
+      ]
+    },
+    {
+      "builderCode": "DEV-SP",
+      "builderName": "Shapoorji Pallonji Real Estate",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Shapoorji Pallonji Real Estate does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "B",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.4,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "B grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
+    {
+      "builderCode": "DEV-SUN",
+      "builderName": "Suncity Projects Pvt Ltd",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Suncity Projects Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "C",
+      "financialStress": "Elevated stress",
+      "financialStressScore": 6.2,
+      "publicRiskSignal": "Needs caution",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "C grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
+    {
+      "builderCode": "DEV-TARC",
+      "builderName": "TARC Limited",
+      "listed": true,
+      "financeProvider": "Screener",
+      "financeUrl": "https://www.screener.in/company/TARC/",
+      "summary": "TARC Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at -8.02 and ROCE at 0.03.",
+      "gradeBucket": "Unassigned",
+      "financialStress": "Elevated stress",
+      "financialStressScore": 5.0,
+      "publicRiskSignal": "Needs caution",
+      "metrics": {
+        "marketCap": "4,034 Crore (down -3.44% in 1 year)",
+        "revenue": "37.5 Cr",
+        "profit": "-245 Cr",
+        "promoterHolding": "65.1%",
+        "currentPrice": "\u20b9 137",
+        "highLow": "\u20b9 206",
+        "stockPE": null,
+        "bookValue": "\u20b9 37.2",
+        "dividendYield": "0.00",
+        "roce": "0.03",
+        "roe": "-8.02"
+      },
+      "pros": [
+        "Company has reduced debt."
+      ],
+      "cons": [
+        "Stock is trading at 3.68 times its book value",
+        "Company has low interest coverage ratio.",
+        "The company has delivered a poor sales growth of -33.8% over past five years.",
+        "Company has a low return on equity of -1.93% over last 3 years.",
+        "Contingent liabilities of Rs.2,794 Cr."
+      ],
+      "rows": [
+        [
+          "Current view",
+          "Elevated stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Listed"
+        ],
+        [
+          "Market cap",
+          "4,034 Crore (down -3.44% in 1 year)"
+        ],
+        [
+          "ROE / ROCE",
+          "-8.02 / 0.03"
+        ],
+        [
+          "Finance signal",
+          "Low interest coverage flagged"
+        ]
+      ]
+    },
+    {
+      "builderCode": "DEV-TATA",
+      "builderName": "Tata Housing Development Co",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Tata Housing Development Co does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "Unassigned",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.0,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
+    {
+      "builderCode": "DEV-TRI",
+      "builderName": "Tribeca Creators LLP",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Tribeca Creators LLP does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "Unassigned",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.0,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
+    {
+      "builderCode": "DEV-TUL",
+      "builderName": "Tulip Infratech Pvt Ltd",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Tulip Infratech Pvt Ltd does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "Unassigned",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.0,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    },
+    {
+      "builderCode": "DEV-WHI",
+      "builderName": "Whiteland Corporation",
+      "listed": false,
+      "financeProvider": null,
+      "financeUrl": null,
+      "summary": "Whiteland Corporation does not have a direct listed-company finance summary in the current pipeline. For now, Plinth is leaning on the builder bucket and project presence as a proxy rather than public market disclosures.",
+      "gradeBucket": "Unassigned",
+      "financialStress": "Moderate stress",
+      "financialStressScore": 7.0,
+      "publicRiskSignal": "Watch closely",
+      "metrics": {},
+      "pros": [],
+      "cons": [],
+      "rows": [
+        [
+          "Current view",
+          "Moderate stress"
+        ],
+        [
+          "Builder bucket",
+          "Unassigned grade"
+        ],
+        [
+          "Market status",
+          "Private / unlisted"
+        ],
+        [
+          "Finance signal",
+          "Proxy-based read"
+        ]
+      ]
+    }
+  ]
+}

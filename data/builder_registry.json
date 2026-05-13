@@ -1,0 +1,201 @@
+[
+  {
+    "builderCode": "DEV-ADA",
+    "builderName": "Adani Realty",
+    "gradeBucket": "A",
+    "listed": false
+  },
+  {
+    "builderCode": "DEV-AIPL",
+    "builderName": "AIPL (Advance India Projects Limited)",
+    "gradeBucket": "B",
+    "listed": false
+  },
+  {
+    "builderCode": "DEV-ASH",
+    "builderName": "Ashiana Housing Ltd",
+    "gradeBucket": "B",
+    "listed": true,
+    "financeProvider": "Screener",
+    "financeUrl": "https://www.screener.in/company/ASHIANA/"
+  },
+  {
+    "builderCode": "DEV-BIR",
+    "builderName": "Birla Estates Pvt Ltd",
+    "gradeBucket": "A",
+    "listed": false
+  },
+  {
+    "builderCode": "DEV-BPTP",
+    "builderName": "BPTP Limited",
+    "gradeBucket": "Unassigned",
+    "listed": false
+  },
+  {
+    "builderCode": "DEV-CON",
+    "builderName": "Conscient Infrastructure",
+    "gradeBucket": "B",
+    "listed": false
+  },
+  {
+    "builderCode": "DEV-CP",
+    "builderName": "Central Park",
+    "gradeBucket": "Unassigned",
+    "listed": false
+  },
+  {
+    "builderCode": "DEV-DLF",
+    "builderName": "DLF Homes (DLF Ltd)",
+    "gradeBucket": "A+",
+    "listed": true,
+    "financeProvider": "Screener",
+    "financeUrl": "https://www.screener.in/company/DLF/"
+  },
+  {
+    "builderCode": "DEV-ELAN",
+    "builderName": "Elan Group",
+    "gradeBucket": "B",
+    "listed": false
+  },
+  {
+    "builderCode": "DEV-ELD",
+    "builderName": "Eldeco Infrastructure and Properties",
+    "gradeBucket": "B",
+    "listed": true,
+    "financeProvider": "Screener",
+    "financeUrl": "https://www.screener.in/company/ELDEHSG/",
+    "financeNote": "Uses Eldeco Housing & Industries as the closest listed parent proxy."
+  },
+  {
+    "builderCode": "DEV-EMA",
+    "builderName": "Emaar India Ltd",
+    "gradeBucket": "A",
+    "listed": false
+  },
+  {
+    "builderCode": "DEV-EXP",
+    "builderName": "Experion Developers Pvt Ltd",
+    "gradeBucket": "B",
+    "listed": false
+  },
+  {
+    "builderCode": "DEV-GAN",
+    "builderName": "Ganga Realty Pvt Ltd",
+    "gradeBucket": "Unassigned",
+    "listed": false
+  },
+  {
+    "builderCode": "DEV-GODREJ",
+    "builderName": "Godrej Properties Limited",
+    "gradeBucket": "A",
+    "listed": true,
+    "financeProvider": "Screener",
+    "financeUrl": "https://www.screener.in/company/GODREJPROP/"
+  },
+  {
+    "builderCode": "DEV-HERO",
+    "builderName": "Hero Realty (Hero Group)",
+    "gradeBucket": "Unassigned",
+    "listed": false
+  },
+  {
+    "builderCode": "DEV-KRIS",
+    "builderName": "Krisumi Corporation",
+    "gradeBucket": "B",
+    "listed": false
+  },
+  {
+    "builderCode": "DEV-M3M",
+    "builderName": "M3M India Pvt Ltd",
+    "gradeBucket": "C",
+    "listed": false
+  },
+  {
+    "builderCode": "DEV-MAX",
+    "builderName": "Max Estates Limited",
+    "gradeBucket": "A",
+    "listed": true,
+    "financeProvider": "Screener",
+    "financeUrl": "https://www.screener.in/company/MAXESTATES/"
+  },
+  {
+    "builderCode": "DEV-OBE",
+    "builderName": "Oberoi Realty Limited",
+    "gradeBucket": "A+",
+    "listed": true,
+    "financeProvider": "Screener",
+    "financeUrl": "https://www.screener.in/company/OBEROIRLTY/"
+  },
+  {
+    "builderCode": "DEV-SAT",
+    "builderName": "Satya Group",
+    "gradeBucket": "Unassigned",
+    "listed": false
+  },
+  {
+    "builderCode": "DEV-SIGG",
+    "builderName": "Signature Global India Limited",
+    "gradeBucket": "C",
+    "listed": true,
+    "financeProvider": "Screener",
+    "financeUrl": "https://www.screener.in/company/SIGNATURE/"
+  },
+  {
+    "builderCode": "DEV-SMW",
+    "builderName": "Smartworld Developers",
+    "gradeBucket": "C",
+    "listed": false
+  },
+  {
+    "builderCode": "DEV-SOB",
+    "builderName": "Sobha Limited",
+    "gradeBucket": "A",
+    "listed": true,
+    "financeProvider": "Screener",
+    "financeUrl": "https://www.screener.in/company/SOBHA/"
+  },
+  {
+    "builderCode": "DEV-SP",
+    "builderName": "Shapoorji Pallonji Real Estate",
+    "gradeBucket": "B",
+    "listed": false
+  },
+  {
+    "builderCode": "DEV-SUN",
+    "builderName": "Suncity Projects Pvt Ltd",
+    "gradeBucket": "C",
+    "listed": false
+  },
+  {
+    "builderCode": "DEV-TARC",
+    "builderName": "TARC Limited",
+    "gradeBucket": "Unassigned",
+    "listed": true,
+    "financeProvider": "Screener",
+    "financeUrl": "https://www.screener.in/company/TARC/"
+  },
+  {
+    "builderCode": "DEV-TATA",
+    "builderName": "Tata Housing Development Co",
+    "gradeBucket": "Unassigned",
+    "listed": false
+  },
+  {
+    "builderCode": "DEV-TRI",
+    "builderName": "Tribeca Creators LLP",
+    "gradeBucket": "Unassigned",
+    "listed": false
+  },
+  {
+    "builderCode": "DEV-TUL",
+    "builderName": "Tulip Infratech Pvt Ltd",
+    "gradeBucket": "Unassigned",
+    "listed": false
+  },
+  {
+    "builderCode": "DEV-WHI",
+    "builderName": "Whiteland Corporation",
+    "gradeBucket": "Unassigned",
+    "listed": false
+  }
+]

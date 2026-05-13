@@ -10,7 +10,8 @@ import {
   getLocationScore,
   getWhatsappUrl,
   calculateEmi,
-  getLeadEndpoint,
+  getDataSourceMeta,
+  submitLead,
 } from "./shared.js";
 
 const formatter = new Intl.NumberFormat("en-IN");
@@ -28,6 +29,8 @@ const elements = {
   propspotLabel: document.querySelector("#propspotLabel"),
   projectStage: document.querySelector("#projectStage"),
   snapshotGrid: document.querySelector("#snapshotGrid"),
+  registryGrid: document.querySelector("#registryGrid"),
+  sourceLinkRow: document.querySelector("#sourceLinkRow"),
   downPaymentInput: document.querySelector("#downPaymentInput"),
   interestRateInput: document.querySelector("#interestRateInput"),
   tenureInput: document.querySelector("#tenureInput"),
@@ -42,13 +45,21 @@ const elements = {
   riskList: document.querySelector("#riskList"),
   trackerSignal: document.querySelector("#trackerSignal"),
   trackerList: document.querySelector("#trackerList"),
+  trackerSummary: document.querySelector("#trackerSummary"),
+  trackerChips: document.querySelector("#trackerChips"),
   builderGrade: document.querySelector("#builderGrade"),
   builderGradeCopy: document.querySelector("#builderGradeCopy"),
   builderRiskScore: document.querySelector("#builderRiskScore"),
   builderRiskList: document.querySelector("#builderRiskList"),
+  builderRiskSummary: document.querySelector("#builderRiskSummary"),
+  builderRiskChips: document.querySelector("#builderRiskChips"),
+  builderFinanceGrid: document.querySelector("#builderFinanceGrid"),
+  builderSourceRow: document.querySelector("#builderSourceRow"),
   scoreBreakdown: document.querySelector("#scoreBreakdown"),
   inventoryPressure: document.querySelector("#inventoryPressure"),
   paymentInventoryList: document.querySelector("#paymentInventoryList"),
+  paymentSummary: document.querySelector("#paymentSummary"),
+  paymentChips: document.querySelector("#paymentChips"),
   priceStackSignal: document.querySelector("#priceStackSignal"),
   priceStackHeadline: document.querySelector("#priceStackHeadline"),
   priceStackSubline: document.querySelector("#priceStackSubline"),
@@ -66,6 +77,7 @@ const elements = {
   leadForm: document.querySelector("#leadForm"),
   leadStatus: document.querySelector("#leadStatus"),
   sidebarWhatsapp: document.querySelector("#sidebarWhatsapp"),
+  dataSourceBadge: document.querySelector("#dataSourceBadge"),
 };
 
 const state = {
@@ -198,6 +210,120 @@ function renderSimpleList(target, rows) {
     .join("");
 }
 
+function renderChipRow(target, chips) {
+  target.innerHTML = chips
+    .filter(Boolean)
+    .map((chip) => `<span class="info-chip${chip.soft ? " info-chip--soft" : ""}">${chip.label}</span>`)
+    .join("");
+}
+
+function renderMiniStatGrid(target, items) {
+  target.innerHTML = items
+    .filter((item) => item && item.value)
+    .map(
+      (item) => `
+        <div class="finance-stat">
+          <span>${item.label}</span>
+          <strong>${item.value}</strong>
+          ${item.note ? `<em>${item.note}</em>` : ""}
+        </div>
+      `,
+    )
+    .join("");
+}
+
+function renderRegistryGrid(target, items) {
+  target.innerHTML = items
+    .filter((item) => item && item.value)
+    .map(
+      (item) => `
+        <div class="registry-item">
+          <span>${item.label}</span>
+          <strong>${item.value}</strong>
+          ${item.note ? `<em>${item.note}</em>` : ""}
+        </div>
+      `,
+    )
+    .join("");
+}
+
+function renderSourceLinks(target, links) {
+  target.innerHTML = links
+    .filter((link) => link?.href)
+    .map((link) => `<a class="source-link" href="${link.href}" target="_blank" rel="noreferrer">${link.label}</a>`)
+    .join("");
+}
+
+function getBuilderRiskSummary(project) {
+  if (project.builderIntelligence?.summary) return project.builderIntelligence.summary;
+  const grade = getBuilderGrade(project);
+  const scoreText = hasBuilderRiskData(project) ? `${getBuilderGradeScore(project).toFixed(1)}/10` : "8.0/10";
+  const tone =
+    grade === "A+"
+      ? "top-tier brand confidence with stronger execution comfort"
+      : grade === "A"
+        ? "established execution confidence and better buyer trust than the median launch set"
+        : grade === "B"
+          ? "credible execution, but still worth comparing carefully on delivery updates and price discipline"
+          : "more price-sensitive execution confidence, so ongoing launch updates matter more";
+  return `${project.developer} currently sits in the ${grade} bucket and reads at ${scoreText}. For ${project.name}, that points to ${tone}.`;
+}
+
+function getBuilderFinanceStats(project) {
+  const metrics = project.builderIntelligence?.metrics || {};
+  const listed = project.builderIntelligence?.listed;
+  if (listed) {
+    return [
+      { label: "Market cap", value: metrics.marketCap || "Data pending", note: "Current public-market scale" },
+      { label: "Revenue", value: metrics.revenue || "Data pending", note: "Latest summarized top line" },
+      { label: "Profit", value: metrics.profit || "Data pending", note: "Latest summarized profit line" },
+      {
+        label: "Promoter holding",
+        value: metrics.promoterHolding || "Data pending",
+        note: "Ownership confidence proxy",
+      },
+    ];
+  }
+  return [
+    { label: "Market status", value: "Private / unlisted", note: "No direct public-market summary available" },
+    { label: "Read type", value: "Proxy based", note: "Using builder bucket and project footprint" },
+    { label: "Builder bucket", value: `${getBuilderGrade(project)} grade`, note: "Current Plinth builder bucket" },
+  ];
+}
+
+function getRegistryFacts(project) {
+  const rera = project.reraDetails || {};
+  return [
+    { label: "RERA number", value: project.reraNumber || null, note: "Project registration reference" },
+    { label: "RERA possession", value: project.reraPossession || null, note: "Current registered handover timing" },
+    {
+      label: "Launch price",
+      value: rera.launchPrice ? formatSqft(rera.launchPrice) : null,
+      note: "Earliest matched launch pricing signal",
+    },
+    {
+      label: "Current price",
+      value: rera.currentPrice ? formatSqft(rera.currentPrice) : null,
+      note: "Matched current pricing source",
+    },
+    { label: "Configurations", value: rera.configurations || null, note: "Current unit mix" },
+    { label: "Construction start", value: rera.startDate || null, note: "RERA-linked start date" },
+  ];
+}
+
+function getTrackerSummary(project) {
+  const trackerSignal = project.tracker?.signal && project.tracker.signal !== "Data pending" ? project.tracker.signal : "Good / 8";
+  const inventoryNote = project.launched && project.sold ? `${project.sold} sold out of ${project.launched} launched` : "inventory still early in the current dataset";
+  return `${project.name} is currently in the ${project.stage.toLowerCase()} stage with possession marked for ${project.possession}. The live tracker signal is ${trackerSignal}, and the launch picture currently shows ${inventoryNote}.`;
+}
+
+function getPaymentSummary(project) {
+  const paymentPlan = (project.approvals || []).find((row) => row[0] === "Payment plan")?.[1] || "Good / 8";
+  const entrySignal = getEntrySignal(project, state.projects).toLowerCase();
+  const unsold = project.launched ? `${Math.max(project.launched - project.sold, 0)} units visible in the released set` : "release visibility still early";
+  return `Current pricing for ${project.name} is reading as ${entrySignal}. Payment visibility is ${paymentPlan.toLowerCase()}, absorption reads ${getAbsorptionLabel(project).toLowerCase()}, and there are ${unsold}.`;
+}
+
 function renderCompare() {
   const options = state.projects.map((project) => `<option value="${project.slug}">${project.name}</option>`).join("");
   [elements.compareSelect1, elements.compareSelect2, elements.compareSelect3].forEach((select, index) => {
@@ -302,6 +428,10 @@ function renderProject() {
   elements.snapshotGrid.innerHTML = snapshotRows
     .map(([label, value]) => `<div class="snapshot-item"><span>${label}</span><strong>${value}</strong></div>`)
     .join("");
+  renderRegistryGrid(elements.registryGrid, getRegistryFacts(project));
+  renderSourceLinks(elements.sourceLinkRow, [
+    project.reraDetails?.sourceUrl ? { label: "Open RERA / Tracker Source", href: project.reraDetails.sourceUrl } : null,
+  ]);
 
   elements.locationScore.textContent = `${getLocationScore(project).toFixed(1)}/10`;
   elements.commuteValue.textContent = getLocationCommute(project);
@@ -314,7 +444,17 @@ function renderProject() {
   elements.builderGrade.textContent = `${getBuilderGrade(project)} grade`;
   elements.builderGradeCopy.textContent = `Current PropSpot builder bucket for ${project.developer}. This is a temporary live proxy until deeper builder diligence fields are added.`;
   elements.builderRiskScore.textContent = hasBuilderRiskData(project) ? `${getBuilderGradeScore(project).toFixed(1)}/10` : `8.0/10`;
+  elements.builderRiskSummary.textContent = getBuilderRiskSummary(project);
+  renderChipRow(elements.builderRiskChips, [
+    { label: `${getBuilderGrade(project)} grade builder` },
+    { label: `${hasBuilderRiskData(project) ? getBuilderGradeScore(project).toFixed(1) : "8.0"}/10 confidence` },
+    { label: project.stage, soft: true },
+  ]);
+  renderMiniStatGrid(elements.builderFinanceGrid, getBuilderFinanceStats(project));
   renderSimpleList(elements.builderRiskList, getBuilderRiskRows(project));
+  renderSourceLinks(elements.builderSourceRow, [
+    project.builderIntelligence?.financeUrl ? { label: "Open finance source", href: project.builderIntelligence.financeUrl } : null,
+  ]);
 
   elements.scoreBreakdown.innerHTML = getScoreBreakdown(project, state.projects)
     .map(([label, value]) => {
@@ -330,9 +470,21 @@ function renderProject() {
     .join("");
 
   elements.trackerSignal.textContent = project.tracker?.signal && project.tracker.signal !== "Data pending" ? project.tracker.signal : "Good / 8";
+  elements.trackerSummary.textContent = getTrackerSummary(project);
+  renderChipRow(elements.trackerChips, [
+    { label: project.stage },
+    { label: project.possession, soft: true },
+    { label: elements.trackerSignal.textContent },
+  ]);
   renderSimpleList(elements.trackerList, getTrackerRows(project));
 
   elements.inventoryPressure.textContent = getInventoryPressure(project);
+  elements.paymentSummary.textContent = getPaymentSummary(project);
+  renderChipRow(elements.paymentChips, [
+    { label: getEntrySignal(project, state.projects) },
+    { label: getAbsorptionLabel(project), soft: true },
+    { label: getInventoryPressure(project) },
+  ]);
   renderSimpleList(elements.paymentInventoryList, [
     ["Payment plan", (project.approvals || []).find((row) => row[0] === "Payment plan")?.[1] || "Good / 8"],
     ["Inventory released", project.launched ? `${project.launched} launched` : "Good"],
@@ -370,6 +522,12 @@ function renderProject() {
   renderCompare();
 }
 
+function renderDataSourceBadge() {
+  const meta = getDataSourceMeta();
+  elements.dataSourceBadge.textContent = meta.label;
+  elements.dataSourceBadge.classList.toggle("source-badge--live", meta.tone === "live");
+}
+
 function updateEmi() {
   const project = state.project;
   const downPaymentCr = Number(elements.downPaymentInput.value || 0);
@@ -390,35 +548,7 @@ async function handleLeadSubmit(event) {
 
   elements.leadStatus.textContent = "Sending your request...";
   try {
-    const endpoint = getLeadEndpoint();
-    const isExternal = endpoint.startsWith("http");
-    const response = await (isExternal
-      ? fetch(endpoint, {
-          method: "POST",
-          headers: { Accept: "application/json" },
-          body: (() => {
-            const form = new FormData();
-            form.append("name", payload.name || "");
-            form.append("phone", payload.phone || "");
-            form.append("email", payload.email || "");
-            form.append("budget", payload.budget || "");
-            form.append("timeline", payload.timeline || "");
-            form.append("preferredLocation", payload.preferredLocation || "");
-            form.append("notes", payload.notes || "");
-            form.append("projectCode", payload.projectCode || "");
-            form.append("projectName", payload.projectName || "");
-            form.append("_subject", `New PropSpot Plinth lead for ${payload.projectName}`);
-            form.append("_captcha", "false");
-            form.append("_template", "table");
-            return form;
-          })(),
-        })
-      : fetch(endpoint, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(payload),
-        }));
-    if (!response.ok) throw new Error("Lead request failed");
+    await submitLead(payload);
     elements.leadForm.reset();
     elements.leadStatus.textContent = "Thanks. PropSpot has your request and will reach out shortly.";
   } catch (error) {
@@ -469,6 +599,7 @@ function bindBriefCopy() {
 
 async function main() {
   state.projects = await loadProjects();
+  renderDataSourceBadge();
   const slug = getSlugFromPath();
   state.project = getProjectBySlug(state.projects, slug) || state.projects[0];
   state.compareSlugs = [
