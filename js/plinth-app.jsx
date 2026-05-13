@@ -43,6 +43,8 @@ const scoreColor = s => s >= 80 ? '#4ade80' : s >= 65 ? '#f5a623' : '#f87171';
 const currency = new Intl.NumberFormat('en-IN');
 const IS_GITHUB_PAGES = window.location.hostname.endsWith('github.io');
 const REPO_BASE = IS_GITHUB_PAGES ? '/real-estate-intelligence-webapp' : '';
+const SUPABASE_URL = 'https://uihqsimrwbrhzjfgrfxr.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVpaHFzaW1yd2JyaHpqZmdyZnhyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzgyMjA3ODQsImV4cCI6MjA5Mzc5Njc4NH0.ya5U1tzhTp4tgRQIY6zeGtdp5YFytAqQ1VdLlB3zTbg';
 const BUILDER_GRADES = {
   dlf: 'A+',
   oberoi: 'A+',
@@ -200,9 +202,62 @@ function adaptProject(project) {
 }
 
 async function loadProjects() {
-  const response = await fetch(withBase('/data/projects-data.json'));
-  if (!response.ok) throw new Error('Unable to load project data');
-  const rawProjects = await response.json();
+  let rawProjects;
+  let source = 'local-json';
+  try {
+    const supabaseResponse = await fetch(`${SUPABASE_URL}/rest/v1/projects?select=*&published=eq.true&order=name.asc`, {
+      headers: {
+        apikey: SUPABASE_ANON_KEY,
+        Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
+      },
+    });
+    if (supabaseResponse.ok) {
+      const rows = await supabaseResponse.json();
+      rawProjects = rows.map((row) => ({
+        code: row.code,
+        name: row.name,
+        slug: row.slug,
+        developer: row.developer,
+        builderCode: row.builder_code,
+        location: row.location,
+        sector: row.sector,
+        corridor: row.corridor,
+        stage: row.stage,
+        possession: row.possession,
+        priceCr: row.price_cr,
+        sqft: row.sqft,
+        priceSqft: row.price_sqft,
+        units: row.units,
+        launched: row.launched,
+        sold: row.sold,
+        absorption: row.absorption,
+        inventory: row.inventory,
+        bestFor: row.best_for,
+        image: row.image,
+        latitude: row.latitude,
+        longitude: row.longitude,
+        published: row.published,
+        reraNumber: row.rera_number,
+        reraPossession: row.rera_possession,
+        builderRiskScoreLabel: row.builder_risk_score_label,
+        developerRisk: row.developer_risk || {},
+        approvals: row.approvals || [],
+        tracker: row.tracker || {},
+        comps: row.comps || [],
+        stack: row.stack || [],
+        locationIntel: row.location_intel || {},
+        reraDetails: row.rera_details || {},
+      }));
+      source = 'supabase';
+    }
+  } catch (error) {
+    console.warn('Supabase load failed in shell, falling back to local JSON.', error);
+  }
+  if (!rawProjects) {
+    const response = await fetch(withBase('/data/projects-data.json'));
+    if (!response.ok) throw new Error('Unable to load project data');
+    rawProjects = await response.json();
+  }
   const baseProjects = rawProjects
     .filter((project) => project && project.published !== false)
     .map(adaptProject)
@@ -213,11 +268,12 @@ async function loadProjects() {
       marketMedians.set(project.corridor, getMedianMicroMarketPrice(rawProjects, project.corridor));
     }
   });
-  return baseProjects.map((project) => {
+  const projects = baseProjects.map((project) => {
     const marketMedian = marketMedians.get(project.corridor) || 0;
     const scoreMeta = getProjectScore(project.raw, rawProjects);
     return { ...project, score: scoreMeta.total, marketMedian };
   });
+  return { projects, source };
 }
 
 function getRouteView(pathname) {
@@ -287,7 +343,15 @@ function Ticker({ items }) {
     <div style={{ background: 'var(--bg2)', borderBottom: '1px solid var(--border)', overflow: 'hidden', height: 36, display: 'flex', alignItems: 'center', position: 'relative' }}>
       <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 60, zIndex: 2, background: 'linear-gradient(to right, var(--bg2), transparent)' }} />
       <div style={{ position: 'absolute', right: 0, top: 0, bottom: 0, width: 60, zIndex: 2, background: 'linear-gradient(to left, var(--bg2), transparent)' }} />
-      <div style={{ display: 'flex', animation: 'ticker 95s linear infinite', whiteSpace: 'nowrap' }}>
+      <div
+        style={{ display: 'flex', animation: 'ticker 260s linear infinite', whiteSpace: 'nowrap' }}
+        onMouseEnter={(event) => {
+          event.currentTarget.style.animationPlayState = 'paused';
+        }}
+        onMouseLeave={(event) => {
+          event.currentTarget.style.animationPlayState = 'running';
+        }}
+      >
         {doubled.map((item, i) => (
           <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '0 24px', borderRight: '1px solid var(--border)' }}>
             <span style={{ fontSize: 11, color: 'var(--text-dim)', fontFamily: 'var(--font-mono)' }}>{item.name}</span>
@@ -687,6 +751,7 @@ function DashboardView({ projects, onSelect, onNav }) {
 /* ─── ROOT APP ────────────────────────────────────────────────────── */
 function App() {
   const [projects, setProjects] = useState([]);
+  const [dataSource, setDataSource] = useState('Checking source...');
   const [view, setView] = useState(getRouteView(window.location.pathname));
   const [selected, setSelected] = useState(null);
   const [detailKey, setDetailKey] = useState(0);
@@ -698,9 +763,10 @@ function App() {
   useEffect(() => {
     let live = true;
     loadProjects()
-      .then((rows) => {
+      .then(({ projects: rows, source }) => {
         if (!live) return;
         setProjects(rows);
+        setDataSource(source === 'supabase' ? 'Live source: Supabase' : 'Fallback: Local JSON');
         const slug = getSelectedSlug();
         const selectedProject = rows.find((p) => p.slug === slug) || [...rows].sort((a, b) => b.score - a.score)[0] || null;
         setSelected(selectedProject);
@@ -793,8 +859,8 @@ function App() {
         ))}
         <a href={propertiesPageUrl()} style={{ padding: '5px 12px', borderRadius: 6, fontSize: 12, fontWeight: 500, border: '1px solid transparent', color: 'var(--text-dim)', textDecoration: 'none' }}>Properties</a>
         <div style={{ flex: 1 }} />
-        <div style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 11, color: 'var(--text-muted)', fontFamily: 'var(--font-mono)', whiteSpace: 'nowrap' }}>
-          <div style={{ width: 6, height: 6, borderRadius: '50%', background: '#4ade80', animation: 'blink 2s ease infinite', boxShadow: '0 0 6px #4ade80' }} />LIVE DATA
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 11, color: 'var(--text-dim)', fontFamily: 'var(--font-mono)', whiteSpace: 'nowrap', padding: '5px 12px', borderRadius: 999, border: '1px solid var(--border)', background: 'rgba(255,255,255,0.03)' }}>
+          <div style={{ width: 7, height: 7, borderRadius: '50%', background: dataSource.includes('Supabase') ? '#4ade80' : 'var(--text-muted)', animation: dataSource.includes('Supabase') ? 'blink 2s ease infinite' : 'none', boxShadow: dataSource.includes('Supabase') ? '0 0 6px #4ade80' : 'none' }} />{dataSource}
         </div>
       </div>
 
