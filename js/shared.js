@@ -1,3 +1,5 @@
+import { SUPABASE_URL, SUPABASE_ANON_KEY } from "./supabase-config.js";
+
 const BUILDER_GRADES = {
   "dlf": "A+",
   "oberoi": "A+",
@@ -25,6 +27,7 @@ const BUILDER_GRADES = {
 export const IS_GITHUB_PAGES =
   typeof window !== "undefined" && window.location.hostname.endsWith("github.io");
 export const REPO_BASE = IS_GITHUB_PAGES ? "/real-estate-intelligence-webapp" : "";
+let currentDataSource = "local-json";
 
 export function withBase(path = "/") {
   const normalized = path.startsWith("/") ? path : `/${path}`;
@@ -50,15 +53,169 @@ export function propertiesPageUrl() {
   return withBase("/properties.html");
 }
 
-export function getLeadEndpoint() {
-  return IS_GITHUB_PAGES ? "https://formsubmit.co/ajax/madhav.prakash@propertyspotters.in" : "/api/leads";
+export function getDataSourceMeta() {
+  if (currentDataSource === "supabase") {
+    return {
+      key: "supabase",
+      label: "Live source: Supabase",
+      tone: "live",
+    };
+  }
+
+  if (currentDataSource === "formsubmit") {
+    return {
+      key: "formsubmit",
+      label: "Lead path: FormSubmit",
+      tone: "soft",
+    };
+  }
+
+  return {
+    key: "local-json",
+    label: "Fallback: Local JSON",
+    tone: "soft",
+  };
 }
 
-export async function loadProjects() {
+function hasSupabaseConfig() {
+  return Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
+}
+
+function supabaseHeaders(extra = {}) {
+  return {
+    apikey: SUPABASE_ANON_KEY,
+    Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
+    ...extra,
+  };
+}
+
+function mapSupabaseProject(row) {
+  return {
+    code: row.code,
+    name: row.name,
+    slug: row.slug,
+    developer: row.developer,
+    builderCode: row.builder_code,
+    location: row.location,
+    sector: row.sector,
+    corridor: row.corridor,
+    stage: row.stage,
+    possession: row.possession,
+    priceCr: row.price_cr,
+    sqft: row.sqft,
+    priceSqft: row.price_sqft,
+    units: row.units,
+    launched: row.launched,
+    sold: row.sold,
+    absorption: row.absorption,
+    inventory: row.inventory,
+    bestFor: row.best_for,
+    image: row.image,
+    latitude: row.latitude,
+    longitude: row.longitude,
+    published: row.published,
+    reraNumber: row.rera_number,
+    reraPossession: row.rera_possession,
+    builderRiskScoreLabel: row.builder_risk_score_label,
+    developerRisk: row.developer_risk || {},
+    approvals: row.approvals || [],
+    tracker: row.tracker || {},
+    comps: row.comps || [],
+    stack: row.stack || [],
+    locationIntel: row.location_intel || {},
+    reraDetails: row.rera_details || {},
+  };
+}
+
+async function loadLocalProjects() {
+  currentDataSource = "local-json";
   const response = await fetch(withBase("/data/projects-data.json"));
   if (!response.ok) throw new Error("Unable to load project data");
   const projects = await response.json();
   return projects.filter((project) => project && project.published !== false);
+}
+
+export async function submitLead(payload) {
+  if (hasSupabaseConfig()) {
+    const body = {
+      project_code: payload.projectCode || null,
+      project_name: payload.projectName || null,
+      name: payload.name,
+      phone: payload.phone,
+      email: payload.email,
+      budget: payload.budget || null,
+      timeline: payload.timeline || null,
+      preferred_location: payload.preferredLocation || null,
+      notes: payload.notes || null,
+      source: "propspot_plinth",
+    };
+    const response = await fetch(`${SUPABASE_URL}/rest/v1/lead_requests`, {
+      method: "POST",
+      headers: supabaseHeaders({
+        "Content-Type": "application/json",
+        Prefer: "return=minimal",
+      }),
+      body: JSON.stringify(body),
+    });
+    if (!response.ok) throw new Error("Supabase lead insert failed");
+    currentDataSource = "supabase";
+    return { ok: true, mode: "supabase" };
+  }
+
+  if (IS_GITHUB_PAGES) {
+    const response = await fetch("https://formsubmit.co/ajax/madhav.prakash@propertyspotters.in", {
+      method: "POST",
+      headers: { Accept: "application/json" },
+      body: (() => {
+        const form = new FormData();
+        form.append("name", payload.name || "");
+        form.append("phone", payload.phone || "");
+        form.append("email", payload.email || "");
+        form.append("budget", payload.budget || "");
+        form.append("timeline", payload.timeline || "");
+        form.append("preferredLocation", payload.preferredLocation || "");
+        form.append("notes", payload.notes || "");
+        form.append("projectCode", payload.projectCode || "");
+        form.append("projectName", payload.projectName || "");
+        form.append("_subject", `New PropSpot Plinth lead for ${payload.projectName}`);
+        form.append("_captcha", "false");
+        form.append("_template", "table");
+        return form;
+      })(),
+    });
+    if (!response.ok) throw new Error("Lead request failed");
+    currentDataSource = "formsubmit";
+    return { ok: true, mode: "formsubmit" };
+  }
+
+  const response = await fetch("/api/leads", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload),
+  });
+  if (!response.ok) throw new Error("Lead request failed");
+  currentDataSource = "local-json";
+  return { ok: true, mode: "local-api" };
+}
+
+export async function loadProjects() {
+  if (hasSupabaseConfig()) {
+    try {
+      const response = await fetch(
+        `${SUPABASE_URL}/rest/v1/projects?select=*&published=eq.true&order=name.asc`,
+        { headers: supabaseHeaders() }
+      );
+      if (response.ok) {
+        const rows = await response.json();
+        currentDataSource = "supabase";
+        return rows.map(mapSupabaseProject).filter((project) => project && project.published !== false);
+      }
+    } catch (error) {
+      console.warn("Supabase project load failed, falling back to local JSON.", error);
+    }
+  }
+
+  return loadLocalProjects();
 }
 
 export function formatCr(value) {
