@@ -434,42 +434,44 @@ textarea {
 
 .location-hero-band {
   display: grid;
-  grid-template-columns: 164px minmax(0, 1fr);
-  gap: 16px;
-  padding: 18px;
-  margin-bottom: 18px;
+  grid-template-columns: minmax(0, 1fr) 144px;
+  gap: 14px;
+  padding: 14px;
+  margin-bottom: 14px;
   border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 18px;
+  border-radius: 16px;
   background:
     radial-gradient(circle at 0% 0%, rgba(124, 106, 245, 0.16), transparent 32%),
     linear-gradient(180deg, rgba(22, 22, 35, 0.98), rgba(16, 16, 25, 0.94));
+  align-items: stretch;
 }
 
 .location-orb {
   position: relative;
-  min-height: 148px;
-  border-radius: 20px;
+  min-height: 100%;
+  border-radius: 18px;
   display: grid;
   place-items: center;
   align-content: center;
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 14px 10px;
 }
 
 .location-orb-ring {
   position: absolute;
-  inset: 18px;
+  inset: 14px;
   border-radius: 999px;
   border: 1px solid rgba(124, 106, 245, 0.28);
   box-shadow:
-    0 0 0 8px rgba(124, 106, 245, 0.08),
+    0 0 0 6px rgba(124, 106, 245, 0.08),
     inset 0 0 28px rgba(124, 106, 245, 0.08);
 }
 
 .location-orb strong {
   position: relative;
   font-family: var(--font-display);
-  font-size: 46px;
+  font-size: 40px;
   line-height: 0.95;
   color: rgba(248, 247, 252, 0.98);
 }
@@ -491,47 +493,47 @@ textarea {
 
 .location-strength-head strong {
   display: block;
-  font-size: 24px;
-  line-height: 1.16;
+  font-size: 18px;
+  line-height: 1.2;
   letter-spacing: -0.02em;
   color: rgba(248, 247, 252, 0.98);
 }
 
 .location-strength-head p {
-  margin-top: 8px;
-  max-width: 720px;
-  color: rgba(232, 230, 240, 0.72);
-  font-size: 14px;
-  line-height: 1.6;
+  margin-top: 6px;
+  max-width: 620px;
+  color: rgba(232, 230, 240, 0.68);
+  font-size: 13px;
+  line-height: 1.55;
 }
 
 .location-spectrum {
   display: grid;
-  gap: 12px;
+  gap: 10px;
 }
 
 .location-spectrum-row {
   display: grid;
-  grid-template-columns: 128px 1fr 42px;
-  gap: 12px;
+  grid-template-columns: 108px 1fr 40px;
+  gap: 10px;
   align-items: center;
 }
 
 .location-spectrum-row span {
   color: rgba(232, 230, 240, 0.8);
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
 }
 
 .location-spectrum-row strong {
   text-align: right;
   color: rgba(248, 247, 252, 0.96);
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
 }
 
 .location-spectrum-track {
-  height: 10px;
+  height: 8px;
   border-radius: 999px;
   background: rgba(255,255,255,0.07);
   overflow: hidden;
@@ -730,18 +732,18 @@ textarea {
 
 .dual-metric-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
 .mini-metric-block {
-  padding: 16px;
+  padding: 14px;
 }
 
 .mini-metric-block strong {
   display: block;
-  margin-top: 12px;
+  margin-top: 10px;
   font-family: var(--font-display);
-  font-size: 34px;
+  font-size: 28px;
   line-height: 0.95;
   color: rgba(248, 247, 252, 0.98);
 }
@@ -749,22 +751,22 @@ textarea {
 .quad-list-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px;
+  gap: 12px;
 }
 
 .quad-list-grid > div {
   border: 1px solid var(--border);
   border-radius: 14px;
-  padding: 16px;
+  padding: 14px;
   background:
     linear-gradient(180deg, rgba(21, 21, 33, 0.96), rgba(16, 16, 25, 0.96)),
     var(--bg3);
 }
 
 .quad-list-grid h3 {
-  margin: 0 0 12px;
+  margin: 0 0 10px;
   color: var(--accent);
-  font-size: 12px;
+  font-size: 11px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -831,7 +833,7 @@ textarea {
   grid-template-columns: minmax(0, 1fr) auto;
   gap: 12px;
   align-items: start;
-  padding: 0 0 14px;
+  padding: 0 0 12px;
   border-bottom: 1px solid var(--border);
 }
 
@@ -842,7 +844,7 @@ textarea {
 
 .detail-list span {
   color: rgba(232, 230, 240, 0.62);
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -851,7 +853,7 @@ textarea {
 
 .detail-list strong {
   text-align: right;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 1.35;
   color: rgba(248, 247, 252, 0.98);
 }
@@ -1262,6 +1264,10 @@ td {
   .emi-metrics {
     grid-template-columns: 1fr;
   }
+
+  .location-orb {
+    min-height: 136px;
+  }
 }
 
 @media (max-width: 720px) {
@@ -1326,10 +1332,10 @@ td {
   }
 
   .location-orb {
-    min-height: 132px;
+    min-height: 124px;
   }
 
   .location-orb strong {
-    font-size: 38px;
+    font-size: 34px;
   }
 }
