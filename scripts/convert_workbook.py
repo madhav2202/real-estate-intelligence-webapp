@@ -186,6 +186,22 @@ def read_manual_links(path: Path):
     return {row.get("code"): row for row in rows if row.get("code")}
 
 
+def extract_name_override(note):
+    if not note:
+        return None
+    match = re.search(r"update name to\s+(.+)$", str(note).strip(), re.I)
+    return match.group(1).strip() if match else None
+
+
+def normalize_display_name(name):
+    if not name:
+        return ""
+    text = str(name).strip()
+    if text.isupper():
+        return text.title()
+    return re.sub(r"\s+", " ", text)
+
+
 def read_aliases(path: Path):
     if not path.exists():
         return {}
@@ -352,6 +368,7 @@ def build_rera_lookup(project_rows, builders, rera_rows, aliases):
     manual_links = read_manual_links(MANUAL_LINKS_CSV)
     rera_by_url = {row.get("source_url"): row for row in rera_rows if row.get("source_url")}
     lookup = {}
+    name_overrides = {}
     for project_row in project_rows:
         builder = builders.get(project_row.get("builder_code"), {})
         alias_config = aliases.get(project_row.get("code"), {})
@@ -360,19 +377,17 @@ def build_rera_lookup(project_rows, builders, rera_rows, aliases):
         manual_notes = (manual.get("notes") or "").strip()
         if manual_url and not manual_notes and manual_url in rera_by_url:
             direct_row = rera_by_url[manual_url]
-            project_sector = normalize_sector(project_row.get("sector"))
-            rera_sector = normalize_sector(direct_row.get("sector") or direct_row.get("project_address") or "")
-            developer_overlap = len(
-                normalize_developer(builder.get("builder_name") or project_row.get("builder_code"))
-                & normalize_developer(direct_row.get("developer_name"))
-            )
-            direct_overlap = len(
-                set(normalize_tokens(project_row.get("name"), generic=True))
-                & set(normalize_tokens(direct_row.get("project_name"), generic=True))
-            )
-            if developer_overlap >= 1 and (project_sector == rera_sector or direct_overlap >= 1):
-                lookup[project_row.get("code")] = direct_row
-                continue
+            lookup[project_row.get("code")] = direct_row
+            if direct_row.get("project_name"):
+                name_overrides[project_row.get("code")] = normalize_display_name(direct_row.get("project_name"))
+            continue
+        if manual_url and manual_url in rera_by_url:
+            direct_row = rera_by_url[manual_url]
+            lookup[project_row.get("code")] = direct_row
+            override_name = extract_name_override(manual_notes) or direct_row.get("project_name")
+            if override_name:
+                name_overrides[project_row.get("code")] = normalize_display_name(override_name)
+            continue
         project_names = [project_row.get("name"), alias_config.get("canonicalName"), *(alias_config.get("aliases") or [])]
         candidates = []
         for rera_row in rera_rows:
@@ -387,7 +402,7 @@ def build_rera_lookup(project_rows, builders, rera_rows, aliases):
         if top_score - second_score < 1.5 and second_score > 0:
             continue
         lookup[project_row.get("code")] = top_row
-    return lookup
+    return lookup, name_overrides
 
 
 def build_rera_details(row):
@@ -430,7 +445,7 @@ def main():
     builder_intelligence_map = {
         row["builderCode"]: row for row in builder_intelligence_payload.get("builders", [])
     }
-    rera_lookup = build_rera_lookup(project_rows, builders, rera_rows, aliases)
+    rera_lookup, manual_name_overrides = build_rera_lookup(project_rows, builders, rera_rows, aliases)
 
     approvals_map = {}
     for row in rows_to_dicts(sheets["approvals"]):
@@ -474,6 +489,7 @@ def main():
         builder = builders.get(row["builder_code"], {})
         builder_intelligence = builder_intelligence_map.get(row.get("builder_code"))
         alias_config = aliases.get(row.get("code"), {})
+        manual_name = manual_name_overrides.get(row.get("code"))
         price_sqft = parse_number(row.get("priceSqft"))
         price_cr = parse_number(row.get("priceCr"))
         sqft = parse_size_range(row.get("size_range"))
@@ -483,8 +499,8 @@ def main():
             price_sqft = rera_details["currentPrice"]
         project = {
             "code": row.get("code"),
-            "name": alias_config.get("canonicalName") or row.get("name"),
-            "slug": slugify(alias_config.get("canonicalName") or row.get("name") or row.get("code")),
+            "name": manual_name or alias_config.get("canonicalName") or row.get("name"),
+            "slug": slugify(manual_name or alias_config.get("canonicalName") or row.get("name") or row.get("code")),
             "developer": builder.get("builder_name") or row.get("builder_code"),
             "builderCode": row.get("builder_code") or "",
             "location": ", ".join(filter(None, [row.get("sector"), row.get("corridor"), "Gurugram"])),

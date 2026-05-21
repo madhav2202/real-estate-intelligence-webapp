@@ -1,17 +1,7 @@
-code,project_name,developer,sector,corridor,stage,manual_source_url,notes
-GGM-36A-TER,Max Estate Terraces,Max Estates Limited,Sector 36A,Dwarka Expressway,New Launch,,Still unmatched after current manual link pass
-GGM-17C-DWA,Eldeco Dwarka,Eldeco Infrastructure and Properties,Sector 17C,Old Gurgaon,New Launch,,Still unmatched after current manual link pass
-GGM-58-360,Oberoi 360 North,Oberoi Realty Limited,Sector 58,Golf Course Extension,New Launch,,Still unmatched after current manual link pass
-GGM-69-TRU,Trump Tower 2,Tribeca Creators LLP,Sector 69,Southern Peripheral Road,Under Construction,,Still unmatched after current manual link pass
-GGM-MAN-GIC,Smartworld GIC,Smartworld Developers,Manesar,Manesar,Under Construction,,Still unmatched after current manual link pass
-GGM-113-STA,M3M St Andrews,M3M India Pvt Ltd,Sector 113,Dwarka Expressway,Under Construction,,Still unmatched after current manual link pass
-GGM-63A-KAI,TARC Kailasa,TARC Limited,Sector 63A,Golf Course Extension,Under Construction,,Still unmatched after current manual link pass
-GGM-104-LEV,Satya Levante,Satya Group,Sector 104,Dwarka Expressway,Under Construction,,Still unmatched after current manual link pass
-GGM-113-MIR,M3M Mira Vita,M3M India Pvt Ltd,Sector 113,Dwarka Expressway,Under Construction,,Still unmatched after current manual link pass
-GGM-45-ELE,Experion Elements,Experion Developers Pvt Ltd,Sector 45,Golf Course Road,Under Construction,,Still unmatched after current manual link pass
-GGM-69-TRU,Trump Tower 2,Tribeca Creators LLP,Sector 69,Southern Peripheral Road,Under Construction,https://reratracker.com/trump-residences-smartworld-in-gurugram-by-riverday-infrastructure-private-limited-rtid4256,Low confidence manual link (score 0.00)
-GGM-MAN-GIC,Smartworld GIC,Smartworld Developers,Manesar,Manesar,Under Construction,https://reratracker.com/m3m-forestia-east-i-in-gurugram-by-m3m-india-infrastructures-private-limited-rtid5422,Low confidence manual link (score 0.00)
-GGM-63A-KAI,TARC Kailasa,TARC Limited,Sector 63A,Golf Course Extension,Under Construction,https://reratracker.com/tarc-ishva-in-gurugram-by-tarc-limited-rtid4187,Update name to TARC Ishva
-GGM-104-LEV,Satya Levante,Satya Group,Sector 104,Dwarka Expressway,Under Construction,https://reratracker.com/levante-residences-in-gurugram-by-sv-infra-management-solutions-pvt-ltd-formerly-known-as-sv-infra-management-solutions-llp-rtid5393,Low confidence manual link (score 0.00)
-GGM-113-MIR,M3M Mira Vita,M3M India Pvt Ltd,Sector 113,Dwarka Expressway,Under Construction,https://reratracker.com/m3m-elie-saab-at-scda-in-gurugram-by-metro-education-welfare-private-limited-rtid5246,Update name to M3M Elie Saab
-GGM-45-ELE,Experion Elements,Experion Developers Pvt Ltd,Sector 45,Golf Course Road,Under Construction,https://reratracker.com/experion-the-trillion-in-gurugram-by-experion-developers-private-limited-rtid4244,update name to Experion Trillion
+code,project_name,developer,sector,corridor,stage,existing_source_url,manual_source_url,notes
+GGM-36A-TER,Max Estate Terraces,Max Estates Limited,Sector 36A,Dwarka Expressway,New Launch,,,
+GGM-36A-ANT,Max Antara,Max Estates Limited,Sector 36A,Dwarka Expressway,Under Construction,,,
+GGM-17C-DWA,Eldeco Dwarka,Eldeco Infrastructure and Properties,Sector 17C,Old Gurgaon,New Launch,,,
+GGM-58-360,Oberoi 360 North,Oberoi Realty Limited,Sector 58,Golf Course Extension,New Launch,,,
+GGM-113-STA,M3M St Andrews,M3M India Pvt Ltd,Sector 113,Dwarka Expressway,Under Construction,,,
+GGM-36A-DAX,Signature Global Daxin Vistas,Signature Global India Limited,Sohna Road,Sohna,Under Construction,,,

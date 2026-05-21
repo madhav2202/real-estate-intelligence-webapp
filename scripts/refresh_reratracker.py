@@ -330,27 +330,15 @@ def main():
     rows = []
     matched = []
     unmatched = []
-    manual_review = []
 
     for project in projects:
         aliases = aliases_map.get(project["code"], {})
         manual = manual_links.get(project["code"], {})
         manual_url = (manual.get("manual_source_url") or "").strip()
-        manual_notes = (manual.get("notes") or "").strip()
         candidate = None
         if manual_url:
             validation = validate_manual_candidate(project, aliases, manual_url)
-            if manual_notes or (validation["score"] < 4 and validation["developer_hits"] == 0):
-                manual_review.append(
-                    (
-                        project["code"],
-                        project["name"],
-                        manual_url,
-                        manual_notes or f"Low confidence manual link (score {validation['score']:.2f})",
-                    )
-                )
-            else:
-                candidate = {"href": manual_url, "title": validation["title"]}
+            candidate = {"href": manual_url, "title": validation["title"]}
         if not candidate:
             candidate = find_best_candidate(project, aliases, universe)
         if not candidate:
@@ -383,10 +371,6 @@ def main():
     report_lines.extend(["", "## Unmatched", ""])
     for code, name in unmatched:
         report_lines.append(f"- `{code}` {name}")
-    if manual_review:
-        report_lines.extend(["", "## Manual Review", ""])
-        for code, name, url, reason in manual_review:
-            report_lines.append(f"- `{code}` {name} -> {url} ({reason})")
     OUT_REPORT.write_text("\n".join(report_lines) + "\n")
 
     print(f"Wrote {len(rows)} rows to {OUT_CSV}")

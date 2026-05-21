@@ -1239,8 +1239,8 @@ window.__PROJECTS__ = [
   },
   {
     "code": "GGM-80-ELI",
-    "name": "Conscient Eliara",
-    "slug": "conscient-eliara",
+    "name": "Conscient Elaira Phase 1",
+    "slug": "conscient-elaira-phase-1",
     "developer": "Conscient Infrastructure",
     "builderCode": "DEV-CON",
     "location": "Sector 80, New Gurgaon, Gurugram",
@@ -1970,8 +1970,8 @@ window.__PROJECTS__ = [
   },
   {
     "code": "GGM-42-ONE",
-    "name": "Experion One42",
-    "slug": "experion-one42",
+    "name": "Experion One 42 (Golf Course Road)",
+    "slug": "experion-one-42-golf-course-road",
     "developer": "Experion Developers Pvt Ltd",
     "builderCode": "DEV-EXP",
     "location": "Sector 42, Golf Course Road, Gurugram",
@@ -3872,8 +3872,8 @@ window.__PROJECTS__ = [
   },
   {
     "code": "GGM-43-MIR",
-    "name": "Godrej Mirayah",
-    "slug": "godrej-mirayah",
+    "name": "Godrej Miraya",
+    "slug": "godrej-miraya",
     "developer": "Godrej Properties Limited",
     "builderCode": "DEV-GODREJ",
     "location": "Sector 43, Golf Course Road, Gurugram",
@@ -4363,8 +4363,8 @@ window.__PROJECTS__ = [
   },
   {
     "code": "GGM-46-DUA",
-    "name": "SP Dualis",
-    "slug": "sp-dualis",
+    "name": "Shapoorji The Dualis",
+    "slug": "shapoorji-the-dualis",
     "developer": "Shapoorji Pallonji Real Estate",
     "builderCode": "DEV-SP",
     "location": "Sector 46, Golf Course Road, Gurugram",
@@ -4374,7 +4374,7 @@ window.__PROJECTS__ = [
     "priceCr": 0,
     "sqft": 1804,
     "priceSqft": 24500,
-    "units": 0,
+    "units": 198,
     "launched": 0,
     "sold": 0,
     "absorption": "Data pending",
@@ -4530,8 +4530,8 @@ window.__PROJECTS__ = [
     "latitude": 28.438,
     "longitude": 77.0895,
     "published": true,
-    "reraNumber": "",
-    "reraPossession": "",
+    "reraNumber": "RERA-GRG-1880-2025",
+    "reraPossession": "2031-12-31",
     "builderRiskScoreLabel": "7.4/10",
     "builderIntelligence": {
       "builderCode": "DEV-SP",
@@ -4566,7 +4566,27 @@ window.__PROJECTS__ = [
         ]
       ]
     },
-    "reraDetails": {}
+    "reraDetails": {
+      "reraProjectName": "Shapoorji The Dualis",
+      "reraRegistrationNo": "RERA-GRG-1880-2025",
+      "projectAddress": "PLOT NO. 1, URBAN ESTATE GURUGRAM, SECTOR 46, GURUGRAM HARYANA, 122022",
+      "landArea": "7037.79 sq m",
+      "totalLicensedLand": "7037.79 sq m",
+      "totalTowers": 2,
+      "totalUnits": 198,
+      "unitsSold": null,
+      "unitsAvailable": null,
+      "totalFloors": 27,
+      "launchPrice": 20500,
+      "currentPrice": 20500,
+      "configurations": "4 BHK3 BHK",
+      "sizes": "2852 - 3605 sq.ft.",
+      "projectType": "NEW",
+      "projectSizeText": "2 Buildings - 198 units",
+      "startDate": "25-02-2025",
+      "completionDate": "2031-12-31",
+      "sourceUrl": "https://reratracker.com/shapoorji-the-dualis-in-gurugram-by-spre-gurugram-properties-pvt-ltd-sector-46-rtid5134"
+    }
   },
   {
     "code": "GGM-36A-KP3",
@@ -5705,8 +5725,8 @@ window.__PROJECTS__ = [
   },
   {
     "code": "GGM-69-TRU",
-    "name": "Trump Tower 2",
-    "slug": "trump-tower-2",
+    "name": "Trump Residences (Smartworld)",
+    "slug": "trump-residences-smartworld",
     "developer": "Tribeca Creators LLP",
     "builderCode": "DEV-TRI",
     "location": "Sector 69, Southern Peripheral Road, Gurugram",
@@ -5908,7 +5928,27 @@ window.__PROJECTS__ = [
         ]
       ]
     },
-    "reraDetails": {}
+    "reraDetails": {
+      "reraProjectName": "Trump Residences (Smartworld)",
+      "reraRegistrationNo": "RERA-GRG-1850-2025",
+      "projectAddress": "4187 Defence Colony Jind Haryana",
+      "landArea": "0.633 Acre",
+      "totalLicensedLand": "11.66875 Acre",
+      "totalTowers": null,
+      "totalUnits": 298,
+      "unitsSold": null,
+      "unitsAvailable": null,
+      "totalFloors": 50,
+      "launchPrice": null,
+      "currentPrice": null,
+      "configurations": "",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "projectSizeText": "",
+      "startDate": "",
+      "completionDate": "",
+      "sourceUrl": "https://reratracker.com/trump-residences-smartworld-in-gurugram-by-riverday-infrastructure-private-limited-rtid4256"
+    }
   },
   {
     "code": "GGM-49-ELA",
@@ -6139,8 +6179,8 @@ window.__PROJECTS__ = [
   },
   {
     "code": "GGM-103-VRI",
-    "name": "Godrej Vriksha",
-    "slug": "godrej-vriksha",
+    "name": "Godrej Vrikshya",
+    "slug": "godrej-vrikshya",
     "developer": "Godrej Properties Limited",
     "builderCode": "DEV-GODREJ",
     "location": "Sector 103, Dwarka Expressway, Gurugram",
@@ -7121,8 +7161,8 @@ window.__PROJECTS__ = [
   },
   {
     "code": "GGM-MAN-GIC",
-    "name": "Smartworld GIC",
-    "slug": "smartworld-gic",
+    "name": "M3M Forestia East I",
+    "slug": "m3m-forestia-east-i",
     "developer": "Smartworld Developers",
     "builderCode": "DEV-SMW",
     "location": "Manesar, Manesar, Gurugram",
@@ -7132,7 +7172,7 @@ window.__PROJECTS__ = [
     "priceCr": 1.55,
     "sqft": 701,
     "priceSqft": 12750,
-    "units": 0,
+    "units": 872,
     "launched": 0,
     "sold": 0,
     "absorption": "Data pending",
@@ -7288,7 +7328,7 @@ window.__PROJECTS__ = [
     "latitude": 28.354,
     "longitude": 76.924,
     "published": true,
-    "reraNumber": "",
+    "reraNumber": "RERA-GRG-2125-2025",
     "reraPossession": "",
     "builderRiskScoreLabel": "6.2/10",
     "builderIntelligence": {
@@ -7324,7 +7364,27 @@ window.__PROJECTS__ = [
         ]
       ]
     },
-    "reraDetails": {}
+    "reraDetails": {
+      "reraProjectName": "M3M FORESTIA EAST I",
+      "reraRegistrationNo": "RERA-GRG-2125-2025",
+      "projectAddress": "BH-363 Ground Floor Partap Vihar Sector-12 Gaziabad-201009.",
+      "landArea": "6.46 Acre",
+      "totalLicensedLand": "139.97375 Acre",
+      "totalTowers": null,
+      "totalUnits": 872,
+      "unitsSold": null,
+      "unitsAvailable": null,
+      "totalFloors": 36,
+      "launchPrice": null,
+      "currentPrice": null,
+      "configurations": "",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "projectSizeText": "",
+      "startDate": "",
+      "completionDate": "",
+      "sourceUrl": "https://reratracker.com/m3m-forestia-east-i-in-gurugram-by-m3m-india-infrastructures-private-limited-rtid5422"
+    }
   },
   {
     "code": "GGM-49-ARI",
@@ -12004,8 +12064,8 @@ window.__PROJECTS__ = [
   },
   {
     "code": "GGM-103-WES",
-    "name": "Whiteland Westin Residences",
-    "slug": "whiteland-westin-residences",
+    "name": "The Westin Residences By Whiteland",
+    "slug": "the-westin-residences-by-whiteland",
     "developer": "Whiteland Corporation",
     "builderCode": "DEV-WHI",
     "location": "Sector 103, Dwarka Expressway, Gurugram",
@@ -14382,8 +14442,8 @@ window.__PROJECTS__ = [
   },
   {
     "code": "GGM-63A-KAI",
-    "name": "TARC Kailasa",
-    "slug": "tarc-kailasa",
+    "name": "TARC Ishva",
+    "slug": "tarc-ishva",
     "developer": "TARC Limited",
     "builderCode": "DEV-TARC",
     "location": "Sector 63A, Golf Course Extension, Gurugram",
@@ -14393,7 +14453,7 @@ window.__PROJECTS__ = [
     "priceCr": 4.8,
     "sqft": 1602,
     "priceSqft": 20000,
-    "units": 0,
+    "units": 386,
     "launched": 0,
     "sold": 0,
     "absorption": "Data pending",
@@ -14557,8 +14617,8 @@ window.__PROJECTS__ = [
     "latitude": 28.42,
     "longitude": 77.0985,
     "published": true,
-    "reraNumber": "",
-    "reraPossession": "",
+    "reraNumber": "RERA-GRG-1704-2024",
+    "reraPossession": "2031-12-31",
     "builderRiskScoreLabel": "5.0/10",
     "builderIntelligence": {
       "builderCode": "DEV-TARC",
@@ -14621,7 +14681,27 @@ window.__PROJECTS__ = [
         ]
       ]
     },
-    "reraDetails": {}
+    "reraDetails": {
+      "reraProjectName": "TARC ISHVA",
+      "reraRegistrationNo": "RERA-GRG-1704-2024",
+      "projectAddress": "SECTOR 63A GURUGRAM",
+      "landArea": "6.9500 Acre",
+      "totalLicensedLand": "6.9500 Acre",
+      "totalTowers": 5,
+      "totalUnits": 386,
+      "unitsSold": null,
+      "unitsAvailable": null,
+      "totalFloors": 38,
+      "launchPrice": 20500,
+      "currentPrice": 25000,
+      "configurations": "3 BHK4 BHK",
+      "sizes": "2858 - 3883 sq.ft.",
+      "projectType": "NEW",
+      "projectSizeText": "5 Buildings - 386 units",
+      "startDate": "09-08-2024",
+      "completionDate": "2031-12-31",
+      "sourceUrl": "https://reratracker.com/tarc-ishva-in-gurugram-by-tarc-limited-rtid4187"
+    }
   },
   {
     "code": "GGM-80-FAI",
@@ -16056,8 +16136,8 @@ window.__PROJECTS__ = [
   },
   {
     "code": "GGM-104-LEV",
-    "name": "Satya Levante",
-    "slug": "satya-levante",
+    "name": "Levante Residences",
+    "slug": "levante-residences",
     "developer": "Satya Group",
     "builderCode": "DEV-SAT",
     "location": "Sector 104, Dwarka Expressway, Gurugram",
@@ -16067,7 +16147,7 @@ window.__PROJECTS__ = [
     "priceCr": 2.8,
     "sqft": 1402,
     "priceSqft": 13500,
-    "units": 0,
+    "units": 488,
     "launched": 0,
     "sold": 0,
     "absorption": "Data pending",
@@ -16223,7 +16303,7 @@ window.__PROJECTS__ = [
     "latitude": 28.4972,
     "longitude": 76.9768,
     "published": true,
-    "reraNumber": "",
+    "reraNumber": "RERA-GRG-2027-2025",
     "reraPossession": "",
     "builderRiskScoreLabel": "7.0/10",
     "builderIntelligence": {
@@ -16259,7 +16339,27 @@ window.__PROJECTS__ = [
         ]
       ]
     },
-    "reraDetails": {}
+    "reraDetails": {
+      "reraProjectName": "LEVANTE RESIDENCES",
+      "reraRegistrationNo": "RERA-GRG-2027-2025",
+      "projectAddress": "3-Silver Oak Avenue Westend Greens Rajokari South West Delhi - 110038",
+      "landArea": "4.65625 Acre",
+      "totalLicensedLand": "4.65625 Acre",
+      "totalTowers": null,
+      "totalUnits": 488,
+      "unitsSold": null,
+      "unitsAvailable": null,
+      "totalFloors": 42,
+      "launchPrice": null,
+      "currentPrice": null,
+      "configurations": "",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "projectSizeText": "",
+      "startDate": "",
+      "completionDate": "",
+      "sourceUrl": "https://reratracker.com/levante-residences-in-gurugram-by-sv-infra-management-solutions-pvt-ltd-formerly-known-as-sv-infra-management-solutions-llp-rtid5393"
+    }
   },
   {
     "code": "GGM-70-MEL",
@@ -16717,8 +16817,8 @@ window.__PROJECTS__ = [
   },
   {
     "code": "GGM-113-MIR",
-    "name": "M3M Mira Vita",
-    "slug": "m3m-mira-vita",
+    "name": "M3M Elie Saab",
+    "slug": "m3m-elie-saab",
     "developer": "M3M India Pvt Ltd",
     "builderCode": "DEV-M3M",
     "location": "Sector 113, Dwarka Expressway, Gurugram",
@@ -16728,7 +16828,7 @@ window.__PROJECTS__ = [
     "priceCr": 4.2,
     "sqft": 1652,
     "priceSqft": 17500,
-    "units": 0,
+    "units": 336,
     "launched": 0,
     "sold": 0,
     "absorption": "Data pending",
@@ -16884,8 +16984,8 @@ window.__PROJECTS__ = [
     "latitude": 28.5052,
     "longitude": 76.9552,
     "published": true,
-    "reraNumber": "",
-    "reraPossession": "",
+    "reraNumber": "RERA-GRG-2048-2025",
+    "reraPossession": "2032-02-29",
     "builderRiskScoreLabel": "6.2/10",
     "builderIntelligence": {
       "builderCode": "DEV-M3M",
@@ -16920,7 +17020,27 @@ window.__PROJECTS__ = [
         ]
       ]
     },
-    "reraDetails": {}
+    "reraDetails": {
+      "reraProjectName": "M3M ELIE SAAB AT SCDA",
+      "reraRegistrationNo": "RERA-GRG-2048-2025",
+      "projectAddress": "SECTOR-111,GURUGRAM",
+      "landArea": "2.7505 Acre",
+      "totalLicensedLand": "15.99375 Acre",
+      "totalTowers": 3,
+      "totalUnits": 336,
+      "unitsSold": null,
+      "unitsAvailable": null,
+      "totalFloors": null,
+      "launchPrice": 35000,
+      "currentPrice": 37000,
+      "configurations": "4 BHK",
+      "sizes": "4000 - 4000 sq.ft.",
+      "projectType": "NEW",
+      "projectSizeText": "3 Buildings - 336 units",
+      "startDate": "15-09-2025",
+      "completionDate": "2032-02-29",
+      "sourceUrl": "https://reratracker.com/m3m-elie-saab-at-scda-in-gurugram-by-metro-education-welfare-private-limited-rtid5246"
+    }
   },
   {
     "code": "GGM-48-BEL",
@@ -17605,8 +17725,8 @@ window.__PROJECTS__ = [
   },
   {
     "code": "GGM-45-ELE",
-    "name": "Experion Elements",
-    "slug": "experion-elements",
+    "name": "Experion Trillion",
+    "slug": "experion-trillion",
     "developer": "Experion Developers Pvt Ltd",
     "builderCode": "DEV-EXP",
     "location": "Sector 45, Golf Course Road, Gurugram",
@@ -17616,7 +17736,7 @@ window.__PROJECTS__ = [
     "priceCr": 5.2,
     "sqft": 1752,
     "priceSqft": 21000,
-    "units": 176,
+    "units": 540,
     "launched": 0,
     "sold": 0,
     "absorption": "Data pending",
@@ -17772,8 +17892,8 @@ window.__PROJECTS__ = [
     "latitude": 28.4475,
     "longitude": 77.0945,
     "published": true,
-    "reraNumber": "UPRERAPRJ953234/04/2024",
-    "reraPossession": "04-01-2029",
+    "reraNumber": "RERA-GRG-1773-2024",
+    "reraPossession": "2032-12-31",
     "builderRiskScoreLabel": "7.4/10",
     "builderIntelligence": {
       "builderCode": "DEV-EXP",
@@ -17809,25 +17929,25 @@ window.__PROJECTS__ = [
       ]
     },
     "reraDetails": {
-      "reraProjectName": "Experion Elements Phase-2",
-      "reraRegistrationNo": "UPRERAPRJ953234/04/2024",
-      "projectAddress": "",
-      "landArea": "19289.81 m\u00b2",
-      "totalLicensedLand": "",
-      "totalTowers": 2,
-      "totalUnits": 176,
+      "reraProjectName": "Experion The Trillion",
+      "reraRegistrationNo": "RERA-GRG-1773-2024",
+      "projectAddress": "PLOT NO. GH3, SECTOR 48, GURUGRAM",
+      "landArea": "5.496 Acre",
+      "totalLicensedLand": "5.496 Acre",
+      "totalTowers": 3,
+      "totalUnits": 540,
       "unitsSold": null,
       "unitsAvailable": null,
-      "totalFloors": 40,
-      "launchPrice": 18350,
-      "currentPrice": 20000,
+      "totalFloors": 45,
+      "launchPrice": 20500,
+      "currentPrice": 21300,
       "configurations": "3 BHK4 BHK",
-      "sizes": "0 - 0 sq.ft.",
-      "projectType": "",
-      "projectSizeText": "2 Buildings - 320 units",
-      "startDate": "01-07-2024",
-      "completionDate": "04-01-2029",
-      "sourceUrl": "https://reratracker.com/experion-elements-phase-2-in-gautam-buddha-nagar-by-experion-developers-pvt-ltd-rtid826"
+      "sizes": "2842 - 3601 sq.ft.",
+      "projectType": "NEW",
+      "projectSizeText": "3 Buildings - 540 units",
+      "startDate": "15-01-2025",
+      "completionDate": "2032-12-31",
+      "sourceUrl": "https://reratracker.com/experion-the-trillion-in-gurugram-by-experion-developers-private-limited-rtid4244"
     }
   }
 ];
