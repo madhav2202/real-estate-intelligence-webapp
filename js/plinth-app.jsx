@@ -114,10 +114,29 @@ function getFairEntryRange(project) {
 function getLocationScoreFromRaw(project) {
   const numeric = Number(String(project.locationIntel?.score || '').split('/')[0]);
   if (Number.isFinite(numeric) && numeric > 0) return numeric;
-  return 8;
+  const text = [
+    ...(project.locationIntel?.connectivity || []),
+    ...(project.locationIntel?.social || []),
+    ...(project.locationIntel?.infra || []),
+    ...(project.locationIntel?.risks || []),
+  ]
+    .map((row) => row.join(' '))
+    .join(' ');
+  if (!text.trim()) return 8;
+  let score = 8;
+  ['Operational', 'High Upside', '18 min', '12 min', 'Improving'].forEach((term) => {
+    if (text.includes(term)) score += 0.18;
+  });
+  ['Watch', 'High', 'Developing'].forEach((term) => {
+    if (text.includes(term)) score -= 0.15;
+  });
+  return Math.max(7.2, Math.min(8.9, Number(score.toFixed(1))));
 }
 
 function normalizeBuilderRisk(project) {
+  if (Number.isFinite(project?.builderIntelligence?.financialStressScore)) {
+    return Number(project.builderIntelligence.financialStressScore);
+  }
   if (project?.developerRisk?.rows?.length) {
     const text = project.developerRisk.rows.map((row) => String(row[1] || '')).join(' ').toLowerCase();
     if (text.includes('needs caution')) return 5.8;
@@ -191,7 +210,7 @@ function adaptProject(project) {
     signal: signalLabel,
     signalType,
     launched: project.launched > 0 ? 'Launched' : 'EOI',
-    absorption: project.absorption && project.absorption !== 'Data pending' ? project.absorption : 'Good / 8',
+    absorption: project.absorption && project.absorption !== 'Data pending' ? project.absorption : (project.stage === 'New Launch' ? 'Early bookings stage' : 'Visibility building'),
     location: Number(getLocationScoreFromRaw(project).toFixed(1)),
     builderRisk: Number(normalizeBuilderRisk(project).toFixed(1)),
     lat: Number(project.latitude),
@@ -257,6 +276,36 @@ async function loadProjects() {
     const response = await fetch(withBase('/data/projects-data.json'));
     if (!response.ok) throw new Error('Unable to load project data');
     rawProjects = await response.json();
+  } else {
+    try {
+      const response = await fetch(withBase('/data/projects-data.json'));
+      if (response.ok) {
+        const localProjects = await response.json();
+        const localBySlug = new Map(localProjects.map((project) => [project.slug, project]));
+        rawProjects = rawProjects.map((project) => ({
+          ...project,
+          builderIntelligence: project.builderIntelligence || localBySlug.get(project.slug)?.builderIntelligence || null,
+          reraDetails:
+            project.reraDetails && Object.keys(project.reraDetails).length
+              ? project.reraDetails
+              : localBySlug.get(project.slug)?.reraDetails || {},
+          developerRisk:
+            project.developerRisk && Object.keys(project.developerRisk).length
+              ? project.developerRisk
+              : localBySlug.get(project.slug)?.developerRisk || {},
+          locationIntel:
+            project.locationIntel && Object.keys(project.locationIntel).length
+              ? project.locationIntel
+              : localBySlug.get(project.slug)?.locationIntel || {},
+          tracker:
+            project.tracker && Object.keys(project.tracker).length
+              ? project.tracker
+              : localBySlug.get(project.slug)?.tracker || {},
+        }));
+      }
+    } catch (error) {
+      console.warn('Local enrichment merge skipped in shell.', error);
+    }
   }
   const baseProjects = rawProjects
     .filter((project) => project && project.published !== false)
@@ -344,7 +393,7 @@ function Ticker({ items }) {
       <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 60, zIndex: 2, background: 'linear-gradient(to right, var(--bg2), transparent)' }} />
       <div style={{ position: 'absolute', right: 0, top: 0, bottom: 0, width: 60, zIndex: 2, background: 'linear-gradient(to left, var(--bg2), transparent)' }} />
       <div
-        style={{ display: 'flex', animation: 'ticker 260s linear infinite', whiteSpace: 'nowrap' }}
+        style={{ display: 'flex', animation: 'ticker 360s linear infinite', whiteSpace: 'nowrap' }}
         onMouseEnter={(event) => {
           event.currentTarget.style.animationPlayState = 'paused';
         }}

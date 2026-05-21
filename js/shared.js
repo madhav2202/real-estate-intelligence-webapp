@@ -1,4 +1,4 @@
-import { SUPABASE_URL, SUPABASE_ANON_KEY } from "./supabase-config.js?v=20260521b";
+import { SUPABASE_URL, SUPABASE_ANON_KEY } from "./supabase-config.js?v=20260521c";
 
 const BUILDER_GRADES = {
   "dlf": "A+",
@@ -124,6 +124,32 @@ function mapSupabaseProject(row) {
     stack: row.stack || [],
     locationIntel: row.location_intel || {},
     reraDetails: row.rera_details || {},
+    builderIntelligence: row.builder_intelligence || null,
+  };
+}
+
+function mergeProjectEnrichment(primary, backup) {
+  if (!backup) return primary;
+  return {
+    ...primary,
+    builderIntelligence: primary.builderIntelligence || backup.builderIntelligence || null,
+    reraDetails:
+      primary.reraDetails && Object.keys(primary.reraDetails).length
+        ? primary.reraDetails
+        : backup.reraDetails || {},
+    locationIntel:
+      primary.locationIntel && Object.keys(primary.locationIntel).length
+        ? primary.locationIntel
+        : backup.locationIntel || {},
+    tracker: primary.tracker && Object.keys(primary.tracker).length ? primary.tracker : backup.tracker || {},
+    developerRisk:
+      primary.developerRisk && Object.keys(primary.developerRisk).length
+        ? primary.developerRisk
+        : backup.developerRisk || {},
+    approvals: primary.approvals?.length ? primary.approvals : backup.approvals || [],
+    comps: primary.comps?.length ? primary.comps : backup.comps || [],
+    stack: primary.stack?.length ? primary.stack : backup.stack || [],
+    builderRiskScoreLabel: primary.builderRiskScoreLabel || backup.builderRiskScoreLabel || null,
   };
 }
 
@@ -208,7 +234,17 @@ export async function loadProjects() {
       if (response.ok) {
         const rows = await response.json();
         currentDataSource = "supabase";
-        return rows.map(mapSupabaseProject).filter((project) => project && project.published !== false);
+        let localBySlug = new Map();
+        try {
+          const localProjects = await loadLocalProjects();
+          localBySlug = new Map(localProjects.map((project) => [project.slug, project]));
+        } catch (error) {
+          console.warn("Local enrichment merge skipped.", error);
+        }
+        return rows
+          .map(mapSupabaseProject)
+          .map((project) => mergeProjectEnrichment(project, localBySlug.get(project.slug)))
+          .filter((project) => project && project.published !== false);
       }
     } catch (error) {
       console.warn("Supabase project load failed, falling back to local JSON.", error);
@@ -236,6 +272,9 @@ export function getBuilderGrade(project) {
 }
 
 export function getBuilderGradeScore(project) {
+  if (Number.isFinite(project?.builderIntelligence?.financialStressScore)) {
+    return Number(project.builderIntelligence.financialStressScore);
+  }
   const grade = getBuilderGrade(project);
   if (grade === "A+") return 9.0;
   if (grade === "A") return 8.4;
@@ -277,9 +316,10 @@ export function getLocationScore(project) {
 }
 
 export function getFairEntry(project) {
-  if (!project.priceSqft) return { low: 0, high: 0 };
-  const high = Math.round(project.priceSqft);
-  const low = Math.round(project.priceSqft * 0.98);
+  const livePrice = project.priceSqft || project.reraDetails?.currentPrice || project.reraDetails?.launchPrice || 0;
+  if (!livePrice) return { low: 0, high: 0 };
+  const high = Math.round(livePrice);
+  const low = Math.round(livePrice * 0.98);
   return { low, high };
 }
 

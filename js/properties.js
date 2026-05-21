@@ -7,7 +7,7 @@ import {
   getFairEntry,
   projectPageUrl,
   getDataSourceMeta,
-} from "./shared.js?v=20260521b";
+} from "./shared.js?v=20260521c";
 
 const elements = {
   searchInput: document.querySelector("#searchInput"),

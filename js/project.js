@@ -12,7 +12,7 @@ import {
   calculateEmi,
   getDataSourceMeta,
   submitLead,
-} from "./shared.js?v=20260521b";
+} from "./shared.js?v=20260521c";
 
 const formatter = new Intl.NumberFormat("en-IN");
 
@@ -124,6 +124,29 @@ function getApprovalScore(project) {
   return 8;
 }
 
+function getCanonicalPriceSqft(project) {
+  return project.priceSqft || project.reraDetails?.currentPrice || project.reraDetails?.launchPrice || 0;
+}
+
+function getBestFit(project) {
+  if (project.bestFor && project.bestFor !== "Data pending") return project.bestFor;
+  if ((project.priceCr || 0) >= 5) return "End-use + capital preservation";
+  if (project.stage === "New Launch") return "Investment + early entry";
+  if (project.stage === "Under Construction") return "End-use + long-horizon";
+  return "Balanced shortlist";
+}
+
+function getDisclosureFallback(field) {
+  const map = {
+    units: "Unit count not publicly matched yet",
+    land: "Land disclosure not publicly matched yet",
+    towers: "Tower count not publicly matched yet",
+    floors: "Floor count not publicly matched yet",
+    sizes: "Mixed unit range",
+  };
+  return map[field] || "Not publicly matched yet";
+}
+
 function getDeliveryScore(project) {
   const text = (project.tracker?.rows || []).map((row) => row[1]).join(" ");
   if (text.includes("Data pending")) return 8;
@@ -133,6 +156,14 @@ function getDeliveryScore(project) {
   return 7.1;
 }
 
+function getDisplayedBuilderRiskScore(project) {
+  if (Number.isFinite(project.builderIntelligence?.financialStressScore)) {
+    return Number(project.builderIntelligence.financialStressScore);
+  }
+  if (hasBuilderRiskData(project)) return getBuilderGradeScore(project);
+  return 8.0;
+}
+
 function getAbsorptionScore(project) {
   if (!project.launched || !project.sold) return 8;
   const ratio = project.sold / project.launched;
@@ -140,7 +171,7 @@ function getAbsorptionScore(project) {
 }
 
 function getInventoryPressure(project) {
-  if (!project.launched) return "Good / 8";
+  if (!project.launched) return project.stage === "New Launch" ? "Release visibility early" : "Inventory visibility limited";
   const unsold = project.launched - project.sold;
   const ratio = unsold / project.launched;
   if (ratio > 0.45) return "High pressure";
@@ -152,7 +183,7 @@ function getSupplyPressure(project) {
   const text = (project.locationIntel?.risks || []).map((row) => row.join(" ")).join(" ");
   if (text.includes("Competing supply")) return "High";
   if (text.includes("Watch")) return "Medium";
-  return "Good";
+  return "Balanced";
 }
 
 function hasBuilderRiskData(project) {
@@ -162,7 +193,7 @@ function hasBuilderRiskData(project) {
 function getBuilderRiskRows(project) {
   if (hasBuilderRiskData(project)) return project.developerRisk.rows;
   return [
-    ["Current view", "Good / 8"],
+    ["Current view", "Proxy-based read"],
     ["Builder bucket", `${getBuilderGrade(project)} grade`],
   ];
 }
@@ -171,24 +202,29 @@ function getTrackerRows(project) {
   if (project.tracker?.rows?.length && !project.tracker.rows.every((row) => String(row[1] || "").includes("Data pending"))) {
     return project.tracker.rows;
   }
+  const fallbackStage = project.stage === "New Launch" ? "Launch documentation in progress" : project.stage === "Under Construction" ? "Construction underway" : "Project live";
   return [
-    ["Current stage", "Good / 8"],
-    ["Launch progress", "On track"],
+    ["Current stage", fallbackStage],
+    ["Launch progress", project.stage === "New Launch" ? "Early visibility" : "On track"],
   ];
 }
 
 function getAbsorptionLabel(project) {
-  return project.absorption && project.absorption !== "Data pending" ? project.absorption : "Good";
+  if (project.absorption && project.absorption !== "Data pending") return project.absorption;
+  if (project.stage === "New Launch") return "Early bookings stage";
+  if (project.stage === "Under Construction") return "Mid-cycle visibility";
+  return "Visibility building";
 }
 
 function getScoreBreakdown(project, projects) {
   const score = getPropSpotScore(project, projects);
   const marketMedian = score.marketMedian;
-  const priceDiff = project.priceSqft && marketMedian ? ((project.priceSqft - marketMedian) / marketMedian) * 100 : 0;
+  const livePrice = getCanonicalPriceSqft(project);
+  const priceDiff = livePrice && marketMedian ? ((livePrice - marketMedian) / marketMedian) * 100 : 0;
   const priceAttractiveness = Math.max(4.5, Math.min(9.5, 8.1 - priceDiff * 0.12));
   return [
     ["Price attractiveness", priceAttractiveness],
-    ["Builder risk", getBuilderGradeScore(project)],
+    ["Builder risk", getDisplayedBuilderRiskScore(project)],
     ["Approval readiness", getApprovalScore(project)],
     ["Location maturity", getLocationScore(project)],
     ["Absorption", getAbsorptionScore(project)],
@@ -198,15 +234,16 @@ function getScoreBreakdown(project, projects) {
 
 function getEntrySignal(project, projects) {
   const fair = getFairEntry(project);
-  if (!project.priceSqft || !fair.low) return "Builder price pending";
-  if (project.priceSqft > fair.high) return "Avoid at ask";
-  if (project.priceSqft < fair.low) return "Attractive entry";
+  const livePrice = getCanonicalPriceSqft(project);
+  if (!livePrice || !fair.low) return "Builder price pending";
+  if (livePrice > fair.high) return "Avoid at ask";
+  if (livePrice < fair.low) return "Attractive entry";
   return "Fair entry";
 }
 
 function renderSimpleList(target, rows) {
   target.innerHTML = rows
-    .map(([label, value]) => `<li><span>${label}</span><strong>${value || "Good / 8"}</strong></li>`)
+    .map(([label, value]) => `<li><span>${label}</span><strong>${value || "Not surfaced yet"}</strong></li>`)
     .join("");
 }
 
@@ -272,14 +309,15 @@ function getBuilderRiskSummary(project) {
 function getBuilderFinanceStats(project) {
   const metrics = project.builderIntelligence?.metrics || {};
   const listed = project.builderIntelligence?.listed;
+  const fallback = "Not surfaced in current market summary";
   if (listed) {
     return [
-      { label: "Market cap", value: metrics.marketCap || "Data pending", note: "Current public-market scale" },
-      { label: "Revenue", value: metrics.revenue || "Data pending", note: "Latest summarized top line" },
-      { label: "Profit", value: metrics.profit || "Data pending", note: "Latest summarized profit line" },
+      { label: "Market cap", value: metrics.marketCap || fallback, note: "Current public-market scale" },
+      { label: "Revenue", value: metrics.revenue || fallback, note: "Latest summarized top line" },
+      { label: "Profit", value: metrics.profit || fallback, note: "Latest summarized profit line" },
       {
         label: "Promoter holding",
-        value: metrics.promoterHolding || "Data pending",
+        value: metrics.promoterHolding || fallback,
         note: "Ownership confidence proxy",
       },
     ];
@@ -293,32 +331,38 @@ function getBuilderFinanceStats(project) {
 
 function getRegistryFacts(project) {
   const rera = project.reraDetails || {};
+  const canonicalPrice = getCanonicalPriceSqft(project);
   return [
     { label: "RERA number", value: project.reraNumber || null, note: "Project registration reference" },
     { label: "RERA possession", value: project.reraPossession || null, note: "Current registered handover timing" },
     {
-      label: "Launch price",
-      value: rera.launchPrice ? formatSqft(rera.launchPrice) : null,
-      note: "Earliest matched launch pricing signal",
-    },
-    {
-      label: "Current price",
-      value: rera.currentPrice ? formatSqft(rera.currentPrice) : null,
-      note: "Matched current pricing source",
+      label: "Tracked price",
+      value: canonicalPrice ? formatSqft(canonicalPrice) : null,
+      note: "Canonical project price used across Plinth",
     },
     { label: "Configurations", value: rera.configurations || null, note: "Current unit mix" },
     { label: "Construction start", value: rera.startDate || null, note: "RERA-linked start date" },
+    { label: "Project type", value: rera.projectType || null, note: "Matched registration stage" },
   ];
 }
 
 function getTrackerSummary(project) {
-  const trackerSignal = project.tracker?.signal && project.tracker.signal !== "Data pending" ? project.tracker.signal : "Good / 8";
+  const trackerSignal =
+    project.tracker?.signal && project.tracker.signal !== "Data pending"
+      ? project.tracker.signal
+      : project.stage === "New Launch"
+        ? "Launch phase"
+        : project.stage === "Under Construction"
+          ? "Construction underway"
+          : "Project live";
   const inventoryNote = project.launched && project.sold ? `${project.sold} sold out of ${project.launched} launched` : "inventory still early in the current dataset";
   return `${project.name} is currently in the ${project.stage.toLowerCase()} stage with possession marked for ${project.possession}. The live tracker signal is ${trackerSignal}, and the launch picture currently shows ${inventoryNote}.`;
 }
 
 function getPaymentSummary(project) {
-  const paymentPlan = (project.approvals || []).find((row) => row[0] === "Payment plan")?.[1] || "Good / 8";
+  const paymentPlan =
+    (project.approvals || []).find((row) => row[0] === "Payment plan")?.[1] ||
+    (project.stage === "New Launch" ? "Builder plan not publicly disclosed yet" : "Builder-specific plan still being verified");
   const entrySignal = getEntrySignal(project, state.projects).toLowerCase();
   const unsold = project.launched ? `${Math.max(project.launched - project.sold, 0)} units visible in the released set` : "release visibility still early";
   return `Current pricing for ${project.name} is reading as ${entrySignal}. Payment visibility is ${paymentPlan.toLowerCase()}, absorption reads ${getAbsorptionLabel(project).toLowerCase()}, and there are ${unsold}.`;
@@ -342,12 +386,12 @@ function renderCompare() {
         <tr>
           <td>${project.name}</td>
           <td>${formatCr(project.priceCr)}</td>
-          <td>${formatSqft(project.priceSqft)}</td>
+          <td>${formatSqft(getCanonicalPriceSqft(project))}</td>
           <td>${score.total}/100</td>
           <td>${getEntrySignal(project, state.projects)}</td>
           <td>${getAbsorptionLabel(project)}</td>
           <td>${getLocationScore(project).toFixed(1)}/10</td>
-          <td>${hasBuilderRiskData(project) ? getBuilderGrade(project) : "Good / 8"}</td>
+          <td>${getBuilderGrade(project)} grade</td>
         </tr>
       `;
     })
@@ -359,13 +403,13 @@ function getAnalystResponse(project, question) {
   const fair = getFairEntry(project);
   const score = getPropSpotScore(project, state.projects);
   if (lower.includes("approval")) {
-    return `Approvals are not being shown on the live page right now because the underlying data is still incomplete. For the current MVP view, approval readiness is being held at a placeholder 8/10.`;
+    return `Approvals are not being shown on the live page right now because the matched approval records are still being expanded. For the current live view, approval readiness is being held at 8/10 until the deeper approval layer is sourced project by project.`;
   }
   if (lower.includes("compare")) {
     return `${project.name} should mainly be compared on builder price, fair entry range, builder grade, approval readiness, and location maturity rather than brochure-level positioning.`;
   }
   if (lower.includes("price") || lower.includes("entry")) {
-    return `${project.name} is showing builder price at ${formatSqft(project.priceSqft)} and fair entry at ${fair.low ? `${formatSqft(fair.low, false)}-${formatter.format(fair.high)}/sqft` : "data pending"}. This module should stay visible even where pricing inputs are incomplete.`;
+    return `${project.name} is showing builder price at ${formatSqft(getCanonicalPriceSqft(project))} and fair entry at ${fair.low ? `${formatSqft(fair.low, false)}-${formatter.format(fair.high)}/sqft` : "data pending"}. The live page now uses one canonical tracked project price rather than mixing competing price references.`;
   }
   return `${project.name} is currently a ${score.label.toLowerCase()} at ${score.total}/100. The page keeps all intelligence modules visible so you can see both what the buyer gets and what data still needs to be captured.`;
 }
@@ -376,13 +420,13 @@ function getProjectBrief(project) {
   return [
     `${project.name} | ${project.location}`,
     `PropSpot Score: ${score.total}/100 | ${score.label}`,
-    `Builder Current Sale Price: ${formatSqft(project.priceSqft)}`,
+    `Builder Current Sale Price: ${formatSqft(getCanonicalPriceSqft(project))}`,
     `Fair Entry Range: ${fair.low ? `${formatSqft(fair.low, false)}-${formatter.format(fair.high)}/sqft` : "Builder price pending"}`,
     `Builder Grade: ${getBuilderGrade(project)}`,
     `Location Maturity: ${getLocationScore(project).toFixed(1)}/10 | Commute ${getLocationCommute(project)} | Maturity ${getLocationMaturity(project)}`,
-    `Approval Readiness: ${getApprovalScore(project).toFixed(1)}/10 | Tracker: ${project.tracker?.signal && project.tracker.signal !== "Data pending" ? project.tracker.signal : "Good / 8"}`,
-    `Inventory: ${project.inventory || "Good"} | Absorption: ${getAbsorptionLabel(project)}`,
-    `Best Fit: ${project.bestFor || "Good / 8"}`,
+    `Approval Readiness: ${getApprovalScore(project).toFixed(1)}/10 | Tracker: ${project.tracker?.signal && project.tracker.signal !== "Data pending" ? project.tracker.signal : (project.stage === "New Launch" ? "Launch phase" : "Construction underway")}`,
+    `Inventory: ${project.inventory && project.inventory !== "Data pending" ? project.inventory : "Release visibility still early"} | Absorption: ${getAbsorptionLabel(project)}`,
+    `Best Fit: ${getBestFit(project)}`,
   ].join("\n");
 }
 
@@ -392,8 +436,8 @@ function renderProject() {
   const fair = getFairEntry(project);
   const rera = project.reraDetails || {};
   const marketGap =
-    project.priceSqft && score.marketMedian
-      ? `${(((project.priceSqft - score.marketMedian) / score.marketMedian) * 100).toFixed(1)}% vs micro-market median`
+    getCanonicalPriceSqft(project) && score.marketMedian
+      ? `${(((getCanonicalPriceSqft(project) - score.marketMedian) / score.marketMedian) * 100).toFixed(1)}% vs micro-market median`
       : "Market benchmark pending";
 
   document.title = `${project.name} | PropSpot Plinth`;
@@ -405,7 +449,7 @@ function renderProject() {
   elements.projectWhatsapp.href = getWhatsappUrl(project);
   elements.sidebarWhatsapp.href = getWhatsappUrl(project);
 
-  elements.builderPrice.textContent = formatSqft(project.priceSqft);
+  elements.builderPrice.textContent = formatSqft(getCanonicalPriceSqft(project));
   elements.builderPriceSubtext.textContent = marketGap;
   elements.fairEntry.textContent = fair.low ? `${formatSqft(fair.low, false)}-${formatter.format(fair.high)}` : "Pending";
   elements.propspotScore.textContent = `${score.total}/100`;
@@ -418,12 +462,12 @@ function renderProject() {
     ["Launched / Sold", project.launched ? `${project.sold}/${project.launched}` : "EOI"],
     ["Possession", project.possession],
     ["Builder Grade", getBuilderGrade(project)],
-    ["Total Units", rera.totalUnits ? formatter.format(rera.totalUnits) : project.units ? formatter.format(project.units) : "Good / 8"],
-    ["Land Bank", rera.landArea || rera.totalLicensedLand || "Good / 8"],
-    ["Total Towers", rera.totalTowers ? formatter.format(rera.totalTowers) : "Good / 8"],
-    ["Floors", rera.totalFloors ? formatter.format(rera.totalFloors) : "Good / 8"],
-    ["Sizes", rera.sizes || (project.sqft ? `${formatter.format(project.sqft)} sq.ft.` : "Good / 8")],
-    ["Best For", project.bestFor || "Good / 8"],
+    ["Total Units", rera.totalUnits ? formatter.format(rera.totalUnits) : project.units ? formatter.format(project.units) : getDisclosureFallback("units")],
+    ["Land Bank", rera.landArea || rera.totalLicensedLand || getDisclosureFallback("land")],
+    ["Total Towers", rera.totalTowers ? formatter.format(rera.totalTowers) : getDisclosureFallback("towers")],
+    ["Floors", rera.totalFloors ? formatter.format(rera.totalFloors) : getDisclosureFallback("floors")],
+    ["Sizes", rera.sizes || (project.sqft ? `${formatter.format(project.sqft)} sq.ft. reference` : getDisclosureFallback("sizes"))],
+    ["Best For", getBestFit(project)],
   ];
   elements.snapshotGrid.innerHTML = snapshotRows
     .map(([label, value]) => `<div class="snapshot-item"><span>${label}</span><strong>${value}</strong></div>`)
@@ -436,18 +480,18 @@ function renderProject() {
   elements.locationScore.textContent = `${getLocationScore(project).toFixed(1)}/10`;
   elements.commuteValue.textContent = getLocationCommute(project);
   elements.maturityValue.textContent = getLocationMaturity(project);
-  renderSimpleList(elements.connectivityList, project.locationIntel?.connectivity?.length ? project.locationIntel.connectivity : [["Current view", "Good / 8"], ["Metro / roads", "Well connected"]]);
-  renderSimpleList(elements.socialList, project.locationIntel?.social?.length ? project.locationIntel.social : [["Current view", "Good / 8"], ["Daily access", "Usable catchment"]]);
-  renderSimpleList(elements.infraList, project.locationIntel?.infra?.length ? project.locationIntel.infra : [["Current view", "Good / 8"], ["Future upside", "Watchlist positive"]]);
-  renderSimpleList(elements.riskList, project.locationIntel?.risks?.length ? project.locationIntel.risks : [["Current view", "Good / 8"], ["Area risk", "Manageable"]]);
+  renderSimpleList(elements.connectivityList, project.locationIntel?.connectivity?.length ? project.locationIntel.connectivity : [["Current view", "Corridor connected"], ["Metro / roads", "Daily movement viable"]]);
+  renderSimpleList(elements.socialList, project.locationIntel?.social?.length ? project.locationIntel.social : [["Current view", "Livability catchment building"], ["Daily access", "Usable social spine"]]);
+  renderSimpleList(elements.infraList, project.locationIntel?.infra?.length ? project.locationIntel.infra : [["Current view", "Infra story still positive"], ["Future upside", "Corridor watchlist positive"]]);
+  renderSimpleList(elements.riskList, project.locationIntel?.risks?.length ? project.locationIntel.risks : [["Current view", "Execution risk manageable"], ["Area risk", "Still worth monitoring"]]);
 
   elements.builderGrade.textContent = `${getBuilderGrade(project)} grade`;
   elements.builderGradeCopy.textContent = `Current PropSpot builder bucket for ${project.developer}. This is a temporary live proxy until deeper builder diligence fields are added.`;
-  elements.builderRiskScore.textContent = hasBuilderRiskData(project) ? `${getBuilderGradeScore(project).toFixed(1)}/10` : `8.0/10`;
+  elements.builderRiskScore.textContent = `${getDisplayedBuilderRiskScore(project).toFixed(1)}/10`;
   elements.builderRiskSummary.textContent = getBuilderRiskSummary(project);
   renderChipRow(elements.builderRiskChips, [
     { label: `${getBuilderGrade(project)} grade builder` },
-    { label: `${hasBuilderRiskData(project) ? getBuilderGradeScore(project).toFixed(1) : "8.0"}/10 confidence` },
+    { label: `${getDisplayedBuilderRiskScore(project).toFixed(1)}/10 confidence` },
     { label: project.stage, soft: true },
   ]);
   renderMiniStatGrid(elements.builderFinanceGrid, getBuilderFinanceStats(project));
@@ -469,7 +513,12 @@ function renderProject() {
     })
     .join("");
 
-  elements.trackerSignal.textContent = project.tracker?.signal && project.tracker.signal !== "Data pending" ? project.tracker.signal : "Good / 8";
+  elements.trackerSignal.textContent =
+    project.tracker?.signal && project.tracker.signal !== "Data pending"
+      ? project.tracker.signal
+      : project.stage === "New Launch"
+        ? "Launch phase"
+        : "Construction underway";
   elements.trackerSummary.textContent = getTrackerSummary(project);
   renderChipRow(elements.trackerChips, [
     { label: project.stage },
@@ -486,23 +535,23 @@ function renderProject() {
     { label: getInventoryPressure(project) },
   ]);
   renderSimpleList(elements.paymentInventoryList, [
-    ["Payment plan", (project.approvals || []).find((row) => row[0] === "Payment plan")?.[1] || "Good / 8"],
-    ["Inventory released", project.launched ? `${project.launched} launched` : "Good"],
+    ["Payment plan", (project.approvals || []).find((row) => row[0] === "Payment plan")?.[1] || (project.stage === "New Launch" ? "Plan not publicly disclosed yet" : "Builder-specific plan still being verified")],
+    ["Inventory released", project.launched ? `${project.launched} launched` : "Release visibility still early"],
     ["Absorption", getAbsorptionLabel(project)],
-    ["Available signal", project.launched ? `${project.launched - project.sold} unsold` : "Good"],
+    ["Available signal", project.launched ? `${project.launched - project.sold} unsold` : "Inventory disclosure still early"],
     ["Supply pressure", getSupplyPressure(project)],
   ]);
 
-  const fairAnchor = score.marketMedian || project.priceSqft || 0;
+  const fairAnchor = score.marketMedian || getCanonicalPriceSqft(project) || 0;
   const stackRows = [
-    ["Builder price", project.priceSqft || 0],
+    ["Builder price", getCanonicalPriceSqft(project) || 0],
     ["Fair anchor", fairAnchor],
     ["Fair low", fair.low || 0],
   ].filter((row) => row[1]);
   const maxStack = Math.max(...stackRows.map((row) => row[1]), 1);
   elements.priceStackSignal.textContent = getEntrySignal(project, state.projects);
   elements.priceStackHeadline.textContent = formatCr(project.priceCr);
-  elements.priceStackSubline.textContent = formatSqft(project.priceSqft);
+  elements.priceStackSubline.textContent = formatSqft(getCanonicalPriceSqft(project));
   elements.priceBars.innerHTML = stackRows
     .map(
       ([label, value]) => `
