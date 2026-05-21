@@ -291,6 +291,65 @@ function renderSourceLinks(target, links) {
     .join("");
 }
 
+function renderPriceVisual(project, score, fair) {
+  const builder = getCanonicalPriceSqft(project);
+  const fairLow = fair.low || 0;
+  const median = score.marketMedian || 0;
+  const points = [
+    { label: "Fair floor", value: fairLow, cls: "fair", position: "bottom", note: "Current working entry floor" },
+    { label: "Builder ask", value: builder, cls: "builder", position: "top", note: "Tracked live project price" },
+  ];
+  if (median) {
+    points.push({ label: "Corridor median", value: median, cls: "median", position: "bottom", note: "Current micro-market reference" });
+  }
+
+  const values = points.map((point) => point.value).filter(Boolean);
+  const minValue = Math.min(...values);
+  const maxValue = Math.max(...values);
+  const spread = Math.max(maxValue - minValue, Math.round(maxValue * 0.08), 1000);
+  const rangeStart = Math.max(0, minValue - Math.round(spread * 0.35));
+  const rangeEnd = maxValue + Math.round(spread * 0.35);
+  const toPercent = (value) => ((value - rangeStart) / Math.max(rangeEnd - rangeStart, 1)) * 100;
+  const fillLeft = toPercent(fairLow);
+  const fillRight = toPercent(builder);
+
+  return `
+    <div class="price-visual">
+      <div class="price-scale">
+        <div class="price-scale-axis">
+          <div class="price-scale-fill" style="left:${Math.min(fillLeft, fillRight)}%; width:${Math.abs(fillRight - fillLeft)}%;"></div>
+          ${points
+            .map((point) => {
+              const pct = toPercent(point.value);
+              return `
+                <div class="price-scale-marker price-scale-marker--${point.cls}" style="left:${pct}%;">
+                  <div class="price-scale-label price-scale-label--${point.position}">
+                    <span>${point.label}</span>
+                    <strong>${formatSqft(point.value, false)}</strong>
+                  </div>
+                </div>
+              `;
+            })
+            .join("")}
+        </div>
+      </div>
+      <div class="price-metric-grid">
+        ${points
+          .map(
+            (point) => `
+              <div class="price-metric">
+                <span>${point.label}</span>
+                <strong>${formatSqft(point.value)}</strong>
+                <em>${point.note}</em>
+              </div>
+            `
+          )
+          .join("")}
+      </div>
+    </div>
+  `;
+}
+
 function getBuilderRiskSummary(project) {
   if (project.builderIntelligence?.summary) return project.builderIntelligence.summary;
   const grade = getBuilderGrade(project);
@@ -411,7 +470,7 @@ function getAnalystResponse(project, question) {
   if (lower.includes("price") || lower.includes("entry")) {
     return `${project.name} is showing builder price at ${formatSqft(getCanonicalPriceSqft(project))} and fair entry at ${fair.low ? `${formatSqft(fair.low, false)}-${formatter.format(fair.high)}/sqft` : "data pending"}. The live page now uses one canonical tracked project price rather than mixing competing price references.`;
   }
-  return `${project.name} is currently a ${score.label.toLowerCase()} at ${score.total}/100. The page keeps all intelligence modules visible so you can see both what the buyer gets and what data still needs to be captured.`;
+  return `${project.name} is currently a ${score.label.toLowerCase()} at ${score.total}/100. The strongest current signals are builder price versus fair entry, builder quality, location maturity, and the registered project facts surfaced on this page.`;
 }
 
 function getProjectBrief(project) {
@@ -424,8 +483,8 @@ function getProjectBrief(project) {
     `Fair Entry Range: ${fair.low ? `${formatSqft(fair.low, false)}-${formatter.format(fair.high)}/sqft` : "Builder price pending"}`,
     `Builder Grade: ${getBuilderGrade(project)}`,
     `Location Maturity: ${getLocationScore(project).toFixed(1)}/10 | Commute ${getLocationCommute(project)} | Maturity ${getLocationMaturity(project)}`,
-    `Approval Readiness: ${getApprovalScore(project).toFixed(1)}/10 | Tracker: ${project.tracker?.signal && project.tracker.signal !== "Data pending" ? project.tracker.signal : (project.stage === "New Launch" ? "Launch phase" : "Construction underway")}`,
-    `Inventory: ${project.inventory && project.inventory !== "Data pending" ? project.inventory : "Release visibility still early"} | Absorption: ${getAbsorptionLabel(project)}`,
+    `Approval Readiness: ${getApprovalScore(project).toFixed(1)}/10`,
+    `Registered Facts: ${project.reraNumber ? `RERA ${project.reraNumber}` : "RERA match partial"} | Possession ${project.reraPossession || project.possession}`,
     `Best Fit: ${getBestFit(project)}`,
   ].join("\n");
 }
@@ -542,27 +601,10 @@ function renderProject() {
     ["Supply pressure", getSupplyPressure(project)],
   ]);
 
-  const fairAnchor = score.marketMedian || getCanonicalPriceSqft(project) || 0;
-  const stackRows = [
-    ["Builder price", getCanonicalPriceSqft(project) || 0],
-    ["Fair anchor", fairAnchor],
-    ["Fair low", fair.low || 0],
-  ].filter((row) => row[1]);
-  const maxStack = Math.max(...stackRows.map((row) => row[1]), 1);
   elements.priceStackSignal.textContent = getEntrySignal(project, state.projects);
   elements.priceStackHeadline.textContent = formatCr(project.priceCr);
   elements.priceStackSubline.textContent = formatSqft(getCanonicalPriceSqft(project));
-  elements.priceBars.innerHTML = stackRows
-    .map(
-      ([label, value]) => `
-        <div class="bar-row">
-          <span>${label}</span>
-          <div class="bar-track"><i style="width:${Math.round((value / maxStack) * 100)}%"></i></div>
-          <strong>Rs ${formatter.format(value)}</strong>
-        </div>
-      `
-    )
-    .join("");
+  elements.priceBars.innerHTML = renderPriceVisual(project, score, fair);
 
   elements.analystAnswer.innerHTML = `<p>${getAnalystResponse(project, "Should I enter now?")}</p>`;
   elements.projectBrief.textContent = getProjectBrief(project);

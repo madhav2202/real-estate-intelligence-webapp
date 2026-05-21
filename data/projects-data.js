@@ -253,7 +253,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "3,770 Crore (up 41.6% in 1 year)"
+          "3,803 Crore (up 27.1% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -408,15 +408,15 @@ window.__PROJECTS__ = [
       "financialStressScore": 6.1,
       "publicRiskSignal": "Needs caution",
       "metrics": {
-        "marketCap": "3,770 Crore (up 41.6% in 1 year)",
+        "marketCap": "3,803 Crore (up 27.1% in 1 year)",
         "revenue": "962 Cr",
         "profit": "122 Cr",
         "promoterHolding": "61.1%",
-        "currentPrice": "\u20b9 375",
+        "currentPrice": "\u20b9 378",
         "highLow": "\u20b9 389",
-        "stockPE": "31.0",
+        "stockPE": "31.3",
         "bookValue": "\u20b9 79.1",
-        "dividendYield": "0.67",
+        "dividendYield": "0.66",
         "roce": "3.56",
         "roe": "2.74"
       },
@@ -426,7 +426,7 @@ window.__PROJECTS__ = [
         "Company has been maintaining a healthy dividend payout of 39.8%"
       ],
       "cons": [
-        "Stock is trading at 4.74 times its book value",
+        "Stock is trading at 4.79 times its book value",
         "Company has a low return on equity of 5.43% over last 3 years.",
         "Earnings include an other income of Rs.46.5 Cr."
       ],
@@ -445,7 +445,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "3,770 Crore (up 41.6% in 1 year)"
+          "3,803 Crore (up 27.1% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -516,7 +516,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "6,670 Crore (up 5.82% in 1 year)"
+          "6,710 Crore (down -11.8% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -671,13 +671,13 @@ window.__PROJECTS__ = [
       "financialStressScore": 6.8,
       "publicRiskSignal": "Watch closely",
       "metrics": {
-        "marketCap": "6,670 Crore (up 5.82% in 1 year)",
+        "marketCap": "6,710 Crore (down -11.8% in 1 year)",
         "revenue": "52.1 Cr",
         "profit": "70.8 Cr",
         "promoterHolding": "45.3%",
-        "currentPrice": "\u20b9 408",
+        "currentPrice": "\u20b9 409",
         "highLow": "\u20b9 564",
-        "stockPE": "94.2",
+        "stockPE": "94.5",
         "bookValue": "\u20b9 148",
         "dividendYield": "0.00",
         "roce": "3.22",
@@ -690,7 +690,7 @@ window.__PROJECTS__ = [
         "Company has delivered good profit growth of 40.3% CAGR over last 5 years"
       ],
       "cons": [
-        "Stock is trading at 2.75 times its book value",
+        "Stock is trading at 2.77 times its book value",
         "Though the company is reporting repeated profits, it is not paying out dividend",
         "Company has a low return on equity of 2.25% over last 3 years.",
         "Earnings include an other income of Rs.129 Cr.",
@@ -711,7 +711,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "6,670 Crore (up 5.82% in 1 year)"
+          "6,710 Crore (down -11.8% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -782,7 +782,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "6,670 Crore (up 5.82% in 1 year)"
+          "6,710 Crore (down -11.8% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -937,13 +937,13 @@ window.__PROJECTS__ = [
       "financialStressScore": 6.8,
       "publicRiskSignal": "Watch closely",
       "metrics": {
-        "marketCap": "6,670 Crore (up 5.82% in 1 year)",
+        "marketCap": "6,710 Crore (down -11.8% in 1 year)",
         "revenue": "52.1 Cr",
         "profit": "70.8 Cr",
         "promoterHolding": "45.3%",
-        "currentPrice": "\u20b9 408",
+        "currentPrice": "\u20b9 409",
         "highLow": "\u20b9 564",
-        "stockPE": "94.2",
+        "stockPE": "94.5",
         "bookValue": "\u20b9 148",
         "dividendYield": "0.00",
         "roce": "3.22",
@@ -956,7 +956,7 @@ window.__PROJECTS__ = [
         "Company has delivered good profit growth of 40.3% CAGR over last 5 years"
       ],
       "cons": [
-        "Stock is trading at 2.75 times its book value",
+        "Stock is trading at 2.77 times its book value",
         "Though the company is reporting repeated profits, it is not paying out dividend",
         "Company has a low return on equity of 2.25% over last 3 years.",
         "Earnings include an other income of Rs.129 Cr.",
@@ -977,7 +977,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "6,670 Crore (up 5.82% in 1 year)"
+          "6,710 Crore (down -11.8% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -1028,7 +1028,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "6,670 Crore (up 5.82% in 1 year)"
+          "6,710 Crore (down -11.8% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -1183,13 +1183,13 @@ window.__PROJECTS__ = [
       "financialStressScore": 6.8,
       "publicRiskSignal": "Watch closely",
       "metrics": {
-        "marketCap": "6,670 Crore (up 5.82% in 1 year)",
+        "marketCap": "6,710 Crore (down -11.8% in 1 year)",
         "revenue": "52.1 Cr",
         "profit": "70.8 Cr",
         "promoterHolding": "45.3%",
-        "currentPrice": "\u20b9 408",
+        "currentPrice": "\u20b9 409",
         "highLow": "\u20b9 564",
-        "stockPE": "94.2",
+        "stockPE": "94.5",
         "bookValue": "\u20b9 148",
         "dividendYield": "0.00",
         "roce": "3.22",
@@ -1202,7 +1202,7 @@ window.__PROJECTS__ = [
         "Company has delivered good profit growth of 40.3% CAGR over last 5 years"
       ],
       "cons": [
-        "Stock is trading at 2.75 times its book value",
+        "Stock is trading at 2.77 times its book value",
         "Though the company is reporting repeated profits, it is not paying out dividend",
         "Company has a low return on equity of 2.25% over last 3 years.",
         "Earnings include an other income of Rs.129 Cr.",
@@ -1223,7 +1223,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "6,670 Crore (up 5.82% in 1 year)"
+          "6,710 Crore (down -11.8% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -1481,7 +1481,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "845 Crore (up 11.1% in 1 year)"
+          "855 Crore (up 0.63% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -1636,15 +1636,15 @@ window.__PROJECTS__ = [
       "financialStressScore": 7.4,
       "publicRiskSignal": "Watch closely",
       "metrics": {
-        "marketCap": "845 Crore (up 11.1% in 1 year)",
+        "marketCap": "855 Crore (up 0.63% in 1 year)",
         "revenue": "136 Cr",
         "profit": "28.3 Cr",
         "promoterHolding": "54.8%",
-        "currentPrice": "\u20b9 860",
+        "currentPrice": "\u20b9 865",
         "highLow": "\u20b9 1,061",
-        "stockPE": "29.9",
+        "stockPE": "30.1",
         "bookValue": "\u20b9 349",
-        "dividendYield": "1.05",
+        "dividendYield": "1.06",
         "roce": "10.4",
         "roe": "7.89"
       },
@@ -1670,7 +1670,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "845 Crore (up 11.1% in 1 year)"
+          "855 Crore (up 0.63% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -1721,7 +1721,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "56,434 Crore (down -6.34% in 1 year)"
+          "51,790 Crore (down -21.2% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -1876,15 +1876,15 @@ window.__PROJECTS__ = [
       "financialStressScore": 5.8,
       "publicRiskSignal": "Needs caution",
       "metrics": {
-        "marketCap": "56,434 Crore (down -6.34% in 1 year)",
+        "marketCap": "51,790 Crore (down -21.2% in 1 year)",
         "revenue": "1,395 Cr",
         "profit": "349 Cr",
         "promoterHolding": "51.7%",
-        "currentPrice": "\u20b9 1,874",
+        "currentPrice": "\u20b9 1,740",
         "highLow": "\u20b9 2,506",
-        "stockPE": "157",
+        "stockPE": "146",
         "bookValue": "\u20b9 591",
-        "dividendYield": "0.00",
+        "dividendYield": "0.57",
         "roce": "3.36",
         "roe": "2.04"
       },
@@ -1893,7 +1893,7 @@ window.__PROJECTS__ = [
         "Promoter holding has increased by 4.49% over last quarter."
       ],
       "cons": [
-        "Stock is trading at 3.17 times its book value",
+        "Stock is trading at 2.91 times its book value",
         "Company has low interest coverage ratio.",
         "Company has a low return on equity of 4.05% over last 3 years.",
         "Company might be capitalizing the interest cost",
@@ -1914,7 +1914,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "56,434 Crore (down -6.34% in 1 year)"
+          "51,790 Crore (down -21.2% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -2626,7 +2626,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "15,242 Crore (up 16.4% in 1 year)"
+          "14,667 Crore (up 0.88% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -2781,15 +2781,15 @@ window.__PROJECTS__ = [
       "financialStressScore": 8.3,
       "publicRiskSignal": "Seems ok",
       "metrics": {
-        "marketCap": "15,242 Crore (up 16.4% in 1 year)",
+        "marketCap": "14,667 Crore (up 0.88% in 1 year)",
         "revenue": "5,368 Cr",
         "profit": "301 Cr",
         "promoterHolding": "52.9%",
-        "currentPrice": "\u20b9 1,425",
+        "currentPrice": "\u20b9 1,389",
         "highLow": "\u20b9 1,732",
-        "stockPE": "50.6",
+        "stockPE": "49.3",
         "bookValue": "\u20b9 439",
-        "dividendYield": "0.21",
+        "dividendYield": "0.22",
         "roce": "9.55",
         "roe": "6.61"
       },
@@ -2799,7 +2799,7 @@ window.__PROJECTS__ = [
         "Company has been maintaining a healthy dividend payout of 37.0%"
       ],
       "cons": [
-        "Stock is trading at 3.25 times its book value",
+        "Stock is trading at 3.14 times its book value",
         "Company has a low return on equity of 4.47% over last 3 years.",
         "Earnings include an other income of Rs.219 Cr."
       ],
@@ -2818,7 +2818,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "15,242 Crore (up 16.4% in 1 year)"
+          "14,667 Crore (up 0.88% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -3343,7 +3343,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "61,921 Crore (up 11.0% in 1 year)"
+          "60,420 Crore (down -6.07% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -3498,15 +3498,15 @@ window.__PROJECTS__ = [
       "financialStressScore": 9.2,
       "publicRiskSignal": "Seems ok",
       "metrics": {
-        "marketCap": "61,921 Crore (up 11.0% in 1 year)",
+        "marketCap": "60,420 Crore (down -6.07% in 1 year)",
         "revenue": "4,916 Cr",
         "profit": "1,968 Cr",
         "promoterHolding": "67.7%",
-        "currentPrice": "\u20b9 1,703",
+        "currentPrice": "\u20b9 1,659",
         "highLow": "\u20b9 2,006",
-        "stockPE": "31.2",
+        "stockPE": "30.4",
         "bookValue": "\u20b9 443",
-        "dividendYield": "0.47",
+        "dividendYield": "0.49",
         "roce": "15.5",
         "roe": "13.0"
       },
@@ -3514,7 +3514,7 @@ window.__PROJECTS__ = [
         "Company is expected to give good quarter"
       ],
       "cons": [
-        "Stock is trading at 3.85 times its book value",
+        "Stock is trading at 3.78 times its book value",
         "Company has a low return on equity of 12.2% over last 3 years."
       ],
       "rows": [
@@ -3532,7 +3532,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "61,921 Crore (up 11.0% in 1 year)"
+          "60,420 Crore (down -6.07% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -3583,7 +3583,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "56,434 Crore (down -6.34% in 1 year)"
+          "51,790 Crore (down -21.2% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -3738,15 +3738,15 @@ window.__PROJECTS__ = [
       "financialStressScore": 5.8,
       "publicRiskSignal": "Needs caution",
       "metrics": {
-        "marketCap": "56,434 Crore (down -6.34% in 1 year)",
+        "marketCap": "51,790 Crore (down -21.2% in 1 year)",
         "revenue": "1,395 Cr",
         "profit": "349 Cr",
         "promoterHolding": "51.7%",
-        "currentPrice": "\u20b9 1,874",
+        "currentPrice": "\u20b9 1,740",
         "highLow": "\u20b9 2,506",
-        "stockPE": "157",
+        "stockPE": "146",
         "bookValue": "\u20b9 591",
-        "dividendYield": "0.00",
+        "dividendYield": "0.57",
         "roce": "3.36",
         "roe": "2.04"
       },
@@ -3755,7 +3755,7 @@ window.__PROJECTS__ = [
         "Promoter holding has increased by 4.49% over last quarter."
       ],
       "cons": [
-        "Stock is trading at 3.17 times its book value",
+        "Stock is trading at 2.91 times its book value",
         "Company has low interest coverage ratio.",
         "Company has a low return on equity of 4.05% over last 3 years.",
         "Company might be capitalizing the interest cost",
@@ -3776,7 +3776,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "56,434 Crore (down -6.34% in 1 year)"
+          "51,790 Crore (down -21.2% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -3847,7 +3847,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "56,434 Crore (down -6.34% in 1 year)"
+          "51,790 Crore (down -21.2% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -4002,15 +4002,15 @@ window.__PROJECTS__ = [
       "financialStressScore": 5.8,
       "publicRiskSignal": "Needs caution",
       "metrics": {
-        "marketCap": "56,434 Crore (down -6.34% in 1 year)",
+        "marketCap": "51,790 Crore (down -21.2% in 1 year)",
         "revenue": "1,395 Cr",
         "profit": "349 Cr",
         "promoterHolding": "51.7%",
-        "currentPrice": "\u20b9 1,874",
+        "currentPrice": "\u20b9 1,740",
         "highLow": "\u20b9 2,506",
-        "stockPE": "157",
+        "stockPE": "146",
         "bookValue": "\u20b9 591",
-        "dividendYield": "0.00",
+        "dividendYield": "0.57",
         "roce": "3.36",
         "roe": "2.04"
       },
@@ -4019,7 +4019,7 @@ window.__PROJECTS__ = [
         "Promoter holding has increased by 4.49% over last quarter."
       ],
       "cons": [
-        "Stock is trading at 3.17 times its book value",
+        "Stock is trading at 2.91 times its book value",
         "Company has low interest coverage ratio.",
         "Company has a low return on equity of 4.05% over last 3 years.",
         "Company might be capitalizing the interest cost",
@@ -4040,7 +4040,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "56,434 Crore (down -6.34% in 1 year)"
+          "51,790 Crore (down -21.2% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -6094,7 +6094,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "56,434 Crore (down -6.34% in 1 year)"
+          "51,790 Crore (down -21.2% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -6249,15 +6249,15 @@ window.__PROJECTS__ = [
       "financialStressScore": 5.8,
       "publicRiskSignal": "Needs caution",
       "metrics": {
-        "marketCap": "56,434 Crore (down -6.34% in 1 year)",
+        "marketCap": "51,790 Crore (down -21.2% in 1 year)",
         "revenue": "1,395 Cr",
         "profit": "349 Cr",
         "promoterHolding": "51.7%",
-        "currentPrice": "\u20b9 1,874",
+        "currentPrice": "\u20b9 1,740",
         "highLow": "\u20b9 2,506",
-        "stockPE": "157",
+        "stockPE": "146",
         "bookValue": "\u20b9 591",
-        "dividendYield": "0.00",
+        "dividendYield": "0.57",
         "roce": "3.36",
         "roe": "2.04"
       },
@@ -6266,7 +6266,7 @@ window.__PROJECTS__ = [
         "Promoter holding has increased by 4.49% over last quarter."
       ],
       "cons": [
-        "Stock is trading at 3.17 times its book value",
+        "Stock is trading at 2.91 times its book value",
         "Company has low interest coverage ratio.",
         "Company has a low return on equity of 4.05% over last 3 years.",
         "Company might be capitalizing the interest cost",
@@ -6287,7 +6287,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "56,434 Crore (down -6.34% in 1 year)"
+          "51,790 Crore (down -21.2% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -6338,7 +6338,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "56,434 Crore (down -6.34% in 1 year)"
+          "51,790 Crore (down -21.2% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -6493,15 +6493,15 @@ window.__PROJECTS__ = [
       "financialStressScore": 5.8,
       "publicRiskSignal": "Needs caution",
       "metrics": {
-        "marketCap": "56,434 Crore (down -6.34% in 1 year)",
+        "marketCap": "51,790 Crore (down -21.2% in 1 year)",
         "revenue": "1,395 Cr",
         "profit": "349 Cr",
         "promoterHolding": "51.7%",
-        "currentPrice": "\u20b9 1,874",
+        "currentPrice": "\u20b9 1,740",
         "highLow": "\u20b9 2,506",
-        "stockPE": "157",
+        "stockPE": "146",
         "bookValue": "\u20b9 591",
-        "dividendYield": "0.00",
+        "dividendYield": "0.57",
         "roce": "3.36",
         "roe": "2.04"
       },
@@ -6510,7 +6510,7 @@ window.__PROJECTS__ = [
         "Promoter holding has increased by 4.49% over last quarter."
       ],
       "cons": [
-        "Stock is trading at 3.17 times its book value",
+        "Stock is trading at 2.91 times its book value",
         "Company has low interest coverage ratio.",
         "Company has a low return on equity of 4.05% over last 3 years.",
         "Company might be capitalizing the interest cost",
@@ -6531,7 +6531,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "56,434 Crore (down -6.34% in 1 year)"
+          "51,790 Crore (down -21.2% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -7263,7 +7263,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "56,434 Crore (down -6.34% in 1 year)"
+          "51,790 Crore (down -21.2% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -7418,15 +7418,15 @@ window.__PROJECTS__ = [
       "financialStressScore": 5.8,
       "publicRiskSignal": "Needs caution",
       "metrics": {
-        "marketCap": "56,434 Crore (down -6.34% in 1 year)",
+        "marketCap": "51,790 Crore (down -21.2% in 1 year)",
         "revenue": "1,395 Cr",
         "profit": "349 Cr",
         "promoterHolding": "51.7%",
-        "currentPrice": "\u20b9 1,874",
+        "currentPrice": "\u20b9 1,740",
         "highLow": "\u20b9 2,506",
-        "stockPE": "157",
+        "stockPE": "146",
         "bookValue": "\u20b9 591",
-        "dividendYield": "0.00",
+        "dividendYield": "0.57",
         "roce": "3.36",
         "roe": "2.04"
       },
@@ -7435,7 +7435,7 @@ window.__PROJECTS__ = [
         "Promoter holding has increased by 4.49% over last quarter."
       ],
       "cons": [
-        "Stock is trading at 3.17 times its book value",
+        "Stock is trading at 2.91 times its book value",
         "Company has low interest coverage ratio.",
         "Company has a low return on equity of 4.05% over last 3 years.",
         "Company might be capitalizing the interest cost",
@@ -7456,7 +7456,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "56,434 Crore (down -6.34% in 1 year)"
+          "51,790 Crore (down -21.2% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -7527,7 +7527,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "56,434 Crore (down -6.34% in 1 year)"
+          "51,790 Crore (down -21.2% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -7682,15 +7682,15 @@ window.__PROJECTS__ = [
       "financialStressScore": 5.8,
       "publicRiskSignal": "Needs caution",
       "metrics": {
-        "marketCap": "56,434 Crore (down -6.34% in 1 year)",
+        "marketCap": "51,790 Crore (down -21.2% in 1 year)",
         "revenue": "1,395 Cr",
         "profit": "349 Cr",
         "promoterHolding": "51.7%",
-        "currentPrice": "\u20b9 1,874",
+        "currentPrice": "\u20b9 1,740",
         "highLow": "\u20b9 2,506",
-        "stockPE": "157",
+        "stockPE": "146",
         "bookValue": "\u20b9 591",
-        "dividendYield": "0.00",
+        "dividendYield": "0.57",
         "roce": "3.36",
         "roe": "2.04"
       },
@@ -7699,7 +7699,7 @@ window.__PROJECTS__ = [
         "Promoter holding has increased by 4.49% over last quarter."
       ],
       "cons": [
-        "Stock is trading at 3.17 times its book value",
+        "Stock is trading at 2.91 times its book value",
         "Company has low interest coverage ratio.",
         "Company has a low return on equity of 4.05% over last 3 years.",
         "Company might be capitalizing the interest cost",
@@ -7720,7 +7720,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "56,434 Crore (down -6.34% in 1 year)"
+          "51,790 Crore (down -21.2% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -7791,7 +7791,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "56,434 Crore (down -6.34% in 1 year)"
+          "51,790 Crore (down -21.2% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -7946,15 +7946,15 @@ window.__PROJECTS__ = [
       "financialStressScore": 5.8,
       "publicRiskSignal": "Needs caution",
       "metrics": {
-        "marketCap": "56,434 Crore (down -6.34% in 1 year)",
+        "marketCap": "51,790 Crore (down -21.2% in 1 year)",
         "revenue": "1,395 Cr",
         "profit": "349 Cr",
         "promoterHolding": "51.7%",
-        "currentPrice": "\u20b9 1,874",
+        "currentPrice": "\u20b9 1,740",
         "highLow": "\u20b9 2,506",
-        "stockPE": "157",
+        "stockPE": "146",
         "bookValue": "\u20b9 591",
-        "dividendYield": "0.00",
+        "dividendYield": "0.57",
         "roce": "3.36",
         "roe": "2.04"
       },
@@ -7963,7 +7963,7 @@ window.__PROJECTS__ = [
         "Promoter holding has increased by 4.49% over last quarter."
       ],
       "cons": [
-        "Stock is trading at 3.17 times its book value",
+        "Stock is trading at 2.91 times its book value",
         "Company has low interest coverage ratio.",
         "Company has a low return on equity of 4.05% over last 3 years.",
         "Company might be capitalizing the interest cost",
@@ -7984,7 +7984,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "56,434 Crore (down -6.34% in 1 year)"
+          "51,790 Crore (down -21.2% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -8055,18 +8055,18 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "1,50,561 Crore (down -3.71% in 1 year)"
+          "1,45,090 Crore (down -24.8% in 1 year)"
         ],
         [
           "ROE / ROCE",
-          "6.30 / 8.34"
+          "11.7 / 13.7"
         ],
         [
           "Finance signal",
           "Balance sheet reads lighter"
         ]
       ],
-      "summary": "DLF Homes (DLF Ltd) is a listed developer tracked via Screener. Current financial read is low stress with ROE at 6.30 and ROCE at 8.34."
+      "summary": "DLF Homes (DLF Ltd) is a listed developer tracked via Screener. Current financial read is low stress with ROE at 11.7 and ROCE at 13.7."
     },
     "approvals": [
       [
@@ -8197,40 +8197,43 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "RERA-GRG-1138-2022",
     "reraPossession": "2030-03-31",
-    "builderRiskScoreLabel": "9.1/10",
+    "builderRiskScoreLabel": "9.2/10",
     "builderIntelligence": {
       "builderCode": "DEV-DLF",
       "builderName": "DLF Homes (DLF Ltd)",
       "listed": true,
       "financeProvider": "Screener",
       "financeUrl": "https://www.screener.in/company/DLF/",
-      "summary": "DLF Homes (DLF Ltd) is a listed developer tracked via Screener. Current financial read is low stress with ROE at 6.30 and ROCE at 8.34.",
+      "summary": "DLF Homes (DLF Ltd) is a listed developer tracked via Screener. Current financial read is low stress with ROE at 11.7 and ROCE at 13.7.",
       "gradeBucket": "A+",
       "financialStress": "Low stress",
-      "financialStressScore": 9.1,
+      "financialStressScore": 9.2,
       "publicRiskSignal": "Seems ok",
       "metrics": {
-        "marketCap": "1,50,561 Crore (down -3.71% in 1 year)",
-        "revenue": "3,913 Cr",
-        "profit": "2,900 Cr",
+        "marketCap": "1,45,090 Crore (down -24.8% in 1 year)",
+        "revenue": "3,984 Cr",
+        "profit": "3,748 Cr",
         "promoterHolding": "74.1%",
-        "currentPrice": "\u20b9 608",
+        "currentPrice": "\u20b9 587",
         "highLow": "\u20b9 888",
-        "stockPE": "55.1",
-        "bookValue": "\u20b9 117",
-        "dividendYield": "0.99",
-        "roce": "8.34",
-        "roe": "6.30"
+        "stockPE": "40.7",
+        "bookValue": "\u20b9 128",
+        "dividendYield": "1.02",
+        "roce": "13.7",
+        "roe": "11.7"
       },
       "pros": [
         "Company has reduced debt.",
         "Company is almost debt free.",
-        "Company has been maintaining a healthy dividend payout of 78.6%"
+        "Company has been maintaining a healthy dividend payout of 81.9%",
+        "Company&#x27;s working capital requirements have reduced from 420 days to 13.5 days"
       ],
       "cons": [
-        "Stock is trading at 5.20 times its book value",
-        "Company has a low return on equity of 6.21% over last 3 years.",
-        "Earnings include an other income of Rs.2,424 Cr."
+        "Stock is trading at 4.61 times its book value",
+        "The company has delivered a poor sales growth of 0.28% over past five years.",
+        "Company has a low return on equity of 7.46% over last 3 years.",
+        "Earnings include an other income of Rs.2,970 Cr.",
+        "Debtor days have increased from 50.3 to 124 days."
       ],
       "rows": [
         [
@@ -8247,11 +8250,11 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "1,50,561 Crore (down -3.71% in 1 year)"
+          "1,45,090 Crore (down -24.8% in 1 year)"
         ],
         [
           "ROE / ROCE",
-          "6.30 / 8.34"
+          "11.7 / 13.7"
         ],
         [
           "Finance signal",
@@ -8318,18 +8321,18 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "1,50,561 Crore (down -3.71% in 1 year)"
+          "1,45,090 Crore (down -24.8% in 1 year)"
         ],
         [
           "ROE / ROCE",
-          "6.30 / 8.34"
+          "11.7 / 13.7"
         ],
         [
           "Finance signal",
           "Balance sheet reads lighter"
         ]
       ],
-      "summary": "DLF Homes (DLF Ltd) is a listed developer tracked via Screener. Current financial read is low stress with ROE at 6.30 and ROCE at 8.34."
+      "summary": "DLF Homes (DLF Ltd) is a listed developer tracked via Screener. Current financial read is low stress with ROE at 11.7 and ROCE at 13.7."
     },
     "approvals": [
       [
@@ -8460,40 +8463,43 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "GGM/772/504/2023/116",
     "reraPossession": "Jul 2029",
-    "builderRiskScoreLabel": "9.1/10",
+    "builderRiskScoreLabel": "9.2/10",
     "builderIntelligence": {
       "builderCode": "DEV-DLF",
       "builderName": "DLF Homes (DLF Ltd)",
       "listed": true,
       "financeProvider": "Screener",
       "financeUrl": "https://www.screener.in/company/DLF/",
-      "summary": "DLF Homes (DLF Ltd) is a listed developer tracked via Screener. Current financial read is low stress with ROE at 6.30 and ROCE at 8.34.",
+      "summary": "DLF Homes (DLF Ltd) is a listed developer tracked via Screener. Current financial read is low stress with ROE at 11.7 and ROCE at 13.7.",
       "gradeBucket": "A+",
       "financialStress": "Low stress",
-      "financialStressScore": 9.1,
+      "financialStressScore": 9.2,
       "publicRiskSignal": "Seems ok",
       "metrics": {
-        "marketCap": "1,50,561 Crore (down -3.71% in 1 year)",
-        "revenue": "3,913 Cr",
-        "profit": "2,900 Cr",
+        "marketCap": "1,45,090 Crore (down -24.8% in 1 year)",
+        "revenue": "3,984 Cr",
+        "profit": "3,748 Cr",
         "promoterHolding": "74.1%",
-        "currentPrice": "\u20b9 608",
+        "currentPrice": "\u20b9 587",
         "highLow": "\u20b9 888",
-        "stockPE": "55.1",
-        "bookValue": "\u20b9 117",
-        "dividendYield": "0.99",
-        "roce": "8.34",
-        "roe": "6.30"
+        "stockPE": "40.7",
+        "bookValue": "\u20b9 128",
+        "dividendYield": "1.02",
+        "roce": "13.7",
+        "roe": "11.7"
       },
       "pros": [
         "Company has reduced debt.",
         "Company is almost debt free.",
-        "Company has been maintaining a healthy dividend payout of 78.6%"
+        "Company has been maintaining a healthy dividend payout of 81.9%",
+        "Company&#x27;s working capital requirements have reduced from 420 days to 13.5 days"
       ],
       "cons": [
-        "Stock is trading at 5.20 times its book value",
-        "Company has a low return on equity of 6.21% over last 3 years.",
-        "Earnings include an other income of Rs.2,424 Cr."
+        "Stock is trading at 4.61 times its book value",
+        "The company has delivered a poor sales growth of 0.28% over past five years.",
+        "Company has a low return on equity of 7.46% over last 3 years.",
+        "Earnings include an other income of Rs.2,970 Cr.",
+        "Debtor days have increased from 50.3 to 124 days."
       ],
       "rows": [
         [
@@ -8510,11 +8516,11 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "1,50,561 Crore (down -3.71% in 1 year)"
+          "1,45,090 Crore (down -24.8% in 1 year)"
         ],
         [
           "ROE / ROCE",
-          "6.30 / 8.34"
+          "11.7 / 13.7"
         ],
         [
           "Finance signal",
@@ -8581,18 +8587,18 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "1,50,561 Crore (down -3.71% in 1 year)"
+          "1,45,090 Crore (down -24.8% in 1 year)"
         ],
         [
           "ROE / ROCE",
-          "6.30 / 8.34"
+          "11.7 / 13.7"
         ],
         [
           "Finance signal",
           "Balance sheet reads lighter"
         ]
       ],
-      "summary": "DLF Homes (DLF Ltd) is a listed developer tracked via Screener. Current financial read is low stress with ROE at 6.30 and ROCE at 8.34."
+      "summary": "DLF Homes (DLF Ltd) is a listed developer tracked via Screener. Current financial read is low stress with ROE at 11.7 and ROCE at 13.7."
     },
     "approvals": [
       [
@@ -8723,40 +8729,43 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "GGM/954/686/2025/57",
     "reraPossession": "2034-09-30",
-    "builderRiskScoreLabel": "9.1/10",
+    "builderRiskScoreLabel": "9.2/10",
     "builderIntelligence": {
       "builderCode": "DEV-DLF",
       "builderName": "DLF Homes (DLF Ltd)",
       "listed": true,
       "financeProvider": "Screener",
       "financeUrl": "https://www.screener.in/company/DLF/",
-      "summary": "DLF Homes (DLF Ltd) is a listed developer tracked via Screener. Current financial read is low stress with ROE at 6.30 and ROCE at 8.34.",
+      "summary": "DLF Homes (DLF Ltd) is a listed developer tracked via Screener. Current financial read is low stress with ROE at 11.7 and ROCE at 13.7.",
       "gradeBucket": "A+",
       "financialStress": "Low stress",
-      "financialStressScore": 9.1,
+      "financialStressScore": 9.2,
       "publicRiskSignal": "Seems ok",
       "metrics": {
-        "marketCap": "1,50,561 Crore (down -3.71% in 1 year)",
-        "revenue": "3,913 Cr",
-        "profit": "2,900 Cr",
+        "marketCap": "1,45,090 Crore (down -24.8% in 1 year)",
+        "revenue": "3,984 Cr",
+        "profit": "3,748 Cr",
         "promoterHolding": "74.1%",
-        "currentPrice": "\u20b9 608",
+        "currentPrice": "\u20b9 587",
         "highLow": "\u20b9 888",
-        "stockPE": "55.1",
-        "bookValue": "\u20b9 117",
-        "dividendYield": "0.99",
-        "roce": "8.34",
-        "roe": "6.30"
+        "stockPE": "40.7",
+        "bookValue": "\u20b9 128",
+        "dividendYield": "1.02",
+        "roce": "13.7",
+        "roe": "11.7"
       },
       "pros": [
         "Company has reduced debt.",
         "Company is almost debt free.",
-        "Company has been maintaining a healthy dividend payout of 78.6%"
+        "Company has been maintaining a healthy dividend payout of 81.9%",
+        "Company&#x27;s working capital requirements have reduced from 420 days to 13.5 days"
       ],
       "cons": [
-        "Stock is trading at 5.20 times its book value",
-        "Company has a low return on equity of 6.21% over last 3 years.",
-        "Earnings include an other income of Rs.2,424 Cr."
+        "Stock is trading at 4.61 times its book value",
+        "The company has delivered a poor sales growth of 0.28% over past five years.",
+        "Company has a low return on equity of 7.46% over last 3 years.",
+        "Earnings include an other income of Rs.2,970 Cr.",
+        "Debtor days have increased from 50.3 to 124 days."
       ],
       "rows": [
         [
@@ -8773,11 +8782,11 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "1,50,561 Crore (down -3.71% in 1 year)"
+          "1,45,090 Crore (down -24.8% in 1 year)"
         ],
         [
           "ROE / ROCE",
-          "6.30 / 8.34"
+          "11.7 / 13.7"
         ],
         [
           "Finance signal",
@@ -8844,18 +8853,18 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "1,50,561 Crore (down -3.71% in 1 year)"
+          "1,45,090 Crore (down -24.8% in 1 year)"
         ],
         [
           "ROE / ROCE",
-          "6.30 / 8.34"
+          "11.7 / 13.7"
         ],
         [
           "Finance signal",
           "Balance sheet reads lighter"
         ]
       ],
-      "summary": "DLF Homes (DLF Ltd) is a listed developer tracked via Screener. Current financial read is low stress with ROE at 6.30 and ROCE at 8.34."
+      "summary": "DLF Homes (DLF Ltd) is a listed developer tracked via Screener. Current financial read is low stress with ROE at 11.7 and ROCE at 13.7."
     },
     "approvals": [
       [
@@ -8986,40 +8995,43 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "GGM/819/551/2024/46",
     "reraPossession": "Dec 2028",
-    "builderRiskScoreLabel": "9.1/10",
+    "builderRiskScoreLabel": "9.2/10",
     "builderIntelligence": {
       "builderCode": "DEV-DLF",
       "builderName": "DLF Homes (DLF Ltd)",
       "listed": true,
       "financeProvider": "Screener",
       "financeUrl": "https://www.screener.in/company/DLF/",
-      "summary": "DLF Homes (DLF Ltd) is a listed developer tracked via Screener. Current financial read is low stress with ROE at 6.30 and ROCE at 8.34.",
+      "summary": "DLF Homes (DLF Ltd) is a listed developer tracked via Screener. Current financial read is low stress with ROE at 11.7 and ROCE at 13.7.",
       "gradeBucket": "A+",
       "financialStress": "Low stress",
-      "financialStressScore": 9.1,
+      "financialStressScore": 9.2,
       "publicRiskSignal": "Seems ok",
       "metrics": {
-        "marketCap": "1,50,561 Crore (down -3.71% in 1 year)",
-        "revenue": "3,913 Cr",
-        "profit": "2,900 Cr",
+        "marketCap": "1,45,090 Crore (down -24.8% in 1 year)",
+        "revenue": "3,984 Cr",
+        "profit": "3,748 Cr",
         "promoterHolding": "74.1%",
-        "currentPrice": "\u20b9 608",
+        "currentPrice": "\u20b9 587",
         "highLow": "\u20b9 888",
-        "stockPE": "55.1",
-        "bookValue": "\u20b9 117",
-        "dividendYield": "0.99",
-        "roce": "8.34",
-        "roe": "6.30"
+        "stockPE": "40.7",
+        "bookValue": "\u20b9 128",
+        "dividendYield": "1.02",
+        "roce": "13.7",
+        "roe": "11.7"
       },
       "pros": [
         "Company has reduced debt.",
         "Company is almost debt free.",
-        "Company has been maintaining a healthy dividend payout of 78.6%"
+        "Company has been maintaining a healthy dividend payout of 81.9%",
+        "Company&#x27;s working capital requirements have reduced from 420 days to 13.5 days"
       ],
       "cons": [
-        "Stock is trading at 5.20 times its book value",
-        "Company has a low return on equity of 6.21% over last 3 years.",
-        "Earnings include an other income of Rs.2,424 Cr."
+        "Stock is trading at 4.61 times its book value",
+        "The company has delivered a poor sales growth of 0.28% over past five years.",
+        "Company has a low return on equity of 7.46% over last 3 years.",
+        "Earnings include an other income of Rs.2,970 Cr.",
+        "Debtor days have increased from 50.3 to 124 days."
       ],
       "rows": [
         [
@@ -9036,11 +9048,11 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "1,50,561 Crore (down -3.71% in 1 year)"
+          "1,45,090 Crore (down -24.8% in 1 year)"
         ],
         [
           "ROE / ROCE",
-          "6.30 / 8.34"
+          "11.7 / 13.7"
         ],
         [
           "Finance signal",
@@ -10883,18 +10895,18 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "12,720 Crore (down -21.3% in 1 year)"
+          "11,532 Crore (down -31.8% in 1 year)"
         ],
         [
           "ROE / ROCE",
-          "6.69 / 9.40"
+          "-3.33 / 5.93"
         ],
         [
           "Finance signal",
           "Low interest coverage flagged"
         ]
       ],
-      "summary": "Signature Global India Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at 6.69 and ROCE at 9.40."
+      "summary": "Signature Global India Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at -3.33 and ROCE at 5.93."
     },
     "approvals": [
       [
@@ -11025,40 +11037,38 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "GGM/866/598/2024/93",
     "reraPossession": "May 2030",
-    "builderRiskScoreLabel": "5.6/10",
+    "builderRiskScoreLabel": "4.8/10",
     "builderIntelligence": {
       "builderCode": "DEV-SIGG",
       "builderName": "Signature Global India Limited",
       "listed": true,
       "financeProvider": "Screener",
       "financeUrl": "https://www.screener.in/company/SIGNATURE/",
-      "summary": "Signature Global India Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at 6.69 and ROCE at 9.40.",
+      "summary": "Signature Global India Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at -3.33 and ROCE at 5.93.",
       "gradeBucket": "C",
       "financialStress": "Elevated stress",
-      "financialStressScore": 5.6,
+      "financialStressScore": 4.8,
       "publicRiskSignal": "Needs caution",
       "metrics": {
-        "marketCap": "12,720 Crore (down -21.3% in 1 year)",
-        "revenue": "1,415 Cr",
-        "profit": "25.2 Cr",
+        "marketCap": "11,532 Crore (down -31.8% in 1 year)",
+        "revenue": "1,381 Cr",
+        "profit": "16.2 Cr",
         "promoterHolding": "69.6%",
-        "currentPrice": "\u20b9 905",
+        "currentPrice": "\u20b9 828",
         "highLow": "\u20b9 1,310",
-        "stockPE": "505",
-        "bookValue": "\u20b9 66.1",
+        "stockPE": null,
+        "bookValue": "\u20b9 69.3",
         "dividendYield": "0.00",
-        "roce": "9.40",
-        "roe": "6.69"
+        "roce": "5.93",
+        "roe": "-3.33"
       },
-      "pros": [
-        "Company has delivered good profit growth of 101% CAGR over last 5 years"
-      ],
+      "pros": [],
       "cons": [
-        "Stock is trading at 13.7 times its book value",
+        "Stock is trading at 12.0 times its book value",
         "Though the company is reporting repeated profits, it is not paying out dividend",
         "Company has low interest coverage ratio.",
-        "Tax rate seems low",
-        "Company has a low return on equity of -2.16% over last 3 years."
+        "Company has a low return on equity of 1.99% over last 3 years.",
+        "Earnings include an other income of Rs.323 Cr."
       ],
       "rows": [
         [
@@ -11075,11 +11085,11 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "12,720 Crore (down -21.3% in 1 year)"
+          "11,532 Crore (down -31.8% in 1 year)"
         ],
         [
           "ROE / ROCE",
-          "6.69 / 9.40"
+          "-3.33 / 5.93"
         ],
         [
           "Finance signal",
@@ -11146,18 +11156,18 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "12,720 Crore (down -21.3% in 1 year)"
+          "11,532 Crore (down -31.8% in 1 year)"
         ],
         [
           "ROE / ROCE",
-          "6.69 / 9.40"
+          "-3.33 / 5.93"
         ],
         [
           "Finance signal",
           "Low interest coverage flagged"
         ]
       ],
-      "summary": "Signature Global India Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at 6.69 and ROCE at 9.40."
+      "summary": "Signature Global India Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at -3.33 and ROCE at 5.93."
     },
     "approvals": [
       [
@@ -11288,40 +11298,38 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "GGM/831/563/2024/58",
     "reraPossession": "2031-02-28",
-    "builderRiskScoreLabel": "5.6/10",
+    "builderRiskScoreLabel": "4.8/10",
     "builderIntelligence": {
       "builderCode": "DEV-SIGG",
       "builderName": "Signature Global India Limited",
       "listed": true,
       "financeProvider": "Screener",
       "financeUrl": "https://www.screener.in/company/SIGNATURE/",
-      "summary": "Signature Global India Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at 6.69 and ROCE at 9.40.",
+      "summary": "Signature Global India Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at -3.33 and ROCE at 5.93.",
       "gradeBucket": "C",
       "financialStress": "Elevated stress",
-      "financialStressScore": 5.6,
+      "financialStressScore": 4.8,
       "publicRiskSignal": "Needs caution",
       "metrics": {
-        "marketCap": "12,720 Crore (down -21.3% in 1 year)",
-        "revenue": "1,415 Cr",
-        "profit": "25.2 Cr",
+        "marketCap": "11,532 Crore (down -31.8% in 1 year)",
+        "revenue": "1,381 Cr",
+        "profit": "16.2 Cr",
         "promoterHolding": "69.6%",
-        "currentPrice": "\u20b9 905",
+        "currentPrice": "\u20b9 828",
         "highLow": "\u20b9 1,310",
-        "stockPE": "505",
-        "bookValue": "\u20b9 66.1",
+        "stockPE": null,
+        "bookValue": "\u20b9 69.3",
         "dividendYield": "0.00",
-        "roce": "9.40",
-        "roe": "6.69"
+        "roce": "5.93",
+        "roe": "-3.33"
       },
-      "pros": [
-        "Company has delivered good profit growth of 101% CAGR over last 5 years"
-      ],
+      "pros": [],
       "cons": [
-        "Stock is trading at 13.7 times its book value",
+        "Stock is trading at 12.0 times its book value",
         "Though the company is reporting repeated profits, it is not paying out dividend",
         "Company has low interest coverage ratio.",
-        "Tax rate seems low",
-        "Company has a low return on equity of -2.16% over last 3 years."
+        "Company has a low return on equity of 1.99% over last 3 years.",
+        "Earnings include an other income of Rs.323 Cr."
       ],
       "rows": [
         [
@@ -11338,11 +11346,11 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "12,720 Crore (down -21.3% in 1 year)"
+          "11,532 Crore (down -31.8% in 1 year)"
         ],
         [
           "ROE / ROCE",
-          "6.69 / 9.40"
+          "-3.33 / 5.93"
         ],
         [
           "Finance signal",
@@ -11409,18 +11417,18 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "12,720 Crore (down -21.3% in 1 year)"
+          "11,532 Crore (down -31.8% in 1 year)"
         ],
         [
           "ROE / ROCE",
-          "6.69 / 9.40"
+          "-3.33 / 5.93"
         ],
         [
           "Finance signal",
           "Low interest coverage flagged"
         ]
       ],
-      "summary": "Signature Global India Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at 6.69 and ROCE at 9.40."
+      "summary": "Signature Global India Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at -3.33 and ROCE at 5.93."
     },
     "approvals": [
       [
@@ -11551,40 +11559,38 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "GGM/868/600/2024/95",
     "reraPossession": "Apr 2028",
-    "builderRiskScoreLabel": "5.6/10",
+    "builderRiskScoreLabel": "4.8/10",
     "builderIntelligence": {
       "builderCode": "DEV-SIGG",
       "builderName": "Signature Global India Limited",
       "listed": true,
       "financeProvider": "Screener",
       "financeUrl": "https://www.screener.in/company/SIGNATURE/",
-      "summary": "Signature Global India Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at 6.69 and ROCE at 9.40.",
+      "summary": "Signature Global India Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at -3.33 and ROCE at 5.93.",
       "gradeBucket": "C",
       "financialStress": "Elevated stress",
-      "financialStressScore": 5.6,
+      "financialStressScore": 4.8,
       "publicRiskSignal": "Needs caution",
       "metrics": {
-        "marketCap": "12,720 Crore (down -21.3% in 1 year)",
-        "revenue": "1,415 Cr",
-        "profit": "25.2 Cr",
+        "marketCap": "11,532 Crore (down -31.8% in 1 year)",
+        "revenue": "1,381 Cr",
+        "profit": "16.2 Cr",
         "promoterHolding": "69.6%",
-        "currentPrice": "\u20b9 905",
+        "currentPrice": "\u20b9 828",
         "highLow": "\u20b9 1,310",
-        "stockPE": "505",
-        "bookValue": "\u20b9 66.1",
+        "stockPE": null,
+        "bookValue": "\u20b9 69.3",
         "dividendYield": "0.00",
-        "roce": "9.40",
-        "roe": "6.69"
+        "roce": "5.93",
+        "roe": "-3.33"
       },
-      "pros": [
-        "Company has delivered good profit growth of 101% CAGR over last 5 years"
-      ],
+      "pros": [],
       "cons": [
-        "Stock is trading at 13.7 times its book value",
+        "Stock is trading at 12.0 times its book value",
         "Though the company is reporting repeated profits, it is not paying out dividend",
         "Company has low interest coverage ratio.",
-        "Tax rate seems low",
-        "Company has a low return on equity of -2.16% over last 3 years."
+        "Company has a low return on equity of 1.99% over last 3 years.",
+        "Earnings include an other income of Rs.323 Cr."
       ],
       "rows": [
         [
@@ -11601,11 +11607,11 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "12,720 Crore (down -21.3% in 1 year)"
+          "11,532 Crore (down -31.8% in 1 year)"
         ],
         [
           "ROE / ROCE",
-          "6.69 / 9.40"
+          "-3.33 / 5.93"
         ],
         [
           "Finance signal",
@@ -11652,18 +11658,18 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "12,720 Crore (down -21.3% in 1 year)"
+          "11,532 Crore (down -31.8% in 1 year)"
         ],
         [
           "ROE / ROCE",
-          "6.69 / 9.40"
+          "-3.33 / 5.93"
         ],
         [
           "Finance signal",
           "Low interest coverage flagged"
         ]
       ],
-      "summary": "Signature Global India Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at 6.69 and ROCE at 9.40."
+      "summary": "Signature Global India Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at -3.33 and ROCE at 5.93."
     },
     "approvals": [
       [
@@ -11794,40 +11800,38 @@ window.__PROJECTS__ = [
     "published": true,
     "reraNumber": "GGM/955/687/2025/58",
     "reraPossession": "May 2030",
-    "builderRiskScoreLabel": "5.6/10",
+    "builderRiskScoreLabel": "4.8/10",
     "builderIntelligence": {
       "builderCode": "DEV-SIGG",
       "builderName": "Signature Global India Limited",
       "listed": true,
       "financeProvider": "Screener",
       "financeUrl": "https://www.screener.in/company/SIGNATURE/",
-      "summary": "Signature Global India Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at 6.69 and ROCE at 9.40.",
+      "summary": "Signature Global India Limited is a listed developer tracked via Screener. Current financial read is elevated stress with ROE at -3.33 and ROCE at 5.93.",
       "gradeBucket": "C",
       "financialStress": "Elevated stress",
-      "financialStressScore": 5.6,
+      "financialStressScore": 4.8,
       "publicRiskSignal": "Needs caution",
       "metrics": {
-        "marketCap": "12,720 Crore (down -21.3% in 1 year)",
-        "revenue": "1,415 Cr",
-        "profit": "25.2 Cr",
+        "marketCap": "11,532 Crore (down -31.8% in 1 year)",
+        "revenue": "1,381 Cr",
+        "profit": "16.2 Cr",
         "promoterHolding": "69.6%",
-        "currentPrice": "\u20b9 905",
+        "currentPrice": "\u20b9 828",
         "highLow": "\u20b9 1,310",
-        "stockPE": "505",
-        "bookValue": "\u20b9 66.1",
+        "stockPE": null,
+        "bookValue": "\u20b9 69.3",
         "dividendYield": "0.00",
-        "roce": "9.40",
-        "roe": "6.69"
+        "roce": "5.93",
+        "roe": "-3.33"
       },
-      "pros": [
-        "Company has delivered good profit growth of 101% CAGR over last 5 years"
-      ],
+      "pros": [],
       "cons": [
-        "Stock is trading at 13.7 times its book value",
+        "Stock is trading at 12.0 times its book value",
         "Though the company is reporting repeated profits, it is not paying out dividend",
         "Company has low interest coverage ratio.",
-        "Tax rate seems low",
-        "Company has a low return on equity of -2.16% over last 3 years."
+        "Company has a low return on equity of 1.99% over last 3 years.",
+        "Earnings include an other income of Rs.323 Cr."
       ],
       "rows": [
         [
@@ -11844,11 +11848,11 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "12,720 Crore (down -21.3% in 1 year)"
+          "11,532 Crore (down -31.8% in 1 year)"
         ],
         [
           "ROE / ROCE",
-          "6.69 / 9.40"
+          "-3.33 / 5.93"
         ],
         [
           "Finance signal",
@@ -13050,7 +13054,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "15,242 Crore (up 16.4% in 1 year)"
+          "14,667 Crore (up 0.88% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -13205,15 +13209,15 @@ window.__PROJECTS__ = [
       "financialStressScore": 8.3,
       "publicRiskSignal": "Seems ok",
       "metrics": {
-        "marketCap": "15,242 Crore (up 16.4% in 1 year)",
+        "marketCap": "14,667 Crore (up 0.88% in 1 year)",
         "revenue": "5,368 Cr",
         "profit": "301 Cr",
         "promoterHolding": "52.9%",
-        "currentPrice": "\u20b9 1,425",
+        "currentPrice": "\u20b9 1,389",
         "highLow": "\u20b9 1,732",
-        "stockPE": "50.6",
+        "stockPE": "49.3",
         "bookValue": "\u20b9 439",
-        "dividendYield": "0.21",
+        "dividendYield": "0.22",
         "roce": "9.55",
         "roe": "6.61"
       },
@@ -13223,7 +13227,7 @@ window.__PROJECTS__ = [
         "Company has been maintaining a healthy dividend payout of 37.0%"
       ],
       "cons": [
-        "Stock is trading at 3.25 times its book value",
+        "Stock is trading at 3.14 times its book value",
         "Company has a low return on equity of 4.47% over last 3 years.",
         "Earnings include an other income of Rs.219 Cr."
       ],
@@ -13242,7 +13246,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "15,242 Crore (up 16.4% in 1 year)"
+          "14,667 Crore (up 0.88% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -13313,7 +13317,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "15,242 Crore (up 16.4% in 1 year)"
+          "14,667 Crore (up 0.88% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -13468,15 +13472,15 @@ window.__PROJECTS__ = [
       "financialStressScore": 8.3,
       "publicRiskSignal": "Seems ok",
       "metrics": {
-        "marketCap": "15,242 Crore (up 16.4% in 1 year)",
+        "marketCap": "14,667 Crore (up 0.88% in 1 year)",
         "revenue": "5,368 Cr",
         "profit": "301 Cr",
         "promoterHolding": "52.9%",
-        "currentPrice": "\u20b9 1,425",
+        "currentPrice": "\u20b9 1,389",
         "highLow": "\u20b9 1,732",
-        "stockPE": "50.6",
+        "stockPE": "49.3",
         "bookValue": "\u20b9 439",
-        "dividendYield": "0.21",
+        "dividendYield": "0.22",
         "roce": "9.55",
         "roe": "6.61"
       },
@@ -13486,7 +13490,7 @@ window.__PROJECTS__ = [
         "Company has been maintaining a healthy dividend payout of 37.0%"
       ],
       "cons": [
-        "Stock is trading at 3.25 times its book value",
+        "Stock is trading at 3.14 times its book value",
         "Company has a low return on equity of 4.47% over last 3 years.",
         "Earnings include an other income of Rs.219 Cr."
       ],
@@ -13505,7 +13509,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "15,242 Crore (up 16.4% in 1 year)"
+          "14,667 Crore (up 0.88% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -14030,7 +14034,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "4,034 Crore (down -3.44% in 1 year)"
+          "3,810 Crore (down -18.5% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -14185,11 +14189,11 @@ window.__PROJECTS__ = [
       "financialStressScore": 5.0,
       "publicRiskSignal": "Needs caution",
       "metrics": {
-        "marketCap": "4,034 Crore (down -3.44% in 1 year)",
+        "marketCap": "3,810 Crore (down -18.5% in 1 year)",
         "revenue": "37.5 Cr",
         "profit": "-245 Cr",
         "promoterHolding": "65.1%",
-        "currentPrice": "\u20b9 137",
+        "currentPrice": "\u20b9 132",
         "highLow": "\u20b9 206",
         "stockPE": null,
         "bookValue": "\u20b9 37.2",
@@ -14201,7 +14205,7 @@ window.__PROJECTS__ = [
         "Company has reduced debt."
       ],
       "cons": [
-        "Stock is trading at 3.68 times its book value",
+        "Stock is trading at 3.45 times its book value",
         "Company has low interest coverage ratio.",
         "The company has delivered a poor sales growth of -33.8% over past five years.",
         "Company has a low return on equity of -1.93% over last 3 years.",
@@ -14222,7 +14226,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "4,034 Crore (down -3.44% in 1 year)"
+          "3,810 Crore (down -18.5% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -14293,7 +14297,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "4,034 Crore (down -3.44% in 1 year)"
+          "3,810 Crore (down -18.5% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -14448,11 +14452,11 @@ window.__PROJECTS__ = [
       "financialStressScore": 5.0,
       "publicRiskSignal": "Needs caution",
       "metrics": {
-        "marketCap": "4,034 Crore (down -3.44% in 1 year)",
+        "marketCap": "3,810 Crore (down -18.5% in 1 year)",
         "revenue": "37.5 Cr",
         "profit": "-245 Cr",
         "promoterHolding": "65.1%",
-        "currentPrice": "\u20b9 137",
+        "currentPrice": "\u20b9 132",
         "highLow": "\u20b9 206",
         "stockPE": null,
         "bookValue": "\u20b9 37.2",
@@ -14464,7 +14468,7 @@ window.__PROJECTS__ = [
         "Company has reduced debt."
       ],
       "cons": [
-        "Stock is trading at 3.68 times its book value",
+        "Stock is trading at 3.45 times its book value",
         "Company has low interest coverage ratio.",
         "The company has delivered a poor sales growth of -33.8% over past five years.",
         "Company has a low return on equity of -1.93% over last 3 years.",
@@ -14485,7 +14489,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "4,034 Crore (down -3.44% in 1 year)"
+          "3,810 Crore (down -18.5% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -14536,7 +14540,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "845 Crore (up 11.1% in 1 year)"
+          "855 Crore (up 0.63% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -14691,15 +14695,15 @@ window.__PROJECTS__ = [
       "financialStressScore": 7.4,
       "publicRiskSignal": "Watch closely",
       "metrics": {
-        "marketCap": "845 Crore (up 11.1% in 1 year)",
+        "marketCap": "855 Crore (up 0.63% in 1 year)",
         "revenue": "136 Cr",
         "profit": "28.3 Cr",
         "promoterHolding": "54.8%",
-        "currentPrice": "\u20b9 860",
+        "currentPrice": "\u20b9 865",
         "highLow": "\u20b9 1,061",
-        "stockPE": "29.9",
+        "stockPE": "30.1",
         "bookValue": "\u20b9 349",
-        "dividendYield": "1.05",
+        "dividendYield": "1.06",
         "roce": "10.4",
         "roe": "7.89"
       },
@@ -14725,7 +14729,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "845 Crore (up 11.1% in 1 year)"
+          "855 Crore (up 0.63% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -15704,7 +15708,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "15,242 Crore (up 16.4% in 1 year)"
+          "14,667 Crore (up 0.88% in 1 year)"
         ],
         [
           "ROE / ROCE",
@@ -15859,15 +15863,15 @@ window.__PROJECTS__ = [
       "financialStressScore": 8.3,
       "publicRiskSignal": "Seems ok",
       "metrics": {
-        "marketCap": "15,242 Crore (up 16.4% in 1 year)",
+        "marketCap": "14,667 Crore (up 0.88% in 1 year)",
         "revenue": "5,368 Cr",
         "profit": "301 Cr",
         "promoterHolding": "52.9%",
-        "currentPrice": "\u20b9 1,425",
+        "currentPrice": "\u20b9 1,389",
         "highLow": "\u20b9 1,732",
-        "stockPE": "50.6",
+        "stockPE": "49.3",
         "bookValue": "\u20b9 439",
-        "dividendYield": "0.21",
+        "dividendYield": "0.22",
         "roce": "9.55",
         "roe": "6.61"
       },
@@ -15877,7 +15881,7 @@ window.__PROJECTS__ = [
         "Company has been maintaining a healthy dividend payout of 37.0%"
       ],
       "cons": [
-        "Stock is trading at 3.25 times its book value",
+        "Stock is trading at 3.14 times its book value",
         "Company has a low return on equity of 4.47% over last 3 years.",
         "Earnings include an other income of Rs.219 Cr."
       ],
@@ -15896,7 +15900,7 @@ window.__PROJECTS__ = [
         ],
         [
           "Market cap",
-          "15,242 Crore (up 16.4% in 1 year)"
+          "14,667 Crore (up 0.88% in 1 year)"
         ],
         [
           "ROE / ROCE",

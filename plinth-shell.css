@@ -97,3 +97,33 @@ html, body {
   box-shadow: 0 0 6px var(--green);
   animation: blink 2s ease infinite;
 }
+
+.source-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 32px;
+  padding: 0 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text-dim);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.source-badge::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--text-muted);
+  box-shadow: 0 0 0 transparent;
+  flex-shrink: 0;
+}
+
+.source-badge--live::before {
+  background: var(--green);
+  box-shadow: 0 0 8px rgba(74, 222, 128, 0.55);
+}

@@ -1,6 +1,6 @@
 # Builder Intelligence Report
 
-Generated: 2026-05-09T11:26:13.213433+00:00
+Generated: 2026-05-21T09:40:59.027561+00:00
 
 Builders covered: 30
 Listed builders scraped from finance portals: 9

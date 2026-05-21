@@ -393,7 +393,7 @@ function Ticker({ items }) {
       <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 60, zIndex: 2, background: 'linear-gradient(to right, var(--bg2), transparent)' }} />
       <div style={{ position: 'absolute', right: 0, top: 0, bottom: 0, width: 60, zIndex: 2, background: 'linear-gradient(to left, var(--bg2), transparent)' }} />
       <div
-        style={{ display: 'flex', animation: 'ticker 360s linear infinite', whiteSpace: 'nowrap' }}
+        style={{ display: 'flex', animation: 'ticker 540s linear infinite', whiteSpace: 'nowrap' }}
         onMouseEnter={(event) => {
           event.currentTarget.style.animationPlayState = 'paused';
         }}
