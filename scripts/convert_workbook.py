@@ -20,6 +20,7 @@ OUTPUT_JS = Path("/Users/madhavprakash/Documents/New project/data/projects-data.
 OUTPUT_JSON = Path("/Users/madhavprakash/Documents/New project/data/projects-data.json")
 ALIASES_JSON = Path("/Users/madhavprakash/Documents/New project/data/project_aliases.json")
 BUILDER_INTELLIGENCE_JSON = Path("/Users/madhavprakash/Documents/New project/data/builder_intelligence.json")
+MANUAL_LINKS_CSV = Path("/Users/madhavprakash/Documents/New project/data/manual_source_links.csv")
 
 
 def parse_xlsx(path: Path):
@@ -177,6 +178,14 @@ def read_csv_rows(path: Path):
         return list(csv.DictReader(handle))
 
 
+def read_manual_links(path: Path):
+    if not path.exists():
+        return {}
+    with path.open("r", encoding="utf-8-sig", newline="") as handle:
+        rows = list(csv.DictReader(handle))
+    return {row.get("code"): row for row in rows if row.get("code")}
+
+
 def read_aliases(path: Path):
     if not path.exists():
         return {}
@@ -322,7 +331,7 @@ def score_rera_match(project_names, project_sector_value, builder, rera_row):
         return None
 
     project_sector = normalize_sector(project_sector_value)
-    rera_sector = normalize_sector(rera_row.get("project_address") or rera_row.get("sector") or "")
+    rera_sector = normalize_sector(rera_row.get("sector") or rera_row.get("project_address") or "")
     sector_match = bool(project_sector and rera_sector and project_sector == rera_sector)
 
     developer_overlap = len(
@@ -340,10 +349,30 @@ def score_rera_match(project_names, project_sector_value, builder, rera_row):
 
 
 def build_rera_lookup(project_rows, builders, rera_rows, aliases):
+    manual_links = read_manual_links(MANUAL_LINKS_CSV)
+    rera_by_url = {row.get("source_url"): row for row in rera_rows if row.get("source_url")}
     lookup = {}
     for project_row in project_rows:
         builder = builders.get(project_row.get("builder_code"), {})
         alias_config = aliases.get(project_row.get("code"), {})
+        manual = manual_links.get(project_row.get("code"), {})
+        manual_url = (manual.get("manual_source_url") or "").strip()
+        manual_notes = (manual.get("notes") or "").strip()
+        if manual_url and not manual_notes and manual_url in rera_by_url:
+            direct_row = rera_by_url[manual_url]
+            project_sector = normalize_sector(project_row.get("sector"))
+            rera_sector = normalize_sector(direct_row.get("sector") or direct_row.get("project_address") or "")
+            developer_overlap = len(
+                normalize_developer(builder.get("builder_name") or project_row.get("builder_code"))
+                & normalize_developer(direct_row.get("developer_name"))
+            )
+            direct_overlap = len(
+                set(normalize_tokens(project_row.get("name"), generic=True))
+                & set(normalize_tokens(direct_row.get("project_name"), generic=True))
+            )
+            if developer_overlap >= 1 and (project_sector == rera_sector or direct_overlap >= 1):
+                lookup[project_row.get("code")] = direct_row
+                continue
         project_names = [project_row.get("name"), alias_config.get("canonicalName"), *(alias_config.get("aliases") or [])]
         candidates = []
         for rera_row in rera_rows:

@@ -1406,7 +1406,7 @@ window.__PROJECTS__ = [
     "latitude": 28.3895,
     "longitude": 76.9485,
     "published": true,
-    "reraNumber": "",
+    "reraNumber": "RERA-GRG-1863-2025",
     "reraPossession": "",
     "builderRiskScoreLabel": "7.4/10",
     "builderIntelligence": {
@@ -1442,7 +1442,27 @@ window.__PROJECTS__ = [
         ]
       ]
     },
-    "reraDetails": {}
+    "reraDetails": {
+      "reraProjectName": "Conscient Elaira Phase 1",
+      "reraRegistrationNo": "RERA-GRG-1863-2025",
+      "projectAddress": "12 Sultanpur farm Delhi-110030",
+      "landArea": "4.8727 sq m",
+      "totalLicensedLand": "5.5601 sq m",
+      "totalTowers": null,
+      "totalUnits": 268,
+      "unitsSold": null,
+      "unitsAvailable": null,
+      "totalFloors": 34,
+      "launchPrice": null,
+      "currentPrice": null,
+      "configurations": "",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "projectSizeText": "",
+      "startDate": "",
+      "completionDate": "",
+      "sourceUrl": "https://reratracker.com/conscient-elaira-phase-1-in-gurugram-by-conscient-infrastructure-private-limited-rtid3621"
+    }
   },
   {
     "code": "GGM-17C-DWA",
@@ -1697,7 +1717,7 @@ window.__PROJECTS__ = [
     "priceCr": 11.4,
     "sqft": 2002,
     "priceSqft": 38000,
-    "units": 0,
+    "units": 488,
     "launched": 0,
     "sold": 0,
     "absorption": "Data pending",
@@ -1861,7 +1881,7 @@ window.__PROJECTS__ = [
     "latitude": 28.4405,
     "longitude": 77.101,
     "published": true,
-    "reraNumber": "",
+    "reraNumber": "RERA-GRG-2216-2026",
     "reraPossession": "",
     "builderRiskScoreLabel": "5.8/10",
     "builderIntelligence": {
@@ -1926,7 +1946,27 @@ window.__PROJECTS__ = [
         ]
       ]
     },
-    "reraDetails": {}
+    "reraDetails": {
+      "reraProjectName": "GODREJ SAMARIS",
+      "reraRegistrationNo": "RERA-GRG-2216-2026",
+      "projectAddress": "Villa 150 Block X Tatavam Hills Sector-48 South City II Gurugram",
+      "landArea": "29999.46 sq m",
+      "totalLicensedLand": "29999.46 sq m",
+      "totalTowers": null,
+      "totalUnits": 488,
+      "unitsSold": null,
+      "unitsAvailable": null,
+      "totalFloors": 36,
+      "launchPrice": null,
+      "currentPrice": null,
+      "configurations": "",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "projectSizeText": "",
+      "startDate": "2026-05-11",
+      "completionDate": "",
+      "sourceUrl": "https://reratracker.com/godrej-samaris-in-gurugram-by-godrej-properties-limited-rtid5612"
+    }
   },
   {
     "code": "GGM-42-ONE",
@@ -1941,7 +1981,7 @@ window.__PROJECTS__ = [
     "priceCr": 0,
     "sqft": 4002,
     "priceSqft": 45000,
-    "units": 0,
+    "units": 110,
     "launched": 0,
     "sold": 0,
     "absorption": "Data pending",
@@ -2097,8 +2137,8 @@ window.__PROJECTS__ = [
     "latitude": 28.4605,
     "longitude": 77.0935,
     "published": true,
-    "reraNumber": "",
-    "reraPossession": "",
+    "reraNumber": "RERA-GRG-1765-2024",
+    "reraPossession": "2032-12-31",
     "builderRiskScoreLabel": "7.4/10",
     "builderIntelligence": {
       "builderCode": "DEV-EXP",
@@ -2133,7 +2173,27 @@ window.__PROJECTS__ = [
         ]
       ]
     },
-    "reraDetails": {}
+    "reraDetails": {
+      "reraProjectName": "Experion One 42 (Golf Course Road)",
+      "reraRegistrationNo": "RERA-GRG-1765-2024",
+      "projectAddress": "PLOT NO. GH-1 , SECTOR 42, GURUGRAM",
+      "landArea": "3.426 Acre",
+      "totalLicensedLand": "3.426 Acre",
+      "totalTowers": 3,
+      "totalUnits": 110,
+      "unitsSold": null,
+      "unitsAvailable": null,
+      "totalFloors": 24,
+      "launchPrice": 45000,
+      "currentPrice": 45000,
+      "configurations": "5 BHK4 BHK",
+      "sizes": "6000 - 8000 sq.ft.",
+      "projectType": "NEW",
+      "projectSizeText": "3 Buildings - 110 units",
+      "startDate": "15-10-2024",
+      "completionDate": "2032-12-31",
+      "sourceUrl": "https://reratracker.com/experion-one-42-golf-course-road-in-gurugram-by-experion-developers-private-limited-rtid3939"
+    }
   },
   {
     "code": "GGM-102A-MAR",
@@ -2532,7 +2592,7 @@ window.__PROJECTS__ = [
     "longitude": 77.06,
     "published": true,
     "reraNumber": "GGM/914/646/2025/17",
-    "reraPossession": "2033-07-09",
+    "reraPossession": "",
     "builderRiskScoreLabel": "8.2/10",
     "builderIntelligence": {
       "builderCode": "DEV-BIR",
@@ -2568,25 +2628,25 @@ window.__PROJECTS__ = [
       ]
     },
     "reraDetails": {
-      "reraProjectName": "BIRLA ARIKA PHASE 2",
-      "reraRegistrationNo": "RERA-GRG-2142-2025",
-      "projectAddress": "SECTOR 31-32A, GURUGRAM",
-      "landArea": "1.53 Acre",
+      "reraProjectName": "BIRLA ARIKA",
+      "reraRegistrationNo": "RERA-GRG-1823-2024",
+      "projectAddress": "Birla Aurora Level 8 Unit A Dr Annie Besant Road Worli Mumbai 400030",
+      "landArea": "11.745 Acre",
       "totalLicensedLand": "13.275 Acre",
-      "totalTowers": 7,
+      "totalTowers": null,
       "totalUnits": 620,
       "unitsSold": null,
       "unitsAvailable": null,
       "totalFloors": 40,
-      "launchPrice": 24500,
-      "currentPrice": 24500,
-      "configurations": "4 BHK",
-      "sizes": "4300 - 4300 sq.ft.",
+      "launchPrice": null,
+      "currentPrice": null,
+      "configurations": "",
+      "sizes": "48x48",
       "projectType": "NEW",
-      "projectSizeText": "7 Buildings - 620 units",
-      "startDate": "16-01-2026",
-      "completionDate": "2033-07-09",
-      "sourceUrl": "https://reratracker.com/birla-arika-phase-2-in-gurugram-by-birla-estates-private-limited-rtid5573"
+      "projectSizeText": "",
+      "startDate": "2025-03-24",
+      "completionDate": "",
+      "sourceUrl": "https://reratracker.com/birla-arika-in-gurugram-by-birla-estates-private-limited-rtid3539"
     }
   },
   {
@@ -3823,7 +3883,7 @@ window.__PROJECTS__ = [
     "priceCr": 14.8,
     "sqft": 1146,
     "priceSqft": 38000,
-    "units": 0,
+    "units": 248,
     "launched": 0,
     "sold": 0,
     "absorption": "Data pending",
@@ -3988,7 +4048,7 @@ window.__PROJECTS__ = [
     "longitude": 77.0985,
     "published": true,
     "reraNumber": "GGM/870/602/2024/97",
-    "reraPossession": "",
+    "reraPossession": "2031-09-30",
     "builderRiskScoreLabel": "5.8/10",
     "builderIntelligence": {
       "builderCode": "DEV-GODREJ",
@@ -4052,7 +4112,27 @@ window.__PROJECTS__ = [
         ]
       ]
     },
-    "reraDetails": {}
+    "reraDetails": {
+      "reraProjectName": "GODREJ MIRAYA",
+      "reraRegistrationNo": "RERA-GRG-1698-2024",
+      "projectAddress": "SECTOR 43, URBAN ESTATE, GURUGRAM II",
+      "landArea": "5.1575 Acre",
+      "totalLicensedLand": "5.1575 Acre",
+      "totalTowers": 3,
+      "totalUnits": 248,
+      "unitsSold": null,
+      "unitsAvailable": null,
+      "totalFloors": 32,
+      "launchPrice": 35000,
+      "currentPrice": 35000,
+      "configurations": "3 BHK4 BHK",
+      "sizes": "0 - 0 sq.ft.",
+      "projectType": "NEW",
+      "projectSizeText": "3 Buildings - 248 units",
+      "startDate": "02-09-2024",
+      "completionDate": "2031-09-30",
+      "sourceUrl": "https://reratracker.com/godrej-miraya-in-gurugram-by-godrej-projects-development-limited-rtid3708"
+    }
   },
   {
     "code": "GGM-48-TRI",
@@ -6070,7 +6150,7 @@ window.__PROJECTS__ = [
     "priceCr": 3.65,
     "sqft": 1851,
     "priceSqft": 19000,
-    "units": 0,
+    "units": 615,
     "launched": 0,
     "sold": 0,
     "absorption": "Data pending",
@@ -6299,7 +6379,27 @@ window.__PROJECTS__ = [
         ]
       ]
     },
-    "reraDetails": {}
+    "reraDetails": {
+      "reraProjectName": "GODREJ VRIKSHYA",
+      "reraRegistrationNo": "RERA-GRG-1650-2024",
+      "projectAddress": "SECTOR 103",
+      "landArea": "14.86225 Acre",
+      "totalLicensedLand": "14.86225 Acre",
+      "totalTowers": 6,
+      "totalUnits": 615,
+      "unitsSold": null,
+      "unitsAvailable": null,
+      "totalFloors": 27,
+      "launchPrice": 17500,
+      "currentPrice": 19000,
+      "configurations": "4 BHK3 BHK",
+      "sizes": "0 - 0 sq.ft.",
+      "projectType": "NEW",
+      "projectSizeText": "6 Buildings - 615 units",
+      "startDate": "20-05-2024",
+      "completionDate": "2031-06-30",
+      "sourceUrl": "https://reratracker.com/godrej-vrikshya-in-gurugram-by-godrej-vestamark-llp-rtid3712"
+    }
   },
   {
     "code": "GGM-31-ALI",
@@ -10230,7 +10330,7 @@ window.__PROJECTS__ = [
     "priceCr": 2.8,
     "sqft": 1051,
     "priceSqft": 15500,
-    "units": 0,
+    "units": 644,
     "launched": 0,
     "sold": 0,
     "absorption": "Data pending",
@@ -10386,7 +10486,7 @@ window.__PROJECTS__ = [
     "latitude": 28.5048,
     "longitude": 76.9548,
     "published": true,
-    "reraNumber": "",
+    "reraNumber": "RERA-GRG-1006-2022",
     "reraPossession": "",
     "builderRiskScoreLabel": "6.2/10",
     "builderIntelligence": {
@@ -10422,7 +10522,27 @@ window.__PROJECTS__ = [
         ]
       ]
     },
-    "reraDetails": {}
+    "reraDetails": {
+      "reraProjectName": "M3M CAPITAL",
+      "reraRegistrationNo": "RERA-GRG-1006-2022",
+      "projectAddress": "B 6504 M3M Woodshire Dharampur Road Sector 107 Daultabad 53 Gurgaon Haryana - 122006",
+      "landArea": "4.856 Acre",
+      "totalLicensedLand": "15.03125 Acre",
+      "totalTowers": null,
+      "totalUnits": 644,
+      "unitsSold": null,
+      "unitsAvailable": null,
+      "totalFloors": 36,
+      "launchPrice": null,
+      "currentPrice": null,
+      "configurations": "",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "projectSizeText": "",
+      "startDate": "",
+      "completionDate": "",
+      "sourceUrl": "https://reratracker.com/m3m-capital-in-gurugram-by-union-buildmart-private-limited-rtid3860"
+    }
   },
   {
     "code": "GGM-113-STA",
@@ -11895,7 +12015,7 @@ window.__PROJECTS__ = [
     "priceCr": 5.6,
     "sqft": 1982,
     "priceSqft": 22500,
-    "units": 0,
+    "units": 504,
     "launched": 0,
     "sold": 0,
     "absorption": "Data pending",
@@ -12088,25 +12208,25 @@ window.__PROJECTS__ = [
       ]
     },
     "reraDetails": {
-      "reraProjectName": "THE WESTIN RESIDENCES BY WHITELAND PHASE-3",
-      "reraRegistrationNo": "RERA-GRG-1658-2024",
-      "projectAddress": "REVENUE ESTATE OF VILLAGE DHANWAPUR, SECTOR-103, GURUGRAM",
-      "landArea": "2.832 Acre",
+      "reraProjectName": "THE WESTIN RESIDENCES BY WHITELAND",
+      "reraRegistrationNo": "RERA-GRG-1656-2024",
+      "projectAddress": "Amber 40 Ground Floor Emerald Hills Sector 65 Gurugram-122018",
+      "landArea": "1.961 Acre",
       "totalLicensedLand": "9.58125 Acre",
       "totalTowers": null,
-      "totalUnits": null,
+      "totalUnits": 504,
       "unitsSold": null,
       "unitsAvailable": null,
-      "totalFloors": null,
+      "totalFloors": 39,
       "launchPrice": null,
       "currentPrice": null,
       "configurations": "",
-      "sizes": "",
+      "sizes": "48x48",
       "projectType": "NEW",
       "projectSizeText": "",
-      "startDate": "25-05-2024",
-      "completionDate": "2031-09-30",
-      "sourceUrl": "https://reratracker.com/the-westin-residences-by-whiteland-phase-3-in-gurugram-by-whiteland-corporation-pvt-ltd-rtid4278"
+      "startDate": "",
+      "completionDate": "",
+      "sourceUrl": "https://reratracker.com/the-westin-residences-by-whiteland-in-gurugram-by-whiteland-corporation-pvt-ltd-rtid4276"
     }
   },
   {
@@ -12732,8 +12852,8 @@ window.__PROJECTS__ = [
     "latitude": 28.418,
     "longitude": 77.048,
     "published": true,
-    "reraNumber": "RERA-GRG-1945-2025",
-    "reraPossession": "",
+    "reraNumber": "RERA-GRG-2065-2025",
+    "reraPossession": "2032-11-30",
     "builderRiskScoreLabel": "7.0/10",
     "builderIntelligence": {
       "builderCode": "DEV-CP",
@@ -12769,25 +12889,25 @@ window.__PROJECTS__ = [
       ]
     },
     "reraDetails": {
-      "reraProjectName": "DESTINO CENTRAL PARK",
-      "reraRegistrationNo": "RERA-GRG-1945-2025",
-      "projectAddress": "4 KAUTILYA MARG NEW DELHI",
-      "landArea": "4.11 Acre",
-      "totalLicensedLand": "197.161 Acre",
-      "totalTowers": null,
-      "totalUnits": null,
+      "reraProjectName": "DELPHINE CENTRAL PARK ESTATES PHASE III",
+      "reraRegistrationNo": "RERA-GRG-2065-2025",
+      "projectAddress": "SECTOR-104, GURUGRAM",
+      "landArea": "2.606 Acre",
+      "totalLicensedLand": "7.8507 Acre",
+      "totalTowers": 6,
+      "totalUnits": 892,
       "unitsSold": null,
       "unitsAvailable": null,
-      "totalFloors": null,
-      "launchPrice": null,
-      "currentPrice": null,
-      "configurations": "",
-      "sizes": "48x48",
+      "totalFloors": 39,
+      "launchPrice": 28000,
+      "currentPrice": 28000,
+      "configurations": "4 BHKStudios1 BHK3 BHK",
+      "sizes": "1027 - 5559 sq.ft.",
       "projectType": "NEW",
-      "projectSizeText": "",
-      "startDate": "",
-      "completionDate": "",
-      "sourceUrl": "https://reratracker.com/destino-central-park-in-gurugram-by-st-patricks-realty-pvt-ltd-rtid5250"
+      "projectSizeText": "6 Buildings - 892 units",
+      "startDate": "16-09-2025",
+      "completionDate": "2032-11-30",
+      "sourceUrl": "https://reratracker.com/delphine-central-park-estates-phase-iii-in-gurugram-by-st-nicholas-estate-development-pvt-ltd-rtid5235"
     }
   },
   {
@@ -17198,8 +17318,8 @@ window.__PROJECTS__ = [
     "latitude": 28.5045,
     "longitude": 76.9545,
     "published": true,
-    "reraNumber": "",
-    "reraPossession": "",
+    "reraNumber": "RERA-GRG-1217-2022",
+    "reraPossession": "2027-12-31",
     "builderRiskScoreLabel": "6.2/10",
     "builderIntelligence": {
       "builderCode": "DEV-SMW",
@@ -17234,7 +17354,27 @@ window.__PROJECTS__ = [
         ]
       ]
     },
-    "reraDetails": {}
+    "reraDetails": {
+      "reraProjectName": "SMARTWORLD ONE DXP",
+      "reraRegistrationNo": "RERA-GRG-1217-2022",
+      "projectAddress": "SEC-113",
+      "landArea": "7.94 Acre",
+      "totalLicensedLand": "16.1125 Acre",
+      "totalTowers": null,
+      "totalUnits": null,
+      "unitsSold": null,
+      "unitsAvailable": null,
+      "totalFloors": null,
+      "launchPrice": null,
+      "currentPrice": null,
+      "configurations": "",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "projectSizeText": "",
+      "startDate": "02-12-2022",
+      "completionDate": "2027-12-31",
+      "sourceUrl": "https://reratracker.com/smartworld-one-dxp-in-gurugram-by-nourish-developers-private-limited-rtid4107"
+    }
   },
   {
     "code": "GGM-66-EDI",
