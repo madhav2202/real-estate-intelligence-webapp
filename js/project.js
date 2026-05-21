@@ -533,7 +533,7 @@ function renderProject() {
     .join("");
   renderRegistryGrid(elements.registryGrid, getRegistryFacts(project));
   renderSourceLinks(elements.sourceLinkRow, [
-    project.reraDetails?.sourceUrl ? { label: "Open RERA / Tracker Source", href: project.reraDetails.sourceUrl } : null,
+    project.reraDetails?.sourceUrl ? { label: "Open project source", href: project.reraDetails.sourceUrl } : null,
   ]);
 
   elements.locationScore.textContent = `${getLocationScore(project).toFixed(1)}/10`;
@@ -556,7 +556,7 @@ function renderProject() {
   renderMiniStatGrid(elements.builderFinanceGrid, getBuilderFinanceStats(project));
   renderSimpleList(elements.builderRiskList, getBuilderRiskRows(project));
   renderSourceLinks(elements.builderSourceRow, [
-    project.builderIntelligence?.financeUrl ? { label: "Open finance source", href: project.builderIntelligence.financeUrl } : null,
+    project.builderIntelligence?.financeUrl ? { label: "Open market source", href: project.builderIntelligence.financeUrl } : null,
   ]);
 
   elements.scoreBreakdown.innerHTML = getScoreBreakdown(project, state.projects)
