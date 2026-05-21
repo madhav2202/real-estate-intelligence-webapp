@@ -6,7 +6,8 @@ import {
   getPropSpotScore,
   getFairEntry,
   projectPageUrl,
-} from "./shared.js";
+  getDataSourceMeta,
+} from "./shared.js?v=20260521b";
 
 const elements = {
   searchInput: document.querySelector("#searchInput"),
@@ -15,6 +16,7 @@ const elements = {
   corridorFilter: document.querySelector("#corridorFilter"),
   resultCount: document.querySelector("#resultCount"),
   projectList: document.querySelector("#projectList"),
+  dataSourceBadge: document.querySelector("#dataSourceBadge"),
 };
 
 const state = { projects: [] };
@@ -74,8 +76,15 @@ function render() {
     .join("");
 }
 
+function renderDataSourceBadge() {
+  const meta = getDataSourceMeta();
+  elements.dataSourceBadge.textContent = meta.label;
+  elements.dataSourceBadge.classList.toggle("source-badge--live", meta.tone === "live");
+}
+
 async function main() {
   state.projects = await loadProjects();
+  renderDataSourceBadge();
   elements.corridorFilter.innerHTML = [
     `<option value="all">All corridors</option>`,
     ...uniqueCorridors(state.projects).map((corridor) => `<option value="${corridor}">${corridor}</option>`),

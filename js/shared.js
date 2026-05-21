@@ -1,4 +1,4 @@
-import { SUPABASE_URL, SUPABASE_ANON_KEY } from "./supabase-config.js";
+import { SUPABASE_URL, SUPABASE_ANON_KEY } from "./supabase-config.js?v=20260521b";
 
 const BUILDER_GRADES = {
   "dlf": "A+",

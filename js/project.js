@@ -12,7 +12,7 @@ import {
   calculateEmi,
   getDataSourceMeta,
   submitLead,
-} from "./shared.js";
+} from "./shared.js?v=20260521b";
 
 const formatter = new Intl.NumberFormat("en-IN");
 
