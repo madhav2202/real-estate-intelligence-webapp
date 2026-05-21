@@ -34,9 +34,22 @@ const elements = {
   downPaymentInput: document.querySelector("#downPaymentInput"),
   interestRateInput: document.querySelector("#interestRateInput"),
   tenureInput: document.querySelector("#tenureInput"),
+  downPaymentRange: document.querySelector("#downPaymentRange"),
+  interestRateRange: document.querySelector("#interestRateRange"),
+  tenureRange: document.querySelector("#tenureRange"),
   emiValue: document.querySelector("#emiValue"),
   emiNote: document.querySelector("#emiNote"),
+  emiPrincipal: document.querySelector("#emiPrincipal"),
+  emiDownPaymentBar: document.querySelector("#emiDownPaymentBar"),
+  emiLoanBar: document.querySelector("#emiLoanBar"),
+  emiDownPaymentValue: document.querySelector("#emiDownPaymentValue"),
+  emiLoanValue: document.querySelector("#emiLoanValue"),
+  emiMetrics: document.querySelector("#emiMetrics"),
   locationScore: document.querySelector("#locationScore"),
+  locationHeroScore: document.querySelector("#locationHeroScore"),
+  locationHeadline: document.querySelector("#locationHeadline"),
+  locationSubline: document.querySelector("#locationSubline"),
+  locationSpectrum: document.querySelector("#locationSpectrum"),
   commuteValue: document.querySelector("#commuteValue"),
   maturityValue: document.querySelector("#maturityValue"),
   connectivityList: document.querySelector("#connectivityList"),
@@ -118,6 +131,39 @@ function getLocationMaturity(project) {
   if (text.includes("Improving") || text.includes("Operational")) return "Maturing";
   if (text.includes("Developing") || text.includes("Watch")) return "Emerging";
   return "Good";
+}
+
+function scoreLocationBucket(rows, positiveTerms, cautionTerms, base = 8) {
+  const text = (rows || []).map((row) => row.join(" ")).join(" ").toLowerCase();
+  let score = base;
+  positiveTerms.forEach((term) => {
+    if (text.includes(term)) score += 0.35;
+  });
+  cautionTerms.forEach((term) => {
+    if (text.includes(term)) score -= 0.35;
+  });
+  return Math.max(6.2, Math.min(9.4, Number(score.toFixed(1))));
+}
+
+function getLocationSpectrum(project) {
+  return [
+    [
+      "Connectivity",
+      scoreLocationBucket(project.locationIntel?.connectivity, ["airport", "metro", "operational"], ["35 min", "45 min"], 8.2),
+    ],
+    [
+      "Social infra",
+      scoreLocationBucket(project.locationIntel?.social, ["hospital", "school", "mall"], ["limited", "building"], 8.0),
+    ],
+    [
+      "Infra upside",
+      scoreLocationBucket(project.locationIntel?.infra, ["upside", "operational"], ["watch"], 8.1),
+    ],
+    [
+      "Risk drag",
+      10 - scoreLocationBucket(project.locationIntel?.risks, ["improving"], ["high", "dust", "traffic"], 2.2),
+    ],
+  ].map(([label, value]) => [label, Number(value.toFixed(1))]);
 }
 
 function getApprovalScore(project) {
@@ -350,6 +396,28 @@ function renderPriceVisual(project, score, fair) {
   `;
 }
 
+function getLocationNarrative(project) {
+  const score = getLocationScore(project);
+  const commute = getLocationCommute(project);
+  const maturity = getLocationMaturity(project);
+  if (score >= 8.5) {
+    return {
+      headline: "Location already reads like a serious shortlist.",
+      subline: `${project.corridor} is already showing a stronger mix of commute convenience, social usability, and corridor upside than the median launch catchment.`,
+    };
+  }
+  if (score >= 7.8) {
+    return {
+      headline: "Location is compelling, with a few things still maturing.",
+      subline: `${commute} connectivity and ${maturity.toLowerCase()} livability make this a practical end-user location, even if the broader corridor story is still filling out.`,
+    };
+  }
+  return {
+    headline: "Location has upside, but still needs context.",
+    subline: `The current on-ground read is usable, though this remains more corridor-driven than fully matured at the project micro-location level.`,
+  };
+}
+
 function getBuilderRiskSummary(project) {
   if (project.builderIntelligence?.summary) return project.builderIntelligence.summary;
   const grade = getBuilderGrade(project);
@@ -537,6 +605,22 @@ function renderProject() {
   ]);
 
   elements.locationScore.textContent = `${getLocationScore(project).toFixed(1)}/10`;
+  elements.locationHeroScore.textContent = `${getLocationScore(project).toFixed(1)}`;
+  const locationNarrative = getLocationNarrative(project);
+  elements.locationHeadline.textContent = locationNarrative.headline;
+  elements.locationSubline.textContent = locationNarrative.subline;
+  elements.locationSpectrum.innerHTML = getLocationSpectrum(project)
+    .map(([label, value]) => {
+      const width = Math.max(16, Math.min(100, value * 10));
+      return `
+        <div class="location-spectrum-row">
+          <span>${label}</span>
+          <div class="location-spectrum-track"><i style="width:${width}%"></i></div>
+          <strong>${value.toFixed(1)}</strong>
+        </div>
+      `;
+    })
+    .join("");
   elements.commuteValue.textContent = getLocationCommute(project);
   elements.maturityValue.textContent = getLocationMaturity(project);
   renderSimpleList(elements.connectivityList, project.locationIntel?.connectivity?.length ? project.locationIntel.connectivity : [["Current view", "Corridor connected"], ["Metro / roads", "Daily movement viable"]]);
@@ -606,6 +690,14 @@ function renderProject() {
   elements.priceStackSubline.textContent = formatSqft(getCanonicalPriceSqft(project));
   elements.priceBars.innerHTML = renderPriceVisual(project, score, fair);
 
+  const maxDownPayment = Math.max(1, Number((project.priceCr || 1).toFixed(1)));
+  elements.downPaymentInput.max = String(maxDownPayment);
+  elements.downPaymentRange.max = String(maxDownPayment);
+  if (Number(elements.downPaymentInput.value) > maxDownPayment) {
+    elements.downPaymentInput.value = String(maxDownPayment);
+    elements.downPaymentRange.value = String(maxDownPayment);
+  }
+
   elements.analystAnswer.innerHTML = `<p>${getAnalystResponse(project, "Should I enter now?")}</p>`;
   elements.projectBrief.textContent = getProjectBrief(project);
 
@@ -626,8 +718,42 @@ function updateEmi() {
   const years = Number(elements.tenureInput.value || 0);
   const principalCr = Math.max((project.priceCr || 0) - downPaymentCr, 0);
   const emi = calculateEmi(principalCr * 10000000, interestRate, years);
+  const totalTicket = project.priceCr || 0;
+  const downPaymentShare = totalTicket ? Math.min(100, (downPaymentCr / totalTicket) * 100) : 0;
+  const loanShare = totalTicket ? Math.min(100, (principalCr / totalTicket) * 100) : 0;
+  const totalPayout = emi && years ? emi * years * 12 : 0;
+  const interestOutgo = Math.max(totalPayout - principalCr * 10000000, 0);
   elements.emiValue.textContent = emi ? `Rs ${formatter.format(Math.round(emi))}/month` : "Pending";
   elements.emiNote.textContent = `Loan principal assumed: Rs ${formatter.format(Math.round(principalCr * 10000000))}.`;
+  elements.emiPrincipal.textContent = totalTicket ? formatCr(totalTicket) : "--";
+  elements.emiDownPaymentBar.style.width = `${downPaymentShare}%`;
+  elements.emiLoanBar.style.width = `${loanShare}%`;
+  elements.emiDownPaymentValue.textContent = totalTicket ? formatCr(downPaymentCr) : "--";
+  elements.emiLoanValue.textContent = totalTicket ? formatCr(principalCr) : "--";
+  elements.emiMetrics.innerHTML = [
+    ["Interest outgo", interestOutgo ? `Rs ${formatter.format(Math.round(interestOutgo))}` : "--", "Over the selected tenure"],
+    ["Monthly income thumb-rule", emi ? `Rs ${formatter.format(Math.round(emi * 3))}` : "--", "Assuming EMI stays under one-third of income"],
+    ["Interest rate", `${interestRate.toFixed(1)}%`, "Live adjustable"],
+  ]
+    .map(
+      ([label, value, note]) => `
+        <div class="emi-metric-card">
+          <span>${label}</span>
+          <strong>${value}</strong>
+          <em>${note}</em>
+        </div>
+      `,
+    )
+    .join("");
+}
+
+function syncRangePair(primary, secondary) {
+  const sync = (from, to) => {
+    to.value = from.value;
+    updateEmi();
+  };
+  primary.addEventListener("input", () => sync(primary, secondary));
+  secondary.addEventListener("input", () => sync(secondary, primary));
 }
 
 async function handleLeadSubmit(event) {
@@ -700,9 +826,9 @@ async function main() {
   ];
 
   renderProject();
-  [elements.downPaymentInput, elements.interestRateInput, elements.tenureInput].forEach((input) =>
-    input.addEventListener("input", updateEmi)
-  );
+  syncRangePair(elements.downPaymentInput, elements.downPaymentRange);
+  syncRangePair(elements.interestRateInput, elements.interestRateRange);
+  syncRangePair(elements.tenureInput, elements.tenureRange);
   elements.leadForm.addEventListener("submit", handleLeadSubmit);
   bindCompareSelects();
   bindAnalyst();

@@ -10,8 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./plinth-shell.css" />
-    <link rel="stylesheet" href="./project-shell.css" />
+    <link rel="stylesheet" href="./plinth-shell.css?v=20260521e" />
+    <link rel="stylesheet" href="./project-shell.css?v=20260521e" />
   </head>
   <body>
     <main class="project-shell">
@@ -97,6 +97,20 @@
                 <span id="locationScore">--</span>
               </div>
               <p class="section-note">A practical read on how livable, connected, and future-ready the location already feels for an end buyer.</p>
+              <div class="location-hero-band">
+                <div class="location-orb">
+                  <div class="location-orb-ring"></div>
+                  <strong id="locationHeroScore">--</strong>
+                  <span>overall</span>
+                </div>
+                <div class="location-strengths">
+                  <div class="location-strength-head">
+                    <strong id="locationHeadline">Location holds up well for end-use today.</strong>
+                    <p id="locationSubline">The strongest current signals are connectivity, social convenience, and how much of the corridor story is already real on ground.</p>
+                  </div>
+                  <div class="location-spectrum" id="locationSpectrum"></div>
+                </div>
+              </div>
               <div class="dual-metric-grid">
                 <div class="mini-metric-block">
                   <span>Commute</span>
@@ -137,20 +151,46 @@
               <label class="field">
                 <span>Down Payment (Cr)</span>
                 <input id="downPaymentInput" type="number" min="0" step="0.1" value="1" />
+                <input id="downPaymentRange" class="range-input" type="range" min="0" max="10" step="0.1" value="1" />
               </label>
               <label class="field">
                 <span>Interest Rate (%)</span>
                 <input id="interestRateInput" type="number" min="1" step="0.1" value="8.5" />
+                <input id="interestRateRange" class="range-input" type="range" min="6" max="13" step="0.1" value="8.5" />
               </label>
               <label class="field">
                 <span>Tenure (Years)</span>
                 <input id="tenureInput" type="number" min="1" step="1" value="20" />
+                <input id="tenureRange" class="range-input" type="range" min="5" max="30" step="1" value="20" />
               </label>
             </div>
-            <div class="emi-output">
-              <span>Estimated EMI</span>
-              <strong id="emiValue">--</strong>
-              <p id="emiNote">Calculated using builder current sale price minus down payment.</p>
+            <div class="emi-dashboard">
+              <div class="emi-output">
+                <span>Estimated EMI</span>
+                <strong id="emiValue">--</strong>
+                <p id="emiNote">Calculated using builder current sale price minus down payment.</p>
+              </div>
+              <div class="emi-sidecar">
+                <div class="emi-split-card">
+                  <div class="emi-split-head">
+                    <span>Financing Snapshot</span>
+                    <strong id="emiPrincipal">--</strong>
+                  </div>
+                  <div class="emi-split-bars">
+                    <div class="emi-split-row">
+                      <label>Down payment</label>
+                      <div class="emi-split-track"><i id="emiDownPaymentBar"></i></div>
+                      <strong id="emiDownPaymentValue">--</strong>
+                    </div>
+                    <div class="emi-split-row">
+                      <label>Loan principal</label>
+                      <div class="emi-split-track"><i id="emiLoanBar"></i></div>
+                      <strong id="emiLoanValue">--</strong>
+                    </div>
+                  </div>
+                </div>
+                <div class="emi-metrics" id="emiMetrics"></div>
+              </div>
             </div>
           </section>
 
@@ -317,6 +357,6 @@
       </section>
     </main>
 
-    <script type="module" src="./js/project.js?v=20260521d"></script>
+    <script type="module" src="./js/project.js?v=20260521e"></script>
   </body>
 </html>

@@ -389,11 +389,11 @@ function ScoreRing({ score, size = 120, stroke = 8, label = true, animate = true
 function Ticker({ items }) {
   const doubled = [...items, ...items];
   return (
-    <div style={{ background: 'var(--bg2)', borderBottom: '1px solid var(--border)', overflow: 'hidden', height: 36, display: 'flex', alignItems: 'center', position: 'relative' }}>
-      <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 60, zIndex: 2, background: 'linear-gradient(to right, var(--bg2), transparent)' }} />
-      <div style={{ position: 'absolute', right: 0, top: 0, bottom: 0, width: 60, zIndex: 2, background: 'linear-gradient(to left, var(--bg2), transparent)' }} />
+    <div style={{ background: 'rgba(15,15,24,0.94)', borderBottom: '1px solid var(--border)', overflow: 'hidden', height: 42, display: 'flex', alignItems: 'center', position: 'relative', backdropFilter: 'blur(12px)' }}>
+      <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 72, zIndex: 2, background: 'linear-gradient(to right, rgba(15,15,24,1), transparent)' }} />
+      <div style={{ position: 'absolute', right: 0, top: 0, bottom: 0, width: 72, zIndex: 2, background: 'linear-gradient(to left, rgba(15,15,24,1), transparent)' }} />
       <div
-        style={{ display: 'flex', animation: 'ticker 540s linear infinite', whiteSpace: 'nowrap' }}
+        style={{ display: 'flex', animation: 'ticker 900s linear infinite', whiteSpace: 'nowrap' }}
         onMouseEnter={(event) => {
           event.currentTarget.style.animationPlayState = 'paused';
         }}
@@ -402,11 +402,11 @@ function Ticker({ items }) {
         }}
       >
         {doubled.map((item, i) => (
-          <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '0 24px', borderRight: '1px solid var(--border)' }}>
-            <span style={{ fontSize: 11, color: 'var(--text-dim)', fontFamily: 'var(--font-mono)' }}>{item.name}</span>
-            <span style={{ fontSize: 10, color: 'var(--text-muted)', background: 'var(--bg3)', padding: '1px 6px', borderRadius: 3 }}>{item.stage}</span>
-            <span style={{ fontSize: 11, color: 'var(--text)', fontFamily: 'var(--font-mono)', fontWeight: 500 }}>{item.ticket}</span>
-            <span style={{ fontSize: 11, color: scoreColor(item.score), fontFamily: 'var(--font-mono)', fontWeight: 600 }}>{item.score}/100</span>
+          <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '0 24px', borderRight: '1px solid var(--border)' }}>
+            <span style={{ fontSize: 12, color: 'var(--text)', fontWeight: 600 }}>{item.name}</span>
+            <span style={{ fontSize: 10, color: 'var(--text-muted)', background: 'rgba(255,255,255,0.04)', padding: '2px 7px', borderRadius: 999, border: '1px solid var(--border)' }}>{item.stage}</span>
+            <span style={{ fontSize: 11, color: 'var(--text-dim)', fontFamily: 'var(--font-mono)', fontWeight: 500 }}>{item.ticket}</span>
+            <span style={{ fontSize: 11, color: scoreColor(item.score), fontFamily: 'var(--font-mono)', fontWeight: 700 }}>{item.score}/100</span>
           </div>
         ))}
       </div>
