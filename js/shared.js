@@ -1,4 +1,4 @@
-import { SUPABASE_URL, SUPABASE_ANON_KEY } from "./supabase-config.js?v=20260521c";
+import { SUPABASE_URL, SUPABASE_ANON_KEY } from "./supabase-config.js?v=20260522a";
 
 const BUILDER_GRADES = {
   "dlf": "A+",
@@ -130,8 +130,16 @@ function mapSupabaseProject(row) {
 
 function mergeProjectEnrichment(primary, backup) {
   if (!backup) return primary;
+  const legacySlug =
+    primary.slug && backup.slug && primary.slug !== backup.slug
+      ? primary.slug
+      : primary.legacySlug || backup.legacySlug || null;
   return {
     ...primary,
+    code: backup.code || primary.code,
+    name: backup.name || primary.name,
+    slug: backup.slug || primary.slug,
+    legacySlug,
     builderIntelligence: primary.builderIntelligence || backup.builderIntelligence || null,
     reraDetails:
       primary.reraDetails && Object.keys(primary.reraDetails).length
@@ -235,15 +243,22 @@ export async function loadProjects() {
         const rows = await response.json();
         currentDataSource = "supabase";
         let localBySlug = new Map();
+        let localByCode = new Map();
         try {
           const localProjects = await loadLocalProjects();
           localBySlug = new Map(localProjects.map((project) => [project.slug, project]));
+          localByCode = new Map(localProjects.map((project) => [project.code, project]));
         } catch (error) {
           console.warn("Local enrichment merge skipped.", error);
         }
         return rows
           .map(mapSupabaseProject)
-          .map((project) => mergeProjectEnrichment(project, localBySlug.get(project.slug)))
+          .map((project) =>
+            mergeProjectEnrichment(
+              project,
+              localByCode.get(project.code) || localBySlug.get(project.slug)
+            )
+          )
           .filter((project) => project && project.published !== false);
       }
     } catch (error) {
@@ -342,7 +357,7 @@ export function getPropSpotScore(project, projects) {
 }
 
 export function getProjectBySlug(projects, slug) {
-  return projects.find((project) => project.slug === slug) || null;
+  return projects.find((project) => project.slug === slug || project.legacySlug === slug) || null;
 }
 
 export function getFilteredProjects(projects, filters = {}) {

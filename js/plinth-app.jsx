@@ -94,6 +94,10 @@ function projectPageUrl(slug = '') {
   return withBase(`/project.html${query ? `?${query}` : ''}`);
 }
 
+function matchesProjectSlug(project, slug) {
+  return Boolean(project && slug && (project.slug === slug || project.legacySlug === slug));
+}
+
 function propertiesPageUrl() {
   return withBase('/properties.html');
 }
@@ -194,6 +198,7 @@ function adaptProject(project) {
   return {
     id: project.slug || project.code,
     slug: project.slug,
+    legacySlug: project.legacySlug || null,
     code: project.code,
     name: project.name,
     developer: project.developer,
@@ -282,25 +287,44 @@ async function loadProjects() {
       if (response.ok) {
         const localProjects = await response.json();
         const localBySlug = new Map(localProjects.map((project) => [project.slug, project]));
+        const localByCode = new Map(localProjects.map((project) => [project.code, project]));
         rawProjects = rawProjects.map((project) => ({
           ...project,
-          builderIntelligence: project.builderIntelligence || localBySlug.get(project.slug)?.builderIntelligence || null,
+          ...(() => {
+            const canonical = localByCode.get(project.code) || localBySlug.get(project.slug) || null;
+            const legacySlug =
+              canonical && project.slug && canonical.slug && project.slug !== canonical.slug
+                ? project.slug
+                : canonical?.legacySlug || null;
+            return canonical
+              ? {
+                  code: canonical.code || project.code,
+                  name: canonical.name || project.name,
+                  slug: canonical.slug || project.slug,
+                  legacySlug,
+                }
+              : {};
+          })(),
+          builderIntelligence:
+            project.builderIntelligence ||
+            (localByCode.get(project.code) || localBySlug.get(project.slug))?.builderIntelligence ||
+            null,
           reraDetails:
             project.reraDetails && Object.keys(project.reraDetails).length
               ? project.reraDetails
-              : localBySlug.get(project.slug)?.reraDetails || {},
+              : (localByCode.get(project.code) || localBySlug.get(project.slug))?.reraDetails || {},
           developerRisk:
             project.developerRisk && Object.keys(project.developerRisk).length
               ? project.developerRisk
-              : localBySlug.get(project.slug)?.developerRisk || {},
+              : (localByCode.get(project.code) || localBySlug.get(project.slug))?.developerRisk || {},
           locationIntel:
             project.locationIntel && Object.keys(project.locationIntel).length
               ? project.locationIntel
-              : localBySlug.get(project.slug)?.locationIntel || {},
+              : (localByCode.get(project.code) || localBySlug.get(project.slug))?.locationIntel || {},
           tracker:
             project.tracker && Object.keys(project.tracker).length
               ? project.tracker
-              : localBySlug.get(project.slug)?.tracker || {},
+              : (localByCode.get(project.code) || localBySlug.get(project.slug))?.tracker || {},
         }));
       }
     } catch (error) {
@@ -817,7 +841,8 @@ function App() {
         setProjects(rows);
         setDataSource(source === 'supabase' ? 'Live source: Supabase' : 'Fallback: Local JSON');
         const slug = getSelectedSlug();
-        const selectedProject = rows.find((p) => p.slug === slug) || [...rows].sort((a, b) => b.score - a.score)[0] || null;
+        const selectedProject =
+          rows.find((p) => matchesProjectSlug(p, slug)) || [...rows].sort((a, b) => b.score - a.score)[0] || null;
         setSelected(selectedProject);
         setLoading(false);
       })
@@ -834,7 +859,7 @@ function App() {
     const onPop = () => {
       setView(getRouteView(window.location.pathname));
       const slug = getSelectedSlug();
-      setSelected((current) => projects.find((p) => p.slug === slug) || current || projects[0] || null);
+      setSelected((current) => projects.find((p) => matchesProjectSlug(p, slug)) || current || projects[0] || null);
     };
     window.addEventListener('popstate', onPop);
     return () => window.removeEventListener('popstate', onPop);
@@ -853,7 +878,9 @@ function App() {
       return;
     }
     if (!selected || !filtered.some((project) => project.id === selected.id)) {
-      const next = filtered.find((p) => p.slug === getSelectedSlug()) || [...filtered].sort((a, b) => b.score - a.score)[0];
+      const next =
+        filtered.find((p) => matchesProjectSlug(p, getSelectedSlug())) ||
+        [...filtered].sort((a, b) => b.score - a.score)[0];
       setSelected(next || null);
     }
   }, [filtered]);
