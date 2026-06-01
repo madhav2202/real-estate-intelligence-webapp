@@ -251,15 +251,22 @@ export async function loadProjects() {
         } catch (error) {
           console.warn("Local enrichment merge skipped.", error);
         }
-        return rows
-          .map(mapSupabaseProject)
-          .map((project) =>
-            mergeProjectEnrichment(
-              project,
-              localByCode.get(project.code) || localBySlug.get(project.slug)
-            )
-          )
-          .filter((project) => project && project.published !== false);
+        const supabaseSlugs = new Set(rows.map((r) => r.slug));
+        const supabaseCodes = new Set(rows.map((r) => r.code));
+        const localOnlyProjects = [...localBySlug.values()].filter(
+          (p) => !supabaseSlugs.has(p.slug) && !supabaseCodes.has(p.code)
+        );
+        return [
+          ...rows
+            .map(mapSupabaseProject)
+            .map((project) =>
+              mergeProjectEnrichment(
+                project,
+                localByCode.get(project.code) || localBySlug.get(project.slug)
+              )
+            ),
+          ...localOnlyProjects,
+        ].filter((project) => project && project.published !== false);
       }
     } catch (error) {
       console.warn("Supabase project load failed, falling back to local JSON.", error);
