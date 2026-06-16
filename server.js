@@ -87,6 +87,8 @@ async function handleLeadRequest(req, res) {
 async function resolvePath(urlPath) {
   if (urlPath === "/" || urlPath === "/index.html" || urlPath === "/map" || urlPath === "/screener" || urlPath === "/terminal") return path.join(__dirname, "index.html");
   if (urlPath === "/properties" || urlPath === "/properties/") return path.join(__dirname, "properties.html");
+  if (urlPath === "/commute" || urlPath === "/commute/") return path.join(__dirname, "commute-intelligence.html");
+  if (urlPath === "/recommend" || urlPath === "/recommend/") return path.join(__dirname, "recommendation-onboarding.html");
   if (urlPath.startsWith("/projects/")) return path.join(__dirname, "project.html");
 
   const safePath = path.normalize(urlPath).replace(/^(\.\.[/\\])+/, "");
@@ -101,6 +103,12 @@ createServer(async (req, res) => {
     return handleLeadRequest(req, res);
   }
 
+  if (req.method === "GET" && requestUrl.pathname === "/api/google-maps-key") {
+    return sendJson(res, 200, {
+      apiKey: process.env.GOOGLE_MAPS_API_KEY || process.env.GOOGLE_MAPS_BROWSER_KEY || "",
+    });
+  }
+
   const filePath = await resolvePath(requestUrl.pathname);
   try {
     const fileStat = await stat(filePath);
@@ -109,7 +117,12 @@ createServer(async (req, res) => {
       return res.end();
     }
     const ext = path.extname(filePath);
-    res.writeHead(200, { "Content-Type": mimeTypes[ext] || "application/octet-stream" });
+    res.writeHead(200, {
+      "Content-Type": mimeTypes[ext] || "application/octet-stream",
+      "Cache-Control": "no-store, no-cache, must-revalidate, proxy-revalidate",
+      Pragma: "no-cache",
+      Expires: "0",
+    });
     createReadStream(filePath).pipe(res);
   } catch {
     if (requestUrl.pathname === "/favicon.ico" && !existsSync(path.join(__dirname, "favicon.ico"))) {

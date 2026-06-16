@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>Commute Intelligence v20260606-2 | PropSpot Plinth</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.css" />
+    <link rel="stylesheet" href="./plinth-shell.css?v=20260522a" />
+    <link rel="stylesheet" href="./commute-intelligence.css?v=20260606-commute-livefix2" />
+  </head>
+  <body>
+    <main class="commute-shell">
+      <header class="commute-topbar">
+        <a class="commute-brand" href="./index.html">
+          <span>PropSpot</span>
+          <strong>Plinth</strong>
+        </a>
+        <nav class="commute-nav">
+          <a href="./index.html">Map</a>
+          <a href="./properties.html">Properties</a>
+          <a href="./recommendation-onboarding.html">Project Match</a>
+          <a href="./commute-intelligence.html" class="active">Commute</a>
+        </nav>
+        <div class="source-badge" id="dataSourceBadge">Checking source...</div>
+      </header>
+
+      <section class="commute-layout">
+        <aside class="commute-sidebar">
+          <section class="commute-card">
+            <div class="commute-card-head">
+              <h2>Your Locations</h2>
+              <span id="customCount">0 saved</span>
+            </div>
+            <form class="custom-location-form" id="customLocationForm">
+              <label class="commute-field">
+                <span>Label</span>
+                <input id="customName" type="text" placeholder="Office, school, gym" required />
+              </label>
+              <label class="commute-field">
+                <span>Address</span>
+                <div class="address-search">
+                  <input id="customAddress" type="text" placeholder="Enter a Gurgaon address" autocomplete="off" required />
+                  <div class="address-suggestions" id="addressSuggestions"></div>
+                </div>
+              </label>
+              <label class="commute-field">
+                <span>Type</span>
+                <select id="customType">
+                  <option value="office">Office</option>
+                  <option value="school">School</option>
+                  <option value="family">Family</option>
+                  <option value="other">Other</option>
+                </select>
+              </label>
+              <button class="commute-primary-btn" type="submit">Add Location</button>
+              <p class="form-status" id="formStatus"></p>
+            </form>
+            <div class="location-list" id="customLocationList"></div>
+          </section>
+
+          <section class="commute-card support-only" id="locationShortlistCard" hidden>
+            <span id="locationShortlistCount">0 projects</span>
+            <div class="location-shortlist" id="locationShortlist"></div>
+          </section>
+
+          <section class="commute-card support-only">
+            <div class="commute-card-head">
+              <h2>City Anchors</h2>
+              <span>Fixed</span>
+            </div>
+            <div class="location-list" id="anchorList"></div>
+          </section>
+
+          <section class="commute-card support-only">
+            <div class="commute-card-head">
+              <h2>Nearby Infra</h2>
+              <span id="poiStatus">Loading</span>
+            </div>
+            <div class="category-tabs" id="categoryTabs"></div>
+            <div class="location-list" id="poiList"></div>
+            <button class="commute-secondary-btn" id="loadMorePois" type="button">Load More</button>
+          </section>
+        </aside>
+
+        <section class="map-panel">
+          <div class="map-toolbar">
+            <div>
+              <span class="plinth-eyebrow">Map View</span>
+              <strong id="mapTitle">--</strong>
+            </div>
+            <label class="map-project-select commute-field">
+              <span>Selected project</span>
+              <select id="projectSelect"></select>
+            </label>
+            <div class="radius-pill">10 km social radius</div>
+          </div>
+          <div class="commute-project-card support-only" id="projectCard"></div>
+          <div id="commuteMap"></div>
+          <div class="map-category-strip" id="mapCategoryStrip"></div>
+          <aside class="map-detail-panel is-empty" id="mapDetailPanel"></aside>
+          <div class="map-summary-grid" id="summaryGrid"></div>
+        </section>
+      </section>
+    </main>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.js"></script>
+    <script type="module" src="./js/commute-intelligence.js?v=20260606-commute-livefix2"></script>
+  </body>
+</html>

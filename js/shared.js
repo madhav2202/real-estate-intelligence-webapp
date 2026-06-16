@@ -28,6 +28,30 @@ export const IS_GITHUB_PAGES =
   typeof window !== "undefined" && window.location.hostname.endsWith("github.io");
 export const REPO_BASE = IS_GITHUB_PAGES ? "/real-estate-intelligence-webapp" : "";
 let currentDataSource = "local-json";
+const SHORTLIST_STORAGE_KEY = "plinthProjectShortlist";
+
+export function loadProjectShortlist() {
+  if (typeof window === "undefined") return [];
+  try {
+    const values = JSON.parse(window.localStorage.getItem(SHORTLIST_STORAGE_KEY) || "[]");
+    return Array.isArray(values) ? [...new Set(values.filter(Boolean).map(String))] : [];
+  } catch {
+    return [];
+  }
+}
+
+export function saveProjectShortlist(slugs = []) {
+  const normalized = [...new Set(slugs.filter(Boolean).map(String))];
+  if (typeof window !== "undefined") {
+    try {
+      window.localStorage.setItem(SHORTLIST_STORAGE_KEY, JSON.stringify(normalized));
+      window.dispatchEvent(new CustomEvent("plinth-shortlist-change", { detail: normalized }));
+    } catch {
+      return normalized;
+    }
+  }
+  return normalized;
+}
 
 export function withBase(path = "/") {
   const normalized = path.startsWith("/") ? path : `/${path}`;
