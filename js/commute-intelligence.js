@@ -101,6 +101,57 @@ const GOOGLE_FOCUSED_PLACE_QUERIES = {
   ],
 };
 
+const SOCIETY_SEARCH_QUERIES = [
+  "residential society Gurgaon",
+  "apartment complex Gurgaon",
+  "housing society Gurgaon",
+  "group housing Gurgaon",
+  "condominium complex Gurgaon",
+  "residential apartments Gurgaon",
+];
+
+const SOCIETY_NAME_SIGNALS = [
+  "apartment",
+  "apartments",
+  "apts",
+  "condominium",
+  "heights",
+  "homes",
+  "residency",
+  "residences",
+  "residential",
+  "society",
+  "towers",
+  "vihar",
+  "enclave",
+  "floors",
+  "estate",
+  "greens",
+  "park view",
+  "the close",
+  "belvedere",
+  "magnolias",
+  "aralias",
+  "crest",
+];
+
+const SOCIETY_AVOID_SIGNALS = [
+  "school",
+  "hospital",
+  "hotel",
+  "restaurant",
+  "mall",
+  "market",
+  "office",
+  "corporate",
+  "broker",
+  "dealer",
+  "property consultant",
+  "real estate agent",
+  "builder office",
+  "sales office",
+];
+
 const BUYER_RELEVANCE = {
   school: {
     prefer: [
@@ -205,6 +256,8 @@ const state = {
   selectedSuggestion: null,
   suggestionAbort: null,
   pois: [],
+  societies: [],
+  nearbyProjects: [],
   visiblePoiLimit: INITIAL_POI_LIMIT,
   selectedCategory: "school",
   selectedProfile: "family",
@@ -272,6 +325,34 @@ function normalizedPlaceKey(poi = {}) {
     .replace(/\b(gurgaon|gurugram|sector|sec)\b/g, "")
     .trim()
     .slice(0, 54)}`;
+}
+
+function societyPlaceKey(place = {}) {
+  return String(place.placeId || place.id || place.name || "")
+    .toLowerCase()
+    .replace(/\b(gurgaon|gurugram|haryana|sector|sec)\b/g, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+function isRelevantSocietyPlace(place = {}) {
+  const name = String(place.name || "").toLowerCase();
+  if (!name || textIncludesAny(name, SOCIETY_AVOID_SIGNALS)) return false;
+  if (textIncludesAny(name, SOCIETY_NAME_SIGNALS)) return true;
+  return (place.rating || 0) >= 3.8 && (place.userRatingsTotal || 0) >= 25;
+}
+
+function societyScore(place = {}) {
+  let score = 0;
+  const name = String(place.name || "").toLowerCase();
+  if (place.source === "plinth") score += 90;
+  if (place.source === "google") score += 35;
+  if (textIncludesAny(name, SOCIETY_NAME_SIGNALS)) score += 30;
+  if (place.rating) score += Math.min(12, place.rating * 2);
+  if (place.userRatingsTotal) score += Math.min(14, Math.log10(place.userRatingsTotal + 1) * 6);
+  const distance = sortDistanceValue(place);
+  if (Number.isFinite(distance)) score += Math.max(0, 18 - distance);
+  return score;
 }
 
 function capPoisByCategory(pois, limit = 5) {
@@ -911,6 +992,8 @@ function markerHoverContent(item, options = {}) {
 
 function detailTypeMeta(item = {}) {
   if (item.type === "project") return { label: "Selected project", color: "#16756f", marker: "P" };
+  if (item.type === "plinth-project") return { label: "Plinth project", color: "#7c6af5", marker: "P" };
+  if (item.type === "society") return { label: "Nearby society", color: "#8f98a8", marker: "R" };
   if (item.type === "custom") return { label: "Your location", color: "#a33f5f", marker: "U" };
   if (item.type === "anchor") return { label: "City anchor", color: "#16756f", marker: "C" };
   const config = CATEGORY_CONFIG[item.category] || CATEGORY_CONFIG.market;
@@ -936,6 +1019,22 @@ function topPoisByCategory(category, limit = 5) {
     .filter((poi) => poi.category === category)
     .sort(compareByGoogleDistance)
     .slice(0, limit);
+}
+
+function residentialRows(rows = [], limit = 8) {
+  return rows
+    .sort(compareByGoogleDistance)
+    .slice(0, limit)
+    .map((row) => `
+      <div class="vibe-infra-row residential-row" data-residential-id="${escapeHtml(row.id || "")}">
+        <span>
+          <strong>${escapeHtml(row.name)}</strong>
+          <small>${escapeHtml(row.subtitle || (row.rating ? `${row.rating} rating` : "Residential context"))}</small>
+        </span>
+        <i>${escapeHtml(displayDistance(row))}</i>
+      </div>
+    `)
+    .join("");
 }
 
 function categoryScore(category) {
@@ -1044,6 +1143,9 @@ function renderMapDetail(item = null) {
     `;
   }).join("");
 
+  const nearbyProjectRows = residentialRows(state.nearbyProjects, 8);
+  const societyRows = residentialRows(state.societies, 8);
+
   elements.mapDetailPanel.innerHTML = `
     <button class="map-detail-close" type="button" aria-label="Reset details">x</button>
     <div class="vibe-project-head">
@@ -1084,6 +1186,29 @@ function renderMapDetail(item = null) {
     <section>
       <div class="vibe-section-title">Social infrastructure details</div>
       <div class="vibe-category-stack">${categoryDetailSections}</div>
+    </section>
+    <section>
+      <div class="vibe-section-title">Residential context</div>
+      <div class="residential-context-grid">
+        <div class="residential-context-card">
+          <div class="residential-context-head">
+            <strong>Plinth projects nearby</strong>
+            <span>${state.nearbyProjects.length} verified</span>
+          </div>
+          <div class="vibe-category-list">
+            ${nearbyProjectRows || `<div class="vibe-infra-row"><span><strong>No nearby Plinth projects</strong><small>Try another selected project</small></span><i>--</i></div>`}
+          </div>
+        </div>
+        <div class="residential-context-card">
+          <div class="residential-context-head">
+            <strong>Google societies</strong>
+            <span>${state.societies.length} discovered</span>
+          </div>
+          <div class="vibe-category-list">
+            ${societyRows || `<div class="vibe-infra-row"><span><strong>Google societies unavailable</strong><small>Enable Google Places key for discovered societies</small></span><i>--</i></div>`}
+          </div>
+        </div>
+      </div>
     </section>
   `;
   elements.mapDetailPanel.querySelector(".map-detail-close")?.addEventListener("click", closeMapDetail);
@@ -1396,6 +1521,18 @@ function renderGoogleMap() {
     bounds.extend(poi);
   });
 
+  [...state.nearbyProjects.slice(0, 10), ...state.societies.slice(0, 12)].forEach((place) => {
+    const meta = detailTypeMeta(place);
+    addGoogleMarker(place, {
+      color: meta.color,
+      label: meta.marker,
+      type: place.type,
+      title: place.name,
+      subtitle: `${displayDistance(place)} from project`,
+    });
+    bounds.extend(place);
+  });
+
   state.map.fitBounds(bounds, 80);
   state.google.event.addListenerOnce(state.map, "bounds_changed", () => {
     if (state.map.getZoom() > 13) state.map.setZoom(13);
@@ -1498,6 +1635,25 @@ function renderMap() {
     connectionPoints.push(detailItem);
   });
 
+  if (!personalModeActive()) {
+    [...state.nearbyProjects.slice(0, 10), ...state.societies.slice(0, 12)].forEach((place) => {
+      const meta = detailTypeMeta(place);
+      const detailItem = {
+        ...place,
+        pathColor: meta.color,
+        subtitle: place.subtitle || "Residential context",
+      };
+      addMapLibreMarker(place, {
+        color: meta.color,
+        label: meta.marker,
+        type: place.type,
+        title: place.name,
+        subtitle: `${displayDistance(place)} from project`,
+        detailItem,
+      });
+    });
+  }
+
   setMapLibreConnections(center, connectionPoints);
 
   const points = [
@@ -1505,6 +1661,8 @@ function renderMap() {
     ...(personalModeActive() ? [] : CITY_ANCHORS),
     ...state.customLocations,
     ...visiblePois(),
+    ...(personalModeActive() ? [] : state.nearbyProjects.slice(0, 10)),
+    ...(personalModeActive() ? [] : state.societies.slice(0, 12)),
   ];
   fitMapLibreToPoints(points);
 
@@ -1629,7 +1787,7 @@ function renderMapCategoryStrip(summaryItems, isPersonalMode) {
     return;
   }
 
-  elements.mapCategoryStrip.innerHTML = Object.entries(CATEGORY_CONFIG)
+  const categoryChips = Object.entries(CATEGORY_CONFIG)
     .map(([category, config]) => {
       const nearest = state.pois
         .filter((poi) => poi.category === category)
@@ -1646,6 +1804,15 @@ function renderMapCategoryStrip(summaryItems, isPersonalMode) {
     })
     .join("");
 
+  const residentialCount = state.nearbyProjects.length + state.societies.length;
+  elements.mapCategoryStrip.innerHTML = `${categoryChips}
+    <button class="map-category-chip map-category-chip--context" type="button" data-open-residential>
+      <span class="chip-dot" style="background:#8f98a8;"></span>
+      <strong>${residentialCount}</strong>
+      <span>Residential context</span>
+    </button>
+  `;
+
   elements.mapCategoryStrip.querySelectorAll("[data-map-category]").forEach((button) => {
     button.addEventListener("click", () => {
       state.selectedCategory = button.dataset.mapCategory;
@@ -1654,6 +1821,10 @@ function renderMapCategoryStrip(summaryItems, isPersonalMode) {
       renderCategoryTabs();
       renderMap();
     });
+  });
+  elements.mapCategoryStrip.querySelector("[data-open-residential]")?.addEventListener("click", () => {
+    state.activeMapDetail = null;
+    renderMapDetail(null);
   });
 }
 
@@ -1885,6 +2056,108 @@ async function loadGoogleNearbyInfrastructure() {
   state.pois = capPoisByCategory(rankedWithDistances, 5).sort(compareByGoogleDistance);
 }
 
+function updateNearbyProjects() {
+  if (!state.selectedProject) {
+    state.nearbyProjects = [];
+    return;
+  }
+  const center = projectPoint(state.selectedProject);
+  state.nearbyProjects = state.projects
+    .filter((project) => project.slug !== state.selectedProject.slug && hasProjectCoordinates(project))
+    .map((project) => {
+      const point = projectPoint(project);
+      return {
+        ...point,
+        id: `plinth-${project.slug}`,
+        slug: project.slug,
+        name: project.name,
+        source: "plinth",
+        type: "plinth-project",
+        category: "residential",
+        subtitle: `${project.developer || "Developer"} · ${project.corridor || project.location || "Gurugram"}`,
+        priceCr: project.priceCr,
+        stage: project.stage,
+        distanceKm: getDistanceKm(center, point),
+      };
+    })
+    .filter((project) => project.distanceKm <= 18)
+    .map((project) => ({ ...project, relevanceScore: societyScore(project) }))
+    .sort(compareByGoogleDistance)
+    .slice(0, 14);
+}
+
+async function loadGoogleSocieties() {
+  if (!state.googleServices || !state.selectedProject) {
+    state.societies = [];
+    return;
+  }
+  const center = projectPoint(state.selectedProject);
+  const projectLocation = state.selectedProject.sector || state.selectedProject.location || "Gurgaon";
+  const location = new state.google.LatLng(center.lat, center.lng);
+  const queries = [
+    `residential society near ${projectLocation} Gurgaon`,
+    `apartment complex near ${projectLocation} Gurgaon`,
+    ...SOCIETY_SEARCH_QUERIES,
+  ];
+
+  const batches = await Promise.all(
+    queries.map((query) =>
+      googleTextSearch({
+        query,
+        location,
+        radius: 18000,
+      }).catch(() => []),
+    ),
+  );
+
+  const seen = new Set();
+  const societies = batches
+    .flat()
+    .map((place) => {
+      const placeLocation = place.geometry?.location;
+      if (!placeLocation || !place.name) return null;
+      const society = {
+        id: place.place_id || `society:${place.name.toLowerCase()}`,
+        placeId: place.place_id,
+        name: place.name,
+        source: "google",
+        type: "society",
+        category: "residential",
+        lat: placeLocation.lat(),
+        lng: placeLocation.lng(),
+        rating: place.rating,
+        userRatingsTotal: place.user_ratings_total,
+        subtitle: "Google-discovered residential place",
+      };
+      society.distanceKm = getDistanceKm(center, society);
+      society.relevanceScore = societyScore(society);
+      return society;
+    })
+    .filter(Boolean)
+    .filter((society) => {
+      const key = societyPlaceKey(society);
+      if (!key || seen.has(key) || society.distanceKm > 20 || !isRelevantSocietyPlace(society)) return false;
+      seen.add(key);
+      return true;
+    })
+    .sort(compareByGoogleDistance)
+    .slice(0, 28);
+
+  state.societies = (await googleDistanceMatrix(societies))
+    .map((society) => ({ ...society, relevanceScore: societyScore(society) }))
+    .sort(compareByGoogleDistance)
+    .slice(0, 24);
+}
+
+async function loadResidentialContext() {
+  updateNearbyProjects();
+  if (state.googleServices) {
+    await loadGoogleSocieties();
+  } else {
+    state.societies = [];
+  }
+}
+
 async function updateGoogleAnchorDistances() {
   if (!state.googleServices) return;
   const rows = await googleDistanceMatrix(CITY_ANCHORS);
@@ -1901,6 +2174,7 @@ async function loadNearbyInfrastructure() {
     if (state.googleServices) {
       await updateGoogleAnchorDistances();
       await loadGoogleNearbyInfrastructure();
+      await loadResidentialContext();
       if (!state.pois.length) throw new Error("No Google Places found");
       elements.poiStatus.textContent = `${state.pois.length} found`;
       renderMap();
@@ -1909,6 +2183,7 @@ async function loadNearbyInfrastructure() {
 
     throw new Error("Google Places unavailable");
   } catch (error) {
+    await loadResidentialContext();
     const fallbackRows = FALLBACK_POIS.map((poi, index) => ({
       ...poi,
       id: `fallback-${index}`,

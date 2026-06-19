@@ -738,6 +738,11 @@ body {
   color: var(--text);
 }
 
+.map-category-chip--context {
+  border-color: rgba(143, 152, 168, 0.18);
+  background: rgba(143, 152, 168, 0.08);
+}
+
 .chip-dot {
   width: 11px;
   height: 11px;
@@ -1102,6 +1107,41 @@ body {
 .vibe-category-stack {
   display: grid;
   gap: 10px;
+}
+
+.residential-context-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.residential-context-card {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.residential-context-head {
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px;
+}
+
+.residential-context-head strong {
+  font-size: 13px;
+}
+
+.residential-context-head span {
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 10px;
+}
+
+.residential-row strong {
+  color: rgba(248, 247, 252, 0.96);
 }
 
 .vibe-category-section {
