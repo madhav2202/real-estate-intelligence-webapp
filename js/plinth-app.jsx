@@ -102,6 +102,17 @@ function propertiesPageUrl() {
   return withBase('/properties.html');
 }
 
+function commutePageUrl(slug = '') {
+  const params = new URLSearchParams();
+  if (slug) params.set('slug', slug);
+  const query = params.toString();
+  return withBase(`/commute-intelligence.html${query ? `?${query}` : ''}`);
+}
+
+function recommendationPageUrl() {
+  return withBase('/recommendation-onboarding.html');
+}
+
 function getBuilderGrade(developer = '') {
   const lower = developer.toLowerCase();
   const match = Object.keys(BUILDER_GRADES).find((name) => lower.includes(name));
@@ -117,7 +128,7 @@ function getFairEntryRange(project) {
 
 function getLocationScoreFromRaw(project) {
   const numeric = Number(String(project.locationIntel?.score || '').split('/')[0]);
-  if (Number.isFinite(numeric) && numeric > 0) return numeric;
+  if (Number.isFinite(numeric) && numeric > 0) return numeric > 10 ? Math.min(10, numeric / 10) : numeric;
   const text = [
     ...(project.locationIntel?.connectivity || []),
     ...(project.locationIntel?.social || []),
@@ -638,7 +649,9 @@ function ProjectDetail({ project, onClose, animKey }) {
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, paddingBottom: 12 }}>
           <a href={projectPageUrl(project.slug)} style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '12px 0', background: 'var(--accent)', border: 'none', borderRadius: 8, color: '#fff', fontSize: 13, fontWeight: 600, cursor: 'pointer', boxShadow: '0 0 20px rgba(124,106,245,0.4)', textDecoration: 'none' }}>Open Full Intelligence</a>
-          <a href={whatsapp} target="_blank" rel="noreferrer" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '12px 0', background: 'transparent', border: '1px solid var(--border-bright)', borderRadius: 8, color: 'var(--text)', fontSize: 13, cursor: 'pointer', textDecoration: 'none' }}>WhatsApp PropSpot</a>
+          <a href={commutePageUrl(project.slug)} style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '12px 0', background: 'transparent', border: '1px solid var(--border-bright)', borderRadius: 8, color: 'var(--text)', fontSize: 13, cursor: 'pointer', textDecoration: 'none' }}>Location Intel</a>
+          <a href={recommendationPageUrl()} style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '12px 0', background: 'transparent', border: '1px solid var(--border)', borderRadius: 8, color: 'var(--text-dim)', fontSize: 13, cursor: 'pointer', textDecoration: 'none' }}>Project Match</a>
+          <a href={whatsapp} target="_blank" rel="noreferrer" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '12px 0', background: 'transparent', border: '1px solid var(--border)', borderRadius: 8, color: 'var(--text-dim)', fontSize: 13, cursor: 'pointer', textDecoration: 'none' }}>WhatsApp</a>
         </div>
       </div>
     </div>
@@ -934,6 +947,8 @@ function App() {
           }}>{label}</button>
         ))}
         <a href={propertiesPageUrl()} style={{ padding: '5px 12px', borderRadius: 6, fontSize: 12, fontWeight: 500, border: '1px solid transparent', color: 'var(--text-dim)', textDecoration: 'none' }}>Properties</a>
+        <a href={commutePageUrl(selected?.slug)} style={{ padding: '5px 12px', borderRadius: 6, fontSize: 12, fontWeight: 500, border: '1px solid transparent', color: 'var(--text-dim)', textDecoration: 'none' }}>Location Intel</a>
+        <a href={recommendationPageUrl()} style={{ padding: '5px 12px', borderRadius: 6, fontSize: 12, fontWeight: 500, border: '1px solid transparent', color: 'var(--text-dim)', textDecoration: 'none' }}>Project Match</a>
         <div style={{ flex: 1 }} />
         <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 11, color: 'var(--text-dim)', fontFamily: 'var(--font-mono)', whiteSpace: 'nowrap', padding: '5px 12px', borderRadius: 999, border: '1px solid var(--border)', background: 'rgba(255,255,255,0.03)' }}>
           <div style={{ width: 7, height: 7, borderRadius: '50%', background: dataSource.includes('Supabase') ? '#4ade80' : 'var(--text-muted)', animation: dataSource.includes('Supabase') ? 'blink 2s ease infinite' : 'none', boxShadow: dataSource.includes('Supabase') ? '0 0 6px #4ade80' : 'none' }} />{dataSource}

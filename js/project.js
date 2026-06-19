@@ -12,6 +12,9 @@ import {
   calculateEmi,
   getDataSourceMeta,
   submitLead,
+  commutePageUrl,
+  loadProjectShortlist,
+  saveProjectShortlist,
 } from "./shared.js?v=20260522a";
 
 const formatter = new Intl.NumberFormat("en-IN");
@@ -22,6 +25,9 @@ const elements = {
   projectName: document.querySelector("#projectName"),
   projectMeta: document.querySelector("#projectMeta"),
   projectWhatsapp: document.querySelector("#projectWhatsapp"),
+  projectCommute: document.querySelector("#projectCommute"),
+  projectCommuteNav: document.querySelector("#projectCommuteNav"),
+  projectShortlistButton: document.querySelector("#projectShortlistButton"),
   builderPrice: document.querySelector("#builderPrice"),
   builderPriceSubtext: document.querySelector("#builderPriceSubtext"),
   fairEntry: document.querySelector("#fairEntry"),
@@ -46,6 +52,7 @@ const elements = {
   emiLoanValue: document.querySelector("#emiLoanValue"),
   emiMetrics: document.querySelector("#emiMetrics"),
   locationScore: document.querySelector("#locationScore"),
+  locationIntelLink: document.querySelector("#locationIntelLink"),
   locationHeroScore: document.querySelector("#locationHeroScore"),
   locationHeadline: document.querySelector("#locationHeadline"),
   locationSubline: document.querySelector("#locationSubline"),
@@ -110,7 +117,7 @@ function getSlugFromPath() {
 function getLocationCommute(project) {
   const value = project.locationIntel?.commute;
   if (value && value !== "Data pending") return value;
-  const text = (project.locationIntel?.connectivity || []).map((row) => row.join(" ")).join(" ");
+  const text = normalizeRows(project.locationIntel?.connectivity).map((row) => row.join(" ")).join(" ");
   if (!text.trim()) return "Good";
   if (/8 min|10 min|12 min|18 min/.test(text)) return "Strong";
   if (/28 min|35 min|45 min/.test(text)) return "Balanced";
@@ -121,9 +128,9 @@ function getLocationMaturity(project) {
   const value = project.locationIntel?.livability;
   if (value && value !== "Data pending") return value;
   const text = [
-    ...(project.locationIntel?.social || []),
-    ...(project.locationIntel?.infra || []),
-    ...(project.locationIntel?.risks || []),
+    ...normalizeRows(project.locationIntel?.social),
+    ...normalizeRows(project.locationIntel?.infra),
+    ...normalizeRows(project.locationIntel?.risks),
   ]
     .map((row) => row.join(" "))
     .join(" ");
@@ -134,7 +141,7 @@ function getLocationMaturity(project) {
 }
 
 function scoreLocationBucket(rows, positiveTerms, cautionTerms, base = 8) {
-  const text = (rows || []).map((row) => row.join(" ")).join(" ").toLowerCase();
+  const text = normalizeRows(rows).map((row) => row.join(" ")).join(" ").toLowerCase();
   let score = base;
   positiveTerms.forEach((term) => {
     if (text.includes(term)) score += 0.35;
@@ -226,10 +233,23 @@ function getInventoryPressure(project) {
 }
 
 function getSupplyPressure(project) {
-  const text = (project.locationIntel?.risks || []).map((row) => row.join(" ")).join(" ");
+  const text = normalizeRows(project.locationIntel?.risks).map((row) => row.join(" ")).join(" ");
   if (text.includes("Competing supply")) return "High";
   if (text.includes("Watch")) return "Medium";
   return "Balanced";
+}
+
+function normalizeRows(value) {
+  if (Array.isArray(value)) {
+    return value.map((row) => (Array.isArray(row) ? row : ["Current view", String(row || "")])).filter((row) => row.some(Boolean));
+  }
+  if (value && typeof value === "object") {
+    return Object.entries(value).map(([key, rowValue]) => [key, String(rowValue || "")]);
+  }
+  if (typeof value === "string" && value.trim() && value !== "Data pending") {
+    return [["Current view", value]];
+  }
+  return [];
 }
 
 function hasBuilderRiskData(project) {
@@ -575,6 +595,10 @@ function renderProject() {
   elements.projectMeta.textContent = `${project.developer} | ${project.location} | ${project.stage} | ${project.possession}`;
   elements.projectWhatsapp.href = getWhatsappUrl(project);
   elements.sidebarWhatsapp.href = getWhatsappUrl(project);
+  elements.projectCommute.href = commutePageUrl(project.slug);
+  elements.projectCommuteNav.href = commutePageUrl(project.slug);
+  elements.locationIntelLink.href = commutePageUrl(project.slug);
+  updateShortlistButton();
 
   elements.builderPrice.textContent = formatSqft(getCanonicalPriceSqft(project));
   elements.builderPriceSubtext.textContent = marketGap;
@@ -623,10 +647,14 @@ function renderProject() {
     .join("");
   elements.commuteValue.textContent = getLocationCommute(project);
   elements.maturityValue.textContent = getLocationMaturity(project);
-  renderSimpleList(elements.connectivityList, project.locationIntel?.connectivity?.length ? project.locationIntel.connectivity : [["Current view", "Corridor connected"], ["Metro / roads", "Daily movement viable"]]);
-  renderSimpleList(elements.socialList, project.locationIntel?.social?.length ? project.locationIntel.social : [["Current view", "Livability catchment building"], ["Daily access", "Usable social spine"]]);
-  renderSimpleList(elements.infraList, project.locationIntel?.infra?.length ? project.locationIntel.infra : [["Current view", "Infra story still positive"], ["Future upside", "Corridor watchlist positive"]]);
-  renderSimpleList(elements.riskList, project.locationIntel?.risks?.length ? project.locationIntel.risks : [["Current view", "Execution risk manageable"], ["Area risk", "Still worth monitoring"]]);
+  const connectivityRows = normalizeRows(project.locationIntel?.connectivity);
+  const socialRows = normalizeRows(project.locationIntel?.social);
+  const infraRows = normalizeRows(project.locationIntel?.infra);
+  const riskRows = normalizeRows(project.locationIntel?.risks);
+  renderSimpleList(elements.connectivityList, connectivityRows.length ? connectivityRows : [["Current view", "Corridor connected"], ["Metro / roads", "Daily movement viable"]]);
+  renderSimpleList(elements.socialList, socialRows.length ? socialRows : [["Current view", "Livability catchment building"], ["Daily access", "Usable social spine"]]);
+  renderSimpleList(elements.infraList, infraRows.length ? infraRows : [["Current view", "Infra story still positive"], ["Future upside", "Corridor watchlist positive"]]);
+  renderSimpleList(elements.riskList, riskRows.length ? riskRows : [["Current view", "Execution risk manageable"], ["Area risk", "Still worth monitoring"]]);
 
   elements.builderGrade.textContent = `${getBuilderGrade(project)} grade`;
   elements.builderGradeCopy.textContent = `Current PropSpot builder bucket for ${project.developer}. This is a temporary live proxy until deeper builder diligence fields are added.`;
@@ -703,6 +731,25 @@ function renderProject() {
 
   updateEmi();
   renderCompare();
+}
+
+function updateShortlistButton() {
+  if (!elements.projectShortlistButton || !state.project) return;
+  const shortlist = loadProjectShortlist();
+  const shortlisted = shortlist.includes(state.project.slug);
+  elements.projectShortlistButton.textContent = shortlisted ? "Shortlisted" : "Add to Shortlist";
+  elements.projectShortlistButton.classList.toggle("is-active", shortlisted);
+}
+
+function toggleProjectShortlist() {
+  if (!state.project) return;
+  const shortlist = loadProjectShortlist();
+  const shortlisted = shortlist.includes(state.project.slug);
+  const next = shortlisted
+    ? shortlist.filter((slug) => slug !== state.project.slug)
+    : [...shortlist, state.project.slug];
+  saveProjectShortlist(next);
+  updateShortlistButton();
 }
 
 function renderDataSourceBadge() {
@@ -830,6 +877,8 @@ async function main() {
   syncRangePair(elements.interestRateInput, elements.interestRateRange);
   syncRangePair(elements.tenureInput, elements.tenureRange);
   elements.leadForm.addEventListener("submit", handleLeadSubmit);
+  elements.projectShortlistButton?.addEventListener("click", toggleProjectShortlist);
+  window.addEventListener("plinth-shortlist-change", updateShortlistButton);
   bindCompareSelects();
   bindAnalyst();
   bindBriefCopy();

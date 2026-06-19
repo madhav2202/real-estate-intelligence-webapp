@@ -77,6 +77,17 @@ export function propertiesPageUrl() {
   return withBase("/properties.html");
 }
 
+export function commutePageUrl(slug = "") {
+  const params = new URLSearchParams();
+  if (slug) params.set("slug", slug);
+  const query = params.toString();
+  return withBase(`/commute-intelligence.html${query ? `?${query}` : ""}`);
+}
+
+export function recommendationPageUrl() {
+  return withBase("/recommendation-onboarding.html");
+}
+
 export function getDataSourceMeta() {
   if (currentDataSource === "supabase") {
     return {
@@ -341,12 +352,12 @@ export function getMedianMicroMarketPrice(projects, corridor) {
 
 export function getLocationScore(project) {
   const numeric = Number(String(project.locationIntel?.score || "").split("/")[0]);
-  if (Number.isFinite(numeric) && numeric > 0) return numeric;
+  if (Number.isFinite(numeric) && numeric > 0) return numeric > 10 ? Math.min(10, numeric / 10) : numeric;
   const text = [
-    ...(project.locationIntel?.connectivity || []),
-    ...(project.locationIntel?.social || []),
-    ...(project.locationIntel?.infra || []),
-    ...(project.locationIntel?.risks || []),
+    ...normalizeLocationRows(project.locationIntel?.connectivity),
+    ...normalizeLocationRows(project.locationIntel?.social),
+    ...normalizeLocationRows(project.locationIntel?.infra),
+    ...normalizeLocationRows(project.locationIntel?.risks),
   ]
     .map((row) => row.join(" "))
     .join(" ");
@@ -359,6 +370,19 @@ export function getLocationScore(project) {
     if (text.includes(term)) score -= 0.15;
   });
   return Math.max(7.2, Math.min(8.9, Number(score.toFixed(1))));
+}
+
+function normalizeLocationRows(value) {
+  if (Array.isArray(value)) {
+    return value.map((row) => (Array.isArray(row) ? row : ["Current view", String(row || "")])).filter((row) => row.some(Boolean));
+  }
+  if (value && typeof value === "object") {
+    return Object.entries(value).map(([key, rowValue]) => [key, String(rowValue || "")]);
+  }
+  if (typeof value === "string" && value.trim() && value !== "Data pending") {
+    return [["Current view", value]];
+  }
+  return [];
 }
 
 export function getFairEntry(project) {

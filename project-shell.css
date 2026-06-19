@@ -277,6 +277,23 @@ textarea {
   letter-spacing: -0.02em;
 }
 
+.section-head a {
+  min-height: 30px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 10px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text-dim);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.section-head a:hover {
+  border-color: var(--border-bright);
+  color: var(--text);
+}
+
 .section-note,
 .status-copy,
 .subtle,
@@ -715,6 +732,21 @@ textarea {
   background:
     radial-gradient(circle at 100% 0%, rgba(124, 106, 245, 0.12), transparent 30%),
     linear-gradient(180deg, var(--bg2), rgba(20, 20, 31, 0.95));
+}
+
+.location-score-pill {
+  display: inline-flex;
+  width: fit-content;
+  min-height: 32px;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 0 12px;
+  border: 1px solid rgba(74, 222, 128, 0.24);
+  border-radius: 999px;
+  background: rgba(74, 222, 128, 0.08);
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: 12px;
 }
 
 .dual-metric-grid,
@@ -1193,6 +1225,12 @@ td {
     linear-gradient(180deg, rgba(25, 23, 41, 0.98), rgba(18, 18, 28, 0.98)),
     var(--bg3);
   color: rgba(246, 245, 251, 0.96);
+}
+
+.secondary-btn.is-active {
+  border-color: rgba(74, 222, 128, 0.42);
+  background: rgba(74, 222, 128, 0.12);
+  color: var(--green);
 }
 
 .primary-btn:hover,

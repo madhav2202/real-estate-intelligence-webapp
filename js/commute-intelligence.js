@@ -366,8 +366,8 @@ function setupMarkerStyles() {
 function renderDataSourceBadge() {
   const meta = getDataSourceMeta();
   elements.dataSourceBadge.textContent = state.googleServices
-    ? `${meta.label} + MapLibre 3D + Google Places · Build 20260606-2`
-    : `${meta.label} + MapLibre 3D · Build 20260606-2`;
+    ? `${meta.label} + MapLibre 3D + Google Places`
+    : `${meta.label} + MapLibre 3D`;
   elements.dataSourceBadge.classList.toggle("source-badge--live", meta.tone === "live");
 }
 
@@ -1907,47 +1907,16 @@ async function loadNearbyInfrastructure() {
       return;
     }
 
-    const response = await fetch("https://overpass-api.de/api/interpreter", {
-      method: "POST",
-      body: overpassQuery(center),
-    });
-    if (!response.ok) throw new Error("Overpass request failed");
-    const payload = await response.json();
-    const seen = new Set();
-    state.pois = payload.elements
-      .map((item) => {
-        const lat = item.lat ?? item.center?.lat;
-        const lng = item.lon ?? item.center?.lon;
-        const category = poiCategory(item.tags || {});
-        const name = item.tags?.name;
-        if (!lat || !lng || !category || !name) return null;
-        const key = `${category}:${name.toLowerCase()}`;
-        if (seen.has(key)) return null;
-        seen.add(key);
-        const poi = {
-          id: key,
-          name,
-          category,
-          lat,
-          lng,
-        };
-        poi.distanceKm = getDistanceKm(center, poi);
-        return poi;
-      })
-      .filter(Boolean)
-      .filter((poi) => poi.distanceKm <= 10)
-      .sort(compareByGoogleDistance)
-      .slice(0, 48);
-    if (!state.pois.length) throw new Error("No POIs found");
-    elements.poiStatus.textContent = `${state.pois.length} found`;
+    throw new Error("Google Places unavailable");
   } catch (error) {
-    state.pois = FALLBACK_POIS.map((poi, index) => ({
+    const fallbackRows = FALLBACK_POIS.map((poi, index) => ({
       ...poi,
       id: `fallback-${index}`,
       distanceKm: getDistanceKm(center, poi),
     }))
-      .filter((poi) => poi.distanceKm <= 18)
+      .map((poi) => ({ ...poi, relevanceScore: relevanceScore(poi) }))
       .sort(compareByGoogleDistance);
+    state.pois = capPoisByCategory(fallbackRows, 5).sort(compareByGoogleDistance);
     elements.poiStatus.textContent = "Fallback";
   }
   renderMap();
