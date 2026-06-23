@@ -77,6 +77,13 @@ const GOOGLE_FOCUSED_PLACE_QUERIES = {
     "K.R. Mangalam World School Gurgaon",
     "The HDFC School Gurgaon",
     "Alpine Convent School Gurgaon",
+    "Delhi Public School Dwarka",
+    "Venkateshwar International School Dwarka",
+    "Mount Carmel School Dwarka",
+    "ITL Public School Dwarka",
+    "Delhi International School Edge Dwarka",
+    "Euro International School Sector 109 Gurgaon",
+    "Royal Oak International School Sector 110 Gurgaon",
   ],
   hospital: [
     "Medanta The Medicity Gurgaon",
@@ -93,6 +100,10 @@ const GOOGLE_FOCUSED_PLACE_QUERIES = {
     "Aarvy Healthcare Gurgaon",
     "Miracles Mediclinic Gurgaon",
     "Manipal Hospital Gurgaon",
+    "Manipal Hospital Dwarka",
+    "Aakash Healthcare Super Speciality Hospital Dwarka",
+    "Venkateshwar Hospital Dwarka",
+    "Park Hospital Palam Vihar Gurgaon",
   ],
   market: [
     "Airia Mall Gurgaon",
@@ -116,6 +127,10 @@ const GOOGLE_FOCUSED_PLACE_QUERIES = {
     "Central Plaza Mall Gurgaon",
     "DLF Galleria Market Gurgaon",
     "Vyapar Kendra Gurgaon",
+    "Pacific D21 Mall Dwarka",
+    "Vegas Mall Dwarka",
+    "Sector 23 Market Dwarka",
+    "Ansal Plaza Palam Vihar Gurgaon",
   ],
   transit: [
     "Millennium City Centre Metro Gurgaon",
@@ -128,7 +143,72 @@ const GOOGLE_FOCUSED_PLACE_QUERIES = {
     "Iffco Chowk Metro Station Gurgaon",
     "MG Road Metro Station Gurgaon",
     "Huda City Centre Metro Gurgaon",
+    "Dwarka Sector 21 Metro Station",
+    "Yashobhoomi Dwarka Sector 25 Metro Station",
+    "Dwarka Sector 10 Metro Station",
   ],
+};
+
+const CORRIDOR_FOCUSED_PLACE_QUERIES = {
+  dwarkaExpressway: {
+    match: ["dwarka expressway", "sector 99", "sector 102", "sector 103", "sector 104", "sector 106", "sector 108", "sector 109", "sector 110", "sector 111", "sector 112", "sector 113", "sector 114"],
+    school: [
+      "Delhi Public School Dwarka",
+      "Venkateshwar International School Dwarka",
+      "Mount Carmel School Dwarka",
+      "ITL Public School Dwarka",
+      "Delhi International School Edge Dwarka",
+      "Euro International School Sector 109 Gurgaon",
+      "Royal Oak International School Sector 110 Gurgaon",
+      "DPS Sector 102 Gurgaon",
+    ],
+    hospital: [
+      "Manipal Hospital Dwarka",
+      "Aakash Healthcare Super Speciality Hospital Dwarka",
+      "Venkateshwar Hospital Dwarka",
+      "Park Hospital Palam Vihar Gurgaon",
+      "Manipal Hospital Palam Vihar Gurgaon",
+    ],
+    market: [
+      "Pacific D21 Mall Dwarka",
+      "Vegas Mall Dwarka",
+      "Sector 23 Market Dwarka",
+      "Ansal Plaza Palam Vihar Gurgaon",
+      "Omaxe Gurgaon Mall",
+    ],
+    transit: [
+      "Dwarka Sector 21 Metro Station",
+      "Yashobhoomi Dwarka Sector 25 Metro Station",
+      "Dwarka Sector 10 Metro Station",
+    ],
+  },
+  newGurgaon: {
+    match: ["new gurgaon", "sector 79", "sector 80", "sector 81", "sector 82", "sector 83", "sector 84", "sector 85", "sector 86", "sector 89", "sector 90", "sector 91", "sector 92", "sector 93", "sector 95"],
+    school: [
+      "DPS Sector 84 Gurgaon",
+      "St. Xavier's High School Sector 81 Gurgaon",
+      "Euro International School Sector 84 Gurgaon",
+      "MatriKiran School Gurgaon",
+      "RPS International School Sector 89 Gurgaon",
+    ],
+    hospital: [
+      "Aarvy Healthcare Gurgaon",
+      "Medeor Hospital Manesar Gurgaon",
+      "Miracles Apollo Cradle Sector 82 Gurgaon",
+      "Genesis Hospital Sector 84 Gurgaon",
+    ],
+    market: [
+      "Sapphire 83 Gurgaon",
+      "Sapphire 90 Gurgaon",
+      "IRIS Broadway Gurgaon",
+      "Vatika Town Square Gurgaon",
+    ],
+    transit: [
+      "Garhi Harsaru Railway Station Gurgaon",
+      "Dwarka Expressway Gurgaon",
+      "NH 48 Gurgaon",
+    ],
+  },
 };
 
 const CATEGORY_DISTANCE_BANDS = {
@@ -216,6 +296,14 @@ const BUYER_RELEVANCE = {
       "k.r. mangalam",
       "hdfc school",
       "alpine convent",
+      "venkateshwar",
+      "mount carmel",
+      "itl public",
+      "delhi international",
+      "euro international",
+      "royal oak",
+      "matrikiran",
+      "rps international",
     ],
     avoid: ["primary", "play", "preschool", "pre school", "daycare", "day care", "kid", "kids", "creche", "anganwadi"],
   },
@@ -235,6 +323,10 @@ const BUYER_RELEVANCE = {
       "miracles",
       "manipal",
       "w pratiksha",
+      "aakash healthcare",
+      "venkateshwar hospital",
+      "medeor",
+      "genesis hospital",
     ],
     avoid: ["clinic", "dental", "physio", "path lab", "diagnostic", "chemist", "pharmacy", "tyagi market"],
   },
@@ -257,11 +349,16 @@ const BUYER_RELEVANCE = {
       "ansal plaza",
       "galleria",
       "vyapar kendra",
+      "pacific",
+      "vegas",
+      "sector 23 market",
+      "iris broadway",
+      "vatika town square",
     ],
     avoid: ["kirana", "general store", "departmental store", "chemist", "medical store", "tyagi market"],
   },
   transit: {
-    prefer: ["metro", "rapid", "station", "sikanderpur", "iffco", "mg road", "millennium", "huda"],
+    prefer: ["metro", "rapid", "station", "sikanderpur", "iffco", "mg road", "millennium", "huda", "yashobhoomi", "dwarka sector", "garhi harsaru", "expressway"],
     avoid: ["bus stop", "auto stand", "taxi stand", "mall"],
   },
 };
@@ -270,13 +367,37 @@ const FALLBACK_POIS = [
   { name: "Medanta - The Medicity", category: "hospital", lat: 28.4392, lng: 77.0407 },
   { name: "Artemis Hospital", category: "hospital", lat: 28.4322, lng: 77.0734 },
   { name: "Fortis Memorial Research Institute", category: "hospital", lat: 28.4591, lng: 77.0728 },
+  { name: "Manipal Hospital Dwarka", category: "hospital", lat: 28.5958, lng: 77.0578 },
+  { name: "Aakash Healthcare Super Speciality Hospital", category: "hospital", lat: 28.5918, lng: 77.0717 },
+  { name: "Venkateshwar Hospital Dwarka", category: "hospital", lat: 28.5943, lng: 77.0725 },
+  { name: "Park Hospital Palam Vihar", category: "hospital", lat: 28.5105, lng: 77.0178 },
+  { name: "Aarvy Healthcare", category: "hospital", lat: 28.4032, lng: 76.9753 },
   { name: "DPS Sector 45", category: "school", lat: 28.4427, lng: 77.0604 },
   { name: "The Shri Ram School Aravali", category: "school", lat: 28.4426, lng: 77.1062 },
   { name: "Heritage Xperiential Learning School", category: "school", lat: 28.4217, lng: 77.0653 },
+  { name: "Delhi Public School Dwarka", category: "school", lat: 28.5965, lng: 77.0524 },
+  { name: "Venkateshwar International School", category: "school", lat: 28.5916, lng: 77.0564 },
+  { name: "Mount Carmel School Dwarka", category: "school", lat: 28.5934, lng: 77.0419 },
+  { name: "ITL Public School Dwarka", category: "school", lat: 28.5892, lng: 77.0594 },
+  { name: "Euro International School Sector 109", category: "school", lat: 28.5159, lng: 77.0166 },
+  { name: "DPS Sector 102", category: "school", lat: 28.4785, lng: 76.9844 },
+  { name: "St. Xavier's High School Sector 81", category: "school", lat: 28.3941, lng: 76.9597 },
+  { name: "DPS Sector 84", category: "school", lat: 28.4017, lng: 76.9715 },
   { name: "Ambience Mall", category: "market", lat: 28.5039, lng: 77.0968 },
   { name: "Good Earth City Centre", category: "market", lat: 28.4132, lng: 77.0514 },
+  { name: "Pacific D21 Mall Dwarka", category: "market", lat: 28.5523, lng: 77.0586 },
+  { name: "Vegas Mall Dwarka", category: "market", lat: 28.6069, lng: 77.0366 },
+  { name: "Sector 23 Market Dwarka", category: "market", lat: 28.5655, lng: 77.0502 },
+  { name: "Sapphire 83", category: "market", lat: 28.3945, lng: 76.9633 },
+  { name: "Sapphire 90", category: "market", lat: 28.4031, lng: 76.9257 },
+  { name: "WorldMark Gurgaon Sector 65", category: "market", lat: 28.3985, lng: 77.0705 },
+  { name: "Airia Mall", category: "market", lat: 28.3903, lng: 77.0325 },
   { name: "Golf Course Road Rapid Metro", category: "transit", lat: 28.4693, lng: 77.0957 },
   { name: "Sector 55-56 Rapid Metro", category: "transit", lat: 28.4213, lng: 77.1049 },
+  { name: "Dwarka Sector 21 Metro", category: "transit", lat: 28.5523, lng: 77.0583 },
+  { name: "Yashobhoomi Dwarka Sector 25 Metro", category: "transit", lat: 28.5562, lng: 77.0461 },
+  { name: "Dwarka Sector 10 Metro", category: "transit", lat: 28.5811, lng: 77.0576 },
+  { name: "Garhi Harsaru Railway Station", category: "transit", lat: 28.4493, lng: 76.9185 },
 ];
 
 const elements = {
@@ -448,6 +569,7 @@ function relevanceScore(poi) {
   const bands = CATEGORY_DISTANCE_BANDS[poi.category] || CATEGORY_DISTANCE_BANDS.market;
   let score = 0;
   if (poi.source === "focused") score += 55;
+  if (poi.source === "contextual") score += 48;
   if (textIncludesAny(name, rules.prefer || [])) score += 55;
   if (textIncludesAny(name, rules.avoid || [])) score -= 75;
   if ((poi.rating || 0) >= 4.4) score += 18;
@@ -489,6 +611,7 @@ function reputationScoreForPoi(poi) {
   const name = poi.name || "";
   let score = 45;
   if (poi.source === "focused") score += 22;
+  if (poi.source === "contextual") score += 18;
   if (textIncludesAny(name, rules.prefer || [])) score += 24;
   if (textIncludesAny(name, rules.avoid || [])) score -= 40;
   if ((poi.rating || 0) >= 4.5) score += 12;
@@ -2094,43 +2217,94 @@ function isRelevantGooglePoi(poi) {
   return hasPreferredSignal || hasMarketScale;
 }
 
+function projectSearchContext() {
+  const project = state.selectedProject || {};
+  return [
+    project.name,
+    project.sector,
+    project.location,
+    project.corridor,
+    project.address,
+    project.microMarket,
+    project.region,
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+}
+
+function activeCorridorQueries() {
+  const context = projectSearchContext();
+  return Object.values(CORRIDOR_FOCUSED_PLACE_QUERIES).filter((corridor) => textIncludesAny(context, corridor.match || []));
+}
+
+function contextualPlaceQueries(category) {
+  const project = state.selectedProject || {};
+  const queryParts = [
+    project.sector,
+    project.location,
+    project.microMarket,
+  ].filter(Boolean);
+  const contextLabel = queryParts.length ? `${queryParts.join(" ")} Gurgaon` : "Gurgaon";
+  const categoryLabel = CATEGORY_CONFIG[category]?.label?.toLowerCase() || category;
+  const corridorQueries = activeCorridorQueries().flatMap((corridor) => corridor[category] || []);
+  return Array.from(new Set([
+    ...corridorQueries,
+    `reputed ${categoryLabel} near ${contextLabel}`,
+    `top rated ${categoryLabel} near ${contextLabel}`,
+    `best ${categoryLabel} near ${contextLabel}`,
+  ]));
+}
+
+async function loadFocusedPlacesForCategory(category, queries, location, source = "focused") {
+  const center = projectPoint(state.selectedProject);
+  const results = await Promise.all(
+    queries.map((query) =>
+      googleTextSearch({
+        query,
+        location,
+        radius: REPUTED_INFRA_RADIUS_METERS,
+      }).catch(() => []),
+    ),
+  );
+  return results.flat().map((place) => {
+    const placeLocation = place.geometry?.location;
+    if (!placeLocation || !place.name) return null;
+    const poi = {
+      id: place.place_id || `${category}:${place.name.toLowerCase()}`,
+      placeId: place.place_id,
+      name: place.name,
+      category,
+      source,
+      lat: placeLocation.lat(),
+      lng: placeLocation.lng(),
+      rating: place.rating,
+      userRatingsTotal: place.user_ratings_total,
+    };
+    poi.distanceKm = getDistanceKm(center, poi);
+    poi.relevanceScore = relevanceScore(poi);
+    return poi;
+  }).filter(Boolean);
+}
+
 async function loadGoogleNearbyInfrastructure() {
   const center = projectPoint(state.selectedProject);
   const location = new state.google.LatLng(center.lat, center.lng);
   const focusedBatches = await Promise.all(
-    Object.entries(GOOGLE_FOCUSED_PLACE_QUERIES).map(async ([category, queries]) => {
-      const results = await Promise.all(
-        queries.map((query) =>
-          googleTextSearch({
-            query,
-            location,
-            radius: REPUTED_INFRA_RADIUS_METERS,
-          }).catch(() => []),
-        ),
-      );
-      return results.flat().map((place) => {
-        const placeLocation = place.geometry?.location;
-        if (!placeLocation || !place.name) return null;
-        const poi = {
-          id: place.place_id || `${category}:${place.name.toLowerCase()}`,
-          placeId: place.place_id,
-          name: place.name,
-          category,
-          source: "focused",
-          lat: placeLocation.lat(),
-          lng: placeLocation.lng(),
-          rating: place.rating,
-          userRatingsTotal: place.user_ratings_total,
-        };
-        poi.distanceKm = getDistanceKm(center, poi);
-        poi.relevanceScore = relevanceScore(poi);
-        return poi;
-      }).filter(Boolean);
-    }),
+    Object.entries(GOOGLE_FOCUSED_PLACE_QUERIES).map(([category, queries]) =>
+      loadFocusedPlacesForCategory(category, queries, location, "focused"),
+    ),
+  );
+
+  const contextualBatches = await Promise.all(
+    Object.keys(CATEGORY_CONFIG).map((category) =>
+      loadFocusedPlacesForCategory(category, contextualPlaceQueries(category), location, "contextual"),
+    ),
   );
 
   const seen = new Set();
   const focusedRanked = focusedBatches
+    .concat(contextualBatches)
     .flat()
     .filter((poi) => {
       const key = normalizedPlaceKey(poi);
