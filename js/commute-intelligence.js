@@ -7,6 +7,7 @@ import {
 } from "./shared.js?v=20260604a";
 
 const SOCIAL_RADIUS_METERS = 10000;
+const REPUTED_INFRA_RADIUS_METERS = 16000;
 const MID_RADIUS_METERS = 5000;
 const INITIAL_POI_LIMIT = 5;
 const POI_LOAD_STEP = 3;
@@ -58,9 +59,24 @@ const GOOGLE_FOCUSED_PLACE_QUERIES = {
     "Heritage Xperiential Learning School Gurgaon",
     "Heritage School Gurgaon",
     "Delhi Public School Gurgaon",
+    "DPS Sector 45 Gurgaon",
+    "DPS Sector 84 Gurgaon",
+    "DPS Sector 102 Gurgaon",
     "GD Goenka Public School Gurgaon",
     "Shiv Nadar School Gurgaon",
     "The Shri Ram School Gurgaon",
+    "Scottish High International School Gurgaon",
+    "Lotus Valley International School Gurgaon",
+    "Suncity School Gurgaon",
+    "Amity International School Gurgaon",
+    "GEMS International School Gurgaon",
+    "Kunskapsskolan Gurgaon",
+    "St. Xavier's High School Gurgaon",
+    "Blue Bells Model School Gurgaon",
+    "Lancers International School Gurgaon",
+    "K.R. Mangalam World School Gurgaon",
+    "The HDFC School Gurgaon",
+    "Alpine Convent School Gurgaon",
   ],
   hospital: [
     "Medanta The Medicity Gurgaon",
@@ -73,6 +89,10 @@ const GOOGLE_FOCUSED_PLACE_QUERIES = {
     "W Pratiksha Hospital Gurgaon",
     "Park Hospital Gurgaon",
     "Max Hospital Gurgaon",
+    "Narayana Superspeciality Hospital Gurgaon",
+    "Aarvy Healthcare Gurgaon",
+    "Miracles Mediclinic Gurgaon",
+    "Manipal Hospital Gurgaon",
   ],
   market: [
     "Airia Mall Gurgaon",
@@ -86,6 +106,16 @@ const GOOGLE_FOCUSED_PLACE_QUERIES = {
     "Baani Square Gurgaon",
     "Raheja Mall Gurgaon",
     "MGF Metropolitan Mall Gurgaon",
+    "Ambience Mall Gurgaon",
+    "Ardee Mall Gurgaon",
+    "Reach 3 Roads Gurgaon",
+    "Sapphire 83 Gurgaon",
+    "Sapphire 90 Gurgaon",
+    "Omaxe Gurgaon Mall",
+    "Ansal Plaza Palam Vihar Gurgaon",
+    "Central Plaza Mall Gurgaon",
+    "DLF Galleria Market Gurgaon",
+    "Vyapar Kendra Gurgaon",
   ],
   transit: [
     "Millennium City Centre Metro Gurgaon",
@@ -99,6 +129,13 @@ const GOOGLE_FOCUSED_PLACE_QUERIES = {
     "MG Road Metro Station Gurgaon",
     "Huda City Centre Metro Gurgaon",
   ],
+};
+
+const CATEGORY_DISTANCE_BANDS = {
+  school: { excellent: 4, good: 7, acceptable: 11, max: 15 },
+  hospital: { excellent: 4, good: 7, acceptable: 10, max: 14 },
+  market: { excellent: 3, good: 6, acceptable: 9, max: 12 },
+  transit: { excellent: 3, good: 6, acceptable: 10, max: 14 },
 };
 
 const SOCIETY_SEARCH_QUERIES = [
@@ -173,15 +210,54 @@ const BUYER_RELEVANCE = {
       "st xavier",
       "dav",
       "kunskapsskolan",
+      "blue bells",
+      "lancers",
+      "kr mangalam",
+      "k.r. mangalam",
+      "hdfc school",
+      "alpine convent",
     ],
     avoid: ["primary", "play", "preschool", "pre school", "daycare", "day care", "kid", "kids", "creche", "anganwadi"],
   },
   hospital: {
-    prefer: ["medanta", "artemis", "fortis", "paras", "max", "ck birla", "cloudnine", "marengo", "park hospital"],
+    prefer: [
+      "medanta",
+      "artemis",
+      "fortis",
+      "paras",
+      "max",
+      "ck birla",
+      "cloudnine",
+      "marengo",
+      "park hospital",
+      "narayana",
+      "aarvy",
+      "miracles",
+      "manipal",
+      "w pratiksha",
+    ],
     avoid: ["clinic", "dental", "physio", "path lab", "diagnostic", "chemist", "pharmacy", "tyagi market"],
   },
   market: {
-    prefer: ["mall", "worldmark", "airia", "aipl", "m3m", "good earth", "south point", "hong kong bazaar", "baani", "metropolitan"],
+    prefer: [
+      "mall",
+      "worldmark",
+      "airia",
+      "aipl",
+      "m3m",
+      "good earth",
+      "south point",
+      "hong kong bazaar",
+      "baani",
+      "metropolitan",
+      "ambience",
+      "ardee",
+      "reach 3 roads",
+      "sapphire",
+      "ansal plaza",
+      "galleria",
+      "vyapar kendra",
+    ],
     avoid: ["kirana", "general store", "departmental store", "chemist", "medical store", "tyagi market"],
   },
   transit: {
@@ -302,7 +378,7 @@ function sortDistanceValue(row = {}) {
 
 function compareByGoogleDistance(a, b) {
   const relevanceDelta = (b.relevanceScore || 0) - (a.relevanceScore || 0);
-  if (Math.abs(relevanceDelta) >= 25) return relevanceDelta;
+  if (Math.abs(relevanceDelta) >= 18) return relevanceDelta;
   const distanceDelta = sortDistanceValue(a) - sortDistanceValue(b);
   if (distanceDelta) return distanceDelta;
   if (relevanceDelta) return relevanceDelta;
@@ -368,15 +444,60 @@ function capPoisByCategory(pois, limit = 5) {
 function relevanceScore(poi) {
   const rules = BUYER_RELEVANCE[poi.category] || {};
   const name = poi.name || "";
+  const distance = sortDistanceValue(poi);
+  const bands = CATEGORY_DISTANCE_BANDS[poi.category] || CATEGORY_DISTANCE_BANDS.market;
   let score = 0;
-  if (poi.source === "focused") score += 70;
-  if (textIncludesAny(name, rules.prefer || [])) score += 45;
-  if (textIncludesAny(name, rules.avoid || [])) score -= 60;
-  if ((poi.rating || 0) >= 4.1) score += 12;
-  if ((poi.userRatingsTotal || 0) >= 50) score += 16;
-  if ((poi.userRatingsTotal || 0) >= 200) score += 10;
-  if (Number.isFinite(poi.distanceKm)) score += Math.max(0, 10 - poi.distanceKm);
+  if (poi.source === "focused") score += 55;
+  if (textIncludesAny(name, rules.prefer || [])) score += 55;
+  if (textIncludesAny(name, rules.avoid || [])) score -= 75;
+  if ((poi.rating || 0) >= 4.4) score += 18;
+  else if ((poi.rating || 0) >= 4.1) score += 12;
+  if ((poi.userRatingsTotal || 0) >= 500) score += 18;
+  else if ((poi.userRatingsTotal || 0) >= 200) score += 12;
+  else if ((poi.userRatingsTotal || 0) >= 50) score += 8;
+  if (Number.isFinite(distance)) {
+    if (distance <= bands.excellent) score += 28;
+    else if (distance <= bands.good) score += 20;
+    else if (distance <= bands.acceptable) score += 12;
+    else if (distance <= bands.max) score += 4;
+    else score -= Math.min(30, (distance - bands.max) * 6);
+  }
   return score;
+}
+
+function distanceScoreForCategory(category, distance) {
+  if (!Number.isFinite(distance)) return 0;
+  const bands = CATEGORY_DISTANCE_BANDS[category] || CATEGORY_DISTANCE_BANDS.market;
+  if (distance <= bands.excellent) return 100;
+  if (distance <= bands.good) {
+    const progress = (distance - bands.excellent) / (bands.good - bands.excellent);
+    return 92 - progress * 10;
+  }
+  if (distance <= bands.acceptable) {
+    const progress = (distance - bands.good) / (bands.acceptable - bands.good);
+    return 82 - progress * 16;
+  }
+  if (distance <= bands.max) {
+    const progress = (distance - bands.acceptable) / (bands.max - bands.acceptable);
+    return 66 - progress * 18;
+  }
+  return Math.max(20, 48 - (distance - bands.max) * 5);
+}
+
+function reputationScoreForPoi(poi) {
+  const rules = BUYER_RELEVANCE[poi.category] || {};
+  const name = poi.name || "";
+  let score = 45;
+  if (poi.source === "focused") score += 22;
+  if (textIncludesAny(name, rules.prefer || [])) score += 24;
+  if (textIncludesAny(name, rules.avoid || [])) score -= 40;
+  if ((poi.rating || 0) >= 4.5) score += 12;
+  else if ((poi.rating || 0) >= 4.2) score += 8;
+  else if ((poi.rating || 0) >= 3.9) score += 4;
+  if ((poi.userRatingsTotal || 0) >= 500) score += 10;
+  else if ((poi.userRatingsTotal || 0) >= 200) score += 7;
+  else if ((poi.userRatingsTotal || 0) >= 50) score += 4;
+  return Math.max(0, Math.min(100, score));
 }
 
 function projectPoint(project) {
@@ -1038,10 +1159,27 @@ function residentialRows(rows = [], limit = 8) {
 }
 
 function categoryScore(category) {
-  const nearest = nearestPoiByCategory(category);
-  if (!nearest) return 0;
-  const distance = sortDistanceValue(nearest);
-  return Math.max(0, Math.min(100, Math.round(100 - distance * 9)));
+  const rows = topPoisByCategory(category, 5);
+  if (!rows.length) return 0;
+  const bands = CATEGORY_DISTANCE_BANDS[category] || CATEGORY_DISTANCE_BANDS.market;
+  const categoryWeight = category === "school" || category === "hospital"
+    ? { distance: 0.54, reputation: 0.46 }
+    : { distance: 0.62, reputation: 0.38 };
+  const scoredRows = rows.map((poi) => {
+    const distance = sortDistanceValue(poi);
+    const distanceScore = distanceScoreForCategory(category, distance);
+    const reputationScore = reputationScoreForPoi(poi);
+    return {
+      poi,
+      distance,
+      score: distanceScore * categoryWeight.distance + reputationScore * categoryWeight.reputation,
+    };
+  });
+  const bestScore = Math.max(...scoredRows.map((row) => row.score));
+  const closeChoices = scoredRows.filter((row) => row.distance <= bands.acceptable).length;
+  const reputedChoices = scoredRows.filter((row) => reputationScoreForPoi(row.poi) >= 72).length;
+  const breadthBonus = Math.min(10, closeChoices * 2 + reputedChoices * 2);
+  return Math.max(0, Math.min(100, Math.round(bestScore + breadthBonus)));
 }
 
 function profileWeight(category) {
@@ -1131,7 +1269,7 @@ function renderMapDetail(item = null) {
                   <div class="vibe-infra-row">
                     <span>
                       <strong>${escapeHtml(poi.name)}</strong>
-                      <small>${escapeHtml(poi.durationText || poi.rating ? `${poi.durationText || "Drive estimate"}${poi.rating ? ` · ${poi.rating} rating` : ""}` : "Google-ranked place")}</small>
+                      <small>${escapeHtml(poi.durationText || poi.rating ? `${poi.durationText || "Drive estimate"}${poi.rating ? ` · ${poi.rating} rating` : ""}` : "Reputation-ranked place")}</small>
                     </span>
                     <i>${escapeHtml(displayDistance(poi))}</i>
                   </div>
@@ -1157,8 +1295,8 @@ function renderMapDetail(item = null) {
       <div class="vibe-score-orb">${escapeHtml(overallLocationScore())}</div>
       <div>
         <span class="map-detail-kicker">Location Score</span>
-        <strong>Social infrastructure</strong>
-        <p>${escapeHtml(profile.note)}</p>
+        <strong>Reputed infrastructure</strong>
+        <p>${escapeHtml(profile.note)} Ranked by reputation, Google distance and choice depth.</p>
       </div>
     </section>
     <section class="vibe-profile-switch" aria-label="Location scoring profile">
@@ -1180,11 +1318,11 @@ function renderMapDetail(item = null) {
         : ""
     }
     <section>
-      <div class="vibe-section-title">Nearest essentials</div>
+      <div class="vibe-section-title">Best reputed essentials</div>
       <div class="vibe-essential-list">${nearestRows}</div>
     </section>
     <section>
-      <div class="vibe-section-title">Social infrastructure details</div>
+      <div class="vibe-section-title">Reputed social infrastructure</div>
       <div class="vibe-category-stack">${categoryDetailSections}</div>
     </section>
     <section>
@@ -1966,7 +2104,7 @@ async function loadGoogleNearbyInfrastructure() {
           googleTextSearch({
             query,
             location,
-            radius: SOCIAL_RADIUS_METERS,
+            radius: REPUTED_INFRA_RADIUS_METERS,
           }).catch(() => []),
         ),
       );
@@ -1996,7 +2134,8 @@ async function loadGoogleNearbyInfrastructure() {
     .flat()
     .filter((poi) => {
       const key = normalizedPlaceKey(poi);
-      if (poi.distanceKm > 14 || seen.has(key) || !isRelevantGooglePoi(poi)) return false;
+      const maxDistance = CATEGORY_DISTANCE_BANDS[poi.category]?.max || 14;
+      if (poi.distanceKm > maxDistance || seen.has(key) || !isRelevantGooglePoi(poi)) return false;
       seen.add(key);
       return true;
     })
