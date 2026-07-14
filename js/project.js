@@ -30,9 +30,10 @@ const elements = {
   projectShortlistButton: document.querySelector("#projectShortlistButton"),
   builderPrice: document.querySelector("#builderPrice"),
   builderPriceSubtext: document.querySelector("#builderPriceSubtext"),
-  fairEntry: document.querySelector("#fairEntry"),
-  propspotScore: document.querySelector("#propspotScore"),
-  propspotLabel: document.querySelector("#propspotLabel"),
+  heroAbsorption: document.querySelector("#heroAbsorption"),
+  heroAbsorptionSubtext: document.querySelector("#heroAbsorptionSubtext"),
+  heroUnits: document.querySelector("#heroUnits"),
+  heroUnitsSubtext: document.querySelector("#heroUnitsSubtext"),
   projectStage: document.querySelector("#projectStage"),
   snapshotGrid: document.querySelector("#snapshotGrid"),
   registryGrid: document.querySelector("#registryGrid"),
@@ -75,15 +76,10 @@ const elements = {
   builderRiskChips: document.querySelector("#builderRiskChips"),
   builderFinanceGrid: document.querySelector("#builderFinanceGrid"),
   builderSourceRow: document.querySelector("#builderSourceRow"),
-  scoreBreakdown: document.querySelector("#scoreBreakdown"),
   inventoryPressure: document.querySelector("#inventoryPressure"),
   paymentInventoryList: document.querySelector("#paymentInventoryList"),
   paymentSummary: document.querySelector("#paymentSummary"),
   paymentChips: document.querySelector("#paymentChips"),
-  priceStackSignal: document.querySelector("#priceStackSignal"),
-  priceStackHeadline: document.querySelector("#priceStackHeadline"),
-  priceStackSubline: document.querySelector("#priceStackSubline"),
-  priceBars: document.querySelector("#priceBars"),
   compareCount: document.querySelector("#compareCount"),
   compareSelect1: document.querySelector("#compareSelect1"),
   compareSelect2: document.querySelector("#compareSelect2"),
@@ -528,14 +524,11 @@ function renderCompare() {
   elements.compareCount.textContent = `${selected.length} selected`;
   elements.compareTable.innerHTML = selected
     .map((project) => {
-      const score = getPropSpotScore(project, state.projects);
       return `
         <tr>
           <td>${project.name}</td>
           <td>${formatCr(project.priceCr)}</td>
           <td>${formatSqft(getCanonicalPriceSqft(project))}</td>
-          <td>${score.total}/100</td>
-          <td>${getEntrySignal(project, state.projects)}</td>
           <td>${getAbsorptionLabel(project)}</td>
           <td>${getLocationScore(project).toFixed(1)}/10</td>
           <td>${getBuilderGrade(project)} grade</td>
@@ -547,28 +540,25 @@ function renderCompare() {
 
 function getAnalystResponse(project, question) {
   const lower = question.toLowerCase();
-  const fair = getFairEntry(project);
-  const score = getPropSpotScore(project, state.projects);
   if (lower.includes("approval")) {
     return `Approvals are not being shown on the live page right now because the matched approval records are still being expanded. For the current live view, approval readiness is being held at 8/10 until the deeper approval layer is sourced project by project.`;
   }
   if (lower.includes("compare")) {
-    return `${project.name} should mainly be compared on builder price, fair entry range, builder grade, approval readiness, and location maturity rather than brochure-level positioning.`;
+    return `${project.name} should mainly be compared on builder price, absorption, total units, builder grade, approval readiness, and location maturity rather than brochure-level positioning.`;
   }
   if (lower.includes("price") || lower.includes("entry")) {
-    return `${project.name} is showing builder price at ${formatSqft(getCanonicalPriceSqft(project))} and fair entry at ${fair.low ? `${formatSqft(fair.low, false)}-${formatter.format(fair.high)}/sqft` : "data pending"}. The live page now uses one canonical tracked project price rather than mixing competing price references.`;
+    return `${project.name} is showing builder price at ${formatSqft(getCanonicalPriceSqft(project))}. The live page now uses one canonical tracked project price alongside absorption and registered project facts.`;
   }
-  return `${project.name} is currently a ${score.label.toLowerCase()} at ${score.total}/100. The strongest current signals are builder price versus fair entry, builder quality, location maturity, and the registered project facts surfaced on this page.`;
+  return `${project.name} currently shows ${getAbsorptionLabel(project).toLowerCase()} absorption, ${project.stage.toLowerCase()} stage, ${formatCr(project.priceCr)} ticket size, and ${getBuilderGrade(project)} grade builder context. The strongest current signals are absorption, builder quality, location maturity, and the registered project facts surfaced on this page.`;
 }
 
 function getProjectBrief(project) {
-  const fair = getFairEntry(project);
-  const score = getPropSpotScore(project, state.projects);
+  const rera = project.reraDetails || {};
   return [
     `${project.name} | ${project.location}`,
-    `PropSpot Score: ${score.total}/100 | ${score.label}`,
     `Builder Current Sale Price: ${formatSqft(getCanonicalPriceSqft(project))}`,
-    `Fair Entry Range: ${fair.low ? `${formatSqft(fair.low, false)}-${formatter.format(fair.high)}/sqft` : "Builder price pending"}`,
+    `Absorption: ${getAbsorptionLabel(project)}`,
+    `Total Units: ${rera.totalUnits ? formatter.format(rera.totalUnits) : project.units ? formatter.format(project.units) : "Data pending"}`,
     `Builder Grade: ${getBuilderGrade(project)}`,
     `Location Maturity: ${getLocationScore(project).toFixed(1)}/10 | Commute ${getLocationCommute(project)} | Maturity ${getLocationMaturity(project)}`,
     `Approval Readiness: ${getApprovalScore(project).toFixed(1)}/10`,
@@ -579,13 +569,10 @@ function getProjectBrief(project) {
 
 function renderProject() {
   const project = state.project;
-  const score = getPropSpotScore(project, state.projects);
-  const fair = getFairEntry(project);
   const rera = project.reraDetails || {};
-  const marketGap =
-    getCanonicalPriceSqft(project) && score.marketMedian
-      ? `${(((getCanonicalPriceSqft(project) - score.marketMedian) / score.marketMedian) * 100).toFixed(1)}% vs micro-market median`
-      : "Market benchmark pending";
+  const marketGap = getCanonicalPriceSqft(project)
+    ? "Canonical tracked project price"
+    : "Builder price pending";
 
   document.title = `${project.name} | PropSpot Plinth`;
   elements.projectImage.src = project.image;
@@ -602,9 +589,13 @@ function renderProject() {
 
   elements.builderPrice.textContent = formatSqft(getCanonicalPriceSqft(project));
   elements.builderPriceSubtext.textContent = marketGap;
-  elements.fairEntry.textContent = fair.low ? `${formatSqft(fair.low, false)}-${formatter.format(fair.high)}` : "Pending";
-  elements.propspotScore.textContent = `${score.total}/100`;
-  elements.propspotLabel.textContent = score.label;
+  elements.heroAbsorption.textContent = getAbsorptionLabel(project);
+  elements.heroAbsorptionSubtext.textContent = project.latestAbsorption?.quarterLabel
+    ? `${project.latestAbsorption.quarterLabel} ${project.latestAbsorption.quarterEndDate || ""}`.trim()
+    : "Latest available data";
+  const displayUnits = rera.totalUnits || project.units;
+  elements.heroUnits.textContent = displayUnits ? formatter.format(displayUnits) : "Data pending";
+  elements.heroUnitsSubtext.textContent = rera.totalFloors ? `${formatter.format(rera.totalFloors)} floors` : "Matched project record";
   elements.projectStage.textContent = project.stage;
 
   const snapshotRows = [
@@ -671,19 +662,6 @@ function renderProject() {
     project.builderIntelligence?.financeUrl ? { label: "Open market source", href: project.builderIntelligence.financeUrl } : null,
   ]);
 
-  elements.scoreBreakdown.innerHTML = getScoreBreakdown(project, state.projects)
-    .map(([label, value]) => {
-      const width = Math.max(0, Math.min(100, value * 10));
-      return `
-        <div class="breakdown-row">
-          <span>${label}</span>
-          <div class="breakdown-track"><i style="width:${width}%"></i></div>
-          <strong>${value.toFixed(1)}</strong>
-        </div>
-      `;
-    })
-    .join("");
-
   elements.trackerSignal.textContent =
     project.tracker?.signal && project.tracker.signal !== "Data pending"
       ? project.tracker.signal
@@ -712,11 +690,6 @@ function renderProject() {
     ["Available signal", project.launched ? `${project.launched - project.sold} unsold` : "Inventory disclosure still early"],
     ["Supply pressure", getSupplyPressure(project)],
   ]);
-
-  elements.priceStackSignal.textContent = getEntrySignal(project, state.projects);
-  elements.priceStackHeadline.textContent = formatCr(project.priceCr);
-  elements.priceStackSubline.textContent = formatSqft(getCanonicalPriceSqft(project));
-  elements.priceBars.innerHTML = renderPriceVisual(project, score, fair);
 
   const maxDownPayment = Math.max(1, Number((project.priceCr || 1).toFixed(1)));
   elements.downPaymentInput.max = String(maxDownPayment);

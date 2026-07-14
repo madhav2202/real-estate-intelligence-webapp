@@ -52,14 +52,14 @@
           <p id="builderPriceSubtext">--</p>
         </article>
         <article class="decision-card">
-          <span>Fair Entry Range <button class="info-dot" type="button" title="An algorithmic PropSpot entry range based on the underlying builder price and current working pricing logic. For now it runs from 98% of the builder price up to the builder price.">i</button></span>
-          <strong id="fairEntry">--</strong>
-          <p>Current MVP range</p>
+          <span>Absorption <button class="info-dot" type="button" title="Latest cumulative absorption from the Haryana RERA quarterly scrape where available.">i</button></span>
+          <strong id="heroAbsorption">--</strong>
+          <p id="heroAbsorptionSubtext">Latest quarterly scrape</p>
         </article>
         <article class="decision-card">
-          <span>PropSpot Score <button class="info-dot" type="button" title="An algorithmic internal PropSpot score using the current underlying inputs available for location quality, builder credibility, and price position versus the micro-market.">i</button></span>
-          <strong id="propspotScore">--</strong>
-          <p id="propspotLabel">--</p>
+          <span>Total Units <button class="info-dot" type="button" title="Current total unit count from matched master/RERA/ReraTracker data.">i</button></span>
+          <strong id="heroUnits">--</strong>
+          <p id="heroUnitsSubtext">Matched project record</p>
         </article>
       </section>
 
@@ -82,19 +82,6 @@
           </section>
 
           <div class="intelligence-grid intelligence-grid-priority">
-            <section class="surface-card feature-card">
-              <div class="section-head">
-                <h2>Entry Price Stack <button class="info-dot" type="button" title="An algorithmic price view built from the underlying builder price and current fair-entry model. It shows where the current ask sits relative to PropSpot's working entry band.">i</button></h2>
-                <span id="priceStackSignal">--</span>
-              </div>
-              <div class="price-stack-head">
-                <strong id="priceStackHeadline">--</strong>
-                <span id="priceStackSubline">--</span>
-              </div>
-              <p class="section-note price-stack-note">A compact visual read of where the tracked builder price sits against the current fair-entry floor and the corridor median.</p>
-              <div class="bar-stack" id="priceBars"></div>
-            </section>
-
             <section class="surface-card feature-card location-card">
               <div class="section-head">
                 <h2>Location Maturity <button class="info-dot" type="button" title="An algorithmic location view based on the underlying commute, social infrastructure, future upside, and local risk signals available in the project data.">i</button></h2>
@@ -225,8 +212,6 @@
                     <th>Project</th>
                     <th>Ticket</th>
                     <th>Rs/sqft</th>
-                    <th>PropSpot</th>
-                    <th>Entry Signal</th>
                     <th>Absorption</th>
                     <th>Location</th>
                     <th>Builder Risk</th>
@@ -248,14 +233,6 @@
               <div class="finance-mini-grid" id="builderFinanceGrid"></div>
               <ul class="detail-list" id="builderRiskList"></ul>
               <div class="source-link-row" id="builderSourceRow"></div>
-            </section>
-
-            <section class="surface-card feature-card">
-              <div class="section-head">
-                <h2>Why This Score? <button class="info-dot" type="button" title="A factor-level view of the algorithmic PropSpot Score, using the underlying location, price, builder, approval-readiness, and launch data currently available.">i</button></h2>
-                <span>Breakdown</span>
-              </div>
-              <div class="score-breakdown" id="scoreBreakdown"></div>
             </section>
 
             <section class="surface-card feature-card" hidden>

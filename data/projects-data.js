@@ -144,7 +144,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 63,
           "delivery_progress_score": 62
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -167,7 +167,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 63,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "New Gurgaon developer; limited track record. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: 4S DEVELOPERS PRIVATE LIMITED, 4S DEVELOPERS PVT. LTD.",
+        "notes": "New Gurgaon developer; limited track record. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: 4S DEVELOPERS PRIVATE LIMITED, 4S DEVELOPERS PVT. LTD.",
         "listed": false,
         "ticker": null,
         "display_name": "4S Developers",
@@ -218,11 +218,11 @@ window.__PROJECTS__ = [
     "priceCr": 9.12,
     "sqft": null,
     "priceSqft": 15908,
-    "units": 216,
-    "launched": null,
-    "sold": null,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 251,
+    "launched": 251,
+    "sold": 225,
+    "absorption": "89.64%",
+    "inventory": "26 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2024/08/06/Project-Photo-1-Lushlands-Gurgaon-5422623_410_1440.jpg",
     "latitude": 28.4324388930049,
@@ -301,11 +301,15 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 15
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 251,
+      "unitsSold": 225,
+      "unitsAvailable": 26
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "305.80",
@@ -381,7 +385,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 61,
           "delivery_progress_score": 62
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -404,7 +408,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 61,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Adani Group backing but India real estate operations are standalone. Group under increased scrutiny post-2023. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: ADANI BRAHMA SYNERGY PRIVATE LIMITED, ADANI BRAHMA SYNERGY PVT LTD, ADANI BRAHMA SYNERGY PVT. LTD., ADANI INFRASTRUCTURE & DEVELOPERS PRIVATE LIMITED, ADANI INFRASTRUCTURE AND DEVELOPERS PRIVATE LIMITED, ADANI M2K PROJECTS LLP, ADANI M2K REALTORS LLP",
+        "notes": "Adani Group backing but India real estate operations are standalone. Group under increased scrutiny post-2023. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: ADANI BRAHMA SYNERGY PRIVATE LIMITED, ADANI BRAHMA SYNERGY PVT LTD, ADANI BRAHMA SYNERGY PVT. LTD., ADANI INFRASTRUCTURE & DEVELOPERS PRIVATE LIMITED, ADANI INFRASTRUCTURE AND DEVELOPERS PRIVATE LIMITED, ADANI M2K PROJECTS LLP, ADANI M2K REALTORS LLP",
         "listed": false,
         "ticker": null,
         "display_name": "Adani Realty",
@@ -439,6 +443,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 0,
+      "cumulativeSold": 225,
+      "cumulativeAbsorptionPct": "89.64%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -538,7 +551,7 @@ window.__PROJECTS__ = [
     "builderIntelligence": null,
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -555,7 +568,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2414
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -785,7 +798,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 61,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -808,7 +821,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 61,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Adani Group backing but India real estate operations are standalone. Group under increased scrutiny post-2023. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: ADANI BRAHMA SYNERGY PRIVATE LIMITED, ADANI BRAHMA SYNERGY PVT LTD, ADANI BRAHMA SYNERGY PVT. LTD., ADANI INFRASTRUCTURE & DEVELOPERS PRIVATE LIMITED, ADANI INFRASTRUCTURE AND DEVELOPERS PRIVATE LIMITED, ADANI M2K PROJECTS LLP, ADANI M2K REALTORS LLP",
+        "notes": "Adani Group backing but India real estate operations are standalone. Group under increased scrutiny post-2023. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: ADANI BRAHMA SYNERGY PRIVATE LIMITED, ADANI BRAHMA SYNERGY PVT LTD, ADANI BRAHMA SYNERGY PVT. LTD., ADANI INFRASTRUCTURE & DEVELOPERS PRIVATE LIMITED, ADANI INFRASTRUCTURE AND DEVELOPERS PRIVATE LIMITED, ADANI M2K PROJECTS LLP, ADANI M2K REALTORS LLP",
         "listed": false,
         "ticker": null,
         "display_name": "Adani Realty",
@@ -859,11 +872,11 @@ window.__PROJECTS__ = [
     "priceCr": 3.19,
     "sqft": null,
     "priceSqft": null,
-    "units": 21,
-    "launched": null,
-    "sold": null,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 105,
+    "launched": 105,
+    "sold": 105,
+    "absorption": "100.00%",
+    "inventory": "0 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2023/08/22/Project-Photo-1-Adani-Samsara-Arya-Gurgaon-5416673_345_1366.jpg",
     "latitude": 28.3968932,
@@ -933,11 +946,15 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 13
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 105,
+      "unitsSold": 105,
+      "unitsAvailable": 0
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -1073,7 +1090,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 61,
           "delivery_progress_score": 94
         },
-        "formula": "0.3571·location_score + 0.3571·developer_risk_score + 0.2857·delivery_progress_score",
+        "formula": "0.3571\u00b7location_score + 0.3571\u00b7developer_risk_score + 0.2857\u00b7delivery_progress_score",
         "missing": [
           "value_score"
         ],
@@ -1095,7 +1112,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 61,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Adani Group backing but India real estate operations are standalone. Group under increased scrutiny post-2023. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: ADANI BRAHMA SYNERGY PRIVATE LIMITED, ADANI BRAHMA SYNERGY PVT LTD, ADANI BRAHMA SYNERGY PVT. LTD., ADANI INFRASTRUCTURE & DEVELOPERS PRIVATE LIMITED, ADANI INFRASTRUCTURE AND DEVELOPERS PRIVATE LIMITED, ADANI M2K PROJECTS LLP, ADANI M2K REALTORS LLP",
+        "notes": "Adani Group backing but India real estate operations are standalone. Group under increased scrutiny post-2023. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: ADANI BRAHMA SYNERGY PRIVATE LIMITED, ADANI BRAHMA SYNERGY PVT LTD, ADANI BRAHMA SYNERGY PVT. LTD., ADANI INFRASTRUCTURE & DEVELOPERS PRIVATE LIMITED, ADANI INFRASTRUCTURE AND DEVELOPERS PRIVATE LIMITED, ADANI M2K PROJECTS LLP, ADANI M2K REALTORS LLP",
         "listed": false,
         "ticker": null,
         "display_name": "Adani Realty",
@@ -1130,6 +1147,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "OCT-DEC",
+      "quarterEndDate": "2025-12-31",
+      "soldInQuarter": 0,
+      "cumulativeSold": 105,
+      "cumulativeAbsorptionPct": "100.00%",
+      "cappedAtTotalUnits": true,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -1146,11 +1172,11 @@ window.__PROJECTS__ = [
     "priceCr": 4.25,
     "sqft": null,
     "priceSqft": 14337,
-    "units": 22,
-    "launched": null,
-    "sold": null,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 85,
+    "launched": 85,
+    "sold": 53,
+    "absorption": "62.35%",
+    "inventory": "32 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2023/05/01/Project-Photo-1-Samsara-Avasa-Gurgaon-5405051_345_1366.jpg",
     "latitude": 28.3968932,
@@ -1229,11 +1255,15 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 13
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 85,
+      "unitsSold": 53,
+      "unitsAvailable": 32
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -1250,7 +1280,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2964
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -1431,7 +1461,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 61,
           "delivery_progress_score": 97
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -1454,7 +1484,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 61,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Adani Group backing but India real estate operations are standalone. Group under increased scrutiny post-2023. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: ADANI BRAHMA SYNERGY PRIVATE LIMITED, ADANI BRAHMA SYNERGY PVT LTD, ADANI BRAHMA SYNERGY PVT. LTD., ADANI INFRASTRUCTURE & DEVELOPERS PRIVATE LIMITED, ADANI INFRASTRUCTURE AND DEVELOPERS PRIVATE LIMITED, ADANI M2K PROJECTS LLP, ADANI M2K REALTORS LLP",
+        "notes": "Adani Group backing but India real estate operations are standalone. Group under increased scrutiny post-2023. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: ADANI BRAHMA SYNERGY PRIVATE LIMITED, ADANI BRAHMA SYNERGY PVT LTD, ADANI BRAHMA SYNERGY PVT. LTD., ADANI INFRASTRUCTURE & DEVELOPERS PRIVATE LIMITED, ADANI INFRASTRUCTURE AND DEVELOPERS PRIVATE LIMITED, ADANI M2K PROJECTS LLP, ADANI M2K REALTORS LLP",
         "listed": false,
         "ticker": null,
         "display_name": "Adani Realty",
@@ -1489,6 +1519,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "OCT-DEC",
+      "quarterEndDate": "2025-12-31",
+      "soldInQuarter": 0,
+      "cumulativeSold": 53,
+      "cumulativeAbsorptionPct": "62.35%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -1619,8 +1658,8 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "0 - 0 sq.ft.",
-      "landArea": "3.4355 Acre",
+      "sizes": "48x48",
+      "landArea": "3.4355 (Acre)",
       "sourceUrl": "https://reratracker.com/adani-samsara-ivana-in-gurugram-by-adani-brahma-synergy-private-limited-rtid4036",
       "startDate": "30-10-2024",
       "unitsSold": null,
@@ -1632,11 +1671,11 @@ window.__PROJECTS__ = [
       "currentPrice": null,
       "completionDate": "2029-06-30",
       "configurations": "4 BHK",
-      "projectAddress": "SECTOR 63, BLOCK - I VILLAGE MAIDAVAS",
+      "projectAddress": "C23 ORCHID PARK NE ANJANI TOWER SATELLITE AHMEDABAD Gujrat 380015",
       "unitsAvailable": null,
       "projectSizeText": "192 units",
       "reraProjectName": "Adani Samsara Ivana",
-      "totalLicensedLand": "141.6687 Acre",
+      "totalLicensedLand": "141.6687 (Acre)",
       "reraRegistrationNo": "RERA-GRG-1787-2024"
     },
     "builderIntelligence": {
@@ -1674,7 +1713,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -1691,7 +1730,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2571
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -1774,7 +1813,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 61,
           "delivery_progress_score": 62
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -1797,7 +1836,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 61,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Adani Group backing but India real estate operations are standalone. Group under increased scrutiny post-2023. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: ADANI BRAHMA SYNERGY PRIVATE LIMITED, ADANI BRAHMA SYNERGY PVT LTD, ADANI BRAHMA SYNERGY PVT. LTD., ADANI INFRASTRUCTURE & DEVELOPERS PRIVATE LIMITED, ADANI INFRASTRUCTURE AND DEVELOPERS PRIVATE LIMITED, ADANI M2K PROJECTS LLP, ADANI M2K REALTORS LLP",
+        "notes": "Adani Group backing but India real estate operations are standalone. Group under increased scrutiny post-2023. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: ADANI BRAHMA SYNERGY PRIVATE LIMITED, ADANI BRAHMA SYNERGY PVT LTD, ADANI BRAHMA SYNERGY PVT. LTD., ADANI INFRASTRUCTURE & DEVELOPERS PRIVATE LIMITED, ADANI INFRASTRUCTURE AND DEVELOPERS PRIVATE LIMITED, ADANI M2K PROJECTS LLP, ADANI M2K REALTORS LLP",
         "listed": false,
         "ticker": null,
         "display_name": "Adani Realty",
@@ -1979,7 +2018,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 61,
           "delivery_progress_score": 97
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -2002,7 +2041,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 61,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Adani Group backing but India real estate operations are standalone. Group under increased scrutiny post-2023. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: ADANI BRAHMA SYNERGY PRIVATE LIMITED, ADANI BRAHMA SYNERGY PVT LTD, ADANI BRAHMA SYNERGY PVT. LTD., ADANI INFRASTRUCTURE & DEVELOPERS PRIVATE LIMITED, ADANI INFRASTRUCTURE AND DEVELOPERS PRIVATE LIMITED, ADANI M2K PROJECTS LLP, ADANI M2K REALTORS LLP",
+        "notes": "Adani Group backing but India real estate operations are standalone. Group under increased scrutiny post-2023. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: ADANI BRAHMA SYNERGY PRIVATE LIMITED, ADANI BRAHMA SYNERGY PVT LTD, ADANI BRAHMA SYNERGY PVT. LTD., ADANI INFRASTRUCTURE & DEVELOPERS PRIVATE LIMITED, ADANI INFRASTRUCTURE AND DEVELOPERS PRIVATE LIMITED, ADANI M2K PROJECTS LLP, ADANI M2K REALTORS LLP",
         "listed": false,
         "ticker": null,
         "display_name": "Adani Realty",
@@ -2163,8 +2202,8 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "2375 - 3295 sq.ft.",
-      "landArea": "5.1625 Acre",
+      "sizes": "48x48",
+      "landArea": "5.1625 (Acre)",
       "sourceUrl": "https://reratracker.com/adani-the-marq-in-gurugram-by-adani-m2k-realtors-llp-rtid5504",
       "startDate": "20-01-2026",
       "unitsSold": null,
@@ -2176,11 +2215,11 @@ window.__PROJECTS__ = [
       "currentPrice": 17000,
       "completionDate": "2031-12-31",
       "configurations": "3 BHK4 BHK",
-      "projectAddress": "SECTOR 102 & 102A",
+      "projectAddress": "Cuffe Castle Building 10th Floor J-3 Cuffe Parade Colaba Mumbai Maharashtra 4000005",
       "unitsAvailable": null,
       "projectSizeText": "3 Buildings - 368 units",
       "reraProjectName": "Adani The MarQ",
-      "totalLicensedLand": "5.1625 Acre",
+      "totalLicensedLand": "5.1625 (Acre)",
       "reraRegistrationNo": "RERA-GRG-2140-2025"
     },
     "builderIntelligence": {
@@ -2218,7 +2257,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -2235,7 +2274,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2353
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -2465,7 +2504,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 61,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -2488,7 +2527,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 61,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Adani Group backing but India real estate operations are standalone. Group under increased scrutiny post-2023. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: ADANI BRAHMA SYNERGY PRIVATE LIMITED, ADANI BRAHMA SYNERGY PVT LTD, ADANI BRAHMA SYNERGY PVT. LTD., ADANI INFRASTRUCTURE & DEVELOPERS PRIVATE LIMITED, ADANI INFRASTRUCTURE AND DEVELOPERS PRIVATE LIMITED, ADANI M2K PROJECTS LLP, ADANI M2K REALTORS LLP",
+        "notes": "Adani Group backing but India real estate operations are standalone. Group under increased scrutiny post-2023. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: ADANI BRAHMA SYNERGY PRIVATE LIMITED, ADANI BRAHMA SYNERGY PVT LTD, ADANI BRAHMA SYNERGY PVT. LTD., ADANI INFRASTRUCTURE & DEVELOPERS PRIVATE LIMITED, ADANI INFRASTRUCTURE AND DEVELOPERS PRIVATE LIMITED, ADANI M2K PROJECTS LLP, ADANI M2K REALTORS LLP",
         "listed": false,
         "ticker": null,
         "display_name": "Adani Realty",
@@ -2539,11 +2578,11 @@ window.__PROJECTS__ = [
     "priceCr": null,
     "sqft": null,
     "priceSqft": null,
-    "units": 34,
-    "launched": null,
-    "sold": null,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 32,
+    "launched": 32,
+    "sold": 32,
+    "absorption": "100.00%",
+    "inventory": "0 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2025/07/14/Project-Photo-5-Veris-Gurgaon-5433725_534_361.jpg",
     "latitude": 28.4324388930049,
@@ -2609,11 +2648,15 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 23
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 32,
+      "unitsSold": 32,
+      "unitsAvailable": 0
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -2679,7 +2722,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 61,
           "delivery_progress_score": 49
         },
-        "formula": "0.3571·location_score + 0.3571·developer_risk_score + 0.2857·delivery_progress_score",
+        "formula": "0.3571\u00b7location_score + 0.3571\u00b7developer_risk_score + 0.2857\u00b7delivery_progress_score",
         "missing": [
           "value_score"
         ],
@@ -2701,7 +2744,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 61,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Adani Group backing but India real estate operations are standalone. Group under increased scrutiny post-2023. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: ADANI BRAHMA SYNERGY PRIVATE LIMITED, ADANI BRAHMA SYNERGY PVT LTD, ADANI BRAHMA SYNERGY PVT. LTD., ADANI INFRASTRUCTURE & DEVELOPERS PRIVATE LIMITED, ADANI INFRASTRUCTURE AND DEVELOPERS PRIVATE LIMITED, ADANI M2K PROJECTS LLP, ADANI M2K REALTORS LLP",
+        "notes": "Adani Group backing but India real estate operations are standalone. Group under increased scrutiny post-2023. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: ADANI BRAHMA SYNERGY PRIVATE LIMITED, ADANI BRAHMA SYNERGY PVT LTD, ADANI BRAHMA SYNERGY PVT. LTD., ADANI INFRASTRUCTURE & DEVELOPERS PRIVATE LIMITED, ADANI INFRASTRUCTURE AND DEVELOPERS PRIVATE LIMITED, ADANI M2K PROJECTS LLP, ADANI M2K REALTORS LLP",
         "listed": false,
         "ticker": null,
         "display_name": "Adani Realty",
@@ -2736,6 +2779,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 0,
+      "cumulativeSold": 32,
+      "cumulativeAbsorptionPct": "100.00%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -2856,8 +2908,8 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "2053 - 3211 sq.ft.",
-      "landArea": "5.1375 Acre",
+      "sizes": "48x48",
+      "landArea": "5.1375 (Acre)",
       "sourceUrl": "https://reratracker.com/riviera-at-aipl-lake-city-in-gurugram-by-aipl-bharat-infrastructure-private-limited-rtid5325",
       "startDate": "03-11-2025",
       "unitsSold": null,
@@ -2869,11 +2921,11 @@ window.__PROJECTS__ = [
       "currentPrice": 17000,
       "completionDate": "2033-06-30",
       "configurations": "2 BHK3 BHK4 BHK",
-      "projectAddress": "VILLAGE DAULTABAD SECTOR- 103",
+      "projectAddress": "B-3 Ansal Villas Complex Stabari South DelhiDelhi-110074",
       "unitsAvailable": null,
       "projectSizeText": "2 Buildings - 344 units",
       "reraProjectName": "RIVIERA AT AIPL LAKE CITY",
-      "totalLicensedLand": "5.1375 Acre",
+      "totalLicensedLand": "5.1375 (Acre)",
       "reraRegistrationNo": "RERA-GRG-2085-2025"
     },
     "builderIntelligence": {
@@ -2911,7 +2963,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -2928,7 +2980,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2050
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -3060,7 +3112,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 76,
           "delivery_progress_score": 34
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -3083,7 +3135,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 76,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Mittal family-backed developer; Delhi NCR focus; mixed track record. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: ADVANCE INDIA PROJECTS LIMITED, ADVANCE INDIA PROJECTS LTD, ADVANCE INDIA PROJECTS LTD., AIPL BHARAT INFRASTRUCTURE PRIVATE LIMITED",
+        "notes": "Mittal family-backed developer; Delhi NCR focus; mixed track record. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: ADVANCE INDIA PROJECTS LIMITED, ADVANCE INDIA PROJECTS LTD, ADVANCE INDIA PROJECTS LTD., AIPL BHARAT INFRASTRUCTURE PRIVATE LIMITED",
         "listed": false,
         "ticker": null,
         "display_name": "AIPL",
@@ -3118,6 +3170,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 0,
+      "cumulativeSold": null,
+      "cumulativeAbsorptionPct": "",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -3135,10 +3196,10 @@ window.__PROJECTS__ = [
     "sqft": null,
     "priceSqft": 19000,
     "units": 248,
-    "launched": null,
-    "sold": null,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "launched": 248,
+    "sold": 200,
+    "absorption": "80.65%",
+    "inventory": "48 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2024/03/08/Project-Photo-1-The-Estate-Residences-Gurgaon-5419403_345_1366.jpg",
     "latitude": 28.3920134856734,
@@ -3217,11 +3278,15 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 13
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 248,
+      "unitsSold": 200,
+      "unitsAvailable": 48
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -3308,7 +3373,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 60,
           "delivery_progress_score": 49
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -3331,7 +3396,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 60,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Listed Delhi NCR developer with data-centre pivot; improving delivery track record. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: ANANT RAJ LIMITED, ANANT RAJ LTD.",
+        "notes": "Listed Delhi NCR developer with data-centre pivot; improving delivery track record. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: ANANT RAJ LIMITED, ANANT RAJ LTD.",
         "listed": true,
         "ticker": "ANANTRAJ",
         "display_name": "Anant Raj",
@@ -3366,6 +3431,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 4,
+      "cumulativeSold": 200,
+      "cumulativeAbsorptionPct": "80.65%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -3496,10 +3570,10 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "0 - 0 sq.ft.",
-      "landArea": "3.59 Acre",
+      "sizes": "48x48",
+      "landArea": "3.59 (Acre)",
       "sourceUrl": "https://reratracker.com/ashiana-aaroham-phase-ii-in-gurugram-by-ashiana-housing-limited-rtid5435",
-      "startDate": "19-12-2025",
+      "startDate": "2026-03-09",
       "unitsSold": null,
       "totalUnits": 182,
       "launchPrice": 14000,
@@ -3509,11 +3583,11 @@ window.__PROJECTS__ = [
       "currentPrice": 14500,
       "completionDate": "2033-10-31",
       "configurations": "4 BHK3 BHK",
-      "projectAddress": "REVENUE ESTATE OF VILLAGE- HSIIDC PLOT NO GH-04 SECTOR 80 IMT MANESAR GURUGRAM HARYANA",
+      "projectAddress": "3rd Floor C-8 Maharani Bagh New Delhi - 110065",
       "unitsAvailable": null,
       "projectSizeText": "2 Buildings - 182 units",
       "reraProjectName": "ASHIANA AAROHAM PHASE II",
-      "totalLicensedLand": "10.80 Acre",
+      "totalLicensedLand": "10.80 (Acre)",
       "reraRegistrationNo": "RERA-GRG-2134-2025"
     },
     "builderIntelligence": {
@@ -3532,10 +3606,10 @@ window.__PROJECTS__ = [
         "revenue": "962 Cr",
         "profit": "122 Cr",
         "promoterHolding": "61.1%",
-        "currentPrice": "₹ 378",
-        "highLow": "₹ 389",
+        "currentPrice": "\u20b9 378",
+        "highLow": "\u20b9 389",
         "stockPE": "31.3",
-        "bookValue": "₹ 79.1",
+        "bookValue": "\u20b9 79.1",
         "dividendYield": "0.66",
         "roce": "3.56",
         "roe": "2.74"
@@ -3579,7 +3653,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -3596,7 +3670,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2062
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -3714,7 +3788,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 90,
           "delivery_progress_score": 34
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -3737,7 +3811,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 90,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Debt-free, senior living specialist. Excellent delivery and complaint track record. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: ASHIANA HOUSING LIMITED, ASHIANA HOUSING LTD",
+        "notes": "Debt-free, senior living specialist. Excellent delivery and complaint track record. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: ASHIANA HOUSING LIMITED, ASHIANA HOUSING LTD",
         "listed": true,
         "ticker": "ASHIANA",
         "display_name": "Ashiana Housing",
@@ -3855,7 +3929,7 @@ window.__PROJECTS__ = [
     "builderIntelligence": null,
     "scoreCard": {
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Unit",
@@ -3937,7 +4011,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 90,
           "delivery_progress_score": 94
         },
-        "formula": "0.4·value_score + 0.3333·developer_risk_score + 0.2667·delivery_progress_score",
+        "formula": "0.4\u00b7value_score + 0.3333\u00b7developer_risk_score + 0.2667\u00b7delivery_progress_score",
         "missing": [
           "location_score"
         ],
@@ -3960,7 +4034,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 90,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Debt-free, senior living specialist. Excellent delivery and complaint track record. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: ASHIANA HOUSING LIMITED, ASHIANA HOUSING LTD",
+        "notes": "Debt-free, senior living specialist. Excellent delivery and complaint track record. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: ASHIANA HOUSING LIMITED, ASHIANA HOUSING LTD",
         "listed": true,
         "ticker": "ASHIANA",
         "display_name": "Ashiana Housing",
@@ -4011,11 +4085,11 @@ window.__PROJECTS__ = [
     "priceCr": 1.78,
     "sqft": null,
     "priceSqft": 11250,
-    "units": null,
-    "launched": null,
-    "sold": null,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 280,
+    "launched": 280,
+    "sold": 80,
+    "absorption": "28.57%",
+    "inventory": "200 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2024/08/05/Project-Photo-1-Ashiana-Amarah-Phase-4-Gurgaon-5422595_345_1366.jpg",
     "latitude": 28.4145784,
@@ -4094,11 +4168,15 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 41
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 280,
+      "unitsSold": 80,
+      "unitsAvailable": 200
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -4169,7 +4247,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 90,
           "delivery_progress_score": 62
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -4192,7 +4270,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 90,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Debt-free, senior living specialist. Excellent delivery and complaint track record. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: ASHIANA HOUSING LIMITED, ASHIANA HOUSING LTD",
+        "notes": "Debt-free, senior living specialist. Excellent delivery and complaint track record. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: ASHIANA HOUSING LIMITED, ASHIANA HOUSING LTD",
         "listed": true,
         "ticker": "ASHIANA",
         "display_name": "Ashiana Housing",
@@ -4227,6 +4305,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 4,
+      "cumulativeSold": 80,
+      "cumulativeAbsorptionPct": "28.57%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -4243,11 +4330,11 @@ window.__PROJECTS__ = [
     "priceCr": 2.36,
     "sqft": null,
     "priceSqft": 15435,
-    "units": 246,
-    "launched": null,
-    "sold": null,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 248,
+    "launched": 248,
+    "sold": 84,
+    "absorption": "33.87%",
+    "inventory": "164 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2025/05/15/Project-Photo-4-Ashiana-Amarah-Phase-5-Gurgaon-5431847_410_1440.jpg",
     "latitude": 28.4145784,
@@ -4326,11 +4413,15 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 20
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 248,
+      "unitsSold": 84,
+      "unitsAvailable": 164
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -4401,7 +4492,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 90,
           "delivery_progress_score": 49
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -4424,7 +4515,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 90,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Debt-free, senior living specialist. Excellent delivery and complaint track record. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: ASHIANA HOUSING LIMITED, ASHIANA HOUSING LTD",
+        "notes": "Debt-free, senior living specialist. Excellent delivery and complaint track record. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: ASHIANA HOUSING LIMITED, ASHIANA HOUSING LTD",
         "listed": true,
         "ticker": "ASHIANA",
         "display_name": "Ashiana Housing",
@@ -4459,6 +4550,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 14,
+      "cumulativeSold": 84,
+      "cumulativeAbsorptionPct": "33.87%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -4475,11 +4575,11 @@ window.__PROJECTS__ = [
     "priceCr": 2.59,
     "sqft": null,
     "priceSqft": 11000,
-    "units": 520,
-    "launched": null,
-    "sold": null,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 1040,
+    "launched": 1040,
+    "sold": 680,
+    "absorption": "65.38%",
+    "inventory": "360 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2022/11/23/Project-Photo-11-Bestech-Altura-Gurgaon-5089724_345_1366.jpg",
     "latitude": 28.3638276,
@@ -4538,7 +4638,7 @@ window.__PROJECTS__ = [
           "distance_km": 10.92
         },
         "hospital": {
-          "name": "Queen’s Multispeciality Hospital",
+          "name": "Queen\u2019s Multispeciality Hospital",
           "distance_km": 2.74
         }
       },
@@ -4554,11 +4654,15 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 27
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 1040,
+      "unitsSold": 680,
+      "unitsAvailable": 360
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "90.629",
@@ -4669,7 +4773,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 60,
           "delivery_progress_score": 97
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -4692,7 +4796,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 60,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "New Gurgaon/Golf Course Ext. developer; decent track record; limited financial disclosure. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: BESTECH INDIA PRIVATE LIMITED, BESTECH INDIA PVT LTD, BESTECH INDIA PVT. LTD.",
+        "notes": "New Gurgaon/Golf Course Ext. developer; decent track record; limited financial disclosure. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: BESTECH INDIA PRIVATE LIMITED, BESTECH INDIA PVT LTD, BESTECH INDIA PVT. LTD.",
         "listed": false,
         "ticker": null,
         "display_name": "Bestech",
@@ -4727,6 +4831,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "OCT-DEC",
+      "quarterEndDate": "2023-12-31",
+      "soldInQuarter": 43,
+      "cumulativeSold": 680,
+      "cumulativeAbsorptionPct": "65.38%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -4743,11 +4856,11 @@ window.__PROJECTS__ = [
     "priceCr": 11.18,
     "sqft": 2182,
     "priceSqft": 23900,
-    "units": 120,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 322,
+    "launched": 322,
+    "sold": 322,
+    "absorption": "100.00%",
+    "inventory": "0 unsold units",
     "bestFor": "End Use",
     "image": "https://img.staticmb.com/mbimages/project/2025/04/07/Project-Photo-3-Birla-Arika-Gurgaon-5429985_410_1440.jpg",
     "latitude": 28.453021388315,
@@ -4857,12 +4970,12 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "4300 - 4300 sq.ft.",
-      "landArea": "1.53 Acre",
-      "sourceUrl": "https://reratracker.com/birla-arika-phase-2-in-gurugram-by-birla-estates-private-limited-rtid5573",
-      "startDate": "16-01-2026",
-      "unitsSold": null,
-      "totalUnits": 620,
+      "sizes": "48x48",
+      "landArea": "11.745 (Acre)",
+      "sourceUrl": "https://reratracker.com/birla-arika-in-gurugram-by-birla-estates-private-limited-rtid3539",
+      "startDate": "2025-03-24",
+      "unitsSold": 322,
+      "totalUnits": 322,
       "launchPrice": 24500,
       "projectType": "NEW",
       "totalFloors": 40,
@@ -4870,12 +4983,12 @@ window.__PROJECTS__ = [
       "currentPrice": 24500,
       "completionDate": "2033-07-09",
       "configurations": "4 BHK",
-      "projectAddress": "SECTOR 31-32A, GURUGRAM",
-      "unitsAvailable": null,
+      "projectAddress": "Birla Aurora Level 8 Unit A Dr Annie Besant Road Worli Mumbai 400030",
+      "unitsAvailable": 0,
       "projectSizeText": "7 Buildings - 620 units",
-      "reraProjectName": "BIRLA ARIKA PHASE 2",
-      "totalLicensedLand": "13.275 Acre",
-      "reraRegistrationNo": "RERA-GRG-2142-2025"
+      "reraProjectName": "BIRLA ARIKA",
+      "totalLicensedLand": "13.275 (Acre)",
+      "reraRegistrationNo": "RERA-GRG-1823-2024"
     },
     "builderIntelligence": {
       "builderCode": "DEV-BIR",
@@ -4912,7 +5025,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -4929,7 +5042,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 4678
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -5047,7 +5160,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 91,
           "delivery_progress_score": 34
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -5070,7 +5183,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 91,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Relatively new; strong Aditya Birla Group backing. Limited but clean track record. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: BIRLA ESTATES PRIVATE LIMITED",
+        "notes": "Relatively new; strong Aditya Birla Group backing. Limited but clean track record. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: BIRLA ESTATES PRIVATE LIMITED",
         "listed": false,
         "ticker": null,
         "display_name": "Birla Estates",
@@ -5105,6 +5218,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 0,
+      "cumulativeSold": 322,
+      "cumulativeAbsorptionPct": "100.00%",
+      "cappedAtTotalUnits": true,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -5235,10 +5357,10 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "2000 - 2450 sq.ft.",
-      "landArea": "5.075 Acre",
+      "sizes": "48x48",
+      "landArea": "5.075 (Acre)",
       "sourceUrl": "https://reratracker.com/birla-pravaah-in-gurugram-by-birla-estates-private-limited-rtid5254",
-      "startDate": "01-10-2025",
+      "startDate": "2025-12-08",
       "unitsSold": null,
       "totalUnits": 492,
       "launchPrice": 16300,
@@ -5248,11 +5370,11 @@ window.__PROJECTS__ = [
       "currentPrice": 17500,
       "completionDate": "2032-03-31",
       "configurations": "3 BHK",
-      "projectAddress": "SECTOR 71",
+      "projectAddress": "Birla Aurora Level 8 Unit A Dr Annie Besant Road Worli Mumbai 400030",
       "unitsAvailable": null,
       "projectSizeText": "5 Buildings - 492 units",
       "reraProjectName": "BIRLA PRAVAAH",
-      "totalLicensedLand": "5.075 Acre",
+      "totalLicensedLand": "5.075 (Acre)",
       "reraRegistrationNo": "RERA-GRG-2071-2025"
     },
     "builderIntelligence": {
@@ -5290,7 +5412,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -5307,7 +5429,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2303
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -5446,7 +5568,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 91,
           "delivery_progress_score": 34
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -5469,7 +5591,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 91,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Relatively new; strong Aditya Birla Group backing. Limited but clean track record. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: BIRLA ESTATES PRIVATE LIMITED",
+        "notes": "Relatively new; strong Aditya Birla Group backing. Limited but clean track record. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: BIRLA ESTATES PRIVATE LIMITED",
         "listed": false,
         "ticker": null,
         "display_name": "Birla Estates",
@@ -5521,10 +5643,10 @@ window.__PROJECTS__ = [
     "sqft": null,
     "priceSqft": 16455,
     "units": 885,
-    "launched": null,
-    "sold": null,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "launched": 885,
+    "sold": 496,
+    "absorption": "56.05%",
+    "inventory": "389 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2025/03/13/Project-Photo-2-BPTP-Amstoria-Verti-Greens-Gurgaon-5429103_410_1440.jpg",
     "latitude": 28.4763113,
@@ -5603,11 +5725,15 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 19
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 885,
+      "unitsSold": 496,
+      "unitsAvailable": 389
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -5624,7 +5750,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 1744
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -5731,7 +5857,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 76,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -5754,7 +5880,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 76,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Large township developer; significant delays and complaint history. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: BPTP LIMITED, BPTP LTD.",
+        "notes": "Large township developer; significant delays and complaint history. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: BPTP LIMITED, BPTP LTD.",
         "listed": false,
         "ticker": null,
         "display_name": "BPTP",
@@ -5789,6 +5915,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 8,
+      "cumulativeSold": 496,
+      "cumulativeAbsorptionPct": "56.05%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -5806,9 +5941,9 @@ window.__PROJECTS__ = [
     "sqft": 1452,
     "priceSqft": 20000,
     "units": 504,
-    "launched": 0,
+    "launched": 504,
     "sold": 0,
-    "absorption": "Data pending",
+    "absorption": "0.00%",
     "inventory": "Data pending",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2026/04/03/Project-Photo-32-BPTP-Downtown-66-Gurgaon-5438347_410_1440.jpg",
@@ -5919,8 +6054,8 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "0 - 0 sq.ft.",
-      "landArea": "4.235 Acre",
+      "sizes": "48x48",
+      "landArea": "4.235 (Acre)",
       "sourceUrl": "https://reratracker.com/bptp-downtown-66-in-gurugram-by-bptp-limited-rtid5220",
       "startDate": "15-07-2025",
       "unitsSold": null,
@@ -5932,11 +6067,11 @@ window.__PROJECTS__ = [
       "currentPrice": null,
       "completionDate": "2032-10-31",
       "configurations": "3 BHK",
-      "projectAddress": "SECTOR 66 GURUGRAM",
+      "projectAddress": "A-302 Gokul Apartment Plot No 5B Sector-11 Dwarka Sector-6 South West Delhi",
       "unitsAvailable": null,
       "projectSizeText": "3 Buildings - 504 units",
       "reraProjectName": "BPTP DOWNTOWN-66",
-      "totalLicensedLand": "14.518 Acre",
+      "totalLicensedLand": "14.518 (Acre)",
       "reraRegistrationNo": "RERA-GRG-2009-2025"
     },
     "builderIntelligence": {
@@ -5974,7 +6109,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -5991,7 +6126,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2560
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -6080,7 +6215,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 76,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -6103,7 +6238,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 76,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Large township developer; significant delays and complaint history. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: BPTP LIMITED, BPTP LTD.",
+        "notes": "Large township developer; significant delays and complaint history. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: BPTP LIMITED, BPTP LTD.",
         "listed": false,
         "ticker": null,
         "display_name": "BPTP",
@@ -6138,6 +6273,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 0,
+      "cumulativeSold": null,
+      "cumulativeAbsorptionPct": "0.00%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -6285,7 +6429,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 76,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -6308,7 +6452,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 76,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Large township developer; significant delays and complaint history. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: BPTP LIMITED, BPTP LTD.",
+        "notes": "Large township developer; significant delays and complaint history. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: BPTP LIMITED, BPTP LTD.",
         "listed": false,
         "ticker": null,
         "display_name": "BPTP",
@@ -6359,11 +6503,11 @@ window.__PROJECTS__ = [
     "priceCr": 7.2,
     "sqft": 1902,
     "priceSqft": 25000,
-    "units": 0,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 565,
+    "launched": 565,
+    "sold": 487,
+    "absorption": "86.19%",
+    "inventory": "78 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2023/01/10/Project-Photo-37-Bellavista-Gurgaon-5133251_345_1366.jpg",
     "latitude": 28.4249474903361,
@@ -6472,7 +6616,11 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 10
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 565,
+      "unitsSold": 487,
+      "unitsAvailable": 78
+    },
     "builderIntelligence": {
       "builderCode": "DEV-CP",
       "builderName": "Central Park",
@@ -6508,7 +6656,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -6579,7 +6727,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 76,
           "delivery_progress_score": 97
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -6602,7 +6750,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 76,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Old Gurgaon developer with multiple townships; complaint ratio elevated. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: CENTRAL PARK FLOWER VALLEY",
+        "notes": "Old Gurgaon developer with multiple townships; complaint ratio elevated. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: CENTRAL PARK FLOWER VALLEY",
         "listed": false,
         "ticker": null,
         "display_name": "Central Park",
@@ -6637,6 +6785,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 14,
+      "cumulativeSold": 487,
+      "cumulativeAbsorptionPct": "86.19%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -6740,7 +6897,7 @@ window.__PROJECTS__ = [
     "builderIntelligence": null,
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -6757,7 +6914,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 3911
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -6847,7 +7004,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 76,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -6870,7 +7027,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 76,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Old Gurgaon developer with multiple townships; complaint ratio elevated. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: CENTRAL PARK FLOWER VALLEY",
+        "notes": "Old Gurgaon developer with multiple townships; complaint ratio elevated. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: CENTRAL PARK FLOWER VALLEY",
         "listed": false,
         "ticker": null,
         "display_name": "Central Park",
@@ -7070,7 +7227,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Unit",
@@ -7153,7 +7310,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 76,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -7176,7 +7333,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 76,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Old Gurgaon developer with multiple townships; complaint ratio elevated. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: CENTRAL PARK FLOWER VALLEY",
+        "notes": "Old Gurgaon developer with multiple townships; complaint ratio elevated. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: CENTRAL PARK FLOWER VALLEY",
         "listed": false,
         "ticker": null,
         "display_name": "Central Park",
@@ -7227,11 +7384,11 @@ window.__PROJECTS__ = [
     "priceCr": 2.0,
     "sqft": 1202,
     "priceSqft": 11000,
-    "units": 0,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 565,
+    "launched": 565,
+    "sold": 487,
+    "absorption": "86.19%",
+    "inventory": "78 unsold units",
     "bestFor": "End Use",
     "image": "https://img.staticmb.com/mbimages/project/2023/01/10/Project-Photo-37-Bellavista-Gurgaon-5133251_345_1366.jpg",
     "latitude": 28.4249474903361,
@@ -7340,7 +7497,11 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 10
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 565,
+      "unitsSold": 487,
+      "unitsAvailable": 78
+    },
     "builderIntelligence": {
       "builderCode": "DEV-CP",
       "builderName": "Central Park",
@@ -7376,7 +7537,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area, estimated from price ÷ ₹-per-sqft as MB per-unit area was unavailable. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area, estimated from price \u00f7 \u20b9-per-sqft as MB per-unit area was unavailable. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "estimated",
         "computed_at": "2026-06-12",
         "super_source": "price_derived",
@@ -7393,7 +7554,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 1818
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -7464,7 +7625,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 76,
           "delivery_progress_score": 97
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -7487,7 +7648,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 76,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Old Gurgaon developer with multiple townships; complaint ratio elevated. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: CENTRAL PARK FLOWER VALLEY",
+        "notes": "Old Gurgaon developer with multiple townships; complaint ratio elevated. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: CENTRAL PARK FLOWER VALLEY",
         "listed": false,
         "ticker": null,
         "display_name": "Central Park",
@@ -7522,6 +7683,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 14,
+      "cumulativeSold": 487,
+      "cumulativeAbsorptionPct": "86.19%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -7538,10 +7708,10 @@ window.__PROJECTS__ = [
     "priceCr": 4.68,
     "sqft": null,
     "priceSqft": 8951,
-    "units": 90,
-    "launched": null,
+    "units": 25,
+    "launched": 25,
     "sold": null,
-    "absorption": "Data pending",
+    "absorption": "0.00%",
     "inventory": "Data pending",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2018/06/14/Project-Photo-1-Flower-Valley-Gurgaon-5116257_345_1366.jpg",
@@ -7621,7 +7791,9 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 30
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 25
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "micromarket": {
@@ -7669,7 +7841,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 76,
           "delivery_progress_score": 62
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -7692,7 +7864,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 76,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Old Gurgaon developer with multiple townships; complaint ratio elevated. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: CENTRAL PARK FLOWER VALLEY",
+        "notes": "Old Gurgaon developer with multiple townships; complaint ratio elevated. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: CENTRAL PARK FLOWER VALLEY",
         "listed": false,
         "ticker": null,
         "display_name": "Central Park",
@@ -7727,6 +7899,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 0,
+      "cumulativeSold": null,
+      "cumulativeAbsorptionPct": "0.00%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -7857,8 +8038,8 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "1027 - 5559 sq.ft.",
-      "landArea": "2.606 Acre",
+      "sizes": "48x48",
+      "landArea": "2.606 (Acre)",
       "sourceUrl": "https://reratracker.com/delphine-central-park-estates-phase-iii-in-gurugram-by-st-nicholas-estate-development-pvt-ltd-rtid5235",
       "startDate": "16-09-2025",
       "unitsSold": null,
@@ -7870,11 +8051,11 @@ window.__PROJECTS__ = [
       "currentPrice": 28000,
       "completionDate": "2032-11-30",
       "configurations": "4 BHKStudios1 BHK3 BHK",
-      "projectAddress": "SECTOR-104, GURUGRAM",
+      "projectAddress": "House No. 9 Green Avenue Vasant Kunj Delhi -110070",
       "unitsAvailable": null,
       "projectSizeText": "6 Buildings - 892 units",
-      "reraProjectName": "DELPHINE CENTRAL PARK ESTATES PHASE III",
-      "totalLicensedLand": "7.8507 Acre",
+      "reraProjectName": "Central Park Delphine Phase 3 (Tower B, C, D)",
+      "totalLicensedLand": "7.8507 (Acre)",
       "reraRegistrationNo": "RERA-GRG-2065-2025"
     },
     "builderIntelligence": {
@@ -7912,7 +8093,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Unit",
@@ -7995,7 +8176,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 76,
           "delivery_progress_score": 34
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -8018,7 +8199,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 76,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Old Gurgaon developer with multiple townships; complaint ratio elevated. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: CENTRAL PARK FLOWER VALLEY",
+        "notes": "Old Gurgaon developer with multiple townships; complaint ratio elevated. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: CENTRAL PARK FLOWER VALLEY",
         "listed": false,
         "ticker": null,
         "display_name": "Central Park",
@@ -8069,11 +8250,11 @@ window.__PROJECTS__ = [
     "priceCr": 3.76,
     "sqft": null,
     "priceSqft": 15500,
-    "units": 284,
-    "launched": null,
-    "sold": null,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 360,
+    "launched": 360,
+    "sold": 173,
+    "absorption": "48.06%",
+    "inventory": "187 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2023/04/27/Project-Photo-6-Central-Park-The-Orchard-Gurgaon-5404383_345_1366.jpg",
     "latitude": 28.4233109269605,
@@ -8152,11 +8333,15 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 9
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 360,
+      "unitsSold": 173,
+      "unitsAvailable": 187
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -8173,7 +8358,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2426
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -8270,7 +8455,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 76,
           "delivery_progress_score": 97
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -8293,7 +8478,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 76,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Old Gurgaon developer with multiple townships; complaint ratio elevated. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: CENTRAL PARK FLOWER VALLEY",
+        "notes": "Old Gurgaon developer with multiple townships; complaint ratio elevated. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: CENTRAL PARK FLOWER VALLEY",
         "listed": false,
         "ticker": null,
         "display_name": "Central Park",
@@ -8328,6 +8513,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 2,
+      "cumulativeSold": 173,
+      "cumulativeAbsorptionPct": "48.06%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -8344,11 +8538,11 @@ window.__PROJECTS__ = [
     "priceCr": 2.19,
     "sqft": null,
     "priceSqft": 15487,
-    "units": 353,
-    "launched": null,
-    "sold": null,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 391,
+    "launched": 391,
+    "sold": 293,
+    "absorption": "74.94%",
+    "inventory": "98 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2026/05/12/Project-Photo-4-Central-Park-The-Selene-Tower-Gurgaon-5433919_410_1440.jpg",
     "latitude": 28.4150770990866,
@@ -8427,11 +8621,15 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 13
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 391,
+      "unitsSold": 293,
+      "unitsAvailable": 98
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -8511,7 +8709,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 76,
           "delivery_progress_score": 62
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -8534,7 +8732,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 76,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Old Gurgaon developer with multiple townships; complaint ratio elevated. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: CENTRAL PARK FLOWER VALLEY",
+        "notes": "Old Gurgaon developer with multiple townships; complaint ratio elevated. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: CENTRAL PARK FLOWER VALLEY",
         "listed": false,
         "ticker": null,
         "display_name": "Central Park",
@@ -8569,6 +8767,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 14,
+      "cumulativeSold": 293,
+      "cumulativeAbsorptionPct": "74.94%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -8585,11 +8792,11 @@ window.__PROJECTS__ = [
     "priceCr": 3.2,
     "sqft": 1349,
     "priceSqft": 15900,
-    "units": 182,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 268,
+    "launched": 268,
+    "sold": 268,
+    "absorption": "100.00%",
+    "inventory": "0 unsold units",
     "bestFor": "End Use",
     "image": "https://img.staticmb.com/mbimages/project/2025/05/01/Project-Photo-1-Conscient-Elaira-Residences-Phase-1-Gurgaon-5431123_410_1440.jpg",
     "latitude": 28.3666376,
@@ -8698,7 +8905,11 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 23
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 268,
+      "unitsSold": 268,
+      "unitsAvailable": 0
+    },
     "builderIntelligence": {
       "builderCode": "DEV-CON",
       "builderName": "Conscient Infrastructure",
@@ -8734,7 +8945,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area, estimated from price ÷ ₹-per-sqft as MB per-unit area was unavailable. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area, estimated from price \u00f7 \u20b9-per-sqft as MB per-unit area was unavailable. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "estimated",
         "computed_at": "2026-06-12",
         "super_source": "price_derived",
@@ -8746,7 +8957,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2013
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -8878,7 +9089,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 71,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -8901,7 +9112,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 71,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "SPR and Golf Course Ext. focus; mixed delivery; mid-size Gurgaon developer. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: CONSCIENT INFRASTRUCTURE PRIVATE LIMITED, CONSCIENT INFRASTRUCTURE PVT LTD",
+        "notes": "SPR and Golf Course Ext. focus; mixed delivery; mid-size Gurgaon developer. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: CONSCIENT INFRASTRUCTURE PRIVATE LIMITED, CONSCIENT INFRASTRUCTURE PVT LTD",
         "listed": false,
         "ticker": null,
         "display_name": "Conscient",
@@ -8936,6 +9147,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 3,
+      "cumulativeSold": 268,
+      "cumulativeAbsorptionPct": "100.00%",
+      "cappedAtTotalUnits": true,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -8952,11 +9172,11 @@ window.__PROJECTS__ = [
     "priceCr": 3.01,
     "sqft": null,
     "priceSqft": 15000,
-    "units": 456,
-    "launched": null,
-    "sold": null,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 448,
+    "launched": 448,
+    "sold": 249,
+    "absorption": "55.58%",
+    "inventory": "199 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2024/06/19/Project-Photo-1-PARQ-Gurgaon-5420789_410_1440.jpg",
     "latitude": 28.3666376,
@@ -9035,11 +9255,15 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 23
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 448,
+      "unitsSold": 249,
+      "unitsAvailable": 199
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -9056,7 +9280,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2007
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -9238,7 +9462,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 71,
           "delivery_progress_score": 62
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -9261,7 +9485,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 71,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "SPR and Golf Course Ext. focus; mixed delivery; mid-size Gurgaon developer. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: CONSCIENT INFRASTRUCTURE PRIVATE LIMITED, CONSCIENT INFRASTRUCTURE PVT LTD",
+        "notes": "SPR and Golf Course Ext. focus; mixed delivery; mid-size Gurgaon developer. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: CONSCIENT INFRASTRUCTURE PRIVATE LIMITED, CONSCIENT INFRASTRUCTURE PVT LTD",
         "listed": false,
         "ticker": null,
         "display_name": "Conscient",
@@ -9296,6 +9520,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 3,
+      "cumulativeSold": 249,
+      "cumulativeAbsorptionPct": "55.58%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -9312,11 +9545,11 @@ window.__PROJECTS__ = [
     "priceCr": 10.11,
     "sqft": null,
     "priceSqft": null,
-    "units": 96,
-    "launched": null,
-    "sold": null,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 100,
+    "launched": 100,
+    "sold": 26,
+    "absorption": "26.00%",
+    "inventory": "74 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2025/07/07/Project-Photo-3-Dalcore-The-Falcon-Gurgaon-5432905_410_1440.jpg",
     "latitude": 28.4406745,
@@ -9386,11 +9619,15 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 8
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 100,
+      "unitsSold": 26,
+      "unitsAvailable": 74
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -9498,7 +9735,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 58,
           "delivery_progress_score": 38
         },
-        "formula": "0.3571·location_score + 0.3571·developer_risk_score + 0.2857·delivery_progress_score",
+        "formula": "0.3571\u00b7location_score + 0.3571\u00b7developer_risk_score + 0.2857\u00b7delivery_progress_score",
         "missing": [
           "value_score"
         ],
@@ -9555,6 +9792,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 4,
+      "cumulativeSold": 26,
+      "cumulativeAbsorptionPct": "26.00%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -9571,11 +9817,11 @@ window.__PROJECTS__ = [
     "priceCr": 7.5,
     "sqft": 2202,
     "priceSqft": 19500,
-    "units": 1299,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 1169,
+    "launched": 1169,
+    "sold": 75,
+    "absorption": "6.42%",
+    "inventory": "1094 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2025/06/10/Project-Photo-3-DLF-Privana-North-Gurgaon-5432847_549_560.jpg",
     "latitude": 28.3931178,
@@ -9685,12 +9931,12 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "3977 - 7714 sq.ft.",
-      "landArea": "17.701 Acre",
+      "sizes": "48x48",
+      "landArea": "17.701 (Acre)",
       "sourceUrl": "https://reratracker.com/dlf-privana-north-in-gurugram-by-dlf-limited-rtid5131",
-      "startDate": "08-05-2025",
-      "unitsSold": null,
-      "totalUnits": 1164,
+      "startDate": "2025-05-10",
+      "unitsSold": 75,
+      "totalUnits": 1169,
       "launchPrice": 23500,
       "projectType": "NEW",
       "totalFloors": 50,
@@ -9698,11 +9944,11 @@ window.__PROJECTS__ = [
       "currentPrice": 24500,
       "completionDate": "2034-09-30",
       "configurations": "4 BHKPenthouse Singlex",
-      "projectAddress": "SECTOR 76/77",
-      "unitsAvailable": null,
+      "projectAddress": "Apartment No. 511B The Magnolias DLF Golf links Road DLF 5 Galleria DLF IV Gurgaon 122000",
+      "unitsAvailable": 1094,
       "projectSizeText": "6 Buildings - 1164 units",
       "reraProjectName": "DLF PRIVANA NORTH",
-      "totalLicensedLand": "116.29625 Acre",
+      "totalLicensedLand": "116.29625 (Acre)",
       "reraRegistrationNo": "RERA-GRG-1781-2024"
     },
     "builderIntelligence": {
@@ -9721,10 +9967,10 @@ window.__PROJECTS__ = [
         "revenue": "3,984 Cr",
         "profit": "3,748 Cr",
         "promoterHolding": "74.1%",
-        "currentPrice": "₹ 587",
-        "highLow": "₹ 888",
+        "currentPrice": "\u20b9 587",
+        "highLow": "\u20b9 888",
         "stockPE": "40.7",
-        "bookValue": "₹ 128",
+        "bookValue": "\u20b9 128",
         "dividendYield": "1.02",
         "roce": "13.7",
         "roe": "11.7"
@@ -9771,7 +10017,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -9788,7 +10034,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 3846
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -9864,7 +10110,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 92,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -9887,7 +10133,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 92,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "India's largest listed developer. Strong balance sheet post-rental REIT listing. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: DLF BUILDERS & DEVELOPERS PRIVATE LIMITED, DLF HOMES PANCHKULA PRIVATE LIMITED, DLF LIMITED, DLF LUXURY HOMES LIMITED, DLF PROJECTS LIMITED, DLF REAL ESTATE BUILDERS LIMITED",
+        "notes": "India's largest listed developer. Strong balance sheet post-rental REIT listing. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: DLF BUILDERS & DEVELOPERS PRIVATE LIMITED, DLF HOMES PANCHKULA PRIVATE LIMITED, DLF LIMITED, DLF LUXURY HOMES LIMITED, DLF PROJECTS LIMITED, DLF REAL ESTATE BUILDERS LIMITED",
         "listed": true,
         "ticker": "DLF",
         "display_name": "DLF",
@@ -9922,6 +10168,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 10,
+      "cumulativeSold": 75,
+      "cumulativeAbsorptionPct": "6.42%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -9939,10 +10194,10 @@ window.__PROJECTS__ = [
     "sqft": 2738,
     "priceSqft": 20400,
     "units": 1113,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "launched": 1113,
+    "sold": 116,
+    "absorption": "10.42%",
+    "inventory": "997 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2024/12/18/Project-Photo-1-DLF-Privana-South-Gurgaon-5425481_410_1440.jpg",
     "latitude": 28.3824895,
@@ -10035,7 +10290,7 @@ window.__PROJECTS__ = [
           "distance_km": 2.68
         },
         "hospital": {
-          "name": "Queen’s Multispeciality Hospital",
+          "name": "Queen\u2019s Multispeciality Hospital",
           "distance_km": 0.74
         }
       },
@@ -10052,11 +10307,11 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "3577 - 5000 sq.ft.",
-      "landArea": "25.148 Acre",
+      "sizes": "48x48",
+      "landArea": "25.148 (Acre)",
       "sourceUrl": "https://reratracker.com/dlf-privana-south-in-gurugram-by-dlf-limited-rtid3616",
-      "startDate": "17-11-2023",
-      "unitsSold": null,
+      "startDate": "2023-12-25",
+      "unitsSold": 116,
       "totalUnits": 1113,
       "launchPrice": 18500,
       "projectType": "NEW",
@@ -10065,11 +10320,11 @@ window.__PROJECTS__ = [
       "currentPrice": 20000,
       "completionDate": "2031-06-30",
       "configurations": "4 BHKPenthouse Singlex",
-      "projectAddress": "SECTOR 76/77",
-      "unitsAvailable": null,
+      "projectAddress": "511B The Magnolias DLF Phase 5Gurugram 122009",
+      "unitsAvailable": 997,
       "projectSizeText": "7 Buildings - 1113 units",
       "reraProjectName": "DLF PRIVANA SOUTH",
-      "totalLicensedLand": "116.296 Acre",
+      "totalLicensedLand": "116.296 (Acre)",
       "reraRegistrationNo": "RERA-GRG-1406-2023"
     },
     "builderIntelligence": {
@@ -10088,10 +10343,10 @@ window.__PROJECTS__ = [
         "revenue": "3,984 Cr",
         "profit": "3,748 Cr",
         "promoterHolding": "74.1%",
-        "currentPrice": "₹ 587",
-        "highLow": "₹ 888",
+        "currentPrice": "\u20b9 587",
+        "highLow": "\u20b9 888",
         "stockPE": "40.7",
-        "bookValue": "₹ 128",
+        "bookValue": "\u20b9 128",
         "dividendYield": "1.02",
         "roce": "13.7",
         "roe": "11.7"
@@ -10138,7 +10393,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -10155,7 +10410,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 3382
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -10231,7 +10486,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 92,
           "delivery_progress_score": 49
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -10254,7 +10509,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 92,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "India's largest listed developer. Strong balance sheet post-rental REIT listing. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: DLF BUILDERS & DEVELOPERS PRIVATE LIMITED, DLF HOMES PANCHKULA PRIVATE LIMITED, DLF LIMITED, DLF LUXURY HOMES LIMITED, DLF PROJECTS LIMITED, DLF REAL ESTATE BUILDERS LIMITED",
+        "notes": "India's largest listed developer. Strong balance sheet post-rental REIT listing. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: DLF BUILDERS & DEVELOPERS PRIVATE LIMITED, DLF HOMES PANCHKULA PRIVATE LIMITED, DLF LIMITED, DLF LUXURY HOMES LIMITED, DLF PROJECTS LIMITED, DLF REAL ESTATE BUILDERS LIMITED",
         "listed": true,
         "ticker": "DLF",
         "display_name": "DLF",
@@ -10289,6 +10544,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 0,
+      "cumulativeSold": 116,
+      "cumulativeAbsorptionPct": "10.42%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -10305,11 +10569,11 @@ window.__PROJECTS__ = [
     "priceCr": 7.5,
     "sqft": 1790,
     "priceSqft": 17568,
-    "units": 785,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 795,
+    "launched": 795,
+    "sold": 24,
+    "absorption": "3.02%",
+    "inventory": "771 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2024/07/15/Project-Photo-62-DLF-Privana-West-Gurgaon-5073561_410_1440.jpg",
     "latitude": 28.3931178,
@@ -10419,11 +10683,11 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "3977 - 3977 sq.ft.",
-      "landArea": "12.572 Acre",
+      "sizes": "48x48",
+      "landArea": "12.572 (Acre)",
       "sourceUrl": "https://reratracker.com/dlf-privana-west-in-gurugram-by-dlf-limited-rtid3617",
-      "startDate": "29-02-2024",
-      "unitsSold": null,
+      "startDate": "2024-04-30",
+      "unitsSold": 24,
       "totalUnits": 795,
       "launchPrice": 19000,
       "projectType": "NEW",
@@ -10432,11 +10696,11 @@ window.__PROJECTS__ = [
       "currentPrice": 21000,
       "completionDate": "2031-12-31",
       "configurations": "4 BHK",
-      "projectAddress": "SECTOR 76/77",
-      "unitsAvailable": null,
+      "projectAddress": "Apartment No. 511B The Magnolias DLF Golflinks Road DLF 5 Galleria DLF-IV Gurgaon-122000",
+      "unitsAvailable": 771,
       "projectSizeText": "5 Buildings - 795 units",
       "reraProjectName": "DLF PRIVANA WEST",
-      "totalLicensedLand": "116.29625 Acre",
+      "totalLicensedLand": "116.29625 (Acre)",
       "reraRegistrationNo": "RERA-GRG-1540-2024"
     },
     "builderIntelligence": {
@@ -10455,10 +10719,10 @@ window.__PROJECTS__ = [
         "revenue": "3,984 Cr",
         "profit": "3,748 Cr",
         "promoterHolding": "74.1%",
-        "currentPrice": "₹ 587",
-        "highLow": "₹ 888",
+        "currentPrice": "\u20b9 587",
+        "highLow": "\u20b9 888",
         "stockPE": "40.7",
-        "bookValue": "₹ 128",
+        "bookValue": "\u20b9 128",
         "dividendYield": "1.02",
         "roce": "13.7",
         "roe": "11.7"
@@ -10505,7 +10769,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -10522,7 +10786,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 4269
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -10598,7 +10862,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 92,
           "delivery_progress_score": 53
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -10621,7 +10885,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 92,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "India's largest listed developer. Strong balance sheet post-rental REIT listing. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: DLF BUILDERS & DEVELOPERS PRIVATE LIMITED, DLF HOMES PANCHKULA PRIVATE LIMITED, DLF LIMITED, DLF LUXURY HOMES LIMITED, DLF PROJECTS LIMITED, DLF REAL ESTATE BUILDERS LIMITED",
+        "notes": "India's largest listed developer. Strong balance sheet post-rental REIT listing. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: DLF BUILDERS & DEVELOPERS PRIVATE LIMITED, DLF HOMES PANCHKULA PRIVATE LIMITED, DLF LIMITED, DLF LUXURY HOMES LIMITED, DLF PROJECTS LIMITED, DLF REAL ESTATE BUILDERS LIMITED",
         "listed": true,
         "ticker": "DLF",
         "display_name": "DLF",
@@ -10656,6 +10920,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 0,
+      "cumulativeSold": 24,
+      "cumulativeAbsorptionPct": "3.02%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -10786,8 +11059,8 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "3956 - 3956 sq.ft.",
-      "landArea": "25.087 Acre",
+      "sizes": "48x48",
+      "landArea": "25.087 (Acre)",
       "sourceUrl": "https://reratracker.com/dlf-the-arbour-in-gurugram-by-dlf-home-developers-limited-rtid4242",
       "startDate": "29-08-2022",
       "unitsSold": null,
@@ -10799,11 +11072,11 @@ window.__PROJECTS__ = [
       "currentPrice": 30000,
       "completionDate": "2030-03-31",
       "configurations": "4 BHK",
-      "projectAddress": "SECTOR 63, GURUGRAM, HARYANA-122102",
+      "projectAddress": "1220 The Magnolias DLF 5 Gurugram 122001",
       "unitsAvailable": null,
       "projectSizeText": "5 Buildings - 1137 units",
       "reraProjectName": "DLF THE ARBOUR",
-      "totalLicensedLand": "25.087 Acre",
+      "totalLicensedLand": "25.087 (Acre)",
       "reraRegistrationNo": "RERA-GRG-1138-2022"
     },
     "builderIntelligence": {
@@ -10822,10 +11095,10 @@ window.__PROJECTS__ = [
         "revenue": "3,984 Cr",
         "profit": "3,748 Cr",
         "promoterHolding": "74.1%",
-        "currentPrice": "₹ 587",
-        "highLow": "₹ 888",
+        "currentPrice": "\u20b9 587",
+        "highLow": "\u20b9 888",
         "stockPE": "40.7",
-        "bookValue": "₹ 128",
+        "bookValue": "\u20b9 128",
         "dividendYield": "1.02",
         "roce": "13.7",
         "roe": "11.7"
@@ -10872,7 +11145,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -10889,7 +11162,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 3628
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -10979,7 +11252,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 92,
           "delivery_progress_score": 49
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -11002,7 +11275,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 92,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "India's largest listed developer. Strong balance sheet post-rental REIT listing. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: DLF BUILDERS & DEVELOPERS PRIVATE LIMITED, DLF HOMES PANCHKULA PRIVATE LIMITED, DLF LIMITED, DLF LUXURY HOMES LIMITED, DLF PROJECTS LIMITED, DLF REAL ESTATE BUILDERS LIMITED",
+        "notes": "India's largest listed developer. Strong balance sheet post-rental REIT listing. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: DLF BUILDERS & DEVELOPERS PRIVATE LIMITED, DLF HOMES PANCHKULA PRIVATE LIMITED, DLF LIMITED, DLF LUXURY HOMES LIMITED, DLF PROJECTS LIMITED, DLF REAL ESTATE BUILDERS LIMITED",
         "listed": true,
         "ticker": "DLF",
         "display_name": "DLF",
@@ -11053,11 +11326,11 @@ window.__PROJECTS__ = [
     "priceCr": null,
     "sqft": null,
     "priceSqft": null,
-    "units": 420,
-    "launched": null,
-    "sold": null,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 421,
+    "launched": 421,
+    "sold": 84,
+    "absorption": "19.95%",
+    "inventory": "337 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2025/08/20/Project-Photo-4-DLF-The-Dahlias-Gurgaon-5426135_375_591.jpg",
     "latitude": 28.4404335,
@@ -11127,11 +11400,15 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 12
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 421,
+      "unitsSold": 84,
+      "unitsAvailable": 337
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -11376,7 +11653,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 92,
           "delivery_progress_score": 38
         },
-        "formula": "0.3571·location_score + 0.3571·developer_risk_score + 0.2857·delivery_progress_score",
+        "formula": "0.3571\u00b7location_score + 0.3571\u00b7developer_risk_score + 0.2857\u00b7delivery_progress_score",
         "missing": [
           "value_score"
         ],
@@ -11398,7 +11675,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 92,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "India's largest listed developer. Strong balance sheet post-rental REIT listing. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: DLF BUILDERS & DEVELOPERS PRIVATE LIMITED, DLF HOMES PANCHKULA PRIVATE LIMITED, DLF LIMITED, DLF LUXURY HOMES LIMITED, DLF PROJECTS LIMITED, DLF REAL ESTATE BUILDERS LIMITED",
+        "notes": "India's largest listed developer. Strong balance sheet post-rental REIT listing. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: DLF BUILDERS & DEVELOPERS PRIVATE LIMITED, DLF HOMES PANCHKULA PRIVATE LIMITED, DLF LIMITED, DLF LUXURY HOMES LIMITED, DLF PROJECTS LIMITED, DLF REAL ESTATE BUILDERS LIMITED",
         "listed": true,
         "ticker": "DLF",
         "display_name": "DLF",
@@ -11433,6 +11710,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 32,
+      "cumulativeSold": 84,
+      "cumulativeAbsorptionPct": "19.95%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -11450,10 +11736,10 @@ window.__PROJECTS__ = [
     "sqft": null,
     "priceSqft": 18333,
     "units": 292,
-    "launched": null,
-    "sold": null,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "launched": 292,
+    "sold": 292,
+    "absorption": "100.00%",
+    "inventory": "0 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2023/02/27/Project-Photo-6-DLF-The-Grove-Gurgaon-5336443_345_1366.jpg",
     "latitude": 28.4404335,
@@ -11532,11 +11818,15 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 12
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 292,
+      "unitsSold": 292,
+      "unitsAvailable": 0
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "moderate",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -11553,7 +11843,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 4091
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -11825,7 +12115,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 92,
           "delivery_progress_score": 97
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -11848,7 +12138,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 92,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "India's largest listed developer. Strong balance sheet post-rental REIT listing. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: DLF BUILDERS & DEVELOPERS PRIVATE LIMITED, DLF HOMES PANCHKULA PRIVATE LIMITED, DLF LIMITED, DLF LUXURY HOMES LIMITED, DLF PROJECTS LIMITED, DLF REAL ESTATE BUILDERS LIMITED",
+        "notes": "India's largest listed developer. Strong balance sheet post-rental REIT listing. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: DLF BUILDERS & DEVELOPERS PRIVATE LIMITED, DLF HOMES PANCHKULA PRIVATE LIMITED, DLF LIMITED, DLF LUXURY HOMES LIMITED, DLF PROJECTS LIMITED, DLF REAL ESTATE BUILDERS LIMITED",
         "listed": true,
         "ticker": "DLF",
         "display_name": "DLF",
@@ -11883,6 +12173,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2025-03-31",
+      "soldInQuarter": 2,
+      "cumulativeSold": 292,
+      "cumulativeAbsorptionPct": "100.00%",
+      "cappedAtTotalUnits": true,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -12013,8 +12312,8 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "4223 - 5891 sq.ft.",
-      "landArea": "4.8270 Acre",
+      "sizes": "48x48",
+      "landArea": "4.8270 (Acre)",
       "sourceUrl": "https://reratracker.com/elan-the-emperor-in-gurugram-by-elan-avenue-limited-formerly-known-as-airmid-developers-limited-rtid3628",
       "startDate": "11-12-2024",
       "unitsSold": null,
@@ -12026,11 +12325,11 @@ window.__PROJECTS__ = [
       "currentPrice": 24000,
       "completionDate": "2032-09-30",
       "configurations": "4 BHK5 BHK",
-      "projectAddress": "SITUATED IN SECTOR 106 IN THE REVENUE ESTATE OF VILLAGE PAWALA KHUSRUPUR TEHSIL KADIPUR DISTRICT GURUGRAM, HARYANA",
+      "projectAddress": "1901A The Magnolias Golf Course Road Sector-42 Gurugram Haryana 122009",
       "unitsAvailable": null,
       "projectSizeText": "5 Buildings - 580 units",
       "reraProjectName": "ELAN THE EMPEROR",
-      "totalLicensedLand": "24.10 Acre",
+      "totalLicensedLand": "24.10 (Acre)",
       "reraRegistrationNo": "RERA-GRG-1774-2024"
     },
     "builderIntelligence": {
@@ -12068,7 +12367,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area, estimated from price ÷ ₹-per-sqft as MB per-unit area was unavailable. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area, estimated from price \u00f7 \u20b9-per-sqft as MB per-unit area was unavailable. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "estimated",
         "computed_at": "2026-06-12",
         "super_source": "price_derived",
@@ -12085,7 +12384,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 4486
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -12224,7 +12523,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 71,
           "delivery_progress_score": 34
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -12247,7 +12546,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 71,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Mid-size Gurgaon developer; mixed delivery; elevated complaints. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: ELAN BUILDCON PVT. LTD, ELAN BUILDCON PVT. LTD., ELAN LIMITED",
+        "notes": "Mid-size Gurgaon developer; mixed delivery; elevated complaints. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: ELAN BUILDCON PVT. LTD, ELAN BUILDCON PVT. LTD., ELAN LIMITED",
         "listed": false,
         "ticker": null,
         "display_name": "Elan Group",
@@ -12298,11 +12597,11 @@ window.__PROJECTS__ = [
     "priceCr": 1.48,
     "sqft": null,
     "priceSqft": 32000,
-    "units": 835,
-    "launched": null,
-    "sold": null,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 885,
+    "launched": 885,
+    "sold": 533,
+    "absorption": "60.23%",
+    "inventory": "352 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2023/06/14/Project-Photo-1-Elan-The-Mark-Gurgaon-5411031_345_1366.jpg",
     "latitude": 28.4998859,
@@ -12381,11 +12680,15 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 16
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 885,
+      "unitsSold": 533,
+      "unitsAvailable": 352
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -12402,7 +12705,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 462
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -12473,7 +12776,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 71,
           "delivery_progress_score": 74
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -12496,7 +12799,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 71,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Mid-size Gurgaon developer; mixed delivery; elevated complaints. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: ELAN BUILDCON PVT. LTD, ELAN BUILDCON PVT. LTD., ELAN LIMITED",
+        "notes": "Mid-size Gurgaon developer; mixed delivery; elevated complaints. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: ELAN BUILDCON PVT. LTD, ELAN BUILDCON PVT. LTD., ELAN LIMITED",
         "listed": false,
         "ticker": null,
         "display_name": "Elan Group",
@@ -12531,6 +12834,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 0,
+      "cumulativeSold": 533,
+      "cumulativeAbsorptionPct": "60.23%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -12678,7 +12990,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 71,
           "delivery_progress_score": 97
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -12701,7 +13013,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 71,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Mid-size Gurgaon developer; mixed delivery; elevated complaints. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: ELAN BUILDCON PVT. LTD, ELAN BUILDCON PVT. LTD., ELAN LIMITED",
+        "notes": "Mid-size Gurgaon developer; mixed delivery; elevated complaints. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: ELAN BUILDCON PVT. LTD, ELAN BUILDCON PVT. LTD., ELAN LIMITED",
         "listed": false,
         "ticker": null,
         "display_name": "Elan Group",
@@ -12752,11 +13064,11 @@ window.__PROJECTS__ = [
     "priceCr": 10.67,
     "sqft": 3627,
     "priceSqft": 24900,
-    "units": 360,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 380,
+    "launched": 380,
+    "sold": 170,
+    "absorption": "44.74%",
+    "inventory": "210 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2025/12/26/Project-Photo-1-The-Statement-Gurgaon-5148805_410_1440.jpg",
     "latitude": 28.4551851,
@@ -12866,12 +13178,12 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "4285 - 7395 sq.ft.",
-      "landArea": "5.875 Acre",
+      "sizes": "48x48",
+      "landArea": "5.875 (Acre)",
       "sourceUrl": "https://reratracker.com/elan-the-statement-in-gurugram-by-elan-enclave-private-limited-rtid5341",
       "startDate": "14-11-2025",
-      "unitsSold": null,
-      "totalUnits": 360,
+      "unitsSold": 170,
+      "totalUnits": 380,
       "launchPrice": 23900,
       "projectType": "NEW",
       "totalFloors": 36,
@@ -12879,11 +13191,11 @@ window.__PROJECTS__ = [
       "currentPrice": 23900,
       "completionDate": "2033-09-30",
       "configurations": "4 BHK",
-      "projectAddress": "SECTOR 49, GURUGRAM",
-      "unitsAvailable": null,
+      "projectAddress": "1901A The Magnolias Golf Course Road Sector-42 Gurugram Haryana 122009",
+      "unitsAvailable": 210,
       "projectSizeText": "5 Buildings - 360 units",
       "reraProjectName": "ELAN THE STATEMENT",
-      "totalLicensedLand": "5.875 Acre",
+      "totalLicensedLand": "5.875 (Acre)",
       "reraRegistrationNo": "RERA-GRG-2069-2025"
     },
     "builderIntelligence": {
@@ -12921,7 +13233,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area, estimated from price ÷ ₹-per-sqft as MB per-unit area was unavailable. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area, estimated from price \u00f7 \u20b9-per-sqft as MB per-unit area was unavailable. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "estimated",
         "computed_at": "2026-06-12",
         "super_source": "price_derived",
@@ -12938,7 +13250,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 4285
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -13105,7 +13417,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 71,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -13128,7 +13440,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 71,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Mid-size Gurgaon developer; mixed delivery; elevated complaints. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: ELAN BUILDCON PVT. LTD, ELAN BUILDCON PVT. LTD., ELAN LIMITED",
+        "notes": "Mid-size Gurgaon developer; mixed delivery; elevated complaints. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: ELAN BUILDCON PVT. LTD, ELAN BUILDCON PVT. LTD., ELAN LIMITED",
         "listed": false,
         "ticker": null,
         "display_name": "Elan Group",
@@ -13163,6 +13475,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 170,
+      "cumulativeSold": 170,
+      "cumulativeAbsorptionPct": "44.74%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -13309,10 +13630,10 @@ window.__PROJECTS__ = [
         "revenue": "136 Cr",
         "profit": "28.3 Cr",
         "promoterHolding": "54.8%",
-        "currentPrice": "₹ 865",
-        "highLow": "₹ 1,061",
+        "currentPrice": "\u20b9 865",
+        "highLow": "\u20b9 1,061",
         "stockPE": "30.1",
-        "bookValue": "₹ 349",
+        "bookValue": "\u20b9 349",
         "dividendYield": "1.06",
         "roce": "10.4",
         "roe": "7.89"
@@ -13397,7 +13718,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 80,
           "delivery_progress_score": 78
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -13420,7 +13741,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 80,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Old Lucknow-based developer; BSE listed; reliable mid-tier brand. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: ELDECO INFRASTRUCTURE AND PROPERTIES LIMITED",
+        "notes": "Old Lucknow-based developer; BSE listed; reliable mid-tier brand. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: ELDECO INFRASTRUCTURE AND PROPERTIES LIMITED",
         "listed": true,
         "ticker": "ELDEHSG",
         "display_name": "Eldeco",
@@ -13471,11 +13792,11 @@ window.__PROJECTS__ = [
     "priceCr": 3.0,
     "sqft": 1452,
     "priceSqft": 14500,
-    "units": 324,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 368,
+    "launched": 368,
+    "sold": 211,
+    "absorption": "57.34%",
+    "inventory": "157 unsold units",
     "bestFor": "End Use",
     "image": "https://img.staticmb.com/mbimages/project/2024/11/20/Project-Photo-4-Eldeco-Fairway-Reserve-Gurgaon-5424517_410_1440.jpg",
     "latitude": 28.3666376,
@@ -13585,12 +13906,12 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "2175 - 3600 sq.ft.",
-      "landArea": "33752.00 sq m",
+      "sizes": "48x48",
+      "landArea": "33752.00 (Sqr/mtrs)",
       "sourceUrl": "https://reratracker.com/eldeco-fairway-reserve-in-gurugram-by-eldeco-infrastructure-and-properties-limited-rtid3634",
-      "startDate": "22-07-2024",
-      "unitsSold": null,
-      "totalUnits": 324,
+      "startDate": "2025-01-01",
+      "unitsSold": 211,
+      "totalUnits": 368,
       "launchPrice": 15500,
       "projectType": "NEW",
       "totalFloors": 25,
@@ -13598,11 +13919,11 @@ window.__PROJECTS__ = [
       "currentPrice": 17000,
       "completionDate": "2029-12-30",
       "configurations": "4 BHK3 BHK",
-      "projectAddress": "SECTOR-80, MANESAR, GURUGRAM",
-      "unitsAvailable": null,
+      "projectAddress": "201-212 Splendor Forum IInd Floor Jasola District Centre New Delhi-110025",
+      "unitsAvailable": 157,
       "projectSizeText": "6 Buildings - 324 units",
       "reraProjectName": "ELDECO FAIRWAY RESERVE",
-      "totalLicensedLand": "33752.00 sq m",
+      "totalLicensedLand": "33752.00 (Sqr/mtrs)",
       "reraRegistrationNo": "RERA-GRG-1680-2024"
     },
     "builderIntelligence": {
@@ -13621,10 +13942,10 @@ window.__PROJECTS__ = [
         "revenue": "136 Cr",
         "profit": "28.3 Cr",
         "promoterHolding": "54.8%",
-        "currentPrice": "₹ 865",
-        "highLow": "₹ 1,061",
+        "currentPrice": "\u20b9 865",
+        "highLow": "\u20b9 1,061",
         "stockPE": "30.1",
-        "bookValue": "₹ 349",
+        "bookValue": "\u20b9 349",
         "dividendYield": "1.06",
         "roce": "10.4",
         "roe": "7.89"
@@ -13665,7 +13986,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -13682,7 +14003,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2069
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -13849,7 +14170,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 80,
           "delivery_progress_score": 74
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -13872,7 +14193,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 80,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Old Lucknow-based developer; BSE listed; reliable mid-tier brand. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: ELDECO INFRASTRUCTURE AND PROPERTIES LIMITED",
+        "notes": "Old Lucknow-based developer; BSE listed; reliable mid-tier brand. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: ELDECO INFRASTRUCTURE AND PROPERTIES LIMITED",
         "listed": true,
         "ticker": "ELDEHSG",
         "display_name": "Eldeco",
@@ -13907,6 +14228,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 2,
+      "cumulativeSold": 211,
+      "cumulativeAbsorptionPct": "57.34%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -14001,7 +14331,7 @@ window.__PROJECTS__ = [
     "builderIntelligence": null,
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -14018,7 +14348,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": null
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -14098,7 +14428,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 80,
           "delivery_progress_score": 38
         },
-        "formula": "0.3571·location_score + 0.3571·developer_risk_score + 0.2857·delivery_progress_score",
+        "formula": "0.3571\u00b7location_score + 0.3571\u00b7developer_risk_score + 0.2857\u00b7delivery_progress_score",
         "missing": [
           "value_score"
         ],
@@ -14120,7 +14450,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 80,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Old Lucknow-based developer; BSE listed; reliable mid-tier brand. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: ELDECO INFRASTRUCTURE AND PROPERTIES LIMITED",
+        "notes": "Old Lucknow-based developer; BSE listed; reliable mid-tier brand. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: ELDECO INFRASTRUCTURE AND PROPERTIES LIMITED",
         "listed": true,
         "ticker": "ELDEHSG",
         "display_name": "Eldeco",
@@ -14171,11 +14501,11 @@ window.__PROJECTS__ = [
     "priceCr": 5.97,
     "sqft": null,
     "priceSqft": 19126,
-    "units": 474,
-    "launched": null,
-    "sold": null,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 240,
+    "launched": 240,
+    "sold": 240,
+    "absorption": "100.00%",
+    "inventory": "0 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2024/06/24/Project-Photo-1-Elevate-Reserve-Gurgaon-5418849_410_1440.jpg",
     "latitude": 28.4084074,
@@ -14254,11 +14584,15 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 13
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 240,
+      "unitsSold": 240,
+      "unitsAvailable": 0
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -14275,7 +14609,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 3121
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -14371,7 +14705,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 71,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -14394,7 +14728,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 71,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "SPR and Golf Course Ext. focus; mixed delivery; mid-size Gurgaon developer. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: CONSCIENT INFRASTRUCTURE PRIVATE LIMITED, CONSCIENT INFRASTRUCTURE PVT LTD",
+        "notes": "SPR and Golf Course Ext. focus; mixed delivery; mid-size Gurgaon developer. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: CONSCIENT INFRASTRUCTURE PRIVATE LIMITED, CONSCIENT INFRASTRUCTURE PVT LTD",
         "listed": false,
         "ticker": null,
         "display_name": "Conscient",
@@ -14429,6 +14763,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 0,
+      "cumulativeSold": 240,
+      "cumulativeAbsorptionPct": "100.00%",
+      "cappedAtTotalUnits": true,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -14446,10 +14789,10 @@ window.__PROJECTS__ = [
     "sqft": null,
     "priceSqft": 18605,
     "units": 522,
-    "launched": null,
-    "sold": null,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "launched": 522,
+    "sold": 56,
+    "absorption": "10.73%",
+    "inventory": "466 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2025/01/09/Project-Photo-1-Emaar-Amaris-Gurgaon-5425933_410_1440.jpg",
     "latitude": 28.4084074,
@@ -14528,11 +14871,15 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 13
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 522,
+      "unitsSold": 56,
+      "unitsAvailable": 466
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -14549,7 +14896,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 1747
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -14702,7 +15049,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 82,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -14725,7 +15072,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 82,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Global brand but India operations are separate; some legacy delayed projects. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: EMAAR INDIA, EMAAR INDIA LIMITED",
+        "notes": "Global brand but India operations are separate; some legacy delayed projects. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: EMAAR INDIA, EMAAR INDIA LIMITED",
         "listed": false,
         "ticker": null,
         "display_name": "Emaar India",
@@ -14760,6 +15107,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 0,
+      "cumulativeSold": 56,
+      "cumulativeAbsorptionPct": "10.73%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -14776,10 +15132,10 @@ window.__PROJECTS__ = [
     "priceCr": 2.99,
     "sqft": 1486,
     "priceSqft": 17000,
-    "units": 997,
-    "launched": 0,
+    "units": 581,
+    "launched": 581,
     "sold": 0,
-    "absorption": "Data pending",
+    "absorption": "0.00%",
     "inventory": "Data pending",
     "bestFor": "End Use",
     "image": "https://img.staticmb.com/mbimages/project/2026/03/23/Project-Photo-20-Emaar-Serenity-Hills-Gurgaon-5438477_410_1440.jpg",
@@ -14889,7 +15245,9 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 23
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 581
+    },
     "builderIntelligence": {
       "builderCode": "DEV-EMA",
       "builderName": "Emaar India Ltd",
@@ -14925,7 +15283,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -14942,7 +15300,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 1759
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -15088,7 +15446,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 82,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -15111,7 +15469,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 82,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Global brand but India operations are separate; some legacy delayed projects. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: EMAAR INDIA, EMAAR INDIA LIMITED",
+        "notes": "Global brand but India operations are separate; some legacy delayed projects. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: EMAAR INDIA, EMAAR INDIA LIMITED",
         "listed": false,
         "ticker": null,
         "display_name": "Emaar India",
@@ -15146,6 +15504,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 0,
+      "cumulativeSold": null,
+      "cumulativeAbsorptionPct": "0.00%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -15162,11 +15529,11 @@ window.__PROJECTS__ = [
     "priceCr": 2.05,
     "sqft": null,
     "priceSqft": 15472,
-    "units": 107,
-    "launched": null,
-    "sold": null,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 176,
+    "launched": 176,
+    "sold": 53,
+    "absorption": "30.11%",
+    "inventory": "123 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2024/11/19/Project-Photo-1-Emaar-The-88-Gurgaon-5424707_410_1440.jpg",
     "latitude": 28.529997639138,
@@ -15245,11 +15612,15 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 16
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 176,
+      "unitsSold": 53,
+      "unitsAvailable": 123
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -15266,7 +15637,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 1325
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -15405,7 +15776,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 82,
           "delivery_progress_score": 62
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -15428,7 +15799,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 82,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Global brand but India operations are separate; some legacy delayed projects. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: EMAAR INDIA, EMAAR INDIA LIMITED",
+        "notes": "Global brand but India operations are separate; some legacy delayed projects. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: EMAAR INDIA, EMAAR INDIA LIMITED",
         "listed": false,
         "ticker": null,
         "display_name": "Emaar India",
@@ -15463,6 +15834,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 0,
+      "cumulativeSold": 53,
+      "cumulativeAbsorptionPct": "30.11%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -15479,11 +15859,11 @@ window.__PROJECTS__ = [
     "priceCr": 3.03,
     "sqft": null,
     "priceSqft": 12023,
-    "units": 809,
-    "launched": null,
-    "sold": null,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 816,
+    "launched": 816,
+    "sold": 83,
+    "absorption": "10.17%",
+    "inventory": "733 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2025/02/20/Project-Photo-1-Emaar-Urban-Ascent-Gurgaon-5428265_410_1440.jpg",
     "latitude": 28.529997639138,
@@ -15562,11 +15942,15 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 16
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 816,
+      "unitsSold": 83,
+      "unitsAvailable": 733
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "moderate",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -15583,7 +15967,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2520
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -15799,7 +16183,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 82,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -15822,7 +16206,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 82,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Global brand but India operations are separate; some legacy delayed projects. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: EMAAR INDIA, EMAAR INDIA LIMITED",
+        "notes": "Global brand but India operations are separate; some legacy delayed projects. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: EMAAR INDIA, EMAAR INDIA LIMITED",
         "listed": false,
         "ticker": null,
         "display_name": "Emaar India",
@@ -15857,6 +16241,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 0,
+      "cumulativeSold": 83,
+      "cumulativeAbsorptionPct": "10.17%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -15873,11 +16266,11 @@ window.__PROJECTS__ = [
     "priceCr": 4.0,
     "sqft": null,
     "priceSqft": 17036,
-    "units": 437,
-    "launched": null,
-    "sold": null,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 848,
+    "launched": 848,
+    "sold": 2,
+    "absorption": "0.24%",
+    "inventory": "846 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2024/02/20/Project-Photo-8-Urban-Oasis-Gurgaon-5414919_345_1366.jpg",
     "latitude": 28.4054141443166,
@@ -15956,11 +16349,15 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 12
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 848,
+      "unitsSold": 2,
+      "unitsAvailable": 846
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area, estimated from price ÷ ₹-per-sqft as MB per-unit area was unavailable. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area, estimated from price \u00f7 \u20b9-per-sqft as MB per-unit area was unavailable. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "estimated",
         "computed_at": "2026-06-12",
         "super_source": "price_derived",
@@ -15977,7 +16374,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2348
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -16137,7 +16534,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 82,
           "delivery_progress_score": 62
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -16160,7 +16557,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 82,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Global brand but India operations are separate; some legacy delayed projects. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: EMAAR INDIA, EMAAR INDIA LIMITED",
+        "notes": "Global brand but India operations are separate; some legacy delayed projects. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: EMAAR INDIA, EMAAR INDIA LIMITED",
         "listed": false,
         "ticker": null,
         "display_name": "Emaar India",
@@ -16195,6 +16592,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 0,
+      "cumulativeSold": 2,
+      "cumulativeAbsorptionPct": "0.24%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -16342,7 +16748,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 56,
           "delivery_progress_score": 88
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -16416,11 +16822,11 @@ window.__PROJECTS__ = [
     "priceCr": 5.2,
     "sqft": 1752,
     "priceSqft": 21000,
-    "units": 176,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 544,
+    "launched": 544,
+    "sold": 130,
+    "absorption": "23.90%",
+    "inventory": "414 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2025/08/18/Project-Photo-4-Experion-The-Trillion-Gurgaon-5426973_410_1440.jpg",
     "latitude": 28.4178339481063,
@@ -16531,11 +16937,11 @@ window.__PROJECTS__ = [
     },
     "reraDetails": {
       "sizes": "0 - 0 sq.ft.",
-      "landArea": "19289.81 m²",
+      "landArea": "19289.81 m\u00b2",
       "sourceUrl": "https://reratracker.com/experion-elements-phase-2-in-gautam-buddha-nagar-by-experion-developers-pvt-ltd-rtid826",
       "startDate": "01-07-2024",
-      "unitsSold": null,
-      "totalUnits": 176,
+      "unitsSold": 130,
+      "totalUnits": 544,
       "launchPrice": 18350,
       "projectType": "",
       "totalFloors": 40,
@@ -16544,7 +16950,7 @@ window.__PROJECTS__ = [
       "completionDate": "04-01-2029",
       "configurations": "3 BHK4 BHK",
       "projectAddress": "",
-      "unitsAvailable": null,
+      "unitsAvailable": 414,
       "projectSizeText": "2 Buildings - 320 units",
       "reraProjectName": "Experion Elements Phase-2",
       "totalLicensedLand": "",
@@ -16585,7 +16991,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area, estimated from price ÷ ₹-per-sqft as MB per-unit area was unavailable. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area, estimated from price \u00f7 \u20b9-per-sqft as MB per-unit area was unavailable. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "estimated",
         "computed_at": "2026-06-12",
         "super_source": "price_derived",
@@ -16597,7 +17003,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2476
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -16708,7 +17114,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 62,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -16731,7 +17137,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 62,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Singapore-backed; selective launches; mid-tier delivery track record. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: EXPERION DEVELOPERS PRIVATE LIMITED, EXPERION DEVELOPERS PVT LTD, EXPERION DEVELOPERS PVT. LTD., EXPERION DEVELOPERS PVT.LTD.",
+        "notes": "Singapore-backed; selective launches; mid-tier delivery track record. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: EXPERION DEVELOPERS PRIVATE LIMITED, EXPERION DEVELOPERS PVT LTD, EXPERION DEVELOPERS PVT. LTD., EXPERION DEVELOPERS PVT.LTD.",
         "listed": false,
         "ticker": null,
         "display_name": "Experion",
@@ -16766,6 +17172,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 7,
+      "cumulativeSold": 130,
+      "cumulativeAbsorptionPct": "23.90%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -16975,7 +17390,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 62,
           "delivery_progress_score": 53
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -16998,7 +17413,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 62,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Singapore-backed; selective launches; mid-tier delivery track record. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: EXPERION DEVELOPERS PRIVATE LIMITED, EXPERION DEVELOPERS PVT LTD, EXPERION DEVELOPERS PVT. LTD., EXPERION DEVELOPERS PVT.LTD.",
+        "notes": "Singapore-backed; selective launches; mid-tier delivery track record. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: EXPERION DEVELOPERS PRIVATE LIMITED, EXPERION DEVELOPERS PVT LTD, EXPERION DEVELOPERS PVT. LTD., EXPERION DEVELOPERS PVT.LTD.",
         "listed": false,
         "ticker": null,
         "display_name": "Experion",
@@ -17049,11 +17464,11 @@ window.__PROJECTS__ = [
     "priceCr": 6.25,
     "sqft": 1802,
     "priceSqft": 22000,
-    "units": 540,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 544,
+    "launched": 544,
+    "sold": 130,
+    "absorption": "23.90%",
+    "inventory": "414 unsold units",
     "bestFor": "End Use",
     "image": "https://img.staticmb.com/mbimages/project/2025/08/18/Project-Photo-4-Experion-The-Trillion-Gurgaon-5426973_410_1440.jpg",
     "latitude": 28.4178339481063,
@@ -17163,12 +17578,12 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "2842 - 3601 sq.ft.",
-      "landArea": "5.496 Acre",
+      "sizes": "48x48",
+      "landArea": "5.496 (Acre)",
       "sourceUrl": "https://reratracker.com/experion-the-trillion-in-gurugram-by-experion-developers-private-limited-rtid4244",
       "startDate": "15-01-2025",
-      "unitsSold": null,
-      "totalUnits": 540,
+      "unitsSold": 130,
+      "totalUnits": 544,
       "launchPrice": 20500,
       "projectType": "NEW",
       "totalFloors": 45,
@@ -17176,11 +17591,11 @@ window.__PROJECTS__ = [
       "currentPrice": 21300,
       "completionDate": "2032-12-31",
       "configurations": "3 BHK4 BHK",
-      "projectAddress": "PLOT NO. GH3, SECTOR 48, GURUGRAM",
-      "unitsAvailable": null,
+      "projectAddress": "A-61 2nd Floor South City 2 Islampur97 Gurugram-122018 Haryana",
+      "unitsAvailable": 414,
       "projectSizeText": "3 Buildings - 540 units",
       "reraProjectName": "Experion The Trillion",
-      "totalLicensedLand": "5.496 Acre",
+      "totalLicensedLand": "5.496 (Acre)",
       "reraRegistrationNo": "RERA-GRG-1773-2024"
     },
     "builderIntelligence": {
@@ -17218,7 +17633,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -17235,7 +17650,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2841
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -17346,7 +17761,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 62,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -17369,7 +17784,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 62,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Singapore-backed; selective launches; mid-tier delivery track record. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: EXPERION DEVELOPERS PRIVATE LIMITED, EXPERION DEVELOPERS PVT LTD, EXPERION DEVELOPERS PVT. LTD., EXPERION DEVELOPERS PVT.LTD.",
+        "notes": "Singapore-backed; selective launches; mid-tier delivery track record. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: EXPERION DEVELOPERS PRIVATE LIMITED, EXPERION DEVELOPERS PVT LTD, EXPERION DEVELOPERS PVT. LTD., EXPERION DEVELOPERS PVT.LTD.",
         "listed": false,
         "ticker": null,
         "display_name": "Experion",
@@ -17404,6 +17819,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 7,
+      "cumulativeSold": 130,
+      "cumulativeAbsorptionPct": "23.90%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -17421,10 +17845,10 @@ window.__PROJECTS__ = [
     "sqft": null,
     "priceSqft": 18316,
     "units": 120,
-    "launched": null,
-    "sold": null,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "launched": 120,
+    "sold": 120,
+    "absorption": "100.00%",
+    "inventory": "0 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2024/06/26/Project-Photo-1-The-Manor-Gurgaon-5421871_410_1440.jpg",
     "latitude": 28.4324388930049,
@@ -17503,11 +17927,15 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 15
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 120,
+      "unitsSold": 120,
+      "unitsAvailable": 0
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -17524,7 +17952,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 5105
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -17600,7 +18028,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 64,
           "delivery_progress_score": 62
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -17623,7 +18051,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 64,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Golf course vicinity; small developer. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: FANTASY BUILDWELL PRIVATE LIMITED, FANTASY BUILDWELL PVT. LTD.",
+        "notes": "Golf course vicinity; small developer. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: FANTASY BUILDWELL PRIVATE LIMITED, FANTASY BUILDWELL PVT. LTD.",
         "listed": false,
         "ticker": null,
         "display_name": "Fantasy Buildwell",
@@ -17658,6 +18086,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 99,
+      "cumulativeSold": 120,
+      "cumulativeAbsorptionPct": "100.00%",
+      "cappedAtTotalUnits": true,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -17674,11 +18111,11 @@ window.__PROJECTS__ = [
     "priceCr": 3.38,
     "sqft": 1502,
     "priceSqft": 15000,
-    "units": 0,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 714,
+    "launched": 714,
+    "sold": 105,
+    "absorption": "14.71%",
+    "inventory": "609 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2024/06/28/Project-Photo-1-ANANTAM-Gurgaon-5421927_410_1440.jpg",
     "latitude": 28.4037258,
@@ -17779,7 +18216,11 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 23
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 714,
+      "unitsSold": 105,
+      "unitsAvailable": 609
+    },
     "builderIntelligence": {
       "builderCode": "DEV-GAN",
       "builderName": "Ganga Realty Pvt Ltd",
@@ -17815,7 +18256,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -17832,7 +18273,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2253
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -17964,7 +18405,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 72,
           "delivery_progress_score": 62
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -17987,7 +18428,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 72,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "SPR corridor developer; limited project track record. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: GANGA GLOBAL HOMES PRIVATE LIMITED, JAI GANGA REALTECH LLP",
+        "notes": "SPR corridor developer; limited project track record. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: GANGA GLOBAL HOMES PRIVATE LIMITED, JAI GANGA REALTECH LLP",
         "listed": false,
         "ticker": null,
         "display_name": "Ganga Realty",
@@ -18022,6 +18463,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "OCT-DEC",
+      "quarterEndDate": "2025-12-31",
+      "soldInQuarter": 1,
+      "cumulativeSold": 105,
+      "cumulativeAbsorptionPct": "14.71%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -18038,11 +18488,11 @@ window.__PROJECTS__ = [
     "priceCr": 2.8,
     "sqft": 1402,
     "priceSqft": 13000,
-    "units": 0,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 366,
+    "launched": 366,
+    "sold": 48,
+    "absorption": "13.11%",
+    "inventory": "318 unsold units",
     "bestFor": "End Use",
     "image": "https://img.staticmb.com/mbimages/project/2023/11/10/Project-Photo-2-Nandaka-Gurgaon-5417741_345_1366.jpg",
     "latitude": 28.4034311196079,
@@ -18131,7 +18581,7 @@ window.__PROJECTS__ = [
           "distance_km": 8.3
         },
         "hospital": {
-          "name": "Queen’s Multispeciality Hospital",
+          "name": "Queen\u2019s Multispeciality Hospital",
           "distance_km": 2.32
         }
       },
@@ -18147,7 +18597,11 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 21
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 366,
+      "unitsSold": 48,
+      "unitsAvailable": 318
+    },
     "builderIntelligence": {
       "builderCode": "DEV-GAN",
       "builderName": "Ganga Realty Pvt Ltd",
@@ -18183,7 +18637,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area, estimated from price ÷ ₹-per-sqft as MB per-unit area was unavailable. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area, estimated from price \u00f7 \u20b9-per-sqft as MB per-unit area was unavailable. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "estimated",
         "computed_at": "2026-06-12",
         "super_source": "price_derived",
@@ -18200,7 +18654,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2154
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -18271,7 +18725,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 72,
           "delivery_progress_score": 94
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -18294,7 +18748,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 72,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "SPR corridor developer; limited project track record. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: GANGA GLOBAL HOMES PRIVATE LIMITED, JAI GANGA REALTECH LLP",
+        "notes": "SPR corridor developer; limited project track record. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: GANGA GLOBAL HOMES PRIVATE LIMITED, JAI GANGA REALTECH LLP",
         "listed": false,
         "ticker": null,
         "display_name": "Ganga Realty",
@@ -18329,6 +18783,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "OCT-DEC",
+      "quarterEndDate": "2025-12-31",
+      "soldInQuarter": 0,
+      "cumulativeSold": 48,
+      "cumulativeAbsorptionPct": "13.11%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -18475,10 +18938,10 @@ window.__PROJECTS__ = [
         "revenue": "1,395 Cr",
         "profit": "349 Cr",
         "promoterHolding": "51.7%",
-        "currentPrice": "₹ 1,740",
-        "highLow": "₹ 2,506",
+        "currentPrice": "\u20b9 1,740",
+        "highLow": "\u20b9 2,506",
         "stockPE": "146",
-        "bookValue": "₹ 591",
+        "bookValue": "\u20b9 591",
         "dividendYield": "0.57",
         "roce": "3.36",
         "roe": "2.04"
@@ -18523,7 +18986,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area, estimated from price ÷ ₹-per-sqft as MB per-unit area was unavailable. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area, estimated from price \u00f7 \u20b9-per-sqft as MB per-unit area was unavailable. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "estimated",
         "computed_at": "2026-06-12",
         "super_source": "price_derived",
@@ -18535,7 +18998,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 3000
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -18898,7 +19361,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 66,
           "delivery_progress_score": 34
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -18921,7 +19384,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 66,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Strong brand; consistent delivery; highest pre-sales in FY2024 (₹22,527 Cr). HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: GODREJ DEVELOPERS & PROPERTIES LLP, GODREJ PROPERTIES LIMITED, GODREJ PROPERTIES LTD, GODREJ PROPERTIES LTD.",
+        "notes": "Strong brand; consistent delivery; highest pre-sales in FY2024 (\u20b922,527 Cr). HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: GODREJ DEVELOPERS & PROPERTIES LLP, GODREJ PROPERTIES LIMITED, GODREJ PROPERTIES LTD, GODREJ PROPERTIES LTD.",
         "listed": true,
         "ticker": "GODREJPROP",
         "display_name": "Godrej Properties",
@@ -18972,11 +19435,11 @@ window.__PROJECTS__ = [
     "priceCr": 5.58,
     "sqft": 1113,
     "priceSqft": 25150,
-    "units": 132,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 134,
+    "launched": 134,
+    "sold": 92,
+    "absorption": "68.66%",
+    "inventory": "42 unsold units",
     "bestFor": "End Use",
     "image": "https://img.staticmb.com/mbimages/project/2025/07/24/Project-Photo-6-Godrej-Alira-Gurgaon-5434105_410_1440.jpg",
     "latitude": 28.4413474,
@@ -19086,12 +19549,12 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "2426 - 3167 sq.ft.",
-      "landArea": "1.9745 Acre",
+      "sizes": "48x48",
+      "landArea": "1.9745 (Acre)",
       "sourceUrl": "https://reratracker.com/godrej-alira-in-gurugram-by-godrej-properties-limited-rtid5161",
       "startDate": "20-05-2025",
-      "unitsSold": null,
-      "totalUnits": 132,
+      "unitsSold": 92,
+      "totalUnits": 134,
       "launchPrice": 23000,
       "projectType": "NEW",
       "totalFloors": null,
@@ -19099,11 +19562,11 @@ window.__PROJECTS__ = [
       "currentPrice": 23000,
       "completionDate": "2032-04-30",
       "configurations": "3 BHK4 BHK",
-      "projectAddress": "GH-01, URBAN ESTATE II, SECTOR 39, GURUGRAM",
-      "unitsAvailable": null,
+      "projectAddress": "Opp. Malabar Hill Police Station 40-D BG Kher Marg Malabar Hill Mumbai 400006",
+      "unitsAvailable": 42,
       "projectSizeText": "1 Buildings - 132 units",
       "reraProjectName": "GODREJ ALIRA",
-      "totalLicensedLand": "1.9745 Acre",
+      "totalLicensedLand": "1.9745 (Acre)",
       "reraRegistrationNo": "RERA-GRG-1943-2025"
     },
     "builderIntelligence": {
@@ -19122,10 +19585,10 @@ window.__PROJECTS__ = [
         "revenue": "1,395 Cr",
         "profit": "349 Cr",
         "promoterHolding": "51.7%",
-        "currentPrice": "₹ 1,740",
-        "highLow": "₹ 2,506",
+        "currentPrice": "\u20b9 1,740",
+        "highLow": "\u20b9 2,506",
         "stockPE": "146",
-        "bookValue": "₹ 591",
+        "bookValue": "\u20b9 591",
         "dividendYield": "0.57",
         "roce": "3.36",
         "roe": "2.04"
@@ -19170,7 +19633,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -19187,7 +19650,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2219
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -19299,7 +19762,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 66,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -19322,7 +19785,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 66,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Strong brand; consistent delivery; highest pre-sales in FY2024 (₹22,527 Cr). HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: GODREJ DEVELOPERS & PROPERTIES LLP, GODREJ PROPERTIES LIMITED, GODREJ PROPERTIES LTD, GODREJ PROPERTIES LTD.",
+        "notes": "Strong brand; consistent delivery; highest pre-sales in FY2024 (\u20b922,527 Cr). HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: GODREJ DEVELOPERS & PROPERTIES LLP, GODREJ PROPERTIES LIMITED, GODREJ PROPERTIES LTD, GODREJ PROPERTIES LTD.",
         "listed": true,
         "ticker": "GODREJPROP",
         "display_name": "Godrej Properties",
@@ -19357,6 +19820,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 1,
+      "cumulativeSold": 92,
+      "cumulativeAbsorptionPct": "68.66%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -19373,11 +19845,11 @@ window.__PROJECTS__ = [
     "priceCr": 5.58,
     "sqft": 1710,
     "priceSqft": 21600,
-    "units": 728,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 865,
+    "launched": 865,
+    "sold": 665,
+    "absorption": "76.88%",
+    "inventory": "200 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2024/01/30/Project-Photo-1-Godrej-Aristocrat-Gurgaon-5418833_345_1366.jpg",
     "latitude": 28.40671543,
@@ -19487,12 +19959,12 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "0 - 3416 sq.ft.",
-      "landArea": "9.56875 Acre",
+      "sizes": "48x48",
+      "landArea": "9.56875 (Acre)",
       "sourceUrl": "https://reratracker.com/godrej-aristocrat-in-gurugram-by-godrej-properties-ltd-rtid3700",
       "startDate": "20-11-2023",
-      "unitsSold": null,
-      "totalUnits": 728,
+      "unitsSold": 665,
+      "totalUnits": 865,
       "launchPrice": 18000,
       "projectType": "NEW",
       "totalFloors": 30,
@@ -19500,11 +19972,11 @@ window.__PROJECTS__ = [
       "currentPrice": 24500,
       "completionDate": "2030-12-31",
       "configurations": "2 BHK3 BHK4 BHK",
-      "projectAddress": "SECTOR 49, GURUGRAM, HARYANA",
-      "unitsAvailable": null,
+      "projectAddress": "Godrej One 5th Floor Pirojshanagar Eastern Express Highway Vikhroli East Mumbai Maharashtra",
+      "unitsAvailable": 200,
       "projectSizeText": "6 Buildings - 728 units",
       "reraProjectName": "GODREJ ARISTOCRAT",
-      "totalLicensedLand": "9.56875 Acre",
+      "totalLicensedLand": "9.56875 (Acre)",
       "reraRegistrationNo": "RERA-GRG-1480-2023"
     },
     "builderIntelligence": {
@@ -19523,10 +19995,10 @@ window.__PROJECTS__ = [
         "revenue": "1,395 Cr",
         "profit": "349 Cr",
         "promoterHolding": "51.7%",
-        "currentPrice": "₹ 1,740",
-        "highLow": "₹ 2,506",
+        "currentPrice": "\u20b9 1,740",
+        "highLow": "\u20b9 2,506",
         "stockPE": "146",
-        "bookValue": "₹ 591",
+        "bookValue": "\u20b9 591",
         "dividendYield": "0.57",
         "roce": "3.36",
         "roe": "2.04"
@@ -19571,7 +20043,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -19588,7 +20060,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2583
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -19762,7 +20234,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 66,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -19785,7 +20257,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 66,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Strong brand; consistent delivery; highest pre-sales in FY2024 (₹22,527 Cr). HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: GODREJ DEVELOPERS & PROPERTIES LLP, GODREJ PROPERTIES LIMITED, GODREJ PROPERTIES LTD, GODREJ PROPERTIES LTD.",
+        "notes": "Strong brand; consistent delivery; highest pre-sales in FY2024 (\u20b922,527 Cr). HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: GODREJ DEVELOPERS & PROPERTIES LLP, GODREJ PROPERTIES LIMITED, GODREJ PROPERTIES LTD, GODREJ PROPERTIES LTD.",
         "listed": true,
         "ticker": "GODREJPROP",
         "display_name": "Godrej Properties",
@@ -19820,6 +20292,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 2,
+      "cumulativeSold": 665,
+      "cumulativeAbsorptionPct": "76.88%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -19837,10 +20318,10 @@ window.__PROJECTS__ = [
     "sqft": 1752,
     "priceSqft": 36500,
     "units": 252,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "launched": 252,
+    "sold": 139,
+    "absorption": "55.16%",
+    "inventory": "113 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2026/02/27/Project-Photo-11-Godrej-Astra-Gurgaon-5427121_1366_1821.jpg",
     "latitude": 28.4404335,
@@ -19950,12 +20431,12 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "2970 - 4092 sq.ft.",
-      "landArea": "2.759 Acre",
+      "sizes": "48x48",
+      "landArea": "2.759 (Acre)",
       "sourceUrl": "https://reratracker.com/godrej-astra-in-gurugram-by-wonder-city-buildcon-ltd-rtid3701",
       "startDate": "24-09-2024",
-      "unitsSold": null,
-      "totalUnits": 151,
+      "unitsSold": 139,
+      "totalUnits": 252,
       "launchPrice": 31000,
       "projectType": "NEW",
       "totalFloors": 35,
@@ -19963,11 +20444,11 @@ window.__PROJECTS__ = [
       "currentPrice": 36800,
       "completionDate": "2031-10-16",
       "configurations": "3 BHK4 BHK",
-      "projectAddress": "SECTOR 54, URBAN ESTATE, GURUGRAM II",
-      "unitsAvailable": null,
+      "projectAddress": "SO Suresh Pal Khatri\\\\n29 Damb Apartments ROHINI SECTOR-11 Sector-7\\\\nNorth West Delhi Delhi 110085",
+      "unitsAvailable": 113,
       "projectSizeText": "2 Buildings - 151 units",
       "reraProjectName": "GODREJ ASTRA",
-      "totalLicensedLand": "2.759 Acre",
+      "totalLicensedLand": "2.759 (Acre)",
       "reraRegistrationNo": "RERA-GRG-1725-2024"
     },
     "builderIntelligence": {
@@ -19986,10 +20467,10 @@ window.__PROJECTS__ = [
         "revenue": "1,395 Cr",
         "profit": "349 Cr",
         "promoterHolding": "51.7%",
-        "currentPrice": "₹ 1,740",
-        "highLow": "₹ 2,506",
+        "currentPrice": "\u20b9 1,740",
+        "highLow": "\u20b9 2,506",
         "stockPE": "146",
-        "bookValue": "₹ 591",
+        "bookValue": "\u20b9 591",
         "dividendYield": "0.57",
         "roce": "3.36",
         "roe": "2.04"
@@ -20034,7 +20515,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -20051,7 +20532,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2995
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -20855,7 +21336,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 66,
           "delivery_progress_score": 34
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -20878,7 +21359,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 66,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Strong brand; consistent delivery; highest pre-sales in FY2024 (₹22,527 Cr). HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: GODREJ DEVELOPERS & PROPERTIES LLP, GODREJ PROPERTIES LIMITED, GODREJ PROPERTIES LTD, GODREJ PROPERTIES LTD.",
+        "notes": "Strong brand; consistent delivery; highest pre-sales in FY2024 (\u20b922,527 Cr). HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: GODREJ DEVELOPERS & PROPERTIES LLP, GODREJ PROPERTIES LIMITED, GODREJ PROPERTIES LTD, GODREJ PROPERTIES LTD.",
         "listed": true,
         "ticker": "GODREJPROP",
         "display_name": "Godrej Properties",
@@ -20913,6 +21394,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 0,
+      "cumulativeSold": 139,
+      "cumulativeAbsorptionPct": "55.16%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -21012,7 +21502,7 @@ window.__PROJECTS__ = [
     "builderIntelligence": null,
     "scoreCard": {
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Unit",
@@ -21095,7 +21585,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 66,
           "delivery_progress_score": 97
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -21118,7 +21608,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 66,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Strong brand; consistent delivery; highest pre-sales in FY2024 (₹22,527 Cr). HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: GODREJ DEVELOPERS & PROPERTIES LLP, GODREJ PROPERTIES LIMITED, GODREJ PROPERTIES LTD, GODREJ PROPERTIES LTD.",
+        "notes": "Strong brand; consistent delivery; highest pre-sales in FY2024 (\u20b922,527 Cr). HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: GODREJ DEVELOPERS & PROPERTIES LLP, GODREJ PROPERTIES LIMITED, GODREJ PROPERTIES LTD, GODREJ PROPERTIES LTD.",
         "listed": true,
         "ticker": "GODREJPROP",
         "display_name": "Godrej Properties",
@@ -21169,11 +21659,11 @@ window.__PROJECTS__ = [
     "priceCr": 2.98,
     "sqft": null,
     "priceSqft": null,
-    "units": 1023,
-    "launched": null,
-    "sold": null,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 428,
+    "launched": 428,
+    "sold": 352,
+    "absorption": "82.24%",
+    "inventory": "76 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2022/02/22/Project-Photo-1-Godrej-Meridien-Grandeur-Gurgaon-5325975_345_1366.jpg",
     "latitude": 28.4998859,
@@ -21239,11 +21729,15 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 16
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 428,
+      "unitsSold": 352,
+      "unitsAvailable": 76
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -21260,7 +21754,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": null
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -21419,7 +21913,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 66,
           "delivery_progress_score": 49
         },
-        "formula": "0.3571·location_score + 0.3571·developer_risk_score + 0.2857·delivery_progress_score",
+        "formula": "0.3571\u00b7location_score + 0.3571\u00b7developer_risk_score + 0.2857\u00b7delivery_progress_score",
         "missing": [
           "value_score"
         ],
@@ -21441,7 +21935,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 66,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Strong brand; consistent delivery; highest pre-sales in FY2024 (₹22,527 Cr). HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: GODREJ DEVELOPERS & PROPERTIES LLP, GODREJ PROPERTIES LIMITED, GODREJ PROPERTIES LTD, GODREJ PROPERTIES LTD.",
+        "notes": "Strong brand; consistent delivery; highest pre-sales in FY2024 (\u20b922,527 Cr). HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: GODREJ DEVELOPERS & PROPERTIES LLP, GODREJ PROPERTIES LIMITED, GODREJ PROPERTIES LTD, GODREJ PROPERTIES LTD.",
         "listed": true,
         "ticker": "GODREJPROP",
         "display_name": "Godrej Properties",
@@ -21476,6 +21970,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 0,
+      "cumulativeSold": 352,
+      "cumulativeAbsorptionPct": "82.24%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -21492,11 +21995,11 @@ window.__PROJECTS__ = [
     "priceCr": 14.8,
     "sqft": 1146,
     "priceSqft": 38000,
-    "units": 0,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 251,
+    "launched": 251,
+    "sold": 71,
+    "absorption": "28.29%",
+    "inventory": "180 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2024/10/25/Project-Photo-1-Godrej-Miraya-Gurgaon-5424303_410_1440.jpg",
     "latitude": 28.4551851,
@@ -21605,7 +22108,11 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 6
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 251,
+      "unitsSold": 71,
+      "unitsAvailable": 180
+    },
     "builderIntelligence": {
       "builderCode": "DEV-GODREJ",
       "builderName": "Godrej Properties Limited",
@@ -21622,10 +22129,10 @@ window.__PROJECTS__ = [
         "revenue": "1,395 Cr",
         "profit": "349 Cr",
         "promoterHolding": "51.7%",
-        "currentPrice": "₹ 1,740",
-        "highLow": "₹ 2,506",
+        "currentPrice": "\u20b9 1,740",
+        "highLow": "\u20b9 2,506",
         "stockPE": "146",
-        "bookValue": "₹ 591",
+        "bookValue": "\u20b9 591",
         "dividendYield": "0.57",
         "roce": "3.36",
         "roe": "2.04"
@@ -21670,7 +22177,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area, estimated from price ÷ ₹-per-sqft as MB per-unit area was unavailable. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area, estimated from price \u00f7 \u20b9-per-sqft as MB per-unit area was unavailable. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "estimated",
         "computed_at": "2026-06-12",
         "super_source": "price_derived",
@@ -21682,7 +22189,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 3895
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -21821,7 +22328,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 66,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -21844,7 +22351,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 66,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Strong brand; consistent delivery; highest pre-sales in FY2024 (₹22,527 Cr). HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: GODREJ DEVELOPERS & PROPERTIES LLP, GODREJ PROPERTIES LIMITED, GODREJ PROPERTIES LTD, GODREJ PROPERTIES LTD.",
+        "notes": "Strong brand; consistent delivery; highest pre-sales in FY2024 (\u20b922,527 Cr). HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: GODREJ DEVELOPERS & PROPERTIES LLP, GODREJ PROPERTIES LIMITED, GODREJ PROPERTIES LTD, GODREJ PROPERTIES LTD.",
         "listed": true,
         "ticker": "GODREJPROP",
         "display_name": "Godrej Properties",
@@ -21879,6 +22386,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 1,
+      "cumulativeSold": 71,
+      "cumulativeAbsorptionPct": "28.29%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -21895,11 +22411,11 @@ window.__PROJECTS__ = [
     "priceCr": 8.31,
     "sqft": 1987,
     "priceSqft": 32000,
-    "units": 244,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 248,
+    "launched": 248,
+    "sold": 15,
+    "absorption": "6.05%",
+    "inventory": "233 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2025/09/25/Project-Photo-4-Godrej-Sora-Gurgaon-5437103_410_1440.jpg",
     "latitude": 28.4406745,
@@ -22009,12 +22525,12 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "2771 - 3971 sq.ft.",
-      "landArea": "14569.2000 sq m",
+      "sizes": "48x48",
+      "landArea": "14569.2000 (Sqr/mtrs)",
       "sourceUrl": "https://reratracker.com/godrej-sora-in-gurugram-by-godrej-properties-limited-rtid5204",
       "startDate": "08-07-2025",
-      "unitsSold": null,
-      "totalUnits": 244,
+      "unitsSold": 15,
+      "totalUnits": 248,
       "launchPrice": null,
       "projectType": "NEW",
       "totalFloors": 30,
@@ -22022,11 +22538,11 @@ window.__PROJECTS__ = [
       "currentPrice": null,
       "completionDate": "2032-09-30",
       "configurations": "4 BHK3 BHK",
-      "projectAddress": "GH-21, URBAN ESTATE II, SECTOR 53, GURUGRAM",
-      "unitsAvailable": null,
+      "projectAddress": "Opp. Malabar Hill Police Station 40-D BG Kher Marg Malabar Hill Mumbai 400006",
+      "unitsAvailable": 233,
       "projectSizeText": "4 Buildings - 244 units",
       "reraProjectName": "GODREJ SORA",
-      "totalLicensedLand": "14569.200 sq m",
+      "totalLicensedLand": "14569.200 (Sqr/mtrs)",
       "reraRegistrationNo": "RERA-GRG-1967-2025"
     },
     "builderIntelligence": {
@@ -22045,10 +22561,10 @@ window.__PROJECTS__ = [
         "revenue": "1,395 Cr",
         "profit": "349 Cr",
         "promoterHolding": "51.7%",
-        "currentPrice": "₹ 1,740",
-        "highLow": "₹ 2,506",
+        "currentPrice": "\u20b9 1,740",
+        "highLow": "\u20b9 2,506",
         "stockPE": "146",
-        "bookValue": "₹ 591",
+        "bookValue": "\u20b9 591",
         "dividendYield": "0.57",
         "roce": "3.36",
         "roe": "2.04"
@@ -22093,7 +22609,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "moderate",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -22110,7 +22626,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2597
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -22221,7 +22737,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 66,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -22244,7 +22760,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 66,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Strong brand; consistent delivery; highest pre-sales in FY2024 (₹22,527 Cr). HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: GODREJ DEVELOPERS & PROPERTIES LLP, GODREJ PROPERTIES LIMITED, GODREJ PROPERTIES LTD, GODREJ PROPERTIES LTD.",
+        "notes": "Strong brand; consistent delivery; highest pre-sales in FY2024 (\u20b922,527 Cr). HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: GODREJ DEVELOPERS & PROPERTIES LLP, GODREJ PROPERTIES LIMITED, GODREJ PROPERTIES LTD, GODREJ PROPERTIES LTD.",
         "listed": true,
         "ticker": "GODREJPROP",
         "display_name": "Godrej Properties",
@@ -22279,6 +22795,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 4,
+      "cumulativeSold": 15,
+      "cumulativeAbsorptionPct": "6.05%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -22295,11 +22820,11 @@ window.__PROJECTS__ = [
     "priceCr": 3.65,
     "sqft": 1851,
     "priceSqft": 19000,
-    "units": 0,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 744,
+    "launched": 744,
+    "sold": 68,
+    "absorption": "9.14%",
+    "inventory": "676 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2024/08/14/Project-Photo-1-Godrej-Vrikshya-Gurgaon-5422585_410_1440.jpg",
     "latitude": 28.4952463,
@@ -22408,7 +22933,11 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 18
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 744,
+      "unitsSold": 68,
+      "unitsAvailable": 676
+    },
     "builderIntelligence": {
       "builderCode": "DEV-GODREJ",
       "builderName": "Godrej Properties Limited",
@@ -22425,10 +22954,10 @@ window.__PROJECTS__ = [
         "revenue": "1,395 Cr",
         "profit": "349 Cr",
         "promoterHolding": "51.7%",
-        "currentPrice": "₹ 1,740",
-        "highLow": "₹ 2,506",
+        "currentPrice": "\u20b9 1,740",
+        "highLow": "\u20b9 2,506",
         "stockPE": "146",
-        "bookValue": "₹ 591",
+        "bookValue": "\u20b9 591",
         "dividendYield": "0.57",
         "roce": "3.36",
         "roe": "2.04"
@@ -22473,7 +23002,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area, estimated from price ÷ ₹-per-sqft as MB per-unit area was unavailable. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area, estimated from price \u00f7 \u20b9-per-sqft as MB per-unit area was unavailable. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "estimated",
         "computed_at": "2026-06-12",
         "super_source": "price_derived",
@@ -22485,7 +23014,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 1921
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -22757,7 +23286,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 66,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -22780,7 +23309,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 66,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Strong brand; consistent delivery; highest pre-sales in FY2024 (₹22,527 Cr). HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: GODREJ DEVELOPERS & PROPERTIES LLP, GODREJ PROPERTIES LIMITED, GODREJ PROPERTIES LTD, GODREJ PROPERTIES LTD.",
+        "notes": "Strong brand; consistent delivery; highest pre-sales in FY2024 (\u20b922,527 Cr). HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: GODREJ DEVELOPERS & PROPERTIES LLP, GODREJ PROPERTIES LIMITED, GODREJ PROPERTIES LTD, GODREJ PROPERTIES LTD.",
         "listed": true,
         "ticker": "GODREJPROP",
         "display_name": "Godrej Properties",
@@ -22815,6 +23344,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 4,
+      "cumulativeSold": 68,
+      "cumulativeAbsorptionPct": "9.14%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -22831,11 +23369,11 @@ window.__PROJECTS__ = [
     "priceCr": 2.75,
     "sqft": 1612,
     "priceSqft": 19500,
-    "units": 1357,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 1778,
+    "launched": 1778,
+    "sold": 531,
+    "absorption": "29.87%",
+    "inventory": "1247 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2024/04/19/Project-Photo-2-GODREJ-ZENITH-Gurgaon-5419871_345_1366.jpg",
     "latitude": 28.41880510992,
@@ -22941,12 +23479,12 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "0 - 3225 sq.ft.",
-      "landArea": "14.20625 Acre",
+      "sizes": "48x48",
+      "landArea": "14.20625 (Acre)",
       "sourceUrl": "https://reratracker.com/godrej-zenith-in-gurugram-by-godrej-properties-ltd-rtid3713",
       "startDate": "09-02-2024",
-      "unitsSold": null,
-      "totalUnits": 1314,
+      "unitsSold": 531,
+      "totalUnits": 1778,
       "launchPrice": 14000,
       "projectType": "NEW",
       "totalFloors": 36,
@@ -22954,11 +23492,11 @@ window.__PROJECTS__ = [
       "currentPrice": 15500,
       "completionDate": "2031-03-31",
       "configurations": "Studios2 BHK3 BHK4 BHK",
-      "projectAddress": "SECTOR 89, GURUGRAM, HARYANA",
-      "unitsAvailable": null,
+      "projectAddress": "Opp Malabar Hill Police Station 40D BG Khor Marg Malabar Hill Mumbai Maharashtra 400006",
+      "unitsAvailable": 1247,
       "projectSizeText": "9 Buildings - 1314 units",
       "reraProjectName": "GODREJ ZENITH",
-      "totalLicensedLand": "14.20625 Acre",
+      "totalLicensedLand": "14.20625 (Acre)",
       "reraRegistrationNo": "RERA-GRG-1536-2024"
     },
     "builderIntelligence": {
@@ -22977,10 +23515,10 @@ window.__PROJECTS__ = [
         "revenue": "1,395 Cr",
         "profit": "349 Cr",
         "promoterHolding": "51.7%",
-        "currentPrice": "₹ 1,740",
-        "highLow": "₹ 2,506",
+        "currentPrice": "\u20b9 1,740",
+        "highLow": "\u20b9 2,506",
         "stockPE": "146",
-        "bookValue": "₹ 591",
+        "bookValue": "\u20b9 591",
         "dividendYield": "0.57",
         "roce": "3.36",
         "roe": "2.04"
@@ -23025,7 +23563,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "moderate",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -23042,7 +23580,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 1410
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -23944,7 +24482,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 66,
           "delivery_progress_score": 62
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -23967,7 +24505,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 66,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Strong brand; consistent delivery; highest pre-sales in FY2024 (₹22,527 Cr). HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: GODREJ DEVELOPERS & PROPERTIES LLP, GODREJ PROPERTIES LIMITED, GODREJ PROPERTIES LTD, GODREJ PROPERTIES LTD.",
+        "notes": "Strong brand; consistent delivery; highest pre-sales in FY2024 (\u20b922,527 Cr). HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: GODREJ DEVELOPERS & PROPERTIES LLP, GODREJ PROPERTIES LIMITED, GODREJ PROPERTIES LTD, GODREJ PROPERTIES LTD.",
         "listed": true,
         "ticker": "GODREJPROP",
         "display_name": "Godrej Properties",
@@ -24002,6 +24540,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 0,
+      "cumulativeSold": 531,
+      "cumulativeAbsorptionPct": "29.87%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -24149,7 +24696,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 72,
           "delivery_progress_score": 62
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -24172,7 +24719,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 72,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Sector 102 developer; mid-tier credentials. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: HCBS DEVELOPMENTS LTD, HCBS PROMOTERS & DEVELOPERS PVT. LTD.",
+        "notes": "Sector 102 developer; mid-tier credentials. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: HCBS DEVELOPMENTS LTD, HCBS PROMOTERS & DEVELOPERS PVT. LTD.",
         "listed": false,
         "ticker": null,
         "display_name": "HCBS",
@@ -24310,7 +24857,7 @@ window.__PROJECTS__ = [
     "builderIntelligence": null,
     "scoreCard": {
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Unit",
@@ -24393,7 +24940,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 76,
           "delivery_progress_score": 97
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -24416,7 +24963,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 76,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Hero Group brand backing; real estate is not core business. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: HERO REALTY PRIVATE LIMITED",
+        "notes": "Hero Group brand backing; real estate is not core business. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: HERO REALTY PRIVATE LIMITED",
         "listed": false,
         "ticker": null,
         "display_name": "Hero Realty",
@@ -24467,11 +25014,11 @@ window.__PROJECTS__ = [
     "priceCr": 4.68,
     "sqft": 1730,
     "priceSqft": 16500,
-    "units": 0,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 462,
+    "launched": 462,
+    "sold": 137,
+    "absorption": "29.65%",
+    "inventory": "325 unsold units",
     "bestFor": "End Use",
     "image": "https://img.staticmb.com/mbimages/project/2025/03/10/Project-Photo-1-The-Palatial-by-Hero-Homes-Gurgaon-5428215_410_1440.jpg",
     "latitude": 28.4801995,
@@ -24580,7 +25127,11 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 15
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 462,
+      "unitsSold": 137,
+      "unitsAvailable": 325
+    },
     "builderIntelligence": {
       "builderCode": "DEV-HERO",
       "builderName": "Hero Realty (Hero Group)",
@@ -24616,7 +25167,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -24633,7 +25184,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2836
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -26172,7 +26723,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 76,
           "delivery_progress_score": 49
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -26195,7 +26746,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 76,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Hero Group brand backing; real estate is not core business. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: HERO REALTY PRIVATE LIMITED",
+        "notes": "Hero Group brand backing; real estate is not core business. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: HERO REALTY PRIVATE LIMITED",
         "listed": false,
         "ticker": null,
         "display_name": "Hero Realty",
@@ -26230,6 +26781,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 18,
+      "cumulativeSold": 137,
+      "cumulativeAbsorptionPct": "29.65%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -26247,10 +26807,10 @@ window.__PROJECTS__ = [
     "sqft": null,
     "priceSqft": 14391,
     "units": 1103,
-    "launched": null,
-    "sold": null,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "launched": 1103,
+    "sold": 965,
+    "absorption": "87.49%",
+    "inventory": "138 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2022/09/19/Project-Photo-10-Hero-Homes-Phase-2-Gurgaon-5186606_345_1366.jpg",
     "latitude": 28.4801995,
@@ -26329,11 +26889,15 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 15
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 1103,
+      "unitsSold": 965,
+      "unitsAvailable": 138
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "APARTMENT/SHOPS/OTHER BUILDINGS Type 2BHK",
@@ -26522,7 +27086,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 76,
           "delivery_progress_score": 94
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -26545,7 +27109,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 76,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Hero Group brand backing; real estate is not core business. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: HERO REALTY PRIVATE LIMITED",
+        "notes": "Hero Group brand backing; real estate is not core business. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: HERO REALTY PRIVATE LIMITED",
         "listed": false,
         "ticker": null,
         "display_name": "Hero Realty",
@@ -26580,6 +27144,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 18,
+      "cumulativeSold": 965,
+      "cumulativeAbsorptionPct": "87.49%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -26727,7 +27300,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 92,
           "delivery_progress_score": 97
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -26750,7 +27323,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 92,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "India's largest listed developer. Strong balance sheet post-rental REIT listing. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: DLF BUILDERS & DEVELOPERS PRIVATE LIMITED, DLF HOMES PANCHKULA PRIVATE LIMITED, DLF LIMITED, DLF LUXURY HOMES LIMITED, DLF PROJECTS LIMITED, DLF REAL ESTATE BUILDERS LIMITED",
+        "notes": "India's largest listed developer. Strong balance sheet post-rental REIT listing. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: DLF BUILDERS & DEVELOPERS PRIVATE LIMITED, DLF HOMES PANCHKULA PRIVATE LIMITED, DLF LIMITED, DLF LUXURY HOMES LIMITED, DLF PROJECTS LIMITED, DLF REAL ESTATE BUILDERS LIMITED",
         "listed": true,
         "ticker": "DLF",
         "display_name": "DLF",
@@ -26932,7 +27505,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 58,
           "delivery_progress_score": 49
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -26955,7 +27528,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 58,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Entity under Indiabulls Group umbrella; mixed delivery; financial restructuring history. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: INDIABULLS PHARMACARE LIMITED",
+        "notes": "Entity under Indiabulls Group umbrella; mixed delivery; financial restructuring history. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: INDIABULLS PHARMACARE LIMITED",
         "listed": false,
         "ticker": null,
         "display_name": "Indiabulls Real Estate",
@@ -27006,11 +27579,11 @@ window.__PROJECTS__ = [
     "priceCr": 4.35,
     "sqft": 1351,
     "priceSqft": 24000,
-    "units": 753,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 439,
+    "launched": 439,
+    "sold": 180,
+    "absorption": "41.00%",
+    "inventory": "259 unsold units",
     "bestFor": "End Use",
     "image": "https://img.staticmb.com/mbimages/project/2024/08/30/Project-Photo-1-Krisumi-Waterfall-Suites-II-Gurgaon-5423115_410_1440.jpg",
     "latitude": 28.4149630172885,
@@ -27116,11 +27689,11 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "940 - 10316 sq.ft.",
-      "landArea": "0.7850 Acre",
+      "sizes": "48x48",
+      "landArea": "0.7850 (Acre)",
       "sourceUrl": "https://reratracker.com/krisumi-waterfall-suites-2-in-gurugram-by-krisumi-corporation-pvt-ltd-rtid4304",
       "startDate": "28-02-2024",
-      "unitsSold": null,
+      "unitsSold": 180,
       "totalUnits": 439,
       "launchPrice": 20000,
       "projectType": "NEW",
@@ -27129,11 +27702,11 @@ window.__PROJECTS__ = [
       "currentPrice": 22000,
       "completionDate": "2029-12-31",
       "configurations": "1 BHK4 BHK",
-      "projectAddress": "SECTOR- 36A",
-      "unitsAvailable": null,
+      "projectAddress": "Apartment No. 14A Tower 12 Central Park Resort Sohna Road Gurgaon",
+      "unitsAvailable": 259,
       "projectSizeText": "1 Buildings - 439 units",
       "reraProjectName": "Krisumi Waterfall Suites 2",
-      "totalLicensedLand": "30.3813 Acre",
+      "totalLicensedLand": "30.3813 (Acre)",
       "reraRegistrationNo": "RERA-GRG-1573-2024"
     },
     "builderIntelligence": {
@@ -27171,7 +27744,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -27268,7 +27841,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 84,
           "delivery_progress_score": 49
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -27291,7 +27864,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 84,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Sumitomo Corporation JV brings Japanese quality standards and discipline. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: KRISUMI CORPORATION  PVT. LTD., KRISUMI CORPORATION PRIVATE LIMITED, KRISUMI CORPORATION PVT. LTD.",
+        "notes": "Sumitomo Corporation JV brings Japanese quality standards and discipline. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: KRISUMI CORPORATION  PVT. LTD., KRISUMI CORPORATION PRIVATE LIMITED, KRISUMI CORPORATION PVT. LTD.",
         "listed": false,
         "ticker": null,
         "display_name": "Krisumi",
@@ -27326,6 +27899,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 1,
+      "cumulativeSold": 180,
+      "cumulativeAbsorptionPct": "41.00%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -27342,10 +27924,10 @@ window.__PROJECTS__ = [
     "priceCr": 0.0,
     "sqft": 0,
     "priceSqft": null,
-    "units": 582,
-    "launched": 0,
+    "units": 244,
+    "launched": 244,
     "sold": 0,
-    "absorption": "Data pending",
+    "absorption": "0.00%",
     "inventory": "Data pending",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2025/07/16/Project-Photo-1-Waterside-Residences-The-Forest-Reserve-Gurgaon-5433811_628_1366.jpg",
@@ -27451,7 +28033,9 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 17
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 244
+    },
     "builderIntelligence": {
       "builderCode": "DEV-KRIS",
       "builderName": "Krisumi Corporation",
@@ -27487,7 +28071,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -27602,7 +28186,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 84,
           "delivery_progress_score": 34
         },
-        "formula": "0.3571·location_score + 0.3571·developer_risk_score + 0.2857·delivery_progress_score",
+        "formula": "0.3571\u00b7location_score + 0.3571\u00b7developer_risk_score + 0.2857\u00b7delivery_progress_score",
         "missing": [
           "value_score"
         ],
@@ -27624,7 +28208,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 84,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Sumitomo Corporation JV brings Japanese quality standards and discipline. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: KRISUMI CORPORATION  PVT. LTD., KRISUMI CORPORATION PRIVATE LIMITED, KRISUMI CORPORATION PVT. LTD.",
+        "notes": "Sumitomo Corporation JV brings Japanese quality standards and discipline. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: KRISUMI CORPORATION  PVT. LTD., KRISUMI CORPORATION PRIVATE LIMITED, KRISUMI CORPORATION PVT. LTD.",
         "listed": false,
         "ticker": null,
         "display_name": "Krisumi",
@@ -27659,6 +28243,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 0,
+      "cumulativeSold": null,
+      "cumulativeAbsorptionPct": "0.00%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -27676,10 +28269,10 @@ window.__PROJECTS__ = [
     "sqft": 3566,
     "priceSqft": 26000,
     "units": 612,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "launched": 612,
+    "sold": 152,
+    "absorption": "24.84%",
+    "inventory": "460 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2026/01/23/Project-Photo-31-Krisumi-Waterside-Residences-Gurgaon-5421483_450_1366.jpeg",
     "latitude": 28.4149630172885,
@@ -27784,7 +28377,20 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 17
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "reraProjectName": "KRISUMI WATERSIDE RESIDENCES",
+      "reraRegistrationNo": "RERA-GRG-1562-2024",
+      "projectAddress": "Apartment No. 14A Tower 12 Central Park\\\\nResort Sohna Road Gurgaon",
+      "landArea": "5.0951 (Acre)",
+      "totalLicensedLand": "30.3813 (Acre)",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "sourceUrl": "https://reratracker.com/krisumi-waterside-residences-in-gurugram-by-krisumi-corporation-pvt-ltd-rtid3827",
+      "totalUnits": 612,
+      "totalFloors": 43,
+      "unitsSold": 152,
+      "unitsAvailable": 460
+    },
     "builderIntelligence": {
       "builderCode": "DEV-KRIS",
       "builderName": "Krisumi Corporation",
@@ -27820,7 +28426,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "moderate",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -27837,7 +28443,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 1608
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -28064,7 +28670,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 84,
           "delivery_progress_score": 49
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -28087,7 +28693,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 84,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Sumitomo Corporation JV brings Japanese quality standards and discipline. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: KRISUMI CORPORATION  PVT. LTD., KRISUMI CORPORATION PRIVATE LIMITED, KRISUMI CORPORATION PVT. LTD.",
+        "notes": "Sumitomo Corporation JV brings Japanese quality standards and discipline. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: KRISUMI CORPORATION  PVT. LTD., KRISUMI CORPORATION PRIVATE LIMITED, KRISUMI CORPORATION PVT. LTD.",
         "listed": false,
         "ticker": null,
         "display_name": "Krisumi",
@@ -28122,6 +28728,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 20,
+      "cumulativeSold": 152,
+      "cumulativeAbsorptionPct": "24.84%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -28138,11 +28753,11 @@ window.__PROJECTS__ = [
     "priceCr": 6.0,
     "sqft": 1702,
     "priceSqft": 23000,
-    "units": 0,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 342,
+    "launched": 342,
+    "sold": 255,
+    "absorption": "74.56%",
+    "inventory": "87 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2024/05/14/Project-Photo-1-M3M-Altitude-Gurgaon-5420873_345_1366.jpg",
     "latitude": 28.403162,
@@ -28251,7 +28866,20 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 13
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "reraProjectName": "M3M ALTITUDE",
+      "reraRegistrationNo": "RERA-GRG-1607-2024",
+      "projectAddress": "1061 Dr. Mukherjee Nagar North West Delhi Delhi 110009",
+      "landArea": "2.79 (Acre)",
+      "totalLicensedLand": "60.025 (Acre)",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "sourceUrl": "https://reratracker.com/m3m-altitude-in-gurugram-by-manglam-multiplex-private-limited-rtid3852",
+      "totalUnits": 342,
+      "totalFloors": 31,
+      "unitsSold": 255,
+      "unitsAvailable": 87
+    },
     "builderIntelligence": {
       "builderCode": "DEV-M3M",
       "builderName": "M3M India Pvt Ltd",
@@ -28287,7 +28915,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -28358,7 +28986,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 74,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -28381,7 +29009,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 74,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Large NCR developer; rapid scale but elevated complaints. ED/CBI scrutiny in 2022 resolved. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: M3M INDIA INFRASTRUCTURES PRIVATE LIMITED, M3M INDIA PRIVATE LIMITED",
+        "notes": "Large NCR developer; rapid scale but elevated complaints. ED/CBI scrutiny in 2022 resolved. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: M3M INDIA INFRASTRUCTURES PRIVATE LIMITED, M3M INDIA PRIVATE LIMITED",
         "listed": false,
         "ticker": null,
         "display_name": "M3M",
@@ -28416,6 +29044,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 12,
+      "cumulativeSold": 255,
+      "cumulativeAbsorptionPct": "74.56%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -28432,11 +29069,11 @@ window.__PROJECTS__ = [
     "priceCr": 1.16,
     "sqft": 768,
     "priceSqft": 15000,
-    "units": 2832,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 636,
+    "launched": 636,
+    "sold": 636,
+    "absorption": "100.00%",
+    "inventory": "0 unsold units",
     "bestFor": "Rental Yield",
     "image": "https://img.staticmb.com/mbimages/project/2023/05/11/Project-Photo-28-M3M-Antalya-Hills-Phase-II-Gurgaon-5394109_533_640.jpg",
     "latitude": 28.35751,
@@ -28546,12 +29183,12 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "1420 - 8200 sq.ft.",
-      "landArea": "14.64375 Acre",
+      "sizes": "48x48",
+      "landArea": "14.64375 (Acre)",
       "sourceUrl": "https://reratracker.com/m3m-golf-hills-phase-2-in-gurugram-by-loon-land-development-limited-rtid3867",
       "startDate": "29-02-2024",
-      "unitsSold": null,
-      "totalUnits": 1309,
+      "unitsSold": 636,
+      "totalUnits": 636,
       "launchPrice": null,
       "projectType": "NEW",
       "totalFloors": 30,
@@ -28559,11 +29196,11 @@ window.__PROJECTS__ = [
       "currentPrice": null,
       "completionDate": "2030-05-31",
       "configurations": "2 BHK3 BHK4 BHK",
-      "projectAddress": "SECTOR-79 & 79B, GURUGRAM, HARYANA",
-      "unitsAvailable": null,
+      "projectAddress": "B 6504 M3M Woodshire Dharampur Road Sector 107 Daultabad Gurugram Haryana",
+      "unitsAvailable": 0,
       "projectSizeText": "26 Buildings - 1309 units",
       "reraProjectName": "M3M GOLF HILLS PHASE 2",
-      "totalLicensedLand": "75.3458 Acre",
+      "totalLicensedLand": "75.3458 (Acre)",
       "reraRegistrationNo": "RERA-GRG-1578-2024"
     },
     "builderIntelligence": {
@@ -28601,7 +29238,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "moderate",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -28618,7 +29255,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 773
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -28689,7 +29326,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 74,
           "delivery_progress_score": 97
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -28712,7 +29349,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 74,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Large NCR developer; rapid scale but elevated complaints. ED/CBI scrutiny in 2022 resolved. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: M3M INDIA INFRASTRUCTURES PRIVATE LIMITED, M3M INDIA PRIVATE LIMITED",
+        "notes": "Large NCR developer; rapid scale but elevated complaints. ED/CBI scrutiny in 2022 resolved. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: M3M INDIA INFRASTRUCTURES PRIVATE LIMITED, M3M INDIA PRIVATE LIMITED",
         "listed": false,
         "ticker": null,
         "display_name": "M3M",
@@ -28747,6 +29384,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 2,
+      "cumulativeSold": 636,
+      "cumulativeAbsorptionPct": "100.00%",
+      "cappedAtTotalUnits": true,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -28764,10 +29410,10 @@ window.__PROJECTS__ = [
     "sqft": null,
     "priceSqft": 9076,
     "units": 636,
-    "launched": null,
-    "sold": null,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "launched": 636,
+    "sold": 636,
+    "absorption": "100.00%",
+    "inventory": "0 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2023/03/01/Project-Photo-16-M3M-Antalya-Hills-Phase-I-Gurgaon-5390251_345_1366.jpg",
     "latitude": 28.3572917,
@@ -28846,11 +29492,15 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 29
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 636,
+      "unitsSold": 636,
+      "unitsAvailable": 0
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "moderate",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -28867,7 +29517,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 1983
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -28938,7 +29588,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 74,
           "delivery_progress_score": 74
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -28961,7 +29611,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 74,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Large NCR developer; rapid scale but elevated complaints. ED/CBI scrutiny in 2022 resolved. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: M3M INDIA INFRASTRUCTURES PRIVATE LIMITED, M3M INDIA PRIVATE LIMITED",
+        "notes": "Large NCR developer; rapid scale but elevated complaints. ED/CBI scrutiny in 2022 resolved. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: M3M INDIA INFRASTRUCTURES PRIVATE LIMITED, M3M INDIA PRIVATE LIMITED",
         "listed": false,
         "ticker": null,
         "display_name": "M3M",
@@ -28996,6 +29646,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 2,
+      "cumulativeSold": 636,
+      "cumulativeAbsorptionPct": "100.00%",
+      "cappedAtTotalUnits": true,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -29012,11 +29671,11 @@ window.__PROJECTS__ = [
     "priceCr": 2.8,
     "sqft": 1051,
     "priceSqft": 15500,
-    "units": 1675,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 1760,
+    "launched": 1760,
+    "sold": 1760,
+    "absorption": "100.00%",
+    "inventory": "0 unsold units",
     "bestFor": "End Use",
     "image": "https://img.staticmb.com/mbimages/project/2022/09/13/Project-Photo-22-M3M-Capital-Gurgaon-5325653_345_1366.jpg",
     "latitude": 28.52399657,
@@ -29126,25 +29785,25 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "",
-      "landArea": "0.91875 Acre",
-      "sourceUrl": "https://reratracker.com/m3m-capital-phase-3-in-gurugram-by-union-buildmart-private-limited-rtid3862",
+      "sizes": "48x48",
+      "landArea": "4.856 (Acre)",
+      "sourceUrl": "https://reratracker.com/m3m-capital-in-gurugram-by-union-buildmart-private-limited-rtid3860",
       "startDate": "22-03-2024",
-      "unitsSold": null,
-      "totalUnits": 1675,
+      "unitsSold": 1760,
+      "totalUnits": 1760,
       "launchPrice": null,
       "projectType": "NEW",
-      "totalFloors": null,
+      "totalFloors": 36,
       "totalTowers": 13,
       "currentPrice": null,
       "completionDate": "2028-02-29",
       "configurations": "",
-      "projectAddress": "SECTOR-113, VILLAGE CHAUMA, GURUGRAM, HARYANA",
-      "unitsAvailable": null,
+      "projectAddress": "B 6504 M3M Woodshire Dharampur Road Sector 107 Daultabad 53 Gurgaon Haryana - 122006",
+      "unitsAvailable": 0,
       "projectSizeText": "13 Buildings - 1675 units",
-      "reraProjectName": "M3M CAPITAL PHASE-3",
-      "totalLicensedLand": "15.0625 Acre",
-      "reraRegistrationNo": "RERA-GRG-1591-2024"
+      "reraProjectName": "M3M CAPITAL",
+      "totalLicensedLand": "15.03125 (Acre)",
+      "reraRegistrationNo": "RERA-GRG-1006-2022"
     },
     "builderIntelligence": {
       "builderCode": "DEV-M3M",
@@ -29181,7 +29840,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -29252,7 +29911,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 74,
           "delivery_progress_score": 97
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -29275,7 +29934,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 74,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Large NCR developer; rapid scale but elevated complaints. ED/CBI scrutiny in 2022 resolved. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: M3M INDIA INFRASTRUCTURES PRIVATE LIMITED, M3M INDIA PRIVATE LIMITED",
+        "notes": "Large NCR developer; rapid scale but elevated complaints. ED/CBI scrutiny in 2022 resolved. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: M3M INDIA INFRASTRUCTURES PRIVATE LIMITED, M3M INDIA PRIVATE LIMITED",
         "listed": false,
         "ticker": null,
         "display_name": "M3M",
@@ -29310,6 +29969,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 2,
+      "cumulativeSold": 1760,
+      "cumulativeAbsorptionPct": "100.00%",
+      "cappedAtTotalUnits": true,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -29327,10 +29995,10 @@ window.__PROJECTS__ = [
     "sqft": 1602,
     "priceSqft": 17000,
     "units": 1332,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "launched": 1332,
+    "sold": 1301,
+    "absorption": "97.67%",
+    "inventory": "31 unsold units",
     "bestFor": "End Use",
     "image": "https://img.staticmb.com/mbimages/project/2023/02/17/Project-Photo-1-M3M-Crown-Phase-1-Gurgaon-5393337_345_1366.jpg",
     "latitude": 28.52404691,
@@ -29440,11 +30108,11 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "1605 - 2670 sq.ft.",
-      "landArea": "15.9938 Acre",
+      "sizes": "48x48",
+      "landArea": "15.9938 (Acre)",
       "sourceUrl": "https://reratracker.com/m3m-crown-phase-1-in-gurugram-by-metro-education-welfare-private-limited-rtid3863",
       "startDate": "25-01-2023",
-      "unitsSold": null,
+      "unitsSold": 1301,
       "totalUnits": 1332,
       "launchPrice": 14000,
       "projectType": "NEW",
@@ -29453,11 +30121,11 @@ window.__PROJECTS__ = [
       "currentPrice": 17000,
       "completionDate": "2028-01-31",
       "configurations": "3 BHK4 BHK",
-      "projectAddress": "SECTOR-111",
-      "unitsAvailable": null,
+      "projectAddress": "1668Sec\\\\n45Kanahi73GurgaonHaryana-122003",
+      "unitsAvailable": 31,
       "projectSizeText": "11 Buildings - 1332 units",
       "reraProjectName": "M3M CROWN PHASE 1",
-      "totalLicensedLand": "11.6022 Acre",
+      "totalLicensedLand": "11.6022 (Acre)",
       "reraRegistrationNo": "RERA-GRG-1262-2023"
     },
     "builderIntelligence": {
@@ -29495,7 +30163,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -29512,7 +30180,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2235
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -29583,7 +30251,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 74,
           "delivery_progress_score": 94
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -29606,7 +30274,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 74,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Large NCR developer; rapid scale but elevated complaints. ED/CBI scrutiny in 2022 resolved. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: M3M INDIA INFRASTRUCTURES PRIVATE LIMITED, M3M INDIA PRIVATE LIMITED",
+        "notes": "Large NCR developer; rapid scale but elevated complaints. ED/CBI scrutiny in 2022 resolved. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: M3M INDIA INFRASTRUCTURES PRIVATE LIMITED, M3M INDIA PRIVATE LIMITED",
         "listed": false,
         "ticker": null,
         "display_name": "M3M",
@@ -29641,6 +30309,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 9,
+      "cumulativeSold": 1301,
+      "cumulativeAbsorptionPct": "97.67%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -29658,10 +30335,10 @@ window.__PROJECTS__ = [
     "sqft": 2330,
     "priceSqft": 33150,
     "units": 336,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "launched": 336,
+    "sold": 8,
+    "absorption": "2.38%",
+    "inventory": "328 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2025/11/11/Project-Photo-5-M3M-Elie-Saab-Gurgaon-5438513_794_1593.jpg",
     "latitude": 28.5262615,
@@ -29771,11 +30448,11 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "4000 - 4000 sq.ft.",
-      "landArea": "2.7505 Acre",
+      "sizes": "48x48",
+      "landArea": "2.7505 (Acre)",
       "sourceUrl": "https://reratracker.com/m3m-elie-saab-at-scda-in-gurugram-by-metro-education-welfare-private-limited-rtid5246",
       "startDate": "15-09-2025",
-      "unitsSold": null,
+      "unitsSold": 8,
       "totalUnits": 336,
       "launchPrice": 35000,
       "projectType": "NEW",
@@ -29784,11 +30461,11 @@ window.__PROJECTS__ = [
       "currentPrice": 37000,
       "completionDate": "2032-02-29",
       "configurations": "4 BHK",
-      "projectAddress": "SECTOR-111,GURUGRAM",
-      "unitsAvailable": null,
+      "projectAddress": "73Vill KhutahaKanwiChitarkootUtter Pardesh-210205",
+      "unitsAvailable": 328,
       "projectSizeText": "3 Buildings - 336 units",
       "reraProjectName": "M3M ELIE SAAB AT SCDA",
-      "totalLicensedLand": "15.99375 Acre",
+      "totalLicensedLand": "15.99375 (Acre)",
       "reraRegistrationNo": "RERA-GRG-2048-2025"
     },
     "builderIntelligence": {
@@ -29826,7 +30503,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -29843,7 +30520,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 3620
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -29975,7 +30652,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 74,
           "delivery_progress_score": 34
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -29998,7 +30675,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 74,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Large NCR developer; rapid scale but elevated complaints. ED/CBI scrutiny in 2022 resolved. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: M3M INDIA INFRASTRUCTURES PRIVATE LIMITED, M3M INDIA PRIVATE LIMITED",
+        "notes": "Large NCR developer; rapid scale but elevated complaints. ED/CBI scrutiny in 2022 resolved. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: M3M INDIA INFRASTRUCTURES PRIVATE LIMITED, M3M INDIA PRIVATE LIMITED",
         "listed": false,
         "ticker": null,
         "display_name": "M3M",
@@ -30033,6 +30710,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 8,
+      "cumulativeSold": 8,
+      "cumulativeAbsorptionPct": "2.38%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -30049,11 +30735,11 @@ window.__PROJECTS__ = [
     "priceCr": 3.2,
     "sqft": 1344,
     "priceSqft": 16500,
-    "units": 1899,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 2618,
+    "launched": 2618,
+    "sold": 2618,
+    "absorption": "100.00%",
+    "inventory": "0 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2023/04/07/Project-Photo-1-M3M-Golf-Hills-Phase-1-Gurgaon-5400077_345_1366.jpg",
     "latitude": 28.3645259892369,
@@ -30142,7 +30828,7 @@ window.__PROJECTS__ = [
           "distance_km": 10.76
         },
         "hospital": {
-          "name": "Queen’s Multispeciality Hospital",
+          "name": "Queen\u2019s Multispeciality Hospital",
           "distance_km": 2.67
         }
       },
@@ -30159,12 +30845,12 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "1420 - 8200 sq.ft.",
-      "landArea": "14.64375 Acre",
+      "sizes": "48x48",
+      "landArea": "14.64375 (Acre)",
       "sourceUrl": "https://reratracker.com/m3m-golf-hills-phase-2-in-gurugram-by-loon-land-development-limited-rtid3867",
       "startDate": "29-02-2024",
-      "unitsSold": null,
-      "totalUnits": 1309,
+      "unitsSold": 2618,
+      "totalUnits": 2618,
       "launchPrice": null,
       "projectType": "NEW",
       "totalFloors": 30,
@@ -30172,11 +30858,11 @@ window.__PROJECTS__ = [
       "currentPrice": null,
       "completionDate": "2030-05-31",
       "configurations": "2 BHK3 BHK4 BHK",
-      "projectAddress": "SECTOR-79 & 79B, GURUGRAM, HARYANA",
-      "unitsAvailable": null,
+      "projectAddress": "B 6504 M3M Woodshire Dharampur Road Sector 107 Daultabad Gurugram Haryana",
+      "unitsAvailable": 0,
       "projectSizeText": "26 Buildings - 1309 units",
       "reraProjectName": "M3M GOLF HILLS PHASE 2",
-      "totalLicensedLand": "75.3458 Acre",
+      "totalLicensedLand": "75.3458 (Acre)",
       "reraRegistrationNo": "RERA-GRG-1578-2024"
     },
     "builderIntelligence": {
@@ -30214,7 +30900,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -30231,7 +30917,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 1939
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -30302,7 +30988,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 74,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -30325,7 +31011,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 74,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Large NCR developer; rapid scale but elevated complaints. ED/CBI scrutiny in 2022 resolved. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: M3M INDIA INFRASTRUCTURES PRIVATE LIMITED, M3M INDIA PRIVATE LIMITED",
+        "notes": "Large NCR developer; rapid scale but elevated complaints. ED/CBI scrutiny in 2022 resolved. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: M3M INDIA INFRASTRUCTURES PRIVATE LIMITED, M3M INDIA PRIVATE LIMITED",
         "listed": false,
         "ticker": null,
         "display_name": "M3M",
@@ -30360,6 +31046,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 0,
+      "cumulativeSold": 2618,
+      "cumulativeAbsorptionPct": "100.00%",
+      "cappedAtTotalUnits": true,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -30376,11 +31071,11 @@ window.__PROJECTS__ = [
     "priceCr": 2.47,
     "sqft": null,
     "priceSqft": 10500,
-    "units": 291,
-    "launched": null,
-    "sold": null,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 286,
+    "launched": 286,
+    "sold": 21,
+    "absorption": "7.34%",
+    "inventory": "265 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2025/11/11/Project-Photo-1-M3M-Gurgaon-International-City-Gurgaon-5438485_822_1611.jpg",
     "latitude": 28.3501533279113,
@@ -30459,7 +31154,11 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 26
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 286,
+      "unitsSold": 21,
+      "unitsAvailable": 265
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "micromarket": {
@@ -30507,7 +31206,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 74,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -30530,7 +31229,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 74,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Large NCR developer; rapid scale but elevated complaints. ED/CBI scrutiny in 2022 resolved. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: M3M INDIA INFRASTRUCTURES PRIVATE LIMITED, M3M INDIA PRIVATE LIMITED",
+        "notes": "Large NCR developer; rapid scale but elevated complaints. ED/CBI scrutiny in 2022 resolved. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: M3M INDIA INFRASTRUCTURES PRIVATE LIMITED, M3M INDIA PRIVATE LIMITED",
         "listed": false,
         "ticker": null,
         "display_name": "M3M",
@@ -30565,6 +31264,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 21,
+      "cumulativeSold": 21,
+      "cumulativeAbsorptionPct": "7.34%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -30581,11 +31289,11 @@ window.__PROJECTS__ = [
     "priceCr": 5.5,
     "sqft": 2002,
     "priceSqft": 19500,
-    "units": 342,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 978,
+    "launched": 978,
+    "sold": 922,
+    "absorption": "94.27%",
+    "inventory": "56 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2024/06/19/Project-Photo-6-M3M-Mansion-Gurgaon-5419857_410_1440.jpg",
     "latitude": 28.5291395,
@@ -30695,12 +31403,12 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "2080 - 3415 sq.ft.",
-      "landArea": "1.515 Acre",
-      "sourceUrl": "https://reratracker.com/m3m-mansion-ph-2-in-gurugram-by-union-buildmart-private-limited-rtid3873",
+      "sizes": "48x48",
+      "landArea": "8.710 (Acre)",
+      "sourceUrl": "https://reratracker.com/m3m-mansion-in-gurugram-by-union-buildmart-private-limited-rtid3872",
       "startDate": "24-01-2025",
-      "unitsSold": null,
-      "totalUnits": 244,
+      "unitsSold": 922,
+      "totalUnits": 978,
       "launchPrice": 19000,
       "projectType": "NEW",
       "totalFloors": 32,
@@ -30708,12 +31416,12 @@ window.__PROJECTS__ = [
       "currentPrice": 19000,
       "completionDate": "2031-02-28",
       "configurations": "3 BHK4 BHK",
-      "projectAddress": "SECTOR 113, VILL CHAUMA,GURUGRAM",
-      "unitsAvailable": null,
+      "projectAddress": "B 6504 M3M Woodshire Dharampur Road Sector 107 Daultabad 53 Gurgaon Haryana - 122006",
+      "unitsAvailable": 56,
       "projectSizeText": "8 Buildings - 244 units",
-      "reraProjectName": "M3M MANSION PH-2",
-      "totalLicensedLand": "10.225 Acre",
-      "reraRegistrationNo": "RERA-GRG-1848-2025"
+      "reraProjectName": "M3M MANSION",
+      "totalLicensedLand": "10.225 (Acre)",
+      "reraRegistrationNo": "RERA-GRG-1547-2024"
     },
     "builderIntelligence": {
       "builderCode": "DEV-M3M",
@@ -30750,7 +31458,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -30767,7 +31475,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2821
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -30845,7 +31553,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 74,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -30868,7 +31576,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 74,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Large NCR developer; rapid scale but elevated complaints. ED/CBI scrutiny in 2022 resolved. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: M3M INDIA INFRASTRUCTURES PRIVATE LIMITED, M3M INDIA PRIVATE LIMITED",
+        "notes": "Large NCR developer; rapid scale but elevated complaints. ED/CBI scrutiny in 2022 resolved. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: M3M INDIA INFRASTRUCTURES PRIVATE LIMITED, M3M INDIA PRIVATE LIMITED",
         "listed": false,
         "ticker": null,
         "display_name": "M3M",
@@ -30903,6 +31611,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 3,
+      "cumulativeSold": 922,
+      "cumulativeAbsorptionPct": "94.27%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -30919,11 +31636,11 @@ window.__PROJECTS__ = [
     "priceCr": 3.7,
     "sqft": null,
     "priceSqft": 17788,
-    "units": 961,
-    "launched": null,
-    "sold": null,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 244,
+    "launched": 244,
+    "sold": 137,
+    "absorption": "56.15%",
+    "inventory": "107 unsold units",
     "bestFor": null,
     "image": null,
     "latitude": 28.5291395,
@@ -31002,11 +31719,15 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 16
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 244,
+      "unitsSold": 137,
+      "unitsAvailable": 107
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -31023,7 +31744,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2080
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -31155,7 +31876,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 74,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -31178,7 +31899,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 74,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Large NCR developer; rapid scale but elevated complaints. ED/CBI scrutiny in 2022 resolved. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: M3M INDIA INFRASTRUCTURES PRIVATE LIMITED, M3M INDIA PRIVATE LIMITED",
+        "notes": "Large NCR developer; rapid scale but elevated complaints. ED/CBI scrutiny in 2022 resolved. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: M3M INDIA INFRASTRUCTURES PRIVATE LIMITED, M3M INDIA PRIVATE LIMITED",
         "listed": false,
         "ticker": null,
         "display_name": "M3M",
@@ -31213,6 +31934,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 36,
+      "cumulativeSold": 137,
+      "cumulativeAbsorptionPct": "56.15%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -31229,11 +31959,11 @@ window.__PROJECTS__ = [
     "priceCr": 4.2,
     "sqft": 1652,
     "priceSqft": 17500,
-    "units": 0,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 336,
+    "launched": 336,
+    "sold": 8,
+    "absorption": "2.38%",
+    "inventory": "328 unsold units",
     "bestFor": "End Use",
     "image": "https://img.staticmb.com/mbimages/project/2025/11/11/Project-Photo-5-M3M-Elie-Saab-Gurgaon-5438513_794_1593.jpg",
     "latitude": 28.5262615,
@@ -31342,7 +32072,11 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 17
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 336,
+      "unitsSold": 8,
+      "unitsAvailable": 328
+    },
     "builderIntelligence": {
       "builderCode": "DEV-M3M",
       "builderName": "M3M India Pvt Ltd",
@@ -31378,7 +32112,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area, estimated from price ÷ ₹-per-sqft as MB per-unit area was unavailable. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area, estimated from price \u00f7 \u20b9-per-sqft as MB per-unit area was unavailable. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "estimated",
         "computed_at": "2026-06-12",
         "super_source": "price_derived",
@@ -31390,7 +32124,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2400
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -31522,7 +32256,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 74,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -31545,7 +32279,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 74,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Large NCR developer; rapid scale but elevated complaints. ED/CBI scrutiny in 2022 resolved. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: M3M INDIA INFRASTRUCTURES PRIVATE LIMITED, M3M INDIA PRIVATE LIMITED",
+        "notes": "Large NCR developer; rapid scale but elevated complaints. ED/CBI scrutiny in 2022 resolved. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: M3M INDIA INFRASTRUCTURES PRIVATE LIMITED, M3M INDIA PRIVATE LIMITED",
         "listed": false,
         "ticker": null,
         "display_name": "M3M",
@@ -31580,6 +32314,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 8,
+      "cumulativeSold": 8,
+      "cumulativeAbsorptionPct": "2.38%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -31710,8 +32453,8 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "2400 - 2400 sq.ft.",
-      "landArea": "1.000 Acre",
+      "sizes": "48x48",
+      "landArea": "1.000 (Acre)",
       "sourceUrl": "https://reratracker.com/m3m-opus-at-m3m-merlin-in-gurugram-by-consolidate-realtors-private-limited-rtid3875",
       "startDate": "04-09-2024",
       "unitsSold": null,
@@ -31723,11 +32466,11 @@ window.__PROJECTS__ = [
       "currentPrice": 23000,
       "completionDate": "2029-11-01",
       "configurations": "3 BHK",
-      "projectAddress": "SECTOR-67, GURUGRAM",
+      "projectAddress": "1668 sector 45 kanhai village Gurugram",
       "unitsAvailable": null,
       "projectSizeText": "1 Buildings - 134 units",
       "reraProjectName": "M3M OPUS AT M3M MERLIN",
-      "totalLicensedLand": "13.344 Acre",
+      "totalLicensedLand": "13.344 (Acre)",
       "reraRegistrationNo": "RERA-GRG-1734-2024"
     },
     "builderIntelligence": {
@@ -31809,7 +32552,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 74,
           "delivery_progress_score": 61
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -31832,7 +32575,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 74,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Large NCR developer; rapid scale but elevated complaints. ED/CBI scrutiny in 2022 resolved. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: M3M INDIA INFRASTRUCTURES PRIVATE LIMITED, M3M INDIA PRIVATE LIMITED",
+        "notes": "Large NCR developer; rapid scale but elevated complaints. ED/CBI scrutiny in 2022 resolved. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: M3M INDIA INFRASTRUCTURES PRIVATE LIMITED, M3M INDIA PRIVATE LIMITED",
         "listed": false,
         "ticker": null,
         "display_name": "M3M",
@@ -32072,7 +32815,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 74,
           "delivery_progress_score": 40
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -32095,7 +32838,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 74,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Large NCR developer; rapid scale but elevated complaints. ED/CBI scrutiny in 2022 resolved. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: M3M INDIA INFRASTRUCTURES PRIVATE LIMITED, M3M INDIA PRIVATE LIMITED",
+        "notes": "Large NCR developer; rapid scale but elevated complaints. ED/CBI scrutiny in 2022 resolved. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: M3M INDIA INFRASTRUCTURES PRIVATE LIMITED, M3M INDIA PRIVATE LIMITED",
         "listed": false,
         "ticker": null,
         "display_name": "M3M",
@@ -32146,11 +32889,11 @@ window.__PROJECTS__ = [
     "priceCr": 5.14,
     "sqft": 1732,
     "priceSqft": 22350,
-    "units": 0,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 1347,
+    "launched": 1347,
+    "sold": 82,
+    "absorption": "6.09%",
+    "inventory": "1265 unsold units",
     "bestFor": "End Use",
     "image": "https://img.staticmb.com/mbimages/project/2025/12/09/Project-Photo-15-Max--Estate-361-Gurgaon-5440323_664_1342.jpg",
     "latitude": 28.42899401,
@@ -32255,7 +32998,11 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 16
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 1347,
+      "unitsSold": 82,
+      "unitsAvailable": 1265
+    },
     "builderIntelligence": {
       "builderCode": "DEV-MAX",
       "builderName": "Max Estates Limited",
@@ -32272,10 +33019,10 @@ window.__PROJECTS__ = [
         "revenue": "52.1 Cr",
         "profit": "70.8 Cr",
         "promoterHolding": "45.3%",
-        "currentPrice": "₹ 409",
-        "highLow": "₹ 564",
+        "currentPrice": "\u20b9 409",
+        "highLow": "\u20b9 564",
         "stockPE": "94.5",
-        "bookValue": "₹ 148",
+        "bookValue": "\u20b9 148",
         "dividendYield": "0.00",
         "roce": "3.22",
         "roe": "2.39"
@@ -32322,7 +33069,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area, estimated from price ÷ ₹-per-sqft as MB per-unit area was unavailable. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area, estimated from price \u00f7 \u20b9-per-sqft as MB per-unit area was unavailable. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "estimated",
         "computed_at": "2026-06-12",
         "super_source": "price_derived",
@@ -32334,7 +33081,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2300
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -32655,7 +33402,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 90,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -32678,7 +33425,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 90,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Max Group backing; relatively new entrant; clean delivery track record so far. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: MAX ESTATES GURGAON LIMITED, MAX ESTATES GURGAON TWO LIMITED",
+        "notes": "Max Group backing; relatively new entrant; clean delivery track record so far. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: MAX ESTATES GURGAON LIMITED, MAX ESTATES GURGAON TWO LIMITED",
         "listed": true,
         "ticker": "MAXESTATES",
         "display_name": "Max Estates",
@@ -32713,6 +33460,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 82,
+      "cumulativeSold": 82,
+      "cumulativeAbsorptionPct": "6.09%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -32729,11 +33485,11 @@ window.__PROJECTS__ = [
     "priceCr": 5.22,
     "sqft": null,
     "priceSqft": 19691,
-    "units": 864,
-    "launched": null,
-    "sold": null,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 1025,
+    "launched": 1025,
+    "sold": 286,
+    "absorption": "27.90%",
+    "inventory": "739 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2024/09/02/Project-Photo-1-Estate-360-Gurgaon-5423133_410_1440.jpg",
     "latitude": 28.4149630172885,
@@ -32808,11 +33564,15 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 17
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 1025,
+      "unitsSold": 286,
+      "unitsAvailable": 739
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -32829,7 +33589,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2651
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -33066,7 +33826,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 90,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -33089,7 +33849,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 90,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Max Group backing; relatively new entrant; clean delivery track record so far. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: MAX ESTATES GURGAON LIMITED, MAX ESTATES GURGAON TWO LIMITED",
+        "notes": "Max Group backing; relatively new entrant; clean delivery track record so far. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: MAX ESTATES GURGAON LIMITED, MAX ESTATES GURGAON TWO LIMITED",
         "listed": true,
         "ticker": "MAXESTATES",
         "display_name": "Max Estates",
@@ -33124,6 +33884,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 1,
+      "cumulativeSold": 286,
+      "cumulativeAbsorptionPct": "27.90%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -33250,8 +34019,8 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "1144 - 7536 sq.ft.",
-      "landArea": "18.23 Acre",
+      "sizes": "48x48",
+      "landArea": "14.2944 (Acre)",
       "sourceUrl": "https://reratracker.com/max-estate-361-antara-361-in-gurugram-by-max-estates-gurgaon-two-limited-rtid5292",
       "startDate": "27-10-2025",
       "unitsSold": null,
@@ -33263,11 +34032,11 @@ window.__PROJECTS__ = [
       "currentPrice": 22350,
       "completionDate": "2033-09-30",
       "configurations": "3 BHKPenthouse Duplex4 BHK1 BHK2 BHKDuplex",
-      "projectAddress": "VILLAGE-HARSARU, SECTOR 36",
+      "projectAddress": "A 38 Behand Sahibabad Police Station Lajpat Nagar Ghaziabad Uttar Pradesh",
       "unitsAvailable": null,
       "projectSizeText": "5 Buildings - 1096 units",
       "reraProjectName": "Max Estate 361 (Antara 361)",
-      "totalLicensedLand": "18.2375 Acre",
+      "totalLicensedLand": "18.2375 (Acre)",
       "reraRegistrationNo": "RERA-GRG-2093-2025"
     },
     "builderIntelligence": {
@@ -33286,10 +34055,10 @@ window.__PROJECTS__ = [
         "revenue": "52.1 Cr",
         "profit": "70.8 Cr",
         "promoterHolding": "45.3%",
-        "currentPrice": "₹ 409",
-        "highLow": "₹ 564",
+        "currentPrice": "\u20b9 409",
+        "highLow": "\u20b9 564",
         "stockPE": "94.5",
-        "bookValue": "₹ 148",
+        "bookValue": "\u20b9 148",
         "dividendYield": "0.00",
         "roce": "3.22",
         "roe": "2.39"
@@ -33380,7 +34149,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 90,
           "delivery_progress_score": 62
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -33403,7 +34172,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 90,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Max Group backing; relatively new entrant; clean delivery track record so far. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: MAX ESTATES GURGAON LIMITED, MAX ESTATES GURGAON TWO LIMITED",
+        "notes": "Max Group backing; relatively new entrant; clean delivery track record so far. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: MAX ESTATES GURGAON LIMITED, MAX ESTATES GURGAON TWO LIMITED",
         "listed": true,
         "ticker": "MAXESTATES",
         "display_name": "Max Estates",
@@ -33454,11 +34223,11 @@ window.__PROJECTS__ = [
     "priceCr": 0.0,
     "sqft": 800,
     "priceSqft": 24000,
-    "units": 0,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 1347,
+    "launched": 1347,
+    "sold": 82,
+    "absorption": "6.09%",
+    "inventory": "1265 unsold units",
     "bestFor": "Rental Yield",
     "image": "https://img.staticmb.com/mbimages/project/2025/12/09/Project-Photo-15-Max--Estate-361-Gurgaon-5440323_664_1342.jpg",
     "latitude": 28.42899401,
@@ -33563,7 +34332,11 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 16
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 1347,
+      "unitsSold": 82,
+      "unitsAvailable": 1265
+    },
     "builderIntelligence": {
       "builderCode": "DEV-MAX",
       "builderName": "Max Estates Limited",
@@ -33580,10 +34353,10 @@ window.__PROJECTS__ = [
         "revenue": "52.1 Cr",
         "profit": "70.8 Cr",
         "promoterHolding": "45.3%",
-        "currentPrice": "₹ 409",
-        "highLow": "₹ 564",
+        "currentPrice": "\u20b9 409",
+        "highLow": "\u20b9 564",
         "stockPE": "94.5",
-        "bookValue": "₹ 148",
+        "bookValue": "\u20b9 148",
         "dividendYield": "0.00",
         "roce": "3.22",
         "roe": "2.39"
@@ -33630,7 +34403,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -33647,7 +34420,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": null
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -33968,7 +34741,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 90,
           "delivery_progress_score": 34
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -33991,7 +34764,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 90,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Max Group backing; relatively new entrant; clean delivery track record so far. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: MAX ESTATES GURGAON LIMITED, MAX ESTATES GURGAON TWO LIMITED",
+        "notes": "Max Group backing; relatively new entrant; clean delivery track record so far. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: MAX ESTATES GURGAON LIMITED, MAX ESTATES GURGAON TWO LIMITED",
         "listed": true,
         "ticker": "MAXESTATES",
         "display_name": "Max Estates",
@@ -34026,6 +34799,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 82,
+      "cumulativeSold": 82,
+      "cumulativeAbsorptionPct": "6.09%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -34043,10 +34825,10 @@ window.__PROJECTS__ = [
     "sqft": null,
     "priceSqft": 12492,
     "units": 436,
-    "launched": null,
-    "sold": null,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "launched": 436,
+    "sold": 436,
+    "absorption": "100.00%",
+    "inventory": "0 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2023/07/14/Project-Photo-9-MRG-Crown-Gurgaon-5403899_345_1366.jpg",
     "latitude": 28.48779679,
@@ -34125,11 +34907,15 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 22
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 436,
+      "unitsSold": 436,
+      "unitsAvailable": 0
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -34146,7 +34932,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 1481
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -34285,7 +35071,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 47,
           "delivery_progress_score": 74
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -34308,7 +35094,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 47,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Affordable and mid-segment Dwarka Expressway developer. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: MRG WORLD LLP",
+        "notes": "Affordable and mid-segment Dwarka Expressway developer. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: MRG WORLD LLP",
         "listed": false,
         "ticker": null,
         "display_name": "MRG World",
@@ -34343,6 +35129,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "OCT-DEC",
+      "quarterEndDate": "2025-12-31",
+      "soldInQuarter": 1,
+      "cumulativeSold": 436,
+      "cumulativeAbsorptionPct": "100.00%",
+      "cappedAtTotalUnits": true,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -34489,10 +35284,10 @@ window.__PROJECTS__ = [
         "revenue": "4,916 Cr",
         "profit": "1,968 Cr",
         "promoterHolding": "67.7%",
-        "currentPrice": "₹ 1,659",
-        "highLow": "₹ 2,006",
+        "currentPrice": "\u20b9 1,659",
+        "highLow": "\u20b9 2,006",
         "stockPE": "30.4",
-        "bookValue": "₹ 443",
+        "bookValue": "\u20b9 443",
         "dividendYield": "0.49",
         "roce": "15.5",
         "roe": "13.0"
@@ -34577,7 +35372,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 93,
           "delivery_progress_score": 24
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -34600,7 +35395,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 93,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Mumbai-based premium developer entering Gurgaon. Listed NSE+BSE (OBEROIRLTY, mkt cap ₹59,187Cr). FY25: D/E 0.21, ICR 11.7x, OPM 59%, ROCE 17.3%, ROE 14.6%. Zero project lapses on record.",
+        "notes": "Mumbai-based premium developer entering Gurgaon. Listed NSE+BSE (OBEROIRLTY, mkt cap \u20b959,187Cr). FY25: D/E 0.21, ICR 11.7x, OPM 59%, ROCE 17.3%, ROE 14.6%. Zero project lapses on record.",
         "listed": true,
         "ticker": "OBEROIRLTY",
         "display_name": "Oberoi Realty",
@@ -34651,11 +35446,11 @@ window.__PROJECTS__ = [
     "priceCr": 2.04,
     "sqft": null,
     "priceSqft": 14286,
-    "units": 3043,
-    "launched": null,
-    "sold": null,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 152,
+    "launched": 152,
+    "sold": 38,
+    "absorption": "25.00%",
+    "inventory": "114 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2022/11/25/Project-Photo-27-Orchid-IVY-Gurgaon-5335883_345_1366.jpg",
     "latitude": 28.4305144291048,
@@ -34734,11 +35529,15 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 7
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 152,
+      "unitsSold": 38,
+      "unitsAvailable": 114
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "moderate",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -34755,7 +35554,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 1428
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -34826,7 +35625,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 66,
           "delivery_progress_score": 97
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -34849,7 +35648,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 66,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Sector 51 Gurgaon; limited portfolio. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: M/S ORCHID INFRASTRUCTURE DEVELOPERS PVT. LTD.",
+        "notes": "Sector 51 Gurgaon; limited portfolio. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: M/S ORCHID INFRASTRUCTURE DEVELOPERS PVT. LTD.",
         "listed": false,
         "ticker": null,
         "display_name": "Orchid Infrastructure",
@@ -34884,6 +35683,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 2,
+      "cumulativeSold": 38,
+      "cumulativeAbsorptionPct": "25.00%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -34900,11 +35708,11 @@ window.__PROJECTS__ = [
     "priceCr": 2.64,
     "sqft": null,
     "priceSqft": 17714,
-    "units": 266,
-    "launched": null,
-    "sold": null,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 101,
+    "launched": 101,
+    "sold": 101,
+    "absorption": "100.00%",
+    "inventory": "0 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2024/09/03/Project-Photo-1-Paras-Floret-Gurgaon-5423159_410_1440.jpg",
     "latitude": 28.406647110517,
@@ -34983,7 +35791,11 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 13
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 101,
+      "unitsSold": 101,
+      "unitsAvailable": 0
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "micromarket": {
@@ -35031,7 +35843,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 56,
           "delivery_progress_score": 89
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -35089,6 +35901,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 35,
+      "cumulativeSold": 101,
+      "cumulativeAbsorptionPct": "100.00%",
+      "cappedAtTotalUnits": true,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -35105,11 +35926,11 @@ window.__PROJECTS__ = [
     "priceCr": 4.43,
     "sqft": null,
     "priceSqft": 16871,
-    "units": 600,
-    "launched": null,
-    "sold": null,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 692,
+    "launched": 692,
+    "sold": 659,
+    "absorption": "95.23%",
+    "inventory": "33 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2025/03/24/Project-Photo-26-Puri-Diplomatic-Residences-Gurgaon-5419301_410_1440.jpg",
     "latitude": 28.5184381130698,
@@ -35188,11 +36009,15 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 15
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 692,
+      "unitsSold": 659,
+      "unitsAvailable": 33
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -35209,7 +36034,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2626
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -35320,7 +36145,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 67,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -35343,7 +36168,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 67,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Delhi NCR developer with Gurgaon presence; mixed delivery; medium complaint load. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: PURI CONSTRUCTION PRIVATE LIMITED, PURI CONSTRUCTION PVT. LTD., PURI CONSTRUCTIONS LTD.",
+        "notes": "Delhi NCR developer with Gurgaon presence; mixed delivery; medium complaint load. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: PURI CONSTRUCTION PRIVATE LIMITED, PURI CONSTRUCTION PVT. LTD., PURI CONSTRUCTIONS LTD.",
         "listed": false,
         "ticker": null,
         "display_name": "Puri Constructions",
@@ -35378,6 +36203,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 13,
+      "cumulativeSold": 659,
+      "cumulativeAbsorptionPct": "95.23%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -35525,7 +36359,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 67,
           "delivery_progress_score": 74
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -35548,7 +36382,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 67,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Delhi NCR developer with Gurgaon presence; mixed delivery; medium complaint load. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: PURI CONSTRUCTION PRIVATE LIMITED, PURI CONSTRUCTION PVT. LTD., PURI CONSTRUCTIONS LTD.",
+        "notes": "Delhi NCR developer with Gurgaon presence; mixed delivery; medium complaint load. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: PURI CONSTRUCTION PRIVATE LIMITED, PURI CONSTRUCTION PVT. LTD., PURI CONSTRUCTIONS LTD.",
         "listed": false,
         "ticker": null,
         "display_name": "Puri Constructions",
@@ -35792,7 +36626,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 45,
           "delivery_progress_score": 66
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -35815,7 +36649,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 45,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Dwarka Expressway focus; growing portfolio; mid-tier credentials. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: SATYA TOWNSHIPS PRIVATE LIMITED, SATYA TOWNSHIPS PVT. LTD.",
+        "notes": "Dwarka Expressway focus; growing portfolio; mid-tier credentials. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: SATYA TOWNSHIPS PRIVATE LIMITED, SATYA TOWNSHIPS PVT. LTD.",
         "listed": false,
         "ticker": null,
         "display_name": "Satya Group",
@@ -35866,11 +36700,11 @@ window.__PROJECTS__ = [
     "priceCr": 1.67,
     "sqft": null,
     "priceSqft": 9311,
-    "units": 854,
-    "launched": null,
-    "sold": null,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 1058,
+    "launched": 1058,
+    "sold": 1058,
+    "absorption": "100.00%",
+    "inventory": "0 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2024/12/03/Project-Photo-1-City-Of-Colours-NH-8-Gurgaon-5425073_410_1440.jpg",
     "latitude": 28.35651437,
@@ -35949,7 +36783,11 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 24
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 1058,
+      "unitsSold": 1058,
+      "unitsAvailable": 0
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "micromarket": {
@@ -35997,7 +36835,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 68,
           "delivery_progress_score": 62
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -36020,7 +36858,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 68,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "IPO in 2023; rapid growth trajectory; relatively high complaint ratio for scale. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: SIGNATURE GLOBAL (INDIA) PVT.LTD, SIGNATURE GLOBAL DEVELOPERS PRIVATE LIMITED",
+        "notes": "IPO in 2023; rapid growth trajectory; relatively high complaint ratio for scale. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: SIGNATURE GLOBAL (INDIA) PVT.LTD, SIGNATURE GLOBAL DEVELOPERS PRIVATE LIMITED",
         "listed": true,
         "ticker": "SIGNATUREG",
         "display_name": "Signature Global",
@@ -36055,6 +36893,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 92,
+      "cumulativeSold": 1058,
+      "cumulativeAbsorptionPct": "100.00%",
+      "cappedAtTotalUnits": true,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -36071,11 +36918,11 @@ window.__PROJECTS__ = [
     "priceCr": 1.36,
     "sqft": null,
     "priceSqft": 10111,
-    "units": 1122,
-    "launched": null,
-    "sold": null,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 1058,
+    "launched": 1058,
+    "sold": 1058,
+    "absorption": "100.00%",
+    "inventory": "0 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2026/01/03/Site-Photos-9-Signature-Global-City-Of-Colours-Gurgaon-5441903_616_934.jpg",
     "latitude": 28.35651437,
@@ -36154,7 +37001,11 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 24
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 1058,
+      "unitsSold": 1058,
+      "unitsAvailable": 0
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "micromarket": {
@@ -36202,7 +37053,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 68,
           "delivery_progress_score": 62
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -36225,7 +37076,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 68,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "IPO in 2023; rapid growth trajectory; relatively high complaint ratio for scale. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: SIGNATURE GLOBAL (INDIA) PVT.LTD, SIGNATURE GLOBAL DEVELOPERS PRIVATE LIMITED",
+        "notes": "IPO in 2023; rapid growth trajectory; relatively high complaint ratio for scale. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: SIGNATURE GLOBAL (INDIA) PVT.LTD, SIGNATURE GLOBAL DEVELOPERS PRIVATE LIMITED",
         "listed": true,
         "ticker": "SIGNATUREG",
         "display_name": "Signature Global",
@@ -36260,6 +37111,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 92,
+      "cumulativeSold": 1058,
+      "cumulativeAbsorptionPct": "100.00%",
+      "cappedAtTotalUnits": true,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -36276,11 +37136,11 @@ window.__PROJECTS__ = [
     "priceCr": 5.6,
     "sqft": 1742,
     "priceSqft": 26500,
-    "units": 766,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 837,
+    "launched": 837,
+    "sold": 776,
+    "absorption": "92.71%",
+    "inventory": "61 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2025/07/03/Project-Photo-1-Signature-Global-Cloverdale-SPR-Gurgaon-5433409_410_1440.jpg",
     "latitude": 28.4070784089376,
@@ -36390,12 +37250,12 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "2095 - 3480 sq.ft.",
-      "landArea": "8.12 Acre",
+      "sizes": "48x48",
+      "landArea": "8.12 (Acre)",
       "sourceUrl": "https://reratracker.com/signature-global-cloverdale-spr-in-gurugram-by-signatureglobal-india-limited-rtid5164",
       "startDate": "20-05-2025",
-      "unitsSold": null,
-      "totalUnits": 794,
+      "unitsSold": 776,
+      "totalUnits": 837,
       "launchPrice": 18500,
       "projectType": "NEW",
       "totalFloors": 35,
@@ -36403,11 +37263,11 @@ window.__PROJECTS__ = [
       "currentPrice": 18500,
       "completionDate": "2031-05-31",
       "configurations": "3 BHK4 BHK",
-      "projectAddress": "VILLAGE - FAIZALPUR JHARSA, SECTOR-71, GURUGRAM, HARYANA",
-      "unitsAvailable": null,
+      "projectAddress": "Ashirwad Palam Farm 6 Salahpur BijwasnSouth West Delhi-110061",
+      "unitsAvailable": 61,
       "projectSizeText": "6 Buildings - 794 units",
       "reraProjectName": "Signature Global Cloverdale SPR",
-      "totalLicensedLand": "22.50 Acre",
+      "totalLicensedLand": "22.50 (Acre)",
       "reraRegistrationNo": "RERA-GRG-1961-2025"
     },
     "builderIntelligence": {
@@ -36426,10 +37286,10 @@ window.__PROJECTS__ = [
         "revenue": "1,381 Cr",
         "profit": "16.2 Cr",
         "promoterHolding": "69.6%",
-        "currentPrice": "₹ 828",
-        "highLow": "₹ 1,310",
+        "currentPrice": "\u20b9 828",
+        "highLow": "\u20b9 1,310",
         "stockPE": null,
-        "bookValue": "₹ 69.3",
+        "bookValue": "\u20b9 69.3",
         "dividendYield": "0.00",
         "roce": "5.93",
         "roe": "-3.33"
@@ -36471,7 +37331,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -36488,7 +37348,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2113
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -36592,7 +37452,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 68,
           "delivery_progress_score": 44
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -36615,7 +37475,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 68,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "IPO in 2023; rapid growth trajectory; relatively high complaint ratio for scale. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: SIGNATURE GLOBAL (INDIA) PVT.LTD, SIGNATURE GLOBAL DEVELOPERS PRIVATE LIMITED",
+        "notes": "IPO in 2023; rapid growth trajectory; relatively high complaint ratio for scale. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: SIGNATURE GLOBAL (INDIA) PVT.LTD, SIGNATURE GLOBAL DEVELOPERS PRIVATE LIMITED",
         "listed": true,
         "ticker": "SIGNATUREG",
         "display_name": "Signature Global",
@@ -36650,6 +37510,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 283,
+      "cumulativeSold": 776,
+      "cumulativeAbsorptionPct": "92.71%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -36666,11 +37535,11 @@ window.__PROJECTS__ = [
     "priceCr": 1.9,
     "sqft": 776,
     "priceSqft": 13500,
-    "units": 2207,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 945,
+    "launched": 945,
+    "sold": 318,
+    "absorption": "33.65%",
+    "inventory": "627 unsold units",
     "bestFor": "End Use",
     "image": "https://img.staticmb.com/mbimages/project/2024/09/24/Project-Photo-1-Daxin-Vistas-Gurgaon-5423593_410_1440.jpg",
     "latitude": 28.247592,
@@ -36779,7 +37648,19 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 26
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "reraProjectName": "Signature Global Daxin Vistas",
+      "reraRegistrationNo": "RERA-GRG-1738-2024",
+      "projectAddress": "Aashirwad Palam Farm 6 Salahpur Bijwasan South West Delhi-110061",
+      "landArea": "21.9835 (Acre)",
+      "totalLicensedLand": "125.60 (Acre)",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "sourceUrl": "https://reratracker.com/signature-global-daxin-vistas-in-gurugram-by-signatureglobal-business-park-private-limited-rtid3609",
+      "totalUnits": 945,
+      "unitsSold": 318,
+      "unitsAvailable": 627
+    },
     "builderIntelligence": {
       "builderCode": "DEV-SIGG",
       "builderName": "Signature Global India Limited",
@@ -36796,10 +37677,10 @@ window.__PROJECTS__ = [
         "revenue": "1,381 Cr",
         "profit": "16.2 Cr",
         "promoterHolding": "69.6%",
-        "currentPrice": "₹ 828",
-        "highLow": "₹ 1,310",
+        "currentPrice": "\u20b9 828",
+        "highLow": "\u20b9 1,310",
         "stockPE": null,
-        "bookValue": "₹ 69.3",
+        "bookValue": "\u20b9 69.3",
         "dividendYield": "0.00",
         "roce": "5.93",
         "roe": "-3.33"
@@ -36885,7 +37766,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 68,
           "delivery_progress_score": 74
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -36908,7 +37789,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 68,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "IPO in 2023; rapid growth trajectory; relatively high complaint ratio for scale. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: SIGNATURE GLOBAL (INDIA) PVT.LTD, SIGNATURE GLOBAL DEVELOPERS PRIVATE LIMITED",
+        "notes": "IPO in 2023; rapid growth trajectory; relatively high complaint ratio for scale. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: SIGNATURE GLOBAL (INDIA) PVT.LTD, SIGNATURE GLOBAL DEVELOPERS PRIVATE LIMITED",
         "listed": true,
         "ticker": "SIGNATUREG",
         "display_name": "Signature Global",
@@ -36943,6 +37824,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 11,
+      "cumulativeSold": 318,
+      "cumulativeAbsorptionPct": "33.65%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -37090,7 +37980,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 68,
           "delivery_progress_score": 49
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -37113,7 +38003,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 68,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "IPO in 2023; rapid growth trajectory; relatively high complaint ratio for scale. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: SIGNATURE GLOBAL (INDIA) PVT.LTD, SIGNATURE GLOBAL DEVELOPERS PRIVATE LIMITED",
+        "notes": "IPO in 2023; rapid growth trajectory; relatively high complaint ratio for scale. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: SIGNATURE GLOBAL (INDIA) PVT.LTD, SIGNATURE GLOBAL DEVELOPERS PRIVATE LIMITED",
         "listed": true,
         "ticker": "SIGNATUREG",
         "display_name": "Signature Global",
@@ -37251,7 +38141,7 @@ window.__PROJECTS__ = [
     "builderIntelligence": null,
     "scoreCard": {
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Unit",
@@ -37334,7 +38224,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 68,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -37357,7 +38247,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 68,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "IPO in 2023; rapid growth trajectory; relatively high complaint ratio for scale. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: SIGNATURE GLOBAL (INDIA) PVT.LTD, SIGNATURE GLOBAL DEVELOPERS PRIVATE LIMITED",
+        "notes": "IPO in 2023; rapid growth trajectory; relatively high complaint ratio for scale. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: SIGNATURE GLOBAL (INDIA) PVT.LTD, SIGNATURE GLOBAL DEVELOPERS PRIVATE LIMITED",
         "listed": true,
         "ticker": "SIGNATUREG",
         "display_name": "Signature Global",
@@ -37408,11 +38298,11 @@ window.__PROJECTS__ = [
     "priceCr": 2.5,
     "sqft": null,
     "priceSqft": 13774,
-    "units": 1800,
-    "launched": null,
-    "sold": null,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 2159,
+    "launched": 2159,
+    "sold": 461,
+    "absorption": "21.35%",
+    "inventory": "1698 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2025/12/16/Project-Photo-1-Signature-Global-Sarvam-at-DXP-Estate-Gurgaon-5440759_410_1440.jpg",
     "latitude": 28.4471891071177,
@@ -37491,11 +38381,15 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 17
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 2159,
+      "unitsSold": 461,
+      "unitsAvailable": 1698
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -37512,7 +38406,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 1815
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -37681,7 +38575,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 68,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -37704,7 +38598,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 68,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "IPO in 2023; rapid growth trajectory; relatively high complaint ratio for scale. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: SIGNATURE GLOBAL (INDIA) PVT.LTD, SIGNATURE GLOBAL DEVELOPERS PRIVATE LIMITED",
+        "notes": "IPO in 2023; rapid growth trajectory; relatively high complaint ratio for scale. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: SIGNATURE GLOBAL (INDIA) PVT.LTD, SIGNATURE GLOBAL DEVELOPERS PRIVATE LIMITED",
         "listed": true,
         "ticker": "SIGNATUREG",
         "display_name": "Signature Global",
@@ -37739,6 +38633,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 461,
+      "cumulativeSold": 461,
+      "cumulativeAbsorptionPct": "21.35%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -37755,11 +38658,11 @@ window.__PROJECTS__ = [
     "priceCr": 3.9,
     "sqft": 1892,
     "priceSqft": 16500,
-    "units": 970,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 613,
+    "launched": 613,
+    "sold": 613,
+    "absorption": "100.00%",
+    "inventory": "0 unsold units",
     "bestFor": "End Use",
     "image": "https://img.staticmb.com/mbimages/project/2024/06/12/Project-Photo-1-Signatureglobal-Titanium-SPR-Gurgaon-5421593_410_1440.jpg",
     "latitude": 28.4070784089376,
@@ -37869,11 +38772,11 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "2780 - 3780 sq.ft.",
-      "landArea": "14.3825 Acre",
+      "sizes": "48x48",
+      "landArea": "14.3825 (Acre)",
       "sourceUrl": "https://reratracker.com/signature-global-titanium-spr-in-gurugram-by-signatureglobal-india-limited-rtid4125",
       "startDate": "06-05-2024",
-      "unitsSold": null,
+      "unitsSold": 613,
       "totalUnits": 613,
       "launchPrice": 15500,
       "projectType": "NEW",
@@ -37882,11 +38785,11 @@ window.__PROJECTS__ = [
       "currentPrice": 19000,
       "completionDate": "2031-02-28",
       "configurations": "3 BHK4 BHK",
-      "projectAddress": "VILLAGE- FAZILPUR JHARSA, SECTOR-71, GURUGRAM, HARYANA",
-      "unitsAvailable": null,
+      "projectAddress": "Aashirwad Palam Farm 6 Salahpur Bijwasn South West Delhi-110061",
+      "unitsAvailable": 0,
       "projectSizeText": "8 Buildings - 613 units",
       "reraProjectName": "Signature Global Titanium SPR",
-      "totalLicensedLand": "22.50 Acre",
+      "totalLicensedLand": "22.50 (Acre)",
       "reraRegistrationNo": "RERA-GRG-1641-2024"
     },
     "builderIntelligence": {
@@ -37905,10 +38808,10 @@ window.__PROJECTS__ = [
         "revenue": "1,381 Cr",
         "profit": "16.2 Cr",
         "promoterHolding": "69.6%",
-        "currentPrice": "₹ 828",
-        "highLow": "₹ 1,310",
+        "currentPrice": "\u20b9 828",
+        "highLow": "\u20b9 1,310",
         "stockPE": null,
-        "bookValue": "₹ 69.3",
+        "bookValue": "\u20b9 69.3",
         "dividendYield": "0.00",
         "roce": "5.93",
         "roe": "-3.33"
@@ -37950,7 +38853,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -37967,7 +38870,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2364
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -38064,7 +38967,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 68,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -38087,7 +38990,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 68,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "IPO in 2023; rapid growth trajectory; relatively high complaint ratio for scale. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: SIGNATURE GLOBAL (INDIA) PVT.LTD, SIGNATURE GLOBAL DEVELOPERS PRIVATE LIMITED",
+        "notes": "IPO in 2023; rapid growth trajectory; relatively high complaint ratio for scale. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: SIGNATURE GLOBAL (INDIA) PVT.LTD, SIGNATURE GLOBAL DEVELOPERS PRIVATE LIMITED",
         "listed": true,
         "ticker": "SIGNATUREG",
         "display_name": "Signature Global",
@@ -38122,6 +39025,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 41,
+      "cumulativeSold": 613,
+      "cumulativeAbsorptionPct": "100.00%",
+      "cappedAtTotalUnits": true,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -38138,11 +39050,11 @@ window.__PROJECTS__ = [
     "priceCr": 4.5,
     "sqft": 1702,
     "priceSqft": 18500,
-    "units": 312,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 383,
+    "launched": 383,
+    "sold": 368,
+    "absorption": "96.08%",
+    "inventory": "15 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2024/10/21/Project-Photo-1-Signature-Global-Twin-Tower-DXP-Gurgaon-5424223_410_1440.jpg",
     "latitude": 28.3988635069833,
@@ -38231,7 +39143,7 @@ window.__PROJECTS__ = [
           "distance_km": 7.76
         },
         "hospital": {
-          "name": "Queen’s Multispeciality Hospital",
+          "name": "Queen\u2019s Multispeciality Hospital",
           "distance_km": 1.19
         }
       },
@@ -38248,12 +39160,12 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "2650 - 3785 sq.ft.",
-      "landArea": "4.6875 Acre",
+      "sizes": "48x48",
+      "landArea": "4.6875 (Acre)",
       "sourceUrl": "https://reratracker.com/signature-global-twin-tower-dxp-in-gurugram-by-forever-buildtech-private-limited-rtid4126",
       "startDate": "06-08-2024",
-      "unitsSold": null,
-      "totalUnits": 312,
+      "unitsSold": 368,
+      "totalUnits": 383,
       "launchPrice": 20000,
       "projectType": "NEW",
       "totalFloors": 45,
@@ -38261,11 +39173,11 @@ window.__PROJECTS__ = [
       "currentPrice": 20000,
       "completionDate": "2030-05-30",
       "configurations": "3 BHK4 BHK",
-      "projectAddress": "VILLAGE-HAYATPUR, SECTOR-84, GURUGRAM, HARYANA",
-      "unitsAvailable": null,
+      "projectAddress": "Aashirwad Palam Farm 6 Salahpur Bijwasan South West Delhi-110061",
+      "unitsAvailable": 15,
       "projectSizeText": "2 Buildings - 312 units",
       "reraProjectName": "SIGNATURE GLOBAL TWIN TOWER DXP",
-      "totalLicensedLand": "4.6875 Acre",
+      "totalLicensedLand": "4.6875 (Acre)",
       "reraRegistrationNo": "RERA-GRG-1701-2024"
     },
     "builderIntelligence": {
@@ -38284,10 +39196,10 @@ window.__PROJECTS__ = [
         "revenue": "1,381 Cr",
         "profit": "16.2 Cr",
         "promoterHolding": "69.6%",
-        "currentPrice": "₹ 828",
-        "highLow": "₹ 1,310",
+        "currentPrice": "\u20b9 828",
+        "highLow": "\u20b9 1,310",
         "stockPE": null,
-        "bookValue": "₹ 69.3",
+        "bookValue": "\u20b9 69.3",
         "dividendYield": "0.00",
         "roce": "5.93",
         "roe": "-3.33"
@@ -38329,7 +39241,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -38346,7 +39258,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2432
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -38454,7 +39366,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 68,
           "delivery_progress_score": 49
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -38477,7 +39389,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 68,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "IPO in 2023; rapid growth trajectory; relatively high complaint ratio for scale. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: SIGNATURE GLOBAL (INDIA) PVT.LTD, SIGNATURE GLOBAL DEVELOPERS PRIVATE LIMITED",
+        "notes": "IPO in 2023; rapid growth trajectory; relatively high complaint ratio for scale. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: SIGNATURE GLOBAL (INDIA) PVT.LTD, SIGNATURE GLOBAL DEVELOPERS PRIVATE LIMITED",
         "listed": true,
         "ticker": "SIGNATUREG",
         "display_name": "Signature Global",
@@ -38512,6 +39424,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 57,
+      "cumulativeSold": 368,
+      "cumulativeAbsorptionPct": "96.08%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -38528,11 +39449,11 @@ window.__PROJECTS__ = [
     "priceCr": 4.19,
     "sqft": null,
     "priceSqft": null,
-    "units": 260,
-    "launched": null,
-    "sold": null,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 500,
+    "launched": 500,
+    "sold": 187,
+    "absorption": "37.40%",
+    "inventory": "313 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2021/04/26/Project-Photo-1-Hightown-Residence-Gurgaon-5257413_345_1366.jpg",
     "latitude": 28.454191,
@@ -38602,11 +39523,15 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 6
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 500,
+      "unitsSold": 187,
+      "unitsAvailable": 313
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -38700,7 +39625,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 58,
           "delivery_progress_score": 97
         },
-        "formula": "0.3571·location_score + 0.3571·developer_risk_score + 0.2857·delivery_progress_score",
+        "formula": "0.3571\u00b7location_score + 0.3571\u00b7developer_risk_score + 0.2857\u00b7delivery_progress_score",
         "missing": [
           "value_score"
         ],
@@ -38722,7 +39647,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 58,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "SPR corridor boutique developer; decent delivery for size. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: SILVERGLADES INFRASTRUCTURE PRIVATE LIMITED, SILVERGLADES INFRASTRUCTURE PVT. LTD.",
+        "notes": "SPR corridor boutique developer; decent delivery for size. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: SILVERGLADES INFRASTRUCTURE PRIVATE LIMITED, SILVERGLADES INFRASTRUCTURE PVT. LTD.",
         "listed": false,
         "ticker": null,
         "display_name": "Silverglades",
@@ -38757,6 +39682,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 1,
+      "cumulativeSold": 187,
+      "cumulativeAbsorptionPct": "37.40%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -38773,11 +39707,11 @@ window.__PROJECTS__ = [
     "priceCr": 1.25,
     "sqft": null,
     "priceSqft": 8082,
-    "units": 2391,
-    "launched": null,
-    "sold": null,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 2024,
+    "launched": 2024,
+    "sold": 1558,
+    "absorption": "76.98%",
+    "inventory": "466 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2021/11/29/Project-Photo-1-Smart-World-Gems-Gurgaon-5324379_345_1366.jpg",
     "latitude": 28.41880510992,
@@ -38852,11 +39786,15 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 20
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 2024,
+      "unitsSold": 1558,
+      "unitsAvailable": 466
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "moderate",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -38873,7 +39811,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 1547
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -38944,7 +39882,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 81,
           "delivery_progress_score": 97
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -38967,7 +39905,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 81,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Sister company of M3M India (M3M Group) — shares group financial backing and land resources. Registers projects under SPVs (Etsy Realcon, Nourish Developers, Svabhumi Realtors, Riverday Infrastructure, Adhikaansh Realtors). New brand since 2019; quality positioning in mid-premium segment. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: ADHIKAANSH REALTORS PRIVATE LIMITED, ADHIKAANSH REALTORS PRIVATE LIMITED ,AAWAM RESIDENCY PRIVATE LIMITED, ETSY REALCON PRIVATE LIMITED, NOURISH DEVELOPERS PRIVATE LIMITED, RIVERDAY INFRASTRUCTURE PRIVATE LIMITED, SVABHUMI REALTORS PRIVATE LIMITED",
+        "notes": "Sister company of M3M India (M3M Group) \u2014 shares group financial backing and land resources. Registers projects under SPVs (Etsy Realcon, Nourish Developers, Svabhumi Realtors, Riverday Infrastructure, Adhikaansh Realtors). New brand since 2019; quality positioning in mid-premium segment. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: ADHIKAANSH REALTORS PRIVATE LIMITED, ADHIKAANSH REALTORS PRIVATE LIMITED ,AAWAM RESIDENCY PRIVATE LIMITED, ETSY REALCON PRIVATE LIMITED, NOURISH DEVELOPERS PRIVATE LIMITED, RIVERDAY INFRASTRUCTURE PRIVATE LIMITED, SVABHUMI REALTORS PRIVATE LIMITED",
         "listed": false,
         "ticker": null,
         "display_name": "Smartworld",
@@ -39002,6 +39940,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 0,
+      "cumulativeSold": 1558,
+      "cumulativeAbsorptionPct": "76.98%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -39211,7 +40158,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 81,
           "delivery_progress_score": 40
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -39234,7 +40181,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 81,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Sister company of M3M India (M3M Group) — shares group financial backing and land resources. Registers projects under SPVs (Etsy Realcon, Nourish Developers, Svabhumi Realtors, Riverday Infrastructure, Adhikaansh Realtors). New brand since 2019; quality positioning in mid-premium segment. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: ADHIKAANSH REALTORS PRIVATE LIMITED, ADHIKAANSH REALTORS PRIVATE LIMITED ,AAWAM RESIDENCY PRIVATE LIMITED, ETSY REALCON PRIVATE LIMITED, NOURISH DEVELOPERS PRIVATE LIMITED, RIVERDAY INFRASTRUCTURE PRIVATE LIMITED, SVABHUMI REALTORS PRIVATE LIMITED",
+        "notes": "Sister company of M3M India (M3M Group) \u2014 shares group financial backing and land resources. Registers projects under SPVs (Etsy Realcon, Nourish Developers, Svabhumi Realtors, Riverday Infrastructure, Adhikaansh Realtors). New brand since 2019; quality positioning in mid-premium segment. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: ADHIKAANSH REALTORS PRIVATE LIMITED, ADHIKAANSH REALTORS PRIVATE LIMITED ,AAWAM RESIDENCY PRIVATE LIMITED, ETSY REALCON PRIVATE LIMITED, NOURISH DEVELOPERS PRIVATE LIMITED, RIVERDAY INFRASTRUCTURE PRIVATE LIMITED, SVABHUMI REALTORS PRIVATE LIMITED",
         "listed": false,
         "ticker": null,
         "display_name": "Smartworld",
@@ -39372,7 +40319,7 @@ window.__PROJECTS__ = [
     "builderIntelligence": null,
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "moderate",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -39389,7 +40336,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 1854
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -39472,7 +40419,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 81,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -39495,7 +40442,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 81,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Sister company of M3M India (M3M Group) — shares group financial backing and land resources. Registers projects under SPVs (Etsy Realcon, Nourish Developers, Svabhumi Realtors, Riverday Infrastructure, Adhikaansh Realtors). New brand since 2019; quality positioning in mid-premium segment. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: ADHIKAANSH REALTORS PRIVATE LIMITED, ADHIKAANSH REALTORS PRIVATE LIMITED ,AAWAM RESIDENCY PRIVATE LIMITED, ETSY REALCON PRIVATE LIMITED, NOURISH DEVELOPERS PRIVATE LIMITED, RIVERDAY INFRASTRUCTURE PRIVATE LIMITED, SVABHUMI REALTORS PRIVATE LIMITED",
+        "notes": "Sister company of M3M India (M3M Group) \u2014 shares group financial backing and land resources. Registers projects under SPVs (Etsy Realcon, Nourish Developers, Svabhumi Realtors, Riverday Infrastructure, Adhikaansh Realtors). New brand since 2019; quality positioning in mid-premium segment. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: ADHIKAANSH REALTORS PRIVATE LIMITED, ADHIKAANSH REALTORS PRIVATE LIMITED ,AAWAM RESIDENCY PRIVATE LIMITED, ETSY REALCON PRIVATE LIMITED, NOURISH DEVELOPERS PRIVATE LIMITED, RIVERDAY INFRASTRUCTURE PRIVATE LIMITED, SVABHUMI REALTORS PRIVATE LIMITED",
         "listed": false,
         "ticker": null,
         "display_name": "Smartworld",
@@ -39691,7 +40638,16 @@ window.__PROJECTS__ = [
         ]
       ]
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "reraProjectName": "SMARTWORLD ONE DXP",
+      "reraRegistrationNo": "RERA-GRG-1217-2022",
+      "projectAddress": "2415 Gali No 13 Kailash Nagar Gandhi\\\\nNagar S.O. East Delhi Delhi",
+      "landArea": "7.94 (Acre)",
+      "totalLicensedLand": "16.1125 (Acre)",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "sourceUrl": "https://reratracker.com/smartworld-one-dxp-in-gurugram-by-nourish-developers-private-limited-rtid4107"
+    },
     "builderIntelligence": {
       "builderCode": "DEV-SMW",
       "builderName": "Smartworld Developers",
@@ -39727,7 +40683,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Unit",
@@ -39809,7 +40765,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 81,
           "delivery_progress_score": 97
         },
-        "formula": "0.4·value_score + 0.3333·developer_risk_score + 0.2667·delivery_progress_score",
+        "formula": "0.4\u00b7value_score + 0.3333\u00b7developer_risk_score + 0.2667\u00b7delivery_progress_score",
         "missing": [
           "location_score"
         ],
@@ -39832,7 +40788,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 81,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Sister company of M3M India (M3M Group) — shares group financial backing and land resources. Registers projects under SPVs (Etsy Realcon, Nourish Developers, Svabhumi Realtors, Riverday Infrastructure, Adhikaansh Realtors). New brand since 2019; quality positioning in mid-premium segment. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: ADHIKAANSH REALTORS PRIVATE LIMITED, ADHIKAANSH REALTORS PRIVATE LIMITED ,AAWAM RESIDENCY PRIVATE LIMITED, ETSY REALCON PRIVATE LIMITED, NOURISH DEVELOPERS PRIVATE LIMITED, RIVERDAY INFRASTRUCTURE PRIVATE LIMITED, SVABHUMI REALTORS PRIVATE LIMITED",
+        "notes": "Sister company of M3M India (M3M Group) \u2014 shares group financial backing and land resources. Registers projects under SPVs (Etsy Realcon, Nourish Developers, Svabhumi Realtors, Riverday Infrastructure, Adhikaansh Realtors). New brand since 2019; quality positioning in mid-premium segment. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: ADHIKAANSH REALTORS PRIVATE LIMITED, ADHIKAANSH REALTORS PRIVATE LIMITED ,AAWAM RESIDENCY PRIVATE LIMITED, ETSY REALCON PRIVATE LIMITED, NOURISH DEVELOPERS PRIVATE LIMITED, RIVERDAY INFRASTRUCTURE PRIVATE LIMITED, SVABHUMI REALTORS PRIVATE LIMITED",
         "listed": false,
         "ticker": null,
         "display_name": "Smartworld",
@@ -39970,7 +40926,7 @@ window.__PROJECTS__ = [
     "builderIntelligence": null,
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -39987,7 +40943,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2823
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -40147,7 +41103,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 81,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -40170,7 +41126,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 81,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Sister company of M3M India (M3M Group) — shares group financial backing and land resources. Registers projects under SPVs (Etsy Realcon, Nourish Developers, Svabhumi Realtors, Riverday Infrastructure, Adhikaansh Realtors). New brand since 2019; quality positioning in mid-premium segment. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: ADHIKAANSH REALTORS PRIVATE LIMITED, ADHIKAANSH REALTORS PRIVATE LIMITED ,AAWAM RESIDENCY PRIVATE LIMITED, ETSY REALCON PRIVATE LIMITED, NOURISH DEVELOPERS PRIVATE LIMITED, RIVERDAY INFRASTRUCTURE PRIVATE LIMITED, SVABHUMI REALTORS PRIVATE LIMITED",
+        "notes": "Sister company of M3M India (M3M Group) \u2014 shares group financial backing and land resources. Registers projects under SPVs (Etsy Realcon, Nourish Developers, Svabhumi Realtors, Riverday Infrastructure, Adhikaansh Realtors). New brand since 2019; quality positioning in mid-premium segment. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: ADHIKAANSH REALTORS PRIVATE LIMITED, ADHIKAANSH REALTORS PRIVATE LIMITED ,AAWAM RESIDENCY PRIVATE LIMITED, ETSY REALCON PRIVATE LIMITED, NOURISH DEVELOPERS PRIVATE LIMITED, RIVERDAY INFRASTRUCTURE PRIVATE LIMITED, SVABHUMI REALTORS PRIVATE LIMITED",
         "listed": false,
         "ticker": null,
         "display_name": "Smartworld",
@@ -40221,11 +41177,11 @@ window.__PROJECTS__ = [
     "priceCr": 4.5,
     "sqft": 1702,
     "priceSqft": 19000,
-    "units": 956,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 961,
+    "launched": 961,
+    "sold": 594,
+    "absorption": "61.81%",
+    "inventory": "367 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2023/11/27/Project-Photo-16-Smartworld-The-Edition-Gurgaon-5417873_345_1366.jpg",
     "latitude": 28.3979555,
@@ -40335,12 +41291,12 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "2945 - 3660 sq.ft.",
-      "landArea": "10.70 Acre",
+      "sizes": "48x48",
+      "landArea": "10.70 (Acre)",
       "sourceUrl": "https://reratracker.com/smartworld-the-edition-in-gurugram-by-etsy-realcon-private-limited-rtid4140",
       "startDate": "19-10-2023",
-      "unitsSold": null,
-      "totalUnits": 956,
+      "unitsSold": 594,
+      "totalUnits": 961,
       "launchPrice": 18000,
       "projectType": "NEW",
       "totalFloors": 42,
@@ -40348,11 +41304,11 @@ window.__PROJECTS__ = [
       "currentPrice": 18000,
       "completionDate": "2031-02-01",
       "configurations": "3 BHK4 BHK",
-      "projectAddress": "SECTOR-66, GURUGRAM, HARYANA",
-      "unitsAvailable": null,
+      "projectAddress": "House No-723 Sector-31 Gurugram Haryana",
+      "unitsAvailable": 367,
       "projectSizeText": "6 Buildings - 956 units",
       "reraProjectName": "SMARTWORLD THE EDITION",
-      "totalLicensedLand": "10.70 Acre",
+      "totalLicensedLand": "10.70 (Acre)",
       "reraRegistrationNo": "RERA-GRG-1395-2023"
     },
     "builderIntelligence": {
@@ -40390,7 +41346,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "moderate",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -40407,7 +41363,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2368
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -40567,7 +41523,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 81,
           "delivery_progress_score": 74
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -40590,7 +41546,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 81,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Sister company of M3M India (M3M Group) — shares group financial backing and land resources. Registers projects under SPVs (Etsy Realcon, Nourish Developers, Svabhumi Realtors, Riverday Infrastructure, Adhikaansh Realtors). New brand since 2019; quality positioning in mid-premium segment. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: ADHIKAANSH REALTORS PRIVATE LIMITED, ADHIKAANSH REALTORS PRIVATE LIMITED ,AAWAM RESIDENCY PRIVATE LIMITED, ETSY REALCON PRIVATE LIMITED, NOURISH DEVELOPERS PRIVATE LIMITED, RIVERDAY INFRASTRUCTURE PRIVATE LIMITED, SVABHUMI REALTORS PRIVATE LIMITED",
+        "notes": "Sister company of M3M India (M3M Group) \u2014 shares group financial backing and land resources. Registers projects under SPVs (Etsy Realcon, Nourish Developers, Svabhumi Realtors, Riverday Infrastructure, Adhikaansh Realtors). New brand since 2019; quality positioning in mid-premium segment. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: ADHIKAANSH REALTORS PRIVATE LIMITED, ADHIKAANSH REALTORS PRIVATE LIMITED ,AAWAM RESIDENCY PRIVATE LIMITED, ETSY REALCON PRIVATE LIMITED, NOURISH DEVELOPERS PRIVATE LIMITED, RIVERDAY INFRASTRUCTURE PRIVATE LIMITED, SVABHUMI REALTORS PRIVATE LIMITED",
         "listed": false,
         "ticker": null,
         "display_name": "Smartworld",
@@ -40625,6 +41581,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 15,
+      "cumulativeSold": 594,
+      "cumulativeAbsorptionPct": "61.81%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -40771,10 +41736,10 @@ window.__PROJECTS__ = [
         "revenue": "5,368 Cr",
         "profit": "301 Cr",
         "promoterHolding": "52.9%",
-        "currentPrice": "₹ 1,389",
-        "highLow": "₹ 1,732",
+        "currentPrice": "\u20b9 1,389",
+        "highLow": "\u20b9 1,732",
         "stockPE": "49.3",
-        "bookValue": "₹ 439",
+        "bookValue": "\u20b9 439",
         "dividendYield": "0.22",
         "roce": "9.55",
         "roe": "6.61"
@@ -40818,7 +41783,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area, estimated from price ÷ ₹-per-sqft as MB per-unit area was unavailable. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area, estimated from price \u00f7 \u20b9-per-sqft as MB per-unit area was unavailable. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "estimated",
         "computed_at": "2026-06-12",
         "super_source": "price_derived",
@@ -40830,7 +41795,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2292
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -40934,7 +41899,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 78,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -40957,7 +41922,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 78,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Known for backward-integrated in-house construction — strong quality control. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: SOBHA LIMITED, SOBHA LTD, SOBHA LTD.",
+        "notes": "Known for backward-integrated in-house construction \u2014 strong quality control. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: SOBHA LIMITED, SOBHA LTD, SOBHA LTD.",
         "listed": true,
         "ticker": "SOBHA",
         "display_name": "Sobha",
@@ -41008,11 +41973,11 @@ window.__PROJECTS__ = [
     "priceCr": 1.6,
     "sqft": 1802,
     "priceSqft": 21500,
-    "units": 293,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 296,
+    "launched": 296,
+    "sold": 77,
+    "absorption": "26.01%",
+    "inventory": "219 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2024/06/20/Project-Photo-15-Altus-Gurgaon-5421737_410_1440.jpg",
     "latitude": 28.4998859,
@@ -41122,12 +42087,12 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "",
-      "landArea": "5.51 Acre",
+      "sizes": "48x48",
+      "landArea": "5.51 (Acre)",
       "sourceUrl": "https://reratracker.com/sobha-altus-in-gurugram-by-sobha-limited-rtid4141",
       "startDate": "05-04-2024",
-      "unitsSold": null,
-      "totalUnits": 293,
+      "unitsSold": 77,
+      "totalUnits": 296,
       "launchPrice": null,
       "projectType": "NEW",
       "totalFloors": 28,
@@ -41135,11 +42100,11 @@ window.__PROJECTS__ = [
       "currentPrice": null,
       "completionDate": "2031-12-31",
       "configurations": "",
-      "projectAddress": "REVENUE ESTATE OF VILLAGE PAWALA KHUSRUPUR, SECTOR-106, GURUGRAM",
-      "unitsAvailable": null,
+      "projectAddress": "3326 GURU KRIPA 14TH MAIN RMV-SADASHIVANAGAR BANGALORE 560080",
+      "unitsAvailable": 219,
       "projectSizeText": "3 Buildings - 293 units",
       "reraProjectName": "SOBHA ALTUS",
-      "totalLicensedLand": "5.51 Acre",
+      "totalLicensedLand": "5.51 (Acre)",
       "reraRegistrationNo": "RERA-GRG-1564-2024"
     },
     "builderIntelligence": {
@@ -41158,10 +42123,10 @@ window.__PROJECTS__ = [
         "revenue": "5,368 Cr",
         "profit": "301 Cr",
         "promoterHolding": "52.9%",
-        "currentPrice": "₹ 1,389",
-        "highLow": "₹ 1,732",
+        "currentPrice": "\u20b9 1,389",
+        "highLow": "\u20b9 1,732",
         "stockPE": "49.3",
-        "bookValue": "₹ 439",
+        "bookValue": "\u20b9 439",
         "dividendYield": "0.22",
         "roce": "9.55",
         "roe": "6.61"
@@ -41205,7 +42170,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "moderate",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -41222,7 +42187,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 744
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -41403,7 +42368,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 78,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -41426,7 +42391,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 78,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Known for backward-integrated in-house construction — strong quality control. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: SOBHA LIMITED, SOBHA LTD, SOBHA LTD.",
+        "notes": "Known for backward-integrated in-house construction \u2014 strong quality control. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: SOBHA LIMITED, SOBHA LTD, SOBHA LTD.",
         "listed": true,
         "ticker": "SOBHA",
         "display_name": "Sobha",
@@ -41461,6 +42426,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 3,
+      "cumulativeSold": 77,
+      "cumulativeAbsorptionPct": "26.01%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -41477,11 +42451,11 @@ window.__PROJECTS__ = [
     "priceCr": 4.5,
     "sqft": 1602,
     "priceSqft": 18500,
-    "units": 524,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 527,
+    "launched": 527,
+    "sold": 124,
+    "absorption": "23.53%",
+    "inventory": "403 unsold units",
     "bestFor": "End Use",
     "image": "https://img.staticmb.com/mbimages/project/2024/05/30/Project-Photo-1-Sobha-Aranya-Phase-1-Gurgaon-5420967_410_1440.jpg",
     "latitude": 28.3666376,
@@ -41591,12 +42565,12 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "2836 - 4285 sq.ft.",
-      "landArea": "14.81747 Acre",
+      "sizes": "48x48",
+      "landArea": "14.81747 (Acre)",
       "sourceUrl": "https://reratracker.com/sobha-aranya-phase-1-in-gurugram-by-sobha-limited-rtid4142",
       "startDate": "27-02-2024",
-      "unitsSold": null,
-      "totalUnits": 524,
+      "unitsSold": 124,
+      "totalUnits": 527,
       "launchPrice": 24000,
       "projectType": "NEW",
       "totalFloors": 46,
@@ -41604,11 +42578,11 @@ window.__PROJECTS__ = [
       "currentPrice": 26000,
       "completionDate": "2030-10-31",
       "configurations": "4 BHK3 BHK",
-      "projectAddress": "SECTOR-80, REVENUE ESTATE OF VILLAGE NAURANGPUR, GURUGRAM",
-      "unitsAvailable": null,
+      "projectAddress": "3326 14th Main RMV Exrn Sadashivanagar Bangalore 560080",
+      "unitsAvailable": 403,
       "projectSizeText": "5 Buildings - 524 units",
       "reraProjectName": "SOBHA ARANYA PHASE-1",
-      "totalLicensedLand": "31.28125 Acre",
+      "totalLicensedLand": "31.28125 (Acre)",
       "reraRegistrationNo": "RERA-GRG-1565-2024"
     },
     "builderIntelligence": {
@@ -41627,10 +42601,10 @@ window.__PROJECTS__ = [
         "revenue": "5,368 Cr",
         "profit": "301 Cr",
         "promoterHolding": "52.9%",
-        "currentPrice": "₹ 1,389",
-        "highLow": "₹ 1,732",
+        "currentPrice": "\u20b9 1,389",
+        "highLow": "\u20b9 1,732",
         "stockPE": "49.3",
-        "bookValue": "₹ 439",
+        "bookValue": "\u20b9 439",
         "dividendYield": "0.22",
         "roce": "9.55",
         "roe": "6.61"
@@ -41674,7 +42648,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "moderate",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -41691,7 +42665,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2432
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -41837,7 +42811,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 78,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -41860,7 +42834,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 78,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Known for backward-integrated in-house construction — strong quality control. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: SOBHA LIMITED, SOBHA LTD, SOBHA LTD.",
+        "notes": "Known for backward-integrated in-house construction \u2014 strong quality control. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: SOBHA LIMITED, SOBHA LTD, SOBHA LTD.",
         "listed": true,
         "ticker": "SOBHA",
         "display_name": "Sobha",
@@ -41895,6 +42869,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 10,
+      "cumulativeSold": 124,
+      "cumulativeAbsorptionPct": "23.53%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -42012,7 +42995,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 78,
           "delivery_progress_score": 97
         },
-        "formula": "0.3571·location_score + 0.3571·developer_risk_score + 0.2857·delivery_progress_score",
+        "formula": "0.3571\u00b7location_score + 0.3571\u00b7developer_risk_score + 0.2857\u00b7delivery_progress_score",
         "missing": [
           "value_score"
         ],
@@ -42034,7 +43017,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 78,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Known for backward-integrated in-house construction — strong quality control. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: SOBHA LIMITED, SOBHA LTD, SOBHA LTD.",
+        "notes": "Known for backward-integrated in-house construction \u2014 strong quality control. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: SOBHA LIMITED, SOBHA LTD, SOBHA LTD.",
         "listed": true,
         "ticker": "SOBHA",
         "display_name": "Sobha",
@@ -42095,8 +43078,8 @@ window.__PROJECTS__ = [
     "latitude": 28.5028,
     "longitude": 76.9725,
     "published": true,
-    "reraNumber": "",
-    "reraPossession": "",
+    "reraNumber": "RERA-GRG-2061-2025",
+    "reraPossession": "2032-12-31",
     "builderRiskScoreLabel": null,
     "developerRisk": {
       "rows": [
@@ -42195,8 +43178,8 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "857 - 1026 sq.ft.",
-      "landArea": "2.03 Acre",
+      "sizes": "48x48",
+      "landArea": "2.03 (Acre)",
       "sourceUrl": "https://reratracker.com/sobha-strada-in-gurugram-by-sobha-commercial-private-limited-rtid5281",
       "startDate": "03-10-2025",
       "unitsSold": null,
@@ -42208,11 +43191,11 @@ window.__PROJECTS__ = [
       "currentPrice": 24000,
       "completionDate": "2032-12-31",
       "configurations": "1 BHK",
-      "projectAddress": "SECTOR 106, VILLAGE PAWALA KHUSRUPUR, GURUGRAM",
+      "projectAddress": "139 Lodhi Complex Sai Baba Mandir Lodhi Road New Delhi-110003",
       "unitsAvailable": null,
       "projectSizeText": "1 Buildings - 251 units",
       "reraProjectName": "SOBHA STRADA",
-      "totalLicensedLand": "2.03 Acre",
+      "totalLicensedLand": "2.03 (Acre)",
       "reraRegistrationNo": "RERA-GRG-2061-2025"
     },
     "builderIntelligence": {
@@ -42231,10 +43214,10 @@ window.__PROJECTS__ = [
         "revenue": "5,368 Cr",
         "profit": "301 Cr",
         "promoterHolding": "52.9%",
-        "currentPrice": "₹ 1,389",
-        "highLow": "₹ 1,732",
+        "currentPrice": "\u20b9 1,389",
+        "highLow": "\u20b9 1,732",
         "stockPE": "49.3",
-        "bookValue": "₹ 439",
+        "bookValue": "\u20b9 439",
         "dividendYield": "0.22",
         "roce": "9.55",
         "roe": "6.61"
@@ -42322,7 +43305,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 78,
           "delivery_progress_score": 53
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -42345,7 +43328,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 78,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Known for backward-integrated in-house construction — strong quality control. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: SOBHA LIMITED, SOBHA LTD, SOBHA LTD.",
+        "notes": "Known for backward-integrated in-house construction \u2014 strong quality control. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: SOBHA LIMITED, SOBHA LTD, SOBHA LTD.",
         "listed": true,
         "ticker": "SOBHA",
         "display_name": "Sobha",
@@ -42396,11 +43379,11 @@ window.__PROJECTS__ = [
     "priceCr": 0.0,
     "sqft": 1804,
     "priceSqft": 24500,
-    "units": 0,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 198,
+    "launched": 198,
+    "sold": 64,
+    "absorption": "32.32%",
+    "inventory": "134 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2025/06/24/Project-Photo-27-Shapoorji-Pallonji-The-Dualis-Gurgaon-5432875_410_1440.jpg",
     "latitude": 28.4358404,
@@ -42493,7 +43476,7 @@ window.__PROJECTS__ = [
           "distance_km": 0.31
         },
         "hospital": {
-          "name": "السكن",
+          "name": "\u0627\u0644\u0633\u0643\u0646",
           "distance_km": 1.18
         }
       },
@@ -42509,7 +43492,11 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 6
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 198,
+      "unitsSold": 64,
+      "unitsAvailable": 134
+    },
     "builderIntelligence": {
       "builderCode": "DEV-SP",
       "builderName": "Shapoorji Pallonji Real Estate",
@@ -42545,7 +43532,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -42663,7 +43650,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 79,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -42686,7 +43673,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 79,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Large conglomerate EPC background; strong construction quality; some group-level debt concerns. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: JOYVILLE SHAPOORJI HOUSING PRIVATE LIMITED, JOYVILLE SHAPOORJI HOUSING PVT LTD, JOYVILLE SHAPOORJI HOUSING PVT. LTD.",
+        "notes": "Large conglomerate EPC background; strong construction quality; some group-level debt concerns. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: JOYVILLE SHAPOORJI HOUSING PRIVATE LIMITED, JOYVILLE SHAPOORJI HOUSING PVT LTD, JOYVILLE SHAPOORJI HOUSING PVT. LTD.",
         "listed": false,
         "ticker": null,
         "display_name": "Shapoorji Pallonji",
@@ -42721,6 +43708,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 22,
+      "cumulativeSold": 64,
+      "cumulativeAbsorptionPct": "32.32%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -42834,7 +43830,7 @@ window.__PROJECTS__ = [
           "distance_km": 2.74
         },
         "hospital": {
-          "name": "Queen’s Multispeciality Hospital",
+          "name": "Queen\u2019s Multispeciality Hospital",
           "distance_km": 1.87
         }
       },
@@ -42851,10 +43847,10 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "2350 - 3150 sq.ft.",
-      "landArea": "9.50 Acre",
+      "sizes": "48x48",
+      "landArea": "9.506 (Acre)",
       "sourceUrl": "https://reratracker.com/suncity-monarch-residences-in-gurugram-by-dvok-buildcon-llp-rtid5423",
-      "startDate": "18-12-2025",
+      "startDate": "2026-03-02",
       "unitsSold": null,
       "totalUnits": 900,
       "launchPrice": 16000,
@@ -42864,11 +43860,11 @@ window.__PROJECTS__ = [
       "currentPrice": 17000,
       "completionDate": "2031-03-31",
       "configurations": "3 BHK4 BHK",
-      "projectAddress": "SECTOR 78, VILLAGE SHIKOPUR",
+      "projectAddress": "B-48 Suncity Township Sector-54 Gurugram",
       "unitsAvailable": null,
       "projectSizeText": "5 Buildings - 900 units",
       "reraProjectName": "Suncity Monarch Residences",
-      "totalLicensedLand": "20.625 Acre",
+      "totalLicensedLand": "20.625 (Acre)",
       "reraRegistrationNo": "RERA-GRG-2100-2025"
     },
     "builderIntelligence": {
@@ -42906,7 +43902,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area, estimated from price ÷ ₹-per-sqft as MB per-unit area was unavailable. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area, estimated from price \u00f7 \u20b9-per-sqft as MB per-unit area was unavailable. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "estimated",
         "computed_at": "2026-06-12",
         "super_source": "price_derived",
@@ -42923,7 +43919,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2350
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -43013,7 +44009,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 55,
           "delivery_progress_score": 34
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -43036,7 +44032,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 55,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Old Gurgaon developer with delayed projects; elevated complaint history. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: SUNCITY PROJECTS PVT LTD, SUNCITY PROJECTS PVT. LTD.",
+        "notes": "Old Gurgaon developer with delayed projects; elevated complaint history. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: SUNCITY PROJECTS PVT LTD, SUNCITY PROJECTS PVT. LTD.",
         "listed": false,
         "ticker": null,
         "display_name": "Suncity Projects",
@@ -43087,11 +44083,11 @@ window.__PROJECTS__ = [
     "priceCr": 5.5,
     "sqft": 1702,
     "priceSqft": 22000,
-    "units": 386,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 611,
+    "launched": 611,
+    "sold": 276,
+    "absorption": "45.17%",
+    "inventory": "335 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2025/08/29/Project-Photo-5-TARC-Ishva-Gurgaon-5423465_410_1440.jpg",
     "latitude": 28.3920134856734,
@@ -43201,12 +44197,12 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "2858 - 3883 sq.ft.",
-      "landArea": "6.9500 Acre",
+      "sizes": "48x48",
+      "landArea": "6.9500 (Acre)",
       "sourceUrl": "https://reratracker.com/tarc-ishva-in-gurugram-by-tarc-limited-rtid4187",
       "startDate": "09-08-2024",
-      "unitsSold": null,
-      "totalUnits": 386,
+      "unitsSold": 276,
+      "totalUnits": 611,
       "launchPrice": 20500,
       "projectType": "NEW",
       "totalFloors": 38,
@@ -43214,11 +44210,11 @@ window.__PROJECTS__ = [
       "currentPrice": 25000,
       "completionDate": "2031-12-31",
       "configurations": "3 BHK4 BHK",
-      "projectAddress": "SECTOR 63A GURUGRAM",
-      "unitsAvailable": null,
+      "projectAddress": "ARA FARM HOUSE CHANDAN HOLLA CHHATTARPUR DELHI-110074",
+      "unitsAvailable": 335,
       "projectSizeText": "5 Buildings - 386 units",
       "reraProjectName": "TARC ISHVA",
-      "totalLicensedLand": "6.9500 Acre",
+      "totalLicensedLand": "6.9500 (Acre)",
       "reraRegistrationNo": "RERA-GRG-1704-2024"
     },
     "builderIntelligence": {
@@ -43237,10 +44233,10 @@ window.__PROJECTS__ = [
         "revenue": "37.5 Cr",
         "profit": "-245 Cr",
         "promoterHolding": "65.1%",
-        "currentPrice": "₹ 132",
-        "highLow": "₹ 206",
+        "currentPrice": "\u20b9 132",
+        "highLow": "\u20b9 206",
         "stockPE": null,
-        "bookValue": "₹ 37.2",
+        "bookValue": "\u20b9 37.2",
         "dividendYield": "0.00",
         "roce": "0.03",
         "roe": "-8.02"
@@ -43284,7 +44280,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "moderate",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -43301,7 +44297,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2500
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -43433,7 +44429,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 75,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -43456,7 +44452,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 75,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Delhi-focused luxury developer. Some historical delivery delays. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: TARC LIMITED",
+        "notes": "Delhi-focused luxury developer. Some historical delivery delays. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: TARC LIMITED",
         "listed": true,
         "ticker": "TARC",
         "display_name": "TARC",
@@ -43491,6 +44487,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 21,
+      "cumulativeSold": 276,
+      "cumulativeAbsorptionPct": "45.17%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -43507,11 +44512,11 @@ window.__PROJECTS__ = [
     "priceCr": 4.8,
     "sqft": 1602,
     "priceSqft": 20000,
-    "units": 0,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 611,
+    "launched": 611,
+    "sold": 276,
+    "absorption": "45.17%",
+    "inventory": "335 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2025/08/29/Project-Photo-5-TARC-Ishva-Gurgaon-5423465_410_1440.jpg",
     "latitude": 28.3920134856734,
@@ -43620,7 +44625,11 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 13
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 611,
+      "unitsSold": 276,
+      "unitsAvailable": 335
+    },
     "builderIntelligence": {
       "builderCode": "DEV-TARC",
       "builderName": "TARC Limited",
@@ -43637,10 +44646,10 @@ window.__PROJECTS__ = [
         "revenue": "37.5 Cr",
         "profit": "-245 Cr",
         "promoterHolding": "65.1%",
-        "currentPrice": "₹ 132",
-        "highLow": "₹ 206",
+        "currentPrice": "\u20b9 132",
+        "highLow": "\u20b9 206",
         "stockPE": null,
-        "bookValue": "₹ 37.2",
+        "bookValue": "\u20b9 37.2",
         "dividendYield": "0.00",
         "roce": "0.03",
         "roe": "-8.02"
@@ -43684,7 +44693,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area, estimated from price ÷ ₹-per-sqft as MB per-unit area was unavailable. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area, estimated from price \u00f7 \u20b9-per-sqft as MB per-unit area was unavailable. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "estimated",
         "computed_at": "2026-06-12",
         "super_source": "price_derived",
@@ -43696,7 +44705,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2400
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -43828,7 +44837,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 75,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -43851,7 +44860,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 75,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Delhi-focused luxury developer. Some historical delivery delays. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: TARC LIMITED",
+        "notes": "Delhi-focused luxury developer. Some historical delivery delays. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: TARC LIMITED",
         "listed": true,
         "ticker": "TARC",
         "display_name": "TARC",
@@ -43886,6 +44895,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 21,
+      "cumulativeSold": 276,
+      "cumulativeAbsorptionPct": "45.17%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -44091,7 +45109,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 51,
           "delivery_progress_score": 66
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -44114,7 +45132,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 51,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Tata Group RE arm; strong parentage; reliable delivery; low complaints. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: TATA HOUSNG DEVELOPMENT COMPANY LTD",
+        "notes": "Tata Group RE arm; strong parentage; reliable delivery; low complaints. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: TATA HOUSNG DEVELOPMENT COMPANY LTD",
         "listed": false,
         "ticker": null,
         "display_name": "Tata Housing",
@@ -44165,11 +45183,11 @@ window.__PROJECTS__ = [
     "priceCr": 6.58,
     "sqft": null,
     "priceSqft": 22500,
-    "units": 410,
-    "launched": null,
-    "sold": null,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 341,
+    "launched": 341,
+    "sold": 3,
+    "absorption": "0.88%",
+    "inventory": "338 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2024/09/03/Project-Photo-1-The-Legacy-Phase-1-Gurgaon-5423179_410_1440.jpg",
     "latitude": 28.3920134856734,
@@ -44248,11 +45266,15 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 13
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 341,
+      "unitsSold": 3,
+      "unitsAvailable": 338
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -44269,7 +45291,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2924
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -44373,7 +45395,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 58,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -44396,7 +45418,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 58,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "SPR corridor boutique developer; decent delivery for size. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: SILVERGLADES INFRASTRUCTURE PRIVATE LIMITED, SILVERGLADES INFRASTRUCTURE PVT. LTD.",
+        "notes": "SPR corridor boutique developer; decent delivery for size. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: SILVERGLADES INFRASTRUCTURE PRIVATE LIMITED, SILVERGLADES INFRASTRUCTURE PVT. LTD.",
         "listed": false,
         "ticker": null,
         "display_name": "Silverglades",
@@ -44431,6 +45453,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 3,
+      "cumulativeSold": 3,
+      "cumulativeAbsorptionPct": "0.88%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -44530,7 +45561,7 @@ window.__PROJECTS__ = [
     "builderIntelligence": null,
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -44547,7 +45578,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2350
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -44643,7 +45674,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 60,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -44804,7 +45835,7 @@ window.__PROJECTS__ = [
     "builderIntelligence": null,
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "moderate",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -44821,7 +45852,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2909
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -44946,7 +45977,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 68,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -44969,7 +46000,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 68,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "IPO in 2023; rapid growth trajectory; relatively high complaint ratio for scale. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: SIGNATURE GLOBAL (INDIA) PVT.LTD, SIGNATURE GLOBAL DEVELOPERS PRIVATE LIMITED",
+        "notes": "IPO in 2023; rapid growth trajectory; relatively high complaint ratio for scale. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: SIGNATURE GLOBAL (INDIA) PVT.LTD, SIGNATURE GLOBAL DEVELOPERS PRIVATE LIMITED",
         "listed": true,
         "ticker": "SIGNATUREG",
         "display_name": "Signature Global",
@@ -45098,7 +46129,7 @@ window.__PROJECTS__ = [
     "builderIntelligence": null,
     "scoreCard": {
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -45227,7 +46258,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 60,
           "delivery_progress_score": 38
         },
-        "formula": "0.3571·location_score + 0.3571·developer_risk_score + 0.2857·delivery_progress_score",
+        "formula": "0.3571\u00b7location_score + 0.3571\u00b7developer_risk_score + 0.2857\u00b7delivery_progress_score",
         "missing": [
           "value_score"
         ],
@@ -45249,7 +46280,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 60,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Golf Course Ext. developer; multiple delayed projects; elevated complaints. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: TREHAN PROMOTERS & BUILDERS PVT. LTD.",
+        "notes": "Golf Course Ext. developer; multiple delayed projects; elevated complaints. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: TREHAN PROMOTERS & BUILDERS PVT. LTD.",
         "listed": false,
         "ticker": null,
         "display_name": "Trehan Group",
@@ -45301,10 +46332,10 @@ window.__PROJECTS__ = [
     "sqft": null,
     "priceSqft": 12727,
     "units": 207,
-    "launched": null,
-    "sold": null,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "launched": 207,
+    "sold": 207,
+    "absorption": "100.00%",
+    "inventory": "0 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2024/07/24/Project-Photo-2-One-Good-Earth-Gurgaon-5422451_345_1366.jpg",
     "latitude": 28.4070784089376,
@@ -45383,7 +46414,11 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 16
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 207,
+      "unitsSold": 207,
+      "unitsAvailable": 0
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "micromarket": {
@@ -45431,7 +46466,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 60,
           "delivery_progress_score": 97
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -45454,7 +46489,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 60,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Golf Course Ext. developer; multiple delayed projects; elevated complaints. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: TREHAN PROMOTERS & BUILDERS PVT. LTD.",
+        "notes": "Golf Course Ext. developer; multiple delayed projects; elevated complaints. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: TREHAN PROMOTERS & BUILDERS PVT. LTD.",
         "listed": false,
         "ticker": null,
         "display_name": "Trehan Group",
@@ -45489,6 +46524,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "OCT-DEC",
+      "quarterEndDate": "2025-12-31",
+      "soldInQuarter": 1,
+      "cumulativeSold": 207,
+      "cumulativeAbsorptionPct": "100.00%",
+      "cappedAtTotalUnits": true,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -45505,11 +46549,11 @@ window.__PROJECTS__ = [
     "priceCr": 6.6,
     "sqft": null,
     "priceSqft": 22000,
-    "units": 172,
-    "launched": null,
-    "sold": null,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 203,
+    "launched": 203,
+    "sold": 203,
+    "absorption": "100.00%",
+    "inventory": "0 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2025/01/29/Project-Photo-17-Trevoc-Royal-Residences-Gurgaon-5423545_410_1440.jpg",
     "latitude": 28.4244375,
@@ -45588,11 +46632,15 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 8
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 203,
+      "unitsSold": 203,
+      "unitsAvailable": 0
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "high",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -45609,7 +46657,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 3000
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -45706,7 +46754,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 60,
           "delivery_progress_score": 49
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -45764,6 +46812,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 8,
+      "cumulativeSold": 203,
+      "cumulativeAbsorptionPct": "100.00%",
+      "cappedAtTotalUnits": true,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -45780,11 +46837,11 @@ window.__PROJECTS__ = [
     "priceCr": 7.9,
     "sqft": 4002,
     "priceSqft": 30000,
-    "units": 300,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 298,
+    "launched": 298,
+    "sold": 249,
+    "absorption": "83.56%",
+    "inventory": "49 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2025/04/29/Project-Photo-1-Trump-Residences-Gurgaon-Gurgaon-5430993_410_1440.jpg",
     "latitude": 28.3976154,
@@ -45893,7 +46950,11 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 16
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 298,
+      "unitsSold": 249,
+      "unitsAvailable": 49
+    },
     "builderIntelligence": {
       "builderCode": "DEV-TRI",
       "builderName": "Tribeca Creators LLP",
@@ -45929,7 +46990,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "moderate",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -45946,7 +47007,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2633
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -46078,7 +47139,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 81,
           "delivery_progress_score": 62
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -46101,7 +47162,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 81,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Sister company of M3M India (M3M Group) — shares group financial backing and land resources. Registers projects under SPVs (Etsy Realcon, Nourish Developers, Svabhumi Realtors, Riverday Infrastructure, Adhikaansh Realtors). New brand since 2019; quality positioning in mid-premium segment. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: ADHIKAANSH REALTORS PRIVATE LIMITED, ADHIKAANSH REALTORS PRIVATE LIMITED ,AAWAM RESIDENCY PRIVATE LIMITED, ETSY REALCON PRIVATE LIMITED, NOURISH DEVELOPERS PRIVATE LIMITED, RIVERDAY INFRASTRUCTURE PRIVATE LIMITED, SVABHUMI REALTORS PRIVATE LIMITED",
+        "notes": "Sister company of M3M India (M3M Group) \u2014 shares group financial backing and land resources. Registers projects under SPVs (Etsy Realcon, Nourish Developers, Svabhumi Realtors, Riverday Infrastructure, Adhikaansh Realtors). New brand since 2019; quality positioning in mid-premium segment. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: ADHIKAANSH REALTORS PRIVATE LIMITED, ADHIKAANSH REALTORS PRIVATE LIMITED ,AAWAM RESIDENCY PRIVATE LIMITED, ETSY REALCON PRIVATE LIMITED, NOURISH DEVELOPERS PRIVATE LIMITED, RIVERDAY INFRASTRUCTURE PRIVATE LIMITED, SVABHUMI REALTORS PRIVATE LIMITED",
         "listed": false,
         "ticker": null,
         "display_name": "Smartworld",
@@ -46136,6 +47197,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 2,
+      "cumulativeSold": 249,
+      "cumulativeAbsorptionPct": "83.56%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -46153,10 +47223,10 @@ window.__PROJECTS__ = [
     "sqft": 1352,
     "priceSqft": 13500,
     "units": 720,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "launched": 720,
+    "sold": 307,
+    "absorption": "42.64%",
+    "inventory": "413 unsold units",
     "bestFor": "End Use",
     "image": "https://img.staticmb.com/mbimages/project/2024/09/23/Project-Photo-1-Tulip-Crimson-Gurgaon-5423539_410_1440.jpg",
     "latitude": 28.3974945,
@@ -46266,11 +47336,11 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "3090 - 3090 sq.ft.",
-      "landArea": "9.16875 Acre",
+      "sizes": "48x48",
+      "landArea": "9.16875 (Acre)",
       "sourceUrl": "https://reratracker.com/tulip-crimson-in-gurugram-by-tulip-infratech-pvt-ltd-rtid4259",
       "startDate": "18-07-2024",
-      "unitsSold": null,
+      "unitsSold": 307,
       "totalUnits": 720,
       "launchPrice": 14000,
       "projectType": "NEW",
@@ -46279,11 +47349,11 @@ window.__PROJECTS__ = [
       "currentPrice": 14000,
       "completionDate": "2032-03-31",
       "configurations": "4 BHK",
-      "projectAddress": "SECTOR 70",
-      "unitsAvailable": null,
+      "projectAddress": "Khasra No. 417 Avenue One Westend Green Rang Puri South West Delhi",
+      "unitsAvailable": 413,
       "projectSizeText": "5 Buildings - 720 units",
       "reraProjectName": "TULIP CRIMSON",
-      "totalLicensedLand": "9.16875 Acre",
+      "totalLicensedLand": "9.16875 (Acre)",
       "reraRegistrationNo": "RERA-GRG-1647-2024"
     },
     "builderIntelligence": {
@@ -46321,7 +47391,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "moderate",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -46338,7 +47408,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2148
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -46414,7 +47484,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 47,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -46437,7 +47507,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 47,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Gurgaon developer; elevated complaint ratio and delivery delays. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: TULIP INFRATECH PVT. LTD.",
+        "notes": "Gurgaon developer; elevated complaint ratio and delivery delays. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: TULIP INFRATECH PVT. LTD.",
         "listed": false,
         "ticker": null,
         "display_name": "Tulip Infratech",
@@ -46472,6 +47542,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 0,
+      "cumulativeSold": 307,
+      "cumulativeAbsorptionPct": "42.64%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -46488,11 +47567,11 @@ window.__PROJECTS__ = [
     "priceCr": 3.2,
     "sqft": 1452,
     "priceSqft": 14500,
-    "units": 610,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 608,
+    "launched": 608,
+    "sold": 21,
+    "absorption": "3.45%",
+    "inventory": "587 unsold units",
     "bestFor": "End Use",
     "image": "https://img.staticmb.com/mbimages/project/2025/12/12/Project-Photo-5-Tulip-Melrose-Gurgaon-5440343_410_1440.jpg",
     "latitude": 28.3974945,
@@ -46602,12 +47681,12 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "3216 - 3216 sq.ft.",
-      "landArea": "7.5 Acre",
+      "sizes": "48x48",
+      "landArea": "7.5 (Acre)",
       "sourceUrl": "https://reratracker.com/tulip-melrose-in-gurugram-by-premium-infratech-llp-rtid5293",
       "startDate": "06-10-2025",
-      "unitsSold": null,
-      "totalUnits": 610,
+      "unitsSold": 21,
+      "totalUnits": 608,
       "launchPrice": 13750,
       "projectType": "NEW",
       "totalFloors": 38,
@@ -46615,11 +47694,11 @@ window.__PROJECTS__ = [
       "currentPrice": 14750,
       "completionDate": "2033-12-31",
       "configurations": "5 BHK",
-      "projectAddress": "SECTOR 70",
-      "unitsAvailable": null,
+      "projectAddress": "Khasra No. 418 Avenue One Westend Green Rang Puri South West Delhi",
+      "unitsAvailable": 587,
       "projectSizeText": "4 Buildings - 610 units",
       "reraProjectName": "TULIP MELROSE",
-      "totalLicensedLand": "7.5 Acre",
+      "totalLicensedLand": "7.5 (Acre)",
       "reraRegistrationNo": "RERA-GRG-2082-2025"
     },
     "builderIntelligence": {
@@ -46657,7 +47736,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "super_area": {
-        "note": "Loading = super ÷ carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
+        "note": "Loading = super \u00f7 carpet. Carpet from HRERA Form REP-I (regulator-filed). Super from MagicBricks advertised saleable area. Medians used to compare the project's typical unit, not a cherry-picked one.",
         "confidence": "moderate",
         "computed_at": "2026-06-12",
         "super_source": "magicbricks",
@@ -46674,7 +47753,7 @@ window.__PROJECTS__ = [
         "price_derived_super_sqft": 2207
       },
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -46750,7 +47829,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 47,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -46773,7 +47852,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 47,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Gurgaon developer; elevated complaint ratio and delivery delays. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: TULIP INFRATECH PVT. LTD.",
+        "notes": "Gurgaon developer; elevated complaint ratio and delivery delays. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: TULIP INFRATECH PVT. LTD.",
         "listed": false,
         "ticker": null,
         "display_name": "Tulip Infratech",
@@ -46808,6 +47887,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 21,
+      "cumulativeSold": 21,
+      "cumulativeAbsorptionPct": "3.45%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -46955,7 +48043,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 47,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -46978,7 +48066,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 47,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Gurgaon developer; elevated complaint ratio and delivery delays. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: TULIP INFRATECH PVT. LTD.",
+        "notes": "Gurgaon developer; elevated complaint ratio and delivery delays. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: TULIP INFRATECH PVT. LTD.",
         "listed": false,
         "ticker": null,
         "display_name": "Tulip Infratech",
@@ -47143,8 +48231,8 @@ window.__PROJECTS__ = [
       }
     },
     "reraDetails": {
-      "sizes": "",
-      "landArea": "1.9256 Acre",
+      "sizes": "48x48",
+      "landArea": "1.9256 (Acre)",
       "sourceUrl": "https://reratracker.com/whiteland-blissville-in-gurugram-by-whiteland-corporation-private-limited-rtid4313",
       "startDate": "09-11-2022",
       "unitsSold": null,
@@ -47156,11 +48244,11 @@ window.__PROJECTS__ = [
       "currentPrice": null,
       "completionDate": "2027-06-30",
       "configurations": "",
-      "projectAddress": "SECTOR- 76",
+      "projectAddress": "House No. 202 Tower - L PioneerPark Sector - 61 Gurgaon.",
       "unitsAvailable": null,
       "projectSizeText": "",
       "reraProjectName": "WHITELAND BLISSVILLE",
-      "totalLicensedLand": "7.3187 Acre",
+      "totalLicensedLand": "7.3187 (Acre)",
       "reraRegistrationNo": "RERA-GRG-1201-2022"
     },
     "builderIntelligence": {
@@ -47198,7 +48286,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Unit",
@@ -47281,7 +48369,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 76,
           "delivery_progress_score": 94
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -47304,7 +48392,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 76,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Newer developer; limited track record; New Gurgaon focus. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: WHITELAND CORPORATION PRIVATE LIMITED, WHITELAND CORPORATION PVT LTD, WHITELAND CORPORATION PVT. LTD.",
+        "notes": "Newer developer; limited track record; New Gurgaon focus. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: WHITELAND CORPORATION PRIVATE LIMITED, WHITELAND CORPORATION PVT LTD, WHITELAND CORPORATION PVT. LTD.",
         "listed": false,
         "ticker": null,
         "display_name": "Whiteland",
@@ -47355,11 +48443,11 @@ window.__PROJECTS__ = [
     "priceCr": 8.0,
     "sqft": 4,
     "priceSqft": 23000,
-    "units": 1908,
-    "launched": 0,
-    "sold": 0,
-    "absorption": "Data pending",
-    "inventory": "Data pending",
+    "units": 848,
+    "launched": 848,
+    "sold": 532,
+    "absorption": "62.74%",
+    "inventory": "316 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2025/04/09/Project-Photo-5-Whiteland-Urban-Resort-Gurgaon-5430097_837_1594.jpg",
     "latitude": 28.4763113,
@@ -47468,7 +48556,11 @@ window.__PROJECTS__ = [
         "huda_city_centre_drive_min": 19
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "totalUnits": 848,
+      "unitsSold": 532,
+      "unitsAvailable": 316
+    },
     "builderIntelligence": {
       "builderCode": "DEV-WHI",
       "builderName": "Whiteland Corporation",
@@ -47504,7 +48596,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Apartment/Shops/Other Buildings",
@@ -47580,7 +48672,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 76,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -47603,7 +48695,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 76,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Newer developer; limited track record; New Gurgaon focus. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: WHITELAND CORPORATION PRIVATE LIMITED, WHITELAND CORPORATION PVT LTD, WHITELAND CORPORATION PVT. LTD.",
+        "notes": "Newer developer; limited track record; New Gurgaon focus. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: WHITELAND CORPORATION PRIVATE LIMITED, WHITELAND CORPORATION PVT LTD, WHITELAND CORPORATION PVT. LTD.",
         "listed": false,
         "ticker": null,
         "display_name": "Whiteland",
@@ -47638,6 +48730,15 @@ window.__PROJECTS__ = [
       },
       "developer_risk_computed_at": "2026-06-09",
       "delivery_progress_computed_at": "2026-06-11"
+    },
+    "latestAbsorption": {
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 12,
+      "cumulativeSold": 532,
+      "cumulativeAbsorptionPct": "62.74%",
+      "cappedAtTotalUnits": false,
+      "updatedAt": "2026-07-14"
     }
   },
   {
@@ -47819,7 +48920,7 @@ window.__PROJECTS__ = [
     },
     "scoreCard": {
       "unit_sizes": {
-        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) — stricter than advertised 'super area'. Headline range covers residential units (300–12,000 sqft); shops/retail tracked separately.",
+        "note": "Carpet areas as declared to Haryana RERA (Form REP-I). Carpet area is RERA-defined (excludes walls/common area) \u2014 stricter than advertised 'super area'. Headline range covers residential units (300\u201312,000 sqft); shops/retail tracked separately.",
         "configs": [
           {
             "type": "Unit",
@@ -47902,7 +49003,7 @@ window.__PROJECTS__ = [
           "developer_risk_score": 76,
           "delivery_progress_score": 38
         },
-        "formula": "0.3·value_score + 0.25·location_score + 0.25·developer_risk_score + 0.2·delivery_progress_score",
+        "formula": "0.3\u00b7value_score + 0.25\u00b7location_score + 0.25\u00b7developer_risk_score + 0.2\u00b7delivery_progress_score",
         "missing": [],
         "computed_at": "2026-06-11",
         "weights_base": {
@@ -47925,7 +49026,7 @@ window.__PROJECTS__ = [
       "developer_risk_score": 76,
       "composite_computed_at": "2026-06-11",
       "developer_risk_detail": {
-        "notes": "Newer developer; limited track record; New Gurgaon focus. HRERA data scraped 2026-06-09 from haryanarera.gov.in — registered as: WHITELAND CORPORATION PRIVATE LIMITED, WHITELAND CORPORATION PVT LTD, WHITELAND CORPORATION PVT. LTD.",
+        "notes": "Newer developer; limited track record; New Gurgaon focus. HRERA data scraped 2026-06-09 from haryanarera.gov.in \u2014 registered as: WHITELAND CORPORATION PRIVATE LIMITED, WHITELAND CORPORATION PVT LTD, WHITELAND CORPORATION PVT. LTD.",
         "listed": false,
         "ticker": null,
         "display_name": "Whiteland",

@@ -535,7 +535,9 @@ def scrape_projects(args: argparse.Namespace) -> Tuple[List[Dict[str, str]], int
             else:
                 html = fetch_html(encoded_project_id, args.timeout)
             sales = parse_project(project, html)
-            master_total_units = parse_optional_int(project.source_row.get("master_units"))
+            master_total_units = parse_optional_int(project.source_row.get("master_units")) or parse_optional_int(
+                project.source_row.get("total_units")
+            )
             sales = add_cumulative_absorption(
                 sales,
                 cap_at_total_units=not args.no_cap,

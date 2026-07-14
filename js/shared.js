@@ -160,11 +160,17 @@ function mapSupabaseProject(row) {
     locationIntel: row.location_intel || {},
     reraDetails: row.rera_details || {},
     builderIntelligence: row.builder_intelligence || null,
+    latestAbsorption: row.latest_absorption || null,
   };
 }
 
 function mergeProjectEnrichment(primary, backup) {
   if (!backup) return primary;
+  const preferFresh = (current, fresh) => {
+    if (fresh === undefined || fresh === null || fresh === "" || fresh === "Data pending") return current;
+    if (current === undefined || current === null || current === "" || current === "Data pending") return fresh;
+    return fresh;
+  };
   const legacySlug =
     primary.slug && backup.slug && primary.slug !== backup.slug
       ? primary.slug
@@ -175,6 +181,15 @@ function mergeProjectEnrichment(primary, backup) {
     name: backup.name || primary.name,
     slug: backup.slug || primary.slug,
     legacySlug,
+    stage: preferFresh(primary.stage, backup.stage),
+    units: preferFresh(primary.units, backup.units),
+    launched: preferFresh(primary.launched, backup.launched),
+    sold: preferFresh(primary.sold, backup.sold),
+    absorption: preferFresh(primary.absorption, backup.absorption),
+    inventory: preferFresh(primary.inventory, backup.inventory),
+    reraNumber: preferFresh(primary.reraNumber, backup.reraNumber),
+    reraPossession: preferFresh(primary.reraPossession, backup.reraPossession),
+    latestAbsorption: backup.latestAbsorption || primary.latestAbsorption || null,
     builderIntelligence: primary.builderIntelligence || backup.builderIntelligence || null,
     reraDetails:
       primary.reraDetails && Object.keys(primary.reraDetails).length
