@@ -34,6 +34,15 @@ const elements = {
   heroAbsorptionSubtext: document.querySelector("#heroAbsorptionSubtext"),
   heroUnits: document.querySelector("#heroUnits"),
   heroUnitsSubtext: document.querySelector("#heroUnitsSubtext"),
+  absorptionQuarter: document.querySelector("#absorptionQuarter"),
+  absorptionHeadline: document.querySelector("#absorptionHeadline"),
+  absorptionNarrative: document.querySelector("#absorptionNarrative"),
+  absorptionFill: document.querySelector("#absorptionFill"),
+  absorptionOrb: document.querySelector("#absorptionOrb"),
+  absorptionOrbValue: document.querySelector("#absorptionOrbValue"),
+  absorptionSold: document.querySelector("#absorptionSold"),
+  absorptionAvailable: document.querySelector("#absorptionAvailable"),
+  absorptionTotal: document.querySelector("#absorptionTotal"),
   projectStage: document.querySelector("#projectStage"),
   snapshotGrid: document.querySelector("#snapshotGrid"),
   registryGrid: document.querySelector("#registryGrid"),
@@ -276,6 +285,46 @@ function getAbsorptionLabel(project) {
   if (project.stage === "New Launch") return "Early bookings stage";
   if (project.stage === "Under Construction") return "Mid-cycle visibility";
   return "Visibility building";
+}
+
+function getAbsorptionPercent(project) {
+  const raw = project.latestAbsorption?.cumulativeAbsorptionPct || project.absorption;
+  const parsed = Number(String(raw || "").replace("%", "").trim());
+  if (Number.isFinite(parsed)) return Math.max(0, Math.min(100, parsed));
+  if (project.launched && project.sold) return Math.max(0, Math.min(100, (project.sold / project.launched) * 100));
+  return null;
+}
+
+function absorptionTone(percent) {
+  if (!Number.isFinite(percent)) return "Data visibility still building";
+  if (percent >= 80) return "High buyer uptake";
+  if (percent >= 55) return "Healthy absorption";
+  if (percent >= 25) return "Steady absorption";
+  return "Early absorption";
+}
+
+function renderAbsorptionDashboard(project, rera) {
+  const percent = getAbsorptionPercent(project);
+  const totalUnits = rera.totalUnits || project.units || project.launched || 0;
+  const soldUnits = project.latestAbsorption?.cumulativeSold || project.sold || rera.unitsSold || 0;
+  const availableUnits = totalUnits && Number.isFinite(soldUnits) ? Math.max(totalUnits - soldUnits, 0) : rera.unitsAvailable;
+  const pctText = Number.isFinite(percent) ? `${percent.toFixed(2)}%` : "Data pending";
+  const width = Number.isFinite(percent) ? `${percent}%` : "0%";
+  const quarterText = project.latestAbsorption?.quarterLabel
+    ? `${project.latestAbsorption.quarterLabel} ${project.latestAbsorption.quarterEndDate || ""}`.trim()
+    : "Latest quarter pending";
+
+  elements.absorptionQuarter.textContent = quarterText;
+  elements.absorptionHeadline.textContent = pctText;
+  elements.absorptionOrbValue.textContent = Number.isFinite(percent) ? `${Math.round(percent)}%` : "--";
+  elements.absorptionFill.style.width = width;
+  elements.absorptionOrb.style.setProperty("--absorption-pct", width);
+  elements.absorptionSold.textContent = Number.isFinite(soldUnits) ? formatter.format(soldUnits) : "--";
+  elements.absorptionAvailable.textContent = Number.isFinite(availableUnits) ? formatter.format(availableUnits) : "--";
+  elements.absorptionTotal.textContent = totalUnits ? formatter.format(totalUnits) : "--";
+  elements.absorptionNarrative.textContent = Number.isFinite(percent) && totalUnits
+    ? `${absorptionTone(percent)}: ${formatter.format(soldUnits)} of ${formatter.format(totalUnits)} units are absorbed as per the latest matched quarterly data.`
+    : "Absorption percentage will show here once this project has a verified quarterly RERA match.";
 }
 
 function getScoreBreakdown(project, projects) {
@@ -596,6 +645,7 @@ function renderProject() {
   const displayUnits = rera.totalUnits || project.units;
   elements.heroUnits.textContent = displayUnits ? formatter.format(displayUnits) : "Data pending";
   elements.heroUnitsSubtext.textContent = rera.totalFloors ? `${formatter.format(rera.totalFloors)} floors` : "Matched project record";
+  renderAbsorptionDashboard(project, rera);
   elements.projectStage.textContent = project.stage;
 
   const snapshotRows = [

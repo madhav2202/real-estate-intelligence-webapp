@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./plinth-shell.css?v=20260522a" />
-    <link rel="stylesheet" href="./project-shell.css?v=20260522a" />
+    <link rel="stylesheet" href="./project-shell.css?v=20260714-absorption-ui" />
   </head>
   <body>
     <main class="project-shell">
@@ -47,14 +47,14 @@
 
       <section class="decision-row">
         <article class="decision-card">
-          <span>Builder Current Sale Price <button class="info-dot" type="button" title="The current builder asking price per square foot based on the latest underlying pricing data available in PropSpot Plinth.">i</button></span>
-          <strong id="builderPrice">--</strong>
-          <p id="builderPriceSubtext">--</p>
-        </article>
-        <article class="decision-card">
           <span>Absorption <button class="info-dot" type="button" title="Latest cumulative absorption from the Haryana RERA quarterly scrape where available.">i</button></span>
           <strong id="heroAbsorption">--</strong>
           <p id="heroAbsorptionSubtext">Latest quarterly scrape</p>
+        </article>
+        <article class="decision-card">
+          <span>Builder Current Sale Price <button class="info-dot" type="button" title="The current builder asking price per square foot based on the latest underlying pricing data available in PropSpot Plinth.">i</button></span>
+          <strong id="builderPrice">--</strong>
+          <p id="builderPriceSubtext">--</p>
         </article>
         <article class="decision-card">
           <span>Total Units <button class="info-dot" type="button" title="Current total unit count from matched master/RERA/ReraTracker data.">i</button></span>
@@ -65,6 +65,40 @@
 
       <section class="project-layout">
         <div class="project-main">
+          <section class="surface-card absorption-card">
+            <div class="absorption-copy">
+              <div class="section-head">
+                <h2>Absorption Pulse</h2>
+                <span id="absorptionQuarter">--</span>
+              </div>
+              <strong id="absorptionHeadline">--</strong>
+              <p id="absorptionNarrative">Latest absorption will appear here once the project has a verified quarterly RERA scrape.</p>
+              <div class="absorption-track">
+                <i id="absorptionFill"></i>
+              </div>
+            </div>
+            <div class="absorption-metrics">
+              <div class="absorption-orb" id="absorptionOrb">
+                <strong id="absorptionOrbValue">--</strong>
+                <span>absorbed</span>
+              </div>
+              <div class="absorption-mini-grid">
+                <div>
+                  <span>Sold</span>
+                  <strong id="absorptionSold">--</strong>
+                </div>
+                <div>
+                  <span>Available</span>
+                  <strong id="absorptionAvailable">--</strong>
+                </div>
+                <div>
+                  <span>Total Units</span>
+                  <strong id="absorptionTotal">--</strong>
+                </div>
+              </div>
+            </div>
+          </section>
+
           <section class="surface-card snapshot-card">
             <div class="section-head">
               <h2>Project Snapshot</h2>
@@ -339,6 +373,6 @@
       </section>
     </main>
 
-    <script type="module" src="./js/project.js?v=20260522a"></script>
+    <script type="module" src="./js/project.js?v=20260714-absorption-ui"></script>
   </body>
 </html>
