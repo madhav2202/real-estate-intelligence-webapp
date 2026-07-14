@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./plinth-shell.css?v=20260522a" />
-    <link rel="stylesheet" href="./project-shell.css?v=20260714-absorption-ui" />
+    <link rel="stylesheet" href="./project-shell.css?v=20260714-price-context" />
   </head>
   <body>
     <main class="project-shell">
@@ -97,6 +97,34 @@
                 </div>
               </div>
             </div>
+          </section>
+
+          <section class="surface-card price-context-card">
+            <div class="section-head">
+              <h2>Price Context</h2>
+              <span id="priceContextSignal">Market read</span>
+            </div>
+            <p class="section-note" id="priceContextNarrative">
+              Pricing context will appear once project and market pricing are loaded.
+            </p>
+            <div class="price-context-grid">
+              <article class="price-context-stat price-context-stat--project">
+                <span>Project Price</span>
+                <strong id="priceContextProject">--</strong>
+                <em>Current tracked project ask</em>
+              </article>
+              <article class="price-context-stat">
+                <span>Median Market Price</span>
+                <strong id="priceContextOverall">--</strong>
+                <em>Median across tracked Gurgaon projects</em>
+              </article>
+              <article class="price-context-stat">
+                <span id="priceContextMicroLabel">Micro-market Price</span>
+                <strong id="priceContextMicro">--</strong>
+                <em>Median within the closest matched corridor</em>
+              </article>
+            </div>
+            <div class="price-context-bars" id="priceContextBars"></div>
           </section>
 
           <section class="surface-card snapshot-card">
@@ -373,6 +401,6 @@
       </section>
     </main>
 
-    <script type="module" src="./js/project.js?v=20260714-absorption-ui"></script>
+    <script type="module" src="./js/project.js?v=20260714-price-context"></script>
   </body>
 </html>

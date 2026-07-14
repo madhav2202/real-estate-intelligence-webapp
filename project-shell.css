@@ -548,6 +548,106 @@ textarea {
   line-height: 1;
 }
 
+.price-context-card {
+  border-color: rgba(255, 255, 255, 0.1);
+  background:
+    radial-gradient(circle at 92% 0%, rgba(245, 158, 11, 0.1), transparent 24%),
+    radial-gradient(circle at 0% 100%, rgba(94, 234, 212, 0.1), transparent 28%),
+    linear-gradient(180deg, rgba(18, 18, 30, 0.99), rgba(13, 13, 21, 0.98));
+}
+
+.price-context-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.price-context-stat {
+  min-height: 150px;
+  padding: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.price-context-stat--project {
+  border-color: rgba(94, 234, 212, 0.26);
+  background:
+    linear-gradient(135deg, rgba(94, 234, 212, 0.14), rgba(255, 255, 255, 0.035) 50%),
+    rgba(255, 255, 255, 0.035);
+}
+
+.price-context-stat span,
+.price-context-bar-row span {
+  display: block;
+  color: rgba(232, 230, 240, 0.58);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.price-context-stat strong {
+  display: block;
+  margin-top: 16px;
+  color: #f8f7fc;
+  font-size: clamp(24px, 2.4vw, 36px);
+  line-height: 1;
+  letter-spacing: -0.035em;
+}
+
+.price-context-stat em {
+  display: block;
+  margin-top: 12px;
+  color: rgba(232, 230, 240, 0.62);
+  font-size: 12px;
+  font-style: normal;
+  line-height: 1.45;
+}
+
+.price-context-bars {
+  display: grid;
+  gap: 12px;
+  margin-top: 18px;
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.price-context-bar-row {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr) 96px;
+  gap: 12px;
+  align-items: center;
+}
+
+.price-context-track {
+  height: 10px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.price-context-track i {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #7c6af5, #5eead4);
+}
+
+.price-context-bar-row--project .price-context-track i {
+  background: linear-gradient(90deg, #5eead4, #f59e0b);
+  box-shadow: 0 0 18px rgba(94, 234, 212, 0.18);
+}
+
+.price-context-bar-row strong {
+  color: #f8f7fc;
+  font-size: 13px;
+  text-align: right;
+}
+
 .intelligence-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.95fr);
@@ -1425,6 +1525,7 @@ td {
   .project-layout,
   .intelligence-grid,
   .absorption-card,
+  .price-context-grid,
   .snapshot-grid,
   .registry-grid,
   .finance-mini-grid,
@@ -1497,6 +1598,7 @@ td {
 
   .bar-row,
   .breakdown-row,
+  .price-context-bar-row,
   .location-spectrum-row,
   .emi-split-row {
     grid-template-columns: 1fr;
@@ -1505,6 +1607,7 @@ td {
   .bar-row strong,
   .breakdown-row strong,
   .detail-list strong,
+  .price-context-bar-row strong,
   .location-spectrum-row strong {
     text-align: left;
   }

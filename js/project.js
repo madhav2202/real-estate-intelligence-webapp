@@ -43,6 +43,13 @@ const elements = {
   absorptionSold: document.querySelector("#absorptionSold"),
   absorptionAvailable: document.querySelector("#absorptionAvailable"),
   absorptionTotal: document.querySelector("#absorptionTotal"),
+  priceContextSignal: document.querySelector("#priceContextSignal"),
+  priceContextNarrative: document.querySelector("#priceContextNarrative"),
+  priceContextProject: document.querySelector("#priceContextProject"),
+  priceContextOverall: document.querySelector("#priceContextOverall"),
+  priceContextMicroLabel: document.querySelector("#priceContextMicroLabel"),
+  priceContextMicro: document.querySelector("#priceContextMicro"),
+  priceContextBars: document.querySelector("#priceContextBars"),
   projectStage: document.querySelector("#projectStage"),
   snapshotGrid: document.querySelector("#snapshotGrid"),
   registryGrid: document.querySelector("#registryGrid"),
@@ -184,6 +191,94 @@ function getApprovalScore(project) {
 
 function getCanonicalPriceSqft(project) {
   return project.priceSqft || project.reraDetails?.currentPrice || project.reraDetails?.launchPrice || 0;
+}
+
+function median(values) {
+  const nums = values.filter((value) => Number.isFinite(value) && value > 0).sort((a, b) => a - b);
+  if (!nums.length) return 0;
+  const mid = Math.floor(nums.length / 2);
+  return nums.length % 2 ? nums[mid] : Math.round((nums[mid - 1] + nums[mid]) / 2);
+}
+
+function getProjectPrices(projects) {
+  return projects.map((project) => getCanonicalPriceSqft(project)).filter((value) => Number.isFinite(value) && value > 0);
+}
+
+function sameTextValue(left, right) {
+  return String(left || "").trim().toLowerCase() === String(right || "").trim().toLowerCase();
+}
+
+function getMicroMarketProjects(project, projects) {
+  const peers = projects.filter((candidate) => candidate.slug !== project.slug);
+  const corridorPeers = peers.filter((candidate) => project.corridor && sameTextValue(candidate.corridor, project.corridor));
+  if (corridorPeers.length >= 3) return corridorPeers;
+
+  const sectorPeers = peers.filter((candidate) => project.sector && sameTextValue(candidate.sector, project.sector));
+  if (sectorPeers.length >= 3) return sectorPeers;
+
+  const locationKey = String(project.location || "").trim().toLowerCase();
+  const locationPeers = peers.filter((candidate) => locationKey && String(candidate.location || "").toLowerCase().includes(locationKey));
+  return locationPeers.length >= 3 ? locationPeers : corridorPeers.concat(sectorPeers, locationPeers);
+}
+
+function getPriceContext(project, projects) {
+  const projectPrice = getCanonicalPriceSqft(project);
+  const overallMedian = median(getProjectPrices(projects));
+  const microPeers = getMicroMarketProjects(project, projects);
+  const microMedian = median(getProjectPrices(microPeers)) || overallMedian;
+  const microLabel = project.corridor || project.sector || project.location || "Micro-market";
+  return { projectPrice, overallMedian, microMedian, microLabel };
+}
+
+function getPriceDelta(value, baseline) {
+  if (!value || !baseline) return null;
+  return ((value - baseline) / baseline) * 100;
+}
+
+function formatDelta(delta) {
+  if (!Number.isFinite(delta)) return "Benchmark pending";
+  if (Math.abs(delta) < 1) return "In line";
+  return `${delta > 0 ? "+" : "-"}${Math.abs(delta).toFixed(1)}%`;
+}
+
+function getPricePositionText(delta) {
+  if (!Number.isFinite(delta)) return "Market benchmark pending";
+  if (Math.abs(delta) < 1) return "In line with micro-market";
+  return delta > 0 ? "Above micro-market" : "Below micro-market";
+}
+
+function renderPriceContext(project, projects) {
+  const context = getPriceContext(project, projects);
+  const { projectPrice, overallMedian, microMedian, microLabel } = context;
+  const microDelta = getPriceDelta(projectPrice, microMedian);
+  const marketDelta = getPriceDelta(projectPrice, overallMedian);
+  const maxValue = Math.max(projectPrice, overallMedian, microMedian, 1);
+  const bars = [
+    ["Project price", projectPrice, "project"],
+    ["Median market price", overallMedian, "overall"],
+    [`${microLabel} median`, microMedian, "micro"],
+  ];
+
+  elements.priceContextProject.textContent = projectPrice ? formatSqft(projectPrice) : "Price on request";
+  elements.priceContextOverall.textContent = overallMedian ? formatSqft(overallMedian) : "Data pending";
+  elements.priceContextMicroLabel.textContent = `${microLabel} Price`;
+  elements.priceContextMicro.textContent = microMedian ? formatSqft(microMedian) : "Data pending";
+  elements.priceContextSignal.textContent = getPricePositionText(microDelta);
+  elements.priceContextNarrative.textContent = projectPrice
+    ? `${project.name} is ${formatDelta(microDelta).toLowerCase()} versus the ${microLabel} median and ${formatDelta(marketDelta).toLowerCase()} versus the overall tracked Gurgaon market median.`
+    : `Project pricing is still pending; the page will compare it with the ${microLabel} median and Gurgaon market median once a tracked price is available.`;
+  elements.priceContextBars.innerHTML = bars
+    .map(([label, value, tone]) => {
+      const width = Math.max(6, Math.min(100, (value / maxValue) * 100));
+      return `
+        <div class="price-context-bar-row price-context-bar-row--${tone}">
+          <span>${label}</span>
+          <div class="price-context-track"><i style="width:${width}%"></i></div>
+          <strong>${value ? formatSqft(value, false) : "--"}</strong>
+        </div>
+      `;
+    })
+    .join("");
 }
 
 function getBestFit(project) {
@@ -646,6 +741,7 @@ function renderProject() {
   elements.heroUnits.textContent = displayUnits ? formatter.format(displayUnits) : "Data pending";
   elements.heroUnitsSubtext.textContent = rera.totalFloors ? `${formatter.format(rera.totalFloors)} floors` : "Matched project record";
   renderAbsorptionDashboard(project, rera);
+  renderPriceContext(project, state.projects);
   elements.projectStage.textContent = project.stage;
 
   const snapshotRows = [
