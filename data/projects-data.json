@@ -13,7 +13,7 @@
     "priceCr": 4.39,
     "sqft": null,
     "priceSqft": 18000,
-    "units": 1008,
+    "units": 243,
     "launched": null,
     "sold": null,
     "absorption": "Data pending",
@@ -96,7 +96,18 @@
         "huda_city_centre_drive_min": 13
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "reraProjectName": "4S The Aurrum",
+      "reraRegistrationNo": "RERA-GRG-1572-2024",
+      "projectAddress": "VILLAGE ULLAHWAS \\u0026 BEHRAMPUR, SECTOR 59 \\u0026 63A GURUGRAM",
+      "landArea": "5.42957 (Acre)",
+      "totalLicensedLand": "10.071875 (Acre)",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "sourceUrl": "https://reratracker.com/4s-the-aurrum-in-gurugram-by-4s-developers-private-limited-rtid3439",
+      "totalUnits": 243,
+      "totalFloors": 42
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "micromarket": {
@@ -304,7 +315,16 @@
     "reraDetails": {
       "totalUnits": 251,
       "unitsSold": 225,
-      "unitsAvailable": 26
+      "unitsAvailable": 26,
+      "reraProjectName": "Adani Lushlands",
+      "reraRegistrationNo": "RERA-GRG-1526-2024",
+      "projectAddress": "VILLAGE GWAL PAHARI, SECTOR 02, GURUGRAM",
+      "landArea": "8.349 (Acre)",
+      "totalLicensedLand": "12.356 (Acre)",
+      "sizes": "48x48",
+      "projectType": "ONGOING",
+      "sourceUrl": "https://reratracker.com/adani-lushlands-in-gurugram-by-adani-infrastructure-and-developers-private-limited-rtid3843",
+      "totalFloors": 32
     },
     "builderIntelligence": null,
     "scoreCard": {
@@ -451,7 +471,7 @@
       "cumulativeSold": 225,
       "cumulativeAbsorptionPct": "89.64%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -1155,7 +1175,7 @@
       "cumulativeSold": 105,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -1258,7 +1278,16 @@
     "reraDetails": {
       "totalUnits": 85,
       "unitsSold": 53,
-      "unitsAvailable": 32
+      "unitsAvailable": 32,
+      "reraProjectName": "Adani Samsara Avasa",
+      "reraRegistrationNo": "RERA-GRG-1150-2022",
+      "projectAddress": "BLOCK-L, SECTOR-63, VILLAGE-ULLAHAWAS",
+      "landArea": "1.2296 (Acre)",
+      "totalLicensedLand": "141.66875 (Acre)",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "sourceUrl": "https://reratracker.com/adani-samsara-avasa-in-gurugram-by-adani-brahma-synergy-private-limited-rtid4035",
+      "totalFloors": 4
     },
     "builderIntelligence": null,
     "scoreCard": {
@@ -1527,7 +1556,7 @@
       "cumulativeSold": 53,
       "cumulativeAbsorptionPct": "62.35%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -1671,7 +1700,7 @@
       "currentPrice": null,
       "completionDate": "2029-06-30",
       "configurations": "4 BHK",
-      "projectAddress": "C23 ORCHID PARK NE ANJANI TOWER SATELLITE AHMEDABAD Gujrat 380015",
+      "projectAddress": "SECTOR 63, BLOCK - I VILLAGE MAIDAVAS",
       "unitsAvailable": null,
       "projectSizeText": "192 units",
       "reraProjectName": "Adani Samsara Ivana",
@@ -2215,7 +2244,7 @@
       "currentPrice": 17000,
       "completionDate": "2031-12-31",
       "configurations": "3 BHK4 BHK",
-      "projectAddress": "Cuffe Castle Building 10th Floor J-3 Cuffe Parade Colaba Mumbai Maharashtra 4000005",
+      "projectAddress": "SECTOR 102 \\u0026 102A",
       "unitsAvailable": null,
       "projectSizeText": "3 Buildings - 368 units",
       "reraProjectName": "Adani The MarQ",
@@ -2651,7 +2680,16 @@
     "reraDetails": {
       "totalUnits": 32,
       "unitsSold": 32,
-      "unitsAvailable": 0
+      "unitsAvailable": 0,
+      "reraProjectName": "Adani Veris",
+      "reraRegistrationNo": "RERA-GRG-1877-2025",
+      "projectAddress": "VILLAGE GWAL PAHARI, SECTOR 02, GURUGRAM",
+      "landArea": "4.0069 (Acre)",
+      "totalLicensedLand": "12.356 (Acre)",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "sourceUrl": "https://reratracker.com/adani-veris-in-gurugram-by-adani-infrastructure-developers-private-limited-rtid4287",
+      "totalFloors": 32
     },
     "builderIntelligence": null,
     "scoreCard": {
@@ -2787,7 +2825,7 @@
       "cumulativeSold": 32,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -2921,7 +2959,7 @@
       "currentPrice": 17000,
       "completionDate": "2033-06-30",
       "configurations": "2 BHK3 BHK4 BHK",
-      "projectAddress": "B-3 Ansal Villas Complex Stabari South DelhiDelhi-110074",
+      "projectAddress": "VILLAGE DAULTABAD SECTOR- 103",
       "unitsAvailable": null,
       "projectSizeText": "2 Buildings - 344 units",
       "reraProjectName": "RIVIERA AT AIPL LAKE CITY",
@@ -3178,7 +3216,7 @@
       "cumulativeSold": null,
       "cumulativeAbsorptionPct": "",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -3439,7 +3477,7 @@
       "cumulativeSold": 200,
       "cumulativeAbsorptionPct": "80.65%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -4171,7 +4209,15 @@
     "reraDetails": {
       "totalUnits": 280,
       "unitsSold": 80,
-      "unitsAvailable": 200
+      "unitsAvailable": 200,
+      "reraProjectName": "ASHIANA AMARAH PHASE 4",
+      "reraRegistrationNo": "RERA-GRG-1594-2024",
+      "projectAddress": "REVENUE ESTATE OF VILLAGE- WAZIRPUR, SECTOR 93, DISTT. GURUGRAM, HARYANA",
+      "landArea": "4.395 (Acre)",
+      "totalLicensedLand": "22.344 (Acre)",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "sourceUrl": "https://reratracker.com/ashiana-amarah-phase-4-in-gurugram-by-ashiana-housing-limited-rtid3502"
     },
     "builderIntelligence": null,
     "scoreCard": {
@@ -4313,7 +4359,7 @@
       "cumulativeSold": 80,
       "cumulativeAbsorptionPct": "28.57%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -4416,7 +4462,16 @@
     "reraDetails": {
       "totalUnits": 248,
       "unitsSold": 84,
-      "unitsAvailable": 164
+      "unitsAvailable": 164,
+      "reraProjectName": "ASHIANA AMARAH PHASE 5",
+      "reraRegistrationNo": "RERA-GRG-1753-2024",
+      "projectAddress": "REVENUE ESTATE OF VILLAGE- WAZIRPUR, SECTOR 93, DISTT. GURUGRAM, HARYANA",
+      "landArea": "2.906 (Acre)",
+      "totalLicensedLand": "22.344 (Acre)",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "sourceUrl": "https://reratracker.com/ashiana-amarah-phase-5-in-gurugram-by-ashiana-housing-limited-rtid3503",
+      "totalFloors": 14
     },
     "builderIntelligence": null,
     "scoreCard": {
@@ -4558,7 +4613,7 @@
       "cumulativeSold": 84,
       "cumulativeAbsorptionPct": "33.87%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -4657,7 +4712,16 @@
     "reraDetails": {
       "totalUnits": 1040,
       "unitsSold": 680,
-      "unitsAvailable": 360
+      "unitsAvailable": 360,
+      "reraProjectName": "Bestech Altura",
+      "reraRegistrationNo": "RERA-GRG-397-2019",
+      "projectAddress": "SECTOR 79, VILLAGE NAURANGPUR, GURUGRAM",
+      "landArea": "10.10 (Acre)",
+      "totalLicensedLand": "10.10 (Acre)",
+      "sizes": "48x48",
+      "projectType": "ONGOING",
+      "sourceUrl": "https://reratracker.com/bestech-altura-in-gurugram-by-bestech-india-pvt-ltd-rtid3737",
+      "totalFloors": 18
     },
     "builderIntelligence": null,
     "scoreCard": {
@@ -4839,7 +4903,7 @@
       "cumulativeSold": 680,
       "cumulativeAbsorptionPct": "65.38%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -4983,10 +5047,10 @@
       "currentPrice": 24500,
       "completionDate": "2033-07-09",
       "configurations": "4 BHK",
-      "projectAddress": "Birla Aurora Level 8 Unit A Dr Annie Besant Road Worli Mumbai 400030",
+      "projectAddress": "SECTOR 31-32A, GURUGRAM",
       "unitsAvailable": 0,
       "projectSizeText": "7 Buildings - 620 units",
-      "reraProjectName": "BIRLA ARIKA",
+      "reraProjectName": "Birla Arika",
       "totalLicensedLand": "13.275 (Acre)",
       "reraRegistrationNo": "RERA-GRG-1823-2024"
     },
@@ -5226,7 +5290,7 @@
       "cumulativeSold": 322,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -5370,10 +5434,10 @@
       "currentPrice": 17500,
       "completionDate": "2032-03-31",
       "configurations": "3 BHK",
-      "projectAddress": "Birla Aurora Level 8 Unit A Dr Annie Besant Road Worli Mumbai 400030",
+      "projectAddress": "SECTOR 71",
       "unitsAvailable": null,
       "projectSizeText": "5 Buildings - 492 units",
-      "reraProjectName": "BIRLA PRAVAAH",
+      "reraProjectName": "Birla Pravaah",
       "totalLicensedLand": "5.075 (Acre)",
       "reraRegistrationNo": "RERA-GRG-2071-2025"
     },
@@ -5923,7 +5987,7 @@
       "cumulativeSold": 496,
       "cumulativeAbsorptionPct": "56.05%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -6067,7 +6131,7 @@
       "currentPrice": null,
       "completionDate": "2032-10-31",
       "configurations": "3 BHK",
-      "projectAddress": "A-302 Gokul Apartment Plot No 5B Sector-11 Dwarka Sector-6 South West Delhi",
+      "projectAddress": "SECTOR 66 GURUGRAM",
       "unitsAvailable": null,
       "projectSizeText": "3 Buildings - 504 units",
       "reraProjectName": "BPTP DOWNTOWN-66",
@@ -6281,7 +6345,7 @@
       "cumulativeSold": null,
       "cumulativeAbsorptionPct": "0.00%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -6793,7 +6857,7 @@
       "cumulativeSold": 487,
       "cumulativeAbsorptionPct": "86.19%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -6893,7 +6957,18 @@
         "huda_city_centre_drive_min": 30
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "reraProjectName": "CENTRAL PARK BIGNONIA TOWERS",
+      "reraRegistrationNo": "RERA-GRG-1618-2024",
+      "projectAddress": "VILLAGE DHUNELA, SECTOR-32 SOHNA- GURUGRAM, HARYANA",
+      "landArea": "7.35625 (Acre)",
+      "totalLicensedLand": "7.35625 (Acre)",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "sourceUrl": "https://reratracker.com/central-park-bignonia-towers-in-gurugram-by-st-patricks-realty-pvt-ltd-rtid3563",
+      "totalUnits": 193,
+      "totalFloors": 48
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "super_area": {
@@ -7691,7 +7766,7 @@
       "cumulativeSold": 487,
       "cumulativeAbsorptionPct": "86.19%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -7907,7 +7982,7 @@
       "cumulativeSold": null,
       "cumulativeAbsorptionPct": "0.00%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -8336,7 +8411,16 @@
     "reraDetails": {
       "totalUnits": 360,
       "unitsSold": 173,
-      "unitsAvailable": 187
+      "unitsAvailable": 187,
+      "reraProjectName": "CENTRAL PARK THE ORCHARD",
+      "reraRegistrationNo": "RERA-GRG-1158-2022",
+      "projectAddress": "SITUATED IN SECTOR-32, TEHSIL-SOHNA, GURUGRAM",
+      "landArea": "4.127 (Acre)",
+      "totalLicensedLand": "47.759 (Acre)",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "sourceUrl": "https://reratracker.com/central-park-the-orchard-in-gurugram-by-st-patricks-realty-private-limited-rtid3567",
+      "totalFloors": 4
     },
     "builderIntelligence": null,
     "scoreCard": {
@@ -8521,7 +8605,7 @@
       "cumulativeSold": 173,
       "cumulativeAbsorptionPct": "48.06%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -8775,7 +8859,7 @@
       "cumulativeSold": 293,
       "cumulativeAbsorptionPct": "74.94%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -9155,7 +9239,7 @@
       "cumulativeSold": 268,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -9258,7 +9342,16 @@
     "reraDetails": {
       "totalUnits": 448,
       "unitsSold": 249,
-      "unitsAvailable": 199
+      "unitsAvailable": 199,
+      "reraProjectName": "Conscient ParQ",
+      "reraRegistrationNo": "RERA-GRG-1584-2024",
+      "projectAddress": "VILLAGE NAURANGPUR, SECTOR-80",
+      "landArea": "5.6 (Acre)",
+      "totalLicensedLand": "5.6 (Acre)",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "sourceUrl": "https://reratracker.com/conscient-parq-in-gurugram-by-keywest-eduinfra-services-private-limited-rtid3976",
+      "totalFloors": 30
     },
     "builderIntelligence": null,
     "scoreCard": {
@@ -9528,7 +9621,7 @@
       "cumulativeSold": 249,
       "cumulativeAbsorptionPct": "55.58%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -9622,7 +9715,16 @@
     "reraDetails": {
       "totalUnits": 100,
       "unitsSold": 26,
-      "unitsAvailable": 74
+      "unitsAvailable": 74,
+      "reraProjectName": "Dalcore The Falcon",
+      "reraRegistrationNo": "RERA-GRG-1838-2024",
+      "projectAddress": "PLOT NO GH-25, SECTOR 53, GURUGRAM II",
+      "landArea": "8132.25 (Sqr/mtrs)",
+      "totalLicensedLand": "8132.25 (Sqr/mtrs)",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "sourceUrl": "https://reratracker.com/dalcore-the-falcon-in-gurugram-by-ahir-infraspace-pvt-ltd-rtid3607",
+      "totalFloors": 35
     },
     "builderIntelligence": null,
     "scoreCard": {
@@ -9800,7 +9902,7 @@
       "cumulativeSold": 26,
       "cumulativeAbsorptionPct": "26.00%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -9944,7 +10046,7 @@
       "currentPrice": 24500,
       "completionDate": "2034-09-30",
       "configurations": "4 BHKPenthouse Singlex",
-      "projectAddress": "Apartment No. 511B The Magnolias DLF Golf links Road DLF 5 Galleria DLF IV Gurgaon 122000",
+      "projectAddress": "SECTOR 76/77",
       "unitsAvailable": 1094,
       "projectSizeText": "6 Buildings - 1164 units",
       "reraProjectName": "DLF PRIVANA NORTH",
@@ -10176,7 +10278,7 @@
       "cumulativeSold": 75,
       "cumulativeAbsorptionPct": "6.42%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -10320,7 +10422,7 @@
       "currentPrice": 20000,
       "completionDate": "2031-06-30",
       "configurations": "4 BHKPenthouse Singlex",
-      "projectAddress": "511B The Magnolias DLF Phase 5Gurugram 122009",
+      "projectAddress": "SECTOR 76/77",
       "unitsAvailable": 997,
       "projectSizeText": "7 Buildings - 1113 units",
       "reraProjectName": "DLF PRIVANA SOUTH",
@@ -10552,7 +10654,7 @@
       "cumulativeSold": 116,
       "cumulativeAbsorptionPct": "10.42%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -10696,7 +10798,7 @@
       "currentPrice": 21000,
       "completionDate": "2031-12-31",
       "configurations": "4 BHK",
-      "projectAddress": "Apartment No. 511B The Magnolias DLF Golflinks Road DLF 5 Galleria DLF-IV Gurgaon-122000",
+      "projectAddress": "SECTOR 76/77",
       "unitsAvailable": 771,
       "projectSizeText": "5 Buildings - 795 units",
       "reraProjectName": "DLF PRIVANA WEST",
@@ -10928,7 +11030,7 @@
       "cumulativeSold": 24,
       "cumulativeAbsorptionPct": "3.02%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -11403,7 +11505,16 @@
     "reraDetails": {
       "totalUnits": 421,
       "unitsSold": 84,
-      "unitsAvailable": 337
+      "unitsAvailable": 337,
+      "reraProjectName": "DLF The Dahlias",
+      "reraRegistrationNo": "RERA-GRG-1690-2024",
+      "projectAddress": "R16, DLF 5, SECTOR 54 GURUGRAM",
+      "landArea": "16.489 (Acre)",
+      "totalLicensedLand": "16.489 (Acre)",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "sourceUrl": "https://reratracker.com/dlf-the-dahlias-in-gurugram-by-dlf-limited-rtid4206",
+      "totalFloors": 29
     },
     "builderIntelligence": null,
     "scoreCard": {
@@ -11718,7 +11829,7 @@
       "cumulativeSold": 84,
       "cumulativeAbsorptionPct": "19.95%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -11821,7 +11932,15 @@
     "reraDetails": {
       "totalUnits": 292,
       "unitsSold": 292,
-      "unitsAvailable": 0
+      "unitsAvailable": 0,
+      "reraProjectName": "DLF The Grove",
+      "reraRegistrationNo": "RERA-GRG-941-2021",
+      "projectAddress": "DLF 5, SECTOR 54",
+      "landArea": "5.3073 (Acre)",
+      "totalLicensedLand": "5.3073 (Acre)",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "sourceUrl": "https://reratracker.com/dlf-the-grove-in-gurugram-by-dlf-limited-rtid4217"
     },
     "builderIntelligence": null,
     "scoreCard": {
@@ -12181,7 +12300,7 @@
       "cumulativeSold": 292,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -12325,7 +12444,7 @@
       "currentPrice": 24000,
       "completionDate": "2032-09-30",
       "configurations": "4 BHK5 BHK",
-      "projectAddress": "1901A The Magnolias Golf Course Road Sector-42 Gurugram Haryana 122009",
+      "projectAddress": "SITUATED IN SECTOR 106 IN THE REVENUE ESTATE OF VILLAGE PAWALA KHUSRUPUR TEHSIL KADIPUR DISTRICT GURUGRAM, HARYANA",
       "unitsAvailable": null,
       "projectSizeText": "5 Buildings - 580 units",
       "reraProjectName": "ELAN THE EMPEROR",
@@ -12683,7 +12802,15 @@
     "reraDetails": {
       "totalUnits": 885,
       "unitsSold": 533,
-      "unitsAvailable": 352
+      "unitsAvailable": 352,
+      "reraProjectName": "ELAN THE MARK",
+      "reraRegistrationNo": "RERA-GRG-1273-2023",
+      "projectAddress": "SITUATED IN SECTOR 106 IN THE REVENUE ESTATE OF VILLAGE PAWALA KHUSRUPUR TEHSIL KADIPUR DISTRICT GURUGRAM, HARYANA",
+      "landArea": "6.5250 (Acre)",
+      "totalLicensedLand": "6.5250 (Acre)",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "sourceUrl": "https://reratracker.com/elan-the-mark-in-gurugram-by-elan-avenue-limited-rtid3630"
     },
     "builderIntelligence": null,
     "scoreCard": {
@@ -12842,7 +12969,7 @@
       "cumulativeSold": 533,
       "cumulativeAbsorptionPct": "60.23%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -12859,7 +12986,7 @@
     "priceCr": 4.5,
     "sqft": null,
     "priceSqft": 15611,
-    "units": 880,
+    "units": 866,
     "launched": null,
     "sold": null,
     "absorption": "Data pending",
@@ -12942,7 +13069,19 @@
         "huda_city_centre_drive_min": 16
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "reraProjectName": "ELAN THE PRESIDENTIAL",
+      "reraRegistrationNo": "RERA-GRG-1194-2022",
+      "projectAddress": "SITUATED IN SECTOR 106 IN THE REVENUE ESTATE OF VILLAGE PAWALA KHUSRUPUR TEHSIL KADIPUR DISTRICT GURUGRAM, HARYANA",
+      "landArea": "12.767 (Acre)",
+      "totalLicensedLand": "24.10 (Acre)",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "startDate": "2022-11-21",
+      "sourceUrl": "https://reratracker.com/elan-the-presidential-in-gurugram-by-elan-avenue-limited-formerly-known-as-airmid-developers-limited-rtid3631",
+      "totalUnits": 866,
+      "totalFloors": 32
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "micromarket": {
@@ -13191,10 +13330,10 @@
       "currentPrice": 23900,
       "completionDate": "2033-09-30",
       "configurations": "4 BHK",
-      "projectAddress": "1901A The Magnolias Golf Course Road Sector-42 Gurugram Haryana 122009",
+      "projectAddress": "SECTOR 49, GURUGRAM",
       "unitsAvailable": 210,
       "projectSizeText": "5 Buildings - 360 units",
-      "reraProjectName": "ELAN THE STATEMENT",
+      "reraProjectName": "Elan The Statement",
       "totalLicensedLand": "5.875 (Acre)",
       "reraRegistrationNo": "RERA-GRG-2069-2025"
     },
@@ -13483,7 +13622,7 @@
       "cumulativeSold": 170,
       "cumulativeAbsorptionPct": "44.74%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -13919,10 +14058,10 @@
       "currentPrice": 17000,
       "completionDate": "2029-12-30",
       "configurations": "4 BHK3 BHK",
-      "projectAddress": "201-212 Splendor Forum IInd Floor Jasola District Centre New Delhi-110025",
+      "projectAddress": "SECTOR-80, MANESAR, GURUGRAM",
       "unitsAvailable": 157,
       "projectSizeText": "6 Buildings - 324 units",
-      "reraProjectName": "ELDECO FAIRWAY RESERVE",
+      "reraProjectName": "Eldeco Fairway Reserve",
       "totalLicensedLand": "33752.00 (Sqr/mtrs)",
       "reraRegistrationNo": "RERA-GRG-1680-2024"
     },
@@ -14236,7 +14375,7 @@
       "cumulativeSold": 211,
       "cumulativeAbsorptionPct": "57.34%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -14771,7 +14910,7 @@
       "cumulativeSold": 240,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -14874,7 +15013,17 @@
     "reraDetails": {
       "totalUnits": 522,
       "unitsSold": 56,
-      "unitsAvailable": 466
+      "unitsAvailable": 466,
+      "reraProjectName": "Emaar Amaris",
+      "reraRegistrationNo": "RERA-GRG-1790-2024",
+      "projectAddress": "SECTOR 62, GURUGRAM,HARYANA",
+      "landArea": "6.118 (Acre)",
+      "totalLicensedLand": "14.025 (Acre)",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "startDate": "2024-11-11",
+      "sourceUrl": "https://reratracker.com/emaar-amaris-in-gurugram-by-emaar-india-limited-rtid3479",
+      "totalFloors": 35
     },
     "builderIntelligence": null,
     "scoreCard": {
@@ -15115,7 +15264,7 @@
       "cumulativeSold": 56,
       "cumulativeAbsorptionPct": "10.73%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -15512,7 +15661,7 @@
       "cumulativeSold": null,
       "cumulativeAbsorptionPct": "0.00%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -15615,7 +15764,16 @@
     "reraDetails": {
       "totalUnits": 176,
       "unitsSold": 53,
-      "unitsAvailable": 123
+      "unitsAvailable": 123,
+      "reraProjectName": "Emaar The 88",
+      "reraRegistrationNo": "RERA-GRG-1485-2023",
+      "projectAddress": "VILLAGE BAJGHERA, SECTOR 112, GURUGRAM",
+      "landArea": "1.847 (Acre)",
+      "totalLicensedLand": "10.744 (Acre)",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "sourceUrl": "https://reratracker.com/emaar-the-88-in-gurugram-by-emaar-india-limited-rtid4193",
+      "totalFloors": 11
     },
     "builderIntelligence": null,
     "scoreCard": {
@@ -15842,7 +16000,7 @@
       "cumulativeSold": 53,
       "cumulativeAbsorptionPct": "30.11%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -15945,7 +16103,16 @@
     "reraDetails": {
       "totalUnits": 816,
       "unitsSold": 83,
-      "unitsAvailable": 733
+      "unitsAvailable": 733,
+      "reraProjectName": "Emaar Urban Ascent",
+      "reraRegistrationNo": "RERA-GRG-1813-2024",
+      "projectAddress": "SECTOR 112, GURUGRAM, HARYANA",
+      "landArea": "9.164 (Acre)",
+      "totalLicensedLand": "10.744 (Acre)",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "sourceUrl": "https://reratracker.com/emaar-urban-ascent-in-gurugram-by-emaar-india-limited-rtid4270",
+      "totalFloors": 32
     },
     "builderIntelligence": null,
     "scoreCard": {
@@ -16249,7 +16416,7 @@
       "cumulativeSold": 83,
       "cumulativeAbsorptionPct": "10.17%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -16352,7 +16519,16 @@
     "reraDetails": {
       "totalUnits": 848,
       "unitsSold": 2,
-      "unitsAvailable": 846
+      "unitsAvailable": 846,
+      "reraProjectName": "Emaar Urban Oasis",
+      "reraRegistrationNo": "RERA-GRG-1390-2023",
+      "projectAddress": "VILLAGE - MAIDAWAS AND NANGLI UMARPUR, SECTOR - 62 \\u0026 65,, GURGAON",
+      "landArea": "6.64 (Acre)",
+      "totalLicensedLand": "177.8625 (Acre)",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "sourceUrl": "https://reratracker.com/emaar-urban-oasis-in-gurugram-by-emaar-india-limited-rtid4274",
+      "totalFloors": 30
     },
     "builderIntelligence": null,
     "scoreCard": {
@@ -16600,7 +16776,7 @@
       "cumulativeSold": 2,
       "cumulativeAbsorptionPct": "0.24%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -17180,7 +17356,7 @@
       "cumulativeSold": 130,
       "cumulativeAbsorptionPct": "23.90%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -17591,7 +17767,7 @@
       "currentPrice": 21300,
       "completionDate": "2032-12-31",
       "configurations": "3 BHK4 BHK",
-      "projectAddress": "A-61 2nd Floor South City 2 Islampur97 Gurugram-122018 Haryana",
+      "projectAddress": "PLOT NO. GH3, SECTOR 48, GURUGRAM",
       "unitsAvailable": 414,
       "projectSizeText": "3 Buildings - 540 units",
       "reraProjectName": "Experion The Trillion",
@@ -17827,7 +18003,7 @@
       "cumulativeSold": 130,
       "cumulativeAbsorptionPct": "23.90%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -18094,7 +18270,7 @@
       "cumulativeSold": 120,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -18471,7 +18647,7 @@
       "cumulativeSold": 105,
       "cumulativeAbsorptionPct": "14.71%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -18791,7 +18967,7 @@
       "cumulativeSold": 48,
       "cumulativeAbsorptionPct": "13.11%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -19557,12 +19733,12 @@
       "totalUnits": 134,
       "launchPrice": 23000,
       "projectType": "NEW",
-      "totalFloors": null,
+      "totalFloors": 33,
       "totalTowers": 1,
       "currentPrice": 23000,
       "completionDate": "2032-04-30",
       "configurations": "3 BHK4 BHK",
-      "projectAddress": "Opp. Malabar Hill Police Station 40-D BG Kher Marg Malabar Hill Mumbai 400006",
+      "projectAddress": "GH-01, URBAN ESTATE II, SECTOR 39, GURUGRAM",
       "unitsAvailable": 42,
       "projectSizeText": "1 Buildings - 132 units",
       "reraProjectName": "GODREJ ALIRA",
@@ -19828,7 +20004,7 @@
       "cumulativeSold": 92,
       "cumulativeAbsorptionPct": "68.66%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -19972,10 +20148,10 @@
       "currentPrice": 24500,
       "completionDate": "2030-12-31",
       "configurations": "2 BHK3 BHK4 BHK",
-      "projectAddress": "Godrej One 5th Floor Pirojshanagar Eastern Express Highway Vikhroli East Mumbai Maharashtra",
+      "projectAddress": "SECTOR 49, GURUGRAM, HARYANA",
       "unitsAvailable": 200,
       "projectSizeText": "6 Buildings - 728 units",
-      "reraProjectName": "GODREJ ARISTOCRAT",
+      "reraProjectName": "Godrej Aristocrat",
       "totalLicensedLand": "9.56875 (Acre)",
       "reraRegistrationNo": "RERA-GRG-1480-2023"
     },
@@ -20300,7 +20476,7 @@
       "cumulativeSold": 665,
       "cumulativeAbsorptionPct": "76.88%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -20444,10 +20620,10 @@
       "currentPrice": 36800,
       "completionDate": "2031-10-16",
       "configurations": "3 BHK4 BHK",
-      "projectAddress": "SO Suresh Pal Khatri\\\\n29 Damb Apartments ROHINI SECTOR-11 Sector-7\\\\nNorth West Delhi Delhi 110085",
+      "projectAddress": "SECTOR 54, URBAN ESTATE, GURUGRAM II",
       "unitsAvailable": 113,
       "projectSizeText": "2 Buildings - 151 units",
-      "reraProjectName": "GODREJ ASTRA",
+      "reraProjectName": "Godrej Astra",
       "totalLicensedLand": "2.759 (Acre)",
       "reraRegistrationNo": "RERA-GRG-1725-2024"
     },
@@ -21402,7 +21578,7 @@
       "cumulativeSold": 139,
       "cumulativeAbsorptionPct": "55.16%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -21978,7 +22154,7 @@
       "cumulativeSold": 352,
       "cumulativeAbsorptionPct": "82.24%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -22394,7 +22570,7 @@
       "cumulativeSold": 71,
       "cumulativeAbsorptionPct": "28.29%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -22538,7 +22714,7 @@
       "currentPrice": null,
       "completionDate": "2032-09-30",
       "configurations": "4 BHK3 BHK",
-      "projectAddress": "Opp. Malabar Hill Police Station 40-D BG Kher Marg Malabar Hill Mumbai 400006",
+      "projectAddress": "GH-21, URBAN ESTATE II, SECTOR 53, GURUGRAM",
       "unitsAvailable": 233,
       "projectSizeText": "4 Buildings - 244 units",
       "reraProjectName": "GODREJ SORA",
@@ -22803,7 +22979,7 @@
       "cumulativeSold": 15,
       "cumulativeAbsorptionPct": "6.05%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -23352,7 +23528,7 @@
       "cumulativeSold": 68,
       "cumulativeAbsorptionPct": "9.14%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -23492,10 +23668,10 @@
       "currentPrice": 15500,
       "completionDate": "2031-03-31",
       "configurations": "Studios2 BHK3 BHK4 BHK",
-      "projectAddress": "Opp Malabar Hill Police Station 40D BG Khor Marg Malabar Hill Mumbai Maharashtra 400006",
+      "projectAddress": "SECTOR 89, GURUGRAM, HARYANA",
       "unitsAvailable": 1247,
       "projectSizeText": "9 Buildings - 1314 units",
-      "reraProjectName": "GODREJ ZENITH",
+      "reraProjectName": "Godrej Zenith",
       "totalLicensedLand": "14.20625 (Acre)",
       "reraRegistrationNo": "RERA-GRG-1536-2024"
     },
@@ -24548,7 +24724,7 @@
       "cumulativeSold": 531,
       "cumulativeAbsorptionPct": "29.87%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -24648,7 +24824,18 @@
         "huda_city_centre_drive_min": 19
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "reraProjectName": "HCBS Twin Horizon",
+      "reraRegistrationNo": "RERA-GRG-1888-2025",
+      "projectAddress": "VILLAGE DHANKOT, TEHSIL KADIPR, SECTOR 102, GURUGRAM",
+      "landArea": "5.2902 (Acre)",
+      "totalLicensedLand": "5.2902 (Acre)",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "sourceUrl": "https://reratracker.com/hcbs-twin-horizon-in-gurugram-by-hcbs-promoters-developers-pvt-ltd-rtid5149",
+      "totalUnits": 268,
+      "totalFloors": 34
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "micromarket": {
@@ -24853,7 +25040,16 @@
         "huda_city_centre_drive_min": 17
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "reraProjectName": "HERO HOMES",
+      "reraRegistrationNo": "RERA-GRG-294-2019",
+      "projectAddress": "SECTOR-104, DHANWAPUR, GURUGRAM",
+      "landArea": "9.053 (Acre)",
+      "totalLicensedLand": "34.0229 (Acre)",
+      "sizes": "48x48",
+      "projectType": "ONGOING",
+      "sourceUrl": "https://reratracker.com/hero-homes-in-gurugram-by-vikas-park-pvt-ltd-rtid3760"
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "unit_sizes": {
@@ -26789,7 +26985,7 @@
       "cumulativeSold": 137,
       "cumulativeAbsorptionPct": "29.65%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -27152,7 +27348,7 @@
       "cumulativeSold": 965,
       "cumulativeAbsorptionPct": "87.49%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -27702,7 +27898,7 @@
       "currentPrice": 22000,
       "completionDate": "2029-12-31",
       "configurations": "1 BHK4 BHK",
-      "projectAddress": "Apartment No. 14A Tower 12 Central Park Resort Sohna Road Gurgaon",
+      "projectAddress": "SECTOR- 36A",
       "unitsAvailable": 259,
       "projectSizeText": "1 Buildings - 439 units",
       "reraProjectName": "Krisumi Waterfall Suites 2",
@@ -27907,7 +28103,7 @@
       "cumulativeSold": 180,
       "cumulativeAbsorptionPct": "41.00%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -28251,7 +28447,7 @@
       "cumulativeSold": null,
       "cumulativeAbsorptionPct": "0.00%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -28380,7 +28576,7 @@
     "reraDetails": {
       "reraProjectName": "KRISUMI WATERSIDE RESIDENCES",
       "reraRegistrationNo": "RERA-GRG-1562-2024",
-      "projectAddress": "Apartment No. 14A Tower 12 Central Park\\\\nResort Sohna Road Gurgaon",
+      "projectAddress": "SECTOR- 36A, GURUGRAM, HARYANA",
       "landArea": "5.0951 (Acre)",
       "totalLicensedLand": "30.3813 (Acre)",
       "sizes": "48x48",
@@ -28736,7 +28932,7 @@
       "cumulativeSold": 152,
       "cumulativeAbsorptionPct": "24.84%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -28867,9 +29063,9 @@
       }
     },
     "reraDetails": {
-      "reraProjectName": "M3M ALTITUDE",
+      "reraProjectName": "M3M Altitude",
       "reraRegistrationNo": "RERA-GRG-1607-2024",
-      "projectAddress": "1061 Dr. Mukherjee Nagar North West Delhi Delhi 110009",
+      "projectAddress": "SECTOR 65, GURUGRAM",
       "landArea": "2.79 (Acre)",
       "totalLicensedLand": "60.025 (Acre)",
       "sizes": "48x48",
@@ -29052,7 +29248,7 @@
       "cumulativeSold": 255,
       "cumulativeAbsorptionPct": "74.56%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -29196,10 +29392,10 @@
       "currentPrice": null,
       "completionDate": "2030-05-31",
       "configurations": "2 BHK3 BHK4 BHK",
-      "projectAddress": "B 6504 M3M Woodshire Dharampur Road Sector 107 Daultabad Gurugram Haryana",
+      "projectAddress": "SECTOR-79 \\u0026 79B, GURUGRAM, HARYANA",
       "unitsAvailable": 0,
       "projectSizeText": "26 Buildings - 1309 units",
-      "reraProjectName": "M3M GOLF HILLS PHASE 2",
+      "reraProjectName": "M3M Golf Hills Phase 2",
       "totalLicensedLand": "75.3458 (Acre)",
       "reraRegistrationNo": "RERA-GRG-1578-2024"
     },
@@ -29392,7 +29588,7 @@
       "cumulativeSold": 636,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -29654,7 +29850,7 @@
       "cumulativeSold": 636,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -29977,7 +30173,7 @@
       "cumulativeSold": 1760,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -30116,12 +30312,12 @@
       "totalUnits": 1332,
       "launchPrice": 14000,
       "projectType": "NEW",
-      "totalFloors": null,
+      "totalFloors": 34,
       "totalTowers": 11,
       "currentPrice": 17000,
       "completionDate": "2028-01-31",
       "configurations": "3 BHK4 BHK",
-      "projectAddress": "1668Sec\\\\n45Kanahi73GurgaonHaryana-122003",
+      "projectAddress": "SECTOR-111",
       "unitsAvailable": 31,
       "projectSizeText": "11 Buildings - 1332 units",
       "reraProjectName": "M3M CROWN PHASE 1",
@@ -30317,7 +30513,7 @@
       "cumulativeSold": 1301,
       "cumulativeAbsorptionPct": "97.67%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -30461,7 +30657,7 @@
       "currentPrice": 37000,
       "completionDate": "2032-02-29",
       "configurations": "4 BHK",
-      "projectAddress": "73Vill KhutahaKanwiChitarkootUtter Pardesh-210205",
+      "projectAddress": "SECTOR-111,GURUGRAM",
       "unitsAvailable": 328,
       "projectSizeText": "3 Buildings - 336 units",
       "reraProjectName": "M3M ELIE SAAB AT SCDA",
@@ -30718,7 +30914,7 @@
       "cumulativeSold": 8,
       "cumulativeAbsorptionPct": "2.38%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -30858,10 +31054,10 @@
       "currentPrice": null,
       "completionDate": "2030-05-31",
       "configurations": "2 BHK3 BHK4 BHK",
-      "projectAddress": "B 6504 M3M Woodshire Dharampur Road Sector 107 Daultabad Gurugram Haryana",
+      "projectAddress": "SECTOR-79 \\u0026 79B, GURUGRAM, HARYANA",
       "unitsAvailable": 0,
       "projectSizeText": "26 Buildings - 1309 units",
-      "reraProjectName": "M3M GOLF HILLS PHASE 2",
+      "reraProjectName": "M3M Golf Hills Phase 2",
       "totalLicensedLand": "75.3458 (Acre)",
       "reraRegistrationNo": "RERA-GRG-1578-2024"
     },
@@ -31054,7 +31250,7 @@
       "cumulativeSold": 2618,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -31272,7 +31468,7 @@
       "cumulativeSold": 21,
       "cumulativeAbsorptionPct": "7.34%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -31416,10 +31612,10 @@
       "currentPrice": 19000,
       "completionDate": "2031-02-28",
       "configurations": "3 BHK4 BHK",
-      "projectAddress": "B 6504 M3M Woodshire Dharampur Road Sector 107 Daultabad 53 Gurgaon Haryana - 122006",
+      "projectAddress": "VILLAGE CHAUMA,SECTOR 113,GURUGRAM",
       "unitsAvailable": 56,
       "projectSizeText": "8 Buildings - 244 units",
-      "reraProjectName": "M3M MANSION",
+      "reraProjectName": "M3M Mansion",
       "totalLicensedLand": "10.225 (Acre)",
       "reraRegistrationNo": "RERA-GRG-1547-2024"
     },
@@ -31619,7 +31815,7 @@
       "cumulativeSold": 922,
       "cumulativeAbsorptionPct": "94.27%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -31942,7 +32138,7 @@
       "cumulativeSold": 137,
       "cumulativeAbsorptionPct": "56.15%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -32322,7 +32518,7 @@
       "cumulativeSold": 8,
       "cumulativeAbsorptionPct": "2.38%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -32466,10 +32662,10 @@
       "currentPrice": 23000,
       "completionDate": "2029-11-01",
       "configurations": "3 BHK",
-      "projectAddress": "1668 sector 45 kanhai village Gurugram",
+      "projectAddress": "SECTOR-67, GURUGRAM",
       "unitsAvailable": null,
       "projectSizeText": "1 Buildings - 134 units",
-      "reraProjectName": "M3M OPUS AT M3M MERLIN",
+      "reraProjectName": "M3M Opus at M3M Merlin",
       "totalLicensedLand": "13.344 (Acre)",
       "reraRegistrationNo": "RERA-GRG-1734-2024"
     },
@@ -33468,7 +33664,7 @@
       "cumulativeSold": 82,
       "cumulativeAbsorptionPct": "6.09%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -33892,7 +34088,7 @@
       "cumulativeSold": 286,
       "cumulativeAbsorptionPct": "27.90%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -34032,7 +34228,7 @@
       "currentPrice": 22350,
       "completionDate": "2033-09-30",
       "configurations": "3 BHKPenthouse Duplex4 BHK1 BHK2 BHKDuplex",
-      "projectAddress": "A 38 Behand Sahibabad Police Station Lajpat Nagar Ghaziabad Uttar Pradesh",
+      "projectAddress": "VILLAGE-HARSARU, SECTOR 36",
       "unitsAvailable": null,
       "projectSizeText": "5 Buildings - 1096 units",
       "reraProjectName": "Max Estate 361 (Antara 361)",
@@ -34807,7 +35003,7 @@
       "cumulativeSold": 82,
       "cumulativeAbsorptionPct": "6.09%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -34910,7 +35106,15 @@
     "reraDetails": {
       "totalUnits": 436,
       "unitsSold": 436,
-      "unitsAvailable": 0
+      "unitsAvailable": 0,
+      "reraProjectName": "MRG CROWN",
+      "reraRegistrationNo": "RERA-GRG-1816-2024",
+      "projectAddress": "VILLAGE BABUPUR, SECTOR 106,",
+      "landArea": "750.219 (Sqr/mtrs)",
+      "totalLicensedLand": "8.16875 (Sqr/mtrs)",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "sourceUrl": "https://reratracker.com/mrg-crown-in-gurugram-by-mrg-group-india-private-limited-rtid3916"
     },
     "builderIntelligence": null,
     "scoreCard": {
@@ -35137,7 +35341,7 @@
       "cumulativeSold": 436,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -35532,7 +35736,15 @@
     "reraDetails": {
       "totalUnits": 152,
       "unitsSold": 38,
-      "unitsAvailable": 114
+      "unitsAvailable": 114,
+      "reraProjectName": "ORCHID IVY",
+      "reraRegistrationNo": "RERA-GRG-996-2021",
+      "projectAddress": "M BLOCK, MAYFIELD GARDEN, SECTOR-51, GURGAON, HARYANA",
+      "landArea": "4152.75 (Sqr/mtrs)",
+      "totalLicensedLand": "331.846 (Sqr/mtrs)",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "sourceUrl": "https://reratracker.com/orchid-ivy-in-gurugram-by-m-s-orchid-infrastructure-developers-pvt-ltd-rtid3946"
     },
     "builderIntelligence": null,
     "scoreCard": {
@@ -35691,7 +35903,7 @@
       "cumulativeSold": 38,
       "cumulativeAbsorptionPct": "25.00%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -35794,7 +36006,15 @@
     "reraDetails": {
       "totalUnits": 101,
       "unitsSold": 101,
-      "unitsAvailable": 0
+      "unitsAvailable": 0,
+      "reraProjectName": "PARAS FLORET",
+      "reraRegistrationNo": "RERA-GRG-1119-2022",
+      "projectAddress": "SECTOR 59",
+      "landArea": "6.2250 (Acre)",
+      "totalLicensedLand": "6.2250 (Acre)",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "sourceUrl": "https://reratracker.com/paras-floret-in-gurugram-by-corona-realtors-private-limited-rtid3968"
     },
     "builderIntelligence": null,
     "scoreCard": {
@@ -35909,7 +36129,7 @@
       "cumulativeSold": 101,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -36012,7 +36232,16 @@
     "reraDetails": {
       "totalUnits": 692,
       "unitsSold": 659,
-      "unitsAvailable": 33
+      "unitsAvailable": 33,
+      "reraProjectName": "PURI DIPLOMATIC RESIDENCES",
+      "reraRegistrationNo": "RERA-GRG-1527-2024",
+      "projectAddress": "SECTOR 111",
+      "landArea": "5.4112 (Acre)",
+      "totalLicensedLand": "21.01 (Acre)",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "sourceUrl": "https://reratracker.com/puri-diplomatic-residences-in-gurugram-by-puri-construction-pvt-ltd-rtid3997",
+      "totalFloors": 32
     },
     "builderIntelligence": null,
     "scoreCard": {
@@ -36211,7 +36440,7 @@
       "cumulativeSold": 659,
       "cumulativeAbsorptionPct": "95.23%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -36311,7 +36540,18 @@
         "huda_city_centre_drive_min": 12
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "reraProjectName": "Puri The Aravallis",
+      "reraRegistrationNo": "RERA-GRG-1049-2022",
+      "projectAddress": "SECTOR 61, VILLAGE ULLAWAS",
+      "landArea": "10 (Acre)",
+      "totalLicensedLand": "10 (Acre)",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "sourceUrl": "https://reratracker.com/puri-the-aravallis-in-gurugram-by-puri-construction-private-limited-rtid3999",
+      "totalUnits": 324,
+      "totalFloors": 42
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "micromarket": {
@@ -36901,7 +37141,7 @@
       "cumulativeSold": 1058,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -37119,7 +37359,7 @@
       "cumulativeSold": 1058,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -37263,7 +37503,7 @@
       "currentPrice": 18500,
       "completionDate": "2031-05-31",
       "configurations": "3 BHK4 BHK",
-      "projectAddress": "Ashirwad Palam Farm 6 Salahpur BijwasnSouth West Delhi-110061",
+      "projectAddress": "VILLAGE - FAIZALPUR JHARSA, SECTOR-71, GURUGRAM, HARYANA",
       "unitsAvailable": 61,
       "projectSizeText": "6 Buildings - 794 units",
       "reraProjectName": "Signature Global Cloverdale SPR",
@@ -37518,7 +37758,7 @@
       "cumulativeSold": 776,
       "cumulativeAbsorptionPct": "92.71%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -37651,7 +37891,7 @@
     "reraDetails": {
       "reraProjectName": "Signature Global Daxin Vistas",
       "reraRegistrationNo": "RERA-GRG-1738-2024",
-      "projectAddress": "Aashirwad Palam Farm 6 Salahpur Bijwasan South West Delhi-110061",
+      "projectAddress": "VILLAGE- BHONDSI, GHAMROJ \\u0026 MAHENDWARA, SOHNA, GURUGRAM, HARYANA",
       "landArea": "21.9835 (Acre)",
       "totalLicensedLand": "125.60 (Acre)",
       "sizes": "48x48",
@@ -37832,7 +38072,7 @@
       "cumulativeSold": 318,
       "cumulativeAbsorptionPct": "33.65%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -38384,7 +38624,16 @@
     "reraDetails": {
       "totalUnits": 2159,
       "unitsSold": 461,
-      "unitsAvailable": 1698
+      "unitsAvailable": 1698,
+      "reraProjectName": "Signature Global Sarvam at DXP Estate",
+      "reraRegistrationNo": "RERA-GRG-2083-2025",
+      "projectAddress": "VILLAGE- GADAULI KALAN, SECTOR-37D, GURUGRAM, HARYANA",
+      "landArea": "13.5656 (Acre)",
+      "totalLicensedLand": "13.5656 (Acre)",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "sourceUrl": "https://reratracker.com/signature-global-sarvam-at-dxp-estate-in-gurugram-by-signattureglobal-homes-limited-rtid5344",
+      "totalFloors": 41
     },
     "builderIntelligence": null,
     "scoreCard": {
@@ -38641,7 +38890,7 @@
       "cumulativeSold": 461,
       "cumulativeAbsorptionPct": "21.35%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -38785,7 +39034,7 @@
       "currentPrice": 19000,
       "completionDate": "2031-02-28",
       "configurations": "3 BHK4 BHK",
-      "projectAddress": "Aashirwad Palam Farm 6 Salahpur Bijwasn South West Delhi-110061",
+      "projectAddress": "VILLAGE- FAZILPUR JHARSA, SECTOR-71, GURUGRAM, HARYANA",
       "unitsAvailable": 0,
       "projectSizeText": "8 Buildings - 613 units",
       "reraProjectName": "Signature Global Titanium SPR",
@@ -39033,7 +39282,7 @@
       "cumulativeSold": 613,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -39173,10 +39422,10 @@
       "currentPrice": 20000,
       "completionDate": "2030-05-30",
       "configurations": "3 BHK4 BHK",
-      "projectAddress": "Aashirwad Palam Farm 6 Salahpur Bijwasan South West Delhi-110061",
+      "projectAddress": "VILLAGE-HAYATPUR, SECTOR-84, GURUGRAM, HARYANA",
       "unitsAvailable": 15,
       "projectSizeText": "2 Buildings - 312 units",
-      "reraProjectName": "SIGNATURE GLOBAL TWIN TOWER DXP",
+      "reraProjectName": "Signature Global Twin Tower DXP",
       "totalLicensedLand": "4.6875 (Acre)",
       "reraRegistrationNo": "RERA-GRG-1701-2024"
     },
@@ -39432,7 +39681,7 @@
       "cumulativeSold": 368,
       "cumulativeAbsorptionPct": "96.08%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -39526,7 +39775,15 @@
     "reraDetails": {
       "totalUnits": 500,
       "unitsSold": 187,
-      "unitsAvailable": 313
+      "unitsAvailable": 313,
+      "reraProjectName": "Silverglades Hightown Residences",
+      "reraRegistrationNo": "RERA-GRG-337-2019",
+      "projectAddress": "REVENUE ESTATE OF VILLAGE SUKHRALI, SECTOR 28",
+      "landArea": "19627.174 (Sqr/mtrs)",
+      "totalLicensedLand": "19627.174 (Sqr/mtrs)",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "sourceUrl": "https://reratracker.com/silverglades-hightown-residences-in-gurugram-by-silverglades-infrastructure-private-limited-rtid3763"
     },
     "builderIntelligence": null,
     "scoreCard": {
@@ -39690,7 +39947,7 @@
       "cumulativeSold": 187,
       "cumulativeAbsorptionPct": "37.40%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -39948,7 +40205,7 @@
       "cumulativeSold": 1558,
       "cumulativeAbsorptionPct": "76.98%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -40493,7 +40750,7 @@
     "priceCr": 3.5,
     "sqft": 1652,
     "priceSqft": 15500,
-    "units": 0,
+    "units": 900,
     "launched": 0,
     "sold": 0,
     "absorption": "Data pending",
@@ -40639,14 +40896,16 @@
       ]
     },
     "reraDetails": {
-      "reraProjectName": "SMARTWORLD ONE DXP",
+      "reraProjectName": "Smartworld One DXP",
       "reraRegistrationNo": "RERA-GRG-1217-2022",
-      "projectAddress": "2415 Gali No 13 Kailash Nagar Gandhi\\\\nNagar S.O. East Delhi Delhi",
+      "projectAddress": "SEC-113",
       "landArea": "7.94 (Acre)",
       "totalLicensedLand": "16.1125 (Acre)",
       "sizes": "48x48",
       "projectType": "NEW",
-      "sourceUrl": "https://reratracker.com/smartworld-one-dxp-in-gurugram-by-nourish-developers-private-limited-rtid4107"
+      "sourceUrl": "https://reratracker.com/smartworld-one-dxp-in-gurugram-by-nourish-developers-private-limited-rtid4107",
+      "totalUnits": 900,
+      "totalFloors": 28
     },
     "builderIntelligence": {
       "builderCode": "DEV-SMW",
@@ -40922,7 +41181,18 @@
         "huda_city_centre_drive_min": 16
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "reraProjectName": "Smartworld Sky Arc",
+      "reraRegistrationNo": "RERA-GRG-1723-2024",
+      "projectAddress": "SECTOR 69",
+      "landArea": "6.97635 (Acre)",
+      "totalLicensedLand": "11.66875 (Acre)",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "sourceUrl": "https://reratracker.com/smartworld-sky-arc-in-gurugram-by-riverday-infrastructure-private-limited-rtid4138",
+      "totalUnits": 952,
+      "totalFloors": 41
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "super_area": {
@@ -41589,7 +41859,7 @@
       "cumulativeSold": 594,
       "cumulativeAbsorptionPct": "61.81%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -42100,7 +42370,7 @@
       "currentPrice": null,
       "completionDate": "2031-12-31",
       "configurations": "",
-      "projectAddress": "3326 GURU KRIPA 14TH MAIN RMV-SADASHIVANAGAR BANGALORE 560080",
+      "projectAddress": "REVENUE ESTATE OF VILLAGE PAWALA KHUSRUPUR, SECTOR-106, GURUGRAM",
       "unitsAvailable": 219,
       "projectSizeText": "3 Buildings - 293 units",
       "reraProjectName": "SOBHA ALTUS",
@@ -42434,7 +42704,7 @@
       "cumulativeSold": 77,
       "cumulativeAbsorptionPct": "26.01%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -42567,7 +42837,7 @@
     "reraDetails": {
       "sizes": "48x48",
       "landArea": "14.81747 (Acre)",
-      "sourceUrl": "https://reratracker.com/sobha-aranya-phase-1-in-gurugram-by-sobha-limited-rtid4142",
+      "sourceUrl": "https://reratracker.com/sobha-aranya-in-gurugram-by-sobha-limited-rtid4142",
       "startDate": "27-02-2024",
       "unitsSold": 124,
       "totalUnits": 527,
@@ -42578,10 +42848,10 @@
       "currentPrice": 26000,
       "completionDate": "2030-10-31",
       "configurations": "4 BHK3 BHK",
-      "projectAddress": "3326 14th Main RMV Exrn Sadashivanagar Bangalore 560080",
+      "projectAddress": "SECTOR-80, REVENUE ESTATE OF VILLAGE NAURANGPUR, GURUGRAM",
       "unitsAvailable": 403,
       "projectSizeText": "5 Buildings - 524 units",
-      "reraProjectName": "SOBHA ARANYA PHASE-1",
+      "reraProjectName": "Sobha Aranya",
       "totalLicensedLand": "31.28125 (Acre)",
       "reraRegistrationNo": "RERA-GRG-1565-2024"
     },
@@ -42877,7 +43147,7 @@
       "cumulativeSold": 124,
       "cumulativeAbsorptionPct": "23.53%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -43191,7 +43461,7 @@
       "currentPrice": 24000,
       "completionDate": "2032-12-31",
       "configurations": "1 BHK",
-      "projectAddress": "139 Lodhi Complex Sai Baba Mandir Lodhi Road New Delhi-110003",
+      "projectAddress": "SECTOR 106, VILLAGE PAWALA KHUSRUPUR, GURUGRAM",
       "unitsAvailable": null,
       "projectSizeText": "1 Buildings - 251 units",
       "reraProjectName": "SOBHA STRADA",
@@ -43716,7 +43986,7 @@
       "cumulativeSold": 64,
       "cumulativeAbsorptionPct": "32.32%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -43860,7 +44130,7 @@
       "currentPrice": 17000,
       "completionDate": "2031-03-31",
       "configurations": "3 BHK4 BHK",
-      "projectAddress": "B-48 Suncity Township Sector-54 Gurugram",
+      "projectAddress": "SECTOR 78, VILLAGE SHIKOPUR",
       "unitsAvailable": null,
       "projectSizeText": "5 Buildings - 900 units",
       "reraProjectName": "Suncity Monarch Residences",
@@ -44210,7 +44480,7 @@
       "currentPrice": 25000,
       "completionDate": "2031-12-31",
       "configurations": "3 BHK4 BHK",
-      "projectAddress": "ARA FARM HOUSE CHANDAN HOLLA CHHATTARPUR DELHI-110074",
+      "projectAddress": "SECTOR 63A GURUGRAM",
       "unitsAvailable": 335,
       "projectSizeText": "5 Buildings - 386 units",
       "reraProjectName": "TARC ISHVA",
@@ -44495,7 +44765,7 @@
       "cumulativeSold": 276,
       "cumulativeAbsorptionPct": "45.17%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -44903,7 +45173,7 @@
       "cumulativeSold": 276,
       "cumulativeAbsorptionPct": "45.17%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -44930,7 +45200,7 @@
     "latitude": 28.505,
     "longitude": 76.955,
     "published": true,
-    "reraNumber": "",
+    "reraNumber": "RERA-GRG-326-2019",
     "reraPossession": "",
     "builderRiskScoreLabel": null,
     "developerRisk": {
@@ -45029,7 +45299,16 @@
         "huda_city_centre_drive_min": 22
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "reraProjectName": "Tata La Vida",
+      "reraRegistrationNo": "RERA-GRG-326-2019",
+      "projectAddress": "VILLAGE BAJGHERA SECTOR-112/113,GURUGRAM",
+      "landArea": "5.989 (Acre)",
+      "totalLicensedLand": "10.175 (Acre)",
+      "sizes": "48x48",
+      "projectType": "ONGOING",
+      "sourceUrl": "https://reratracker.com/tata-la-vida-in-gurugram-by-sector-113-gatevida-developers-pvt-ltd-rtid3834"
+    },
     "builderIntelligence": {
       "builderCode": "DEV-TATA",
       "builderName": "Tata Housing Development Co",
@@ -45461,7 +45740,7 @@
       "cumulativeSold": 3,
       "cumulativeAbsorptionPct": "0.88%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -46417,7 +46696,15 @@
     "reraDetails": {
       "totalUnits": 207,
       "unitsSold": 207,
-      "unitsAvailable": 0
+      "unitsAvailable": 0,
+      "reraProjectName": "Trehan One Good Earth",
+      "reraRegistrationNo": "RERA-GRG-960-2021",
+      "projectAddress": "VILLAGE-FAZILPUR JHARSA, DISTRICT-GURUGRAM IN RESIDENTIAL SECTOR-71- GURGAON MANESAR URBAN COMPLEX, GURUGRAM",
+      "landArea": "13.6775 (Acre)",
+      "totalLicensedLand": "13.6775 (Acre)",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "sourceUrl": "https://reratracker.com/trehan-one-good-earth-in-gurugram-by-raj-buildwell-private-limited-rtid3941"
     },
     "builderIntelligence": null,
     "scoreCard": {
@@ -46532,7 +46819,7 @@
       "cumulativeSold": 207,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -46635,7 +46922,16 @@
     "reraDetails": {
       "totalUnits": 203,
       "unitsSold": 203,
-      "unitsAvailable": 0
+      "unitsAvailable": 0,
+      "reraProjectName": "TREVOC ROYAL RESIDENCES",
+      "reraRegistrationNo": "RERA-GRG-1700-2024",
+      "projectAddress": "SECTOR 56, URBAN ESTATE, GURGAON II, HARYANA",
+      "landArea": "2.059 (Acre)",
+      "totalLicensedLand": "2.059 (Acre)",
+      "sizes": "48x48",
+      "projectType": "NEW",
+      "sourceUrl": "https://reratracker.com/trevoc-royal-residences-in-gurugram-by-jhs-estate-private-limited-rtid4252",
+      "totalFloors": 26
     },
     "builderIntelligence": null,
     "scoreCard": {
@@ -46820,7 +47116,7 @@
       "cumulativeSold": 203,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -47205,7 +47501,7 @@
       "cumulativeSold": 249,
       "cumulativeAbsorptionPct": "83.56%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -47349,7 +47645,7 @@
       "currentPrice": 14000,
       "completionDate": "2032-03-31",
       "configurations": "4 BHK",
-      "projectAddress": "Khasra No. 417 Avenue One Westend Green Rang Puri South West Delhi",
+      "projectAddress": "SECTOR 70",
       "unitsAvailable": 413,
       "projectSizeText": "5 Buildings - 720 units",
       "reraProjectName": "TULIP CRIMSON",
@@ -47550,7 +47846,7 @@
       "cumulativeSold": 307,
       "cumulativeAbsorptionPct": "42.64%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -47694,7 +47990,7 @@
       "currentPrice": 14750,
       "completionDate": "2033-12-31",
       "configurations": "5 BHK",
-      "projectAddress": "Khasra No. 418 Avenue One Westend Green Rang Puri South West Delhi",
+      "projectAddress": "SECTOR 70",
       "unitsAvailable": 587,
       "projectSizeText": "4 Buildings - 610 units",
       "reraProjectName": "TULIP MELROSE",
@@ -47895,7 +48191,7 @@
       "cumulativeSold": 21,
       "cumulativeAbsorptionPct": "3.45%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -47912,7 +48208,7 @@
     "priceCr": 8.5,
     "sqft": null,
     "priceSqft": 25000,
-    "units": 1276,
+    "units": 1084,
     "launched": null,
     "sold": null,
     "absorption": "Data pending",
@@ -47995,7 +48291,18 @@
         "huda_city_centre_drive_min": 8
       }
     },
-    "reraDetails": {},
+    "reraDetails": {
+      "reraProjectName": "Tulip Monsella",
+      "reraRegistrationNo": "RERA-GRG-966-2021",
+      "projectAddress": "SECTOR 53 GURUGRAM",
+      "landArea": "19.244 (Acre)",
+      "totalLicensedLand": "19.244 (Acre)",
+      "sizes": "48x48",
+      "projectType": "ONGOING",
+      "sourceUrl": "https://reratracker.com/tulip-monsella-in-gurugram-by-tulip-infratech-pvt-ltd-rtid4261",
+      "totalUnits": 1084,
+      "totalFloors": 40
+    },
     "builderIntelligence": null,
     "scoreCard": {
       "micromarket": {
@@ -48244,7 +48551,7 @@
       "currentPrice": null,
       "completionDate": "2027-06-30",
       "configurations": "",
-      "projectAddress": "House No. 202 Tower - L PioneerPark Sector - 61 Gurgaon.",
+      "projectAddress": "SECTOR- 76",
       "unitsAvailable": null,
       "projectSizeText": "",
       "reraProjectName": "WHITELAND BLISSVILLE",
@@ -48738,7 +49045,7 @@
       "cumulativeSold": 532,
       "cumulativeAbsorptionPct": "62.74%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-14"
+      "updatedAt": "2026-07-15"
     }
   },
   {
@@ -48755,7 +49062,7 @@
     "priceCr": 5.6,
     "sqft": 1982,
     "priceSqft": 22500,
-    "units": 0,
+    "units": 848,
     "launched": 0,
     "sold": 0,
     "absorption": "Data pending",
@@ -48865,15 +49172,15 @@
       }
     },
     "reraDetails": {
-      "sizes": "",
-      "landArea": "2.832 Acre",
-      "sourceUrl": "https://reratracker.com/the-westin-residences-by-whiteland-phase-3-in-gurugram-by-whiteland-corporation-pvt-ltd-rtid4278",
+      "sizes": "48x48",
+      "landArea": "1.961 (Acre)",
+      "sourceUrl": "https://reratracker.com/the-westin-residences-by-whiteland-in-gurugram-by-whiteland-corporation-pvt-ltd-rtid4276",
       "startDate": "25-05-2024",
       "unitsSold": null,
-      "totalUnits": null,
+      "totalUnits": 848,
       "launchPrice": null,
       "projectType": "NEW",
-      "totalFloors": null,
+      "totalFloors": 42,
       "totalTowers": null,
       "currentPrice": null,
       "completionDate": "2031-09-30",
@@ -48881,9 +49188,9 @@
       "projectAddress": "REVENUE ESTATE OF VILLAGE DHANWAPUR, SECTOR-103, GURUGRAM",
       "unitsAvailable": null,
       "projectSizeText": "",
-      "reraProjectName": "THE WESTIN RESIDENCES BY WHITELAND PHASE-3",
-      "totalLicensedLand": "9.58125 Acre",
-      "reraRegistrationNo": "RERA-GRG-1658-2024"
+      "reraProjectName": "Whiteland Westin Residences",
+      "totalLicensedLand": "9.58125 (Acre)",
+      "reraRegistrationNo": "RERA-GRG-1656-2024"
     },
     "builderIntelligence": {
       "builderCode": "DEV-WHI",
