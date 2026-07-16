@@ -465,13 +465,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
       "soldInQuarter": 0,
       "cumulativeSold": 225,
       "cumulativeAbsorptionPct": "89.64%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -1175,7 +1175,7 @@
       "cumulativeSold": 105,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -1550,13 +1550,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "OCT-DEC",
-      "quarterEndDate": "2025-12-31",
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
       "soldInQuarter": 0,
       "cumulativeSold": 53,
       "cumulativeAbsorptionPct": "62.35%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -2819,13 +2819,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
       "soldInQuarter": 0,
       "cumulativeSold": 32,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -3210,13 +3210,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
       "soldInQuarter": 0,
       "cumulativeSold": null,
       "cumulativeAbsorptionPct": "",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -3477,7 +3477,7 @@
       "cumulativeSold": 200,
       "cumulativeAbsorptionPct": "80.65%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -4125,9 +4125,9 @@
     "priceSqft": 11250,
     "units": 280,
     "launched": 280,
-    "sold": 80,
-    "absorption": "28.57%",
-    "inventory": "200 unsold units",
+    "sold": 87,
+    "absorption": "31.07%",
+    "inventory": "193 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2024/08/05/Project-Photo-1-Ashiana-Amarah-Phase-4-Gurgaon-5422595_345_1366.jpg",
     "latitude": 28.4145784,
@@ -4208,8 +4208,8 @@
     },
     "reraDetails": {
       "totalUnits": 280,
-      "unitsSold": 80,
-      "unitsAvailable": 200,
+      "unitsSold": 87,
+      "unitsAvailable": 193,
       "reraProjectName": "ASHIANA AMARAH PHASE 4",
       "reraRegistrationNo": "RERA-GRG-1594-2024",
       "projectAddress": "REVENUE ESTATE OF VILLAGE- WAZIRPUR, SECTOR 93, DISTT. GURUGRAM, HARYANA",
@@ -4353,13 +4353,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 4,
-      "cumulativeSold": 80,
-      "cumulativeAbsorptionPct": "28.57%",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 7,
+      "cumulativeSold": 87,
+      "cumulativeAbsorptionPct": "31.07%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -4378,9 +4378,9 @@
     "priceSqft": 15435,
     "units": 248,
     "launched": 248,
-    "sold": 84,
-    "absorption": "33.87%",
-    "inventory": "164 unsold units",
+    "sold": 91,
+    "absorption": "36.69%",
+    "inventory": "157 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2025/05/15/Project-Photo-4-Ashiana-Amarah-Phase-5-Gurgaon-5431847_410_1440.jpg",
     "latitude": 28.4145784,
@@ -4461,8 +4461,8 @@
     },
     "reraDetails": {
       "totalUnits": 248,
-      "unitsSold": 84,
-      "unitsAvailable": 164,
+      "unitsSold": 91,
+      "unitsAvailable": 157,
       "reraProjectName": "ASHIANA AMARAH PHASE 5",
       "reraRegistrationNo": "RERA-GRG-1753-2024",
       "projectAddress": "REVENUE ESTATE OF VILLAGE- WAZIRPUR, SECTOR 93, DISTT. GURUGRAM, HARYANA",
@@ -4607,13 +4607,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 14,
-      "cumulativeSold": 84,
-      "cumulativeAbsorptionPct": "33.87%",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 7,
+      "cumulativeSold": 91,
+      "cumulativeAbsorptionPct": "36.69%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -4903,7 +4903,7 @@
       "cumulativeSold": 680,
       "cumulativeAbsorptionPct": "65.38%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -5284,13 +5284,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 0,
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 1,
       "cumulativeSold": 322,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -5708,9 +5708,9 @@
     "priceSqft": 16455,
     "units": 885,
     "launched": 885,
-    "sold": 496,
-    "absorption": "56.05%",
-    "inventory": "389 unsold units",
+    "sold": 499,
+    "absorption": "56.38%",
+    "inventory": "386 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2025/03/13/Project-Photo-2-BPTP-Amstoria-Verti-Greens-Gurgaon-5429103_410_1440.jpg",
     "latitude": 28.4763113,
@@ -5791,8 +5791,8 @@
     },
     "reraDetails": {
       "totalUnits": 885,
-      "unitsSold": 496,
-      "unitsAvailable": 389
+      "unitsSold": 499,
+      "unitsAvailable": 386
     },
     "builderIntelligence": null,
     "scoreCard": {
@@ -5981,13 +5981,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 8,
-      "cumulativeSold": 496,
-      "cumulativeAbsorptionPct": "56.05%",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 3,
+      "cumulativeSold": 499,
+      "cumulativeAbsorptionPct": "56.38%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -6006,9 +6006,9 @@
     "priceSqft": 20000,
     "units": 504,
     "launched": 504,
-    "sold": 0,
-    "absorption": "0.00%",
-    "inventory": "Data pending",
+    "sold": 3,
+    "absorption": "0.60%",
+    "inventory": "501 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2026/04/03/Project-Photo-32-BPTP-Downtown-66-Gurgaon-5438347_410_1440.jpg",
     "latitude": 28.39665,
@@ -6122,7 +6122,7 @@
       "landArea": "4.235 (Acre)",
       "sourceUrl": "https://reratracker.com/bptp-downtown-66-in-gurugram-by-bptp-limited-rtid5220",
       "startDate": "15-07-2025",
-      "unitsSold": null,
+      "unitsSold": 3,
       "totalUnits": 504,
       "launchPrice": null,
       "projectType": "NEW",
@@ -6132,7 +6132,7 @@
       "completionDate": "2032-10-31",
       "configurations": "3 BHK",
       "projectAddress": "SECTOR 66 GURUGRAM",
-      "unitsAvailable": null,
+      "unitsAvailable": 501,
       "projectSizeText": "3 Buildings - 504 units",
       "reraProjectName": "BPTP DOWNTOWN-66",
       "totalLicensedLand": "14.518 (Acre)",
@@ -6339,13 +6339,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 0,
-      "cumulativeSold": null,
-      "cumulativeAbsorptionPct": "0.00%",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 3,
+      "cumulativeSold": 3,
+      "cumulativeAbsorptionPct": "0.60%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -6857,7 +6857,7 @@
       "cumulativeSold": 487,
       "cumulativeAbsorptionPct": "86.19%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -7766,7 +7766,7 @@
       "cumulativeSold": 487,
       "cumulativeAbsorptionPct": "86.19%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -7785,9 +7785,9 @@
     "priceSqft": 8951,
     "units": 25,
     "launched": 25,
-    "sold": null,
-    "absorption": "0.00%",
-    "inventory": "Data pending",
+    "sold": 13,
+    "absorption": "52.00%",
+    "inventory": "12 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2018/06/14/Project-Photo-1-Flower-Valley-Gurgaon-5116257_345_1366.jpg",
     "latitude": 28.2839000161778,
@@ -7867,7 +7867,9 @@
       }
     },
     "reraDetails": {
-      "totalUnits": 25
+      "totalUnits": 25,
+      "unitsSold": 13,
+      "unitsAvailable": 12
     },
     "builderIntelligence": null,
     "scoreCard": {
@@ -7976,13 +7978,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 0,
-      "cumulativeSold": null,
-      "cumulativeAbsorptionPct": "0.00%",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 13,
+      "cumulativeSold": 13,
+      "cumulativeAbsorptionPct": "52.00%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -8605,7 +8607,7 @@
       "cumulativeSold": 173,
       "cumulativeAbsorptionPct": "48.06%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -8624,9 +8626,9 @@
     "priceSqft": 15487,
     "units": 391,
     "launched": 391,
-    "sold": 293,
-    "absorption": "74.94%",
-    "inventory": "98 unsold units",
+    "sold": 306,
+    "absorption": "78.26%",
+    "inventory": "85 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2026/05/12/Project-Photo-4-Central-Park-The-Selene-Tower-Gurgaon-5433919_410_1440.jpg",
     "latitude": 28.4150770990866,
@@ -8707,8 +8709,8 @@
     },
     "reraDetails": {
       "totalUnits": 391,
-      "unitsSold": 293,
-      "unitsAvailable": 98
+      "unitsSold": 306,
+      "unitsAvailable": 85
     },
     "builderIntelligence": null,
     "scoreCard": {
@@ -8853,13 +8855,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 14,
-      "cumulativeSold": 293,
-      "cumulativeAbsorptionPct": "74.94%",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 13,
+      "cumulativeSold": 306,
+      "cumulativeAbsorptionPct": "78.26%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -9233,13 +9235,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 3,
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 8,
       "cumulativeSold": 268,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -9258,9 +9260,9 @@
     "priceSqft": 15000,
     "units": 448,
     "launched": 448,
-    "sold": 249,
-    "absorption": "55.58%",
-    "inventory": "199 unsold units",
+    "sold": 252,
+    "absorption": "56.25%",
+    "inventory": "196 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2024/06/19/Project-Photo-1-PARQ-Gurgaon-5420789_410_1440.jpg",
     "latitude": 28.3666376,
@@ -9341,8 +9343,8 @@
     },
     "reraDetails": {
       "totalUnits": 448,
-      "unitsSold": 249,
-      "unitsAvailable": 199,
+      "unitsSold": 252,
+      "unitsAvailable": 196,
       "reraProjectName": "Conscient ParQ",
       "reraRegistrationNo": "RERA-GRG-1584-2024",
       "projectAddress": "VILLAGE NAURANGPUR, SECTOR-80",
@@ -9615,13 +9617,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
       "soldInQuarter": 3,
-      "cumulativeSold": 249,
-      "cumulativeAbsorptionPct": "55.58%",
+      "cumulativeSold": 252,
+      "cumulativeAbsorptionPct": "56.25%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -9640,9 +9642,9 @@
     "priceSqft": null,
     "units": 100,
     "launched": 100,
-    "sold": 26,
-    "absorption": "26.00%",
-    "inventory": "74 unsold units",
+    "sold": 30,
+    "absorption": "30.00%",
+    "inventory": "70 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2025/07/07/Project-Photo-3-Dalcore-The-Falcon-Gurgaon-5432905_410_1440.jpg",
     "latitude": 28.4406745,
@@ -9714,8 +9716,8 @@
     },
     "reraDetails": {
       "totalUnits": 100,
-      "unitsSold": 26,
-      "unitsAvailable": 74,
+      "unitsSold": 30,
+      "unitsAvailable": 70,
       "reraProjectName": "Dalcore The Falcon",
       "reraRegistrationNo": "RERA-GRG-1838-2024",
       "projectAddress": "PLOT NO GH-25, SECTOR 53, GURUGRAM II",
@@ -9896,13 +9898,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
       "soldInQuarter": 4,
-      "cumulativeSold": 26,
-      "cumulativeAbsorptionPct": "26.00%",
+      "cumulativeSold": 30,
+      "cumulativeAbsorptionPct": "30.00%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -9921,9 +9923,9 @@
     "priceSqft": 19500,
     "units": 1169,
     "launched": 1169,
-    "sold": 75,
-    "absorption": "6.42%",
-    "inventory": "1094 unsold units",
+    "sold": 89,
+    "absorption": "7.61%",
+    "inventory": "1080 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2025/06/10/Project-Photo-3-DLF-Privana-North-Gurgaon-5432847_549_560.jpg",
     "latitude": 28.3931178,
@@ -10037,7 +10039,7 @@
       "landArea": "17.701 (Acre)",
       "sourceUrl": "https://reratracker.com/dlf-privana-north-in-gurugram-by-dlf-limited-rtid5131",
       "startDate": "2025-05-10",
-      "unitsSold": 75,
+      "unitsSold": 89,
       "totalUnits": 1169,
       "launchPrice": 23500,
       "projectType": "NEW",
@@ -10047,7 +10049,7 @@
       "completionDate": "2034-09-30",
       "configurations": "4 BHKPenthouse Singlex",
       "projectAddress": "SECTOR 76/77",
-      "unitsAvailable": 1094,
+      "unitsAvailable": 1080,
       "projectSizeText": "6 Buildings - 1164 units",
       "reraProjectName": "DLF PRIVANA NORTH",
       "totalLicensedLand": "116.29625 (Acre)",
@@ -10272,13 +10274,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 10,
-      "cumulativeSold": 75,
-      "cumulativeAbsorptionPct": "6.42%",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 14,
+      "cumulativeSold": 89,
+      "cumulativeAbsorptionPct": "7.61%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -10648,13 +10650,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
       "soldInQuarter": 0,
       "cumulativeSold": 116,
       "cumulativeAbsorptionPct": "10.42%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -11024,13 +11026,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
       "soldInQuarter": 0,
       "cumulativeSold": 24,
       "cumulativeAbsorptionPct": "3.02%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -11430,9 +11432,9 @@
     "priceSqft": null,
     "units": 421,
     "launched": 421,
-    "sold": 84,
-    "absorption": "19.95%",
-    "inventory": "337 unsold units",
+    "sold": 90,
+    "absorption": "21.38%",
+    "inventory": "331 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2025/08/20/Project-Photo-4-DLF-The-Dahlias-Gurgaon-5426135_375_591.jpg",
     "latitude": 28.4404335,
@@ -11504,8 +11506,8 @@
     },
     "reraDetails": {
       "totalUnits": 421,
-      "unitsSold": 84,
-      "unitsAvailable": 337,
+      "unitsSold": 90,
+      "unitsAvailable": 331,
       "reraProjectName": "DLF The Dahlias",
       "reraRegistrationNo": "RERA-GRG-1690-2024",
       "projectAddress": "R16, DLF 5, SECTOR 54 GURUGRAM",
@@ -11823,13 +11825,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 32,
-      "cumulativeSold": 84,
-      "cumulativeAbsorptionPct": "19.95%",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 6,
+      "cumulativeSold": 90,
+      "cumulativeAbsorptionPct": "21.38%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -12300,7 +12302,7 @@
       "cumulativeSold": 292,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -12718,9 +12720,9 @@
     "priceSqft": 32000,
     "units": 885,
     "launched": 885,
-    "sold": 533,
-    "absorption": "60.23%",
-    "inventory": "352 unsold units",
+    "sold": 531,
+    "absorption": "60.00%",
+    "inventory": "354 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2023/06/14/Project-Photo-1-Elan-The-Mark-Gurgaon-5411031_345_1366.jpg",
     "latitude": 28.4998859,
@@ -12801,8 +12803,8 @@
     },
     "reraDetails": {
       "totalUnits": 885,
-      "unitsSold": 533,
-      "unitsAvailable": 352,
+      "unitsSold": 531,
+      "unitsAvailable": 354,
       "reraProjectName": "ELAN THE MARK",
       "reraRegistrationNo": "RERA-GRG-1273-2023",
       "projectAddress": "SITUATED IN SECTOR 106 IN THE REVENUE ESTATE OF VILLAGE PAWALA KHUSRUPUR TEHSIL KADIPUR DISTRICT GURUGRAM, HARYANA",
@@ -12963,13 +12965,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
       "soldInQuarter": 0,
-      "cumulativeSold": 533,
-      "cumulativeAbsorptionPct": "60.23%",
+      "cumulativeSold": 531,
+      "cumulativeAbsorptionPct": "60.00%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -13205,9 +13207,9 @@
     "priceSqft": 24900,
     "units": 380,
     "launched": 380,
-    "sold": 170,
-    "absorption": "44.74%",
-    "inventory": "210 unsold units",
+    "sold": 206,
+    "absorption": "54.21%",
+    "inventory": "174 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2025/12/26/Project-Photo-1-The-Statement-Gurgaon-5148805_410_1440.jpg",
     "latitude": 28.4551851,
@@ -13321,7 +13323,7 @@
       "landArea": "5.875 (Acre)",
       "sourceUrl": "https://reratracker.com/elan-the-statement-in-gurugram-by-elan-enclave-private-limited-rtid5341",
       "startDate": "14-11-2025",
-      "unitsSold": 170,
+      "unitsSold": 206,
       "totalUnits": 380,
       "launchPrice": 23900,
       "projectType": "NEW",
@@ -13331,7 +13333,7 @@
       "completionDate": "2033-09-30",
       "configurations": "4 BHK",
       "projectAddress": "SECTOR 49, GURUGRAM",
-      "unitsAvailable": 210,
+      "unitsAvailable": 174,
       "projectSizeText": "5 Buildings - 360 units",
       "reraProjectName": "Elan The Statement",
       "totalLicensedLand": "5.875 (Acre)",
@@ -13616,13 +13618,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 170,
-      "cumulativeSold": 170,
-      "cumulativeAbsorptionPct": "44.74%",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 36,
+      "cumulativeSold": 206,
+      "cumulativeAbsorptionPct": "54.21%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -13933,9 +13935,9 @@
     "priceSqft": 14500,
     "units": 368,
     "launched": 368,
-    "sold": 211,
-    "absorption": "57.34%",
-    "inventory": "157 unsold units",
+    "sold": 212,
+    "absorption": "57.61%",
+    "inventory": "156 unsold units",
     "bestFor": "End Use",
     "image": "https://img.staticmb.com/mbimages/project/2024/11/20/Project-Photo-4-Eldeco-Fairway-Reserve-Gurgaon-5424517_410_1440.jpg",
     "latitude": 28.3666376,
@@ -14049,7 +14051,7 @@
       "landArea": "33752.00 (Sqr/mtrs)",
       "sourceUrl": "https://reratracker.com/eldeco-fairway-reserve-in-gurugram-by-eldeco-infrastructure-and-properties-limited-rtid3634",
       "startDate": "2025-01-01",
-      "unitsSold": 211,
+      "unitsSold": 212,
       "totalUnits": 368,
       "launchPrice": 15500,
       "projectType": "NEW",
@@ -14059,7 +14061,7 @@
       "completionDate": "2029-12-30",
       "configurations": "4 BHK3 BHK",
       "projectAddress": "SECTOR-80, MANESAR, GURUGRAM",
-      "unitsAvailable": 157,
+      "unitsAvailable": 156,
       "projectSizeText": "6 Buildings - 324 units",
       "reraProjectName": "Eldeco Fairway Reserve",
       "totalLicensedLand": "33752.00 (Sqr/mtrs)",
@@ -14369,13 +14371,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 2,
-      "cumulativeSold": 211,
-      "cumulativeAbsorptionPct": "57.34%",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 1,
+      "cumulativeSold": 212,
+      "cumulativeAbsorptionPct": "57.61%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -14904,13 +14906,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
       "soldInQuarter": 0,
       "cumulativeSold": 240,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -14929,9 +14931,9 @@
     "priceSqft": 18605,
     "units": 522,
     "launched": 522,
-    "sold": 56,
-    "absorption": "10.73%",
-    "inventory": "466 unsold units",
+    "sold": 57,
+    "absorption": "10.92%",
+    "inventory": "465 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2025/01/09/Project-Photo-1-Emaar-Amaris-Gurgaon-5425933_410_1440.jpg",
     "latitude": 28.4084074,
@@ -15012,8 +15014,8 @@
     },
     "reraDetails": {
       "totalUnits": 522,
-      "unitsSold": 56,
-      "unitsAvailable": 466,
+      "unitsSold": 57,
+      "unitsAvailable": 465,
       "reraProjectName": "Emaar Amaris",
       "reraRegistrationNo": "RERA-GRG-1790-2024",
       "projectAddress": "SECTOR 62, GURUGRAM,HARYANA",
@@ -15258,13 +15260,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 0,
-      "cumulativeSold": 56,
-      "cumulativeAbsorptionPct": "10.73%",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 1,
+      "cumulativeSold": 57,
+      "cumulativeAbsorptionPct": "10.92%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -15655,13 +15657,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
       "soldInQuarter": 0,
       "cumulativeSold": null,
       "cumulativeAbsorptionPct": "0.00%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -15680,9 +15682,9 @@
     "priceSqft": 15472,
     "units": 176,
     "launched": 176,
-    "sold": 53,
-    "absorption": "30.11%",
-    "inventory": "123 unsold units",
+    "sold": 54,
+    "absorption": "30.68%",
+    "inventory": "122 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2024/11/19/Project-Photo-1-Emaar-The-88-Gurgaon-5424707_410_1440.jpg",
     "latitude": 28.529997639138,
@@ -15763,8 +15765,8 @@
     },
     "reraDetails": {
       "totalUnits": 176,
-      "unitsSold": 53,
-      "unitsAvailable": 123,
+      "unitsSold": 54,
+      "unitsAvailable": 122,
       "reraProjectName": "Emaar The 88",
       "reraRegistrationNo": "RERA-GRG-1485-2023",
       "projectAddress": "VILLAGE BAJGHERA, SECTOR 112, GURUGRAM",
@@ -15994,13 +15996,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 0,
-      "cumulativeSold": 53,
-      "cumulativeAbsorptionPct": "30.11%",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 1,
+      "cumulativeSold": 54,
+      "cumulativeAbsorptionPct": "30.68%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -16019,9 +16021,9 @@
     "priceSqft": 12023,
     "units": 816,
     "launched": 816,
-    "sold": 83,
-    "absorption": "10.17%",
-    "inventory": "733 unsold units",
+    "sold": 92,
+    "absorption": "11.27%",
+    "inventory": "724 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2025/02/20/Project-Photo-1-Emaar-Urban-Ascent-Gurgaon-5428265_410_1440.jpg",
     "latitude": 28.529997639138,
@@ -16102,8 +16104,8 @@
     },
     "reraDetails": {
       "totalUnits": 816,
-      "unitsSold": 83,
-      "unitsAvailable": 733,
+      "unitsSold": 92,
+      "unitsAvailable": 724,
       "reraProjectName": "Emaar Urban Ascent",
       "reraRegistrationNo": "RERA-GRG-1813-2024",
       "projectAddress": "SECTOR 112, GURUGRAM, HARYANA",
@@ -16410,13 +16412,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 0,
-      "cumulativeSold": 83,
-      "cumulativeAbsorptionPct": "10.17%",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 9,
+      "cumulativeSold": 92,
+      "cumulativeAbsorptionPct": "11.27%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -16770,13 +16772,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
       "soldInQuarter": 0,
       "cumulativeSold": 2,
       "cumulativeAbsorptionPct": "0.24%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -17000,9 +17002,9 @@
     "priceSqft": 21000,
     "units": 544,
     "launched": 544,
-    "sold": 130,
-    "absorption": "23.90%",
-    "inventory": "414 unsold units",
+    "sold": 189,
+    "absorption": "34.74%",
+    "inventory": "355 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2025/08/18/Project-Photo-4-Experion-The-Trillion-Gurgaon-5426973_410_1440.jpg",
     "latitude": 28.4178339481063,
@@ -17116,7 +17118,7 @@
       "landArea": "19289.81 m\u00b2",
       "sourceUrl": "https://reratracker.com/experion-elements-phase-2-in-gautam-buddha-nagar-by-experion-developers-pvt-ltd-rtid826",
       "startDate": "01-07-2024",
-      "unitsSold": 130,
+      "unitsSold": 189,
       "totalUnits": 544,
       "launchPrice": 18350,
       "projectType": "",
@@ -17126,7 +17128,7 @@
       "completionDate": "04-01-2029",
       "configurations": "3 BHK4 BHK",
       "projectAddress": "",
-      "unitsAvailable": 414,
+      "unitsAvailable": 355,
       "projectSizeText": "2 Buildings - 320 units",
       "reraProjectName": "Experion Elements Phase-2",
       "totalLicensedLand": "",
@@ -17350,13 +17352,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 7,
-      "cumulativeSold": 130,
-      "cumulativeAbsorptionPct": "23.90%",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 59,
+      "cumulativeSold": 189,
+      "cumulativeAbsorptionPct": "34.74%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -17642,9 +17644,9 @@
     "priceSqft": 22000,
     "units": 544,
     "launched": 544,
-    "sold": 130,
-    "absorption": "23.90%",
-    "inventory": "414 unsold units",
+    "sold": 189,
+    "absorption": "34.74%",
+    "inventory": "355 unsold units",
     "bestFor": "End Use",
     "image": "https://img.staticmb.com/mbimages/project/2025/08/18/Project-Photo-4-Experion-The-Trillion-Gurgaon-5426973_410_1440.jpg",
     "latitude": 28.4178339481063,
@@ -17758,7 +17760,7 @@
       "landArea": "5.496 (Acre)",
       "sourceUrl": "https://reratracker.com/experion-the-trillion-in-gurugram-by-experion-developers-private-limited-rtid4244",
       "startDate": "15-01-2025",
-      "unitsSold": 130,
+      "unitsSold": 189,
       "totalUnits": 544,
       "launchPrice": 20500,
       "projectType": "NEW",
@@ -17768,7 +17770,7 @@
       "completionDate": "2032-12-31",
       "configurations": "3 BHK4 BHK",
       "projectAddress": "PLOT NO. GH3, SECTOR 48, GURUGRAM",
-      "unitsAvailable": 414,
+      "unitsAvailable": 355,
       "projectSizeText": "3 Buildings - 540 units",
       "reraProjectName": "Experion The Trillion",
       "totalLicensedLand": "5.496 (Acre)",
@@ -17997,13 +17999,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 7,
-      "cumulativeSold": 130,
-      "cumulativeAbsorptionPct": "23.90%",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 59,
+      "cumulativeSold": 189,
+      "cumulativeAbsorptionPct": "34.74%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -18264,13 +18266,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
       "soldInQuarter": 99,
       "cumulativeSold": 120,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -18641,13 +18643,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "OCT-DEC",
-      "quarterEndDate": "2025-12-31",
-      "soldInQuarter": 1,
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 0,
       "cumulativeSold": 105,
       "cumulativeAbsorptionPct": "14.71%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -18961,13 +18963,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "OCT-DEC",
-      "quarterEndDate": "2025-12-31",
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
       "soldInQuarter": 0,
       "cumulativeSold": 48,
       "cumulativeAbsorptionPct": "13.11%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -19613,9 +19615,9 @@
     "priceSqft": 25150,
     "units": 134,
     "launched": 134,
-    "sold": 92,
-    "absorption": "68.66%",
-    "inventory": "42 unsold units",
+    "sold": 93,
+    "absorption": "69.40%",
+    "inventory": "41 unsold units",
     "bestFor": "End Use",
     "image": "https://img.staticmb.com/mbimages/project/2025/07/24/Project-Photo-6-Godrej-Alira-Gurgaon-5434105_410_1440.jpg",
     "latitude": 28.4413474,
@@ -19729,7 +19731,7 @@
       "landArea": "1.9745 (Acre)",
       "sourceUrl": "https://reratracker.com/godrej-alira-in-gurugram-by-godrej-properties-limited-rtid5161",
       "startDate": "20-05-2025",
-      "unitsSold": 92,
+      "unitsSold": 93,
       "totalUnits": 134,
       "launchPrice": 23000,
       "projectType": "NEW",
@@ -19739,7 +19741,7 @@
       "completionDate": "2032-04-30",
       "configurations": "3 BHK4 BHK",
       "projectAddress": "GH-01, URBAN ESTATE II, SECTOR 39, GURUGRAM",
-      "unitsAvailable": 42,
+      "unitsAvailable": 41,
       "projectSizeText": "1 Buildings - 132 units",
       "reraProjectName": "GODREJ ALIRA",
       "totalLicensedLand": "1.9745 (Acre)",
@@ -19998,13 +20000,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
       "soldInQuarter": 1,
-      "cumulativeSold": 92,
-      "cumulativeAbsorptionPct": "68.66%",
+      "cumulativeSold": 93,
+      "cumulativeAbsorptionPct": "69.40%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -20470,13 +20472,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 2,
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 0,
       "cumulativeSold": 665,
       "cumulativeAbsorptionPct": "76.88%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -21572,13 +21574,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
       "soldInQuarter": 0,
       "cumulativeSold": 139,
       "cumulativeAbsorptionPct": "55.16%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -22148,13 +22150,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
       "soldInQuarter": 0,
       "cumulativeSold": 352,
       "cumulativeAbsorptionPct": "82.24%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -22564,13 +22566,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 1,
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 0,
       "cumulativeSold": 71,
       "cumulativeAbsorptionPct": "28.29%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -22589,9 +22591,9 @@
     "priceSqft": 32000,
     "units": 248,
     "launched": 248,
-    "sold": 15,
-    "absorption": "6.05%",
-    "inventory": "233 unsold units",
+    "sold": 18,
+    "absorption": "7.26%",
+    "inventory": "230 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2025/09/25/Project-Photo-4-Godrej-Sora-Gurgaon-5437103_410_1440.jpg",
     "latitude": 28.4406745,
@@ -22705,7 +22707,7 @@
       "landArea": "14569.2000 (Sqr/mtrs)",
       "sourceUrl": "https://reratracker.com/godrej-sora-in-gurugram-by-godrej-properties-limited-rtid5204",
       "startDate": "08-07-2025",
-      "unitsSold": 15,
+      "unitsSold": 18,
       "totalUnits": 248,
       "launchPrice": null,
       "projectType": "NEW",
@@ -22715,7 +22717,7 @@
       "completionDate": "2032-09-30",
       "configurations": "4 BHK3 BHK",
       "projectAddress": "GH-21, URBAN ESTATE II, SECTOR 53, GURUGRAM",
-      "unitsAvailable": 233,
+      "unitsAvailable": 230,
       "projectSizeText": "4 Buildings - 244 units",
       "reraProjectName": "GODREJ SORA",
       "totalLicensedLand": "14569.200 (Sqr/mtrs)",
@@ -22973,13 +22975,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 4,
-      "cumulativeSold": 15,
-      "cumulativeAbsorptionPct": "6.05%",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 3,
+      "cumulativeSold": 18,
+      "cumulativeAbsorptionPct": "7.26%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -22998,9 +23000,9 @@
     "priceSqft": 19000,
     "units": 744,
     "launched": 744,
-    "sold": 68,
-    "absorption": "9.14%",
-    "inventory": "676 unsold units",
+    "sold": 72,
+    "absorption": "9.68%",
+    "inventory": "672 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2024/08/14/Project-Photo-1-Godrej-Vrikshya-Gurgaon-5422585_410_1440.jpg",
     "latitude": 28.4952463,
@@ -23111,8 +23113,8 @@
     },
     "reraDetails": {
       "totalUnits": 744,
-      "unitsSold": 68,
-      "unitsAvailable": 676
+      "unitsSold": 72,
+      "unitsAvailable": 672
     },
     "builderIntelligence": {
       "builderCode": "DEV-GODREJ",
@@ -23522,13 +23524,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
       "soldInQuarter": 4,
-      "cumulativeSold": 68,
-      "cumulativeAbsorptionPct": "9.14%",
+      "cumulativeSold": 72,
+      "cumulativeAbsorptionPct": "9.68%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -24718,13 +24720,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
       "soldInQuarter": 0,
       "cumulativeSold": 531,
       "cumulativeAbsorptionPct": "29.87%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -25212,9 +25214,9 @@
     "priceSqft": 16500,
     "units": 462,
     "launched": 462,
-    "sold": 137,
-    "absorption": "29.65%",
-    "inventory": "325 unsold units",
+    "sold": 141,
+    "absorption": "30.52%",
+    "inventory": "321 unsold units",
     "bestFor": "End Use",
     "image": "https://img.staticmb.com/mbimages/project/2025/03/10/Project-Photo-1-The-Palatial-by-Hero-Homes-Gurgaon-5428215_410_1440.jpg",
     "latitude": 28.4801995,
@@ -25325,8 +25327,8 @@
     },
     "reraDetails": {
       "totalUnits": 462,
-      "unitsSold": 137,
-      "unitsAvailable": 325
+      "unitsSold": 141,
+      "unitsAvailable": 321
     },
     "builderIntelligence": {
       "builderCode": "DEV-HERO",
@@ -26979,13 +26981,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 18,
-      "cumulativeSold": 137,
-      "cumulativeAbsorptionPct": "29.65%",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 4,
+      "cumulativeSold": 141,
+      "cumulativeAbsorptionPct": "30.52%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -27004,9 +27006,9 @@
     "priceSqft": 14391,
     "units": 1103,
     "launched": 1103,
-    "sold": 965,
-    "absorption": "87.49%",
-    "inventory": "138 unsold units",
+    "sold": 967,
+    "absorption": "87.67%",
+    "inventory": "136 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2022/09/19/Project-Photo-10-Hero-Homes-Phase-2-Gurgaon-5186606_345_1366.jpg",
     "latitude": 28.4801995,
@@ -27087,8 +27089,8 @@
     },
     "reraDetails": {
       "totalUnits": 1103,
-      "unitsSold": 965,
-      "unitsAvailable": 138
+      "unitsSold": 967,
+      "unitsAvailable": 136
     },
     "builderIntelligence": null,
     "scoreCard": {
@@ -27342,13 +27344,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 18,
-      "cumulativeSold": 965,
-      "cumulativeAbsorptionPct": "87.49%",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 2,
+      "cumulativeSold": 967,
+      "cumulativeAbsorptionPct": "87.67%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -28097,13 +28099,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 1,
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 0,
       "cumulativeSold": 180,
       "cumulativeAbsorptionPct": "41.00%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -28122,9 +28124,9 @@
     "priceSqft": null,
     "units": 244,
     "launched": 244,
-    "sold": 0,
-    "absorption": "0.00%",
-    "inventory": "Data pending",
+    "sold": 22,
+    "absorption": "9.02%",
+    "inventory": "222 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2025/07/16/Project-Photo-1-Waterside-Residences-The-Forest-Reserve-Gurgaon-5433811_628_1366.jpg",
     "latitude": 28.4149630172885,
@@ -28230,7 +28232,9 @@
       }
     },
     "reraDetails": {
-      "totalUnits": 244
+      "totalUnits": 244,
+      "unitsSold": 22,
+      "unitsAvailable": 222
     },
     "builderIntelligence": {
       "builderCode": "DEV-KRIS",
@@ -28441,13 +28445,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 0,
-      "cumulativeSold": null,
-      "cumulativeAbsorptionPct": "0.00%",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 22,
+      "cumulativeSold": 22,
+      "cumulativeAbsorptionPct": "9.02%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -28466,9 +28470,9 @@
     "priceSqft": 26000,
     "units": 612,
     "launched": 612,
-    "sold": 152,
-    "absorption": "24.84%",
-    "inventory": "460 unsold units",
+    "sold": 169,
+    "absorption": "27.61%",
+    "inventory": "443 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2026/01/23/Project-Photo-31-Krisumi-Waterside-Residences-Gurgaon-5421483_450_1366.jpeg",
     "latitude": 28.4149630172885,
@@ -28584,8 +28588,8 @@
       "sourceUrl": "https://reratracker.com/krisumi-waterside-residences-in-gurugram-by-krisumi-corporation-pvt-ltd-rtid3827",
       "totalUnits": 612,
       "totalFloors": 43,
-      "unitsSold": 152,
-      "unitsAvailable": 460
+      "unitsSold": 169,
+      "unitsAvailable": 443
     },
     "builderIntelligence": {
       "builderCode": "DEV-KRIS",
@@ -28926,13 +28930,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 20,
-      "cumulativeSold": 152,
-      "cumulativeAbsorptionPct": "24.84%",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 17,
+      "cumulativeSold": 169,
+      "cumulativeAbsorptionPct": "27.61%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -28951,9 +28955,9 @@
     "priceSqft": 23000,
     "units": 342,
     "launched": 342,
-    "sold": 255,
-    "absorption": "74.56%",
-    "inventory": "87 unsold units",
+    "sold": 271,
+    "absorption": "79.24%",
+    "inventory": "71 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2024/05/14/Project-Photo-1-M3M-Altitude-Gurgaon-5420873_345_1366.jpg",
     "latitude": 28.403162,
@@ -29073,8 +29077,8 @@
       "sourceUrl": "https://reratracker.com/m3m-altitude-in-gurugram-by-manglam-multiplex-private-limited-rtid3852",
       "totalUnits": 342,
       "totalFloors": 31,
-      "unitsSold": 255,
-      "unitsAvailable": 87
+      "unitsSold": 271,
+      "unitsAvailable": 71
     },
     "builderIntelligence": {
       "builderCode": "DEV-M3M",
@@ -29242,13 +29246,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 12,
-      "cumulativeSold": 255,
-      "cumulativeAbsorptionPct": "74.56%",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 16,
+      "cumulativeSold": 271,
+      "cumulativeAbsorptionPct": "79.24%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -29582,13 +29586,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 2,
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 4,
       "cumulativeSold": 636,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -29844,13 +29848,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 2,
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 4,
       "cumulativeSold": 636,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -30167,13 +30171,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 2,
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 5,
       "cumulativeSold": 1760,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -30192,9 +30196,9 @@
     "priceSqft": 17000,
     "units": 1332,
     "launched": 1332,
-    "sold": 1301,
-    "absorption": "97.67%",
-    "inventory": "31 unsold units",
+    "sold": 1313,
+    "absorption": "98.57%",
+    "inventory": "19 unsold units",
     "bestFor": "End Use",
     "image": "https://img.staticmb.com/mbimages/project/2023/02/17/Project-Photo-1-M3M-Crown-Phase-1-Gurgaon-5393337_345_1366.jpg",
     "latitude": 28.52404691,
@@ -30308,7 +30312,7 @@
       "landArea": "15.9938 (Acre)",
       "sourceUrl": "https://reratracker.com/m3m-crown-phase-1-in-gurugram-by-metro-education-welfare-private-limited-rtid3863",
       "startDate": "25-01-2023",
-      "unitsSold": 1301,
+      "unitsSold": 1313,
       "totalUnits": 1332,
       "launchPrice": 14000,
       "projectType": "NEW",
@@ -30318,7 +30322,7 @@
       "completionDate": "2028-01-31",
       "configurations": "3 BHK4 BHK",
       "projectAddress": "SECTOR-111",
-      "unitsAvailable": 31,
+      "unitsAvailable": 19,
       "projectSizeText": "11 Buildings - 1332 units",
       "reraProjectName": "M3M CROWN PHASE 1",
       "totalLicensedLand": "11.6022 (Acre)",
@@ -30507,13 +30511,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 9,
-      "cumulativeSold": 1301,
-      "cumulativeAbsorptionPct": "97.67%",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 12,
+      "cumulativeSold": 1313,
+      "cumulativeAbsorptionPct": "98.57%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -30532,9 +30536,9 @@
     "priceSqft": 33150,
     "units": 336,
     "launched": 336,
-    "sold": 8,
-    "absorption": "2.38%",
-    "inventory": "328 unsold units",
+    "sold": 13,
+    "absorption": "3.87%",
+    "inventory": "323 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2025/11/11/Project-Photo-5-M3M-Elie-Saab-Gurgaon-5438513_794_1593.jpg",
     "latitude": 28.5262615,
@@ -30648,7 +30652,7 @@
       "landArea": "2.7505 (Acre)",
       "sourceUrl": "https://reratracker.com/m3m-elie-saab-at-scda-in-gurugram-by-metro-education-welfare-private-limited-rtid5246",
       "startDate": "15-09-2025",
-      "unitsSold": 8,
+      "unitsSold": 13,
       "totalUnits": 336,
       "launchPrice": 35000,
       "projectType": "NEW",
@@ -30658,7 +30662,7 @@
       "completionDate": "2032-02-29",
       "configurations": "4 BHK",
       "projectAddress": "SECTOR-111,GURUGRAM",
-      "unitsAvailable": 328,
+      "unitsAvailable": 323,
       "projectSizeText": "3 Buildings - 336 units",
       "reraProjectName": "M3M ELIE SAAB AT SCDA",
       "totalLicensedLand": "15.99375 (Acre)",
@@ -30908,13 +30912,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 8,
-      "cumulativeSold": 8,
-      "cumulativeAbsorptionPct": "2.38%",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 5,
+      "cumulativeSold": 13,
+      "cumulativeAbsorptionPct": "3.87%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -31244,13 +31248,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 0,
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 4,
       "cumulativeSold": 2618,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -31269,9 +31273,9 @@
     "priceSqft": 10500,
     "units": 286,
     "launched": 286,
-    "sold": 21,
-    "absorption": "7.34%",
-    "inventory": "265 unsold units",
+    "sold": 50,
+    "absorption": "17.48%",
+    "inventory": "236 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2025/11/11/Project-Photo-1-M3M-Gurgaon-International-City-Gurgaon-5438485_822_1611.jpg",
     "latitude": 28.3501533279113,
@@ -31352,8 +31356,8 @@
     },
     "reraDetails": {
       "totalUnits": 286,
-      "unitsSold": 21,
-      "unitsAvailable": 265
+      "unitsSold": 50,
+      "unitsAvailable": 236
     },
     "builderIntelligence": null,
     "scoreCard": {
@@ -31462,13 +31466,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 21,
-      "cumulativeSold": 21,
-      "cumulativeAbsorptionPct": "7.34%",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 29,
+      "cumulativeSold": 50,
+      "cumulativeAbsorptionPct": "17.48%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -31487,9 +31491,9 @@
     "priceSqft": 19500,
     "units": 978,
     "launched": 978,
-    "sold": 922,
-    "absorption": "94.27%",
-    "inventory": "56 unsold units",
+    "sold": 927,
+    "absorption": "94.79%",
+    "inventory": "51 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2024/06/19/Project-Photo-6-M3M-Mansion-Gurgaon-5419857_410_1440.jpg",
     "latitude": 28.5291395,
@@ -31603,7 +31607,7 @@
       "landArea": "8.710 (Acre)",
       "sourceUrl": "https://reratracker.com/m3m-mansion-in-gurugram-by-union-buildmart-private-limited-rtid3872",
       "startDate": "24-01-2025",
-      "unitsSold": 922,
+      "unitsSold": 927,
       "totalUnits": 978,
       "launchPrice": 19000,
       "projectType": "NEW",
@@ -31613,7 +31617,7 @@
       "completionDate": "2031-02-28",
       "configurations": "3 BHK4 BHK",
       "projectAddress": "VILLAGE CHAUMA,SECTOR 113,GURUGRAM",
-      "unitsAvailable": 56,
+      "unitsAvailable": 51,
       "projectSizeText": "8 Buildings - 244 units",
       "reraProjectName": "M3M Mansion",
       "totalLicensedLand": "10.225 (Acre)",
@@ -31809,13 +31813,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 3,
-      "cumulativeSold": 922,
-      "cumulativeAbsorptionPct": "94.27%",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 5,
+      "cumulativeSold": 927,
+      "cumulativeAbsorptionPct": "94.79%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -31834,9 +31838,9 @@
     "priceSqft": 17788,
     "units": 244,
     "launched": 244,
-    "sold": 137,
-    "absorption": "56.15%",
-    "inventory": "107 unsold units",
+    "sold": 176,
+    "absorption": "72.13%",
+    "inventory": "68 unsold units",
     "bestFor": null,
     "image": null,
     "latitude": 28.5291395,
@@ -31917,8 +31921,8 @@
     },
     "reraDetails": {
       "totalUnits": 244,
-      "unitsSold": 137,
-      "unitsAvailable": 107
+      "unitsSold": 176,
+      "unitsAvailable": 68
     },
     "builderIntelligence": null,
     "scoreCard": {
@@ -32132,13 +32136,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 36,
-      "cumulativeSold": 137,
-      "cumulativeAbsorptionPct": "56.15%",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 39,
+      "cumulativeSold": 176,
+      "cumulativeAbsorptionPct": "72.13%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -32157,9 +32161,9 @@
     "priceSqft": 17500,
     "units": 336,
     "launched": 336,
-    "sold": 8,
-    "absorption": "2.38%",
-    "inventory": "328 unsold units",
+    "sold": 13,
+    "absorption": "3.87%",
+    "inventory": "323 unsold units",
     "bestFor": "End Use",
     "image": "https://img.staticmb.com/mbimages/project/2025/11/11/Project-Photo-5-M3M-Elie-Saab-Gurgaon-5438513_794_1593.jpg",
     "latitude": 28.5262615,
@@ -32270,8 +32274,8 @@
     },
     "reraDetails": {
       "totalUnits": 336,
-      "unitsSold": 8,
-      "unitsAvailable": 328
+      "unitsSold": 13,
+      "unitsAvailable": 323
     },
     "builderIntelligence": {
       "builderCode": "DEV-M3M",
@@ -32512,13 +32516,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 8,
-      "cumulativeSold": 8,
-      "cumulativeAbsorptionPct": "2.38%",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 5,
+      "cumulativeSold": 13,
+      "cumulativeAbsorptionPct": "3.87%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -33087,9 +33091,9 @@
     "priceSqft": 22350,
     "units": 1347,
     "launched": 1347,
-    "sold": 82,
-    "absorption": "6.09%",
-    "inventory": "1265 unsold units",
+    "sold": 247,
+    "absorption": "18.34%",
+    "inventory": "1100 unsold units",
     "bestFor": "End Use",
     "image": "https://img.staticmb.com/mbimages/project/2025/12/09/Project-Photo-15-Max--Estate-361-Gurgaon-5440323_664_1342.jpg",
     "latitude": 28.42899401,
@@ -33196,8 +33200,8 @@
     },
     "reraDetails": {
       "totalUnits": 1347,
-      "unitsSold": 82,
-      "unitsAvailable": 1265
+      "unitsSold": 247,
+      "unitsAvailable": 1100
     },
     "builderIntelligence": {
       "builderCode": "DEV-MAX",
@@ -33658,13 +33662,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 82,
-      "cumulativeSold": 82,
-      "cumulativeAbsorptionPct": "6.09%",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 165,
+      "cumulativeSold": 247,
+      "cumulativeAbsorptionPct": "18.34%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -33683,9 +33687,9 @@
     "priceSqft": 19691,
     "units": 1025,
     "launched": 1025,
-    "sold": 286,
-    "absorption": "27.90%",
-    "inventory": "739 unsold units",
+    "sold": 288,
+    "absorption": "28.10%",
+    "inventory": "737 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2024/09/02/Project-Photo-1-Estate-360-Gurgaon-5423133_410_1440.jpg",
     "latitude": 28.4149630172885,
@@ -33762,8 +33766,8 @@
     },
     "reraDetails": {
       "totalUnits": 1025,
-      "unitsSold": 286,
-      "unitsAvailable": 739
+      "unitsSold": 288,
+      "unitsAvailable": 737
     },
     "builderIntelligence": null,
     "scoreCard": {
@@ -34082,13 +34086,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 1,
-      "cumulativeSold": 286,
-      "cumulativeAbsorptionPct": "27.90%",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 2,
+      "cumulativeSold": 288,
+      "cumulativeAbsorptionPct": "28.10%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -34421,9 +34425,9 @@
     "priceSqft": 24000,
     "units": 1347,
     "launched": 1347,
-    "sold": 82,
-    "absorption": "6.09%",
-    "inventory": "1265 unsold units",
+    "sold": 247,
+    "absorption": "18.34%",
+    "inventory": "1100 unsold units",
     "bestFor": "Rental Yield",
     "image": "https://img.staticmb.com/mbimages/project/2025/12/09/Project-Photo-15-Max--Estate-361-Gurgaon-5440323_664_1342.jpg",
     "latitude": 28.42899401,
@@ -34530,8 +34534,8 @@
     },
     "reraDetails": {
       "totalUnits": 1347,
-      "unitsSold": 82,
-      "unitsAvailable": 1265
+      "unitsSold": 247,
+      "unitsAvailable": 1100
     },
     "builderIntelligence": {
       "builderCode": "DEV-MAX",
@@ -34997,13 +35001,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 82,
-      "cumulativeSold": 82,
-      "cumulativeAbsorptionPct": "6.09%",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 165,
+      "cumulativeSold": 247,
+      "cumulativeAbsorptionPct": "18.34%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -35335,13 +35339,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "OCT-DEC",
-      "quarterEndDate": "2025-12-31",
-      "soldInQuarter": 1,
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 0,
       "cumulativeSold": 436,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -35903,7 +35907,7 @@
       "cumulativeSold": 38,
       "cumulativeAbsorptionPct": "25.00%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -36123,13 +36127,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
       "soldInQuarter": 35,
       "cumulativeSold": 101,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -36148,9 +36152,9 @@
     "priceSqft": 16871,
     "units": 692,
     "launched": 692,
-    "sold": 659,
-    "absorption": "95.23%",
-    "inventory": "33 unsold units",
+    "sold": 667,
+    "absorption": "96.39%",
+    "inventory": "25 unsold units",
     "bestFor": null,
     "image": "https://img.staticmb.com/mbimages/project/2025/03/24/Project-Photo-26-Puri-Diplomatic-Residences-Gurgaon-5419301_410_1440.jpg",
     "latitude": 28.5184381130698,
@@ -36231,8 +36235,8 @@
     },
     "reraDetails": {
       "totalUnits": 692,
-      "unitsSold": 659,
-      "unitsAvailable": 33,
+      "unitsSold": 667,
+      "unitsAvailable": 25,
       "reraProjectName": "PURI DIPLOMATIC RESIDENCES",
       "reraRegistrationNo": "RERA-GRG-1527-2024",
       "projectAddress": "SECTOR 111",
@@ -36434,13 +36438,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 13,
-      "cumulativeSold": 659,
-      "cumulativeAbsorptionPct": "95.23%",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 8,
+      "cumulativeSold": 667,
+      "cumulativeAbsorptionPct": "96.39%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -37135,13 +37139,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 92,
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 41,
       "cumulativeSold": 1058,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -37353,13 +37357,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 92,
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 41,
       "cumulativeSold": 1058,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -37378,9 +37382,9 @@
     "priceSqft": 26500,
     "units": 837,
     "launched": 837,
-    "sold": 776,
-    "absorption": "92.71%",
-    "inventory": "61 unsold units",
+    "sold": 837,
+    "absorption": "100.00%",
+    "inventory": "0 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2025/07/03/Project-Photo-1-Signature-Global-Cloverdale-SPR-Gurgaon-5433409_410_1440.jpg",
     "latitude": 28.4070784089376,
@@ -37494,7 +37498,7 @@
       "landArea": "8.12 (Acre)",
       "sourceUrl": "https://reratracker.com/signature-global-cloverdale-spr-in-gurugram-by-signatureglobal-india-limited-rtid5164",
       "startDate": "20-05-2025",
-      "unitsSold": 776,
+      "unitsSold": 837,
       "totalUnits": 837,
       "launchPrice": 18500,
       "projectType": "NEW",
@@ -37504,7 +37508,7 @@
       "completionDate": "2031-05-31",
       "configurations": "3 BHK4 BHK",
       "projectAddress": "VILLAGE - FAIZALPUR JHARSA, SECTOR-71, GURUGRAM, HARYANA",
-      "unitsAvailable": 61,
+      "unitsAvailable": 0,
       "projectSizeText": "6 Buildings - 794 units",
       "reraProjectName": "Signature Global Cloverdale SPR",
       "totalLicensedLand": "22.50 (Acre)",
@@ -37752,13 +37756,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 283,
-      "cumulativeSold": 776,
-      "cumulativeAbsorptionPct": "92.71%",
-      "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 98,
+      "cumulativeSold": 837,
+      "cumulativeAbsorptionPct": "100.00%",
+      "cappedAtTotalUnits": true,
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -38072,7 +38076,7 @@
       "cumulativeSold": 318,
       "cumulativeAbsorptionPct": "33.65%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -38890,7 +38894,7 @@
       "cumulativeSold": 461,
       "cumulativeAbsorptionPct": "21.35%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -39276,13 +39280,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 41,
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 116,
       "cumulativeSold": 613,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -39301,9 +39305,9 @@
     "priceSqft": 18500,
     "units": 383,
     "launched": 383,
-    "sold": 368,
-    "absorption": "96.08%",
-    "inventory": "15 unsold units",
+    "sold": 383,
+    "absorption": "100.00%",
+    "inventory": "0 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2024/10/21/Project-Photo-1-Signature-Global-Twin-Tower-DXP-Gurgaon-5424223_410_1440.jpg",
     "latitude": 28.3988635069833,
@@ -39413,7 +39417,7 @@
       "landArea": "4.6875 (Acre)",
       "sourceUrl": "https://reratracker.com/signature-global-twin-tower-dxp-in-gurugram-by-forever-buildtech-private-limited-rtid4126",
       "startDate": "06-08-2024",
-      "unitsSold": 368,
+      "unitsSold": 383,
       "totalUnits": 383,
       "launchPrice": 20000,
       "projectType": "NEW",
@@ -39423,7 +39427,7 @@
       "completionDate": "2030-05-30",
       "configurations": "3 BHK4 BHK",
       "projectAddress": "VILLAGE-HAYATPUR, SECTOR-84, GURUGRAM, HARYANA",
-      "unitsAvailable": 15,
+      "unitsAvailable": 0,
       "projectSizeText": "2 Buildings - 312 units",
       "reraProjectName": "Signature Global Twin Tower DXP",
       "totalLicensedLand": "4.6875 (Acre)",
@@ -39675,13 +39679,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 57,
-      "cumulativeSold": 368,
-      "cumulativeAbsorptionPct": "96.08%",
-      "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 40,
+      "cumulativeSold": 383,
+      "cumulativeAbsorptionPct": "100.00%",
+      "cappedAtTotalUnits": true,
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -39947,7 +39951,7 @@
       "cumulativeSold": 187,
       "cumulativeAbsorptionPct": "37.40%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -40205,7 +40209,7 @@
       "cumulativeSold": 1558,
       "cumulativeAbsorptionPct": "76.98%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -41449,9 +41453,9 @@
     "priceSqft": 19000,
     "units": 961,
     "launched": 961,
-    "sold": 594,
-    "absorption": "61.81%",
-    "inventory": "367 unsold units",
+    "sold": 614,
+    "absorption": "63.89%",
+    "inventory": "347 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2023/11/27/Project-Photo-16-Smartworld-The-Edition-Gurgaon-5417873_345_1366.jpg",
     "latitude": 28.3979555,
@@ -41565,7 +41569,7 @@
       "landArea": "10.70 (Acre)",
       "sourceUrl": "https://reratracker.com/smartworld-the-edition-in-gurugram-by-etsy-realcon-private-limited-rtid4140",
       "startDate": "19-10-2023",
-      "unitsSold": 594,
+      "unitsSold": 614,
       "totalUnits": 961,
       "launchPrice": 18000,
       "projectType": "NEW",
@@ -41575,7 +41579,7 @@
       "completionDate": "2031-02-01",
       "configurations": "3 BHK4 BHK",
       "projectAddress": "House No-723 Sector-31 Gurugram Haryana",
-      "unitsAvailable": 367,
+      "unitsAvailable": 347,
       "projectSizeText": "6 Buildings - 956 units",
       "reraProjectName": "SMARTWORLD THE EDITION",
       "totalLicensedLand": "10.70 (Acre)",
@@ -41853,13 +41857,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 15,
-      "cumulativeSold": 594,
-      "cumulativeAbsorptionPct": "61.81%",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 20,
+      "cumulativeSold": 614,
+      "cumulativeAbsorptionPct": "63.89%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -42245,9 +42249,9 @@
     "priceSqft": 21500,
     "units": 296,
     "launched": 296,
-    "sold": 77,
-    "absorption": "26.01%",
-    "inventory": "219 unsold units",
+    "sold": 79,
+    "absorption": "26.69%",
+    "inventory": "217 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2024/06/20/Project-Photo-15-Altus-Gurgaon-5421737_410_1440.jpg",
     "latitude": 28.4998859,
@@ -42361,7 +42365,7 @@
       "landArea": "5.51 (Acre)",
       "sourceUrl": "https://reratracker.com/sobha-altus-in-gurugram-by-sobha-limited-rtid4141",
       "startDate": "05-04-2024",
-      "unitsSold": 77,
+      "unitsSold": 79,
       "totalUnits": 296,
       "launchPrice": null,
       "projectType": "NEW",
@@ -42371,7 +42375,7 @@
       "completionDate": "2031-12-31",
       "configurations": "",
       "projectAddress": "REVENUE ESTATE OF VILLAGE PAWALA KHUSRUPUR, SECTOR-106, GURUGRAM",
-      "unitsAvailable": 219,
+      "unitsAvailable": 217,
       "projectSizeText": "3 Buildings - 293 units",
       "reraProjectName": "SOBHA ALTUS",
       "totalLicensedLand": "5.51 (Acre)",
@@ -42698,13 +42702,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 3,
-      "cumulativeSold": 77,
-      "cumulativeAbsorptionPct": "26.01%",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 2,
+      "cumulativeSold": 79,
+      "cumulativeAbsorptionPct": "26.69%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -42723,9 +42727,9 @@
     "priceSqft": 18500,
     "units": 527,
     "launched": 527,
-    "sold": 124,
-    "absorption": "23.53%",
-    "inventory": "403 unsold units",
+    "sold": 136,
+    "absorption": "25.81%",
+    "inventory": "391 unsold units",
     "bestFor": "End Use",
     "image": "https://img.staticmb.com/mbimages/project/2024/05/30/Project-Photo-1-Sobha-Aranya-Phase-1-Gurgaon-5420967_410_1440.jpg",
     "latitude": 28.3666376,
@@ -42839,7 +42843,7 @@
       "landArea": "14.81747 (Acre)",
       "sourceUrl": "https://reratracker.com/sobha-aranya-in-gurugram-by-sobha-limited-rtid4142",
       "startDate": "27-02-2024",
-      "unitsSold": 124,
+      "unitsSold": 136,
       "totalUnits": 527,
       "launchPrice": 24000,
       "projectType": "NEW",
@@ -42849,7 +42853,7 @@
       "completionDate": "2030-10-31",
       "configurations": "4 BHK3 BHK",
       "projectAddress": "SECTOR-80, REVENUE ESTATE OF VILLAGE NAURANGPUR, GURUGRAM",
-      "unitsAvailable": 403,
+      "unitsAvailable": 391,
       "projectSizeText": "5 Buildings - 524 units",
       "reraProjectName": "Sobha Aranya",
       "totalLicensedLand": "31.28125 (Acre)",
@@ -43141,13 +43145,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 10,
-      "cumulativeSold": 124,
-      "cumulativeAbsorptionPct": "23.53%",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 12,
+      "cumulativeSold": 136,
+      "cumulativeAbsorptionPct": "25.81%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -43651,9 +43655,9 @@
     "priceSqft": 24500,
     "units": 198,
     "launched": 198,
-    "sold": 64,
-    "absorption": "32.32%",
-    "inventory": "134 unsold units",
+    "sold": 68,
+    "absorption": "34.34%",
+    "inventory": "130 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2025/06/24/Project-Photo-27-Shapoorji-Pallonji-The-Dualis-Gurgaon-5432875_410_1440.jpg",
     "latitude": 28.4358404,
@@ -43764,8 +43768,8 @@
     },
     "reraDetails": {
       "totalUnits": 198,
-      "unitsSold": 64,
-      "unitsAvailable": 134
+      "unitsSold": 68,
+      "unitsAvailable": 130
     },
     "builderIntelligence": {
       "builderCode": "DEV-SP",
@@ -43980,13 +43984,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 22,
-      "cumulativeSold": 64,
-      "cumulativeAbsorptionPct": "32.32%",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 4,
+      "cumulativeSold": 68,
+      "cumulativeAbsorptionPct": "34.34%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -44355,9 +44359,9 @@
     "priceSqft": 22000,
     "units": 611,
     "launched": 611,
-    "sold": 276,
-    "absorption": "45.17%",
-    "inventory": "335 unsold units",
+    "sold": 313,
+    "absorption": "51.23%",
+    "inventory": "298 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2025/08/29/Project-Photo-5-TARC-Ishva-Gurgaon-5423465_410_1440.jpg",
     "latitude": 28.3920134856734,
@@ -44471,7 +44475,7 @@
       "landArea": "6.9500 (Acre)",
       "sourceUrl": "https://reratracker.com/tarc-ishva-in-gurugram-by-tarc-limited-rtid4187",
       "startDate": "09-08-2024",
-      "unitsSold": 276,
+      "unitsSold": 313,
       "totalUnits": 611,
       "launchPrice": 20500,
       "projectType": "NEW",
@@ -44481,7 +44485,7 @@
       "completionDate": "2031-12-31",
       "configurations": "3 BHK4 BHK",
       "projectAddress": "SECTOR 63A GURUGRAM",
-      "unitsAvailable": 335,
+      "unitsAvailable": 298,
       "projectSizeText": "5 Buildings - 386 units",
       "reraProjectName": "TARC ISHVA",
       "totalLicensedLand": "6.9500 (Acre)",
@@ -44759,13 +44763,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 21,
-      "cumulativeSold": 276,
-      "cumulativeAbsorptionPct": "45.17%",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 37,
+      "cumulativeSold": 313,
+      "cumulativeAbsorptionPct": "51.23%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -44784,9 +44788,9 @@
     "priceSqft": 20000,
     "units": 611,
     "launched": 611,
-    "sold": 276,
-    "absorption": "45.17%",
-    "inventory": "335 unsold units",
+    "sold": 313,
+    "absorption": "51.23%",
+    "inventory": "298 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2025/08/29/Project-Photo-5-TARC-Ishva-Gurgaon-5423465_410_1440.jpg",
     "latitude": 28.3920134856734,
@@ -44897,8 +44901,8 @@
     },
     "reraDetails": {
       "totalUnits": 611,
-      "unitsSold": 276,
-      "unitsAvailable": 335
+      "unitsSold": 313,
+      "unitsAvailable": 298
     },
     "builderIntelligence": {
       "builderCode": "DEV-TARC",
@@ -45167,13 +45171,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 21,
-      "cumulativeSold": 276,
-      "cumulativeAbsorptionPct": "45.17%",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 37,
+      "cumulativeSold": 313,
+      "cumulativeAbsorptionPct": "51.23%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -45740,7 +45744,7 @@
       "cumulativeSold": 3,
       "cumulativeAbsorptionPct": "0.88%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -46813,13 +46817,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "OCT-DEC",
-      "quarterEndDate": "2025-12-31",
-      "soldInQuarter": 1,
+      "quarterLabel": "JAN-MAR",
+      "quarterEndDate": "2026-03-31",
+      "soldInQuarter": 0,
       "cumulativeSold": 207,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -47110,13 +47114,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 8,
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 9,
       "cumulativeSold": 203,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -47135,9 +47139,9 @@
     "priceSqft": 30000,
     "units": 298,
     "launched": 298,
-    "sold": 249,
-    "absorption": "83.56%",
-    "inventory": "49 unsold units",
+    "sold": 253,
+    "absorption": "84.90%",
+    "inventory": "45 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2025/04/29/Project-Photo-1-Trump-Residences-Gurgaon-Gurgaon-5430993_410_1440.jpg",
     "latitude": 28.3976154,
@@ -47248,8 +47252,8 @@
     },
     "reraDetails": {
       "totalUnits": 298,
-      "unitsSold": 249,
-      "unitsAvailable": 49
+      "unitsSold": 253,
+      "unitsAvailable": 45
     },
     "builderIntelligence": {
       "builderCode": "DEV-TRI",
@@ -47495,13 +47499,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 2,
-      "cumulativeSold": 249,
-      "cumulativeAbsorptionPct": "83.56%",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 4,
+      "cumulativeSold": 253,
+      "cumulativeAbsorptionPct": "84.90%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -47840,13 +47844,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
       "soldInQuarter": 0,
       "cumulativeSold": 307,
       "cumulativeAbsorptionPct": "42.64%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -47865,9 +47869,9 @@
     "priceSqft": 14500,
     "units": 608,
     "launched": 608,
-    "sold": 21,
-    "absorption": "3.45%",
-    "inventory": "587 unsold units",
+    "sold": 22,
+    "absorption": "3.62%",
+    "inventory": "586 unsold units",
     "bestFor": "End Use",
     "image": "https://img.staticmb.com/mbimages/project/2025/12/12/Project-Photo-5-Tulip-Melrose-Gurgaon-5440343_410_1440.jpg",
     "latitude": 28.3974945,
@@ -47981,7 +47985,7 @@
       "landArea": "7.5 (Acre)",
       "sourceUrl": "https://reratracker.com/tulip-melrose-in-gurugram-by-premium-infratech-llp-rtid5293",
       "startDate": "06-10-2025",
-      "unitsSold": 21,
+      "unitsSold": 22,
       "totalUnits": 608,
       "launchPrice": 13750,
       "projectType": "NEW",
@@ -47991,7 +47995,7 @@
       "completionDate": "2033-12-31",
       "configurations": "5 BHK",
       "projectAddress": "SECTOR 70",
-      "unitsAvailable": 587,
+      "unitsAvailable": 586,
       "projectSizeText": "4 Buildings - 610 units",
       "reraProjectName": "TULIP MELROSE",
       "totalLicensedLand": "7.5 (Acre)",
@@ -48185,13 +48189,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 21,
-      "cumulativeSold": 21,
-      "cumulativeAbsorptionPct": "3.45%",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 1,
+      "cumulativeSold": 22,
+      "cumulativeAbsorptionPct": "3.62%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
@@ -48752,9 +48756,9 @@
     "priceSqft": 23000,
     "units": 848,
     "launched": 848,
-    "sold": 532,
-    "absorption": "62.74%",
-    "inventory": "316 unsold units",
+    "sold": 572,
+    "absorption": "67.45%",
+    "inventory": "276 unsold units",
     "bestFor": "Investment",
     "image": "https://img.staticmb.com/mbimages/project/2025/04/09/Project-Photo-5-Whiteland-Urban-Resort-Gurgaon-5430097_837_1594.jpg",
     "latitude": 28.4763113,
@@ -48865,8 +48869,8 @@
     },
     "reraDetails": {
       "totalUnits": 848,
-      "unitsSold": 532,
-      "unitsAvailable": 316
+      "unitsSold": 572,
+      "unitsAvailable": 276
     },
     "builderIntelligence": {
       "builderCode": "DEV-WHI",
@@ -49039,13 +49043,13 @@
       "delivery_progress_computed_at": "2026-06-11"
     },
     "latestAbsorption": {
-      "quarterLabel": "JAN-MAR",
-      "quarterEndDate": "2026-03-31",
-      "soldInQuarter": 12,
-      "cumulativeSold": 532,
-      "cumulativeAbsorptionPct": "62.74%",
+      "quarterLabel": "APR-JUN",
+      "quarterEndDate": "2026-06-30",
+      "soldInQuarter": 40,
+      "cumulativeSold": 572,
+      "cumulativeAbsorptionPct": "67.45%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-15"
+      "updatedAt": "2026-07-16"
     }
   },
   {
