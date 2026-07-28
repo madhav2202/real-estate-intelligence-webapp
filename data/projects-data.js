@@ -471,7 +471,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 225,
       "cumulativeAbsorptionPct": "89.64%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -1175,7 +1175,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 105,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -1556,7 +1556,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 53,
       "cumulativeAbsorptionPct": "62.35%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -2825,7 +2825,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 32,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -3216,7 +3216,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": null,
       "cumulativeAbsorptionPct": "",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -3477,7 +3477,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 200,
       "cumulativeAbsorptionPct": "80.65%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -4359,7 +4359,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 87,
       "cumulativeAbsorptionPct": "31.07%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -4613,7 +4613,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 91,
       "cumulativeAbsorptionPct": "36.69%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -4903,7 +4903,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 680,
       "cumulativeAbsorptionPct": "65.38%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -5290,7 +5290,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 322,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -5987,7 +5987,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 499,
       "cumulativeAbsorptionPct": "56.38%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -6345,7 +6345,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 3,
       "cumulativeAbsorptionPct": "0.60%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -6857,7 +6857,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 487,
       "cumulativeAbsorptionPct": "86.19%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -7766,7 +7766,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 487,
       "cumulativeAbsorptionPct": "86.19%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -7984,7 +7984,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 13,
       "cumulativeAbsorptionPct": "52.00%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -8607,7 +8607,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 173,
       "cumulativeAbsorptionPct": "48.06%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -8861,7 +8861,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 306,
       "cumulativeAbsorptionPct": "78.26%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -9241,7 +9241,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 268,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -9623,7 +9623,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 252,
       "cumulativeAbsorptionPct": "56.25%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -9904,7 +9904,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 30,
       "cumulativeAbsorptionPct": "30.00%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -10280,7 +10280,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 89,
       "cumulativeAbsorptionPct": "7.61%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -10656,7 +10656,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 116,
       "cumulativeAbsorptionPct": "10.42%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -11032,7 +11032,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 24,
       "cumulativeAbsorptionPct": "3.02%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -11831,7 +11831,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 90,
       "cumulativeAbsorptionPct": "21.38%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -12302,7 +12302,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 292,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -12971,7 +12971,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 531,
       "cumulativeAbsorptionPct": "60.00%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -13624,7 +13624,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 206,
       "cumulativeAbsorptionPct": "54.21%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -14377,7 +14377,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 212,
       "cumulativeAbsorptionPct": "57.61%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -14912,7 +14912,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 240,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -15266,7 +15266,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 57,
       "cumulativeAbsorptionPct": "10.92%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -15663,7 +15663,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": null,
       "cumulativeAbsorptionPct": "0.00%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -16002,7 +16002,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 54,
       "cumulativeAbsorptionPct": "30.68%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -16418,7 +16418,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 92,
       "cumulativeAbsorptionPct": "11.27%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -16778,7 +16778,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 2,
       "cumulativeAbsorptionPct": "0.24%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -17358,7 +17358,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 189,
       "cumulativeAbsorptionPct": "34.74%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -18005,7 +18005,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 189,
       "cumulativeAbsorptionPct": "34.74%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -18272,7 +18272,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 120,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -18649,7 +18649,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 105,
       "cumulativeAbsorptionPct": "14.71%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -18969,7 +18969,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 48,
       "cumulativeAbsorptionPct": "13.11%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -20006,7 +20006,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 93,
       "cumulativeAbsorptionPct": "69.40%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -20478,7 +20478,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 665,
       "cumulativeAbsorptionPct": "76.88%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -21580,7 +21580,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 139,
       "cumulativeAbsorptionPct": "55.16%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -22156,7 +22156,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 352,
       "cumulativeAbsorptionPct": "82.24%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -22572,7 +22572,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 71,
       "cumulativeAbsorptionPct": "28.29%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -22981,7 +22981,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 18,
       "cumulativeAbsorptionPct": "7.26%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -23530,7 +23530,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 72,
       "cumulativeAbsorptionPct": "9.68%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -24726,7 +24726,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 531,
       "cumulativeAbsorptionPct": "29.87%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -26987,7 +26987,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 141,
       "cumulativeAbsorptionPct": "30.52%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -27350,7 +27350,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 967,
       "cumulativeAbsorptionPct": "87.67%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -28105,7 +28105,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 180,
       "cumulativeAbsorptionPct": "41.00%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -28451,7 +28451,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 22,
       "cumulativeAbsorptionPct": "9.02%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -28936,7 +28936,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 169,
       "cumulativeAbsorptionPct": "27.61%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -29252,7 +29252,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 271,
       "cumulativeAbsorptionPct": "79.24%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -29592,7 +29592,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 636,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -29854,7 +29854,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 636,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -30177,7 +30177,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 1760,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -30517,7 +30517,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 1313,
       "cumulativeAbsorptionPct": "98.57%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -30918,7 +30918,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 13,
       "cumulativeAbsorptionPct": "3.87%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -31254,7 +31254,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 2618,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -31472,7 +31472,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 50,
       "cumulativeAbsorptionPct": "17.48%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -31819,7 +31819,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 927,
       "cumulativeAbsorptionPct": "94.79%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -32142,7 +32142,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 176,
       "cumulativeAbsorptionPct": "72.13%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -32522,7 +32522,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 13,
       "cumulativeAbsorptionPct": "3.87%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -33668,7 +33668,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 247,
       "cumulativeAbsorptionPct": "18.34%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -34092,7 +34092,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 288,
       "cumulativeAbsorptionPct": "28.10%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -35007,7 +35007,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 247,
       "cumulativeAbsorptionPct": "18.34%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -35345,7 +35345,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 436,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -35907,7 +35907,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 38,
       "cumulativeAbsorptionPct": "25.00%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -36133,7 +36133,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 101,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -36444,7 +36444,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 667,
       "cumulativeAbsorptionPct": "96.39%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -37145,7 +37145,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 1058,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -37363,7 +37363,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 1058,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -37762,7 +37762,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 837,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -38076,7 +38076,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 318,
       "cumulativeAbsorptionPct": "33.65%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -38894,7 +38894,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 461,
       "cumulativeAbsorptionPct": "21.35%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -39286,7 +39286,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 613,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -39685,7 +39685,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 383,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -39951,7 +39951,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 187,
       "cumulativeAbsorptionPct": "37.40%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -40209,7 +40209,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 1558,
       "cumulativeAbsorptionPct": "76.98%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -41863,7 +41863,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 614,
       "cumulativeAbsorptionPct": "63.89%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -42708,7 +42708,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 79,
       "cumulativeAbsorptionPct": "26.69%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -43151,7 +43151,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 136,
       "cumulativeAbsorptionPct": "25.81%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -43990,7 +43990,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 68,
       "cumulativeAbsorptionPct": "34.34%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -44769,7 +44769,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 313,
       "cumulativeAbsorptionPct": "51.23%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -45177,7 +45177,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 313,
       "cumulativeAbsorptionPct": "51.23%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -45744,7 +45744,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 3,
       "cumulativeAbsorptionPct": "0.88%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -46823,7 +46823,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 207,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -47120,7 +47120,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 203,
       "cumulativeAbsorptionPct": "100.00%",
       "cappedAtTotalUnits": true,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -47505,7 +47505,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 253,
       "cumulativeAbsorptionPct": "84.90%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -47850,7 +47850,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 307,
       "cumulativeAbsorptionPct": "42.64%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -48195,7 +48195,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 22,
       "cumulativeAbsorptionPct": "3.62%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
@@ -49049,7 +49049,7 @@ window.__PROJECTS__ = [
       "cumulativeSold": 572,
       "cumulativeAbsorptionPct": "67.45%",
       "cappedAtTotalUnits": false,
-      "updatedAt": "2026-07-27"
+      "updatedAt": "2026-07-28"
     }
   },
   {
